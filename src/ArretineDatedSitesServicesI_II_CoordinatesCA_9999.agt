@@ -1,0 +1,49 @@
+#9999
+#true
+#1.0|1.0|1.0
+#data
+Name	x	y	z	start	end	fixed
+Nijmegen, Lager	-1.9696	-4.3352	-0.6857	9999	9999	floating
+Basel, Lager	-1.2041	-0.5444	-0.0093	9999	9999	floating
+Vindoniss, Militärstation	-0.6857	-0.2012	 0.1651	9999	9999	floating
+Neuss	-0.4107	 0.0405	-0.0550	-16	9999	floating
+Zürich, Lindenhof	-1.5681	-3.3957	-0.2093	9999	9999	floating
+Dangstetten	-1.0624	 0.2223	 0.5173	-15	-9	fixed
+Oberaden	-0.6965	 0.2155	 0.4023	-11	9999	floating
+Titelberg	-1.2119	-0.3813	-0.0643	9999	9999	floating
+Rödgen	-0.4825	 0.1896	 0.2972	-12	8	fixed
+Asberg, Lager	-0.3230	 0.1081	 0.1243	9999	9999	floating
+Basel, Lagerdorf	-0.1599	 0.0932	-0.0583	9999	9999	floating
+Conimbriga	-0.1065	 0.0456	-0.1097	9999	9999	floating
+Lausanne-Vidy	-0.2726	-0.0157	-0.1228	9999	9999	floating
+Tongeren	 0.0630	 0.0097	 0.1545	9999	9999	floating
+Augst, Insula 31	 0.0998	 0.1164	-0.3233	7	13	fixed
+Bonn, Boeselagerhof	-0.0070	 0.0597	-0.1639	9999	9999	floating
+Liberchies	-0.3057	-0.0244	-0.0504	9999	9999	floating
+Nijmegen, Lager (Brunsting)	 0.3731	-0.0656	-0.2295	9999	9999	floating
+Vetera I	 0.4039	-0.0911	 0.2180	9999	9999	floating
+Augst, Insula 20	 0.5106	-0.1593	 0.2908	9999	9999	floating
+Bad Nauheim	 0.2199	 0.0340	-0.1879	9999	9999	floating
+Haltern	 0.1314	 0.1361	-0.1036	-7	9	fixed
+Asberg, Lagerdorf	 0.2042	 0.0864	-0.0158	9999	9999	floating
+Augsburg-Oberhausen	-0.2301	 0.2052	-0.1530	9999	9999	floating
+Braives	 0.1860	-0.0421	 0.2670	9999	9999	floating
+Bregenz	 0.3196	 0.1604	-0.7664	9999	9999	floating
+Lorenzberg	 0.2099	 0.0650	 0.0390	9999	9999	floating
+Mainz, Legionslager	 0.0331	 0.0481	 0.2022	9999	9999	floating
+Namur	-0.1435	 0.2008	 0.3545	9999	9999	floating
+Nijmegen, Trajanusplein	 0.4147	 0.0385	-0.4235	9999	9999	floating
+Nijmegen, Valkhof	 0.2432	 0.1211	-0.2680	9999	9999	floating
+Vechten	 0.8037	-0.2304	 0.3963	9999	9999	floating
+Vindonissa, Scheuerhof	 0.1370	 0.1014	 0.0032	9999	9999	floating
+Worms	-0.5313	 0.4841	-0.5543	9999	9999	floating
+Augsburg, Stadt	 0.5881	 0.0313	-0.5718	9999	9999	floating
+Augst, Theater	 0.7059	-0.0757	-0.2543	9999	9999	floating
+Avences, Insula 15	 0.3853	-0.0153	-0.3444	9999	9999	floating
+Friedberg	 0.4748	 0.0596	-0.3632	9999	9999	floating
+Maastricht	 0.8086	-0.2157	 0.4184	9999	9999	floating
+Oberwinterthur, Römerstr. 186	 0.4790	 0.0493	-0.5557	9999	9999	floating
+Velsen	 0.8336	-0.1823	 0.0086	16	28	fixed
+Vindonissa, Königsfelden	 0.3832	 0.2064	-1.0289	9999	9999	floating
+Wiesbaden	 0.4593	 0.0995	-0.5028	9999	9999	floating
+Zurzach, Lager	 0.6625	-0.0540	-0.2208	9999	9999	floating
