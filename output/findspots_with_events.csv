@@ -18,7 +18,7 @@ Tongeren,POINT(5.46486 50.78096),Q1863929,108765,way,346290310.0,historic=archae
 "Bonn, Boeselagerhof",POINT(7.09938 50.7448),Q1146198,108818,node,1191145951.0,information=tactile_model,,http://leiza-scit.github.io/CAA2026-alligator/oQZq80,oQZq80,-7.0,9.0,-0.007,0.0597,-0.1639,false,false,Haltern,Haltern
 Liberchies,POINT(4.44349 50.51455),Q2371918,109003,,,,,http://leiza-scit.github.io/CAA2026-alligator/QXlWK2,QXlWK2,-16.0,8.0,-0.3057,-0.0244,-0.0504,false,false,Neuss,Rödgen
 "Nijmegen, Lager (Brunsting)",POINT(5.884209 51.839831),Q1309708,98921,,,,,http://leiza-scit.github.io/CAA2026-alligator/jm48qv,jm48qv,-7.0,9.0,0.3731,-0.0656,-0.2295,false,false,Haltern,Haltern
-Vetera I,POINT(6.46999 1.64639),Q532466,108867,,,,,http://leiza-scit.github.io/CAA2026-alligator/KbRY6O,KbRY6O,-7.0,9.0,0.4039,-0.0911,0.218,false,false,Haltern,Haltern
+Vetera I,POINT(6.46999 51.64639),Q532466,108867,,,,,http://leiza-scit.github.io/CAA2026-alligator/KbRY6O,KbRY6O,-7.0,9.0,0.4039,-0.0911,0.218,false,false,Haltern,Haltern
 "Augst, Insula 20",POINT(7.72231 47.53323),Q610371,177494,way,107475469.0,building=yes,closeMatch,http://leiza-scit.github.io/CAA2026-alligator/vJnM0D,vJnM0D,16.0,28.0,0.5106,-0.1593,0.2908,false,false,Velsen,Velsen
 Bad Nauheim,POINT(8.7522 50.36987),Q2179578,118588,node,333175552.0,historic=archaeological_site,,http://leiza-scit.github.io/CAA2026-alligator/kBRoVE,kBRoVE,-7.0,9.0,0.2199,0.034,-0.1879,false,false,Haltern,Haltern
 Haltern,POINT(7.17052 51.73947),Q2179592,109029,way,435021824.0,historic=archaeological_site,,http://leiza-scit.github.io/CAA2026-alligator/vXGN59,vXGN59,-7.0,9.0,0.1314,0.1361,-0.1036,true,true,,

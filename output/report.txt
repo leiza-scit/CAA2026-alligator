@@ -1,10 +1,10 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 12:51:07
+Timestamp: 2026-03-17 12:59:11
 ============================================================
-Loading TTL file: C:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
+Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
-Loading CSV file: C:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II_findspots.csv
+Loading CSV file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II_findspots.csv
 ✓ 45 findspots loaded
 
 Building mapping table...
@@ -17,8 +17,8 @@ Building mapping table...
   ⚠ Unmatched findspots (1):
     · Trier-Petrisberg
 
-✓ Mapping table saved: C:\git\CAA2026-alligator\output\event_mapping.csv
-✓ Enriched findspot table saved: C:\git\CAA2026-alligator\output\findspots_with_events.csv
+✓ Mapping table saved: c:\git\CAA2026-alligator\output\event_mapping.csv
+✓ Enriched findspot table saved: c:\git\CAA2026-alligator\output\findspots_with_events.csv
 
 ============================================================
 RDF Conversion
@@ -29,13 +29,13 @@ RDF Conversion
   Fallback URI   : 1
 ✓ FeatureCollection created with 45 features
 
-✓ RDF graph saved: C:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
+✓ RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
 
 Graph statistics:
   Triples total      : 1442
   Sites              : 45
   FeatureCollections : 1
-Loading additional events: C:\git\CAA2026-alligator\data\MoreEvents.csv
+Loading additional events: c:\git\CAA2026-alligator\data\MoreEvents.csv
 ✓ 4 additional events loaded
 
 Adding supplementary events to graph...
@@ -60,18 +60,18 @@ Adding period clusters to graph...
 Computing Allen interval relations between clusters...
 ✓ 90 Allen relation triples written across 10 clusters
 
-✓ Final RDF graph saved: C:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
+✓ Final RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
   Triples total: 1830
 
 ============================================================
 Visualisations
 ============================================================
-✓ Timeline saved: C:\git\CAA2026-alligator\output\cluster_timeline.jpg
-✓ Events timeline saved: C:\git\CAA2026-alligator\output\events_timeline.jpg
-✓ Allen matrix saved: C:\git\CAA2026-alligator\output\allen_matrix.jpg
-✓ Allen chain saved: C:\git\CAA2026-alligator\output\allen_chain.jpg
+✓ Timeline saved: c:\git\CAA2026-alligator\output\cluster_timeline.jpg
+✓ Events timeline saved: c:\git\CAA2026-alligator\output\events_timeline.jpg
+✓ Allen matrix saved: c:\git\CAA2026-alligator\output\allen_matrix.jpg
+✓ Allen chain saved: c:\git\CAA2026-alligator\output\allen_chain.jpg
 
 ============================================================
 Done!
-Report saved: C:\git\CAA2026-alligator\output\report.txt
+Report saved: c:\git\CAA2026-alligator\output\report.txt
 ============================================================
