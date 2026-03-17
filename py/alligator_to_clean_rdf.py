@@ -33,8 +33,15 @@ from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
+import matplotlib
+
+matplotlib.use("Agg")  # Non-interactive backend — no display required
+import matplotlib.pyplot as plt
+from matplotlib.ticker import AutoMinorLocator
 from rdflib import Graph, Literal, Namespace, RDF, RDFS, URIRef
 from rdflib.namespace import DC, XSD
+from shapely.geometry import MultiPoint
+from shapely import wkt as shapely_wkt
 
 
 # ==============================================================================
@@ -449,6 +456,7 @@ def create_rdf_graph() -> Graph:
     g.bind("aecol", AE_COLLECTIONS)
     g.bind("rdfs", RDFS)
     g.bind("time", OWL_TIME)
+    g.bind("lado", LADO)
     return g
 
 
@@ -849,7 +857,509 @@ def add_more_events_to_graph(g: Graph, more_events_df: pd.DataFrame) -> list:
 
 
 # ==============================================================================
-# SECTION 13 · Main Entry Point
+# SECTION 13 · Period Cluster Detection
+# ==============================================================================
+# Two Alligator events belong to the same PeriodCluster when their
+# estimatedstart AND estimatedend values are exactly equal (no tolerance).
+# This reflects the nearest-neighbour logic of the Alligator algorithm:
+# identical boundaries are never coincidental — they are the same period.
+#
+# Each cluster is modelled as:
+#   lado:PeriodCluster  – new LADO class for a group of co-dated events
+#   time:Interval       – OWL-Time interval with begin/end Instants
+#   lado:hasClusterMember → each member event URI
+#   geosparql:hasGeometry → a sf:Polygon ConvexHull of all member points
+#   geosparql:FeatureCollection → all member site URIs
+
+
+def build_period_clusters(events: dict, findspots_df: pd.DataFrame) -> list[dict]:
+    """Group Alligator events into PeriodClusters by identical start/end values.
+
+    Uses the events dict loaded directly from the TTL (all 44 events) rather
+    than the merged DataFrame, which is incomplete due to CSV parsing issues.
+    WKT geometries are looked up from findspots_df by label matching.
+
+    Parameters
+    ----------
+    events       : dict        Output of `load_alligator_events` (label → event data).
+    findspots_df : pd.DataFrame Output of `load_findspots_csv` (contains wkt column).
+
+    Returns
+    -------
+    list[dict]
+        One dict per cluster, sorted by start year, with keys:
+            start   – shared estimatedstart value (float)
+            end     – shared estimatedend value (float)
+            members – list of dicts: event_uri, label, wkt
+    """
+    print("\nDetecting period clusters...")
+
+    # Build a label → wkt lookup from the findspots CSV
+    wkt_lookup = {}
+    for _, row in findspots_df.iterrows():
+        if pd.notna(row.get("wkt")) and str(row["wkt"]).strip():
+            wkt_lookup[str(row["label"]).strip()] = str(row["wkt"]).strip()
+
+    # Group by (estimatedstart, estimatedend) — exact match only
+    from collections import defaultdict
+
+    groups = defaultdict(list)
+
+    for label, event in events.items():
+        start_str = event.get("estimatedstart", "").strip()
+        end_str = event.get("estimatedend", "").strip()
+        if not start_str or not end_str:
+            continue
+        try:
+            start = float(start_str)
+            end = float(end_str)
+        except ValueError:
+            continue
+
+        groups[(start, end)].append(
+            {
+                "event_uri": event["uri"],
+                "label": label,
+                "wkt": wkt_lookup.get(label),  # None if not in CSV
+            }
+        )
+
+    clusters = [
+        {"start": start, "end": end, "members": members}
+        for (start, end), members in sorted(groups.items())
+    ]
+
+    print(f"✓ {len(clusters)} period clusters detected")
+    for c in clusters:
+        print(
+            f"  [{c['start']:>8.1f} – {c['end']:>8.1f}]  "
+            f"{len(c['members']):2d} member(s): "
+            f"{[m['label'] for m in c['members']]}"
+        )
+
+    return clusters
+
+
+def _build_convex_hull_wkt(wkt_list: list) -> str | None:
+    """Compute a ConvexHull from a list of WKT Point strings using Shapely.
+
+    Parameters
+    ----------
+    wkt_list : list
+        WKT strings, e.g. ["POINT(8.5 51.2)", ...]. None values are skipped.
+
+    Returns
+    -------
+    str | None
+        WKT string of the ConvexHull polygon, or None if fewer than 3
+        valid points are available (degenerate geometry).
+    """
+    points = []
+    for wkt_str in wkt_list:
+        if not wkt_str:
+            continue
+        try:
+            geom = shapely_wkt.loads(wkt_str)
+            points.append(geom)
+        except Exception:
+            pass  # Skip malformed WKT
+
+    if len(points) < 2:
+        return None  # Need at least 2 points; MultiPoint.convex_hull of 1 = Point
+
+    hull = MultiPoint([(p.x, p.y) for p in points]).convex_hull
+    return hull.wkt
+
+
+def add_period_clusters_to_graph(g: Graph, clusters: list) -> list:
+    """Add PeriodCluster nodes to the RDF graph.
+
+    Each cluster receives:
+    - rdf:type  lado:PeriodCluster
+    - rdf:type  time:Interval
+    - rdfs:label  (auto-generated from year range)
+    - time:hasBeginning / time:hasEnd  →  time:Instant with time:inXSDgYear
+    - lado:hasClusterMember  →  each member event URI
+    - geosparql:hasGeometry  →  sf:Polygon ConvexHull of member points
+    - geosparql:FeatureCollection membership (bidirectional)
+
+    Parameters
+    ----------
+    g        : Graph   RDF graph to write into.
+    clusters : list    Output of `build_period_clusters`.
+
+    Returns
+    -------
+    list
+        URIRefs of all PeriodCluster nodes added (in cluster order).
+    """
+    print("\nAdding period clusters to graph...")
+
+    cluster_uris = []
+
+    for idx, cluster in enumerate(clusters):
+        start_yr = round(cluster["start"])
+        end_yr = round(cluster["end"])
+
+        # URI uses zero-padded years; bc/ad prefix for readability
+        start_str = f"{'bc' if start_yr < 0 else 'ad'}{abs(start_yr):04d}"
+        end_str = f"{'bc' if end_yr   < 0 else 'ad'}{abs(end_yr):04d}"
+        cluster_uri = AE_COLLECTIONS[f"cluster_{start_str}_{end_str}"]
+        cluster_uris.append(cluster_uri)
+
+        # --- Type assertions ---
+        g.add((cluster_uri, RDF.type, LADO.PeriodCluster))
+        g.add((cluster_uri, RDF.type, OWL_TIME.Interval))
+        g.add((cluster_uri, RDF.type, GEOSPARQL.FeatureCollection))
+
+        # --- Label ---
+        label_str = (
+            f"Period cluster {start_yr} – {end_yr} CE"
+            if start_yr >= 0
+            else f"Period cluster {abs(start_yr)} BCE – "
+            + (f"{abs(end_yr)} BCE" if end_yr < 0 else f"{end_yr} CE")
+        )
+        g.add((cluster_uri, RDFS.label, Literal(label_str, lang="en")))
+
+        # --- OWL-Time temporal boundaries ---
+        begin_uri = URIRef(str(cluster_uri) + "_begin")
+        end_uri = URIRef(str(cluster_uri) + "_end")
+
+        g.add((cluster_uri, OWL_TIME.hasBeginning, begin_uri))
+        g.add((begin_uri, RDF.type, OWL_TIME.Instant))
+        g.add(
+            (
+                begin_uri,
+                OWL_TIME.inXSDgYear,
+                Literal(_year_to_xsd_gyear(start_yr), datatype=XSD.gYear),
+            )
+        )
+
+        g.add((cluster_uri, OWL_TIME.hasEnd, end_uri))
+        g.add((end_uri, RDF.type, OWL_TIME.Instant))
+        g.add(
+            (
+                end_uri,
+                OWL_TIME.inXSDgYear,
+                Literal(_year_to_xsd_gyear(end_yr), datatype=XSD.gYear),
+            )
+        )
+
+        # --- Member links + FeatureCollection membership ---
+        wkt_list = []
+        for member in cluster["members"]:
+            member_uri = URIRef(member["event_uri"])
+            g.add((cluster_uri, LADO.hasClusterMember, member_uri))
+            g.add((cluster_uri, GEOSPARQL.hasFeature, member_uri))
+            g.add((member_uri, GEOSPARQL.memberOf, cluster_uri))
+            if member["wkt"]:
+                wkt_list.append(member["wkt"])
+
+        # --- ConvexHull geometry ---
+        hull_wkt = _build_convex_hull_wkt(wkt_list)
+        if hull_wkt:
+            geom_uri = URIRef(str(cluster_uri) + "_geom")
+            wkt_literal = Literal(
+                f"<http://www.opengis.net/def/crs/EPSG/0/4326> {hull_wkt}",
+                datatype=GEOSPARQL.wktLiteral,
+            )
+            g.add((cluster_uri, GEOSPARQL.hasGeometry, geom_uri))
+            g.add((geom_uri, RDF.type, SF.Polygon))
+            g.add((geom_uri, GEOSPARQL.asWKT, wkt_literal))
+        else:
+            print(f"  ⚠ Not enough points for ConvexHull: {label_str}")
+
+    print(f"✓ {len(cluster_uris)} period clusters added to graph")
+    return cluster_uris
+
+
+# ==============================================================================
+# SECTION 14 · Allen's Interval Relations Between Clusters
+# ==============================================================================
+# Allen (1983) defines 13 mutually exclusive temporal relations between
+# intervals. OWL-Time implements all 13 as object properties on time:Interval.
+# This section computes the applicable relation(s) for every ordered pair of
+# PeriodClusters and writes them explicitly into the graph.
+#
+# All 13 Allen relations and their OWL-Time properties:
+#
+#   Relation        OWL-Time property          Condition (s=start, e=end)
+#   ─────────────────────────────────────────────────────────────────────
+#   precedes        time:intervalBefore         A.end  <  B.start
+#   meets           time:intervalMeets          A.end  == B.start
+#   overlaps        time:intervalOverlaps       A.start < B.start < A.end < B.end
+#   finished-by     time:intervalFinishedBy     A.start < B.start, A.end == B.end
+#   contains        time:intervalContains       A.start < B.start, A.end > B.end
+#   starts          time:intervalStarts         A.start == B.start, A.end < B.end
+#   equals          time:intervalEquals         A.start == B.start, A.end == B.end
+#   started-by      time:intervalStartedBy      A.start == B.start, A.end > B.end
+#   during          time:intervalDuring         A.start > B.start, A.end < B.end
+#   finishes        time:intervalFinishes       A.start > B.start, A.end == B.end
+#   overlapped-by   time:intervalOverlappedBy   B.start < A.start < B.end < A.end
+#   met-by          time:intervalMetBy          B.end  == A.start
+#   preceded-by     time:intervalAfter          B.end  <  A.start
+#
+# Note: equals is symmetric; the other 12 come in inverse pairs. We write
+# both directions explicitly so queries work regardless of which subject is used.
+
+
+def _allen_relations(
+    a_start: float, a_end: float, b_start: float, b_end: float
+) -> list:
+    """Return the list of OWL-Time Allen relation properties that hold between
+    interval A [a_start, a_end] and interval B [b_start, b_end].
+
+    Returns
+    -------
+    list of URIRef
+        OWL-Time property URIs for the applicable Allen relation(s).
+    """
+    relations = []
+
+    if a_end < b_start:
+        relations.append(OWL_TIME.intervalBefore)
+    elif a_end == b_start:
+        relations.append(OWL_TIME.intervalMeets)
+    elif a_start < b_start and b_start < a_end and a_end < b_end:
+        relations.append(OWL_TIME.intervalOverlaps)
+    elif a_start < b_start and a_end == b_end:
+        relations.append(OWL_TIME.intervalFinishedBy)
+    elif a_start < b_start and a_end > b_end:
+        relations.append(OWL_TIME.intervalContains)
+    elif a_start == b_start and a_end < b_end:
+        relations.append(OWL_TIME.intervalStarts)
+    elif a_start == b_start and a_end == b_end:
+        relations.append(OWL_TIME.intervalEquals)
+    elif a_start == b_start and a_end > b_end:
+        relations.append(OWL_TIME.intervalStartedBy)
+    elif a_start > b_start and a_end < b_end:
+        relations.append(OWL_TIME.intervalDuring)
+    elif a_start > b_start and a_end == b_end:
+        relations.append(OWL_TIME.intervalFinishes)
+    elif b_start < a_start and a_start < b_end and b_end < a_end:
+        relations.append(OWL_TIME.intervalOverlappedBy)
+    elif b_end == a_start:
+        relations.append(OWL_TIME.intervalMetBy)
+    elif b_end < a_start:
+        relations.append(OWL_TIME.intervalAfter)
+
+    return relations
+
+
+def add_allen_relations_to_graph(
+    g: Graph,
+    clusters: list,
+    cluster_uris: list,
+) -> int:
+    """Compute and write all Allen interval relations between PeriodClusters.
+
+    Iterates over every ordered pair (A, B) of clusters and asserts the
+    applicable OWL-Time Allen relation triple(s). Both directions are written
+    explicitly (A → B and B → A) so queries work from either subject.
+
+    Parameters
+    ----------
+    g            : Graph  RDF graph to write into.
+    clusters     : list   Output of `build_period_clusters`.
+    cluster_uris : list   Output of `add_period_clusters_to_graph` (same order).
+
+    Returns
+    -------
+    int
+        Total number of Allen relation triples written.
+    """
+    print("\nComputing Allen interval relations between clusters...")
+
+    triple_count = 0
+
+    for i in range(len(clusters)):
+        for j in range(len(clusters)):
+            if i == j:
+                continue
+
+            a_uri = cluster_uris[i]
+            b_uri = cluster_uris[j]
+            a_start = clusters[i]["start"]
+            a_end = clusters[i]["end"]
+            b_start = clusters[j]["start"]
+            b_end = clusters[j]["end"]
+
+            for rel in _allen_relations(a_start, a_end, b_start, b_end):
+                g.add((a_uri, rel, b_uri))
+                triple_count += 1
+
+    print(
+        f"✓ {triple_count} Allen relation triples written across "
+        f"{len(clusters)} clusters"
+    )
+    return triple_count
+
+
+# ==============================================================================
+# SECTION 16 · Visualisations
+# ==============================================================================
+# Produces JPEG figures saved to OUTPUT_DIR.
+# All plot functions are self-contained: they take only plain Python data
+# structures (no rdflib objects) so they can be called independently in a
+# notebook without re-running the full RDF pipeline.
+
+
+def _format_year_label(year: float) -> str:
+    """Return a human-readable year label, e.g. '15 BC' or 'AD 9'."""
+    y = round(year)
+    return f"{abs(y)} BC" if y < 0 else f"AD {y}"
+
+
+def plot_cluster_timeline(clusters: list, output_path: Path):
+    """Draw a horizontal timeline showing all PeriodClusters as labelled bars.
+
+    Each cluster is rendered as a horizontal bar spanning [start, end].
+    Clusters are sorted by start year (earliest at top) and stacked
+    vertically. Member count and year range are shown inside / beside
+    each bar. A colour gradient encodes the number of members.
+
+    Parameters
+    ----------
+    clusters    : list   Output of `build_period_clusters`.
+    output_path : Path   Destination JPEG file.
+    """
+    if not clusters:
+        print("  ⚠ No clusters to plot — skipping timeline.")
+        return
+
+    # Sort earliest-start first (top of chart)
+    sorted_clusters = sorted(clusters, key=lambda c: c["start"])
+    n = len(sorted_clusters)
+
+    # --- Figure layout ---
+    fig_h = max(4, n * 0.65 + 2)
+    fig, ax = plt.subplots(figsize=(14, fig_h))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("#f7f7f7")
+
+    # Colour map: member count → colour intensity
+    max_members = max(len(c["members"]) for c in sorted_clusters)
+    cmap = plt.get_cmap("YlOrRd")
+
+    bar_height = 0.55
+    y_positions = list(range(n))
+
+    for i, cluster in enumerate(sorted_clusters):
+        y = y_positions[i]
+        start = cluster["start"]
+        end = cluster["end"]
+        duration = end - start if end != start else 0.5  # point-in-time: thin bar
+        n_members = len(cluster["members"])
+
+        colour = cmap(0.3 + 0.7 * (n_members / max_members))
+
+        # Bar
+        ax.barh(
+            y,
+            duration,
+            left=start,
+            height=bar_height,
+            color=colour,
+            edgecolor="#00000022",
+            linewidth=0.5,
+            align="center",
+        )
+
+        # Year range label inside bar (if wide enough) or to the right
+        range_label = f"{_format_year_label(start)} – {_format_year_label(end)}"
+        member_label = f"  {n_members} site{'s' if n_members != 1 else ''}"
+        bar_centre = start + duration / 2
+
+        # Text inside bar
+        ax.text(
+            bar_centre,
+            y,
+            range_label,
+            ha="center",
+            va="center",
+            fontsize=7.5,
+            color="white",
+            fontweight="bold",
+            clip_on=True,
+        )
+
+        # Member count to the right of bar
+        ax.text(
+            end + 0.3,
+            y,
+            member_label,
+            ha="left",
+            va="center",
+            fontsize=7.5,
+            color="#333333",
+        )
+
+    # --- Axes styling ---
+    all_starts = [c["start"] for c in sorted_clusters]
+    all_ends = [c["end"] for c in sorted_clusters]
+    x_min = min(all_starts) - 3
+    x_max = max(all_ends) + 8
+
+    ax.set_xlim(x_min, x_max)
+    ax.set_ylim(-0.8, n - 0.2)
+    ax.set_yticks([])
+
+    # X-axis: convert to BC/AD labels
+    x_ticks = [t for t in range(int(x_min), int(x_max) + 1, 5)]
+    ax.set_xticks(x_ticks)
+    ax.set_xticklabels(
+        [_format_year_label(t) for t in x_ticks],
+        rotation=45,
+        ha="right",
+        fontsize=8,
+        color="#333333",
+    )
+    ax.xaxis.set_minor_locator(AutoMinorLocator(5))
+    ax.tick_params(axis="x", which="minor", length=3, color="#aaaaaa")
+    ax.tick_params(axis="x", which="major", length=6, color="#888888")
+
+    # Grid lines — only subtle ticks on x-axis, no vertical lines through bars
+    ax.set_axisbelow(True)
+    ax.grid(axis="x", which="major", color="#dddddd", linewidth=0.5, zorder=0)
+    ax.grid(axis="x", which="minor", visible=False)
+
+    # Spine styling
+    for spine in ax.spines.values():
+        spine.set_edgecolor("#cccccc")
+
+    # Colorbar gradient legend (continuous, not discrete patches)
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin=1, vmax=max_members))
+    sm.set_array([])
+    cbar = fig.colorbar(
+        sm, ax=ax, orientation="vertical", fraction=0.02, pad=0.02, aspect=20
+    )
+    cbar.set_label("Number of sites", fontsize=8, color="#333333")
+    cbar.ax.yaxis.set_tick_params(color="#333333", labelsize=7)
+    plt.setp(cbar.ax.yaxis.get_ticklabels(), color="#333333")
+
+    ax.set_title(
+        "Alligator Period Clusters — Timeline",
+        color="#111111",
+        fontsize=13,
+        fontweight="bold",
+        pad=12,
+    )
+    ax.set_xlabel("Year", color="#333333", fontsize=9)
+
+    plt.tight_layout()
+    fig.savefig(
+        str(output_path),
+        dpi=150,
+        format="jpeg",
+        bbox_inches="tight",
+        facecolor=fig.get_facecolor(),
+    )
+    plt.close(fig)
+    print(f"✓ Timeline saved: {output_path}")
+
+
+# ==============================================================================
+# SECTION 17 · Main Entry Point
 # ==============================================================================
 # When converting to a notebook, replace this function with one cell per step.
 # The Logger/sys.stdout redirect is intentionally confined here and should be
@@ -897,11 +1407,24 @@ def main():
         more_events_df = load_more_events(MORE_EVENTS_FILE)
         add_more_events_to_graph(rdf_graph, more_events_df)
 
-        # Step 8 – Re-serialise the combined graph (overwrites the Step 6 file)
+        # Step 8 – Build period clusters directly from TTL events
+        clusters = build_period_clusters(events, findspots_df)
+        cluster_uris = add_period_clusters_to_graph(rdf_graph, clusters)
+
+        # Step 9 – Compute and write Allen interval relations between clusters
+        add_allen_relations_to_graph(rdf_graph, clusters, cluster_uris)
+
+        # Step 10 – Serialise the final combined graph
         output_file = OUTPUT_DIR / "arretine_sites_minigraph.ttl"
         rdf_graph.serialize(destination=str(output_file), format="turtle")
-        print(f"\n✓ Combined RDF graph saved: {output_file}")
+        print(f"\n✓ Final RDF graph saved: {output_file}")
         print(f"  Triples total: {len(rdf_graph)}")
+
+        # Step 11 – Visualisations
+        print("\n" + "=" * 60)
+        print("Visualisations")
+        print("=" * 60)
+        plot_cluster_timeline(clusters, OUTPUT_DIR / "cluster_timeline.jpg")
 
         print("\n" + "=" * 60)
         print("Done!")

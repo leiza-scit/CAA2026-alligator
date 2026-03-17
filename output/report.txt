@@ -1,6 +1,6 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 11:06:05
+Timestamp: 2026-03-17 11:34:11
 ============================================================
 Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
@@ -41,8 +41,35 @@ Loading additional events: c:\git\CAA2026-alligator\data\MoreEvents.csv
 Adding supplementary events to graph...
 ✓ 4 supplementary events added to graph
 
-✓ Combined RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
-  Triples total: 755
+Detecting period clusters...
+✓ 10 period clusters detected
+  [   -16.0 –     -9.0]   2 member(s): ['Nijmegen, Lager', 'Zürich, Lindenhof']
+  [   -16.0 –      8.0]   4 member(s): ['Vindoniss, Militärstation', 'Neuss', 'Asberg, Lager', 'Liberchies']
+  [   -16.0 –      9.0]   3 member(s): ['Basel, Lagerdorf', 'Lausanne-Vidy', 'Augsburg-Oberhausen']
+  [   -16.0 –     13.0]   1 member(s): ['Worms']
+  [   -15.0 –     -9.0]   3 member(s): ['Basel, Lager', 'Dangstetten', 'Titelberg']
+  [   -12.0 –      8.0]   2 member(s): ['Rödgen', 'Namur']
+  [   -11.0 –      8.0]   1 member(s): ['Oberaden']
+  [    -7.0 –      9.0]  12 member(s): ['Conimbriga', 'Tongeren', 'Bonn, Boeselagerhof', 'Nijmegen, Lager (Brunsting)', 'Vetera I', 'Bad Nauheim', 'Haltern', 'Asberg, Lagerdorf', 'Braives', 'Lorenzberg', 'Mainz, Legionslager', 'Vindonissa, Scheuerhof']
+  [     7.0 –     13.0]  10 member(s): ['Augst, Insula 31', 'Bregenz', 'Nijmegen, Trajanusplein', 'Nijmegen, Valkhof', 'Augsburg, Stadt', 'Avences, Insula 15', 'Friedberg', 'Oberwinterthur, Römerstr. 186', 'Vindonissa, Königsfelden', 'Wiesbaden']
+  [    16.0 –     28.0]   6 member(s): ['Augst, Insula 20', 'Vechten', 'Augst, Theater', 'Maastricht', 'Velsen', 'Zurzach, Lager']
+
+Adding period clusters to graph...
+  ⚠ Not enough points for ConvexHull: Period cluster 16 BCE – 9 BCE
+  ⚠ Not enough points for ConvexHull: Period cluster 16 BCE – 13 CE
+  ⚠ Not enough points for ConvexHull: Period cluster 11 BCE – 8 CE
+✓ 10 period clusters added to graph
+
+Computing Allen interval relations between clusters...
+✓ 90 Allen relation triples written across 10 clusters
+
+✓ Final RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
+  Triples total: 1098
+
+============================================================
+Visualisations
+============================================================
+✓ Timeline saved: c:\git\CAA2026-alligator\output\cluster_timeline.jpg
 
 ============================================================
 Done!
