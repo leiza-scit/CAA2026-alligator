@@ -1,6 +1,6 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 10:46:05
+Timestamp: 2026-03-17 10:58:07
 ============================================================
 Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
@@ -35,6 +35,14 @@ Graph statistics:
   Triples total      : 581
   Sites              : 24
   FeatureCollections : 1
+Loading additional events: c:\git\CAA2026-alligator\data\MoreEvents.csv
+✓ 4 additional events loaded
+
+Adding supplementary events to graph...
+✓ 4 supplementary events added to graph
+
+✓ Combined RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
+  Triples total: 617
 
 ============================================================
 Done!

@@ -11,7 +11,8 @@ Pipeline
 3. Create a label-based mapping table (exact + fuzzy matching)
 4. Merge mapped event data into the findspot table
 5. Convert the enriched table into an RDF graph
-6. Serialise the graph as Turtle and save all outputs
+6. Load additional events from MoreEvents.csv and add them as OWL-Time + CIDOC-CRM nodes
+7. Serialise the combined graph as Turtle and save all outputs
 
 Note on notebook conversion
 ----------------------------
@@ -57,6 +58,7 @@ OUTPUT_DIR = REPO_ROOT / "output"
 # ---------------------------------------------------------------------------
 TTL_FILE = DATA_DIR / "ArretineDatedSitesServicesI_II.ttl"
 CSV_FILE = DATA_DIR / "ArretineDatedSitesServicesI_II_findspots.csv"
+MORE_EVENTS_FILE = DATA_DIR / "MoreEvents.csv"
 
 # ---------------------------------------------------------------------------
 # Namespaces – Alligator input
@@ -77,6 +79,7 @@ LADO = Namespace("http://archaeology.link/ontology#")
 CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
 AE_SITES = Namespace("http://leiza-scit.github.io/CAA2026-alligator/")
 AE_COLLECTIONS = Namespace("http://leiza-scit.github.io/CAA2026-alligator/collections/")
+OWL_TIME = Namespace("http://www.w3.org/2006/time#")
 
 # ---------------------------------------------------------------------------
 # Feature Collection URI
@@ -395,6 +398,7 @@ def create_rdf_graph() -> Graph:
     g.bind("ae", AE_SITES)
     g.bind("aecol", AE_COLLECTIONS)
     g.bind("rdfs", RDFS)
+    g.bind("time", OWL_TIME)
     return g
 
 
@@ -616,7 +620,192 @@ def convert_to_rdf(merged_df: pd.DataFrame) -> Graph:
 
 
 # ==============================================================================
-# SECTION 11 · Main Entry Point
+# SECTION 11 · Load Additional Events (MoreEvents.csv)
+# ==============================================================================
+# These are historically significant events (e.g. military campaigns) that are
+# not part of the Alligator findspot pipeline but should appear in the same RDF
+# graph as temporal context. Each row carries a label, a start year, and an end
+# year (negative values = BCE).
+
+
+def load_more_events(csv_path: Path) -> pd.DataFrame:
+    """Load the supplementary events CSV into a Pandas DataFrame.
+
+    Expected columns
+    ----------------
+    label : str   Human-readable event name.
+    start : int   Start year (negative = BCE).
+    end   : int   End year   (negative = BCE).
+
+    Parameters
+    ----------
+    csv_path : Path
+        Path to MoreEvents.csv.
+
+    Returns
+    -------
+    pd.DataFrame
+        One row per event, with whitespace stripped from the label column.
+    """
+    print(f"Loading additional events: {csv_path}")
+
+    if not csv_path.exists():
+        raise FileNotFoundError(f"MoreEvents file not found: {csv_path.absolute()}")
+
+    df = pd.read_csv(csv_path)
+
+    # Strip accidental whitespace from the start/end columns (e.g. "- 9" → "-9")
+    df["start"] = pd.to_numeric(
+        df["start"].astype(str).str.replace(r"\s+", "", regex=True), errors="coerce"
+    )
+    df["end"] = pd.to_numeric(
+        df["end"].astype(str).str.replace(r"\s+", "", regex=True), errors="coerce"
+    )
+    df["label"] = df["label"].str.strip()
+
+    print(f"✓ {len(df)} additional events loaded")
+    return df
+
+
+# ==============================================================================
+# SECTION 12 · Add MoreEvents to the RDF Graph
+# ==============================================================================
+# Modelling pattern
+# -----------------
+# Each event is typed as:
+#   crm:E7_Activity   – CIDOC-CRM class for intentional human activities
+#                       (campaigns are goal-directed, so E7 is preferred over
+#                        the more abstract E5_Event)
+#   time:Interval     – OWL-Time interval to carry temporal boundaries
+#
+# Temporal boundaries use the OWL-Time reified pattern:
+#   <event>  time:hasBeginning  <event_begin>
+#   <event>  time:hasEnd        <event_end>
+#   <event_begin/end>  rdf:type          time:Instant
+#   <event_begin/end>  time:inXSDgYear   "YYYY"^^xsd:gYear
+#
+# xsd:gYear uses the proleptic Gregorian calendar. Negative years are
+# serialised as "-0014" (note: XSD gYear uses astronomical year numbering,
+# so 1 BCE = 0000, 2 BCE = -0001, etc.).
+
+
+# rdflib delegates xsd:gYear validation to isodate, which does not handle
+# negative (BCE) years and raises ISO8601Error for values like "-0015".
+#
+# Fix: monkey-patch rdflib.term._castLexicalToPython to intercept gYear
+# calls and return the lexical string unchanged. This is more robust than
+# manipulating the internal _toPythonMapping dict, whose name varies across
+# rdflib versions. rdflib only uses the return value for in-memory Python
+# objects; the serialised Turtle output is always taken from the lexical form
+# and is therefore unaffected.
+try:
+    import rdflib.term as _rdflib_term
+
+    _original_cast = _rdflib_term._castLexicalToPython  # type: ignore[attr-defined]
+    _GYEAR_URI = str(XSD.gYear)
+
+    def _patched_cast(lexical: str, datatype):  # type: ignore[no-untyped-def]
+        if str(datatype) == _GYEAR_URI:
+            return lexical  # Return the string as-is; isodate cannot handle BCE years
+        return _original_cast(lexical, datatype)
+
+    _rdflib_term._castLexicalToPython = _patched_cast  # type: ignore[attr-defined]
+except Exception:
+    pass  # Harmless if the internal API changes in a future rdflib version
+
+
+def _year_to_xsd_gyear(year: int) -> str:
+    """Convert an integer year to an XSD gYear lexical value.
+
+    XSD gYear uses astronomical year numbering:
+      1 BCE  →  0000
+      2 BCE  → -0001
+      1 CE   →  0001
+
+    Parameters
+    ----------
+    year : int
+        Astronomical year (negative = BCE, 0 = 1 BCE).
+
+    Returns
+    -------
+    str
+        Zero-padded XSD gYear string, e.g. "-0015" or "0009".
+    """
+    # Historian's BCE years (e.g. -15 meaning "15 BCE") are already in
+    # astronomical notation in this dataset, so no offset adjustment needed.
+    if year < 0:
+        return f"-{abs(year):04d}"
+    return f"{year:04d}"
+
+
+def add_more_events_to_graph(g: Graph, more_events_df: pd.DataFrame) -> list:
+    """Add supplementary events from MoreEvents.csv to an existing RDF graph.
+
+    Each event receives:
+    - rdf:type  crm:E7_Activity  (CIDOC-CRM intentional activity)
+    - rdf:type  time:Interval    (OWL-Time temporal interval)
+    - rdfs:label
+    - time:hasBeginning / time:hasEnd  →  reified time:Instant nodes
+      with time:inXSDgYear literals
+
+    Parameters
+    ----------
+    g               : Graph        The graph to write into (modified in place).
+    more_events_df  : pd.DataFrame Output of `load_more_events`.
+
+    Returns
+    -------
+    list
+        URIRefs of all event nodes added.
+    """
+    print("\nAdding supplementary events to graph...")
+
+    event_uris = []
+
+    for _, row in more_events_df.iterrows():
+        event_id = sanitize_id(row["label"])
+        event_uri = AE_SITES[f"event_{event_id}"]
+        event_uris.append(event_uri)
+
+        # --- Type assertions ---
+        g.add((event_uri, RDF.type, CRM.E7_Activity))  # CIDOC-CRM: intentional activity
+        g.add((event_uri, RDF.type, OWL_TIME.Interval))  # OWL-Time: temporal interval
+
+        # --- Label ---
+        g.add((event_uri, RDFS.label, Literal(row["label"], lang="en")))
+
+        # --- Temporal boundaries (OWL-Time reified pattern) ---
+        if pd.notna(row["start"]):
+            begin_uri = URIRef(str(event_uri) + "_begin")
+            g.add((event_uri, OWL_TIME.hasBeginning, begin_uri))
+            g.add((begin_uri, RDF.type, OWL_TIME.Instant))
+            g.add(
+                (
+                    begin_uri,
+                    OWL_TIME.inXSDgYear,
+                    Literal(_year_to_xsd_gyear(int(row["start"])), datatype=XSD.gYear),
+                )
+            )
+
+        if pd.notna(row["end"]):
+            end_uri = URIRef(str(event_uri) + "_end")
+            g.add((event_uri, OWL_TIME.hasEnd, end_uri))
+            g.add((end_uri, RDF.type, OWL_TIME.Instant))
+            g.add(
+                (
+                    end_uri,
+                    OWL_TIME.inXSDgYear,
+                    Literal(_year_to_xsd_gyear(int(row["end"])), datatype=XSD.gYear),
+                )
+            )
+
+    print(f"✓ {len(event_uris)} supplementary events added to graph")
+    return event_uris
+
+
+# ==============================================================================
+# SECTION 13 · Main Entry Point
 # ==============================================================================
 # When converting to a notebook, replace this function with one cell per step.
 # The Logger/sys.stdout redirect is intentionally confined here and should be
@@ -657,8 +846,18 @@ def main():
         merged_df.to_csv(merged_output, index=False)
         print(f"✓ Enriched findspot table saved: {merged_output}")
 
-        # Step 6 – RDF conversion
-        convert_to_rdf(merged_df)
+        # Step 6 – RDF conversion of findspot data
+        rdf_graph = convert_to_rdf(merged_df)
+
+        # Step 7 – Load and integrate supplementary events (MoreEvents.csv)
+        more_events_df = load_more_events(MORE_EVENTS_FILE)
+        add_more_events_to_graph(rdf_graph, more_events_df)
+
+        # Step 8 – Re-serialise the combined graph (overwrites the Step 6 file)
+        output_file = OUTPUT_DIR / "arretine_sites_minigraph.ttl"
+        rdf_graph.serialize(destination=str(output_file), format="turtle")
+        print(f"\n✓ Combined RDF graph saved: {output_file}")
+        print(f"  Triples total: {len(rdf_graph)}")
 
         print("\n" + "=" * 60)
         print("Done!")
