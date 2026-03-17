@@ -1,46 +1,46 @@
-label,wkt,wikidata,pleiades,OSM type,OSM ID,OSM tag,OSM relation
-Trier-Petrisberg,POINT(6.664117 49.752021),Q20578867,108894,way,104871217,historic=archaeological_site,
-Nijmegen, Lager (Haalebos),POINT(5.884209 51.839831),Q1309708,98921,,,,
-Basel, Lager,POINT(7.593 47.5557),Q666479,177468,way,168318389,historic=archaeological_site,
-Vindonissa, Militärstation,POINT(8.233333 47.46667),Q103199316,177661,node,6420816733,historic=castle,
-Neuss,POINT(6.721944 51.183889),Q318196,109215,node,6358516450,historic=archaeological_site,
-Zürich, Lindenhof,POINT(8.540724 47.373008),Q10987378,187596,node,3483897061,historic=archaeological_site,closeMatch
-Dangstetten,POINT(8.31083 47.58889),Q2179590,970740488,way,103687183,landuse=quarry,
-Oberaden,POINT(7.58444 51.6125),Q577724,109229,way,157929084,historic=archaeological_site,
-Titelberg,POINT(5.85972 49.54028),Q1463952,109381,way,32545380,historic=archaeological_site,
-Rödgen,POINT(8.7665 50.371),Q2179598,220408239,node,6700040031,tourism=information,
-Asberg, Lager,POINT(6.67 51.43167),Q723019,108761,way,144455109,natural=scrub,
-Basel, Lagerdorf,POINT(7.593 47.5557),Q666479,177468,node,1796082995,historic=archaeological_site,
-Conimbriga,POINT(-8.49341 40.09905),Q868754,236443,node,7878861331,historic=archaeological_site,
-Lausanne-Vidy,POINT(6.60087 46.51651),Q3264025,177565,way,699387398,historic=archaeological_site,
-Tongeren,POINT(5.46486 50.78096),Q1863929,108765,way,346290310,historic=archaeological_site,
-Augst, Insula 31,POINT(7.72231 47.53323),Q610371,177494,way,107475507,building=yes,closeMatch
-Bonn, Boeselagerhof,POINT(7.09938 50.7448),Q1146198,108818,node,1191145951,information=tactile_model,
-Liberchies,POINT(4.44349 50.51455),Q2371918,109003,,,,
-Nijmegen, Lager (Brunsting),POINT(5.884209 51.839831),Q1309708,98921,,,,
-Vetera I,POINT(6.46999 1.64639),Q532466,108867,,,,
-Augst, Insula 20,POINT(7.72231 47.53323),Q610371,177494,way,107475469,building=yes,closeMatch
-Bad Nauheim,POINT(8.7522 50.36987),Q2179578,118588,node,333175552,historic=archaeological_site,
-Haltern,POINT(7.17052 51.73947),Q2179592,109029,way,435021824,historic=archaeological_site,
-Asberg, Lagerdorf,POINT(6.67 51.43167),Q723019,108761,,,,
-Augsburg-Oberhausen,POINT(10.88173 48.39021),Q760496,118580,way,55938422,landuse=brownfield,relatedMatch
-Braives,POINT(5.1455 50.6296),Q681153,109245,,,,
-Bregenz,POINT(9.74073 47.4979),Q13452589,187325,,,,
-Lorenzberg,POINT(10.90977 47.90988),Q1346749,187242,,,,
-Mainz, Legionslager,POINT(8.27387 49.99891),Q571790,109169,node,1930543644,historic=archaeological_site,relatedMatch
-Namur,POINT(4.86063 50.45949),Q134121,109188,,,,
-Nijmegen, Trajanusplein,POINT(5.884209 51.839831),Q1309708,98921,,,,
-Nijmegen, Valkhof,POINT(5.884209 51.839831),Q1309708,98921,node,10075892871,tourism=museum,
-Vechten,POINT(5.16186 52.05774),Q2311719,98956,,,,
-Vindonissa, Scheuerhof,POINT(8.233333 47.46667),Q103199316,177661,node,6420816733,historic=castle,
-Worms,POINT(8.35978 49.63007),Q1094541,108820,,,,
-Augsburg, Stadt,POINT(10.89655 48.37277),Q765823,118580,,,,
-Augst, Theater,POINT(7.72231 47.53323),Q610371,177494,node,6654634631,historic=archaeological_site,exactMatch
-Avenches, Insula 15,POINT(7.04067 46.88028),Q670912,177495,way,333211842,building=yes,closeMatch
-Friedberg,POINT(8.7535 50.34167),Q1011847,118681,node,725895648,place=hamlet,
-Maastricht,POINT(5.6938 50.84841),Q2250231,109386,node,2804902056,tourism=museum,
-Oberwinterthur, Römerstr. 186,POINT(8.73756 47.49726),Q164912,187624,way,115007886,building=appartments,closeMatch
-Velsen,POINT(4.66829 52.45207),Q615397,99058,way,106663898,natural=water,closeMatch
-Vindonissa, Königsfelden,POINT(8.233333 47.46667),Q103199316,177661,node,6420816733,historic=castle,
-Wiesbaden,POINT(8.23879 50.08434),Q1094536,108750,way,111263486,tourism=attraction,relatedMatch
-Zurzach, Lager,POINT(8.29349 47.59059),Q25388900,177639,way,1054468269,historic=archaeological_site,
+"label","wkt","wikidata","pleiades","OSM type","OSM ID","OSM tag","OSM relation"
+"Trier-Petrisberg","POINT(6.664117 49.752021)","Q20578867",108894,"way",104871217,"historic=archaeological_site",
+"Nijmegen, Lager (Haalebos)","POINT(5.884209 51.839831)","Q1309708",98921,,,,
+"Basel, Lager","POINT(7.593 47.5557)","Q666479",177468,"way",168318389,"historic=archaeological_site",
+"Vindonissa, Militärstation","POINT(8.233333 47.46667)","Q103199316",177661,"node",6420816733,"historic=castle",
+"Neuss","POINT(6.721944 51.183889)","Q318196",109215,"node",6358516450,"historic=archaeological_site",
+"Zürich, Lindenhof","POINT(8.540724 47.373008)","Q10987378",187596,"node",3483897061,"historic=archaeological_site","closeMatch"
+"Dangstetten","POINT(8.31083 47.58889)","Q2179590",970740488,"way",103687183,"landuse=quarry",
+"Oberaden","POINT(7.58444 51.6125)","Q577724",109229,"way",157929084,"historic=archaeological_site",
+"Titelberg","POINT(5.85972 49.54028)","Q1463952",109381,"way",32545380,"historic=archaeological_site",
+"Rödgen","POINT(8.7665 50.371)","Q2179598",220408239,"node",6700040031,"tourism=information",
+"Asberg, Lager","POINT(6.67 51.43167)","Q723019",108761,"way",144455109,"natural=scrub",
+"Basel, Lagerdorf","POINT(7.593 47.5557)","Q666479",177468,"node",1796082995,"historic=archaeological_site",
+"Conimbriga","POINT(-8.49341 40.09905)","Q868754",236443,"node",7878861331,"historic=archaeological_site",
+"Lausanne-Vidy","POINT(6.60087 46.51651)","Q3264025",177565,"way",699387398,"historic=archaeological_site",
+"Tongeren","POINT(5.46486 50.78096)","Q1863929",108765,"way",346290310,"historic=archaeological_site",
+"Augst, Insula 31","POINT(7.72231 47.53323)","Q610371",177494,"way",107475507,"building=yes","closeMatch"
+"Bonn, Boeselagerhof","POINT(7.09938 50.7448)","Q1146198",108818,"node",1191145951,"information=tactile_model",
+"Liberchies","POINT(4.44349 50.51455)","Q2371918",109003,,,,
+"Nijmegen, Lager (Brunsting)","POINT(5.884209 51.839831)","Q1309708",98921,,,,
+"Vetera I","POINT(6.46999 1.64639)","Q532466",108867,,,,
+"Augst, Insula 20","POINT(7.72231 47.53323)","Q610371",177494,"way",107475469,"building=yes","closeMatch"
+"Bad Nauheim","POINT(8.7522 50.36987)","Q2179578",118588,"node",333175552,"historic=archaeological_site",
+"Haltern","POINT(7.17052 51.73947)","Q2179592",109029,"way",435021824,"historic=archaeological_site",
+"Asberg, Lagerdorf","POINT(6.67 51.43167)","Q723019",108761,,,,
+"Augsburg-Oberhausen","POINT(10.88173 48.39021)","Q760496",118580,"way",55938422,"landuse=brownfield","relatedMatch"
+"Braives","POINT(5.1455 50.6296)","Q681153",109245,,,,
+"Bregenz","POINT(9.74073 47.4979)","Q13452589",187325,,,,
+"Lorenzberg","POINT(10.90977 47.90988)","Q1346749",187242,,,,
+"Mainz, Legionslager","POINT(8.27387 49.99891)","Q571790",109169,"node",1930543644,"historic=archaeological_site","relatedMatch"
+"Namur","POINT(4.86063 50.45949)","Q134121",109188,,,,
+"Nijmegen, Trajanusplein","POINT(5.884209 51.839831)","Q1309708",98921,,,,
+"Nijmegen, Valkhof","POINT(5.884209 51.839831)","Q1309708",98921,"node",10075892871,"tourism=museum",
+"Vechten","POINT(5.16186 52.05774)","Q2311719",98956,,,,
+"Vindonissa, Scheuerhof","POINT(8.233333 47.46667)","Q103199316",177661,"node",6420816733,"historic=castle",
+"Worms","POINT(8.35978 49.63007)","Q1094541",108820,,,,
+"Augsburg, Stadt","POINT(10.89655 48.37277)","Q765823",118580,,,,
+"Augst, Theater","POINT(7.72231 47.53323)","Q610371",177494,"node",6654634631,"historic=archaeological_site","exactMatch"
+"Avenches, Insula 15","POINT(7.04067 46.88028)","Q670912",177495,"way",333211842,"building=yes","closeMatch"
+"Friedberg","POINT(8.7535 50.34167)","Q1011847",118681,"node",725895648,"place=hamlet",
+"Maastricht","POINT(5.6938 50.84841)","Q2250231",109386,"node",2804902056,"tourism=museum",
+"Oberwinterthur, Römerstr. 186","POINT(8.73756 47.49726)","Q164912",187624,"way",115007886,"building=appartments","closeMatch"
+"Velsen","POINT(4.66829 52.45207)","Q615397",99058,"way",106663898,"natural=water","closeMatch"
+"Vindonissa, Königsfelden","POINT(8.233333 47.46667)","Q103199316",177661,"node",6420816733,"historic=castle",
+"Wiesbaden","POINT(8.23879 50.08434)","Q1094536",108750,"way",111263486,"tourism=attraction","relatedMatch"
+"Zurzach, Lager","POINT(8.29349 47.59059)","Q25388900",177639,"way",1054468269,"historic=archaeological_site",

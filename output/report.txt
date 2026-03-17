@@ -1,17 +1,17 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 11:34:11
+Timestamp: 2026-03-17 11:54:31
 ============================================================
 Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
 Loading CSV file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II_findspots.csv
-✓ 24 findspots loaded
+✓ 45 findspots loaded
 
 Building mapping table...
 
 ✓ Mapping complete:
-  Exact matches : 23
-  Fuzzy matches : 0
+  Exact matches : 43
+  Fuzzy matches : 1
   No match      : 1
 
   ⚠ Unmatched findspots (1):
@@ -24,16 +24,16 @@ Building mapping table...
 RDF Conversion
 ============================================================
 
-✓ 24 sites added to graph
-  With event URI : 23
+✓ 45 sites added to graph
+  With event URI : 44
   Fallback URI   : 1
-✓ FeatureCollection created with 24 features
+✓ FeatureCollection created with 45 features
 
 ✓ RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
 
 Graph statistics:
-  Triples total      : 719
-  Sites              : 24
+  Triples total      : 1368
+  Sites              : 45
   FeatureCollections : 1
 Loading additional events: c:\git\CAA2026-alligator\data\MoreEvents.csv
 ✓ 4 additional events loaded
@@ -44,27 +44,24 @@ Adding supplementary events to graph...
 Detecting period clusters...
 ✓ 10 period clusters detected
   [   -16.0 –     -9.0]   2 member(s): ['Nijmegen, Lager', 'Zürich, Lindenhof']
-  [   -16.0 –      8.0]   4 member(s): ['Vindoniss, Militärstation', 'Neuss', 'Asberg, Lager', 'Liberchies']
+  [   -16.0 –      8.0]   4 member(s): ['Vindonissa, Militärstation', 'Neuss', 'Asberg, Lager', 'Liberchies']
   [   -16.0 –      9.0]   3 member(s): ['Basel, Lagerdorf', 'Lausanne-Vidy', 'Augsburg-Oberhausen']
   [   -16.0 –     13.0]   1 member(s): ['Worms']
   [   -15.0 –     -9.0]   3 member(s): ['Basel, Lager', 'Dangstetten', 'Titelberg']
   [   -12.0 –      8.0]   2 member(s): ['Rödgen', 'Namur']
   [   -11.0 –      8.0]   1 member(s): ['Oberaden']
   [    -7.0 –      9.0]  12 member(s): ['Conimbriga', 'Tongeren', 'Bonn, Boeselagerhof', 'Nijmegen, Lager (Brunsting)', 'Vetera I', 'Bad Nauheim', 'Haltern', 'Asberg, Lagerdorf', 'Braives', 'Lorenzberg', 'Mainz, Legionslager', 'Vindonissa, Scheuerhof']
-  [     7.0 –     13.0]  10 member(s): ['Augst, Insula 31', 'Bregenz', 'Nijmegen, Trajanusplein', 'Nijmegen, Valkhof', 'Augsburg, Stadt', 'Avences, Insula 15', 'Friedberg', 'Oberwinterthur, Römerstr. 186', 'Vindonissa, Königsfelden', 'Wiesbaden']
+  [     7.0 –     13.0]  10 member(s): ['Augst, Insula 31', 'Bregenz', 'Nijmegen, Trajanusplein', 'Nijmegen, Valkhof', 'Augsburg, Stadt', 'Avenches, Insula 15', 'Friedberg', 'Oberwinterthur, Römerstr. 186', 'Vindonissa, Königsfelden', 'Wiesbaden']
   [    16.0 –     28.0]   6 member(s): ['Augst, Insula 20', 'Vechten', 'Augst, Theater', 'Maastricht', 'Velsen', 'Zurzach, Lager']
 
 Adding period clusters to graph...
-  ⚠ Not enough points for ConvexHull: Period cluster 16 BCE – 9 BCE
-  ⚠ Not enough points for ConvexHull: Period cluster 16 BCE – 13 CE
-  ⚠ Not enough points for ConvexHull: Period cluster 11 BCE – 8 CE
 ✓ 10 period clusters added to graph
 
 Computing Allen interval relations between clusters...
 ✓ 90 Allen relation triples written across 10 clusters
 
 ✓ Final RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
-  Triples total: 1098
+  Triples total: 1756
 
 ============================================================
 Visualisations

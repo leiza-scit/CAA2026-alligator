@@ -93,7 +93,17 @@ OWL_TIME = Namespace("http://www.w3.org/2006/time#")
 # ---------------------------------------------------------------------------
 FEATURE_COLLECTION_URI = AE_COLLECTIONS["arretine_sites"]
 
-# Columns to carry over from the mapping table into the merged findspot table
+# ---------------------------------------------------------------------------
+# Known label corrections
+# These fix confirmed typos in the Alligator TTL output. The mapping step
+# uses the corrected labels so that TTL events match their CSV counterparts.
+# Add new entries here whenever the TTL contains a label that differs from
+# the authoritative CSV label.
+# ---------------------------------------------------------------------------
+TTL_LABEL_CORRECTIONS = {
+    "Vindoniss, Militärstation": "Vindonissa, Militärstation",
+    "Avences, Insula 15": "Avenches, Insula 15",
+}
 MAPPING_COLS = [
     "csv_label",
     "event_uri",
@@ -247,6 +257,10 @@ def load_alligator_events(ttl_path: Path) -> dict:
             continue
 
         label_str = str(label)
+
+        # Apply known TTL label corrections (see TTL_LABEL_CORRECTIONS in Section 2)
+        label_str = TTL_LABEL_CORRECTIONS.get(label_str, label_str)
+
         events[label_str] = {
             "uri": str(event_uri),
             "identifier": str(
@@ -872,17 +886,20 @@ def add_more_events_to_graph(g: Graph, more_events_df: pd.DataFrame) -> list:
 #   geosparql:FeatureCollection → all member site URIs
 
 
-def build_period_clusters(events: dict, findspots_df: pd.DataFrame) -> list[dict]:
+def build_period_clusters(
+    events: dict,
+    g: Graph,
+) -> list[dict]:
     """Group Alligator events into PeriodClusters by identical start/end values.
 
-    Uses the events dict loaded directly from the TTL (all 44 events) rather
-    than the merged DataFrame, which is incomplete due to CSV parsing issues.
-    WKT geometries are looked up from findspots_df by label matching.
+    Uses the events dict loaded directly from the TTL (all 44 events).
+    WKT geometries are looked up directly from the RDF graph via event URI,
+    which is robust against label spelling discrepancies between TTL and CSV.
 
     Parameters
     ----------
-    events       : dict        Output of `load_alligator_events` (label → event data).
-    findspots_df : pd.DataFrame Output of `load_findspots_csv` (contains wkt column).
+    events : dict   Output of `load_alligator_events` (label → event data).
+    g      : Graph  RDF graph already populated by `convert_to_rdf`.
 
     Returns
     -------
@@ -894,13 +911,28 @@ def build_period_clusters(events: dict, findspots_df: pd.DataFrame) -> list[dict
     """
     print("\nDetecting period clusters...")
 
-    # Build a label → wkt lookup from the findspots CSV
-    wkt_lookup = {}
-    for _, row in findspots_df.iterrows():
-        if pd.notna(row.get("wkt")) and str(row["wkt"]).strip():
-            wkt_lookup[str(row["label"]).strip()] = str(row["wkt"]).strip()
+    # WKT lookup: directly from the graph via event URI → hasGeometry → asWKT.
+    # Fallback: search by rdfs:label in case the site was written as a fallback
+    # URI (i.e. not matched to an Alligator event URI during the mapping step).
+    # This handles TTL label typos like "Vindoniss" vs "Vindonissa".
+    def _get_wkt(event_uri: str, label: str) -> str | None:
+        # 1. Try via event URI directly
+        uri_ref = URIRef(event_uri)
+        for geom_uri in g.objects(uri_ref, GEOSPARQL.hasGeometry):
+            wkt_lit = g.value(geom_uri, GEOSPARQL.asWKT)
+            if wkt_lit:
+                raw = str(wkt_lit)
+                return raw.split("> ", 1)[-1] if "> " in raw else raw
+        # 2. Fallback: find any node in the graph with a matching rdfs:label
+        for subj in g.subjects(RDFS.label, Literal(label, lang="en")):
+            for geom_uri in g.objects(subj, GEOSPARQL.hasGeometry):
+                wkt_lit = g.value(geom_uri, GEOSPARQL.asWKT)
+                if wkt_lit:
+                    raw = str(wkt_lit)
+                    return raw.split("> ", 1)[-1] if "> " in raw else raw
+        return None
 
-    # Group by (estimatedstart, estimatedend) — exact match only
+    # --- Group by (estimatedstart, estimatedend) — exact match only ---
     from collections import defaultdict
 
     groups = defaultdict(list)
@@ -920,7 +952,7 @@ def build_period_clusters(events: dict, findspots_df: pd.DataFrame) -> list[dict
             {
                 "event_uri": event["uri"],
                 "label": label,
-                "wkt": wkt_lookup.get(label),  # None if not in CSV
+                "wkt": _get_wkt(event["uri"], label),
             }
         )
 
@@ -931,17 +963,26 @@ def build_period_clusters(events: dict, findspots_df: pd.DataFrame) -> list[dict
 
     print(f"✓ {len(clusters)} period clusters detected")
     for c in clusters:
+        missing_wkt = [m["label"] for m in c["members"] if not m["wkt"]]
         print(
             f"  [{c['start']:>8.1f} – {c['end']:>8.1f}]  "
             f"{len(c['members']):2d} member(s): "
             f"{[m['label'] for m in c['members']]}"
         )
+        if missing_wkt:
+            print(f"    ⚠ No WKT for: {missing_wkt}")
 
     return clusters
 
 
-def _build_convex_hull_wkt(wkt_list: list) -> str | None:
-    """Compute a ConvexHull from a list of WKT Point strings using Shapely.
+def _build_convex_hull_wkt(wkt_list: list) -> tuple[str, str] | tuple[None, None]:
+    """Compute the convex hull from a list of WKT Point strings using Shapely.
+
+    Returns a (wkt, sf_type) pair where sf_type is the appropriate
+    Simple Features class name for the rdflib graph:
+      1 point  → sf:Point
+      2 points → sf:LineString
+      3+points → sf:Polygon  (true convex hull)
 
     Parameters
     ----------
@@ -950,9 +991,8 @@ def _build_convex_hull_wkt(wkt_list: list) -> str | None:
 
     Returns
     -------
-    str | None
-        WKT string of the ConvexHull polygon, or None if fewer than 3
-        valid points are available (degenerate geometry).
+    tuple[str, str] | tuple[None, None]
+        (wkt_string, sf_type_name) or (None, None) if no valid points found.
     """
     points = []
     for wkt_str in wkt_list:
@@ -960,15 +1000,16 @@ def _build_convex_hull_wkt(wkt_list: list) -> str | None:
             continue
         try:
             geom = shapely_wkt.loads(wkt_str)
-            points.append(geom)
+            points.append((geom.x, geom.y))
         except Exception:
             pass  # Skip malformed WKT
 
-    if len(points) < 2:
-        return None  # Need at least 2 points; MultiPoint.convex_hull of 1 = Point
+    if not points:
+        return None, None
 
-    hull = MultiPoint([(p.x, p.y) for p in points]).convex_hull
-    return hull.wkt
+    hull = MultiPoint(points).convex_hull  # Point / LineString / Polygon
+    geom_type = hull.geom_type  # "Point", "LineString", or "Polygon"
+    return hull.wkt, geom_type
 
 
 def add_period_clusters_to_graph(g: Graph, clusters: list) -> list:
@@ -1055,19 +1096,22 @@ def add_period_clusters_to_graph(g: Graph, clusters: list) -> list:
             if member["wkt"]:
                 wkt_list.append(member["wkt"])
 
-        # --- ConvexHull geometry ---
-        hull_wkt = _build_convex_hull_wkt(wkt_list)
-        if hull_wkt:
+        # --- ConvexHull geometry (Point / LineString / Polygon) ---
+        hull_wkt, sf_type = _build_convex_hull_wkt(wkt_list)
+        if hull_wkt and sf_type:
             geom_uri = URIRef(str(cluster_uri) + "_geom")
             wkt_literal = Literal(
                 f"<http://www.opengis.net/def/crs/EPSG/0/4326> {hull_wkt}",
                 datatype=GEOSPARQL.wktLiteral,
             )
+            sf_class = URIRef(
+                str(SF) + sf_type
+            )  # sf:Point / sf:LineString / sf:Polygon
             g.add((cluster_uri, GEOSPARQL.hasGeometry, geom_uri))
-            g.add((geom_uri, RDF.type, SF.Polygon))
+            g.add((geom_uri, RDF.type, sf_class))
             g.add((geom_uri, GEOSPARQL.asWKT, wkt_literal))
         else:
-            print(f"  ⚠ Not enough points for ConvexHull: {label_str}")
+            print(f"  ⚠ No geometry available for: {label_str}")
 
     print(f"✓ {len(cluster_uris)} period clusters added to graph")
     return cluster_uris
@@ -1408,7 +1452,7 @@ def main():
         add_more_events_to_graph(rdf_graph, more_events_df)
 
         # Step 8 – Build period clusters directly from TTL events
-        clusters = build_period_clusters(events, findspots_df)
+        clusters = build_period_clusters(events, rdf_graph)
         cluster_uris = add_period_clusters_to_graph(rdf_graph, clusters)
 
         # Step 9 – Compute and write Allen interval relations between clusters
