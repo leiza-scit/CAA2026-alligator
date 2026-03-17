@@ -1,45 +1,42 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 09:12:47
+Timestamp: 2026-03-17 10:46:05
 ============================================================
-Lade TTL-Datei: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
-✓ 44 Events gefunden
-Lade CSV-Datei: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II_findspots.csv
-✓ 24 Fundorte gefunden
+Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
+✓ 44 events found
+Loading CSV file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II_findspots.csv
+✓ 24 findspots loaded
 
-Erstelle Mapping-Tabelle...
+Building mapping table...
 
-✓ Mapping erstellt:
-  - Exakte Matches: 23
-  - Fuzzy Matches: 0
-  - Keine Matches: 1
+✓ Mapping complete:
+  Exact matches : 23
+  Fuzzy matches : 0
+  No match      : 1
 
-Warnung: 1 Fundorte ohne Match:
-['Trier-Petrisberg']
+  ⚠ Unmatched findspots (1):
+    · Trier-Petrisberg
 
-✓ Mapping-Tabelle gespeichert: c:\git\CAA2026-alligator\output\event_mapping.csv
-✓ Erweiterte Fundort-Tabelle gespeichert: c:\git\CAA2026-alligator\output\findspots_with_events.csv
-
-============================================================
-RDF-Konvertierung
-============================================================
-
-Erstelle RDF-Graph...
-✓ 24 Sites zum Graph hinzugefügt
-  - Mit Event-URI: 23
-  - Ohne Event (Fallback-URI): 1
-
-Erstelle GeoSPARQL FeatureCollection...
-✓ FeatureCollection erstellt mit 24 Features
-
-✓ RDF-Graph gespeichert: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
-
-Graph-Statistik:
-  - Triples gesamt: 581
-  - Sites: 24
-  - FeatureCollections: 1
+✓ Mapping table saved: c:\git\CAA2026-alligator\output\event_mapping.csv
+✓ Enriched findspot table saved: c:\git\CAA2026-alligator\output\findspots_with_events.csv
 
 ============================================================
-Fertig!
-Report gespeichert: c:\git\CAA2026-alligator\output\report.txt
+RDF Conversion
+============================================================
+
+✓ 24 sites added to graph
+  With event URI : 23
+  Fallback URI   : 1
+✓ FeatureCollection created with 24 features
+
+✓ RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
+
+Graph statistics:
+  Triples total      : 581
+  Sites              : 24
+  FeatureCollections : 1
+
+============================================================
+Done!
+Report saved: c:\git\CAA2026-alligator\output\report.txt
 ============================================================
