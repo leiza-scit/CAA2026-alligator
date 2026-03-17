@@ -38,6 +38,7 @@ import matplotlib
 matplotlib.use("Agg")  # Non-interactive backend — no display required
 import matplotlib.pyplot as plt
 from matplotlib.ticker import AutoMinorLocator
+import networkx as nx
 from rdflib import Graph, Literal, Namespace, RDF, RDFS, URIRef
 from rdflib.namespace import DC, XSD
 from shapely.geometry import MultiPoint
@@ -1750,6 +1751,287 @@ def plot_allen_relations_matrix(clusters: list, output_path: Path):
     print(f"✓ Allen matrix saved: {output_path}")
 
 
+def plot_allen_chain(clusters: list, output_path: Path):
+    """Draw a directed graph showing only the nearest Allen relation per cluster.
+
+    For each cluster, only the single most immediate relation to its nearest
+    temporal neighbour in each direction (earlier / later) is shown. This
+    produces a clean chain rather than a fully-connected graph.
+
+    Relation priority (most specific wins):
+      meets > overlaps > contains/during/starts/finishes > before
+
+    Parameters
+    ----------
+    clusters    : list   Output of `build_period_clusters`.
+    output_path : Path   Destination JPEG file.
+    """
+    if not clusters:
+        print("  ⚠ No clusters to plot — skipping Allen chain.")
+        return
+
+    # Relation metadata
+    REL_STYLE = {
+        "intervalMeets": ("#4a90d9", "-", 2.2, "meets"),
+        "intervalOverlaps": ("#f0a500", "--", 2.0, "overlaps"),
+        "intervalOverlappedBy": ("#c97d00", "--", 2.0, "ovlp-by"),
+        "intervalContains": ("#d94a4a", ":", 1.8, "contains"),
+        "intervalDuring": ("#a03030", ":", 1.8, "during"),
+        "intervalStarts": ("#e07070", ":", 1.6, "starts"),
+        "intervalStartedBy": ("#c05050", ":", 1.6, "started-by"),
+        "intervalFinishes": ("#e09090", ":", 1.6, "finishes"),
+        "intervalFinishedBy": ("#b04060", ":", 1.6, "finished-by"),
+        "intervalBefore": ("#aaaaaa", "-", 1.2, "before"),
+        "intervalAfter": ("#aaaaaa", "-", 1.2, "after"),
+    }
+
+    # Priority: lower = more specific / interesting
+    REL_PRIORITY = {
+        "intervalMeets": 0,
+        "intervalOverlaps": 1,
+        "intervalOverlappedBy": 1,
+        "intervalStartedBy": 2,
+        "intervalStarts": 2,
+        "intervalFinishedBy": 2,
+        "intervalFinishes": 2,
+        "intervalContains": 3,
+        "intervalDuring": 3,
+        "intervalBefore": 4,  # fallback — keeps isolated nodes connected
+        "intervalAfter": 4,
+    }
+
+    def _short_label(c: dict) -> str:
+        s = round(c["start"])
+        e = round(c["end"])
+        sl = f"{abs(s)}BC" if s < 0 else f"AD{s}"
+        el = f"{abs(e)}BC" if e < 0 else f"AD{e}"
+        return f"{sl}–{el}"
+
+    n = len(clusters)
+    max_members = max(len(c["members"]) for c in clusters)
+
+    # --- For each cluster, find the single best relation to each other cluster
+    #     but only keep the nearest neighbour in each direction (by midpoint) ---
+    def _midpoint(c):
+        return (c["start"] + c["end"]) / 2
+
+    # Build candidate edges: (i → j, rel_local) keeping only best priority
+    best_edge = {}  # (i, j) → (rel_local, priority)
+    for i, ca in enumerate(clusters):
+        for j, cb in enumerate(clusters):
+            if i == j:
+                continue
+            rels = _allen_relations(ca["start"], ca["end"], cb["start"], cb["end"])
+            for rel_uri in rels:
+                rel_local = str(rel_uri).split("#")[-1]
+                if rel_local not in REL_PRIORITY:
+                    continue
+                prio = REL_PRIORITY[rel_local]
+                if (i, j) not in best_edge or prio < best_edge[(i, j)][1]:
+                    best_edge[(i, j)] = (rel_local, prio)
+
+    # For each cluster keep only the single nearest neighbour in each direction
+    # Use a generous search radius so no cluster stays isolated
+    kept_edges = set()
+    for i, ca in enumerate(clusters):
+        mid_i = _midpoint(ca)
+
+        # All earlier neighbours (no distance cutoff — always connect to nearest)
+        earlier = [
+            (j, _midpoint(clusters[j]))
+            for j in range(n)
+            if j != i and _midpoint(clusters[j]) < mid_i and (i, j) in best_edge
+        ]
+        if earlier:
+            nearest_j = max(earlier, key=lambda x: x[1])[0]
+            kept_edges.add((i, nearest_j))
+
+        # All later neighbours
+        later = [
+            (j, _midpoint(clusters[j]))
+            for j in range(n)
+            if j != i and _midpoint(clusters[j]) > mid_i and (i, j) in best_edge
+        ]
+        if later:
+            nearest_j = min(later, key=lambda x: x[1])[0]
+            kept_edges.add((i, nearest_j))
+
+    # --- Build graph ---
+    G = nx.DiGraph()
+    G.add_nodes_from(range(n))
+    for i, j in kept_edges:
+        rel_local, _ = best_edge[(i, j)]
+        G.add_edge(i, j, rel=rel_local)
+
+    # --- Node positions ---
+    # X = temporal midpoint on time axis
+    # Y = rank within clusters sharing similar midpoints, staggered to avoid overlap
+    # Sort clusters by midpoint for consistent ranking
+    sorted_idx = sorted(
+        range(n),
+        key=lambda i: (
+            _midpoint(clusters[i]),
+            clusters[i]["end"] - clusters[i]["start"],
+        ),
+    )
+
+    # Assign Y by grouping clusters with similar midpoints into lanes
+    pos = {}
+    lane_width = 3.0  # year units — clusters within this range share a lane group
+    lanes: list[list[int]] = []
+    for i in sorted_idx:
+        mid = _midpoint(clusters[i])
+        placed = False
+        for lane in lanes:
+            if abs(_midpoint(clusters[lane[0]]) - mid) < lane_width:
+                lane.append(i)
+                placed = True
+                break
+        if not placed:
+            lanes.append([i])
+
+    # Within each lane group, spread nodes vertically
+    y_spread = 8.0
+    for lane in lanes:
+        x_mid = _midpoint(clusters[lane[0]])
+        if len(lane) == 1:
+            pos[lane[0]] = (x_mid, 0)
+        else:
+            for k, idx in enumerate(lane):
+                y = (k - (len(lane) - 1) / 2) * (y_spread / max(len(lane) - 1, 1))
+                pos[idx] = (x_mid, y)
+
+    node_labels = {i: _short_label(clusters[i]) for i in range(n)}
+    cmap = plt.get_cmap("YlOrRd")
+    node_colours = [
+        cmap(0.3 + 0.7 * len(clusters[i]["members"]) / max_members) for i in range(n)
+    ]
+    node_sizes = [800 + 250 * len(clusters[i]["members"]) for i in range(n)]
+
+    # --- Figure ---
+    fig, ax = plt.subplots(figsize=(16, 8))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("#f9f9f9")
+
+    # Nodes
+    nx.draw_networkx_nodes(
+        G,
+        pos,
+        ax=ax,
+        node_color=node_colours,
+        node_size=node_sizes,
+        edgecolors="#333333",
+        linewidths=0.8,
+    )
+    nx.draw_networkx_labels(
+        G,
+        pos,
+        labels=node_labels,
+        ax=ax,
+        font_size=7.5,
+        font_color="#111111",
+        font_weight="bold",
+    )
+
+    # Edges — draw each separately to respect individual styles, no labels
+    for i, j in G.edges():
+        rel_local = G[i][j]["rel"]
+        colour, ls, lw, _ = REL_STYLE.get(rel_local, ("#888888", "-", 1.5, rel_local))
+
+        nx.draw_networkx_edges(
+            G,
+            pos,
+            edgelist=[(i, j)],
+            ax=ax,
+            edge_color=[colour],
+            width=lw,
+            style=ls,
+            arrows=True,
+            arrowsize=18,
+            arrowstyle="-|>",
+            connectionstyle="arc3,rad=0.15",
+            min_source_margin=24,
+            min_target_margin=24,
+        )
+
+    # --- Axes ---
+    all_starts = [c["start"] for c in clusters]
+    all_ends = [c["end"] for c in clusters]
+    x_min = min(all_starts) - 3
+    x_max = max(all_ends) + 3
+    ax.set_xlim(x_min, x_max)
+    x_ticks = list(range(int(x_min), int(x_max) + 1, 5))
+    ax.set_xticks(x_ticks)
+    ax.set_xticklabels(
+        [_format_year_label(t) for t in x_ticks],
+        rotation=45,
+        ha="right",
+        fontsize=8,
+        color="#333333",
+    )
+    ax.set_yticks([])
+    ax.grid(axis="x", color="#dddddd", linewidth=0.5, zorder=0)
+    ax.set_axisbelow(True)
+    for spine in ax.spines.values():
+        spine.set_edgecolor("#cccccc")
+
+    # --- Legend ---
+    import matplotlib.lines as mlines
+
+    legend_items = [
+        mlines.Line2D(
+            [], [], color="#4a90d9", linewidth=2.2, linestyle="-", label="meets"
+        ),
+        mlines.Line2D(
+            [],
+            [],
+            color="#f0a500",
+            linewidth=2.0,
+            linestyle="--",
+            label="overlaps / overlapped-by",
+        ),
+        mlines.Line2D(
+            [],
+            [],
+            color="#d94a4a",
+            linewidth=1.8,
+            linestyle=":",
+            label="contains / during / starts / finishes …",
+        ),
+        mlines.Line2D(
+            [],
+            [],
+            color="#aaaaaa",
+            linewidth=1.2,
+            linestyle="-",
+            label="before / after (nearest only)",
+        ),
+    ]
+    ax.legend(
+        handles=legend_items,
+        loc="lower right",
+        fontsize=8,
+        framealpha=0.9,
+        facecolor="white",
+        edgecolor="#cccccc",
+    )
+
+    ax.set_title(
+        "Allen Interval Relations — Nearest-Neighbour Chain",
+        color="#111111",
+        fontsize=13,
+        fontweight="bold",
+        pad=12,
+    )
+
+    plt.tight_layout()
+    fig.savefig(
+        str(output_path), dpi=150, format="jpeg", bbox_inches="tight", facecolor="white"
+    )
+    plt.close(fig)
+    print(f"✓ Allen chain saved: {output_path}")
+
+
 # ==============================================================================
 # SECTION 17 · Main Entry Point
 # ==============================================================================
@@ -1819,6 +2101,7 @@ def main():
         plot_cluster_timeline(clusters, OUTPUT_DIR / "cluster_timeline.jpg")
         plot_alligator_events_timeline(events, OUTPUT_DIR / "events_timeline.jpg")
         plot_allen_relations_matrix(clusters, OUTPUT_DIR / "allen_matrix.jpg")
+        plot_allen_chain(clusters, OUTPUT_DIR / "allen_chain.jpg")
 
         print("\n" + "=" * 60)
         print("Done!")
