@@ -9,8 +9,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <http://archaeology.link/ontology#> .
-@prefix ns2: <http://fuzzy-sl.squirrel.link/ontology/> .
-@prefix ns3: <http://ldf.fi/void-ext#> .
+@prefix ns2: <http://ldf.fi/void-ext#> .
+@prefix ns3: <http://fuzzy-sl.squirrel.link/ontology/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -47,7 +47,7 @@
         <http://www.w3.org/ns/ldp#Resource> ;
     rdfs:label "Linkset: Alligator_Dating_Services_I-II - fsl:"@en ;
     void:linkPredicate rdf:type ;
-    void:objectsTarget ns2: ;
+    void:objectsTarget ns3: ;
     void:subjectsTarget <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     void:triples 90 .
 
@@ -765,7 +765,7 @@
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
     rdfs:label "Property Partition: certaintyDesc"@en ;
-    void:property ns2:certaintyDesc ;
+    void:property ns3:certaintyDesc ;
     void:triples 45 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_closeMatch> a void:Dataset,
@@ -1074,7 +1074,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7665 50.371)"^^geo:wktLiteral .
 
@@ -1096,7 +1096,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.1455 50.6296)"^^geo:wktLiteral .
 
@@ -1118,7 +1118,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)"^^geo:wktLiteral .
 
@@ -1140,7 +1140,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.66829 52.45207)"^^geo:wktLiteral .
 
@@ -1162,7 +1162,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.90977 47.90988)"^^geo:wktLiteral .
 
@@ -1184,7 +1184,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.85972 49.54028)"^^geo:wktLiteral .
 
@@ -1206,7 +1206,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.6938 50.84841)"^^geo:wktLiteral .
 
@@ -1228,9 +1228,9 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 1.64639)"^^geo:wktLiteral .
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 51.64639)"^^geo:wktLiteral .
 
 <http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_begin> a time:Instant,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -1250,7 +1250,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.16186 52.05774)"^^geo:wktLiteral .
 
@@ -1272,7 +1272,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geo:wktLiteral .
 
@@ -1294,7 +1294,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.86063 50.45949)"^^geo:wktLiteral .
 
@@ -1316,7 +1316,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7535 50.34167)"^^geo:wktLiteral .
 
@@ -1338,7 +1338,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.88173 48.39021)"^^geo:wktLiteral .
 
@@ -1360,7 +1360,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.31083 47.58889)"^^geo:wktLiteral .
 
@@ -1382,7 +1382,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)"^^geo:wktLiteral .
 
@@ -1404,7 +1404,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)"^^geo:wktLiteral .
 
@@ -1426,7 +1426,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(-8.49341 40.09905)"^^geo:wktLiteral .
 
@@ -1448,7 +1448,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geo:wktLiteral .
 
@@ -1470,7 +1470,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.721944 51.183889)"^^geo:wktLiteral .
 
@@ -1492,7 +1492,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)"^^geo:wktLiteral .
 
@@ -1514,7 +1514,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.44349 50.51455)"^^geo:wktLiteral .
 
@@ -1536,7 +1536,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.35978 49.63007)"^^geo:wktLiteral .
 
@@ -1558,7 +1558,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.27387 49.99891)"^^geo:wktLiteral .
 
@@ -1580,7 +1580,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.23879 50.08434)"^^geo:wktLiteral .
 
@@ -1602,7 +1602,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.593 47.5557)"^^geo:wktLiteral .
 
@@ -1624,7 +1624,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)"^^geo:wktLiteral .
 
@@ -1689,7 +1689,7 @@
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.46999 1.64639, -8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, 6.46999 1.64639))"^^geo:wktLiteral .
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, -8.49341 40.09905))"^^geo:wktLiteral .
 
 <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008_begin> a time:Instant,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -1952,7 +1952,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.60087 46.51651)"^^geo:wktLiteral .
 
@@ -1974,7 +1974,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geo:wktLiteral .
 
@@ -1996,7 +1996,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7522 50.36987)"^^geo:wktLiteral .
 
@@ -2018,7 +2018,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.73756 47.49726)"^^geo:wktLiteral .
 
@@ -2040,7 +2040,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.09938 50.7448)"^^geo:wktLiteral .
 
@@ -2062,7 +2062,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.540724 47.373008)"^^geo:wktLiteral .
 
@@ -2084,7 +2084,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.46486 50.78096)"^^geo:wktLiteral .
 
@@ -2106,7 +2106,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)"^^geo:wktLiteral .
 
@@ -2128,7 +2128,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.593 47.5557)"^^geo:wktLiteral .
 
@@ -2150,7 +2150,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.58444 51.6125)"^^geo:wktLiteral .
 
@@ -2172,7 +2172,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)"^^geo:wktLiteral .
 
@@ -2194,7 +2194,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.04067 46.88028)"^^geo:wktLiteral .
 
@@ -2202,7 +2202,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.664117 49.752021)"^^geo:wktLiteral .
 
@@ -2224,7 +2224,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)"^^geo:wktLiteral .
 
@@ -2246,7 +2246,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.17052 51.73947)"^^geo:wktLiteral .
 
@@ -2268,7 +2268,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geo:wktLiteral .
 
@@ -2290,7 +2290,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.29349 47.59059)"^^geo:wktLiteral .
 
@@ -2312,7 +2312,7 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(9.74073 47.4979)"^^geo:wktLiteral .
 
@@ -2334,12 +2334,12 @@
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
-    ns2:certaintyDesc "Mapping done by Allard Mees."@en ;
+    ns3:certaintyDesc "Mapping done by Allard Mees."@en ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.89655 48.37277)"^^geo:wktLiteral .
 
-<http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg> a ns2:ArchaeologicalSite,
-        ns2:Site,
+<http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg> a ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
@@ -2355,8 +2355,8 @@
     geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/B95OZz> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2384,8 +2384,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/B95OZz_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2413,8 +2413,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/DEaJQL> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2444,8 +2444,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/DEaJQL_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/EOD041> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2474,8 +2474,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/EOD041_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2503,8 +2503,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/J3R6nX> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2534,8 +2534,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/J3R6nX_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/JmWOrl> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2565,8 +2565,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/JmWOrl_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/KbRY6O> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2594,8 +2594,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/KbRY6O_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/KmaGQd> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2623,8 +2623,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2654,8 +2654,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/LJA4XN> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2683,8 +2683,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/LJA4XN_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/LmM3V1> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2714,8 +2714,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/LmM3V1_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/M8BAmk> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2746,8 +2746,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/M8BAmk_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/MADy9p> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2775,8 +2775,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/MADy9p_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/N5MVXe> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2806,8 +2806,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/N5MVXe_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2837,8 +2837,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2868,8 +2868,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/NedG0W> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2897,8 +2897,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/NedG0W_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/OljG8l> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2927,8 +2927,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/OljG8l_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Q93OlW> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2956,8 +2956,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/Q93OlW_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/QXlWK2> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -2985,8 +2985,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/QXlWK2_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3014,8 +3014,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Repn5M> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3046,8 +3046,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/Repn5M_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/RjmPA4> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3078,8 +3078,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/RjmPA4_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/W4XmgP> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3109,8 +3109,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/W4XmgP_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/b0OGdE> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3140,8 +3140,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/b0OGdE_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/gdWKYL> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3171,8 +3171,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/jm48qv> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3200,8 +3200,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/jm48qv_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/kBRoVE> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3231,8 +3231,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/kBRoVE_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/mkGlqM> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3263,8 +3263,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/mkGlqM_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/oQZq80> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3294,8 +3294,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/oQZq80_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/ojlAy1> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3326,8 +3326,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/oqJAd8> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3357,8 +3357,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/oqJAd8_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/p4zxM0> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3389,8 +3389,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/p4zxM0_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3420,8 +3420,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/rJXxA7> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3450,8 +3450,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/rJXxA7_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3480,8 +3480,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/rY6gGz> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3512,8 +3512,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/rY6gGz_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/vJnM0D> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3544,8 +3544,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/vJnM0D_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/vXGN59> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3573,8 +3573,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/vXGN59_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/vd0j5N> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3602,8 +3602,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/vd0j5N_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/xbEdvL> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3633,8 +3633,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/xbEdvL_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/zLjX82> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -3662,8 +3662,8 @@
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/zLjX82_end> .
 
 <http://leiza-scit.github.io/CAA2026-alligator/zggRNd> a ns1:event,
-        ns2:ArchaeologicalSite,
-        ns2:Site,
+        ns3:ArchaeologicalSite,
+        ns3:Site,
         <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
         time:Interval,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -4047,19 +4047,19 @@
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
     rdfs:label "Alligator_Dating_Services_I-II"@en ;
-    ns3:averageLiteralLength 0 ;
-    ns3:averageObjectIRILength 44 ;
-    ns3:averagePropertyIRILength 42 ;
-    ns3:averageSubjectIRILength 61 ;
-    ns3:datatypes 0 ;
-    ns3:distinctBlankNodes 0 ;
-    ns3:distinctIRIReferences 972 ;
-    ns3:distinctLiterals 0 ;
-    ns3:distinctRDFNodes 972 ;
-    ns3:languages 0 ;
-    ns3:propertyClasses 0 ;
+    ns2:averageLiteralLength 0 ;
+    ns2:averageObjectIRILength 44 ;
+    ns2:averagePropertyIRILength 42 ;
+    ns2:averageSubjectIRILength 61 ;
+    ns2:datatypes 0 ;
+    ns2:distinctBlankNodes 0 ;
+    ns2:distinctIRIReferences 972 ;
+    ns2:distinctLiterals 0 ;
+    ns2:distinctRDFNodes 972 ;
+    ns2:languages 0 ;
+    ns2:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2026-03-17T11:53:35"^^xsd:dateTime ;
+    dcterms:modified "2026-03-17T11:59:43"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -4135,7 +4135,7 @@
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_wikidata> ;
     void:triples 2581 ;
     void:uriSpace "http://leiza-scit.github.io/CAA2026-alligator/"^^xsd:string ;
-    void:vocabulary ns3:,
+    void:vocabulary ns2:,
         dcam:,
         dcmitype:,
         dc:,

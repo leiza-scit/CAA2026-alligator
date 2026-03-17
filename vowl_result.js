@@ -5821,7 +5821,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 1.64639)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 51.64639)",
       "type": "label"
      }
     ]
@@ -7083,7 +7083,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.46999 1.64639, -8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, 6.46999 1.64639))",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, -8.49341 40.09905))",
       "type": "label"
      }
     ]
