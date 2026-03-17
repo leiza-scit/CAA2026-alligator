@@ -1584,6 +1584,172 @@ def plot_alligator_events_timeline(events: dict, output_path: Path):
     print(f"✓ Events timeline saved: {output_path}")
 
 
+def plot_allen_relations_matrix(clusters: list, output_path: Path):
+    """Draw a matrix visualisation of all Allen interval relations between clusters.
+
+    Each cell (row A, col B) shows the Allen relation that holds between
+    cluster A and cluster B. Cells are colour-coded by relation family:
+
+      Sequential  (blue)   : before, after, meets, metBy
+      Overlapping (orange) : overlaps, overlappedBy
+      Containing  (red)    : contains, during, starts, startedBy,
+                             finishes, finishedBy
+      Equal       (green)  : equals
+
+    The relation abbreviation is printed inside each cell.
+
+    Parameters
+    ----------
+    clusters    : list   Output of `build_period_clusters`.
+    output_path : Path   Destination JPEG file.
+    """
+    if not clusters:
+        print("  ⚠ No clusters to plot — skipping Allen matrix.")
+        return
+
+    # --- Relation metadata: OWL-Time local name → (abbreviation, colour family) ---
+    RELATIONS = {
+        "intervalBefore": ("before", "#4a90d9"),  # blue
+        "intervalAfter": ("after", "#2c5f8a"),  # dark blue
+        "intervalMeets": ("meets", "#7ab3e0"),  # light blue
+        "intervalMetBy": ("met-by", "#5a9fc5"),  # mid blue
+        "intervalOverlaps": ("overlaps", "#f0a500"),  # orange
+        "intervalOverlappedBy": ("ovlp-by", "#c97d00"),  # dark orange
+        "intervalContains": ("contains", "#d94a4a"),  # red
+        "intervalDuring": ("during", "#a03030"),  # dark red
+        "intervalStarts": ("starts", "#e07070"),  # light red
+        "intervalStartedBy": ("started-by", "#c05050"),  # mid red
+        "intervalFinishes": ("finishes", "#e09090"),  # pink-red
+        "intervalFinishedBy": ("finished-by", "#b04060"),  # rose
+        "intervalEquals": ("equals", "#4caf50"),  # green
+    }
+
+    n = len(clusters)
+
+    # Build short axis labels from year range
+    def _cluster_label(c: dict) -> str:
+        s = round(c["start"])
+        e = round(c["end"])
+        sl = f"{abs(s)}BC" if s < 0 else f"AD{s}"
+        el = f"{abs(e)}BC" if e < 0 else f"AD{e}"
+        return f"{sl}–{el}"
+
+    labels = [_cluster_label(c) for c in clusters]
+
+    # Pre-compute Allen relations for every ordered pair
+    cell_data = {}  # (i, j) → (abbrev, colour)
+    for i, ca in enumerate(clusters):
+        for j, cb in enumerate(clusters):
+            if i == j:
+                continue
+            rels = _allen_relations(ca["start"], ca["end"], cb["start"], cb["end"])
+            if rels:
+                # Extract local name from URIRef, e.g. "...#intervalBefore"
+                rel_local = str(rels[0]).split("#")[-1]
+                if rel_local in RELATIONS:
+                    abbrev, colour = RELATIONS[rel_local]
+                    cell_data[(i, j)] = (abbrev, colour)
+
+    # --- Figure ---
+    cell_size = 1.1
+    fig_size = max(8, n * cell_size + 2)
+    fig, ax = plt.subplots(figsize=(fig_size, fig_size))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("#f9f9f9")
+
+    # Draw cells
+    for (i, j), (abbrev, colour) in cell_data.items():
+        # i = row (A), j = col (B)  — matrix origin top-left
+        rect = plt.Rectangle(
+            [j, n - i - 1], 1, 1, facecolor=colour, edgecolor="white", linewidth=1.5
+        )
+        ax.add_patch(rect)
+        ax.text(
+            j + 0.5,
+            n - i - 0.5,
+            abbrev,
+            ha="center",
+            va="center",
+            fontsize=7,
+            color="white",
+            fontweight="bold",
+        )
+
+    # Diagonal — same cluster, no relation
+    for k in range(n):
+        rect = plt.Rectangle(
+            [k, n - k - 1], 1, 1, facecolor="#dddddd", edgecolor="white", linewidth=1.5
+        )
+        ax.add_patch(rect)
+        ax.text(
+            k + 0.5,
+            n - k - 0.5,
+            "—",
+            ha="center",
+            va="center",
+            fontsize=8,
+            color="#999999",
+        )
+
+    # Axes
+    ax.set_xlim(0, n)
+    ax.set_ylim(0, n)
+    ax.set_xticks([i + 0.5 for i in range(n)])
+    ax.set_yticks([i + 0.5 for i in range(n)])
+    ax.set_xticklabels(labels, rotation=45, ha="left", fontsize=8)
+    ax.set_yticklabels(list(reversed(labels)), fontsize=8)
+    ax.xaxis.set_ticks_position("top")
+    ax.xaxis.set_label_position("top")
+    ax.tick_params(length=0)
+
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+
+    # --- Legend ---
+    import matplotlib.patches as mpatches
+
+    legend_items = [
+        mpatches.Patch(
+            color="#4a90d9", label="Sequential (before / after / meets / met-by)"
+        ),
+        mpatches.Patch(color="#f0a500", label="Overlapping (overlaps / overlapped-by)"),
+        mpatches.Patch(
+            color="#d94a4a",
+            label="Containing (contains / during / starts / finishes …)",
+        ),
+        mpatches.Patch(color="#4caf50", label="Equal"),
+        mpatches.Patch(color="#dddddd", label="Same cluster"),
+    ]
+    ax.legend(
+        handles=legend_items,
+        loc="lower right",
+        bbox_to_anchor=(1.0, -0.22),
+        fontsize=8,
+        framealpha=0.9,
+        facecolor="white",
+        edgecolor="#cccccc",
+        ncol=2,
+    )
+
+    ax.set_title(
+        "Allen Interval Relations Between Period Clusters",
+        color="#111111",
+        fontsize=13,
+        fontweight="bold",
+        pad=28,
+    )
+
+    ax.set_xlabel("Cluster B  (column)", color="#555555", fontsize=9, labelpad=8)
+    ax.set_ylabel("Cluster A  (row)", color="#555555", fontsize=9, labelpad=8)
+
+    plt.tight_layout()
+    fig.savefig(
+        str(output_path), dpi=150, format="jpeg", bbox_inches="tight", facecolor="white"
+    )
+    plt.close(fig)
+    print(f"✓ Allen matrix saved: {output_path}")
+
+
 # ==============================================================================
 # SECTION 17 · Main Entry Point
 # ==============================================================================
@@ -1652,6 +1818,7 @@ def main():
         print("=" * 60)
         plot_cluster_timeline(clusters, OUTPUT_DIR / "cluster_timeline.jpg")
         plot_alligator_events_timeline(events, OUTPUT_DIR / "events_timeline.jpg")
+        plot_allen_relations_matrix(clusters, OUTPUT_DIR / "allen_matrix.jpg")
 
         print("\n" + "=" * 60)
         print("Done!")
