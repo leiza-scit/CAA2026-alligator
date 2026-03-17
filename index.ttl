@@ -4059,7 +4059,7 @@
     ns3:languages 0 ;
     ns3:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2026-03-17T11:50:02"^^xsd:dateTime ;
+    dcterms:modified "2026-03-17T11:53:35"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
