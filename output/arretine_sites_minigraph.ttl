@@ -1,0 +1,645 @@
+@prefix ae: <http://leiza-scit.github.io/CAA2026-alligator/> .
+@prefix aecol: <http://leiza-scit.github.io/CAA2026-alligator/collections/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fsl: <http://fuzzy-sl.squirrel.link/ontology/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix lado: <http://archaeology.link/ontology#> .
+@prefix pleiades: <https://pleiades.stoa.org/places/vocab#> .
+@prefix pleiadesplace: <https://pleiades.stoa.org/places/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ae:B95OZz a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Rödgen"@en ;
+    lado:cax -0.4825 ;
+    lado:cay 0.1896 ;
+    lado:caz 0.2972 ;
+    lado:endfixed true ;
+    lado:estimatedend 8.0 ;
+    lado:estimatedstart -12.0 ;
+    lado:pleiades pleiadesplace:220408239 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q2179598 ;
+    dc:identifier "B95OZz" ;
+    geosparql:hasGeometry ae:B95OZz_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:B95OZz_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7665 50.371)"^^geosparql:wktLiteral .
+
+ae:BWKpDQ a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Braives"@en ;
+    lado:cax 0.186 ;
+    lado:cay -0.0421 ;
+    lado:caz 0.267 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:109245 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q681153 ;
+    dc:identifier "BWKpDQ" ;
+    geosparql:hasGeometry ae:BWKpDQ_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:BWKpDQ_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.1455 50.6296)"^^geosparql:wktLiteral .
+
+ae:EOD041 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Velsen"@en ;
+    lado:cax 0.8336 ;
+    lado:cay -0.1823 ;
+    lado:caz 0.0086 ;
+    lado:endfixed true ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:pleiades pleiadesplace:99058 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q615397 ;
+    dc:identifier "EOD041" ;
+    geosparql:hasGeometry ae:EOD041_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:EOD041_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.66829 52.45207)"^^geosparql:wktLiteral .
+
+ae:Ee4KvG a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Lorenzberg"@en ;
+    lado:cax 0.2099 ;
+    lado:cay 0.065 ;
+    lado:caz 0.039 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:187242 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1346749 ;
+    dc:identifier "Ee4KvG" ;
+    geosparql:hasGeometry ae:Ee4KvG_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:Ee4KvG_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.90977 47.90988)"^^geosparql:wktLiteral .
+
+ae:J3R6nX a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Titelberg"@en ;
+    lado:cax -1.2119 ;
+    lado:cay -0.3813 ;
+    lado:caz -0.0643 ;
+    lado:endfixed false ;
+    lado:estimatedend -9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Dangstetten" ;
+    lado:nfsn "Dangstetten" ;
+    lado:pleiades pleiadesplace:109381 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1463952 ;
+    dc:identifier "J3R6nX" ;
+    geosparql:hasGeometry ae:J3R6nX_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:J3R6nX_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.85972 49.54028)"^^geosparql:wktLiteral .
+
+ae:JmWOrl a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Maastricht"@en ;
+    lado:cax 0.8086 ;
+    lado:cay -0.2157 ;
+    lado:caz 0.4184 ;
+    lado:endfixed false ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:nfen "Velsen" ;
+    lado:nfsn "Velsen" ;
+    lado:pleiades pleiadesplace:109386 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2250231 ;
+    dc:identifier "JmWOrl" ;
+    geosparql:hasGeometry ae:JmWOrl_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:JmWOrl_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.6938 50.84841)"^^geosparql:wktLiteral .
+
+ae:KbRY6O a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Vetera I"@en ;
+    lado:cax 0.4039 ;
+    lado:cay -0.0911 ;
+    lado:caz 0.218 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:108867 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q532466 ;
+    dc:identifier "KbRY6O" ;
+    geosparql:hasGeometry ae:KbRY6O_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:KbRY6O_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 1.64639)"^^geosparql:wktLiteral .
+
+ae:KmaGQd a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Vechten"@en ;
+    lado:cax 0.8037 ;
+    lado:cay -0.2304 ;
+    lado:caz 0.3963 ;
+    lado:endfixed false ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:nfen "Velsen" ;
+    lado:nfsn "Velsen" ;
+    lado:pleiades pleiadesplace:98956 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2311719 ;
+    dc:identifier "KmaGQd" ;
+    geosparql:hasGeometry ae:KmaGQd_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:KmaGQd_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.16186 52.05774)"^^geosparql:wktLiteral .
+
+ae:LJA4XN a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Namur"@en ;
+    lado:cax -0.1435 ;
+    lado:cay 0.2008 ;
+    lado:caz 0.3545 ;
+    lado:endfixed false ;
+    lado:estimatedend 8.0 ;
+    lado:estimatedstart -12.0 ;
+    lado:nfen "Rödgen" ;
+    lado:nfsn "Rödgen" ;
+    lado:pleiades pleiadesplace:109188 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q134121 ;
+    dc:identifier "LJA4XN" ;
+    geosparql:hasGeometry ae:LJA4XN_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:LJA4XN_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.86063 50.45949)"^^geosparql:wktLiteral .
+
+ae:LmM3V1 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Friedberg"@en ;
+    lado:cax 0.4748 ;
+    lado:cay 0.0596 ;
+    lado:caz -0.3632 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 7.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:pleiades pleiadesplace:118681 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1011847 ;
+    dc:identifier "LmM3V1" ;
+    geosparql:hasGeometry ae:LmM3V1_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:LmM3V1_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7535 50.34167)"^^geosparql:wktLiteral .
+
+ae:M8BAmk a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Augsburg-Oberhausen"@en ;
+    lado:cax -0.2301 ;
+    lado:cay 0.2052 ;
+    lado:caz -0.153 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -16.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Neuss" ;
+    lado:pleiades pleiadesplace:118580 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q760496 ;
+    dc:identifier "M8BAmk" ;
+    geosparql:hasGeometry ae:M8BAmk_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:M8BAmk_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.88173 48.39021)"^^geosparql:wktLiteral .
+
+ae:MADy9p a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Dangstetten"@en ;
+    lado:cax -1.0624 ;
+    lado:cay 0.2223 ;
+    lado:caz 0.5173 ;
+    lado:endfixed true ;
+    lado:estimatedend -9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:pleiades pleiadesplace:970740488 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q2179590 ;
+    dc:identifier "MADy9p" ;
+    geosparql:hasGeometry ae:MADy9p_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:MADy9p_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.31083 47.58889)"^^geosparql:wktLiteral .
+
+ae:Ndnd3r a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Conimbriga"@en ;
+    lado:cax -0.1065 ;
+    lado:cay 0.0456 ;
+    lado:caz -0.1097 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:236443 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q868754 ;
+    dc:identifier "Ndnd3r" ;
+    geosparql:hasGeometry ae:Ndnd3r_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:Ndnd3r_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(-8.49341 40.09905)"^^geosparql:wktLiteral .
+
+ae:OljG8l a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Neuss"@en ;
+    lado:cax -0.4107 ;
+    lado:cay 0.0405 ;
+    lado:caz -0.055 ;
+    lado:endfixed false ;
+    lado:estimatedend 8.0 ;
+    lado:estimatedstart -16.0 ;
+    lado:nfen "Rödgen" ;
+    lado:pleiades pleiadesplace:109215 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q318196 ;
+    dc:identifier "OljG8l" ;
+    geosparql:hasGeometry ae:OljG8l_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:OljG8l_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.721944 51.183889)"^^geosparql:wktLiteral .
+
+ae:QXlWK2 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Liberchies"@en ;
+    lado:cax -0.3057 ;
+    lado:cay -0.0244 ;
+    lado:caz -0.0504 ;
+    lado:endfixed false ;
+    lado:estimatedend 8.0 ;
+    lado:estimatedstart -16.0 ;
+    lado:nfen "Rödgen" ;
+    lado:nfsn "Neuss" ;
+    lado:pleiades pleiadesplace:109003 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2371918 ;
+    dc:identifier "QXlWK2" ;
+    geosparql:hasGeometry ae:QXlWK2_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:QXlWK2_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.44349 50.51455)"^^geosparql:wktLiteral .
+
+ae:Qz2oRe a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Worms"@en ;
+    lado:cax -0.5313 ;
+    lado:cay 0.4841 ;
+    lado:caz -0.5543 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart -16.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Neuss" ;
+    lado:pleiades pleiadesplace:108820 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1094541 ;
+    dc:identifier "Qz2oRe" ;
+    geosparql:hasGeometry ae:Qz2oRe_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:Qz2oRe_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.35978 49.63007)"^^geosparql:wktLiteral .
+
+ae:RjmPA4 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Wiesbaden"@en ;
+    lado:cax 0.4593 ;
+    lado:cay 0.0995 ;
+    lado:caz -0.5028 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 7.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:pleiades pleiadesplace:108750 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1094536 ;
+    dc:identifier "RjmPA4" ;
+    geosparql:hasGeometry ae:RjmPA4_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:RjmPA4_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.23879 50.08434)"^^geosparql:wktLiteral .
+
+ae:gdWKYL a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Lausanne-Vidy"@en ;
+    lado:cax -0.2726 ;
+    lado:cay -0.0157 ;
+    lado:caz -0.1228 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -16.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Neuss" ;
+    lado:pleiades pleiadesplace:177565 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q3264025 ;
+    dc:identifier "gdWKYL" ;
+    geosparql:hasGeometry ae:gdWKYL_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:gdWKYL_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.60087 46.51651)"^^geosparql:wktLiteral .
+
+ae:kBRoVE a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Bad Nauheim"@en ;
+    lado:cax 0.2199 ;
+    lado:cay 0.034 ;
+    lado:caz -0.1879 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:118588 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2179578 ;
+    dc:identifier "kBRoVE" ;
+    geosparql:hasGeometry ae:kBRoVE_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:kBRoVE_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7522 50.36987)"^^geosparql:wktLiteral .
+
+ae:oqJAd8 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Tongeren"@en ;
+    lado:cax 0.063 ;
+    lado:cay 0.0097 ;
+    lado:caz 0.1545 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:108765 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1863929 ;
+    dc:identifier "oqJAd8" ;
+    geosparql:hasGeometry ae:oqJAd8_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:oqJAd8_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.46486 50.78096)"^^geosparql:wktLiteral .
+
+ae:rJXxA7 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Oberaden"@en ;
+    lado:cax -0.6965 ;
+    lado:cay 0.2155 ;
+    lado:caz 0.4023 ;
+    lado:endfixed false ;
+    lado:estimatedend 8.0 ;
+    lado:estimatedstart -11.0 ;
+    lado:nfen "Rödgen" ;
+    lado:pleiades pleiadesplace:109229 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q577724 ;
+    dc:identifier "rJXxA7" ;
+    geosparql:hasGeometry ae:rJXxA7_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:rJXxA7_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.58444 51.6125)"^^geosparql:wktLiteral .
+
+ae:site_Trier-Petrisberg a fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        pleiades:Place ;
+    rdfs:label "Trier-Petrisberg"@en ;
+    lado:pleiades pleiadesplace:108894 ;
+    lado:wikidata wikidata:Q20578867 ;
+    geosparql:hasGeometry ae:site_Trier-Petrisberg_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:site_Trier-Petrisberg_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.664117 49.752021)"^^geosparql:wktLiteral .
+
+ae:vXGN59 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Haltern"@en ;
+    lado:cax 0.1314 ;
+    lado:cay 0.1361 ;
+    lado:caz -0.1036 ;
+    lado:endfixed true ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:pleiades pleiadesplace:109029 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q2179592 ;
+    dc:identifier "vXGN59" ;
+    geosparql:hasGeometry ae:vXGN59_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:vXGN59_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.17052 51.73947)"^^geosparql:wktLiteral .
+
+ae:zLjX82 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Bregenz"@en ;
+    lado:cax 0.3196 ;
+    lado:cay 0.1604 ;
+    lado:caz -0.7664 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 7.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:pleiades pleiadesplace:187325 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q13452589 ;
+    dc:identifier "zLjX82" ;
+    geosparql:hasGeometry ae:zLjX82_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:zLjX82_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(9.74073 47.4979)"^^geosparql:wktLiteral .
+
+aecol:arretine_sites a geosparql:FeatureCollection ;
+    rdfs:label "Arretine Dated Sites Collection"@en ;
+    geosparql:hasFeature ae:B95OZz,
+        ae:BWKpDQ,
+        ae:EOD041,
+        ae:Ee4KvG,
+        ae:J3R6nX,
+        ae:JmWOrl,
+        ae:KbRY6O,
+        ae:KmaGQd,
+        ae:LJA4XN,
+        ae:LmM3V1,
+        ae:M8BAmk,
+        ae:MADy9p,
+        ae:Ndnd3r,
+        ae:OljG8l,
+        ae:QXlWK2,
+        ae:Qz2oRe,
+        ae:RjmPA4,
+        ae:gdWKYL,
+        ae:kBRoVE,
+        ae:oqJAd8,
+        ae:rJXxA7,
+        ae:site_Trier-Petrisberg,
+        ae:vXGN59,
+        ae:zLjX82 ;
+    rdfs:comment "Collection of archaeological sites with Arretine pottery finds"@en .
+
