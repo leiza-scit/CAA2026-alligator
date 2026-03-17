@@ -1,0 +1,35 @@
+name: SPARQL Unicorn Ontology Documentation CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request: 
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: 
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"  
+  build:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    with: 
+      version: v018
+      rdffilepath: output/arretine_sites_minigraph.ttl
+      docpath: docs/
+      prefixns: http://leiza-scit.github.io/CAA2026-alligator/
+      prefixnsshort: ae
+      indexpages: true
+      metadatatable: true
+      createcollections: true
+      createVOWL: true
+      preferredlang: en
+      ghpages: true
+      logourl: https://raw.githubusercontent.com/archaeolink-lod/unicorn-ontdoc-template-nmt/main/icons/al_circle_icon.png
+      templatedir: https://github.com/archaeolink/unicorn-ontdoc-template-archaeolink-ftawm/archive/refs/tags/v1.0.zip
+      ogcapifeatures: false
+      datasettitle: Alligator Dating Services I-II
