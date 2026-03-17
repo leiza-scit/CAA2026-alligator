@@ -1402,6 +1402,188 @@ def plot_cluster_timeline(clusters: list, output_path: Path):
     print(f"✓ Timeline saved: {output_path}")
 
 
+def plot_alligator_events_timeline(events: dict, output_path: Path):
+    """Draw a timeline of individual Alligator events, styled after the JS tool.
+
+    Colour coding
+    -------------
+    - Gold   (#f0a500) : event with startfixed=false OR endfixed=false
+                         (Alligator-calculated boundaries)
+    - Steel  (#8fa8c8) : event with startfixed=true AND endfixed=true
+                         (both boundaries are fixed/certain)
+
+    Label format (inside bar, as in the JS tool)
+    --------------------------------------------
+    - Fixed both ends  : "label"
+    - Unfixed start    : "nfsn-->label,label"  (nfsn = nearest-fixed start neighbour)
+    - Unfixed end      : "label-->nfen,label"  (nfen = nearest-fixed end neighbour)
+    - Unfixed both     : "nfsn-->nfen,label"
+
+    Parameters
+    ----------
+    events      : dict   Output of `load_alligator_events`.
+    output_path : Path   Destination JPEG file.
+    """
+    if not events:
+        print("  ⚠ No events to plot — skipping Alligator timeline.")
+        return
+
+    # --- Collect and sort events by estimatedstart, then estimatedend ---
+    rows = []
+    for label, ev in events.items():
+        try:
+            start = float(ev["estimatedstart"])
+            end = float(ev["estimatedend"])
+        except (ValueError, TypeError):
+            continue
+
+        start_fixed = ev.get("startfixed", "").strip().lower() == "true"
+        end_fixed = ev.get("endfixed", "").strip().lower() == "true"
+        nfsn = ev.get("nfsn", "").strip()
+        nfen = ev.get("nfen", "").strip()
+
+        # Build label string matching JS tool format:
+        # label-->nfsn,nfen  (both unfixed)
+        # label-->*,nfen     (start fixed, end unfixed)
+        # label-->nfsn,*     (start unfixed, end fixed)
+        # label              (both fixed — shown in blue/steel)
+        if start_fixed and end_fixed:
+            bar_label = label
+        elif start_fixed and not end_fixed:
+            bar_label = f"{label}-->*,{nfen}" if nfen else label
+        elif not start_fixed and end_fixed:
+            bar_label = f"{label}-->{nfsn},*" if nfsn else label
+        else:  # both unfixed
+            bar_label = f"{label}-->{nfsn},{nfen}" if nfsn and nfen else label
+
+        rows.append(
+            {
+                "label": label,
+                "bar_label": bar_label,
+                "start": start,
+                "end": end,
+                "both_fixed": start_fixed and end_fixed,
+            }
+        )
+
+    # Sort: primary by estimatedstart, secondary by estimatedend, tertiary by label
+    # This groups events by cluster period, matching the JS tool's visual grouping
+    rows.sort(key=lambda r: (r["start"], r["end"], r["label"]))
+    n = len(rows)
+
+    # --- Colours matching the JS tool ---
+    COLOUR_CALC = "#f0a500"  # gold   — calculated (unfixed) boundaries
+    COLOUR_FIXED = "#8fa8c8"  # steel  — both boundaries fixed
+    TEXT_COLOUR = "#1a1a1a"  # dark label text
+
+    bar_height = 0.55
+    fig_h = max(6, n * 0.42 + 2)
+    fig, ax = plt.subplots(figsize=(16, fig_h))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("white")
+
+    for i, row in enumerate(rows):
+        duration = row["end"] - row["start"] if row["end"] != row["start"] else 0.3
+        colour = COLOUR_FIXED if row["both_fixed"] else COLOUR_CALC
+
+        ax.barh(
+            i,
+            duration,
+            left=row["start"],
+            height=bar_height,
+            color=colour,
+            edgecolor="#00000018",
+            linewidth=0.4,
+            align="center",
+        )
+
+        # Label inside bar — clip so it never overflows
+        bar_centre = row["start"] + duration / 2
+        ax.text(
+            bar_centre,
+            i,
+            row["bar_label"],
+            ha="center",
+            va="center",
+            fontsize=6.5,
+            color=TEXT_COLOUR,
+            clip_on=True,
+            fontfamily="monospace",
+        )
+
+        # Draw a subtle separator line between cluster groups
+        if i > 0 and (
+            rows[i]["start"] != rows[i - 1]["start"]
+            or rows[i]["end"] != rows[i - 1]["end"]
+        ):
+            ax.axhline(
+                i - 0.5, color="#cccccc", linewidth=0.6, linestyle="--", zorder=1
+            )
+
+    # --- Axes ---
+    all_starts = [r["start"] for r in rows]
+    all_ends = [r["end"] for r in rows]
+    x_min = min(all_starts) - 2
+    x_max = max(all_ends) + 2
+
+    ax.set_xlim(x_min, x_max)
+    ax.set_ylim(-0.8, n - 0.2)
+    ax.set_yticks([])
+
+    x_ticks = list(range(int(x_min), int(x_max) + 1, 5))
+    ax.set_xticks(x_ticks)
+    ax.set_xticklabels(
+        [_format_year_label(t) for t in x_ticks],
+        rotation=45,
+        ha="right",
+        fontsize=8,
+        color="#333333",
+    )
+    ax.xaxis.set_minor_locator(AutoMinorLocator(5))
+    ax.tick_params(axis="x", which="minor", length=2, color="#cccccc")
+    ax.tick_params(axis="x", which="major", length=5, color="#aaaaaa")
+
+    ax.grid(axis="x", which="major", color="#eeeeee", linewidth=0.5, zorder=0)
+    ax.set_axisbelow(True)
+
+    for spine in ax.spines.values():
+        spine.set_edgecolor("#cccccc")
+
+    # --- Legend ---
+    import matplotlib.patches as mpatches
+
+    legend_patches = [
+        mpatches.Patch(color=COLOUR_CALC, label="Calculated boundaries (nfsn / nfen)"),
+        mpatches.Patch(
+            color=COLOUR_FIXED, label="Fixed boundaries (startfixed & endfixed)"
+        ),
+    ]
+    ax.legend(
+        handles=legend_patches,
+        loc="lower right",
+        fontsize=8,
+        framealpha=0.9,
+        facecolor="white",
+        edgecolor="#cccccc",
+    )
+
+    ax.set_title(
+        "Alligator Events — Individual Site Timeline",
+        color="#111111",
+        fontsize=13,
+        fontweight="bold",
+        pad=12,
+    )
+    ax.set_xlabel("Year", color="#333333", fontsize=9)
+
+    plt.tight_layout()
+    fig.savefig(
+        str(output_path), dpi=150, format="jpeg", bbox_inches="tight", facecolor="white"
+    )
+    plt.close(fig)
+    print(f"✓ Events timeline saved: {output_path}")
+
+
 # ==============================================================================
 # SECTION 17 · Main Entry Point
 # ==============================================================================
@@ -1469,6 +1651,7 @@ def main():
         print("Visualisations")
         print("=" * 60)
         plot_cluster_timeline(clusters, OUTPUT_DIR / "cluster_timeline.jpg")
+        plot_alligator_events_timeline(events, OUTPUT_DIR / "events_timeline.jpg")
 
         print("\n" + "=" * 60)
         print("Done!")

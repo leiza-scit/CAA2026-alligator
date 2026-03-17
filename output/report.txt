@@ -1,6 +1,6 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 11:54:31
+Timestamp: 2026-03-17 12:15:25
 ============================================================
 Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
@@ -67,6 +67,7 @@ Computing Allen interval relations between clusters...
 Visualisations
 ============================================================
 ✓ Timeline saved: c:\git\CAA2026-alligator\output\cluster_timeline.jpg
+✓ Events timeline saved: c:\git\CAA2026-alligator\output\events_timeline.jpg
 
 ============================================================
 Done!
