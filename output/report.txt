@@ -1,6 +1,6 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 12:37:18
+Timestamp: 2026-03-17 12:44:29
 ============================================================
 Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
@@ -32,7 +32,7 @@ RDF Conversion
 ✓ RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
 
 Graph statistics:
-  Triples total      : 1368
+  Triples total      : 1442
   Sites              : 45
   FeatureCollections : 1
 Loading additional events: c:\git\CAA2026-alligator\data\MoreEvents.csv
@@ -61,7 +61,7 @@ Computing Allen interval relations between clusters...
 ✓ 90 Allen relation triples written across 10 clusters
 
 ✓ Final RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
-  Triples total: 1756
+  Triples total: 1830
 
 ============================================================
 Visualisations

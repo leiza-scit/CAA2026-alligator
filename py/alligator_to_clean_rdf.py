@@ -88,6 +88,7 @@ CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
 AE_SITES = Namespace("http://leiza-scit.github.io/CAA2026-alligator/")
 AE_COLLECTIONS = Namespace("http://leiza-scit.github.io/CAA2026-alligator/collections/")
 OWL_TIME = Namespace("http://www.w3.org/2006/time#")
+SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 
 # ---------------------------------------------------------------------------
 # Feature Collection URI
@@ -472,6 +473,7 @@ def create_rdf_graph() -> Graph:
     g.bind("rdfs", RDFS)
     g.bind("time", OWL_TIME)
     g.bind("lado", LADO)
+    g.bind("skos", SKOS)
     return g
 
 
@@ -555,6 +557,44 @@ def add_site_to_graph(
                 )
         except (ValueError, TypeError):
             print(f"  ⚠ Pleiades ID conversion error for {row['label']}")
+
+    # --- OpenStreetMap link ---
+    # OSM type (node/way/relation) + ID → URI: http://openstreetmap.org/[type]/[id]
+    # OSM tag  → lado:osm_tag  "[key=value]"
+    # OSM relation (SKOS match type) → skos:exactMatch / skos:closeMatch /
+    #                                   skos:relatedMatch on the OSM entity URI
+    osm_type = (
+        str(row.get("OSM type", "")).strip() if pd.notna(row.get("OSM type")) else ""
+    )
+    osm_id = row.get("OSM ID")
+    osm_tag = (
+        str(row.get("OSM tag", "")).strip() if pd.notna(row.get("OSM tag")) else ""
+    )
+    osm_rel = (
+        str(row.get("OSM relation", "")).strip()
+        if pd.notna(row.get("OSM relation"))
+        else ""
+    )
+
+    if osm_type and pd.notna(osm_id):
+        try:
+            osm_id_int = int(osm_id)
+            osm_uri = URIRef(f"http://openstreetmap.org/{osm_type}/{osm_id_int}")
+            g.add((site_uri, LADO.osm_entity, osm_uri))
+
+            if osm_tag:
+                g.add((site_uri, LADO.osm_tag, Literal(osm_tag)))
+
+            # Map OSM relation value to SKOS property
+            _SKOS_MAP = {
+                "exactMatch": SKOS.exactMatch,
+                "closeMatch": SKOS.closeMatch,
+                "relatedMatch": SKOS.relatedMatch,
+            }
+            if osm_rel in _SKOS_MAP:
+                g.add((site_uri, _SKOS_MAP[osm_rel], osm_uri))
+        except (ValueError, TypeError):
+            print(f"  ⚠ Invalid OSM ID ignored: '{osm_id}' for {row['label']}")
 
     # --- Alligator temporal data (lado vocabulary, kept for compatibility) ---
     if pd.notna(row.get("estimatedstart")):

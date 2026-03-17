@@ -9,6 +9,7 @@
 @prefix pleiadesplace: <https://pleiades.stoa.org/places/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -536,6 +537,8 @@ ae:site_Trier-Petrisberg a fsl:ArchaeologicalSite,
         crm:E53_Place,
         pleiades:Place ;
     rdfs:label "Trier-Petrisberg"@en ;
+    lado:osm_entity <http://openstreetmap.org/way/104871217> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:108894 ;
     lado:wikidata wikidata:Q20578867 ;
     geosparql:hasGeometry ae:site_Trier-Petrisberg_geom ;
@@ -618,6 +621,8 @@ ae:B95OZz a lado:event,
     lado:endfixed true ;
     lado:estimatedend 8.0 ;
     lado:estimatedstart -12.0 ;
+    lado:osm_entity <http://openstreetmap.org/node/6700040031> ;
+    lado:osm_tag "tourism=information" ;
     lado:pleiades pleiadesplace:220408239 ;
     lado:startfixed true ;
     lado:wikidata wikidata:Q2179598 ;
@@ -668,6 +673,8 @@ ae:DEaJQL a lado:event,
     lado:estimatedstart -16.0 ;
     lado:nfen "Rödgen" ;
     lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/way/144455109> ;
+    lado:osm_tag "natural=scrub" ;
     lado:pleiades pleiadesplace:108761 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q723019 ;
@@ -691,6 +698,8 @@ ae:EOD041 a lado:event,
     lado:endfixed true ;
     lado:estimatedend 28.0 ;
     lado:estimatedstart 16.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/106663898> ;
+    lado:osm_tag "natural=water" ;
     lado:pleiades pleiadesplace:99058 ;
     lado:startfixed true ;
     lado:wikidata wikidata:Q615397 ;
@@ -698,6 +707,7 @@ ae:EOD041 a lado:event,
     geosparql:hasGeometry ae:EOD041_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028 ;
+    skos:closeMatch <http://openstreetmap.org/way/106663898> ;
     time:hasBeginning ae:EOD041_begin ;
     time:hasEnd ae:EOD041_end .
 
@@ -741,6 +751,8 @@ ae:J3R6nX a lado:event,
     lado:estimatedstart -15.0 ;
     lado:nfen "Dangstetten" ;
     lado:nfsn "Dangstetten" ;
+    lado:osm_entity <http://openstreetmap.org/way/32545380> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:109381 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q1463952 ;
@@ -766,6 +778,8 @@ ae:JmWOrl a lado:event,
     lado:estimatedstart 16.0 ;
     lado:nfen "Velsen" ;
     lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/node/2804902056> ;
+    lado:osm_tag "tourism=museum" ;
     lado:pleiades pleiadesplace:109386 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q2250231 ;
@@ -841,6 +855,8 @@ ae:Krj7Qq a lado:event,
     lado:estimatedstart 7.0 ;
     lado:nfen "Augst, Insula 31" ;
     lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/node/10075892871> ;
+    lado:osm_tag "tourism=museum" ;
     lado:pleiades pleiadesplace:98921 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q1309708 ;
@@ -891,6 +907,8 @@ ae:LmM3V1 a lado:event,
     lado:estimatedstart 7.0 ;
     lado:nfen "Augst, Insula 31" ;
     lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/node/725895648> ;
+    lado:osm_tag "place=hamlet" ;
     lado:pleiades pleiadesplace:118681 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q1011847 ;
@@ -916,6 +934,8 @@ ae:M8BAmk a lado:event,
     lado:estimatedstart -16.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/way/55938422> ;
+    lado:osm_tag "landuse=brownfield" ;
     lado:pleiades pleiadesplace:118580 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q760496 ;
@@ -923,6 +943,7 @@ ae:M8BAmk a lado:event,
     geosparql:hasGeometry ae:M8BAmk_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0016_ad0009 ;
+    skos:relatedMatch <http://openstreetmap.org/way/55938422> ;
     time:hasBeginning ae:M8BAmk_begin ;
     time:hasEnd ae:M8BAmk_end .
 
@@ -939,6 +960,8 @@ ae:MADy9p a lado:event,
     lado:endfixed true ;
     lado:estimatedend -9.0 ;
     lado:estimatedstart -15.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/103687183> ;
+    lado:osm_tag "landuse=quarry" ;
     lado:pleiades pleiadesplace:970740488 ;
     lado:startfixed true ;
     lado:wikidata wikidata:Q2179590 ;
@@ -964,6 +987,8 @@ ae:N5MVXe a lado:event,
     lado:estimatedstart -7.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/6420816733> ;
+    lado:osm_tag "historic=castle" ;
     lado:pleiades pleiadesplace:177661 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q103199316 ;
@@ -989,6 +1014,8 @@ ae:N5ZEJo a lado:event,
     lado:estimatedstart -16.0 ;
     lado:nfen "Rödgen" ;
     lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/node/6420816733> ;
+    lado:osm_tag "historic=castle" ;
     lado:pleiades pleiadesplace:177661 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q103199316 ;
@@ -1014,6 +1041,8 @@ ae:Ndnd3r a lado:event,
     lado:estimatedstart -7.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/7878861331> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:236443 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q868754 ;
@@ -1063,6 +1092,8 @@ ae:OljG8l a lado:event,
     lado:estimatedend 8.0 ;
     lado:estimatedstart -16.0 ;
     lado:nfen "Rödgen" ;
+    lado:osm_entity <http://openstreetmap.org/node/6358516450> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:109215 ;
     lado:startfixed true ;
     lado:wikidata wikidata:Q318196 ;
@@ -1163,6 +1194,8 @@ ae:Repn5M a lado:event,
     lado:estimatedstart -7.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/1930543644> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:109169 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q571790 ;
@@ -1170,6 +1203,7 @@ ae:Repn5M a lado:event,
     geosparql:hasGeometry ae:Repn5M_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0007_ad0009 ;
+    skos:relatedMatch <http://openstreetmap.org/node/1930543644> ;
     time:hasBeginning ae:Repn5M_begin ;
     time:hasEnd ae:Repn5M_end .
 
@@ -1188,6 +1222,8 @@ ae:RjmPA4 a lado:event,
     lado:estimatedstart 7.0 ;
     lado:nfen "Augst, Insula 31" ;
     lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/way/111263486> ;
+    lado:osm_tag "tourism=attraction" ;
     lado:pleiades pleiadesplace:108750 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q1094536 ;
@@ -1195,6 +1231,7 @@ ae:RjmPA4 a lado:event,
     geosparql:hasGeometry ae:RjmPA4_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0007_ad0013 ;
+    skos:relatedMatch <http://openstreetmap.org/way/111263486> ;
     time:hasBeginning ae:RjmPA4_begin ;
     time:hasEnd ae:RjmPA4_end .
 
@@ -1213,6 +1250,8 @@ ae:W4XmgP a lado:event,
     lado:estimatedstart -15.0 ;
     lado:nfen "Dangstetten" ;
     lado:nfsn "Dangstetten" ;
+    lado:osm_entity <http://openstreetmap.org/way/168318389> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:177468 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q666479 ;
@@ -1238,6 +1277,8 @@ ae:b0OGdE a lado:event,
     lado:estimatedstart 7.0 ;
     lado:nfen "Augst, Insula 31" ;
     lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/node/6420816733> ;
+    lado:osm_tag "historic=castle" ;
     lado:pleiades pleiadesplace:177661 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q103199316 ;
@@ -1263,6 +1304,8 @@ ae:gdWKYL a lado:event,
     lado:estimatedstart -16.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/way/699387398> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:177565 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q3264025 ;
@@ -1313,6 +1356,8 @@ ae:kBRoVE a lado:event,
     lado:estimatedstart -7.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/333175552> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:118588 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q2179578 ;
@@ -1338,6 +1383,8 @@ ae:mkGlqM a lado:event,
     lado:estimatedstart 7.0 ;
     lado:nfen "Augst, Insula 31" ;
     lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/way/115007886> ;
+    lado:osm_tag "building=appartments" ;
     lado:pleiades pleiadesplace:187624 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q164912 ;
@@ -1345,6 +1392,7 @@ ae:mkGlqM a lado:event,
     geosparql:hasGeometry ae:mkGlqM_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0007_ad0013 ;
+    skos:closeMatch <http://openstreetmap.org/way/115007886> ;
     time:hasBeginning ae:mkGlqM_begin ;
     time:hasEnd ae:mkGlqM_end .
 
@@ -1363,6 +1411,8 @@ ae:oQZq80 a lado:event,
     lado:estimatedstart -7.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/1191145951> ;
+    lado:osm_tag "information=tactile_model" ;
     lado:pleiades pleiadesplace:108818 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q1146198 ;
@@ -1388,6 +1438,8 @@ ae:ojlAy1 a lado:event,
     lado:estimatedstart -16.0 ;
     lado:nfen "Dangstetten" ;
     lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/node/3483897061> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:187596 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q10987378 ;
@@ -1395,6 +1447,7 @@ ae:ojlAy1 a lado:event,
     geosparql:hasGeometry ae:ojlAy1_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0016_bc0009 ;
+    skos:closeMatch <http://openstreetmap.org/node/3483897061> ;
     time:hasBeginning ae:ojlAy1_begin ;
     time:hasEnd ae:ojlAy1_end .
 
@@ -1413,6 +1466,8 @@ ae:oqJAd8 a lado:event,
     lado:estimatedstart -7.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/way/346290310> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:108765 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q1863929 ;
@@ -1438,6 +1493,8 @@ ae:p4zxM0 a lado:event,
     lado:estimatedstart 16.0 ;
     lado:nfen "Velsen" ;
     lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/node/6654634631> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:177494 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q610371 ;
@@ -1445,6 +1502,7 @@ ae:p4zxM0 a lado:event,
     geosparql:hasGeometry ae:p4zxM0_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028 ;
+    skos:exactMatch <http://openstreetmap.org/node/6654634631> ;
     time:hasBeginning ae:p4zxM0_begin ;
     time:hasEnd ae:p4zxM0_end .
 
@@ -1463,6 +1521,8 @@ ae:qJE4nZ a lado:event,
     lado:estimatedstart -16.0 ;
     lado:nfen "Haltern" ;
     lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/node/1796082995> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:177468 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q666479 ;
@@ -1487,6 +1547,8 @@ ae:rJXxA7 a lado:event,
     lado:estimatedend 8.0 ;
     lado:estimatedstart -11.0 ;
     lado:nfen "Rödgen" ;
+    lado:osm_entity <http://openstreetmap.org/way/157929084> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:109229 ;
     lado:startfixed true ;
     lado:wikidata wikidata:Q577724 ;
@@ -1510,6 +1572,8 @@ ae:rR3Mgy a lado:event,
     lado:endfixed true ;
     lado:estimatedend 13.0 ;
     lado:estimatedstart 7.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/107475507> ;
+    lado:osm_tag "building=yes" ;
     lado:pleiades pleiadesplace:177494 ;
     lado:startfixed true ;
     lado:wikidata wikidata:Q610371 ;
@@ -1517,6 +1581,7 @@ ae:rR3Mgy a lado:event,
     geosparql:hasGeometry ae:rR3Mgy_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0007_ad0013 ;
+    skos:closeMatch <http://openstreetmap.org/way/107475507> ;
     time:hasBeginning ae:rR3Mgy_begin ;
     time:hasEnd ae:rR3Mgy_end .
 
@@ -1535,6 +1600,8 @@ ae:rY6gGz a lado:event,
     lado:estimatedstart 7.0 ;
     lado:nfen "Augst, Insula 31" ;
     lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/way/333211842> ;
+    lado:osm_tag "building=yes" ;
     lado:pleiades pleiadesplace:177495 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q670912 ;
@@ -1542,6 +1609,7 @@ ae:rY6gGz a lado:event,
     geosparql:hasGeometry ae:rY6gGz_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0007_ad0013 ;
+    skos:closeMatch <http://openstreetmap.org/way/333211842> ;
     time:hasBeginning ae:rY6gGz_begin ;
     time:hasEnd ae:rY6gGz_end .
 
@@ -1560,6 +1628,8 @@ ae:vJnM0D a lado:event,
     lado:estimatedstart 16.0 ;
     lado:nfen "Velsen" ;
     lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/way/107475469> ;
+    lado:osm_tag "building=yes" ;
     lado:pleiades pleiadesplace:177494 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q610371 ;
@@ -1567,6 +1637,7 @@ ae:vJnM0D a lado:event,
     geosparql:hasGeometry ae:vJnM0D_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028 ;
+    skos:closeMatch <http://openstreetmap.org/way/107475469> ;
     time:hasBeginning ae:vJnM0D_begin ;
     time:hasEnd ae:vJnM0D_end .
 
@@ -1583,6 +1654,8 @@ ae:vXGN59 a lado:event,
     lado:endfixed true ;
     lado:estimatedend 9.0 ;
     lado:estimatedstart -7.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/435021824> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:109029 ;
     lado:startfixed true ;
     lado:wikidata wikidata:Q2179592 ;
@@ -1633,6 +1706,8 @@ ae:xbEdvL a lado:event,
     lado:estimatedstart 16.0 ;
     lado:nfen "Velsen" ;
     lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/way/1054468269> ;
+    lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:177639 ;
     lado:startfixed false ;
     lado:wikidata wikidata:Q25388900 ;
