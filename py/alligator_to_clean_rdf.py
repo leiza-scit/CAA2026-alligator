@@ -138,6 +138,56 @@ def sanitize_id(label: str) -> str:
     return id_str
 
 
+# rdflib delegates xsd:gYear validation to isodate, which does not handle
+# negative (BCE) years and raises ISO8601Error for values like "-0015".
+#
+# Fix: monkey-patch rdflib.term._castLexicalToPython to intercept gYear
+# calls and return the lexical string unchanged. This is more robust than
+# manipulating the internal _toPythonMapping dict, whose name varies across
+# rdflib versions. rdflib only uses the return value for in-memory Python
+# objects; the serialised Turtle output is always taken from the lexical form
+# and is therefore unaffected.
+try:
+    import rdflib.term as _rdflib_term
+
+    _original_cast = _rdflib_term._castLexicalToPython  # type: ignore[attr-defined]
+    _GYEAR_URI = str(XSD.gYear)
+
+    def _patched_cast(lexical: str, datatype):  # type: ignore[no-untyped-def]
+        if str(datatype) == _GYEAR_URI:
+            return lexical  # Return the string as-is; isodate cannot handle BCE years
+        return _original_cast(lexical, datatype)
+
+    _rdflib_term._castLexicalToPython = _patched_cast  # type: ignore[attr-defined]
+except Exception:
+    pass  # Harmless if the internal API changes in a future rdflib version
+
+
+def _year_to_xsd_gyear(year: int) -> str:
+    """Convert an integer year to an XSD gYear lexical value.
+
+    XSD gYear uses astronomical year numbering:
+      1 BCE  →  0000
+      2 BCE  → -0001
+      1 CE   →  0001
+
+    Parameters
+    ----------
+    year : int
+        Astronomical year (negative = BCE, 0 = 1 BCE).
+
+    Returns
+    -------
+    str
+        Zero-padded XSD gYear string, e.g. "-0015" or "0009".
+    """
+    # Historian's BCE years (e.g. -15 meaning "15 BCE") are already in
+    # astronomical notation in this dataset, so no offset adjustment needed.
+    if year < 0:
+        return f"-{abs(year):04d}"
+    return f"{year:04d}"
+
+
 # ==============================================================================
 # SECTION 4 · Output Directory Setup
 # ==============================================================================
@@ -483,7 +533,7 @@ def add_site_to_graph(
         except (ValueError, TypeError):
             print(f"  ⚠ Pleiades ID conversion error for {row['label']}")
 
-    # --- Alligator temporal data ---
+    # --- Alligator temporal data (lado vocabulary, kept for compatibility) ---
     if pd.notna(row.get("estimatedstart")):
         g.add(
             (
@@ -500,6 +550,48 @@ def add_site_to_graph(
                 Literal(row["estimatedend"], datatype=XSD.decimal),
             )
         )
+
+    # --- OWL-Time Interval pattern (only for Alligator events with temporal data) ---
+    # Mirrors the lado:estimatedstart/end values as a standards-compliant
+    # time:Interval with reified time:Instant nodes carrying xsd:gYear literals.
+    # The estimatedstart/end values are Alligator's centroid years (decimals);
+    # we round to the nearest integer for the gYear representation.
+    if has_event:
+        has_start = pd.notna(row.get("estimatedstart"))
+        has_end = pd.notna(row.get("estimatedend"))
+
+        if has_start or has_end:
+            g.add((site_uri, RDF.type, OWL_TIME.Interval))
+
+        if has_start:
+            begin_uri = URIRef(str(site_uri) + "_begin")
+            g.add((site_uri, OWL_TIME.hasBeginning, begin_uri))
+            g.add((begin_uri, RDF.type, OWL_TIME.Instant))
+            g.add(
+                (
+                    begin_uri,
+                    OWL_TIME.inXSDgYear,
+                    Literal(
+                        _year_to_xsd_gyear(round(float(row["estimatedstart"]))),
+                        datatype=XSD.gYear,
+                    ),
+                )
+            )
+
+        if has_end:
+            end_uri = URIRef(str(site_uri) + "_end")
+            g.add((site_uri, OWL_TIME.hasEnd, end_uri))
+            g.add((end_uri, RDF.type, OWL_TIME.Instant))
+            g.add(
+                (
+                    end_uri,
+                    OWL_TIME.inXSDgYear,
+                    Literal(
+                        _year_to_xsd_gyear(round(float(row["estimatedend"]))),
+                        datatype=XSD.gYear,
+                    ),
+                )
+            )
 
     # --- Alligator coordinates (cax / cay / caz) ---
     for coord in ("cax", "cay", "caz"):
@@ -687,56 +779,8 @@ def load_more_events(csv_path: Path) -> pd.DataFrame:
 # xsd:gYear uses the proleptic Gregorian calendar. Negative years are
 # serialised as "-0014" (note: XSD gYear uses astronomical year numbering,
 # so 1 BCE = 0000, 2 BCE = -0001, etc.).
-
-
-# rdflib delegates xsd:gYear validation to isodate, which does not handle
-# negative (BCE) years and raises ISO8601Error for values like "-0015".
-#
-# Fix: monkey-patch rdflib.term._castLexicalToPython to intercept gYear
-# calls and return the lexical string unchanged. This is more robust than
-# manipulating the internal _toPythonMapping dict, whose name varies across
-# rdflib versions. rdflib only uses the return value for in-memory Python
-# objects; the serialised Turtle output is always taken from the lexical form
-# and is therefore unaffected.
-try:
-    import rdflib.term as _rdflib_term
-
-    _original_cast = _rdflib_term._castLexicalToPython  # type: ignore[attr-defined]
-    _GYEAR_URI = str(XSD.gYear)
-
-    def _patched_cast(lexical: str, datatype):  # type: ignore[no-untyped-def]
-        if str(datatype) == _GYEAR_URI:
-            return lexical  # Return the string as-is; isodate cannot handle BCE years
-        return _original_cast(lexical, datatype)
-
-    _rdflib_term._castLexicalToPython = _patched_cast  # type: ignore[attr-defined]
-except Exception:
-    pass  # Harmless if the internal API changes in a future rdflib version
-
-
-def _year_to_xsd_gyear(year: int) -> str:
-    """Convert an integer year to an XSD gYear lexical value.
-
-    XSD gYear uses astronomical year numbering:
-      1 BCE  →  0000
-      2 BCE  → -0001
-      1 CE   →  0001
-
-    Parameters
-    ----------
-    year : int
-        Astronomical year (negative = BCE, 0 = 1 BCE).
-
-    Returns
-    -------
-    str
-        Zero-padded XSD gYear string, e.g. "-0015" or "0009".
-    """
-    # Historian's BCE years (e.g. -15 meaning "15 BCE") are already in
-    # astronomical notation in this dataset, so no offset adjustment needed.
-    if year < 0:
-        return f"-{abs(year):04d}"
-    return f"{year:04d}"
+# The rdflib patch and _year_to_xsd_gyear helper are defined in Section 3
+# so they are available to both this section and add_site_to_graph (Section 9).
 
 
 def add_more_events_to_graph(g: Graph, more_events_df: pd.DataFrame) -> list:

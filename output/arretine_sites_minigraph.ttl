@@ -55,7 +55,15 @@ ae:B95OZz a lado:event,
     lado:wikidata wikidata:Q2179598 ;
     dc:identifier "B95OZz" ;
     geosparql:hasGeometry ae:B95OZz_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:B95OZz_begin ;
+    time:hasEnd ae:B95OZz_end .
+
+ae:B95OZz_begin a time:Instant ;
+    time:inXSDgYear "-0012"^^xsd:gYear .
+
+ae:B95OZz_end a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
 
 ae:B95OZz_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -81,7 +89,15 @@ ae:BWKpDQ a lado:event,
     lado:wikidata wikidata:Q681153 ;
     dc:identifier "BWKpDQ" ;
     geosparql:hasGeometry ae:BWKpDQ_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:BWKpDQ_begin ;
+    time:hasEnd ae:BWKpDQ_end .
+
+ae:BWKpDQ_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:BWKpDQ_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:BWKpDQ_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -105,7 +121,15 @@ ae:EOD041 a lado:event,
     lado:wikidata wikidata:Q615397 ;
     dc:identifier "EOD041" ;
     geosparql:hasGeometry ae:EOD041_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:EOD041_begin ;
+    time:hasEnd ae:EOD041_end .
+
+ae:EOD041_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:EOD041_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
 
 ae:EOD041_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -131,7 +155,15 @@ ae:Ee4KvG a lado:event,
     lado:wikidata wikidata:Q1346749 ;
     dc:identifier "Ee4KvG" ;
     geosparql:hasGeometry ae:Ee4KvG_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:Ee4KvG_begin ;
+    time:hasEnd ae:Ee4KvG_end .
+
+ae:Ee4KvG_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:Ee4KvG_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:Ee4KvG_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -157,7 +189,15 @@ ae:J3R6nX a lado:event,
     lado:wikidata wikidata:Q1463952 ;
     dc:identifier "J3R6nX" ;
     geosparql:hasGeometry ae:J3R6nX_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:J3R6nX_begin ;
+    time:hasEnd ae:J3R6nX_end .
+
+ae:J3R6nX_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:J3R6nX_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
 
 ae:J3R6nX_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -183,7 +223,15 @@ ae:JmWOrl a lado:event,
     lado:wikidata wikidata:Q2250231 ;
     dc:identifier "JmWOrl" ;
     geosparql:hasGeometry ae:JmWOrl_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:JmWOrl_begin ;
+    time:hasEnd ae:JmWOrl_end .
+
+ae:JmWOrl_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:JmWOrl_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
 
 ae:JmWOrl_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -209,7 +257,15 @@ ae:KbRY6O a lado:event,
     lado:wikidata wikidata:Q532466 ;
     dc:identifier "KbRY6O" ;
     geosparql:hasGeometry ae:KbRY6O_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:KbRY6O_begin ;
+    time:hasEnd ae:KbRY6O_end .
+
+ae:KbRY6O_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:KbRY6O_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:KbRY6O_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -235,7 +291,15 @@ ae:KmaGQd a lado:event,
     lado:wikidata wikidata:Q2311719 ;
     dc:identifier "KmaGQd" ;
     geosparql:hasGeometry ae:KmaGQd_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:KmaGQd_begin ;
+    time:hasEnd ae:KmaGQd_end .
+
+ae:KmaGQd_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:KmaGQd_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
 
 ae:KmaGQd_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -261,7 +325,15 @@ ae:LJA4XN a lado:event,
     lado:wikidata wikidata:Q134121 ;
     dc:identifier "LJA4XN" ;
     geosparql:hasGeometry ae:LJA4XN_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:LJA4XN_begin ;
+    time:hasEnd ae:LJA4XN_end .
+
+ae:LJA4XN_begin a time:Instant ;
+    time:inXSDgYear "-0012"^^xsd:gYear .
+
+ae:LJA4XN_end a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
 
 ae:LJA4XN_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -287,7 +359,15 @@ ae:LmM3V1 a lado:event,
     lado:wikidata wikidata:Q1011847 ;
     dc:identifier "LmM3V1" ;
     geosparql:hasGeometry ae:LmM3V1_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:LmM3V1_begin ;
+    time:hasEnd ae:LmM3V1_end .
+
+ae:LmM3V1_begin a time:Instant ;
+    time:inXSDgYear "0007"^^xsd:gYear .
+
+ae:LmM3V1_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
 
 ae:LmM3V1_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -313,7 +393,15 @@ ae:M8BAmk a lado:event,
     lado:wikidata wikidata:Q760496 ;
     dc:identifier "M8BAmk" ;
     geosparql:hasGeometry ae:M8BAmk_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:M8BAmk_begin ;
+    time:hasEnd ae:M8BAmk_end .
+
+ae:M8BAmk_begin a time:Instant ;
+    time:inXSDgYear "-0016"^^xsd:gYear .
+
+ae:M8BAmk_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:M8BAmk_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -337,7 +425,15 @@ ae:MADy9p a lado:event,
     lado:wikidata wikidata:Q2179590 ;
     dc:identifier "MADy9p" ;
     geosparql:hasGeometry ae:MADy9p_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:MADy9p_begin ;
+    time:hasEnd ae:MADy9p_end .
+
+ae:MADy9p_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:MADy9p_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
 
 ae:MADy9p_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -363,7 +459,15 @@ ae:Ndnd3r a lado:event,
     lado:wikidata wikidata:Q868754 ;
     dc:identifier "Ndnd3r" ;
     geosparql:hasGeometry ae:Ndnd3r_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:Ndnd3r_begin ;
+    time:hasEnd ae:Ndnd3r_end .
+
+ae:Ndnd3r_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:Ndnd3r_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:Ndnd3r_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -388,7 +492,15 @@ ae:OljG8l a lado:event,
     lado:wikidata wikidata:Q318196 ;
     dc:identifier "OljG8l" ;
     geosparql:hasGeometry ae:OljG8l_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:OljG8l_begin ;
+    time:hasEnd ae:OljG8l_end .
+
+ae:OljG8l_begin a time:Instant ;
+    time:inXSDgYear "-0016"^^xsd:gYear .
+
+ae:OljG8l_end a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
 
 ae:OljG8l_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -414,7 +526,15 @@ ae:QXlWK2 a lado:event,
     lado:wikidata wikidata:Q2371918 ;
     dc:identifier "QXlWK2" ;
     geosparql:hasGeometry ae:QXlWK2_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:QXlWK2_begin ;
+    time:hasEnd ae:QXlWK2_end .
+
+ae:QXlWK2_begin a time:Instant ;
+    time:inXSDgYear "-0016"^^xsd:gYear .
+
+ae:QXlWK2_end a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
 
 ae:QXlWK2_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -440,7 +560,15 @@ ae:Qz2oRe a lado:event,
     lado:wikidata wikidata:Q1094541 ;
     dc:identifier "Qz2oRe" ;
     geosparql:hasGeometry ae:Qz2oRe_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:Qz2oRe_begin ;
+    time:hasEnd ae:Qz2oRe_end .
+
+ae:Qz2oRe_begin a time:Instant ;
+    time:inXSDgYear "-0016"^^xsd:gYear .
+
+ae:Qz2oRe_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
 
 ae:Qz2oRe_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -466,7 +594,15 @@ ae:RjmPA4 a lado:event,
     lado:wikidata wikidata:Q1094536 ;
     dc:identifier "RjmPA4" ;
     geosparql:hasGeometry ae:RjmPA4_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:RjmPA4_begin ;
+    time:hasEnd ae:RjmPA4_end .
+
+ae:RjmPA4_begin a time:Instant ;
+    time:inXSDgYear "0007"^^xsd:gYear .
+
+ae:RjmPA4_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
 
 ae:RjmPA4_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -516,7 +652,15 @@ ae:gdWKYL a lado:event,
     lado:wikidata wikidata:Q3264025 ;
     dc:identifier "gdWKYL" ;
     geosparql:hasGeometry ae:gdWKYL_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:gdWKYL_begin ;
+    time:hasEnd ae:gdWKYL_end .
+
+ae:gdWKYL_begin a time:Instant ;
+    time:inXSDgYear "-0016"^^xsd:gYear .
+
+ae:gdWKYL_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:gdWKYL_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -542,7 +686,15 @@ ae:kBRoVE a lado:event,
     lado:wikidata wikidata:Q2179578 ;
     dc:identifier "kBRoVE" ;
     geosparql:hasGeometry ae:kBRoVE_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:kBRoVE_begin ;
+    time:hasEnd ae:kBRoVE_end .
+
+ae:kBRoVE_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:kBRoVE_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:kBRoVE_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -568,7 +720,15 @@ ae:oqJAd8 a lado:event,
     lado:wikidata wikidata:Q1863929 ;
     dc:identifier "oqJAd8" ;
     geosparql:hasGeometry ae:oqJAd8_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:oqJAd8_begin ;
+    time:hasEnd ae:oqJAd8_end .
+
+ae:oqJAd8_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:oqJAd8_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:oqJAd8_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -593,7 +753,15 @@ ae:rJXxA7 a lado:event,
     lado:wikidata wikidata:Q577724 ;
     dc:identifier "rJXxA7" ;
     geosparql:hasGeometry ae:rJXxA7_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:rJXxA7_begin ;
+    time:hasEnd ae:rJXxA7_end .
+
+ae:rJXxA7_begin a time:Instant ;
+    time:inXSDgYear "-0011"^^xsd:gYear .
+
+ae:rJXxA7_end a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
 
 ae:rJXxA7_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -631,7 +799,15 @@ ae:vXGN59 a lado:event,
     lado:wikidata wikidata:Q2179592 ;
     dc:identifier "vXGN59" ;
     geosparql:hasGeometry ae:vXGN59_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:vXGN59_begin ;
+    time:hasEnd ae:vXGN59_end .
+
+ae:vXGN59_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:vXGN59_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
 
 ae:vXGN59_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -657,7 +833,15 @@ ae:zLjX82 a lado:event,
     lado:wikidata wikidata:Q13452589 ;
     dc:identifier "zLjX82" ;
     geosparql:hasGeometry ae:zLjX82_geom ;
-    geosparql:memberOf aecol:arretine_sites .
+    geosparql:memberOf aecol:arretine_sites ;
+    time:hasBeginning ae:zLjX82_begin ;
+    time:hasEnd ae:zLjX82_end .
+
+ae:zLjX82_begin a time:Instant ;
+    time:inXSDgYear "0007"^^xsd:gYear .
+
+ae:zLjX82_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
 
 ae:zLjX82_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
