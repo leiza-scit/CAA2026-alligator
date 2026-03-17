@@ -1,0 +1,16 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/Polygon_collection> a geo:GeometryCollection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Polygon Instances Collection"@en ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    rdfs:member <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009_geom> .
+

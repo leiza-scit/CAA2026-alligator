@@ -1,0 +1,36 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://archaeology.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/MADy9p> a ns1:event,
+        <http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite>,
+        <http://fuzzy-sl.squirrel.link/ontology/Site>,
+        <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
+        time:Interval,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://pleiades.stoa.org/places/vocab#Place>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Dangstetten"@en ;
+    ns1:cax -1.0624 ;
+    ns1:cay 0.2223 ;
+    ns1:caz 0.5173 ;
+    ns1:endfixed true ;
+    ns1:estimatedend -9.0 ;
+    ns1:estimatedstart -15.0 ;
+    ns1:osm_entity <http://openstreetmap.org/way/103687183> ;
+    ns1:osm_tag "landuse=quarry" ;
+    ns1:pleiades <https://pleiades.stoa.org/places/970740488> ;
+    ns1:startfixed true ;
+    ns1:wikidata <http://www.wikidata.org/entity/Q2179590> ;
+    dc:identifier "MADy9p" ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/MADy9p_geom> ;
+    geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009> ;
+    time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/MADy9p_begin> ;
+    time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/MADy9p_end> .
+

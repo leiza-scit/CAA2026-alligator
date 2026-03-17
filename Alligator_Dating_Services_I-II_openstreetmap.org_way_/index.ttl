@@ -1,0 +1,18 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_openstreetmap.org_way_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Linkset: Alligator_Dating_Services_I-II - way"@en ;
+    void:linkPredicate <http://archaeology.link/ontology#osm_entity>,
+        skos:closeMatch,
+        skos:relatedMatch ;
+    void:objectsTarget <http://openstreetmap.org/way/> ;
+    void:subjectsTarget <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    void:triples 2,
+        5,
+        17 .
+

@@ -1,0 +1,11 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_nfen> a void:Dataset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Property Partition: nfen"@en ;
+    void:property <http://archaeology.link/ontology#nfen> ;
+    void:triples 39 .
+

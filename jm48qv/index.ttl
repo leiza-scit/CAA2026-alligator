@@ -1,0 +1,36 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://archaeology.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/jm48qv> a ns1:event,
+        <http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite>,
+        <http://fuzzy-sl.squirrel.link/ontology/Site>,
+        <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
+        time:Interval,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://pleiades.stoa.org/places/vocab#Place>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Nijmegen, Lager (Brunsting)"@en ;
+    ns1:cax 0.3731 ;
+    ns1:cay -0.0656 ;
+    ns1:caz -0.2295 ;
+    ns1:endfixed false ;
+    ns1:estimatedend 9.0 ;
+    ns1:estimatedstart -7.0 ;
+    ns1:nfen "Haltern" ;
+    ns1:nfsn "Haltern" ;
+    ns1:pleiades <https://pleiades.stoa.org/places/98921> ;
+    ns1:startfixed false ;
+    ns1:wikidata <http://www.wikidata.org/entity/Q1309708> ;
+    dc:identifier "jm48qv" ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/jm48qv_geom> ;
+    geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009> ;
+    time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/jm48qv_begin> ;
+    time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/jm48qv_end> .
+

@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>,
+        time:Interval,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Tiberian campaign"@en ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_begin> ;
+    time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_end> .
+

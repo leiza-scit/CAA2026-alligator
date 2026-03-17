@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/LineString_collection> a geo:GeometryCollection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "LineString Instances Collection"@en ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    rdfs:member <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009_geom> .
+

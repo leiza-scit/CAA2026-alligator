@@ -1,0 +1,40 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://archaeology.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/ojlAy1> a ns1:event,
+        <http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite>,
+        <http://fuzzy-sl.squirrel.link/ontology/Site>,
+        <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
+        time:Interval,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://pleiades.stoa.org/places/vocab#Place>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Zürich, Lindenhof"@en ;
+    ns1:cax -1.5681 ;
+    ns1:cay -3.3957 ;
+    ns1:caz -0.2093 ;
+    ns1:endfixed false ;
+    ns1:estimatedend -9.0 ;
+    ns1:estimatedstart -16.0 ;
+    ns1:nfen "Dangstetten" ;
+    ns1:nfsn "Neuss" ;
+    ns1:osm_entity <http://openstreetmap.org/node/3483897061> ;
+    ns1:osm_tag "historic=archaeological_site" ;
+    ns1:pleiades <https://pleiades.stoa.org/places/187596> ;
+    ns1:startfixed false ;
+    ns1:wikidata <http://www.wikidata.org/entity/Q10987378> ;
+    dc:identifier "ojlAy1" ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_geom> ;
+    geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009> ;
+    skos:closeMatch <http://openstreetmap.org/node/3483897061> ;
+    time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_begin> ;
+    time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_end> .
+

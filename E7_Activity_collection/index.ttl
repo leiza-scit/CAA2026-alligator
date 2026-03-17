@@ -1,0 +1,14 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/E7_Activity_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "E7_Activity Instances Collection"@en ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    rdfs:member <http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana>,
+        <http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns>,
+        <http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns>,
+        <http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign> .
+

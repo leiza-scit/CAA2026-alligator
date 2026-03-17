@@ -1,0 +1,36 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://archaeology.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/zLjX82> a ns1:event,
+        <http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite>,
+        <http://fuzzy-sl.squirrel.link/ontology/Site>,
+        <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
+        time:Interval,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://pleiades.stoa.org/places/vocab#Place>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Bregenz"@en ;
+    ns1:cax 0.3196 ;
+    ns1:cay 0.1604 ;
+    ns1:caz -0.7664 ;
+    ns1:endfixed false ;
+    ns1:estimatedend 13.0 ;
+    ns1:estimatedstart 7.0 ;
+    ns1:nfen "Augst, Insula 31" ;
+    ns1:nfsn "Augst, Insula 31" ;
+    ns1:pleiades <https://pleiades.stoa.org/places/187325> ;
+    ns1:startfixed false ;
+    ns1:wikidata <http://www.wikidata.org/entity/Q13452589> ;
+    dc:identifier "zLjX82" ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/zLjX82_geom> ;
+    geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013> ;
+    time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/zLjX82_begin> ;
+    time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/zLjX82_end> .
+

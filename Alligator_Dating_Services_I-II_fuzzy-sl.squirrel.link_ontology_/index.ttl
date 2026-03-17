@@ -1,0 +1,14 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_fuzzy-sl.squirrel.link_ontology_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Linkset: Alligator_Dating_Services_I-II - fsl:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://fuzzy-sl.squirrel.link/ontology/> ;
+    void:subjectsTarget <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    void:triples 90 .
+
