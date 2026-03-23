@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  body{margin:0;font-family:sans-serif;padding:6px 4px 4px}
+  #ctrl0448241ba6a7466b8034fe1933fcec6b{display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+    padding:.3rem 0 .3rem}
+  #ctrl0448241ba6a7466b8034fe1933fcec6b label{font-size:12px;color:#666}
+  #ctrl0448241ba6a7466b8034fe1933fcec6b select{font-size:12px;padding:2px 6px;border-radius:4px;
+    border:1px solid #ccc;background:#fff;color:#333}
+  #leg0448241ba6a7466b8034fe1933fcec6b{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;
+    color:#555;padding:.2rem 0 .3rem}
+  #leg0448241ba6a7466b8034fe1933fcec6b span{display:flex;align-items:center;gap:4px}
+  #leg0448241ba6a7466b8034fe1933fcec6b b{width:10px;height:10px;border-radius:2px;display:inline-block}
+</style>
+</head><body>
+<div id="ctrl0448241ba6a7466b8034fe1933fcec6b">
+  <label>Sort by</label>
+  <select id="sort0448241ba6a7466b8034fe1933fcec6b">
+    <option value="start">Start year</option>
+    <option value="end">End year</option>
+    <option value="allen">Allen relation</option>
+    <option value="label">Site name</option>
+  </select>
+  <label>Filter</label>
+  <select id="filt0448241ba6a7466b8034fe1933fcec6b">
+    <option value="all">All qualifying relations</option>
+    <option value="after">after</option>
+    <option value="contains">contains</option>
+    <option value="meets">meets (ends at AD 9)</option>
+  </select>
+</div>
+<div id="leg0448241ba6a7466b8034fe1933fcec6b">
+  <span><b style="background:#185FA5"></b>after &mdash; begins post-AD&nbsp;9</span>
+  <span><b style="background:#3B6D11"></b>contains &mdash; spans AD&nbsp;9</span>
+  <span><b style="background:#BA7517"></b>meets &mdash; ends at AD&nbsp;9</span>
+  <span><b style="background:#993C1D;opacity:.7"></b>Clades Variana AD&nbsp;9</span>
+</div>
+<div id="cont0448241ba6a7466b8034fe1933fcec6b"></div>
+<script>
+(function(){
+  var D=[{id:"vJnM0D",label:"Augst, Insula 20",start:16,end:28,rel:"after"},{id:"p4zxM0",label:"Augst, Theater",start:16,end:28,rel:"after"},{id:"JmWOrl",label:"Maastricht",start:16,end:28,rel:"after"},{id:"KmaGQd",label:"Vechten",start:16,end:28,rel:"after"},{id:"EOD041",label:"Velsen",start:16,end:28,rel:"after"},{id:"xbEdvL",label:"Zurzach, Lager",start:16,end:28,rel:"after"},{id:"Qz2oRe",label:"Worms",start:-16,end:13,rel:"contains"},{id:"zggRNd",label:"Augsburg, Stadt",start:7,end:13,rel:"contains"},{id:"rR3Mgy",label:"Augst, Insula 31",start:7,end:13,rel:"contains"},{id:"rY6gGz",label:"Avenches, Insula 15",start:7,end:13,rel:"contains"},{id:"zLjX82",label:"Bregenz",start:7,end:13,rel:"contains"},{id:"LmM3V1",label:"Friedberg",start:7,end:13,rel:"contains"},{id:"NedG0W",label:"Nijmegen, Trajanusplein",start:7,end:13,rel:"contains"},{id:"Krj7Qq",label:"Nijmegen, Valkhof",start:7,end:13,rel:"contains"},{id:"mkGlqM",label:"Oberwinterthur, Römerstr. 186",start:7,end:13,rel:"contains"},{id:"b0OGdE",label:"Vindonissa, Königsfelden",start:7,end:13,rel:"contains"},{id:"RjmPA4",label:"Wiesbaden",start:7,end:13,rel:"contains"},{id:"M8BAmk",label:"Augsburg-Oberhausen",start:-16,end:9,rel:"meets"},{id:"qJE4nZ",label:"Basel, Lagerdorf",start:-16,end:9,rel:"meets"},{id:"gdWKYL",label:"Lausanne-Vidy",start:-16,end:9,rel:"meets"},{id:"Q93OlW",label:"Asberg, Lagerdorf",start:-7,end:9,rel:"meets"},{id:"kBRoVE",label:"Bad Nauheim",start:-7,end:9,rel:"meets"},{id:"oQZq80",label:"Bonn, Boeselagerhof",start:-7,end:9,rel:"meets"},{id:"BWKpDQ",label:"Braives",start:-7,end:9,rel:"meets"},{id:"Ndnd3r",label:"Conimbriga",start:-7,end:9,rel:"meets"},{id:"vXGN59",label:"Haltern",start:-7,end:9,rel:"meets"},{id:"Ee4KvG",label:"Lorenzberg",start:-7,end:9,rel:"meets"},{id:"Repn5M",label:"Mainz, Legionslager",start:-7,end:9,rel:"meets"},{id:"jm48qv",label:"Nijmegen, Lager (Brunsting)",start:-7,end:9,rel:"meets"},{id:"oqJAd8",label:"Tongeren",start:-7,end:9,rel:"meets"},{id:"KbRY6O",label:"Vetera I",start:-7,end:9,rel:"meets"},{id:"N5MVXe",label:"Vindonissa, Scheuerhof",start:-7,end:9,rel:"meets"}];
+  var COL={after:"#185FA5",contains:"#3B6D11",meets:"#BA7517"};
+  var FIL={after:"#E6F1FB",contains:"#EAF3DE",meets:"#FAEEDA"};
+  var se=document.getElementById("sort0448241ba6a7466b8034fe1933fcec6b");
+  var fe=document.getElementById("filt0448241ba6a7466b8034fe1933fcec6b");
+  var ce=document.getElementById("cont0448241ba6a7466b8034fe1933fcec6b");
+  function yr(v){return v<0?(-v)+" BC":"AD "+v;}
+  function draw(){
+    var s=se.value,f=fe.value;
+    var d=f==="all"?D.slice():D.filter(function(x){return x.rel===f;});
+    d.sort(function(a,b){
+      if(s==="start")return a.start-b.start||a.label.localeCompare(b.label);
+      if(s==="end")  return a.end  -b.end  ||a.label.localeCompare(b.label);
+      if(s==="allen")return a.rel.localeCompare(b.rel)||a.start-b.start;
+      return a.label.localeCompare(b.label);
+    });
+    var LW=192,RH=21,RG=4,MT=38,MB=36,CW=490,MN=-18,MX=32;
+    var W=LW+CW+20,H=MT+d.length*(RH+RG)+MB;
+    function px(y){return LW+(y-MN)/(MX-MN)*CW;}
+    var ticks=[-15,-10,-5,0,5,9,10,15,20,25,30];
+    var o="";
+    o+='<svg xmlns="http://www.w3.org/2000/svg" width="'+W+'" height="'+H+'"';
+    o+=' style="font-family:sans-serif;overflow:visible">';
+    ticks.forEach(function(t){
+      var p=px(t),ev=(t===9);
+      o+='<line x1="'+p+'" y1="'+(MT-4)+'" x2="'+p+'" y2="'+(H-MB)+'"';
+      o+=' stroke="'+(ev?"#993C1D":"#ddd")+'"';
+      o+=' stroke-width="'+(ev?1.5:.5)+'"';
+      if(ev)o+=' stroke-dasharray="4 3"';
+      o+='/>';
+      o+='<text x="'+p+'" y="'+(MT-8)+'" text-anchor="middle"';
+      o+=' font-size="10" fill="'+(ev?"#993C1D":"#999")+'">';
+      o+=(ev?"AD 9":yr(t));
+      o+='</text>';
+    });
+    d.forEach(function(x,i){
+      var y=MT+i*(RH+RG);
+      var x1=px(x.start),x2=px(x.end),bw=Math.max(x2-x1,3);
+      var sc=COL[x.rel]||"#888",fc=FIL[x.rel]||"#eee";
+      o+='<text x="'+(LW-5)+'" y="'+(y+RH*.72)+'" text-anchor="end"';
+      o+=' font-size="11" fill="#444">'+x.label+'</text>';
+      o+='<rect x="'+x1+'" y="'+(y+2)+'" width="'+bw+'" height="'+(RH-4)+'"';
+      o+=' rx="3" fill="'+fc+'" stroke="'+sc+'" stroke-width="1.2"/>';
+      var rng=yr(x.start)+"–"+yr(x.end);
+      var lx=bw>68?x1+bw/2:x2+3,ta=bw>68?"middle":"start",tc=bw>68?sc:"#999";
+      o+='<text x="'+lx+'" y="'+(y+RH*.72)+'" text-anchor="'+ta+'"';
+      o+=' font-size="10" fill="'+tc+'">'+rng+'</text>';
+    });
+    var ex=px(9);
+    o+='<rect x="'+(ex-40)+'" y="'+(H-MB+4)+'" width="80" height="16"';
+    o+=' rx="3" fill="#FAECE7" stroke="#993C1D" stroke-width=".8"/>';
+    o+='<text x="'+ex+'" y="'+(H-MB+14)+'" text-anchor="middle"';
+    o+=' font-size="10" fill="#993C1D">Clades Variana</text>';
+    o+='</svg>';
+    ce.innerHTML=o;
+  }
+  se.addEventListener("change",draw);
+  fe.addEventListener("change",draw);
+  draw();
+})();
+</script>
+</body></html>
