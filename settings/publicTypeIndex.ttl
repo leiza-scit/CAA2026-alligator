@@ -305,12 +305,12 @@ void:Linkset a owl:Class .
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0007_ad0009_suniv0_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0007_ad0009_suniv1_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0007_ad0009_suniv2_>,
-        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_begin>,
-        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_end>,
-        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_geom>,
-        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_suniv0_>,
-        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_suniv1_>,
-        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_suniv2_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_begin>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_end>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_geom>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_suniv0_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_suniv1_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_suniv2_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0012_ad0008_begin>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0012_ad0008_end>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0012_ad0008_geom>,
@@ -1373,23 +1373,23 @@ void:Linkset a owl:Class .
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0007_ad0009_suniv2_> ns1:forClass geo:FeatureCollection ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0007_ad0009_suniv2_> .
 
-<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_begin> ns1:forClass time:Instant ;
-    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_ad0008_begin> .
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_begin> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_bc0007_begin> .
 
-<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_end> ns1:forClass time:Instant ;
-    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_ad0008_end> .
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_end> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_bc0007_end> .
 
-<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_geom> ns1:forClass <http://www.opengis.net/ont/sf#Point> ;
-    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_ad0008_geom> .
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_geom> ns1:forClass <http://www.opengis.net/ont/sf#Point> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_bc0007_geom> .
 
-<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_suniv0_> ns1:forClass time:Interval ;
-    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_ad0008_suniv0_> .
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_suniv0_> ns1:forClass time:Interval ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_bc0007_suniv0_> .
 
-<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_suniv1_> ns1:forClass <http://archaeology.link/ontology#PeriodCluster> ;
-    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_ad0008_suniv1_> .
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_suniv1_> ns1:forClass <http://archaeology.link/ontology#PeriodCluster> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_bc0007_suniv1_> .
 
-<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_ad0008_suniv2_> ns1:forClass geo:FeatureCollection ;
-    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_ad0008_suniv2_> .
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0011_bc0007_suniv2_> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0011_bc0007_suniv2_> .
 
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#cluster_bc0012_ad0008_begin> ns1:forClass time:Instant ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//cluster_bc0012_ad0008_begin> .

@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: intervalBefore"@en ;
     void:property time:intervalBefore ;
-    void:triples 13 .
+    void:triples 14 .
 

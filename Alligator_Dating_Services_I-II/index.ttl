@@ -40,13 +40,13 @@
     ns1:averageSubjectIRILength 61 ;
     ns1:datatypes 0 ;
     ns1:distinctBlankNodes 0 ;
-    ns1:distinctIRIReferences 972 ;
+    ns1:distinctIRIReferences 974 ;
     ns1:distinctLiterals 0 ;
-    ns1:distinctRDFNodes 972 ;
+    ns1:distinctRDFNodes 974 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2026-03-23T12:14:54"^^xsd:dateTime ;
+    dcterms:modified "2026-07-10T09:06:16"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -72,13 +72,13 @@
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_SpatialObjectCollection>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_event> ;
     void:classes 16 ;
-    void:dataDump <https://leiza-scit.github.io/CAA2026-alligator//index.ttl> ;
+    void:dataDump "https://leiza-scit.github.io/CAA2026-alligator//index.ttl"^^xsd:anyURI ;
     void:distinctObjects 684 ;
     void:distinctSubjects 247 ;
     void:entities 245 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
-    void:properties 41 ;
+    void:properties 43 ;
     void:propertyPartition <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_asWKT>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_cax>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_cay>,
@@ -103,6 +103,8 @@
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalDuring>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalFinishedBy>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalFinishes>,
+        <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalMeets>,
+        <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalMetBy>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalOverlappedBy>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalOverlaps>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalStartedBy>,
@@ -120,7 +122,7 @@
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_subClassOf>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_type>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_wikidata> ;
-    void:triples 2581 ;
+    void:triples 2580 ;
     void:uriSpace "http://leiza-scit.github.io/CAA2026-alligator/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,
@@ -160,7 +162,7 @@
         "Person"@en,
         "Q121810372"@en,
         "Time"@en ;
-    dcat:landingPage <https://leiza-scit.github.io/CAA2026-alligator/> ;
-    foaf:homepage <https://leiza-scit.github.io/CAA2026-alligator/> ;
-    foaf:page <https://leiza-scit.github.io/CAA2026-alligator//index.html> .
+    dcat:landingPage "https://leiza-scit.github.io/CAA2026-alligator/"^^xsd:anyURI ;
+    foaf:homepage "https://leiza-scit.github.io/CAA2026-alligator/"^^xsd:anyURI ;
+    foaf:page "https://leiza-scit.github.io/CAA2026-alligator//index.html"^^xsd:anyURI .
 

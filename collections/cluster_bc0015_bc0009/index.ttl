@@ -27,6 +27,6 @@
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013> ;
     time:intervalFinishes <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009> ;
-    time:intervalOverlaps <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008>,
+    time:intervalOverlaps <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008> .
 

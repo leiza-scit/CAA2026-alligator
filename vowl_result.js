@@ -2791,11 +2791,11 @@ var vowlresult={
   },
   {
    "id": 52,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_bc0011_ad0008"
+    "IRI-based": "cluster_bc0011_bc0007"
    },
    "annotations": {},
    "range": [],
@@ -4274,18 +4274,18 @@ var vowlresult={
   },
   {
    "id": 120,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_bc0011_ad0008_begin"
+    "IRI-based": "cluster_bc0011_bc0007_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0008",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -4297,11 +4297,11 @@ var vowlresult={
   },
   {
    "id": 121,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_bc0011_ad0008_end"
+    "IRI-based": "cluster_bc0011_bc0007_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5205,7 +5205,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0008",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -6414,11 +6414,11 @@ var vowlresult={
   },
   {
    "id": 204,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_bc0011_ad0008_geom"
+    "IRI-based": "cluster_bc0011_bc0007_geom"
    },
    "annotations": {
     "http://www.opengis.net/ont/geosparql#asWKT": [
@@ -15145,7 +15145,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#endfixed",
       "language": "undefined",
-      "value": "false",
+      "value": "true",
       "type": "label"
      }
     ],
@@ -15153,7 +15153,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#estimatedend",
       "language": "undefined",
-      "value": "8.0",
+      "value": "-7.0",
       "type": "label"
      }
     ],
@@ -15162,14 +15162,6 @@ var vowlresult={
       "identifier": "http://archaeology.link/ontology#estimatedstart",
       "language": "undefined",
       "value": "-11.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "R\u00f6dgen",
       "type": "label"
      }
     ],
@@ -15233,7 +15225,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
       "type": "iri"
      }
     ],
@@ -16475,11 +16467,11 @@ var vowlresult={
   },
   {
    "id": 457,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_bc0011_ad0008"
+    "IRI-based": "cluster_bc0011_bc0007"
    },
    "annotations": {},
    "range": [],
@@ -16604,7 +16596,7 @@ var vowlresult={
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
-   "label": "Period cluster 11 BCE \u2013 8 CE",
+   "label": "Period cluster 11 BCE \u2013 7 BCE",
    "annotations": {
     "http://archaeology.link/ontology#hasClusterMember": [
      {
@@ -16626,7 +16618,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_geom",
       "type": "iri"
      }
     ],
@@ -16634,7 +16626,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_begin",
       "type": "iri"
      }
     ],
@@ -16642,7 +16634,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_end",
       "type": "iri"
      }
     ],
@@ -16662,11 +16654,11 @@ var vowlresult={
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalFinishes": [
+    "http://www.w3.org/2006/time#intervalMeets": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalFinishes",
+      "identifier": "http://www.w3.org/2006/time#intervalMeets",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
       "type": "iri"
      }
     ],
@@ -16675,14 +16667,6 @@ var vowlresult={
       "identifier": "http://www.w3.org/2006/time#intervalOverlappedBy",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#intervalOverlaps": [
-     {
-      "identifier": "http://www.w3.org/2006/time#intervalOverlaps",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
       "type": "iri"
      }
     ]
@@ -16694,7 +16678,7 @@ var vowlresult={
   },
   {
    "id": 467,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": "Period cluster 16 BCE \u2013 13 CE",
@@ -16832,19 +16816,19 @@ var vowlresult={
       "type": "iri"
      }
     ],
+    "http://www.w3.org/2006/time#intervalContains": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalContains",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
+      "type": "iri"
+     }
+    ],
     "http://www.w3.org/2006/time#intervalDuring": [
      {
       "identifier": "http://www.w3.org/2006/time#intervalDuring",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#intervalFinishedBy": [
-     {
-      "identifier": "http://www.w3.org/2006/time#intervalFinishedBy",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_ad0008",
       "type": "iri"
      }
     ],
@@ -17472,6 +17456,14 @@ var vowlresult={
       "identifier": "http://www.w3.org/2006/time#intervalFinishes",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalMetBy": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalMetBy",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
       "type": "iri"
      }
     ],

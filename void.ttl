@@ -448,42 +448,52 @@ vext: a voaf:Vocabulary ;
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalAfter> a void:Dataset ;
     rdfs:label "Property Partition: intervalAfter"@en ;
     void:property time:intervalAfter ;
-    void:triples 13 .
+    void:triples 14 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalBefore> a void:Dataset ;
     rdfs:label "Property Partition: intervalBefore"@en ;
     void:property time:intervalBefore ;
-    void:triples 13 .
+    void:triples 14 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalContains> a void:Dataset ;
     rdfs:label "Property Partition: intervalContains"@en ;
     void:property time:intervalContains ;
-    void:triples 8 .
+    void:triples 10 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalDuring> a void:Dataset ;
     rdfs:label "Property Partition: intervalDuring"@en ;
     void:property time:intervalDuring ;
-    void:triples 8 .
+    void:triples 10 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalFinishedBy> a void:Dataset ;
     rdfs:label "Property Partition: intervalFinishedBy"@en ;
     void:property time:intervalFinishedBy ;
-    void:triples 6 .
+    void:triples 4 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalFinishes> a void:Dataset ;
     rdfs:label "Property Partition: intervalFinishes"@en ;
     void:property time:intervalFinishes ;
-    void:triples 6 .
+    void:triples 4 .
+
+<http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalMeets> a void:Dataset ;
+    rdfs:label "Property Partition: intervalMeets"@en ;
+    void:property time:intervalMeets ;
+    void:triples 1 .
+
+<http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalMetBy> a void:Dataset ;
+    rdfs:label "Property Partition: intervalMetBy"@en ;
+    void:property time:intervalMetBy ;
+    void:triples 1 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalOverlappedBy> a void:Dataset ;
     rdfs:label "Property Partition: intervalOverlappedBy"@en ;
     void:property time:intervalOverlappedBy ;
-    void:triples 12 .
+    void:triples 10 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalOverlaps> a void:Dataset ;
     rdfs:label "Property Partition: intervalOverlaps"@en ;
     void:property time:intervalOverlaps ;
-    void:triples 12 .
+    void:triples 10 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalStartedBy> a void:Dataset ;
     rdfs:label "Property Partition: intervalStartedBy"@en ;
@@ -513,7 +523,7 @@ vext: a voaf:Vocabulary ;
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_nfen> a void:Dataset ;
     rdfs:label "Property Partition: nfen"@en ;
     void:property <http://archaeology.link/ontology#nfen> ;
-    void:triples 39 .
+    void:triples 38 .
 
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_nfsn> a void:Dataset ;
     rdfs:label "Property Partition: nfsn"@en ;
@@ -759,13 +769,13 @@ time: a voaf:Vocabulary ;
     vext:averageSubjectIRILength 61 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 972 ;
+    vext:distinctIRIReferences 974 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 972 ;
+    vext:distinctRDFNodes 974 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2026-03-23T12:14:54"^^xsd:dateTime ;
+    dcterms:modified "2026-07-10T09:06:16"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -791,13 +801,13 @@ time: a voaf:Vocabulary ;
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_SpatialObjectCollection>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_event> ;
     void:classes 16 ;
-    void:dataDump <https://leiza-scit.github.io/CAA2026-alligator//index.ttl> ;
+    void:dataDump "https://leiza-scit.github.io/CAA2026-alligator//index.ttl"^^xsd:anyURI ;
     void:distinctObjects 684 ;
     void:distinctSubjects 247 ;
     void:entities 245 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
-    void:properties 41 ;
+    void:properties 43 ;
     void:propertyPartition <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_asWKT>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_cax>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_cay>,
@@ -822,6 +832,8 @@ time: a voaf:Vocabulary ;
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalDuring>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalFinishedBy>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalFinishes>,
+        <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalMeets>,
+        <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalMetBy>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalOverlappedBy>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalOverlaps>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_intervalStartedBy>,
@@ -839,7 +851,7 @@ time: a voaf:Vocabulary ;
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_subClassOf>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_type>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_wikidata> ;
-    void:triples 2581 ;
+    void:triples 2580 ;
     void:uriSpace "http://leiza-scit.github.io/CAA2026-alligator/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,
@@ -879,7 +891,7 @@ time: a voaf:Vocabulary ;
         "Person"@en,
         "Q121810372"@en,
         "Time"@en ;
-    dcat:landingPage <https://leiza-scit.github.io/CAA2026-alligator/> ;
-    foaf:homepage <https://leiza-scit.github.io/CAA2026-alligator/> ;
-    foaf:page <https://leiza-scit.github.io/CAA2026-alligator//index.html> .
+    dcat:landingPage "https://leiza-scit.github.io/CAA2026-alligator/"^^xsd:anyURI ;
+    foaf:homepage "https://leiza-scit.github.io/CAA2026-alligator/"^^xsd:anyURI ;
+    foaf:page "https://leiza-scit.github.io/CAA2026-alligator//index.html"^^xsd:anyURI .
 
