@@ -1418,6 +1418,9 @@ def plot_cluster_timeline(clusters: list, output_path: Path):
     cbar = fig.colorbar(
         sm, ax=ax, orientation="vertical", fraction=0.02, pad=0.02, aspect=20
     )
+    # Render the colour bar as vector polygons (not a raster image) in SVG output
+    if cbar.solids is not None:
+        cbar.solids.set_rasterized(False)
     cbar.set_label("Number of sites", fontsize=8, color="#333333")
     cbar.ax.yaxis.set_tick_params(color="#333333", labelsize=7)
     plt.setp(cbar.ax.yaxis.get_ticklabels(), color="#333333")
@@ -1436,6 +1439,12 @@ def plot_cluster_timeline(clusters: list, output_path: Path):
         str(output_path),
         dpi=150,
         format="jpeg",
+        bbox_inches="tight",
+        facecolor=fig.get_facecolor(),
+    )
+    fig.savefig(
+        str(output_path.with_suffix(".svg")),
+        format="svg",
         bbox_inches="tight",
         facecolor=fig.get_facecolor(),
     )
@@ -1621,6 +1630,12 @@ def plot_alligator_events_timeline(events: dict, output_path: Path):
     fig.savefig(
         str(output_path), dpi=150, format="jpeg", bbox_inches="tight", facecolor="white"
     )
+    fig.savefig(
+        str(output_path.with_suffix(".svg")),
+        format="svg",
+        bbox_inches="tight",
+        facecolor="white",
+    )
     plt.close(fig)
     print(f"✓ Events timeline saved: {output_path}")
 
@@ -1786,6 +1801,12 @@ def plot_allen_relations_matrix(clusters: list, output_path: Path):
     plt.tight_layout()
     fig.savefig(
         str(output_path), dpi=150, format="jpeg", bbox_inches="tight", facecolor="white"
+    )
+    fig.savefig(
+        str(output_path.with_suffix(".svg")),
+        format="svg",
+        bbox_inches="tight",
+        facecolor="white",
     )
     plt.close(fig)
     print(f"✓ Allen matrix saved: {output_path}")
@@ -2067,6 +2088,12 @@ def plot_allen_chain(clusters: list, output_path: Path):
     plt.tight_layout()
     fig.savefig(
         str(output_path), dpi=150, format="jpeg", bbox_inches="tight", facecolor="white"
+    )
+    fig.savefig(
+        str(output_path.with_suffix(".svg")),
+        format="svg",
+        bbox_inches="tight",
+        facecolor="white",
     )
     plt.close(fig)
     print(f"✓ Allen chain saved: {output_path}")
