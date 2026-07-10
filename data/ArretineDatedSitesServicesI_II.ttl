@@ -90,13 +90,12 @@ ae:rJXxA7 a time:Interval .
 ae:rJXxA7 dc:identifier "rJXxA7" .
 ae:rJXxA7 rdfs:label "Oberaden" .
 ae:rJXxA7 alligator:estimatedstart "-11.0" .
-ae:rJXxA7 alligator:estimatedend "8.0" .
+ae:rJXxA7 alligator:estimatedend "-7.0" .
 ae:rJXxA7 alligator:cax "-0.6965" .
 ae:rJXxA7 alligator:cay "0.2155" .
 ae:rJXxA7 alligator:caz "0.4023" .
 ae:rJXxA7 alligator:startfixed "true" .
-ae:rJXxA7 alligator:endfixed "false" .
-ae:rJXxA7 alligator:nfen "Rödgen" .
+ae:rJXxA7 alligator:endfixed "true" .
 
 ae:J3R6nX a alligator:event .
 ae:J3R6nX a time:Interval .

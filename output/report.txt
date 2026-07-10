@@ -1,6 +1,6 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-03-17 12:59:11
+Timestamp: 2026-07-10 10:57:37
 ============================================================
 Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
@@ -32,7 +32,7 @@ RDF Conversion
 ✓ RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
 
 Graph statistics:
-  Triples total      : 1442
+  Triples total      : 1441
   Sites              : 45
   FeatureCollections : 1
 Loading additional events: c:\git\CAA2026-alligator\data\MoreEvents.csv
@@ -49,7 +49,7 @@ Detecting period clusters...
   [   -16.0 –     13.0]   1 member(s): ['Worms']
   [   -15.0 –     -9.0]   3 member(s): ['Basel, Lager', 'Dangstetten', 'Titelberg']
   [   -12.0 –      8.0]   2 member(s): ['Rödgen', 'Namur']
-  [   -11.0 –      8.0]   1 member(s): ['Oberaden']
+  [   -11.0 –     -7.0]   1 member(s): ['Oberaden']
   [    -7.0 –      9.0]  12 member(s): ['Conimbriga', 'Tongeren', 'Bonn, Boeselagerhof', 'Nijmegen, Lager (Brunsting)', 'Vetera I', 'Bad Nauheim', 'Haltern', 'Asberg, Lagerdorf', 'Braives', 'Lorenzberg', 'Mainz, Legionslager', 'Vindonissa, Scheuerhof']
   [     7.0 –     13.0]  10 member(s): ['Augst, Insula 31', 'Bregenz', 'Nijmegen, Trajanusplein', 'Nijmegen, Valkhof', 'Augsburg, Stadt', 'Avenches, Insula 15', 'Friedberg', 'Oberwinterthur, Römerstr. 186', 'Vindonissa, Königsfelden', 'Wiesbaden']
   [    16.0 –     28.0]   6 member(s): ['Augst, Insula 20', 'Vechten', 'Augst, Theater', 'Maastricht', 'Velsen', 'Zurzach, Lager']
@@ -61,7 +61,7 @@ Computing Allen interval relations between clusters...
 ✓ 90 Allen relation triples written across 10 clusters
 
 ✓ Final RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
-  Triples total: 1830
+  Triples total: 1829
 
 ============================================================
 Visualisations

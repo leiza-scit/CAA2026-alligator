@@ -1,0 +1,14 @@
+# Runtime dependencies for py/alligator_to_clean_rdf.py
+# (all other imports used by the script are part of the Python standard library)
+#
+# Install with:  pip install -r requirements.txt
+# Requires Python >= 3.9
+#
+# Lower bounds are chosen for broad compatibility; the pipeline was last
+# verified with the exact versions noted after each entry.
+
+pandas>=2.0        # tested with 3.0.2
+matplotlib>=3.7    # tested with 3.10.8
+networkx>=3.0      # tested with 3.6.1
+rdflib>=7.0        # tested with 7.6.0
+shapely>=2.0       # tested with 2.1.2

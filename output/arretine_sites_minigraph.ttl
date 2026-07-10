@@ -325,13 +325,13 @@ aecol:cluster_bc0007_ad0009_end a time:Instant ;
 aecol:cluster_bc0007_ad0009_geom a sf:Polygon ;
     geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, -8.49341 40.09905))"^^geosparql:wktLiteral .
 
-aecol:cluster_bc0011_ad0008_begin a time:Instant ;
+aecol:cluster_bc0011_bc0007_begin a time:Instant ;
     time:inXSDgYear "-0011"^^xsd:gYear .
 
-aecol:cluster_bc0011_ad0008_end a time:Instant ;
-    time:inXSDgYear "0008"^^xsd:gYear .
+aecol:cluster_bc0011_bc0007_end a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
 
-aecol:cluster_bc0011_ad0008_geom a sf:Point ;
+aecol:cluster_bc0011_bc0007_geom a sf:Point ;
     geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT (7.58444 51.6125)"^^geosparql:wktLiteral .
 
 aecol:cluster_bc0012_ad0008_begin a time:Instant ;
@@ -506,7 +506,7 @@ ae:rJXxA7_begin a time:Instant ;
     time:inXSDgYear "-0011"^^xsd:gYear .
 
 ae:rJXxA7_end a time:Instant ;
-    time:inXSDgYear "0008"^^xsd:gYear .
+    time:inXSDgYear "-0007"^^xsd:gYear .
 
 ae:rJXxA7_geom a sf:Point ;
     fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
@@ -1543,10 +1543,9 @@ ae:rJXxA7 a lado:event,
     lado:cax -0.6965 ;
     lado:cay 0.2155 ;
     lado:caz 0.4023 ;
-    lado:endfixed false ;
-    lado:estimatedend 8.0 ;
+    lado:endfixed true ;
+    lado:estimatedend -7.0 ;
     lado:estimatedstart -11.0 ;
-    lado:nfen "Rödgen" ;
     lado:osm_entity <http://openstreetmap.org/way/157929084> ;
     lado:osm_tag "historic=archaeological_site" ;
     lado:pleiades pleiadesplace:109229 ;
@@ -1555,7 +1554,7 @@ ae:rJXxA7 a lado:event,
     dc:identifier "rJXxA7" ;
     geosparql:hasGeometry ae:rJXxA7_geom ;
     geosparql:memberOf aecol:arretine_sites,
-        aecol:cluster_bc0011_ad0008 ;
+        aecol:cluster_bc0011_bc0007 ;
     time:hasBeginning ae:rJXxA7_begin ;
     time:hasEnd ae:rJXxA7_end .
 
@@ -1768,24 +1767,24 @@ ae:zggRNd a lado:event,
     time:hasBeginning ae:zggRNd_begin ;
     time:hasEnd ae:zggRNd_end .
 
-aecol:cluster_bc0011_ad0008 a lado:PeriodCluster,
+aecol:cluster_bc0011_bc0007 a lado:PeriodCluster,
         geosparql:FeatureCollection,
         time:Interval ;
-    rdfs:label "Period cluster 11 BCE – 8 CE"@en ;
+    rdfs:label "Period cluster 11 BCE – 7 BCE"@en ;
     lado:hasClusterMember ae:rJXxA7 ;
     geosparql:hasFeature ae:rJXxA7 ;
-    geosparql:hasGeometry aecol:cluster_bc0011_ad0008_geom ;
-    time:hasBeginning aecol:cluster_bc0011_ad0008_begin ;
-    time:hasEnd aecol:cluster_bc0011_ad0008_end ;
-    time:intervalBefore aecol:cluster_ad0016_ad0028 ;
-    time:intervalDuring aecol:cluster_bc0016_ad0009,
+    geosparql:hasGeometry aecol:cluster_bc0011_bc0007_geom ;
+    time:hasBeginning aecol:cluster_bc0011_bc0007_begin ;
+    time:hasEnd aecol:cluster_bc0011_bc0007_end ;
+    time:intervalBefore aecol:cluster_ad0007_ad0013,
+        aecol:cluster_ad0016_ad0028 ;
+    time:intervalDuring aecol:cluster_bc0012_ad0008,
+        aecol:cluster_bc0016_ad0008,
+        aecol:cluster_bc0016_ad0009,
         aecol:cluster_bc0016_ad0013 ;
-    time:intervalFinishes aecol:cluster_bc0012_ad0008,
-        aecol:cluster_bc0016_ad0008 ;
+    time:intervalMeets aecol:cluster_bc0007_ad0009 ;
     time:intervalOverlappedBy aecol:cluster_bc0015_bc0009,
-        aecol:cluster_bc0016_bc0009 ;
-    time:intervalOverlaps aecol:cluster_ad0007_ad0013,
-        aecol:cluster_bc0007_ad0009 .
+        aecol:cluster_bc0016_bc0009 .
 
 aecol:cluster_bc0016_ad0013 a lado:PeriodCluster,
         geosparql:FeatureCollection,
@@ -1798,7 +1797,7 @@ aecol:cluster_bc0016_ad0013 a lado:PeriodCluster,
     time:hasEnd aecol:cluster_bc0016_ad0013_end ;
     time:intervalBefore aecol:cluster_ad0016_ad0028 ;
     time:intervalContains aecol:cluster_bc0007_ad0009,
-        aecol:cluster_bc0011_ad0008,
+        aecol:cluster_bc0011_bc0007,
         aecol:cluster_bc0012_ad0008,
         aecol:cluster_bc0015_bc0009 ;
     time:intervalFinishedBy aecol:cluster_ad0007_ad0013 ;
@@ -1818,9 +1817,9 @@ aecol:cluster_bc0012_ad0008 a lado:PeriodCluster,
     time:hasBeginning aecol:cluster_bc0012_ad0008_begin ;
     time:hasEnd aecol:cluster_bc0012_ad0008_end ;
     time:intervalBefore aecol:cluster_ad0016_ad0028 ;
+    time:intervalContains aecol:cluster_bc0011_bc0007 ;
     time:intervalDuring aecol:cluster_bc0016_ad0009,
         aecol:cluster_bc0016_ad0013 ;
-    time:intervalFinishedBy aecol:cluster_bc0011_ad0008 ;
     time:intervalFinishes aecol:cluster_bc0016_ad0008 ;
     time:intervalOverlappedBy aecol:cluster_bc0015_bc0009,
         aecol:cluster_bc0016_bc0009 ;
@@ -1842,7 +1841,7 @@ aecol:cluster_bc0016_bc0009 a lado:PeriodCluster,
         aecol:cluster_ad0016_ad0028,
         aecol:cluster_bc0007_ad0009 ;
     time:intervalFinishedBy aecol:cluster_bc0015_bc0009 ;
-    time:intervalOverlaps aecol:cluster_bc0011_ad0008,
+    time:intervalOverlaps aecol:cluster_bc0011_bc0007,
         aecol:cluster_bc0012_ad0008 ;
     time:intervalStarts aecol:cluster_bc0016_ad0008,
         aecol:cluster_bc0016_ad0009,
@@ -1868,7 +1867,7 @@ aecol:cluster_bc0015_bc0009 a lado:PeriodCluster,
         aecol:cluster_bc0016_ad0009,
         aecol:cluster_bc0016_ad0013 ;
     time:intervalFinishes aecol:cluster_bc0016_bc0009 ;
-    time:intervalOverlaps aecol:cluster_bc0011_ad0008,
+    time:intervalOverlaps aecol:cluster_bc0011_bc0007,
         aecol:cluster_bc0012_ad0008 .
 
 aecol:cluster_bc0016_ad0009 a lado:PeriodCluster,
@@ -1885,7 +1884,7 @@ aecol:cluster_bc0016_ad0009 a lado:PeriodCluster,
     time:hasBeginning aecol:cluster_bc0016_ad0009_begin ;
     time:hasEnd aecol:cluster_bc0016_ad0009_end ;
     time:intervalBefore aecol:cluster_ad0016_ad0028 ;
-    time:intervalContains aecol:cluster_bc0011_ad0008,
+    time:intervalContains aecol:cluster_bc0011_bc0007,
         aecol:cluster_bc0012_ad0008,
         aecol:cluster_bc0015_bc0009 ;
     time:intervalFinishedBy aecol:cluster_bc0007_ad0009 ;
@@ -1910,9 +1909,9 @@ aecol:cluster_bc0016_ad0008 a lado:PeriodCluster,
     time:hasBeginning aecol:cluster_bc0016_ad0008_begin ;
     time:hasEnd aecol:cluster_bc0016_ad0008_end ;
     time:intervalBefore aecol:cluster_ad0016_ad0028 ;
-    time:intervalContains aecol:cluster_bc0015_bc0009 ;
-    time:intervalFinishedBy aecol:cluster_bc0011_ad0008,
-        aecol:cluster_bc0012_ad0008 ;
+    time:intervalContains aecol:cluster_bc0011_bc0007,
+        aecol:cluster_bc0015_bc0009 ;
+    time:intervalFinishedBy aecol:cluster_bc0012_ad0008 ;
     time:intervalOverlaps aecol:cluster_ad0007_ad0013,
         aecol:cluster_bc0007_ad0009 ;
     time:intervalStartedBy aecol:cluster_bc0016_bc0009 ;
@@ -1940,7 +1939,7 @@ aecol:cluster_ad0016_ad0028 a lado:PeriodCluster,
     time:hasEnd aecol:cluster_ad0016_ad0028_end ;
     time:intervalAfter aecol:cluster_ad0007_ad0013,
         aecol:cluster_bc0007_ad0009,
-        aecol:cluster_bc0011_ad0008,
+        aecol:cluster_bc0011_bc0007,
         aecol:cluster_bc0012_ad0008,
         aecol:cluster_bc0015_bc0009,
         aecol:cluster_bc0016_ad0008,
@@ -1975,12 +1974,12 @@ aecol:cluster_ad0007_ad0013 a lado:PeriodCluster,
     geosparql:hasGeometry aecol:cluster_ad0007_ad0013_geom ;
     time:hasBeginning aecol:cluster_ad0007_ad0013_begin ;
     time:hasEnd aecol:cluster_ad0007_ad0013_end ;
-    time:intervalAfter aecol:cluster_bc0015_bc0009,
+    time:intervalAfter aecol:cluster_bc0011_bc0007,
+        aecol:cluster_bc0015_bc0009,
         aecol:cluster_bc0016_bc0009 ;
     time:intervalBefore aecol:cluster_ad0016_ad0028 ;
     time:intervalFinishes aecol:cluster_bc0016_ad0013 ;
     time:intervalOverlappedBy aecol:cluster_bc0007_ad0009,
-        aecol:cluster_bc0011_ad0008,
         aecol:cluster_bc0012_ad0008,
         aecol:cluster_bc0016_ad0008,
         aecol:cluster_bc0016_ad0009 .
@@ -2021,8 +2020,8 @@ aecol:cluster_bc0007_ad0009 a lado:PeriodCluster,
     time:intervalBefore aecol:cluster_ad0016_ad0028 ;
     time:intervalDuring aecol:cluster_bc0016_ad0013 ;
     time:intervalFinishes aecol:cluster_bc0016_ad0009 ;
-    time:intervalOverlappedBy aecol:cluster_bc0011_ad0008,
-        aecol:cluster_bc0012_ad0008,
+    time:intervalMetBy aecol:cluster_bc0011_bc0007 ;
+    time:intervalOverlappedBy aecol:cluster_bc0012_ad0008,
         aecol:cluster_bc0016_ad0008 ;
     time:intervalOverlaps aecol:cluster_ad0007_ad0013 .
 
