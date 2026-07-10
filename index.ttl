@@ -1869,7 +1869,7 @@
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    time:inXSDgYear "0009"^^xsd:gYear .
+    time:inXSDgYear "0008"^^xsd:gYear .
 
 <http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_end> a time:Instant,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -1917,14 +1917,14 @@
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    time:inXSDgYear "0014"^^xsd:gYear .
+    time:inXSDgYear "0016"^^xsd:gYear .
 
 <http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_end> a time:Instant,
         <http://www.w3.org/ns/ldp#BasicContainer>,
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    time:inXSDgYear "0016"^^xsd:gYear .
+    time:inXSDgYear "0017"^^xsd:gYear .
 
 <http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign> a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>,
         time:Interval,
@@ -1948,7 +1948,7 @@
         <http://www.w3.org/ns/ldp#Container>,
         <http://www.w3.org/ns/ldp#Resource> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    time:inXSDgYear "-0015"^^xsd:gYear .
+    time:inXSDgYear "-0014"^^xsd:gYear .
 
 <http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_begin> a time:Instant,
         <http://www.w3.org/ns/ldp#BasicContainer>,
@@ -4068,13 +4068,13 @@
     ns3:averageSubjectIRILength 61 ;
     ns3:datatypes 0 ;
     ns3:distinctBlankNodes 0 ;
-    ns3:distinctIRIReferences 974 ;
+    ns3:distinctIRIReferences 975 ;
     ns3:distinctLiterals 0 ;
-    ns3:distinctRDFNodes 974 ;
+    ns3:distinctRDFNodes 975 ;
     ns3:languages 0 ;
     ns3:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2026-07-10T09:16:28"^^xsd:dateTime ;
+    dcterms:modified "2026-07-10T11:45:05"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -4101,7 +4101,7 @@
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_event> ;
     void:classes 16 ;
     void:dataDump "https://leiza-scit.github.io/CAA2026-alligator//index.ttl"^^xsd:anyURI ;
-    void:distinctObjects 684 ;
+    void:distinctObjects 685 ;
     void:distinctSubjects 247 ;
     void:entities 245 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,

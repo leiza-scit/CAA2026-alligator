@@ -38,9 +38,9 @@
         </ows:OperationsMetadata>
         <wfs:FeatureTypeList>
                 <wfs:FeatureType>
-                    <wfs:Name>Site_collection</wfs:Name>
-                    <wfs:Title>Site_collection</wfs:Title>
-                    <wfs:Abstract>FeatureCollection Site_collection</wfs:Abstract>
+                    <wfs:Name>event_collection</wfs:Name>
+                    <wfs:Title>event_collection</wfs:Title>
+                    <wfs:Abstract>FeatureCollection event_collection</wfs:Abstract>
                     <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
 
                 <wfs:FeatureType>
@@ -50,9 +50,9 @@
                     <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
 
                 <wfs:FeatureType>
-                    <wfs:Name>ArchaeologicalSite_collection</wfs:Name>
-                    <wfs:Title>ArchaeologicalSite_collection</wfs:Title>
-                    <wfs:Abstract>FeatureCollection ArchaeologicalSite_collection</wfs:Abstract>
+                    <wfs:Name>Point_collection</wfs:Name>
+                    <wfs:Title>Point_collection</wfs:Title>
+                    <wfs:Abstract>FeatureCollection Point_collection</wfs:Abstract>
                     <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
 
                 <wfs:FeatureType>
@@ -62,27 +62,27 @@
                     <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
 
                 <wfs:FeatureType>
-                    <wfs:Name>event_collection</wfs:Name>
-                    <wfs:Title>event_collection</wfs:Title>
-                    <wfs:Abstract>FeatureCollection event_collection</wfs:Abstract>
+                    <wfs:Name>PeriodCluster_collection</wfs:Name>
+                    <wfs:Title>PeriodCluster_collection</wfs:Title>
+                    <wfs:Abstract>FeatureCollection PeriodCluster_collection</wfs:Abstract>
+                    <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
+
+                <wfs:FeatureType>
+                    <wfs:Name>ArchaeologicalSite_collection</wfs:Name>
+                    <wfs:Title>ArchaeologicalSite_collection</wfs:Title>
+                    <wfs:Abstract>FeatureCollection ArchaeologicalSite_collection</wfs:Abstract>
+                    <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
+
+                <wfs:FeatureType>
+                    <wfs:Name>Site_collection</wfs:Name>
+                    <wfs:Title>Site_collection</wfs:Title>
+                    <wfs:Abstract>FeatureCollection Site_collection</wfs:Abstract>
                     <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
 
                 <wfs:FeatureType>
                     <wfs:Name>Place_collection</wfs:Name>
                     <wfs:Title>Place_collection</wfs:Title>
                     <wfs:Abstract>FeatureCollection Place_collection</wfs:Abstract>
-                    <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
-
-                <wfs:FeatureType>
-                    <wfs:Name>Point_collection</wfs:Name>
-                    <wfs:Title>Point_collection</wfs:Title>
-                    <wfs:Abstract>FeatureCollection Point_collection</wfs:Abstract>
-                    <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
-
-                <wfs:FeatureType>
-                    <wfs:Name>PeriodCluster_collection</wfs:Name>
-                    <wfs:Title>PeriodCluster_collection</wfs:Title>
-                    <wfs:Abstract>FeatureCollection PeriodCluster_collection</wfs:Abstract>
                     <wfs:DefaultSRS>http://www.opengis.net/def/crs/EPSG/0/4326</wfs:DefaultSRS></wfs:FeatureType>
 
                 <wfs:FeatureType>
