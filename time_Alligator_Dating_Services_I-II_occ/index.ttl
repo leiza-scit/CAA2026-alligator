@@ -7,5 +7,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2006/time# in Alligator_Dating_Services_I-II" ;
     ns1:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    ns1:occurrences 342 .
+    ns1:occurrences 336 .
 

@@ -10,7 +10,6 @@
     rdfs:member <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_geom>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_geom>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_geom>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0008_geom>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_geom>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_geom> .
 

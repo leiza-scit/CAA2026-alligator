@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: hasBeginning"@en ;
     void:property time:hasBeginning ;
-    void:triples 57 .
+    void:triples 56 .
 

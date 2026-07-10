@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: intervalMetBy"@en ;
     void:property time:intervalMetBy ;
-    void:triples 3 .
+    void:triples 1 .
 

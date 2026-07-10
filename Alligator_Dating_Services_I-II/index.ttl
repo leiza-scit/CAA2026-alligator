@@ -40,13 +40,13 @@
     ns1:averageSubjectIRILength 61 ;
     ns1:datatypes 0 ;
     ns1:distinctBlankNodes 0 ;
-    ns1:distinctIRIReferences 961 ;
+    ns1:distinctIRIReferences 951 ;
     ns1:distinctLiterals 0 ;
-    ns1:distinctRDFNodes 961 ;
+    ns1:distinctRDFNodes 951 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2026-07-10T12:12:21"^^xsd:dateTime ;
+    dcterms:modified "2026-07-10T12:32:27"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -73,9 +73,9 @@
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_event> ;
     void:classes 16 ;
     void:dataDump "https://leiza-scit.github.io/CAA2026-alligator//index.ttl"^^xsd:anyURI ;
-    void:distinctObjects 675 ;
-    void:distinctSubjects 243 ;
-    void:entities 241 ;
+    void:distinctObjects 669 ;
+    void:distinctSubjects 239 ;
+    void:entities 237 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 43 ;
@@ -122,7 +122,7 @@
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_subClassOf>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_type>,
         <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II_wikidata> ;
-    void:triples 2539 ;
+    void:triples 2500 ;
     void:uriSpace "http://leiza-scit.github.io/CAA2026-alligator/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,
