@@ -1452,7 +1452,9 @@ def plot_cluster_timeline(clusters: list, output_path: Path):
     print(f"✓ Timeline saved: {output_path}")
 
 
-def plot_alligator_events_timeline(events: dict, output_path: Path):
+def plot_alligator_events_timeline(
+    events: dict, output_path: Path, more_events=None, show_title=True, lang="en"
+):
     """Draw a timeline of individual Alligator events, styled after the JS tool.
 
     Colour coding
@@ -1599,17 +1601,146 @@ def plot_alligator_events_timeline(events: dict, output_path: Path):
     for spine in ax.spines.values():
         spine.set_edgecolor("#cccccc")
 
+    # --- Localised strings (English / French) ---
+    STRINGS = {
+        "en": {
+            "title": "Alligator Events — Individual Site Timeline",
+            "xlabel": "Year",
+            "calc": "Calculated boundaries (nfsn / nfen)",
+            "fixed": "Fixed boundaries (startfixed & endfixed)",
+            "phases": "Historical phases",
+        },
+        "fr": {
+            "title": "Événements Alligator — Chronologie par site",
+            "xlabel": "Année",
+            "calc": "Limites calculées (nfsn / nfen)",
+            "fixed": "Limites fixes (startfixed & endfixed)",
+            "phases": "Phases historiques",
+        },
+    }
+    s = STRINGS.get(lang, STRINGS["en"])
+
+    # French renderings of the historical-phase names (fallback: original label)
+    PHASE_LABELS_FR = {
+        "Tiberian campaign": "Campagne de Tibère",
+        "Drusus campaigns": "Campagnes de Drusus",
+        "Clades Variana": "Clades Variana",
+        "Germanicus campaigns": "Campagnes de Germanicus",
+    }
+
+    # --- Overlay: historical phases from MoreEvents.csv as vertical strokes ---
+    # Point events (start == end) get a single vertical line; range events get a
+    # line at each boundary plus a faint shaded band. Each phase is labelled in a
+    # rounded box below the time axis, linked by a leader line to a diamond marker.
+    # Enabled only when a `more_events` DataFrame is passed.
+    extra_legend = []
+    if more_events is not None and len(more_events) > 0:
+        import matplotlib.lines as mlines
+
+        LINE_COLOUR = "#4b5563"  # dark grey — vertical strokes and band
+        BOX_EDGE = "#4b5563"  # dark grey — box outline, leader line, diamond
+        LABEL_COLOUR = "#000000"  # black — high-contrast, very legible labels
+
+        # Collect and sort phases left-to-right so the boxes can be staggered
+        phases = []
+        for _, ev in more_events.iterrows():
+            try:
+                e_start = float(ev["start"])
+                e_end = float(ev["end"])
+            except (ValueError, TypeError):
+                continue
+            phases.append((e_start, e_end, str(ev["label"])))
+        phases.sort(key=lambda p: (p[0] + p[1]) / 2)
+
+        axis_tf = ax.get_xaxis_transform()  # x in data units, y in axes fraction
+        for idx, (e_start, e_end, e_label) in enumerate(phases):
+            is_range = e_end != e_start
+            x_mid = (e_start + e_end) / 2
+            disp_label = (
+                PHASE_LABELS_FR.get(e_label, e_label) if lang == "fr" else e_label
+            )
+
+            # Faint band for range phases
+            if is_range:
+                ax.axvspan(e_start, e_end, color=LINE_COLOUR, alpha=0.07, zorder=1.5)
+
+            # Vertical dashed stroke(s) at the boundary year(s)
+            for xline in {e_start, e_end} if is_range else {e_start}:
+                ax.axvline(
+                    xline,
+                    color=LINE_COLOUR,
+                    linewidth=1.4,
+                    linestyle=(0, (5, 2)),
+                    alpha=0.9,
+                    zorder=6,
+                )
+
+            # Diamond marker where the phase meets the time axis
+            ax.plot(
+                [x_mid],
+                [0],
+                marker="D",
+                markersize=7,
+                markerfacecolor="white",
+                markeredgecolor=BOX_EDGE,
+                markeredgewidth=1.4,
+                transform=axis_tf,
+                clip_on=False,
+                zorder=8,
+            )
+
+            # Boxed label BELOW the time axis, connected by a leader line.
+            # Alternate two rows to avoid horizontal overlap between neighbours.
+            row = idx % 2
+            y_offset = -52 - row * 34  # points below the axis
+            ax.annotate(
+                disp_label,
+                xy=(x_mid, 0),
+                xycoords=axis_tf,
+                xytext=(0, y_offset),
+                textcoords="offset points",
+                ha="center",
+                va="top",
+                fontsize=12,
+                fontweight="bold",
+                color=LABEL_COLOUR,
+                bbox=dict(
+                    boxstyle="round,pad=0.35",
+                    facecolor="white",
+                    edgecolor=BOX_EDGE,
+                    linewidth=1.3,
+                ),
+                arrowprops=dict(
+                    arrowstyle="-",
+                    color=BOX_EDGE,
+                    linewidth=1.2,
+                    shrinkA=1,
+                    shrinkB=5,
+                ),
+                annotation_clip=False,
+                zorder=9,
+            )
+
+        extra_legend.append(
+            mlines.Line2D(
+                [],
+                [],
+                color=LINE_COLOUR,
+                linewidth=1.4,
+                linestyle=(0, (5, 2)),
+                label=s["phases"],
+            )
+        )
+
     # --- Legend ---
     import matplotlib.patches as mpatches
 
     legend_patches = [
-        mpatches.Patch(color=COLOUR_CALC, label="Calculated boundaries (nfsn / nfen)"),
-        mpatches.Patch(
-            color=COLOUR_FIXED, label="Fixed boundaries (startfixed & endfixed)"
-        ),
+        mpatches.Patch(color=COLOUR_CALC, label=s["calc"]),
+        mpatches.Patch(color=COLOUR_FIXED, label=s["fixed"]),
     ]
     ax.legend(
-        handles=legend_patches,
+        handles=legend_patches + extra_legend,
         loc="lower right",
         fontsize=8,
         framealpha=0.9,
@@ -1617,14 +1748,15 @@ def plot_alligator_events_timeline(events: dict, output_path: Path):
         edgecolor="#cccccc",
     )
 
-    ax.set_title(
-        "Alligator Events — Individual Site Timeline",
-        color="#111111",
-        fontsize=13,
-        fontweight="bold",
-        pad=12,
-    )
-    ax.set_xlabel("Year", color="#333333", fontsize=9)
+    if show_title:
+        ax.set_title(
+            s["title"],
+            color="#111111",
+            fontsize=13,
+            fontweight="bold",
+            pad=12,
+        )
+    ax.set_xlabel(s["xlabel"], color="#333333", fontsize=9)
 
     plt.tight_layout()
     fig.savefig(
@@ -2167,6 +2299,20 @@ def main():
         print("=" * 60)
         plot_cluster_timeline(clusters, OUTPUT_DIR / "cluster_timeline.jpg")
         plot_alligator_events_timeline(events, OUTPUT_DIR / "events_timeline.jpg")
+        plot_alligator_events_timeline(
+            events,
+            OUTPUT_DIR / "events_timeline_extended_en.jpg",
+            more_events=more_events_df,
+            show_title=False,
+            lang="en",
+        )
+        plot_alligator_events_timeline(
+            events,
+            OUTPUT_DIR / "events_timeline_extended_fr.jpg",
+            more_events=more_events_df,
+            show_title=False,
+            lang="fr",
+        )
         plot_allen_relations_matrix(clusters, OUTPUT_DIR / "allen_matrix.jpg")
         plot_allen_chain(clusters, OUTPUT_DIR / "allen_chain.jpg")
 
