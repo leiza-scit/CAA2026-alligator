@@ -2175,11 +2175,11 @@ var vowlresult={
   },
   {
    "id": 8,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "B95OZz"
+    "IRI-based": "Bv9ve6"
    },
    "annotations": {},
    "range": [],
@@ -2189,11 +2189,11 @@ var vowlresult={
   },
   {
    "id": 9,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "BWKpDQ"
+    "IRI-based": "EZvPV7"
    },
    "annotations": {},
    "range": [],
@@ -2203,11 +2203,11 @@ var vowlresult={
   },
   {
    "id": 10,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "DEaJQL"
+    "IRI-based": "Ga28Wv"
    },
    "annotations": {},
    "range": [],
@@ -2217,11 +2217,11 @@ var vowlresult={
   },
   {
    "id": 11,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "EOD041"
+    "IRI-based": "KRDgw7"
    },
    "annotations": {},
    "range": [],
@@ -2231,11 +2231,11 @@ var vowlresult={
   },
   {
    "id": 12,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ee4KvG"
+    "IRI-based": "Kqlgor"
    },
    "annotations": {},
    "range": [],
@@ -2245,11 +2245,11 @@ var vowlresult={
   },
   {
    "id": 13,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "J3R6nX"
+    "IRI-based": "KzyPW3"
    },
    "annotations": {},
    "range": [],
@@ -2259,11 +2259,11 @@ var vowlresult={
   },
   {
    "id": 14,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "JmWOrl"
+    "IRI-based": "LQJ8KW"
    },
    "annotations": {},
    "range": [],
@@ -2273,11 +2273,11 @@ var vowlresult={
   },
   {
    "id": 15,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KbRY6O"
+    "IRI-based": "Lk4zlN"
    },
    "annotations": {},
    "range": [],
@@ -2287,11 +2287,11 @@ var vowlresult={
   },
   {
    "id": 16,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KmaGQd"
+    "IRI-based": "NZ5ad2"
    },
    "annotations": {},
    "range": [],
@@ -2301,11 +2301,11 @@ var vowlresult={
   },
   {
    "id": 17,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq"
+    "IRI-based": "NyGMBY"
    },
    "annotations": {},
    "range": [],
@@ -2315,11 +2315,11 @@ var vowlresult={
   },
   {
    "id": 18,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN"
+    "IRI-based": "PL318Z"
    },
    "annotations": {},
    "range": [],
@@ -2329,11 +2329,11 @@ var vowlresult={
   },
   {
    "id": 19,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1"
+    "IRI-based": "Pg0gRj"
    },
    "annotations": {},
    "range": [],
@@ -2343,11 +2343,11 @@ var vowlresult={
   },
   {
    "id": 20,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk"
+    "IRI-based": "RPXQZG"
    },
    "annotations": {},
    "range": [],
@@ -2357,11 +2357,11 @@ var vowlresult={
   },
   {
    "id": 21,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "MADy9p"
+    "IRI-based": "RQEKGv"
    },
    "annotations": {},
    "range": [],
@@ -2371,11 +2371,11 @@ var vowlresult={
   },
   {
    "id": 22,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5MVXe"
+    "IRI-based": "V79JlL"
    },
    "annotations": {},
    "range": [],
@@ -2385,11 +2385,11 @@ var vowlresult={
   },
   {
    "id": 23,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5ZEJo"
+    "IRI-based": "V9km9R"
    },
    "annotations": {},
    "range": [],
@@ -2399,11 +2399,11 @@ var vowlresult={
   },
   {
    "id": 24,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ndnd3r"
+    "IRI-based": "WzemGZ"
    },
    "annotations": {},
    "range": [],
@@ -2413,11 +2413,11 @@ var vowlresult={
   },
   {
    "id": 25,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "NedG0W"
+    "IRI-based": "XQvL62"
    },
    "annotations": {},
    "range": [],
@@ -2427,11 +2427,11 @@ var vowlresult={
   },
   {
    "id": 26,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "OljG8l"
+    "IRI-based": "XWnJMo"
    },
    "annotations": {},
    "range": [],
@@ -2441,11 +2441,11 @@ var vowlresult={
   },
   {
    "id": 27,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Q93OlW"
+    "IRI-based": "YoMv81"
    },
    "annotations": {},
    "range": [],
@@ -2455,11 +2455,11 @@ var vowlresult={
   },
   {
    "id": 28,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "QXlWK2"
+    "IRI-based": "YwxOzG"
    },
    "annotations": {},
    "range": [],
@@ -2469,11 +2469,11 @@ var vowlresult={
   },
   {
    "id": 29,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Qz2oRe"
+    "IRI-based": "ZePQ23"
    },
    "annotations": {},
    "range": [],
@@ -2483,11 +2483,11 @@ var vowlresult={
   },
   {
    "id": 30,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Repn5M"
+    "IRI-based": "Zn4QP2"
    },
    "annotations": {},
    "range": [],
@@ -2497,11 +2497,11 @@ var vowlresult={
   },
   {
    "id": 31,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "RjmPA4"
+    "IRI-based": "ZpP2RM"
    },
    "annotations": {},
    "range": [],
@@ -2511,11 +2511,11 @@ var vowlresult={
   },
   {
    "id": 32,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "W4XmgP"
+    "IRI-based": "awbGWR"
    },
    "annotations": {},
    "range": [],
@@ -2525,11 +2525,11 @@ var vowlresult={
   },
   {
    "id": 33,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "b0OGdE"
+    "IRI-based": "b1078Y"
    },
    "annotations": {},
    "range": [],
@@ -2539,11 +2539,11 @@ var vowlresult={
   },
   {
    "id": 34,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gdWKYL"
+    "IRI-based": "bedBjy"
    },
    "annotations": {},
    "range": [],
@@ -2553,11 +2553,11 @@ var vowlresult={
   },
   {
    "id": 35,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "jm48qv"
+    "IRI-based": "d9DzW6"
    },
    "annotations": {},
    "range": [],
@@ -2567,11 +2567,11 @@ var vowlresult={
   },
   {
    "id": 36,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "kBRoVE"
+    "IRI-based": "ekMlNm"
    },
    "annotations": {},
    "range": [],
@@ -2581,11 +2581,11 @@ var vowlresult={
   },
   {
    "id": 37,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "mkGlqM"
+    "IRI-based": "grxE53"
    },
    "annotations": {},
    "range": [],
@@ -2595,11 +2595,11 @@ var vowlresult={
   },
   {
    "id": 38,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80"
+    "IRI-based": "gvMxX2"
    },
    "annotations": {},
    "range": [],
@@ -2609,11 +2609,11 @@ var vowlresult={
   },
   {
    "id": 39,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1"
+    "IRI-based": "jJ6lz4"
    },
    "annotations": {},
    "range": [],
@@ -2623,11 +2623,11 @@ var vowlresult={
   },
   {
    "id": 40,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8"
+    "IRI-based": "jNevOz"
    },
    "annotations": {},
    "range": [],
@@ -2637,11 +2637,11 @@ var vowlresult={
   },
   {
    "id": 41,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "p4zxM0"
+    "IRI-based": "mEEdOD"
    },
    "annotations": {},
    "range": [],
@@ -2651,11 +2651,11 @@ var vowlresult={
   },
   {
    "id": 42,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "qJE4nZ"
+    "IRI-based": "nW7M9E"
    },
    "annotations": {},
    "range": [],
@@ -2665,11 +2665,11 @@ var vowlresult={
   },
   {
    "id": 43,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rJXxA7"
+    "IRI-based": "p1J56k"
    },
    "annotations": {},
    "range": [],
@@ -2679,11 +2679,11 @@ var vowlresult={
   },
   {
    "id": 44,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rR3Mgy"
+    "IRI-based": "qWYJOl"
    },
    "annotations": {},
    "range": [],
@@ -2693,11 +2693,11 @@ var vowlresult={
   },
   {
    "id": 45,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rY6gGz"
+    "IRI-based": "qwBmyK"
    },
    "annotations": {},
    "range": [],
@@ -2707,11 +2707,11 @@ var vowlresult={
   },
   {
    "id": 46,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D"
+    "IRI-based": "w6L6NR"
    },
    "annotations": {},
    "range": [],
@@ -2721,11 +2721,11 @@ var vowlresult={
   },
   {
    "id": 47,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vXGN59"
+    "IRI-based": "wp8pRM"
    },
    "annotations": {},
    "range": [],
@@ -2735,11 +2735,11 @@ var vowlresult={
   },
   {
    "id": 48,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N"
+    "IRI-based": "wv7W8K"
    },
    "annotations": {},
    "range": [],
@@ -2749,11 +2749,11 @@ var vowlresult={
   },
   {
    "id": 49,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL"
+    "IRI-based": "xemvlY"
    },
    "annotations": {},
    "range": [],
@@ -2763,11 +2763,11 @@ var vowlresult={
   },
   {
    "id": 50,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zLjX82"
+    "IRI-based": "yaWJxV"
    },
    "annotations": {},
    "range": [],
@@ -2777,11 +2777,11 @@ var vowlresult={
   },
   {
    "id": 51,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zggRNd"
+    "IRI-based": "yn0Jk4"
    },
    "annotations": {},
    "range": [],
@@ -2903,11 +2903,11 @@ var vowlresult={
   },
   {
    "id": 60,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_ad0007_ad0013"
+    "IRI-based": "cluster_ad0008_ad0013"
    },
    "annotations": {},
    "range": [],
@@ -2928,52 +2928,6 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0012",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 62,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "B95OZz_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0008",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 63,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "B95OZz_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
       "value": "-0007",
       "type": "label"
      }
@@ -2985,12 +2939,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 64,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ_begin",
+   "id": 62,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "BWKpDQ_begin"
+    "IRI-based": "Bv9ve6_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3008,35 +2962,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 65,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ_end",
+   "id": 63,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "BWKpDQ_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0016",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 66,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "DEaJQL_begin"
+    "IRI-based": "Bv9ve6_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3054,19 +2985,88 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 67,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL_end",
+   "id": 64,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "DEaJQL_end"
+    "IRI-based": "EZvPV7_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0016",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 65,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "EZvPV7_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 66,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Ga28Wv_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 67,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Ga28Wv_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -3078,18 +3078,18 @@ var vowlresult={
   },
   {
    "id": 68,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "EOD041_begin"
+    "IRI-based": "KRDgw7_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0028",
+      "value": "0009",
       "type": "label"
      }
     ]
@@ -3101,11 +3101,11 @@ var vowlresult={
   },
   {
    "id": 69,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "EOD041_end"
+    "IRI-based": "KRDgw7_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3124,11 +3124,11 @@ var vowlresult={
   },
   {
    "id": 70,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ee4KvG_begin"
+    "IRI-based": "Kqlgor_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3147,18 +3147,18 @@ var vowlresult={
   },
   {
    "id": 71,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ee4KvG_end"
+    "IRI-based": "Kqlgor_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0015",
+      "value": "-0016",
       "type": "label"
      }
     ]
@@ -3170,18 +3170,18 @@ var vowlresult={
   },
   {
    "id": 72,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "J3R6nX_begin"
+    "IRI-based": "KzyPW3_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0009",
+      "value": "0008",
       "type": "label"
      }
     ]
@@ -3193,18 +3193,18 @@ var vowlresult={
   },
   {
    "id": 73,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "J3R6nX_end"
+    "IRI-based": "KzyPW3_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0016",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -3216,18 +3216,18 @@ var vowlresult={
   },
   {
    "id": 74,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "JmWOrl_begin"
+    "IRI-based": "LQJ8KW_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0028",
+      "value": "0009",
       "type": "label"
      }
     ]
@@ -3239,11 +3239,11 @@ var vowlresult={
   },
   {
    "id": 75,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "JmWOrl_end"
+    "IRI-based": "LQJ8KW_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3262,11 +3262,11 @@ var vowlresult={
   },
   {
    "id": 76,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KbRY6O_begin"
+    "IRI-based": "Lk4zlN_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3285,18 +3285,18 @@ var vowlresult={
   },
   {
    "id": 77,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KbRY6O_end"
+    "IRI-based": "Lk4zlN_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0016",
+      "value": "0008",
       "type": "label"
      }
     ]
@@ -3308,18 +3308,18 @@ var vowlresult={
   },
   {
    "id": 78,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KmaGQd_begin"
+    "IRI-based": "NZ5ad2_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0028",
+      "value": "0013",
       "type": "label"
      }
     ]
@@ -3331,18 +3331,18 @@ var vowlresult={
   },
   {
    "id": 79,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KmaGQd_end"
+    "IRI-based": "NZ5ad2_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0007",
+      "value": "0008",
       "type": "label"
      }
     ]
@@ -3354,11 +3354,11 @@ var vowlresult={
   },
   {
    "id": 80,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq_begin"
+    "IRI-based": "NyGMBY_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3377,18 +3377,18 @@ var vowlresult={
   },
   {
    "id": 81,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq_end"
+    "IRI-based": "NyGMBY_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0012",
+      "value": "0016",
       "type": "label"
      }
     ]
@@ -3400,18 +3400,18 @@ var vowlresult={
   },
   {
    "id": 82,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN_begin"
+    "IRI-based": "PL318Z_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0008",
+      "value": "0028",
       "type": "label"
      }
     ]
@@ -3423,18 +3423,18 @@ var vowlresult={
   },
   {
    "id": 83,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN_end"
+    "IRI-based": "PL318Z_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0007",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -3446,18 +3446,18 @@ var vowlresult={
   },
   {
    "id": 84,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1_begin"
+    "IRI-based": "Pg0gRj_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0013",
+      "value": "0009",
       "type": "label"
      }
     ]
@@ -3469,11 +3469,11 @@ var vowlresult={
   },
   {
    "id": 85,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1_end"
+    "IRI-based": "Pg0gRj_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3492,11 +3492,11 @@ var vowlresult={
   },
   {
    "id": 86,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk_begin"
+    "IRI-based": "RPXQZG_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3515,18 +3515,18 @@ var vowlresult={
   },
   {
    "id": 87,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk_end"
+    "IRI-based": "RPXQZG_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0015",
+      "value": "-0016",
       "type": "label"
      }
     ]
@@ -3538,57 +3538,11 @@ var vowlresult={
   },
   {
    "id": 88,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "MADy9p_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0009",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 89,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "MADy9p_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 90,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "N5MVXe_begin"
+    "IRI-based": "RQEKGv_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3606,12 +3560,58 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 91,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe_end",
+   "id": 89,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5MVXe_end"
+    "IRI-based": "RQEKGv_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0016",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 90,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "V79JlL_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 91,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "V79JlL_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3630,11 +3630,11 @@ var vowlresult={
   },
   {
    "id": 92,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5ZEJo_begin"
+    "IRI-based": "V9km9R_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3653,18 +3653,18 @@ var vowlresult={
   },
   {
    "id": 93,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5ZEJo_end"
+    "IRI-based": "V9km9R_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0007",
+      "value": "0016",
       "type": "label"
      }
     ]
@@ -3676,18 +3676,18 @@ var vowlresult={
   },
   {
    "id": 94,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ndnd3r_begin"
+    "IRI-based": "WzemGZ_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0009",
+      "value": "0028",
       "type": "label"
      }
     ]
@@ -3699,18 +3699,18 @@ var vowlresult={
   },
   {
    "id": 95,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ndnd3r_end"
+    "IRI-based": "WzemGZ_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0007",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -3722,18 +3722,18 @@ var vowlresult={
   },
   {
    "id": 96,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "NedG0W_begin"
+    "IRI-based": "XQvL62_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0013",
+      "value": "0009",
       "type": "label"
      }
     ]
@@ -3745,18 +3745,18 @@ var vowlresult={
   },
   {
    "id": 97,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "NedG0W_end"
+    "IRI-based": "XQvL62_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0016",
+      "value": "0008",
       "type": "label"
      }
     ]
@@ -3768,18 +3768,18 @@ var vowlresult={
   },
   {
    "id": 98,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "OljG8l_begin"
+    "IRI-based": "XWnJMo_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0008",
+      "value": "0013",
       "type": "label"
      }
     ]
@@ -3791,80 +3791,11 @@ var vowlresult={
   },
   {
    "id": 99,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "OljG8l_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 100,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Q93OlW_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0009",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 101,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Q93OlW_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0016",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 102,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "QXlWK2_begin"
+    "IRI-based": "XWnJMo_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3882,35 +3813,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 103,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2_end",
+   "id": 100,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "QXlWK2_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0016",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 104,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Qz2oRe_begin"
+    "IRI-based": "YoMv81_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3928,12 +3836,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 105,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe_end",
+   "id": 101,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Qz2oRe_end"
+    "IRI-based": "YoMv81_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3951,12 +3859,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 106,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M_begin",
+   "id": 102,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Repn5M_begin"
+    "IRI-based": "YwxOzG_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -3974,19 +3882,111 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 107,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M_end",
+   "id": 103,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Repn5M_end"
+    "IRI-based": "YwxOzG_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0007",
+      "value": "-0007",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 104,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ZePQ23_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0009",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 105,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ZePQ23_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0016",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 106,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Zn4QP2_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0009",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 107,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Zn4QP2_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0016",
       "type": "label"
      }
     ]
@@ -3998,18 +3998,18 @@ var vowlresult={
   },
   {
    "id": 108,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "RjmPA4_begin"
+    "IRI-based": "ZpP2RM_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0013",
+      "value": "0028",
       "type": "label"
      }
     ]
@@ -4021,11 +4021,11 @@ var vowlresult={
   },
   {
    "id": 109,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "RjmPA4_end"
+    "IRI-based": "ZpP2RM_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -4044,11 +4044,11 @@ var vowlresult={
   },
   {
    "id": 110,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "W4XmgP_begin"
+    "IRI-based": "awbGWR_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -4067,103 +4067,11 @@ var vowlresult={
   },
   {
    "id": 111,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "W4XmgP_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 112,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "b0OGdE_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0013",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 113,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "b0OGdE_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 114,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
-   "instances": 0,
-   "label": {
-    "IRI-based": "cluster_ad0007_ad0013_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0013",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 115,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
-   "instances": 0,
-   "label": {
-    "IRI-based": "cluster_ad0007_ad0013_end"
+    "IRI-based": "awbGWR_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -4181,7 +4089,145 @@ var vowlresult={
    "superProperties": []
   },
   {
+   "id": 112,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "b1078Y_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0028",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 113,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "b1078Y_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0015",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 114,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "bedBjy_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0009",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 115,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "bedBjy_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
    "id": 116,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "cluster_ad0008_ad0013_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 117,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "cluster_ad0008_ad0013_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0016",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 118,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4204,7 +4250,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 117,
+   "id": 119,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4227,7 +4273,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 118,
+   "id": 120,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4250,7 +4296,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 119,
+   "id": 121,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4273,7 +4319,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 120,
+   "id": 122,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4296,7 +4342,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 121,
+   "id": 123,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4319,7 +4365,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 122,
+   "id": 124,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4342,7 +4388,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 123,
+   "id": 125,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4365,7 +4411,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 124,
+   "id": 126,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4388,7 +4434,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 125,
+   "id": 127,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4411,7 +4457,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 126,
+   "id": 128,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4434,7 +4480,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 127,
+   "id": 129,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4457,7 +4503,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 128,
+   "id": 130,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4480,7 +4526,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 129,
+   "id": 131,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4503,7 +4549,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 130,
+   "id": 132,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4526,7 +4572,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 131,
+   "id": 133,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4549,7 +4595,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 132,
+   "id": 134,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4572,12 +4618,81 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 133,
+   "id": 135,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
     "IRI-based": "cluster_bc0016_bc0009_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0016",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 136,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "d9DzW6_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0009",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 137,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "d9DzW6_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0012",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 138,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ekMlNm_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -4595,7 +4710,30 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 134,
+   "id": 139,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ekMlNm_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 140,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4618,7 +4756,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 135,
+   "id": 141,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4641,7 +4779,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 136,
+   "id": 142,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4664,7 +4802,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 137,
+   "id": 143,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4687,7 +4825,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 138,
+   "id": 144,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4710,7 +4848,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 139,
+   "id": 145,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4733,7 +4871,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 140,
+   "id": 146,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4756,12 +4894,58 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 141,
+   "id": 147,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
     "IRI-based": "event_Tiberian_campaign_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0012",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 148,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "grxE53_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 149,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "grxE53_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -4779,203 +4963,19 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 142,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "gdWKYL_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0009",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 143,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "gdWKYL_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 144,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "jm48qv_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0009",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 145,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "jm48qv_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 146,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "kBRoVE_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0009",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 147,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "kBRoVE_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 148,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "mkGlqM_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0013",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 149,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "mkGlqM_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
    "id": 150,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80_begin"
+    "IRI-based": "gvMxX2_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0009",
+      "value": "0008",
       "type": "label"
      }
     ]
@@ -4987,11 +4987,11 @@ var vowlresult={
   },
   {
    "id": 151,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80_end"
+    "IRI-based": "gvMxX2_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5010,11 +5010,11 @@ var vowlresult={
   },
   {
    "id": 152,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1_begin"
+    "IRI-based": "jJ6lz4_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5033,18 +5033,18 @@ var vowlresult={
   },
   {
    "id": 153,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1_end"
+    "IRI-based": "jJ6lz4_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0007",
+      "value": "-0016",
       "type": "label"
      }
     ]
@@ -5056,18 +5056,18 @@ var vowlresult={
   },
   {
    "id": 154,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8_begin"
+    "IRI-based": "jNevOz_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0009",
+      "value": "0013",
       "type": "label"
      }
     ]
@@ -5079,18 +5079,18 @@ var vowlresult={
   },
   {
    "id": 155,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8_end"
+    "IRI-based": "jNevOz_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0016",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -5102,57 +5102,11 @@ var vowlresult={
   },
   {
    "id": 156,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "p4zxM0_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0028",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 157,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "p4zxM0_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0016",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 158,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "qJE4nZ_begin"
+    "IRI-based": "mEEdOD_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5170,150 +5124,58 @@ var vowlresult={
    "superProperties": []
   },
   {
+   "id": 157,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "mEEdOD_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 158,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "nW7M9E_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
    "id": 159,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "qJE4nZ_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0011",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 160,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rJXxA7_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "-0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 161,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rJXxA7_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 162,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rR3Mgy_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0013",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 163,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rR3Mgy_end"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0007",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 164,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz_begin",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rY6gGz_begin"
-   },
-   "annotations": {
-    "http://www.w3.org/2006/time#inXSDgYear": [
-     {
-      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
-      "language": "undefined",
-      "value": "0013",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 165,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz_end",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rY6gGz_end"
+    "IRI-based": "nW7M9E_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5331,12 +5193,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 166,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D_begin",
+   "id": 160,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D_begin"
+    "IRI-based": "p1J56k_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5354,12 +5216,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 167,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D_end",
+   "id": 161,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D_end"
+    "IRI-based": "p1J56k_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5377,12 +5239,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 168,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59_begin",
+   "id": 162,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vXGN59_begin"
+    "IRI-based": "qWYJOl_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5400,19 +5262,19 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 169,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59_end",
+   "id": 163,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vXGN59_end"
+    "IRI-based": "qWYJOl_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0016",
+      "value": "-0015",
       "type": "label"
      }
     ]
@@ -5423,12 +5285,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 170,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N_begin",
+   "id": 164,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N_begin"
+    "IRI-based": "qwBmyK_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5446,12 +5308,150 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 171,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N_end",
+   "id": 165,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N_end"
+    "IRI-based": "qwBmyK_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 166,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "w6L6NR_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 167,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "w6L6NR_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 168,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "wp8pRM_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 169,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "wp8pRM_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0007",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 170,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "wv7W8K_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0009",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 171,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "wv7W8K_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5470,11 +5470,11 @@ var vowlresult={
   },
   {
    "id": 172,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL_begin"
+    "IRI-based": "xemvlY_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5493,18 +5493,18 @@ var vowlresult={
   },
   {
    "id": 173,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL_end"
+    "IRI-based": "xemvlY_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0007",
+      "value": "0008",
       "type": "label"
      }
     ]
@@ -5516,11 +5516,11 @@ var vowlresult={
   },
   {
    "id": 174,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zLjX82_begin"
+    "IRI-based": "yaWJxV_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
@@ -5539,18 +5539,18 @@ var vowlresult={
   },
   {
    "id": 175,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zLjX82_end"
+    "IRI-based": "yaWJxV_end"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0007",
+      "value": "-0011",
       "type": "label"
      }
     ]
@@ -5562,18 +5562,18 @@ var vowlresult={
   },
   {
    "id": 176,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd_begin",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zggRNd_begin"
+    "IRI-based": "yn0Jk4_begin"
    },
    "annotations": {
     "http://www.w3.org/2006/time#inXSDgYear": [
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0013",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -5585,290 +5585,11 @@ var vowlresult={
   },
   {
    "id": 177,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd_end",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zggRNd_end"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7665 50.371)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 178,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "B95OZz_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.1455 50.6296)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 179,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "BWKpDQ_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 180,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "DEaJQL_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.66829 52.45207)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 181,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "EOD041_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.90977 47.90988)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 182,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Ee4KvG_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.85972 49.54028)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 183,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "J3R6nX_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.6938 50.84841)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 184,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "JmWOrl_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 51.64639)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 185,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "KbRY6O_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.16186 52.05774)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 186,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "KmaGQd_geom"
+    "IRI-based": "yn0Jk4_end"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -5894,12 +5615,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 187,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq_geom",
+   "id": 178,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq_geom"
+    "IRI-based": "Bv9ve6_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -5914,7 +5635,286 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.86063 50.45949)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 179,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "EZvPV7_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 180,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Ga28Wv_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.46486 50.78096)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 181,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "KRDgw7_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(-8.49341 40.09905)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 182,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Kqlgor_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.44349 50.51455)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 183,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "KzyPW3_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 51.64639)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 184,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "LQJ8KW_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.09938 50.7448)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 185,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Lk4zlN_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.23879 50.08434)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 186,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "NZ5ad2_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(9.74073 47.4979)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 187,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "NyGMBY_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)",
       "type": "label"
      }
     ]
@@ -5926,11 +5926,11 @@ var vowlresult={
   },
   {
    "id": 188,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN_geom"
+    "IRI-based": "PL318Z_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -5945,7 +5945,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7535 50.34167)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.17052 51.73947)",
       "type": "label"
      }
     ]
@@ -5957,11 +5957,11 @@ var vowlresult={
   },
   {
    "id": 189,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1_geom"
+    "IRI-based": "Pg0gRj_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -5988,460 +5988,11 @@ var vowlresult={
   },
   {
    "id": 190,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.31083 47.58889)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 191,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "MADy9p_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 192,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "N5MVXe_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 193,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "N5ZEJo_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(-8.49341 40.09905)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 194,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Ndnd3r_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 195,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "NedG0W_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.721944 51.183889)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 196,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "OljG8l_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 197,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Q93OlW_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.44349 50.51455)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 198,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "QXlWK2_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.35978 49.63007)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 199,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Qz2oRe_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.27387 49.99891)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 200,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Repn5M_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.23879 50.08434)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 201,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "RjmPA4_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.593 47.5557)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 202,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "W4XmgP_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 203,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "b0OGdE_geom"
-   },
-   "annotations": {
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT (7.58444 51.6125)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 204,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
-   "instances": 0,
-   "label": {
-    "IRI-based": "cluster_bc0011_bc0007_geom"
-   },
-   "annotations": {
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT (8.35978 49.63007)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 205,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
-   "instances": 0,
-   "label": {
-    "IRI-based": "cluster_bc0016_ad0013_geom"
+    "IRI-based": "RPXQZG_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6467,12 +6018,260 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 206,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_geom",
+   "id": 191,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gdWKYL_geom"
+    "IRI-based": "RQEKGv_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.721944 51.183889)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 192,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "V79JlL_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 193,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "V9km9R_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.29349 47.59059)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 194,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "WzemGZ_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.90977 47.90988)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 195,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "XQvL62_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.04067 46.88028)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 196,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "XWnJMo_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 197,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "YoMv81_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.1455 50.6296)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 198,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "YwxOzG_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.27387 49.99891)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 199,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ZePQ23_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6498,12 +6297,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 207,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv_geom",
+   "id": 200,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "jm48qv_geom"
+    "IRI-based": "Zn4QP2_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6518,7 +6317,208 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7522 50.36987)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.16186 52.05774)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 201,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ZpP2RM_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.31083 47.58889)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 202,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "awbGWR_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 203,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "b1078Y_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.85972 49.54028)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 204,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "bedBjy_geom"
+   },
+   "annotations": {
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT (7.58444 51.6125)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 205,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "cluster_bc0011_bc0007_geom"
+   },
+   "annotations": {
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT (8.35978 49.63007)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 206,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "cluster_bc0016_ad0013_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.593 47.5557)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 207,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "d9DzW6_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.86063 50.45949)",
       "type": "label"
      }
     ]
@@ -6530,11 +6530,11 @@ var vowlresult={
   },
   {
    "id": 208,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "kBRoVE_geom"
+    "IRI-based": "ekMlNm_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6549,7 +6549,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.73756 47.49726)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7665 50.371)",
       "type": "label"
      }
     ]
@@ -6561,11 +6561,11 @@ var vowlresult={
   },
   {
    "id": 209,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "mkGlqM_geom"
+    "IRI-based": "grxE53_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6580,7 +6580,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.09938 50.7448)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)",
       "type": "label"
      }
     ]
@@ -6592,11 +6592,11 @@ var vowlresult={
   },
   {
    "id": 210,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80_geom"
+    "IRI-based": "gvMxX2_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6623,11 +6623,11 @@ var vowlresult={
   },
   {
    "id": 211,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1_geom"
+    "IRI-based": "jJ6lz4_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6642,7 +6642,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.46486 50.78096)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.35978 49.63007)",
       "type": "label"
      }
     ]
@@ -6654,11 +6654,11 @@ var vowlresult={
   },
   {
    "id": 212,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8_geom"
+    "IRI-based": "jNevOz_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6673,7 +6673,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7522 50.36987)",
       "type": "label"
      }
     ]
@@ -6685,11 +6685,104 @@ var vowlresult={
   },
   {
    "id": 213,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "p4zxM0_geom"
+    "IRI-based": "mEEdOD_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.73756 47.49726)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 214,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "nW7M9E_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.66829 52.45207)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 215,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "p1J56k_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 216,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "qWYJOl_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6715,105 +6808,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 214,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "qJE4nZ_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.58444 51.6125)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 215,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rJXxA7_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 216,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "rR3Mgy_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.04067 46.88028)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
    "id": 217,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rY6gGz_geom"
+    "IRI-based": "qwBmyK_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6859,7 +6859,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7535 50.34167)",
       "type": "label"
      }
     ]
@@ -6871,42 +6871,11 @@ var vowlresult={
   },
   {
    "id": 219,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.17052 51.73947)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 220,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "vXGN59_geom"
+    "IRI-based": "w6L6NR_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6932,12 +6901,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 221,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N_geom",
+   "id": 220,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N_geom"
+    "IRI-based": "wp8pRM_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -6952,7 +6921,38 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.29349 47.59059)",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 221,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "wv7W8K_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.6938 50.84841)",
       "type": "label"
      }
     ]
@@ -6964,42 +6964,11 @@ var vowlresult={
   },
   {
    "id": 222,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL_geom"
-   },
-   "annotations": {
-    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
-     {
-      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
-      "language": "undefined",
-      "value": "Mapping done by Allard Mees.",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#asWKT": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
-      "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(9.74073 47.4979)",
-      "type": "label"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 223,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82_geom",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "zLjX82_geom"
+    "IRI-based": "xemvlY_geom"
    },
    "annotations": {
     "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
@@ -7025,12 +6994,43 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 224,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd_geom",
+   "id": 223,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zggRNd_geom"
+    "IRI-based": "yaWJxV_geom"
+   },
+   "annotations": {
+    "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": [
+     {
+      "identifier": "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc",
+      "language": "undefined",
+      "value": "Mapping done by Allard Mees.",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.58444 51.6125)",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 224,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "yn0Jk4_geom"
    },
    "annotations": {
     "http://www.opengis.net/ont/geosparql#asWKT": [
@@ -7049,11 +7049,11 @@ var vowlresult={
   },
   {
    "id": 225,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013_geom",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_ad0007_ad0013_geom"
+    "IRI-based": "cluster_ad0008_ad0013_geom"
    },
    "annotations": {
     "http://www.opengis.net/ont/geosparql#asWKT": [
@@ -7238,11 +7238,11 @@ var vowlresult={
   },
   {
    "id": 234,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "B95OZz"
+    "IRI-based": "Bv9ve6"
    },
    "annotations": {},
    "range": [],
@@ -7252,11 +7252,11 @@ var vowlresult={
   },
   {
    "id": 235,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "BWKpDQ"
+    "IRI-based": "EZvPV7"
    },
    "annotations": {},
    "range": [],
@@ -7266,11 +7266,11 @@ var vowlresult={
   },
   {
    "id": 236,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "DEaJQL"
+    "IRI-based": "Ga28Wv"
    },
    "annotations": {},
    "range": [],
@@ -7280,11 +7280,11 @@ var vowlresult={
   },
   {
    "id": 237,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "EOD041"
+    "IRI-based": "KRDgw7"
    },
    "annotations": {},
    "range": [],
@@ -7294,11 +7294,11 @@ var vowlresult={
   },
   {
    "id": 238,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ee4KvG"
+    "IRI-based": "Kqlgor"
    },
    "annotations": {},
    "range": [],
@@ -7308,11 +7308,11 @@ var vowlresult={
   },
   {
    "id": 239,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "J3R6nX"
+    "IRI-based": "KzyPW3"
    },
    "annotations": {},
    "range": [],
@@ -7322,11 +7322,11 @@ var vowlresult={
   },
   {
    "id": 240,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "JmWOrl"
+    "IRI-based": "LQJ8KW"
    },
    "annotations": {},
    "range": [],
@@ -7336,11 +7336,11 @@ var vowlresult={
   },
   {
    "id": 241,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KbRY6O"
+    "IRI-based": "Lk4zlN"
    },
    "annotations": {},
    "range": [],
@@ -7350,11 +7350,11 @@ var vowlresult={
   },
   {
    "id": 242,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KmaGQd"
+    "IRI-based": "NZ5ad2"
    },
    "annotations": {},
    "range": [],
@@ -7364,11 +7364,11 @@ var vowlresult={
   },
   {
    "id": 243,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq"
+    "IRI-based": "NyGMBY"
    },
    "annotations": {},
    "range": [],
@@ -7378,11 +7378,11 @@ var vowlresult={
   },
   {
    "id": 244,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN"
+    "IRI-based": "PL318Z"
    },
    "annotations": {},
    "range": [],
@@ -7392,11 +7392,11 @@ var vowlresult={
   },
   {
    "id": 245,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1"
+    "IRI-based": "Pg0gRj"
    },
    "annotations": {},
    "range": [],
@@ -7406,11 +7406,11 @@ var vowlresult={
   },
   {
    "id": 246,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk"
+    "IRI-based": "RPXQZG"
    },
    "annotations": {},
    "range": [],
@@ -7420,11 +7420,11 @@ var vowlresult={
   },
   {
    "id": 247,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "MADy9p"
+    "IRI-based": "RQEKGv"
    },
    "annotations": {},
    "range": [],
@@ -7434,11 +7434,11 @@ var vowlresult={
   },
   {
    "id": 248,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5MVXe"
+    "IRI-based": "V79JlL"
    },
    "annotations": {},
    "range": [],
@@ -7448,11 +7448,11 @@ var vowlresult={
   },
   {
    "id": 249,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5ZEJo"
+    "IRI-based": "V9km9R"
    },
    "annotations": {},
    "range": [],
@@ -7462,11 +7462,11 @@ var vowlresult={
   },
   {
    "id": 250,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ndnd3r"
+    "IRI-based": "WzemGZ"
    },
    "annotations": {},
    "range": [],
@@ -7476,11 +7476,11 @@ var vowlresult={
   },
   {
    "id": 251,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "NedG0W"
+    "IRI-based": "XQvL62"
    },
    "annotations": {},
    "range": [],
@@ -7490,11 +7490,11 @@ var vowlresult={
   },
   {
    "id": 252,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "OljG8l"
+    "IRI-based": "XWnJMo"
    },
    "annotations": {},
    "range": [],
@@ -7504,11 +7504,11 @@ var vowlresult={
   },
   {
    "id": 253,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Q93OlW"
+    "IRI-based": "YoMv81"
    },
    "annotations": {},
    "range": [],
@@ -7518,11 +7518,11 @@ var vowlresult={
   },
   {
    "id": 254,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "QXlWK2"
+    "IRI-based": "YwxOzG"
    },
    "annotations": {},
    "range": [],
@@ -7532,11 +7532,11 @@ var vowlresult={
   },
   {
    "id": 255,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Qz2oRe"
+    "IRI-based": "ZePQ23"
    },
    "annotations": {},
    "range": [],
@@ -7546,11 +7546,11 @@ var vowlresult={
   },
   {
    "id": 256,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Repn5M"
+    "IRI-based": "Zn4QP2"
    },
    "annotations": {},
    "range": [],
@@ -7560,11 +7560,11 @@ var vowlresult={
   },
   {
    "id": 257,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "RjmPA4"
+    "IRI-based": "ZpP2RM"
    },
    "annotations": {},
    "range": [],
@@ -7574,11 +7574,11 @@ var vowlresult={
   },
   {
    "id": 258,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "W4XmgP"
+    "IRI-based": "awbGWR"
    },
    "annotations": {},
    "range": [],
@@ -7588,11 +7588,11 @@ var vowlresult={
   },
   {
    "id": 259,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "b0OGdE"
+    "IRI-based": "b1078Y"
    },
    "annotations": {},
    "range": [],
@@ -7602,11 +7602,11 @@ var vowlresult={
   },
   {
    "id": 260,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gdWKYL"
+    "IRI-based": "bedBjy"
    },
    "annotations": {},
    "range": [],
@@ -7616,11 +7616,11 @@ var vowlresult={
   },
   {
    "id": 261,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "jm48qv"
+    "IRI-based": "d9DzW6"
    },
    "annotations": {},
    "range": [],
@@ -7630,11 +7630,11 @@ var vowlresult={
   },
   {
    "id": 262,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "kBRoVE"
+    "IRI-based": "ekMlNm"
    },
    "annotations": {},
    "range": [],
@@ -7644,11 +7644,11 @@ var vowlresult={
   },
   {
    "id": 263,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "mkGlqM"
+    "IRI-based": "grxE53"
    },
    "annotations": {},
    "range": [],
@@ -7658,11 +7658,11 @@ var vowlresult={
   },
   {
    "id": 264,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80"
+    "IRI-based": "gvMxX2"
    },
    "annotations": {},
    "range": [],
@@ -7672,11 +7672,11 @@ var vowlresult={
   },
   {
    "id": 265,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1"
+    "IRI-based": "jJ6lz4"
    },
    "annotations": {},
    "range": [],
@@ -7686,11 +7686,11 @@ var vowlresult={
   },
   {
    "id": 266,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8"
+    "IRI-based": "jNevOz"
    },
    "annotations": {},
    "range": [],
@@ -7700,11 +7700,11 @@ var vowlresult={
   },
   {
    "id": 267,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "p4zxM0"
+    "IRI-based": "mEEdOD"
    },
    "annotations": {},
    "range": [],
@@ -7714,11 +7714,11 @@ var vowlresult={
   },
   {
    "id": 268,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "qJE4nZ"
+    "IRI-based": "nW7M9E"
    },
    "annotations": {},
    "range": [],
@@ -7728,11 +7728,11 @@ var vowlresult={
   },
   {
    "id": 269,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rJXxA7"
+    "IRI-based": "p1J56k"
    },
    "annotations": {},
    "range": [],
@@ -7742,11 +7742,11 @@ var vowlresult={
   },
   {
    "id": 270,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rR3Mgy"
+    "IRI-based": "qWYJOl"
    },
    "annotations": {},
    "range": [],
@@ -7756,11 +7756,11 @@ var vowlresult={
   },
   {
    "id": 271,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rY6gGz"
+    "IRI-based": "qwBmyK"
    },
    "annotations": {},
    "range": [],
@@ -7770,11 +7770,11 @@ var vowlresult={
   },
   {
    "id": 272,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D"
+    "IRI-based": "w6L6NR"
    },
    "annotations": {},
    "range": [],
@@ -7784,11 +7784,11 @@ var vowlresult={
   },
   {
    "id": 273,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vXGN59"
+    "IRI-based": "wp8pRM"
    },
    "annotations": {},
    "range": [],
@@ -7798,11 +7798,11 @@ var vowlresult={
   },
   {
    "id": 274,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N"
+    "IRI-based": "wv7W8K"
    },
    "annotations": {},
    "range": [],
@@ -7812,11 +7812,11 @@ var vowlresult={
   },
   {
    "id": 275,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL"
+    "IRI-based": "xemvlY"
    },
    "annotations": {},
    "range": [],
@@ -7826,11 +7826,11 @@ var vowlresult={
   },
   {
    "id": 276,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zLjX82"
+    "IRI-based": "yaWJxV"
    },
    "annotations": {},
    "range": [],
@@ -7840,11 +7840,11 @@ var vowlresult={
   },
   {
    "id": 277,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zggRNd"
+    "IRI-based": "yn0Jk4"
    },
    "annotations": {},
    "range": [],
@@ -7868,11 +7868,11 @@ var vowlresult={
   },
   {
    "id": 279,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "B95OZz"
+    "IRI-based": "Bv9ve6"
    },
    "annotations": {},
    "range": [],
@@ -7882,11 +7882,11 @@ var vowlresult={
   },
   {
    "id": 280,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "BWKpDQ"
+    "IRI-based": "EZvPV7"
    },
    "annotations": {},
    "range": [],
@@ -7896,11 +7896,11 @@ var vowlresult={
   },
   {
    "id": 281,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "DEaJQL"
+    "IRI-based": "Ga28Wv"
    },
    "annotations": {},
    "range": [],
@@ -7910,11 +7910,11 @@ var vowlresult={
   },
   {
    "id": 282,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "EOD041"
+    "IRI-based": "KRDgw7"
    },
    "annotations": {},
    "range": [],
@@ -7924,11 +7924,11 @@ var vowlresult={
   },
   {
    "id": 283,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ee4KvG"
+    "IRI-based": "Kqlgor"
    },
    "annotations": {},
    "range": [],
@@ -7938,11 +7938,11 @@ var vowlresult={
   },
   {
    "id": 284,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "J3R6nX"
+    "IRI-based": "KzyPW3"
    },
    "annotations": {},
    "range": [],
@@ -7952,11 +7952,11 @@ var vowlresult={
   },
   {
    "id": 285,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "JmWOrl"
+    "IRI-based": "LQJ8KW"
    },
    "annotations": {},
    "range": [],
@@ -7966,11 +7966,11 @@ var vowlresult={
   },
   {
    "id": 286,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KbRY6O"
+    "IRI-based": "Lk4zlN"
    },
    "annotations": {},
    "range": [],
@@ -7980,11 +7980,11 @@ var vowlresult={
   },
   {
    "id": 287,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KmaGQd"
+    "IRI-based": "NZ5ad2"
    },
    "annotations": {},
    "range": [],
@@ -7994,11 +7994,11 @@ var vowlresult={
   },
   {
    "id": 288,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq"
+    "IRI-based": "NyGMBY"
    },
    "annotations": {},
    "range": [],
@@ -8008,11 +8008,11 @@ var vowlresult={
   },
   {
    "id": 289,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN"
+    "IRI-based": "PL318Z"
    },
    "annotations": {},
    "range": [],
@@ -8022,11 +8022,11 @@ var vowlresult={
   },
   {
    "id": 290,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1"
+    "IRI-based": "Pg0gRj"
    },
    "annotations": {},
    "range": [],
@@ -8036,11 +8036,11 @@ var vowlresult={
   },
   {
    "id": 291,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk"
+    "IRI-based": "RPXQZG"
    },
    "annotations": {},
    "range": [],
@@ -8050,11 +8050,11 @@ var vowlresult={
   },
   {
    "id": 292,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "MADy9p"
+    "IRI-based": "RQEKGv"
    },
    "annotations": {},
    "range": [],
@@ -8064,11 +8064,11 @@ var vowlresult={
   },
   {
    "id": 293,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5MVXe"
+    "IRI-based": "V79JlL"
    },
    "annotations": {},
    "range": [],
@@ -8078,11 +8078,11 @@ var vowlresult={
   },
   {
    "id": 294,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5ZEJo"
+    "IRI-based": "V9km9R"
    },
    "annotations": {},
    "range": [],
@@ -8092,11 +8092,11 @@ var vowlresult={
   },
   {
    "id": 295,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ndnd3r"
+    "IRI-based": "WzemGZ"
    },
    "annotations": {},
    "range": [],
@@ -8106,11 +8106,11 @@ var vowlresult={
   },
   {
    "id": 296,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "NedG0W"
+    "IRI-based": "XQvL62"
    },
    "annotations": {},
    "range": [],
@@ -8120,11 +8120,11 @@ var vowlresult={
   },
   {
    "id": 297,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "OljG8l"
+    "IRI-based": "XWnJMo"
    },
    "annotations": {},
    "range": [],
@@ -8134,11 +8134,11 @@ var vowlresult={
   },
   {
    "id": 298,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Q93OlW"
+    "IRI-based": "YoMv81"
    },
    "annotations": {},
    "range": [],
@@ -8148,11 +8148,11 @@ var vowlresult={
   },
   {
    "id": 299,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "QXlWK2"
+    "IRI-based": "YwxOzG"
    },
    "annotations": {},
    "range": [],
@@ -8162,11 +8162,11 @@ var vowlresult={
   },
   {
    "id": 300,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Qz2oRe"
+    "IRI-based": "ZePQ23"
    },
    "annotations": {},
    "range": [],
@@ -8176,11 +8176,11 @@ var vowlresult={
   },
   {
    "id": 301,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Repn5M"
+    "IRI-based": "Zn4QP2"
    },
    "annotations": {},
    "range": [],
@@ -8190,11 +8190,11 @@ var vowlresult={
   },
   {
    "id": 302,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "RjmPA4"
+    "IRI-based": "ZpP2RM"
    },
    "annotations": {},
    "range": [],
@@ -8204,11 +8204,11 @@ var vowlresult={
   },
   {
    "id": 303,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "W4XmgP"
+    "IRI-based": "awbGWR"
    },
    "annotations": {},
    "range": [],
@@ -8218,11 +8218,11 @@ var vowlresult={
   },
   {
    "id": 304,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "b0OGdE"
+    "IRI-based": "b1078Y"
    },
    "annotations": {},
    "range": [],
@@ -8232,11 +8232,11 @@ var vowlresult={
   },
   {
    "id": 305,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gdWKYL"
+    "IRI-based": "bedBjy"
    },
    "annotations": {},
    "range": [],
@@ -8246,11 +8246,11 @@ var vowlresult={
   },
   {
    "id": 306,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "jm48qv"
+    "IRI-based": "d9DzW6"
    },
    "annotations": {},
    "range": [],
@@ -8260,11 +8260,11 @@ var vowlresult={
   },
   {
    "id": 307,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "kBRoVE"
+    "IRI-based": "ekMlNm"
    },
    "annotations": {},
    "range": [],
@@ -8274,11 +8274,11 @@ var vowlresult={
   },
   {
    "id": 308,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "mkGlqM"
+    "IRI-based": "grxE53"
    },
    "annotations": {},
    "range": [],
@@ -8288,11 +8288,11 @@ var vowlresult={
   },
   {
    "id": 309,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80"
+    "IRI-based": "gvMxX2"
    },
    "annotations": {},
    "range": [],
@@ -8302,11 +8302,11 @@ var vowlresult={
   },
   {
    "id": 310,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1"
+    "IRI-based": "jJ6lz4"
    },
    "annotations": {},
    "range": [],
@@ -8316,11 +8316,11 @@ var vowlresult={
   },
   {
    "id": 311,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8"
+    "IRI-based": "jNevOz"
    },
    "annotations": {},
    "range": [],
@@ -8330,11 +8330,11 @@ var vowlresult={
   },
   {
    "id": 312,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "p4zxM0"
+    "IRI-based": "mEEdOD"
    },
    "annotations": {},
    "range": [],
@@ -8344,11 +8344,11 @@ var vowlresult={
   },
   {
    "id": 313,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "qJE4nZ"
+    "IRI-based": "nW7M9E"
    },
    "annotations": {},
    "range": [],
@@ -8358,11 +8358,11 @@ var vowlresult={
   },
   {
    "id": 314,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rJXxA7"
+    "IRI-based": "p1J56k"
    },
    "annotations": {},
    "range": [],
@@ -8372,11 +8372,11 @@ var vowlresult={
   },
   {
    "id": 315,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rR3Mgy"
+    "IRI-based": "qWYJOl"
    },
    "annotations": {},
    "range": [],
@@ -8386,11 +8386,11 @@ var vowlresult={
   },
   {
    "id": 316,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rY6gGz"
+    "IRI-based": "qwBmyK"
    },
    "annotations": {},
    "range": [],
@@ -8400,11 +8400,11 @@ var vowlresult={
   },
   {
    "id": 317,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D"
+    "IRI-based": "w6L6NR"
    },
    "annotations": {},
    "range": [],
@@ -8414,11 +8414,11 @@ var vowlresult={
   },
   {
    "id": 318,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vXGN59"
+    "IRI-based": "wp8pRM"
    },
    "annotations": {},
    "range": [],
@@ -8428,11 +8428,11 @@ var vowlresult={
   },
   {
    "id": 319,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N"
+    "IRI-based": "wv7W8K"
    },
    "annotations": {},
    "range": [],
@@ -8442,11 +8442,11 @@ var vowlresult={
   },
   {
    "id": 320,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL"
+    "IRI-based": "xemvlY"
    },
    "annotations": {},
    "range": [],
@@ -8456,11 +8456,11 @@ var vowlresult={
   },
   {
    "id": 321,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zLjX82"
+    "IRI-based": "yaWJxV"
    },
    "annotations": {},
    "range": [],
@@ -8470,11 +8470,11 @@ var vowlresult={
   },
   {
    "id": 322,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zggRNd"
+    "IRI-based": "yn0Jk4"
    },
    "annotations": {},
    "range": [],
@@ -8498,11 +8498,11 @@ var vowlresult={
   },
   {
    "id": 324,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "B95OZz"
+    "IRI-based": "Bv9ve6"
    },
    "annotations": {},
    "range": [],
@@ -8512,11 +8512,11 @@ var vowlresult={
   },
   {
    "id": 325,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "BWKpDQ"
+    "IRI-based": "EZvPV7"
    },
    "annotations": {},
    "range": [],
@@ -8526,11 +8526,11 @@ var vowlresult={
   },
   {
    "id": 326,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "DEaJQL"
+    "IRI-based": "Ga28Wv"
    },
    "annotations": {},
    "range": [],
@@ -8540,11 +8540,11 @@ var vowlresult={
   },
   {
    "id": 327,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "EOD041"
+    "IRI-based": "KRDgw7"
    },
    "annotations": {},
    "range": [],
@@ -8554,11 +8554,11 @@ var vowlresult={
   },
   {
    "id": 328,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ee4KvG"
+    "IRI-based": "Kqlgor"
    },
    "annotations": {},
    "range": [],
@@ -8568,11 +8568,11 @@ var vowlresult={
   },
   {
    "id": 329,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "J3R6nX"
+    "IRI-based": "KzyPW3"
    },
    "annotations": {},
    "range": [],
@@ -8582,11 +8582,11 @@ var vowlresult={
   },
   {
    "id": 330,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "JmWOrl"
+    "IRI-based": "LQJ8KW"
    },
    "annotations": {},
    "range": [],
@@ -8596,11 +8596,11 @@ var vowlresult={
   },
   {
    "id": 331,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KbRY6O"
+    "IRI-based": "Lk4zlN"
    },
    "annotations": {},
    "range": [],
@@ -8610,11 +8610,11 @@ var vowlresult={
   },
   {
    "id": 332,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KmaGQd"
+    "IRI-based": "NZ5ad2"
    },
    "annotations": {},
    "range": [],
@@ -8624,11 +8624,11 @@ var vowlresult={
   },
   {
    "id": 333,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq"
+    "IRI-based": "NyGMBY"
    },
    "annotations": {},
    "range": [],
@@ -8638,11 +8638,11 @@ var vowlresult={
   },
   {
    "id": 334,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN"
+    "IRI-based": "PL318Z"
    },
    "annotations": {},
    "range": [],
@@ -8652,11 +8652,11 @@ var vowlresult={
   },
   {
    "id": 335,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1"
+    "IRI-based": "Pg0gRj"
    },
    "annotations": {},
    "range": [],
@@ -8666,11 +8666,11 @@ var vowlresult={
   },
   {
    "id": 336,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk"
+    "IRI-based": "RPXQZG"
    },
    "annotations": {},
    "range": [],
@@ -8680,11 +8680,11 @@ var vowlresult={
   },
   {
    "id": 337,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "MADy9p"
+    "IRI-based": "RQEKGv"
    },
    "annotations": {},
    "range": [],
@@ -8694,11 +8694,11 @@ var vowlresult={
   },
   {
    "id": 338,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5MVXe"
+    "IRI-based": "V79JlL"
    },
    "annotations": {},
    "range": [],
@@ -8708,11 +8708,11 @@ var vowlresult={
   },
   {
    "id": 339,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5ZEJo"
+    "IRI-based": "V9km9R"
    },
    "annotations": {},
    "range": [],
@@ -8722,11 +8722,11 @@ var vowlresult={
   },
   {
    "id": 340,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ndnd3r"
+    "IRI-based": "WzemGZ"
    },
    "annotations": {},
    "range": [],
@@ -8736,11 +8736,11 @@ var vowlresult={
   },
   {
    "id": 341,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "NedG0W"
+    "IRI-based": "XQvL62"
    },
    "annotations": {},
    "range": [],
@@ -8750,11 +8750,11 @@ var vowlresult={
   },
   {
    "id": 342,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "OljG8l"
+    "IRI-based": "XWnJMo"
    },
    "annotations": {},
    "range": [],
@@ -8764,11 +8764,11 @@ var vowlresult={
   },
   {
    "id": 343,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Q93OlW"
+    "IRI-based": "YoMv81"
    },
    "annotations": {},
    "range": [],
@@ -8778,11 +8778,11 @@ var vowlresult={
   },
   {
    "id": 344,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "QXlWK2"
+    "IRI-based": "YwxOzG"
    },
    "annotations": {},
    "range": [],
@@ -8792,11 +8792,11 @@ var vowlresult={
   },
   {
    "id": 345,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Qz2oRe"
+    "IRI-based": "ZePQ23"
    },
    "annotations": {},
    "range": [],
@@ -8806,11 +8806,11 @@ var vowlresult={
   },
   {
    "id": 346,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Repn5M"
+    "IRI-based": "Zn4QP2"
    },
    "annotations": {},
    "range": [],
@@ -8820,11 +8820,11 @@ var vowlresult={
   },
   {
    "id": 347,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "RjmPA4"
+    "IRI-based": "ZpP2RM"
    },
    "annotations": {},
    "range": [],
@@ -8834,11 +8834,11 @@ var vowlresult={
   },
   {
    "id": 348,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "W4XmgP"
+    "IRI-based": "awbGWR"
    },
    "annotations": {},
    "range": [],
@@ -8848,11 +8848,11 @@ var vowlresult={
   },
   {
    "id": 349,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "b0OGdE"
+    "IRI-based": "b1078Y"
    },
    "annotations": {},
    "range": [],
@@ -8862,11 +8862,11 @@ var vowlresult={
   },
   {
    "id": 350,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gdWKYL"
+    "IRI-based": "bedBjy"
    },
    "annotations": {},
    "range": [],
@@ -8876,11 +8876,11 @@ var vowlresult={
   },
   {
    "id": 351,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "jm48qv"
+    "IRI-based": "d9DzW6"
    },
    "annotations": {},
    "range": [],
@@ -8890,11 +8890,11 @@ var vowlresult={
   },
   {
    "id": 352,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "kBRoVE"
+    "IRI-based": "ekMlNm"
    },
    "annotations": {},
    "range": [],
@@ -8904,11 +8904,11 @@ var vowlresult={
   },
   {
    "id": 353,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "mkGlqM"
+    "IRI-based": "grxE53"
    },
    "annotations": {},
    "range": [],
@@ -8918,11 +8918,11 @@ var vowlresult={
   },
   {
    "id": 354,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80"
+    "IRI-based": "gvMxX2"
    },
    "annotations": {},
    "range": [],
@@ -8932,11 +8932,11 @@ var vowlresult={
   },
   {
    "id": 355,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1"
+    "IRI-based": "jJ6lz4"
    },
    "annotations": {},
    "range": [],
@@ -8946,11 +8946,11 @@ var vowlresult={
   },
   {
    "id": 356,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8"
+    "IRI-based": "jNevOz"
    },
    "annotations": {},
    "range": [],
@@ -8960,11 +8960,11 @@ var vowlresult={
   },
   {
    "id": 357,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "p4zxM0"
+    "IRI-based": "mEEdOD"
    },
    "annotations": {},
    "range": [],
@@ -8974,11 +8974,11 @@ var vowlresult={
   },
   {
    "id": 358,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "qJE4nZ"
+    "IRI-based": "nW7M9E"
    },
    "annotations": {},
    "range": [],
@@ -8988,11 +8988,11 @@ var vowlresult={
   },
   {
    "id": 359,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rJXxA7"
+    "IRI-based": "p1J56k"
    },
    "annotations": {},
    "range": [],
@@ -9002,11 +9002,11 @@ var vowlresult={
   },
   {
    "id": 360,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rR3Mgy"
+    "IRI-based": "qWYJOl"
    },
    "annotations": {},
    "range": [],
@@ -9016,11 +9016,11 @@ var vowlresult={
   },
   {
    "id": 361,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rY6gGz"
+    "IRI-based": "qwBmyK"
    },
    "annotations": {},
    "range": [],
@@ -9030,11 +9030,11 @@ var vowlresult={
   },
   {
    "id": 362,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D"
+    "IRI-based": "w6L6NR"
    },
    "annotations": {},
    "range": [],
@@ -9044,11 +9044,11 @@ var vowlresult={
   },
   {
    "id": 363,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vXGN59"
+    "IRI-based": "wp8pRM"
    },
    "annotations": {},
    "range": [],
@@ -9058,11 +9058,11 @@ var vowlresult={
   },
   {
    "id": 364,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N"
+    "IRI-based": "wv7W8K"
    },
    "annotations": {},
    "range": [],
@@ -9072,11 +9072,11 @@ var vowlresult={
   },
   {
    "id": 365,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL"
+    "IRI-based": "xemvlY"
    },
    "annotations": {},
    "range": [],
@@ -9086,11 +9086,11 @@ var vowlresult={
   },
   {
    "id": 366,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zLjX82"
+    "IRI-based": "yaWJxV"
    },
    "annotations": {},
    "range": [],
@@ -9100,7 +9100,7 @@ var vowlresult={
   },
   {
    "id": 367,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": "Trier-Petrisberg",
@@ -9175,11 +9175,11 @@ var vowlresult={
   },
   {
    "id": 369,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "B95OZz"
+    "IRI-based": "Bv9ve6"
    },
    "annotations": {},
    "range": [],
@@ -9189,11 +9189,11 @@ var vowlresult={
   },
   {
    "id": 370,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "BWKpDQ"
+    "IRI-based": "EZvPV7"
    },
    "annotations": {},
    "range": [],
@@ -9203,11 +9203,11 @@ var vowlresult={
   },
   {
    "id": 371,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "DEaJQL"
+    "IRI-based": "Ga28Wv"
    },
    "annotations": {},
    "range": [],
@@ -9217,11 +9217,11 @@ var vowlresult={
   },
   {
    "id": 372,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "EOD041"
+    "IRI-based": "KRDgw7"
    },
    "annotations": {},
    "range": [],
@@ -9231,11 +9231,11 @@ var vowlresult={
   },
   {
    "id": 373,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ee4KvG"
+    "IRI-based": "Kqlgor"
    },
    "annotations": {},
    "range": [],
@@ -9245,11 +9245,11 @@ var vowlresult={
   },
   {
    "id": 374,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "J3R6nX"
+    "IRI-based": "KzyPW3"
    },
    "annotations": {},
    "range": [],
@@ -9259,11 +9259,11 @@ var vowlresult={
   },
   {
    "id": 375,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "JmWOrl"
+    "IRI-based": "LQJ8KW"
    },
    "annotations": {},
    "range": [],
@@ -9273,11 +9273,11 @@ var vowlresult={
   },
   {
    "id": 376,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KbRY6O"
+    "IRI-based": "Lk4zlN"
    },
    "annotations": {},
    "range": [],
@@ -9287,11 +9287,11 @@ var vowlresult={
   },
   {
    "id": 377,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "KmaGQd"
+    "IRI-based": "NZ5ad2"
    },
    "annotations": {},
    "range": [],
@@ -9301,11 +9301,11 @@ var vowlresult={
   },
   {
    "id": 378,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Krj7Qq"
+    "IRI-based": "NyGMBY"
    },
    "annotations": {},
    "range": [],
@@ -9315,11 +9315,11 @@ var vowlresult={
   },
   {
    "id": 379,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LJA4XN"
+    "IRI-based": "PL318Z"
    },
    "annotations": {},
    "range": [],
@@ -9329,11 +9329,11 @@ var vowlresult={
   },
   {
    "id": 380,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "LmM3V1"
+    "IRI-based": "Pg0gRj"
    },
    "annotations": {},
    "range": [],
@@ -9343,11 +9343,11 @@ var vowlresult={
   },
   {
    "id": 381,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "M8BAmk"
+    "IRI-based": "RPXQZG"
    },
    "annotations": {},
    "range": [],
@@ -9357,11 +9357,11 @@ var vowlresult={
   },
   {
    "id": 382,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "MADy9p"
+    "IRI-based": "RQEKGv"
    },
    "annotations": {},
    "range": [],
@@ -9371,11 +9371,11 @@ var vowlresult={
   },
   {
    "id": 383,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5MVXe"
+    "IRI-based": "V79JlL"
    },
    "annotations": {},
    "range": [],
@@ -9385,11 +9385,11 @@ var vowlresult={
   },
   {
    "id": 384,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "N5ZEJo"
+    "IRI-based": "V9km9R"
    },
    "annotations": {},
    "range": [],
@@ -9399,11 +9399,11 @@ var vowlresult={
   },
   {
    "id": 385,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Ndnd3r"
+    "IRI-based": "WzemGZ"
    },
    "annotations": {},
    "range": [],
@@ -9413,11 +9413,11 @@ var vowlresult={
   },
   {
    "id": 386,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "NedG0W"
+    "IRI-based": "XQvL62"
    },
    "annotations": {},
    "range": [],
@@ -9427,11 +9427,11 @@ var vowlresult={
   },
   {
    "id": 387,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "OljG8l"
+    "IRI-based": "XWnJMo"
    },
    "annotations": {},
    "range": [],
@@ -9441,11 +9441,11 @@ var vowlresult={
   },
   {
    "id": 388,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Q93OlW"
+    "IRI-based": "YoMv81"
    },
    "annotations": {},
    "range": [],
@@ -9455,11 +9455,11 @@ var vowlresult={
   },
   {
    "id": 389,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "QXlWK2"
+    "IRI-based": "YwxOzG"
    },
    "annotations": {},
    "range": [],
@@ -9469,11 +9469,11 @@ var vowlresult={
   },
   {
    "id": 390,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Qz2oRe"
+    "IRI-based": "ZePQ23"
    },
    "annotations": {},
    "range": [],
@@ -9483,11 +9483,11 @@ var vowlresult={
   },
   {
    "id": 391,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Repn5M"
+    "IRI-based": "Zn4QP2"
    },
    "annotations": {},
    "range": [],
@@ -9497,11 +9497,11 @@ var vowlresult={
   },
   {
    "id": 392,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "RjmPA4"
+    "IRI-based": "ZpP2RM"
    },
    "annotations": {},
    "range": [],
@@ -9511,11 +9511,11 @@ var vowlresult={
   },
   {
    "id": 393,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "W4XmgP"
+    "IRI-based": "awbGWR"
    },
    "annotations": {},
    "range": [],
@@ -9525,11 +9525,11 @@ var vowlresult={
   },
   {
    "id": 394,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "b0OGdE"
+    "IRI-based": "b1078Y"
    },
    "annotations": {},
    "range": [],
@@ -9539,11 +9539,11 @@ var vowlresult={
   },
   {
    "id": 395,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gdWKYL"
+    "IRI-based": "bedBjy"
    },
    "annotations": {},
    "range": [],
@@ -9553,11 +9553,11 @@ var vowlresult={
   },
   {
    "id": 396,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "jm48qv"
+    "IRI-based": "d9DzW6"
    },
    "annotations": {},
    "range": [],
@@ -9567,11 +9567,11 @@ var vowlresult={
   },
   {
    "id": 397,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "kBRoVE"
+    "IRI-based": "ekMlNm"
    },
    "annotations": {},
    "range": [],
@@ -9581,11 +9581,11 @@ var vowlresult={
   },
   {
    "id": 398,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "mkGlqM"
+    "IRI-based": "grxE53"
    },
    "annotations": {},
    "range": [],
@@ -9595,11 +9595,11 @@ var vowlresult={
   },
   {
    "id": 399,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oQZq80"
+    "IRI-based": "gvMxX2"
    },
    "annotations": {},
    "range": [],
@@ -9609,11 +9609,11 @@ var vowlresult={
   },
   {
    "id": 400,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ojlAy1"
+    "IRI-based": "jJ6lz4"
    },
    "annotations": {},
    "range": [],
@@ -9623,11 +9623,11 @@ var vowlresult={
   },
   {
    "id": 401,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "oqJAd8"
+    "IRI-based": "jNevOz"
    },
    "annotations": {},
    "range": [],
@@ -9637,11 +9637,11 @@ var vowlresult={
   },
   {
    "id": 402,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "p4zxM0"
+    "IRI-based": "mEEdOD"
    },
    "annotations": {},
    "range": [],
@@ -9651,11 +9651,11 @@ var vowlresult={
   },
   {
    "id": 403,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "qJE4nZ"
+    "IRI-based": "nW7M9E"
    },
    "annotations": {},
    "range": [],
@@ -9665,11 +9665,11 @@ var vowlresult={
   },
   {
    "id": 404,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rJXxA7"
+    "IRI-based": "p1J56k"
    },
    "annotations": {},
    "range": [],
@@ -9679,11 +9679,11 @@ var vowlresult={
   },
   {
    "id": 405,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rR3Mgy"
+    "IRI-based": "qWYJOl"
    },
    "annotations": {},
    "range": [],
@@ -9693,11 +9693,11 @@ var vowlresult={
   },
   {
    "id": 406,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rY6gGz"
+    "IRI-based": "qwBmyK"
    },
    "annotations": {},
    "range": [],
@@ -9707,11 +9707,11 @@ var vowlresult={
   },
   {
    "id": 407,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vJnM0D"
+    "IRI-based": "w6L6NR"
    },
    "annotations": {},
    "range": [],
@@ -9721,11 +9721,11 @@ var vowlresult={
   },
   {
    "id": 408,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vXGN59"
+    "IRI-based": "wp8pRM"
    },
    "annotations": {},
    "range": [],
@@ -9735,11 +9735,11 @@ var vowlresult={
   },
   {
    "id": 409,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "vd0j5N"
+    "IRI-based": "wv7W8K"
    },
    "annotations": {},
    "range": [],
@@ -9749,11 +9749,11 @@ var vowlresult={
   },
   {
    "id": 410,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xbEdvL"
+    "IRI-based": "xemvlY"
    },
    "annotations": {},
    "range": [],
@@ -9763,11 +9763,11 @@ var vowlresult={
   },
   {
    "id": 411,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zLjX82"
+    "IRI-based": "yaWJxV"
    },
    "annotations": {},
    "range": [],
@@ -9777,4078 +9777,7 @@ var vowlresult={
   },
   {
    "id": 412,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "R\u00f6dgen",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.4825",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.1896",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.2972",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "8.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-12.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/6700040031",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "tourism=information",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/220408239",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q2179598",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "B95OZz",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 413,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/B95OZz",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Braives",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.186",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.0421",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.267",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109245",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q681153",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "BWKpDQ",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 414,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWKpDQ",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Asberg, Lager",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.323",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.1081",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.1243",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "8.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "R\u00f6dgen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/144455109",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "natural=scrub",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/108761",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q723019",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "DEaJQL",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 415,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DEaJQL",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Velsen",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.8336",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.1823",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.0086",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "28.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/106663898",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "natural=water",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/99058",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q615397",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "EOD041",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/EOD041_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#closeMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/106663898",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/EOD041_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/EOD041_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 416,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EOD041",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Lorenzberg",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.2099",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.065",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.039",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/187242",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1346749",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "Ee4KvG",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 417,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ee4KvG",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Titelberg",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-1.2119",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.3813",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.0643",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "-9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-15.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Dangstetten",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Dangstetten",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/32545380",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109381",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1463952",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "J3R6nX",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 418,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/J3R6nX",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Maastricht",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.8086",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.2157",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.4184",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "28.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Velsen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Velsen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/2804902056",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "tourism=museum",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109386",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q2250231",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "JmWOrl",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 419,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JmWOrl",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Vetera I",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.4039",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.0911",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.218",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/108867",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q532466",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "KbRY6O",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 420,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KbRY6O",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Vechten",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.8037",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.2304",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.3963",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "28.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Velsen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Velsen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/98956",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q2311719",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "KmaGQd",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 421,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KmaGQd",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Nijmegen, Valkhof",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.2432",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.1211",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.268",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/10075892871",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "tourism=museum",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/98921",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1309708",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "Krj7Qq",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 422,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Krj7Qq",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Namur",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.1435",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.2008",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.3545",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "8.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-12.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "R\u00f6dgen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "R\u00f6dgen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109188",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q134121",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "LJA4XN",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 423,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Friedberg",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.4748",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0596",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.3632",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/725895648",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "place=hamlet",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/118681",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1011847",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "LmM3V1",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 424,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LmM3V1",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Augsburg-Oberhausen",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.2301",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.2052",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.153",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/55938422",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "landuse=brownfield",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/118580",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q760496",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "M8BAmk",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#relatedMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/55938422",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 425,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/M8BAmk",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Dangstetten",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-1.0624",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.2223",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.5173",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "-9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-15.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/103687183",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "landuse=quarry",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/970740488",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q2179590",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "MADy9p",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 426,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/MADy9p",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Vindonissa, Scheuerhof",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.137",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.1014",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.0032",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/6420816733",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=castle",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177661",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q103199316",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "N5MVXe",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 427,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5MVXe",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Vindonissa, Milit\u00e4rstation",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.6857",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.2012",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.1651",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "8.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "R\u00f6dgen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/6420816733",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=castle",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177661",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q103199316",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "N5ZEJo",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 428,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N5ZEJo",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Conimbriga",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.1065",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0456",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.1097",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/7878861331",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/236443",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q868754",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "Ndnd3r",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 429,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ndnd3r",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Nijmegen, Trajanusplein",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.4147",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0385",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.4235",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/98921",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1309708",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "NedG0W",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 430,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NedG0W",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Neuss",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.4107",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0405",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.055",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "8.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "R\u00f6dgen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/6358516450",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109215",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q318196",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "OljG8l",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 431,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OljG8l",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Asberg, Lagerdorf",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.2042",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0864",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.0158",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/108761",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q723019",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "Q93OlW",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 432,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q93OlW",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Liberchies",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.3057",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.0244",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.0504",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "8.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "R\u00f6dgen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109003",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q2371918",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "QXlWK2",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 433,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Worms",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.5313",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.4841",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.5543",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/108820",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1094541",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "Qz2oRe",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 434,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Mainz, Legionslager",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.0331",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0481",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.2022",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/1930543644",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109169",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q571790",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "Repn5M",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#relatedMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/1930543644",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 435,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Repn5M",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Wiesbaden",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.4593",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0995",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.5028",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/111263486",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "tourism=attraction",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/108750",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1094536",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "RjmPA4",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#relatedMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/111263486",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 436,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RjmPA4",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Basel, Lager",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-1.2041",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.5444",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.0093",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "-9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-15.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Dangstetten",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Dangstetten",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/168318389",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177468",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q666479",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "W4XmgP",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 437,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Vindonissa, K\u00f6nigsfelden",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.3832",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.2064",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-1.0289",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/6420816733",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=castle",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177661",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q103199316",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "b0OGdE",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 438,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b0OGdE",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Lausanne-Vidy",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.2726",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.0157",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.1228",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/699387398",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177565",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q3264025",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "gdWKYL",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 439,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gdWKYL",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": "Nijmegen, Lager (Brunsting)",
@@ -13945,7 +9874,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "jm48qv",
+      "value": "Bv9ve6",
       "type": "label"
      }
     ],
@@ -13953,7 +9882,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6_geom",
       "type": "iri"
      }
     ],
@@ -13969,7 +9898,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6_begin",
       "type": "iri"
      }
     ],
@@ -13977,7 +9906,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6_end",
       "type": "iri"
      }
     ]
@@ -13988,17 +9917,17 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 440,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jm48qv",
+   "id": 413,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
-   "label": "Bad Nauheim",
+   "label": "Augst, Insula 31",
    "annotations": {
     "http://archaeology.link/ontology#cax": [
      {
       "identifier": "http://archaeology.link/ontology#cax",
       "language": "undefined",
-      "value": "0.2199",
+      "value": "0.0998",
       "type": "label"
      }
     ],
@@ -14006,7 +9935,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#cay",
       "language": "undefined",
-      "value": "0.034",
+      "value": "0.1164",
       "type": "label"
      }
     ],
@@ -14014,7 +9943,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#caz",
       "language": "undefined",
-      "value": "-0.1879",
+      "value": "-0.3233",
       "type": "label"
      }
     ],
@@ -14022,7 +9951,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#endfixed",
       "language": "undefined",
-      "value": "false",
+      "value": "true",
       "type": "label"
      }
     ],
@@ -14030,7 +9959,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#estimatedend",
       "language": "undefined",
-      "value": "9.0",
+      "value": "13.0",
       "type": "label"
      }
     ],
@@ -14038,23 +9967,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#estimatedstart",
       "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
+      "value": "8.0",
       "type": "label"
      }
     ],
@@ -14062,7 +9975,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#osm_entity",
       "language": "undefined",
-      "value": "http://openstreetmap.org/node/333175552",
+      "value": "http://openstreetmap.org/way/107475507",
       "type": "iri"
      }
     ],
@@ -14070,7 +9983,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#osm_tag",
       "language": "undefined",
-      "value": "historic=archaeological_site",
+      "value": "building=yes",
       "type": "label"
      }
     ],
@@ -14078,7 +9991,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#pleiades",
       "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/118588",
+      "value": "https://pleiades.stoa.org/places/177494",
       "type": "iri"
      }
     ],
@@ -14086,7 +9999,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#startfixed",
       "language": "undefined",
-      "value": "false",
+      "value": "true",
       "type": "label"
      }
     ],
@@ -14094,7 +10007,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#wikidata",
       "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q2179578",
+      "value": "http://www.wikidata.org/entity/Q610371",
       "type": "iri"
      }
     ],
@@ -14102,7 +10015,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "kBRoVE",
+      "value": "EZvPV7",
       "type": "label"
      }
     ],
@@ -14110,7 +10023,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7_geom",
       "type": "iri"
      }
     ],
@@ -14118,7 +10031,15 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/107475507",
       "type": "iri"
      }
     ],
@@ -14126,7 +10047,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7_begin",
       "type": "iri"
      }
     ],
@@ -14134,7 +10055,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7_end",
       "type": "iri"
      }
     ]
@@ -14145,17 +10066,17 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 441,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kBRoVE",
+   "id": 414,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/EZvPV7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
-   "label": "Oberwinterthur, R\u00f6merstr. 186",
+   "label": "Nijmegen, Valkhof",
    "annotations": {
     "http://archaeology.link/ontology#cax": [
      {
       "identifier": "http://archaeology.link/ontology#cax",
       "language": "undefined",
-      "value": "0.479",
+      "value": "0.2432",
       "type": "label"
      }
     ],
@@ -14163,7 +10084,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#cay",
       "language": "undefined",
-      "value": "0.0493",
+      "value": "0.1211",
       "type": "label"
      }
     ],
@@ -14171,7 +10092,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#caz",
       "language": "undefined",
-      "value": "-0.5557",
+      "value": "-0.268",
       "type": "label"
      }
     ],
@@ -14195,7 +10116,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#estimatedstart",
       "language": "undefined",
-      "value": "7.0",
+      "value": "8.0",
       "type": "label"
      }
     ],
@@ -14219,7 +10140,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#osm_entity",
       "language": "undefined",
-      "value": "http://openstreetmap.org/way/115007886",
+      "value": "http://openstreetmap.org/node/10075892871",
       "type": "iri"
      }
     ],
@@ -14227,7 +10148,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#osm_tag",
       "language": "undefined",
-      "value": "building=appartments",
+      "value": "tourism=museum",
       "type": "label"
      }
     ],
@@ -14235,7 +10156,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#pleiades",
       "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/187624",
+      "value": "https://pleiades.stoa.org/places/98921",
       "type": "iri"
      }
     ],
@@ -14251,7 +10172,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#wikidata",
       "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q164912",
+      "value": "http://www.wikidata.org/entity/Q1309708",
       "type": "iri"
      }
     ],
@@ -14259,7 +10180,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "mkGlqM",
+      "value": "Ga28Wv",
       "type": "label"
      }
     ],
@@ -14267,7 +10188,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv_geom",
       "type": "iri"
      }
     ],
@@ -14275,15 +10196,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#closeMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/115007886",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
       "type": "iri"
      }
     ],
@@ -14291,7 +10204,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv_begin",
       "type": "iri"
      }
     ],
@@ -14299,7 +10212,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv_end",
       "type": "iri"
      }
     ]
@@ -14310,330 +10223,8 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 442,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mkGlqM",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Bonn, Boeselagerhof",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.007",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0597",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.1639",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/1191145951",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "information=tactile_model",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/108818",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1146198",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "oQZq80",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 443,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oQZq80",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Z\u00fcrich, Lindenhof",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-1.5681",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-3.3957",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.2093",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "-9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Dangstetten",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/3483897061",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/187596",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q10987378",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "ojlAy1",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#closeMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/3483897061",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 444,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ojlAy1",
+   "id": 415,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": "Tongeren",
@@ -14746,7 +10337,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "oqJAd8",
+      "value": "KRDgw7",
       "type": "label"
      }
     ],
@@ -14754,7 +10345,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7_geom",
       "type": "iri"
      }
     ],
@@ -14770,7 +10361,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7_begin",
       "type": "iri"
      }
     ],
@@ -14778,7 +10369,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7_end",
       "type": "iri"
      }
     ]
@@ -14789,8 +10380,910 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 445,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/oqJAd8",
+   "id": 416,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KRDgw7",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Conimbriga",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.1065",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0456",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.1097",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/7878861331",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/236443",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q868754",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "Kqlgor",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 417,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Kqlgor",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Liberchies",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.3057",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.0244",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.0504",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "R\u00f6dgen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109003",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q2371918",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "KzyPW3",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 418,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KzyPW3",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Vetera I",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.4039",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.0911",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.218",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/108867",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q532466",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "LQJ8KW",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 419,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Bonn, Boeselagerhof",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.007",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0597",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.1639",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/1191145951",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "information=tactile_model",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/108818",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q1146198",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "Lk4zlN",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 420,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Wiesbaden",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.4593",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0995",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.5028",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "13.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/111263486",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "tourism=attraction",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/108750",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q1094536",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "NZ5ad2",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/111263486",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 421,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Bregenz",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.3196",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.1604",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.7664",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "13.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/187325",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q13452589",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "NyGMBY",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 422,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NyGMBY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": "Augst, Theater",
@@ -14903,7 +11396,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "p4zxM0",
+      "value": "PL318Z",
       "type": "label"
      }
     ],
@@ -14911,7 +11404,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z_geom",
       "type": "iri"
      }
     ],
@@ -14935,7 +11428,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z_begin",
       "type": "iri"
      }
     ],
@@ -14943,7 +11436,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z_end",
       "type": "iri"
      }
     ]
@@ -14954,785 +11447,8 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 446,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p4zxM0",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Basel, Lagerdorf",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.1599",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.0932",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.0583",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "9.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Haltern",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Neuss",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/node/1796082995",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177468",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q666479",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "qJE4nZ",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 447,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Oberaden",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "-0.6965",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.2155",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.4023",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "-7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "-11.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/157929084",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "historic=archaeological_site",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/109229",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q577724",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "rJXxA7",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 448,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Augst, Insula 31",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.0998",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "0.1164",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.3233",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/107475507",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "building=yes",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177494",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "true",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q610371",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "rR3Mgy",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#closeMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/107475507",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 449,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rR3Mgy",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Avenches, Insula 15",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.3853",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.0153",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "-0.3444",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "13.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "7.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Augst, Insula 31",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/333211842",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "building=yes",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177495",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q670912",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "rY6gGz",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#closeMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/333211842",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 450,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rY6gGz",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": "Augst, Insula 20",
-   "annotations": {
-    "http://archaeology.link/ontology#cax": [
-     {
-      "identifier": "http://archaeology.link/ontology#cax",
-      "language": "undefined",
-      "value": "0.5106",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#cay": [
-     {
-      "identifier": "http://archaeology.link/ontology#cay",
-      "language": "undefined",
-      "value": "-0.1593",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#caz": [
-     {
-      "identifier": "http://archaeology.link/ontology#caz",
-      "language": "undefined",
-      "value": "0.2908",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#endfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#endfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedend": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedend",
-      "language": "undefined",
-      "value": "28.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#estimatedstart": [
-     {
-      "identifier": "http://archaeology.link/ontology#estimatedstart",
-      "language": "undefined",
-      "value": "16.0",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfen": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfen",
-      "language": "undefined",
-      "value": "Velsen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#nfsn": [
-     {
-      "identifier": "http://archaeology.link/ontology#nfsn",
-      "language": "undefined",
-      "value": "Velsen",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_entity": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_entity",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/107475469",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#osm_tag": [
-     {
-      "identifier": "http://archaeology.link/ontology#osm_tag",
-      "language": "undefined",
-      "value": "building=yes",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#pleiades": [
-     {
-      "identifier": "http://archaeology.link/ontology#pleiades",
-      "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/177494",
-      "type": "iri"
-     }
-    ],
-    "http://archaeology.link/ontology#startfixed": [
-     {
-      "identifier": "http://archaeology.link/ontology#startfixed",
-      "language": "undefined",
-      "value": "false",
-      "type": "label"
-     }
-    ],
-    "http://archaeology.link/ontology#wikidata": [
-     {
-      "identifier": "http://archaeology.link/ontology#wikidata",
-      "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q610371",
-      "type": "iri"
-     }
-    ],
-    "http://purl.org/dc/elements/1.1/identifier": [
-     {
-      "identifier": "http://purl.org/dc/elements/1.1/identifier",
-      "language": "undefined",
-      "value": "vJnM0D",
-      "type": "label"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#hasGeometry": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D_geom",
-      "type": "iri"
-     }
-    ],
-    "http://www.opengis.net/ont/geosparql#memberOf": [
-     {
-      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2004/02/skos/core#closeMatch": [
-     {
-      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
-      "language": "undefined",
-      "value": "http://openstreetmap.org/way/107475469",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasBeginning": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasBeginning",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D_begin",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#hasEnd": [
-     {
-      "identifier": "http://www.w3.org/2006/time#hasEnd",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D_end",
-      "type": "iri"
-     }
-    ]
-   },
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 451,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vJnM0D",
+   "id": 423,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/PL318Z",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": "Haltern",
@@ -15829,7 +11545,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "vXGN59",
+      "value": "Pg0gRj",
       "type": "label"
      }
     ],
@@ -15837,7 +11553,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj_geom",
       "type": "iri"
      }
     ],
@@ -15853,7 +11569,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj_begin",
       "type": "iri"
      }
     ],
@@ -15861,7 +11577,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj_end",
       "type": "iri"
      }
     ]
@@ -15872,17 +11588,17 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 452,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+   "id": 424,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
-   "label": "Nijmegen, Lager (Haalebos)",
+   "label": "Augsburg-Oberhausen",
    "annotations": {
     "http://archaeology.link/ontology#cax": [
      {
       "identifier": "http://archaeology.link/ontology#cax",
       "language": "undefined",
-      "value": "-1.9696",
+      "value": "-0.2301",
       "type": "label"
      }
     ],
@@ -15890,7 +11606,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#cay",
       "language": "undefined",
-      "value": "-4.3352",
+      "value": "0.2052",
       "type": "label"
      }
     ],
@@ -15898,7 +11614,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#caz",
       "language": "undefined",
-      "value": "-0.6857",
+      "value": "-0.153",
       "type": "label"
      }
     ],
@@ -15914,7 +11630,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#estimatedend",
       "language": "undefined",
-      "value": "-9.0",
+      "value": "9.0",
       "type": "label"
      }
     ],
@@ -15930,7 +11646,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#nfen",
       "language": "undefined",
-      "value": "Dangstetten",
+      "value": "Haltern",
       "type": "label"
      }
     ],
@@ -15942,11 +11658,27 @@ var vowlresult={
       "type": "label"
      }
     ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/55938422",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "landuse=brownfield",
+      "type": "label"
+     }
+    ],
     "http://archaeology.link/ontology#pleiades": [
      {
       "identifier": "http://archaeology.link/ontology#pleiades",
       "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/98921",
+      "value": "https://pleiades.stoa.org/places/118580",
       "type": "iri"
      }
     ],
@@ -15962,7 +11694,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#wikidata",
       "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q1309708",
+      "value": "http://www.wikidata.org/entity/Q760496",
       "type": "iri"
      }
     ],
@@ -15970,7 +11702,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "vd0j5N",
+      "value": "RPXQZG",
       "type": "label"
      }
     ],
@@ -15978,7 +11710,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG_geom",
       "type": "iri"
      }
     ],
@@ -15986,7 +11718,15 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/55938422",
       "type": "iri"
      }
     ],
@@ -15994,7 +11734,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG_begin",
       "type": "iri"
      }
     ],
@@ -16002,7 +11742,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG_end",
       "type": "iri"
      }
     ]
@@ -16013,8 +11753,471 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 453,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+   "id": 425,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RPXQZG",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Lausanne-Vidy",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.2726",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.0157",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.1228",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/699387398",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177565",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q3264025",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "RQEKGv",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 426,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/RQEKGv",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Neuss",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.4107",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0405",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.055",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "R\u00f6dgen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/6358516450",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109215",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q318196",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "V79JlL",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 427,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V79JlL",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Asberg, Lager",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.323",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.1081",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.1243",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "R\u00f6dgen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/144455109",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "natural=scrub",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/108761",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q723019",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "V9km9R",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 428,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/V9km9R",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": "Zurzach, Lager",
@@ -16127,7 +12330,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "xbEdvL",
+      "value": "WzemGZ",
       "type": "label"
      }
     ],
@@ -16135,7 +12338,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ_geom",
       "type": "iri"
      }
     ],
@@ -16151,7 +12354,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ_begin",
       "type": "iri"
      }
     ],
@@ -16159,7 +12362,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ_end",
       "type": "iri"
      }
     ]
@@ -16170,17 +12373,17 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 454,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+   "id": 429,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WzemGZ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
-   "label": "Bregenz",
+   "label": "Lorenzberg",
    "annotations": {
     "http://archaeology.link/ontology#cax": [
      {
       "identifier": "http://archaeology.link/ontology#cax",
       "language": "undefined",
-      "value": "0.3196",
+      "value": "0.2099",
       "type": "label"
      }
     ],
@@ -16188,7 +12391,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#cay",
       "language": "undefined",
-      "value": "0.1604",
+      "value": "0.065",
       "type": "label"
      }
     ],
@@ -16196,7 +12399,148 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#caz",
       "language": "undefined",
-      "value": "-0.7664",
+      "value": "0.039",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/187242",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q1346749",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "XQvL62",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 430,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XQvL62",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Avenches, Insula 15",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.3853",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.0153",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.3444",
       "type": "label"
      }
     ],
@@ -16220,7 +12564,3208 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#estimatedstart",
       "language": "undefined",
-      "value": "7.0",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/333211842",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "building=yes",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177495",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q670912",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "XWnJMo",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/333211842",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 431,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XWnJMo",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Vindonissa, K\u00f6nigsfelden",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.3832",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.2064",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-1.0289",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "13.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/6420816733",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=castle",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177661",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q103199316",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "YoMv81",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 432,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YoMv81",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Braives",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.186",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.0421",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.267",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109245",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q681153",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "YwxOzG",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 433,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/YwxOzG",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Mainz, Legionslager",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.0331",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0481",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.2022",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/1930543644",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109169",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q571790",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "ZePQ23",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/1930543644",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 434,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZePQ23",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Nijmegen, Lager (Haalebos)",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-1.9696",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-4.3352",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.6857",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "-9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Dangstetten",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/98921",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q1309708",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "Zn4QP2",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 435,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Vechten",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.8037",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.2304",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.3963",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "28.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Velsen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Velsen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/98956",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q2311719",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "ZpP2RM",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 436,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Dangstetten",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-1.0624",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.2223",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.5173",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "-9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-15.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/103687183",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "landuse=quarry",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/970740488",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q2179590",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "awbGWR",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 437,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/awbGWR",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Augst, Insula 20",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.5106",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.1593",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.2908",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "28.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Velsen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Velsen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/107475469",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "building=yes",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177494",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q610371",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "b1078Y",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/107475469",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 438,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b1078Y",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Titelberg",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-1.2119",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.3813",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.0643",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "-9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-15.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Dangstetten",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Dangstetten",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/32545380",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109381",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q1463952",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "bedBjy",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 439,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bedBjy",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Basel, Lagerdorf",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.1599",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0932",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.0583",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/1796082995",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177468",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q666479",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "d9DzW6",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 440,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Namur",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.1435",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.2008",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.3545",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-12.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "R\u00f6dgen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "R\u00f6dgen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109188",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q134121",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "ekMlNm",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 441,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ekMlNm",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "R\u00f6dgen",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.4825",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.1896",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.2972",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-12.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/6700040031",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "tourism=information",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/220408239",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q2179598",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "grxE53",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/grxE53_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/grxE53_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/grxE53_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 442,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Vindonissa, Milit\u00e4rstation",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.6857",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.2012",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.1651",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "R\u00f6dgen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/6420816733",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=castle",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177661",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q103199316",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "gvMxX2",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 443,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Z\u00fcrich, Lindenhof",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-1.5681",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-3.3957",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.2093",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "-9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Dangstetten",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/3483897061",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/187596",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q10987378",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "jJ6lz4",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/3483897061",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 444,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Worms",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.5313",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.4841",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.5543",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "13.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Neuss",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/108820",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q1094541",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "jNevOz",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 445,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Bad Nauheim",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.2199",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.034",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.1879",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/333175552",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/118588",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q2179578",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "mEEdOD",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 446,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/mEEdOD",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Oberwinterthur, R\u00f6merstr. 186",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.479",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0493",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.5557",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "13.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/115007886",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "building=appartments",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/187624",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q164912",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "nW7M9E",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/115007886",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 447,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nW7M9E",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Velsen",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.8336",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.1823",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.0086",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "28.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/106663898",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "natural=water",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/99058",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q615397",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "p1J56k",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/106663898",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 448,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/p1J56k",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Asberg, Lagerdorf",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.2042",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0864",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.0158",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/108761",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q723019",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "qWYJOl",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 449,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qWYJOl",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Basel, Lager",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-1.2041",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.5444",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.0093",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "-9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-15.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Dangstetten",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Dangstetten",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/168318389",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177468",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q666479",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "qwBmyK",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 450,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Friedberg",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.4748",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0596",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.3632",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "13.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "8.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Augst, Insula 31",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/725895648",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "place=hamlet",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/118681",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q1011847",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "w6L6NR",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 451,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/w6L6NR",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Nijmegen, Trajanusplein",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.4147",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.0385",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "-0.4235",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "13.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "8.0",
       "type": "label"
      }
     ],
@@ -16244,7 +15789,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#pleiades",
       "language": "undefined",
-      "value": "https://pleiades.stoa.org/places/187325",
+      "value": "https://pleiades.stoa.org/places/98921",
       "type": "iri"
      }
     ],
@@ -16260,7 +15805,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#wikidata",
       "language": "undefined",
-      "value": "http://www.wikidata.org/entity/Q13452589",
+      "value": "http://www.wikidata.org/entity/Q1309708",
       "type": "iri"
      }
     ],
@@ -16268,7 +15813,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "zLjX82",
+      "value": "wp8pRM",
       "type": "label"
      }
     ],
@@ -16276,7 +15821,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM_geom",
       "type": "iri"
      }
     ],
@@ -16284,7 +15829,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
       "type": "iri"
      }
     ],
@@ -16292,7 +15837,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM_begin",
       "type": "iri"
      }
     ],
@@ -16300,7 +15845,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM_end",
       "type": "iri"
      }
     ]
@@ -16311,8 +15856,322 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 455,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zLjX82",
+   "id": 452,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wp8pRM",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Vindonissa, Scheuerhof",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.137",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.1014",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.0032",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "9.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Haltern",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/6420816733",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=castle",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/177661",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q103199316",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "wv7W8K",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 453,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Maastricht",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "0.8086",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "-0.2157",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.4184",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "28.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "16.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfen": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfen",
+      "language": "undefined",
+      "value": "Velsen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#nfsn": [
+     {
+      "identifier": "http://archaeology.link/ontology#nfsn",
+      "language": "undefined",
+      "value": "Velsen",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/node/2804902056",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "tourism=museum",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109386",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "false",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q2250231",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "xemvlY",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 454,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": "Augsburg, Stadt",
@@ -16361,7 +16220,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#estimatedstart",
       "language": "undefined",
-      "value": "7.0",
+      "value": "8.0",
       "type": "label"
      }
     ],
@@ -16409,7 +16268,7 @@ var vowlresult={
      {
       "identifier": "http://purl.org/dc/elements/1.1/identifier",
       "language": "undefined",
-      "value": "zggRNd",
+      "value": "yaWJxV",
       "type": "label"
      }
     ],
@@ -16417,7 +16276,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV_geom",
       "type": "iri"
      }
     ],
@@ -16425,7 +16284,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
       "type": "iri"
      }
     ],
@@ -16433,7 +16292,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV_begin",
       "type": "iri"
      }
     ],
@@ -16441,7 +16300,148 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV_end",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 455,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": "Oberaden",
+   "annotations": {
+    "http://archaeology.link/ontology#cax": [
+     {
+      "identifier": "http://archaeology.link/ontology#cax",
+      "language": "undefined",
+      "value": "-0.6965",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#cay": [
+     {
+      "identifier": "http://archaeology.link/ontology#cay",
+      "language": "undefined",
+      "value": "0.2155",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#caz": [
+     {
+      "identifier": "http://archaeology.link/ontology#caz",
+      "language": "undefined",
+      "value": "0.4023",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#endfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#endfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedend": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedend",
+      "language": "undefined",
+      "value": "-7.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#estimatedstart": [
+     {
+      "identifier": "http://archaeology.link/ontology#estimatedstart",
+      "language": "undefined",
+      "value": "-11.0",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_entity": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_entity",
+      "language": "undefined",
+      "value": "http://openstreetmap.org/way/157929084",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#osm_tag": [
+     {
+      "identifier": "http://archaeology.link/ontology#osm_tag",
+      "language": "undefined",
+      "value": "historic=archaeological_site",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#pleiades": [
+     {
+      "identifier": "http://archaeology.link/ontology#pleiades",
+      "language": "undefined",
+      "value": "https://pleiades.stoa.org/places/109229",
+      "type": "iri"
+     }
+    ],
+    "http://archaeology.link/ontology#startfixed": [
+     {
+      "identifier": "http://archaeology.link/ontology#startfixed",
+      "language": "undefined",
+      "value": "true",
+      "type": "label"
+     }
+    ],
+    "http://archaeology.link/ontology#wikidata": [
+     {
+      "identifier": "http://archaeology.link/ontology#wikidata",
+      "language": "undefined",
+      "value": "http://www.wikidata.org/entity/Q577724",
+      "type": "iri"
+     }
+    ],
+    "http://purl.org/dc/elements/1.1/identifier": [
+     {
+      "identifier": "http://purl.org/dc/elements/1.1/identifier",
+      "language": "undefined",
+      "value": "yn0Jk4",
+      "type": "label"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#memberOf": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4_end",
       "type": "iri"
      }
     ]
@@ -16453,11 +16453,11 @@ var vowlresult={
   },
   {
    "id": 456,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "zggRNd"
+    "IRI-based": "yn0Jk4"
    },
    "annotations": {},
    "range": [],
@@ -16579,11 +16579,11 @@ var vowlresult={
   },
   {
    "id": 465,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
-    "IRI-based": "cluster_ad0007_ad0013"
+    "IRI-based": "cluster_ad0008_ad0013"
    },
    "annotations": {},
    "range": [],
@@ -16602,7 +16602,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
       "type": "iri"
      }
     ],
@@ -16610,7 +16610,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/rJXxA7",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
       "type": "iri"
      }
     ],
@@ -16687,7 +16687,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
       "type": "iri"
      }
     ],
@@ -16695,7 +16695,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/Qz2oRe",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jNevOz",
       "type": "iri"
      }
     ],
@@ -16743,7 +16743,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#intervalFinishedBy",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
       "type": "iri"
      }
     ],
@@ -16772,7 +16772,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
       "type": "iri"
      }
     ],
@@ -16780,7 +16780,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/LJA4XN",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/grxE53",
       "type": "iri"
      }
     ],
@@ -16840,6 +16840,14 @@ var vowlresult={
       "type": "iri"
      }
     ],
+    "http://www.w3.org/2006/time#intervalMeets": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalMeets",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
     "http://www.w3.org/2006/time#intervalOverlappedBy": [
      {
       "identifier": "http://www.w3.org/2006/time#intervalOverlappedBy",
@@ -16873,7 +16881,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
       "type": "iri"
      }
     ],
@@ -16881,7 +16889,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vd0j5N",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4",
       "type": "iri"
      }
     ],
@@ -16958,7 +16966,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
       "type": "iri"
      }
     ],
@@ -16966,7 +16974,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/W4XmgP",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/qwBmyK",
       "type": "iri"
      }
     ],
@@ -17043,7 +17051,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
       "type": "iri"
      }
     ],
@@ -17051,7 +17059,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/qJE4nZ",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/d9DzW6",
       "type": "iri"
      }
     ],
@@ -17107,7 +17115,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#intervalOverlaps",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
       "type": "iri"
      }
     ],
@@ -17144,7 +17152,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
       "type": "iri"
      }
     ],
@@ -17152,7 +17160,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/QXlWK2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/gvMxX2",
       "type": "iri"
      }
     ],
@@ -17204,6 +17212,14 @@ var vowlresult={
       "type": "iri"
      }
     ],
+    "http://www.w3.org/2006/time#intervalMeets": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalMeets",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "type": "iri"
+     }
+    ],
     "http://www.w3.org/2006/time#intervalOverlaps": [
      {
       "identifier": "http://www.w3.org/2006/time#intervalOverlaps",
@@ -17245,7 +17261,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
       "type": "iri"
      }
     ],
@@ -17253,7 +17269,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/xbEdvL",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xemvlY",
       "type": "iri"
      }
     ],
@@ -17300,13 +17316,13 @@ var vowlresult={
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
-   "label": "Period cluster 7 \u2013 13 CE",
+   "label": "Period cluster 8 \u2013 13 CE",
    "annotations": {
     "http://archaeology.link/ontology#hasClusterMember": [
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
       "type": "iri"
      }
     ],
@@ -17314,7 +17330,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yaWJxV",
       "type": "iri"
      }
     ],
@@ -17322,7 +17338,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013_geom",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_geom",
       "type": "iri"
      }
     ],
@@ -17330,7 +17346,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasBeginning",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013_begin",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_begin",
       "type": "iri"
      }
     ],
@@ -17338,7 +17354,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#hasEnd",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013_end",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_end",
       "type": "iri"
      }
     ],
@@ -17366,6 +17382,14 @@ var vowlresult={
       "type": "iri"
      }
     ],
+    "http://www.w3.org/2006/time#intervalMetBy": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalMetBy",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008",
+      "type": "iri"
+     }
+    ],
     "http://www.w3.org/2006/time#intervalOverlappedBy": [
      {
       "identifier": "http://www.w3.org/2006/time#intervalOverlappedBy",
@@ -17382,7 +17406,7 @@ var vowlresult={
   },
   {
    "id": 475,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": "Period cluster 7 BCE \u2013 9 CE",
@@ -17391,7 +17415,7 @@ var vowlresult={
      {
       "identifier": "http://archaeology.link/ontology#hasClusterMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
       "type": "iri"
      }
     ],
@@ -17399,7 +17423,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/vXGN59",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wv7W8K",
       "type": "iri"
      }
     ],
@@ -17479,7 +17503,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#intervalOverlaps",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
       "type": "iri"
      }
     ]
@@ -17500,7 +17524,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/zggRNd",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4",
       "type": "iri"
      }
     ],

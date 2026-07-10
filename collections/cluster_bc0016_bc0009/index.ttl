@@ -10,15 +10,15 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Period cluster 16 BCE – 9 BCE"@en ;
-    ns1:hasClusterMember <http://leiza-scit.github.io/CAA2026-alligator/ojlAy1>,
-        <http://leiza-scit.github.io/CAA2026-alligator/vd0j5N> ;
+    ns1:hasClusterMember <http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2>,
+        <http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/ojlAy1>,
-        <http://leiza-scit.github.io/CAA2026-alligator/vd0j5N> ;
+    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2>,
+        <http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4> ;
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009_geom> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009_end> ;
-    time:intervalBefore <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013>,
+    time:intervalBefore <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009> ;
     time:intervalFinishedBy <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009> ;

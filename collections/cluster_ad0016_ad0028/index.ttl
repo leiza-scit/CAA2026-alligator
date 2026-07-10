@@ -10,23 +10,23 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Period cluster 16 – 28 CE"@en ;
-    ns1:hasClusterMember <http://leiza-scit.github.io/CAA2026-alligator/EOD041>,
-        <http://leiza-scit.github.io/CAA2026-alligator/JmWOrl>,
-        <http://leiza-scit.github.io/CAA2026-alligator/KmaGQd>,
-        <http://leiza-scit.github.io/CAA2026-alligator/p4zxM0>,
-        <http://leiza-scit.github.io/CAA2026-alligator/vJnM0D>,
-        <http://leiza-scit.github.io/CAA2026-alligator/xbEdvL> ;
+    ns1:hasClusterMember <http://leiza-scit.github.io/CAA2026-alligator/PL318Z>,
+        <http://leiza-scit.github.io/CAA2026-alligator/WzemGZ>,
+        <http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM>,
+        <http://leiza-scit.github.io/CAA2026-alligator/b1078Y>,
+        <http://leiza-scit.github.io/CAA2026-alligator/p1J56k>,
+        <http://leiza-scit.github.io/CAA2026-alligator/xemvlY> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/EOD041>,
-        <http://leiza-scit.github.io/CAA2026-alligator/JmWOrl>,
-        <http://leiza-scit.github.io/CAA2026-alligator/KmaGQd>,
-        <http://leiza-scit.github.io/CAA2026-alligator/p4zxM0>,
-        <http://leiza-scit.github.io/CAA2026-alligator/vJnM0D>,
-        <http://leiza-scit.github.io/CAA2026-alligator/xbEdvL> ;
+    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/PL318Z>,
+        <http://leiza-scit.github.io/CAA2026-alligator/WzemGZ>,
+        <http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM>,
+        <http://leiza-scit.github.io/CAA2026-alligator/b1078Y>,
+        <http://leiza-scit.github.io/CAA2026-alligator/p1J56k>,
+        <http://leiza-scit.github.io/CAA2026-alligator/xemvlY> ;
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_geom> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_end> ;
-    time:intervalAfter <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0007_ad0013>,
+    time:intervalAfter <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008>,
