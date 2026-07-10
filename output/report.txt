@@ -1,6 +1,6 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-07-10 14:09:43
+Timestamp: 2026-07-10 14:29:55
 ============================================================
 Loading TTL file: c:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
@@ -42,25 +42,24 @@ Adding supplementary events to graph...
 ✓ 4 supplementary events added to graph
 
 Detecting period clusters...
-✓ 9 period clusters detected
+✓ 8 period clusters detected
   [   -15.0 –     -9.0]   5 member(s): ['Nijmegen, Lager', 'Basel, Lager', 'Zürich, Lindenhof', 'Dangstetten', 'Titelberg']
-  [   -15.0 –      8.0]   4 member(s): ['Vindonissa, Militärstation', 'Neuss', 'Asberg, Lager', 'Liberchies']
-  [   -15.0 –      9.0]   3 member(s): ['Basel, Lagerdorf', 'Lausanne-Vidy', 'Augsburg-Oberhausen']
+  [   -15.0 –      9.0]   7 member(s): ['Vindonissa, Militärstation', 'Neuss', 'Asberg, Lager', 'Basel, Lagerdorf', 'Lausanne-Vidy', 'Liberchies', 'Augsburg-Oberhausen']
   [   -15.0 –     13.0]   1 member(s): ['Worms']
-  [   -12.0 –      8.0]   2 member(s): ['Rödgen', 'Namur']
+  [   -12.0 –      9.0]   2 member(s): ['Rödgen', 'Namur']
   [   -11.0 –     -7.0]   1 member(s): ['Oberaden']
   [    -7.0 –      9.0]  12 member(s): ['Conimbriga', 'Tongeren', 'Bonn, Boeselagerhof', 'Nijmegen, Lager (Brunsting)', 'Vetera I', 'Bad Nauheim', 'Haltern', 'Asberg, Lagerdorf', 'Braives', 'Lorenzberg', 'Mainz, Legionslager', 'Vindonissa, Scheuerhof']
   [     8.0 –     13.0]  10 member(s): ['Augst, Insula 31', 'Bregenz', 'Nijmegen, Trajanusplein', 'Nijmegen, Valkhof', 'Augsburg, Stadt', 'Avenches, Insula 15', 'Friedberg', 'Oberwinterthur, Römerstr. 186', 'Vindonissa, Königsfelden', 'Wiesbaden']
   [    16.0 –     28.0]   6 member(s): ['Augst, Insula 20', 'Vechten', 'Augst, Theater', 'Maastricht', 'Velsen', 'Zurzach, Lager']
 
 Adding period clusters to graph...
-✓ 9 period clusters added to graph
+✓ 8 period clusters added to graph
 
 Computing Allen interval relations between clusters...
-✓ 72 Allen relation triples written across 9 clusters
+✓ 56 Allen relation triples written across 8 clusters
 
 ✓ Final RDF graph saved: c:\git\CAA2026-alligator\output\arretine_sites_minigraph.ttl
-  Triples total: 1798
+  Triples total: 1769
 
 ============================================================
 Visualisations

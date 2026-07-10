@@ -1514,6 +1514,8 @@ def plot_alligator_events_timeline(
                 "bar_label": bar_label,
                 "start": start,
                 "end": end,
+                "start_fixed": start_fixed,
+                "end_fixed": end_fixed,
                 "both_fixed": start_fixed and end_fixed,
             }
         )
@@ -1528,6 +1530,14 @@ def plot_alligator_events_timeline(
     COLOUR_FIXED = "#8fa8c8"  # steel  — both boundaries fixed
     TEXT_COLOUR = "#1a1a1a"  # dark label text
 
+    # Gradient used for events with exactly one fixed boundary: steel-blue at the
+    # fixed end fading to gold at the calculated (floating) end. cmap(0) = blue.
+    from matplotlib.colors import LinearSegmentedColormap
+
+    MIX_CMAP = LinearSegmentedColormap.from_list(
+        "fixed_calc", [COLOUR_FIXED, COLOUR_CALC]
+    )
+
     bar_height = 0.55
     fig_h = max(6, n * 0.42 + 2)
     fig, ax = plt.subplots(figsize=(16, fig_h))
@@ -1536,18 +1546,53 @@ def plot_alligator_events_timeline(
 
     for i, row in enumerate(rows):
         duration = row["end"] - row["start"] if row["end"] != row["start"] else 0.3
-        colour = COLOUR_FIXED if row["both_fixed"] else COLOUR_CALC
+        x0 = row["start"]
+        x1 = row["start"] + duration
 
-        ax.barh(
-            i,
-            duration,
-            left=row["start"],
-            height=bar_height,
-            color=colour,
-            edgecolor="#00000018",
-            linewidth=0.4,
-            align="center",
-        )
+        if row["start_fixed"] == row["end_fixed"]:
+            # Both boundaries share the same state → solid fill
+            colour = COLOUR_FIXED if row["both_fixed"] else COLOUR_CALC
+            ax.barh(
+                i,
+                duration,
+                left=x0,
+                height=bar_height,
+                color=colour,
+                edgecolor="#00000018",
+                linewidth=0.4,
+                align="center",
+                zorder=2,
+            )
+        else:
+            # Exactly one boundary fixed → horizontal gradient rendered as thin
+            # vector segments (steel-blue at the fixed end, gold at the calculated
+            # end). Vector segments keep the SVG output fully scalable.
+            n_seg = 96
+            seg_w = duration / n_seg
+            for k in range(n_seg):
+                frac = k / (n_seg - 1)
+                cval = frac if row["start_fixed"] else 1 - frac  # 0 = blue, 1 = gold
+                ax.add_patch(
+                    plt.Rectangle(
+                        (x0 + k * seg_w, i - bar_height / 2),
+                        seg_w + 0.02,  # slight overlap avoids hairline gaps
+                        bar_height,
+                        facecolor=MIX_CMAP(cval),
+                        edgecolor="none",
+                        zorder=2,
+                    )
+                )
+            ax.add_patch(
+                plt.Rectangle(
+                    (x0, i - bar_height / 2),
+                    duration,
+                    bar_height,
+                    fill=False,
+                    edgecolor="#00000018",
+                    linewidth=0.4,
+                    zorder=2.1,
+                )
+            )
 
         # Label inside bar — clip so it never overflows
         bar_centre = row["start"] + duration / 2
@@ -1608,6 +1653,7 @@ def plot_alligator_events_timeline(
             "xlabel": "Year",
             "calc": "Calculated boundaries (nfsn / nfen)",
             "fixed": "Fixed boundaries (startfixed & endfixed)",
+            "mixed": "One boundary fixed (gradient)",
             "phases": "Historical phases",
         },
         "fr": {
@@ -1615,6 +1661,7 @@ def plot_alligator_events_timeline(
             "xlabel": "Année",
             "calc": "Limites calculées (nfsn / nfen)",
             "fixed": "Limites fixes (startfixed & endfixed)",
+            "mixed": "Une limite fixe (dégradé)",
             "phases": "Phases historiques",
         },
     }
@@ -1734,10 +1781,57 @@ def plot_alligator_events_timeline(
 
     # --- Legend ---
     import matplotlib.patches as mpatches
+    from matplotlib.legend_handler import HandlerBase
 
+    class _HandlerGradient(HandlerBase):
+        """Render a legend swatch as a horizontal colour gradient."""
+
+        def __init__(self, cmap, n=32, **kw):
+            self._cmap = cmap
+            self._n = n
+            super().__init__(**kw)
+
+        def create_artists(
+            self,
+            legend,
+            orig_handle,
+            xdescent,
+            ydescent,
+            width,
+            height,
+            fontsize,
+            trans,
+        ):
+            arts = []
+            for k in range(self._n):
+                arts.append(
+                    mpatches.Rectangle(
+                        (width * k / self._n, 0),
+                        width / self._n + 0.6,
+                        height,
+                        facecolor=self._cmap(k / (self._n - 1)),
+                        edgecolor="none",
+                        transform=trans,
+                    )
+                )
+            arts.append(
+                mpatches.Rectangle(
+                    (0, 0),
+                    width,
+                    height,
+                    fill=False,
+                    edgecolor="#00000030",
+                    linewidth=0.5,
+                    transform=trans,
+                )
+            )
+            return arts
+
+    gradient_proxy = mpatches.Patch(label=s["mixed"])
     legend_patches = [
         mpatches.Patch(color=COLOUR_CALC, label=s["calc"]),
         mpatches.Patch(color=COLOUR_FIXED, label=s["fixed"]),
+        gradient_proxy,
     ]
     ax.legend(
         handles=legend_patches + extra_legend,
@@ -1746,6 +1840,7 @@ def plot_alligator_events_timeline(
         framealpha=0.9,
         facecolor="white",
         edgecolor="#cccccc",
+        handler_map={gradient_proxy: _HandlerGradient(MIX_CMAP)},
     )
 
     if show_title:
