@@ -11,5 +11,5 @@
     void:linkPredicate rdf:type ;
     void:objectsTarget time: ;
     void:subjectsTarget <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    void:triples 174 .
+    void:triples 171 .
 

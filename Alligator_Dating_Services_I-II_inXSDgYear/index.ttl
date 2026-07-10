@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: inXSDgYear"@en ;
     void:property time:inXSDgYear ;
-    void:triples 116 .
+    void:triples 114 .
 

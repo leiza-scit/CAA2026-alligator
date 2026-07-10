@@ -10,21 +10,20 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Period cluster 12 BCE – 8 CE"@en ;
-    ns1:hasClusterMember <http://leiza-scit.github.io/CAA2026-alligator/ekMlNm>,
-        <http://leiza-scit.github.io/CAA2026-alligator/grxE53> ;
+    ns1:hasClusterMember <http://leiza-scit.github.io/CAA2026-alligator/L77adz>,
+        <http://leiza-scit.github.io/CAA2026-alligator/WVBqb6> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/ekMlNm>,
-        <http://leiza-scit.github.io/CAA2026-alligator/grxE53> ;
+    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/L77adz>,
+        <http://leiza-scit.github.io/CAA2026-alligator/WVBqb6> ;
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008_geom> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008_end> ;
     time:intervalBefore <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028> ;
     time:intervalContains <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007> ;
-    time:intervalDuring <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0009>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0013> ;
-    time:intervalFinishes <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_ad0008> ;
+    time:intervalDuring <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013> ;
+    time:intervalFinishes <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0008> ;
     time:intervalMeets <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013> ;
-    time:intervalOverlappedBy <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0016_bc0009> ;
+    time:intervalOverlappedBy <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009> ;
     time:intervalOverlaps <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009> .
 

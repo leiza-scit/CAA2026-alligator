@@ -1,0 +1,27 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://archaeology.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013> a ns1:PeriodCluster,
+        geo:FeatureCollection,
+        time:Interval,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Period cluster 15 BCE – 13 CE"@en ;
+    ns1:hasClusterMember <http://leiza-scit.github.io/CAA2026-alligator/k8nxQm> ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/k8nxQm> ;
+    geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_geom> ;
+    time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_begin> ;
+    time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_end> ;
+    time:intervalBefore <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028> ;
+    time:intervalContains <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0008> ;
+    time:intervalFinishedBy <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013> ;
+    time:intervalStartedBy <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0008>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009> .
+
