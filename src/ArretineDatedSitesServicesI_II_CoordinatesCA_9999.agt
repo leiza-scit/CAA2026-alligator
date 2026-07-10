@@ -6,7 +6,7 @@ Name	x	y	z	start	end	fixed
 Nijmegen, Lager	-1.9696	-4.3352	-0.6857	9999	9999	floating
 Basel, Lager	-1.2041	-0.5444	-0.0093	9999	9999	floating
 Vindoniss, Militärstation	-0.6857	-0.2012	 0.1651	9999	9999	floating
-Neuss	-0.4107	 0.0405	-0.0550	-16	9999	floating
+Neuss	-0.4107	 0.0405	-0.0550	-15	9999	floating
 Zürich, Lindenhof	-1.5681	-3.3957	-0.2093	9999	9999	floating
 Dangstetten	-1.0624	 0.2223	 0.5173	-15	-9	fixed
 Oberaden	-0.6965	 0.2155	 0.4023	-11	-7	fixed

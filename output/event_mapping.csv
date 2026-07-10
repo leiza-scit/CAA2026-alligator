@@ -1,46 +1,46 @@
 csv_label,match_type,ttl_label,event_uri,event_identifier,estimatedstart,estimatedend,cax,cay,caz,startfixed,endfixed,nfsn,nfen
 Trier-Petrisberg,no_match,,,,,,,,,,,,
-"Nijmegen, Lager (Haalebos)",fuzzy,"Nijmegen, Lager",http://leiza-scit.github.io/CAA2026-alligator/Zn4QP2,Zn4QP2,-16.0,-9.0,-1.9696,-4.3352,-0.6857,false,false,Neuss,Dangstetten
-"Basel, Lager",exact,"Basel, Lager",http://leiza-scit.github.io/CAA2026-alligator/qwBmyK,qwBmyK,-15.0,-9.0,-1.2041,-0.5444,-0.0093,false,false,Dangstetten,Dangstetten
-"Vindonissa, Militärstation",exact,"Vindonissa, Militärstation",http://leiza-scit.github.io/CAA2026-alligator/gvMxX2,gvMxX2,-16.0,8.0,-0.6857,-0.2012,0.1651,false,false,Neuss,Rödgen
-Neuss,exact,Neuss,http://leiza-scit.github.io/CAA2026-alligator/V79JlL,V79JlL,-16.0,8.0,-0.4107,0.0405,-0.055,true,false,,Rödgen
-"Zürich, Lindenhof",exact,"Zürich, Lindenhof",http://leiza-scit.github.io/CAA2026-alligator/jJ6lz4,jJ6lz4,-16.0,-9.0,-1.5681,-3.3957,-0.2093,false,false,Neuss,Dangstetten
-Dangstetten,exact,Dangstetten,http://leiza-scit.github.io/CAA2026-alligator/awbGWR,awbGWR,-15.0,-9.0,-1.0624,0.2223,0.5173,true,true,,
-Oberaden,exact,Oberaden,http://leiza-scit.github.io/CAA2026-alligator/yn0Jk4,yn0Jk4,-11.0,-7.0,-0.6965,0.2155,0.4023,true,true,,
-Titelberg,exact,Titelberg,http://leiza-scit.github.io/CAA2026-alligator/bedBjy,bedBjy,-15.0,-9.0,-1.2119,-0.3813,-0.0643,false,false,Dangstetten,Dangstetten
-Rödgen,exact,Rödgen,http://leiza-scit.github.io/CAA2026-alligator/grxE53,grxE53,-12.0,8.0,-0.4825,0.1896,0.2972,true,true,,
-"Asberg, Lager",exact,"Asberg, Lager",http://leiza-scit.github.io/CAA2026-alligator/V9km9R,V9km9R,-16.0,8.0,-0.323,0.1081,0.1243,false,false,Neuss,Rödgen
-"Basel, Lagerdorf",exact,"Basel, Lagerdorf",http://leiza-scit.github.io/CAA2026-alligator/d9DzW6,d9DzW6,-16.0,9.0,-0.1599,0.0932,-0.0583,false,false,Neuss,Haltern
-Conimbriga,exact,Conimbriga,http://leiza-scit.github.io/CAA2026-alligator/Kqlgor,Kqlgor,-7.0,9.0,-0.1065,0.0456,-0.1097,false,false,Haltern,Haltern
-Lausanne-Vidy,exact,Lausanne-Vidy,http://leiza-scit.github.io/CAA2026-alligator/RQEKGv,RQEKGv,-16.0,9.0,-0.2726,-0.0157,-0.1228,false,false,Neuss,Haltern
-Tongeren,exact,Tongeren,http://leiza-scit.github.io/CAA2026-alligator/KRDgw7,KRDgw7,-7.0,9.0,0.063,0.0097,0.1545,false,false,Haltern,Haltern
-"Augst, Insula 31",exact,"Augst, Insula 31",http://leiza-scit.github.io/CAA2026-alligator/EZvPV7,EZvPV7,8.0,13.0,0.0998,0.1164,-0.3233,true,true,,
-"Bonn, Boeselagerhof",exact,"Bonn, Boeselagerhof",http://leiza-scit.github.io/CAA2026-alligator/Lk4zlN,Lk4zlN,-7.0,9.0,-0.007,0.0597,-0.1639,false,false,Haltern,Haltern
-Liberchies,exact,Liberchies,http://leiza-scit.github.io/CAA2026-alligator/KzyPW3,KzyPW3,-16.0,8.0,-0.3057,-0.0244,-0.0504,false,false,Neuss,Rödgen
-"Nijmegen, Lager (Brunsting)",exact,"Nijmegen, Lager (Brunsting)",http://leiza-scit.github.io/CAA2026-alligator/Bv9ve6,Bv9ve6,-7.0,9.0,0.3731,-0.0656,-0.2295,false,false,Haltern,Haltern
-Vetera I,exact,Vetera I,http://leiza-scit.github.io/CAA2026-alligator/LQJ8KW,LQJ8KW,-7.0,9.0,0.4039,-0.0911,0.218,false,false,Haltern,Haltern
-"Augst, Insula 20",exact,"Augst, Insula 20",http://leiza-scit.github.io/CAA2026-alligator/b1078Y,b1078Y,16.0,28.0,0.5106,-0.1593,0.2908,false,false,Velsen,Velsen
-Bad Nauheim,exact,Bad Nauheim,http://leiza-scit.github.io/CAA2026-alligator/mEEdOD,mEEdOD,-7.0,9.0,0.2199,0.034,-0.1879,false,false,Haltern,Haltern
-Haltern,exact,Haltern,http://leiza-scit.github.io/CAA2026-alligator/Pg0gRj,Pg0gRj,-7.0,9.0,0.1314,0.1361,-0.1036,true,true,,
-"Asberg, Lagerdorf",exact,"Asberg, Lagerdorf",http://leiza-scit.github.io/CAA2026-alligator/qWYJOl,qWYJOl,-7.0,9.0,0.2042,0.0864,-0.0158,false,false,Haltern,Haltern
-Augsburg-Oberhausen,exact,Augsburg-Oberhausen,http://leiza-scit.github.io/CAA2026-alligator/RPXQZG,RPXQZG,-16.0,9.0,-0.2301,0.2052,-0.153,false,false,Neuss,Haltern
-Braives,exact,Braives,http://leiza-scit.github.io/CAA2026-alligator/YwxOzG,YwxOzG,-7.0,9.0,0.186,-0.0421,0.267,false,false,Haltern,Haltern
-Bregenz,exact,Bregenz,http://leiza-scit.github.io/CAA2026-alligator/NyGMBY,NyGMBY,8.0,13.0,0.3196,0.1604,-0.7664,false,false,"Augst, Insula 31","Augst, Insula 31"
-Lorenzberg,exact,Lorenzberg,http://leiza-scit.github.io/CAA2026-alligator/XQvL62,XQvL62,-7.0,9.0,0.2099,0.065,0.039,false,false,Haltern,Haltern
-"Mainz, Legionslager",exact,"Mainz, Legionslager",http://leiza-scit.github.io/CAA2026-alligator/ZePQ23,ZePQ23,-7.0,9.0,0.0331,0.0481,0.2022,false,false,Haltern,Haltern
-Namur,exact,Namur,http://leiza-scit.github.io/CAA2026-alligator/ekMlNm,ekMlNm,-12.0,8.0,-0.1435,0.2008,0.3545,false,false,Rödgen,Rödgen
-"Nijmegen, Trajanusplein",exact,"Nijmegen, Trajanusplein",http://leiza-scit.github.io/CAA2026-alligator/wp8pRM,wp8pRM,8.0,13.0,0.4147,0.0385,-0.4235,false,false,"Augst, Insula 31","Augst, Insula 31"
-"Nijmegen, Valkhof",exact,"Nijmegen, Valkhof",http://leiza-scit.github.io/CAA2026-alligator/Ga28Wv,Ga28Wv,8.0,13.0,0.2432,0.1211,-0.268,false,false,"Augst, Insula 31","Augst, Insula 31"
-Vechten,exact,Vechten,http://leiza-scit.github.io/CAA2026-alligator/ZpP2RM,ZpP2RM,16.0,28.0,0.8037,-0.2304,0.3963,false,false,Velsen,Velsen
-"Vindonissa, Scheuerhof",exact,"Vindonissa, Scheuerhof",http://leiza-scit.github.io/CAA2026-alligator/wv7W8K,wv7W8K,-7.0,9.0,0.137,0.1014,0.0032,false,false,Haltern,Haltern
-Worms,exact,Worms,http://leiza-scit.github.io/CAA2026-alligator/jNevOz,jNevOz,-16.0,13.0,-0.5313,0.4841,-0.5543,false,false,Neuss,"Augst, Insula 31"
-"Augsburg, Stadt",exact,"Augsburg, Stadt",http://leiza-scit.github.io/CAA2026-alligator/yaWJxV,yaWJxV,8.0,13.0,0.5881,0.0313,-0.5718,false,false,"Augst, Insula 31","Augst, Insula 31"
-"Augst, Theater",exact,"Augst, Theater",http://leiza-scit.github.io/CAA2026-alligator/PL318Z,PL318Z,16.0,28.0,0.7059,-0.0757,-0.2543,false,false,Velsen,Velsen
-"Avenches, Insula 15",exact,"Avenches, Insula 15",http://leiza-scit.github.io/CAA2026-alligator/XWnJMo,XWnJMo,8.0,13.0,0.3853,-0.0153,-0.3444,false,false,"Augst, Insula 31","Augst, Insula 31"
-Friedberg,exact,Friedberg,http://leiza-scit.github.io/CAA2026-alligator/w6L6NR,w6L6NR,8.0,13.0,0.4748,0.0596,-0.3632,false,false,"Augst, Insula 31","Augst, Insula 31"
-Maastricht,exact,Maastricht,http://leiza-scit.github.io/CAA2026-alligator/xemvlY,xemvlY,16.0,28.0,0.8086,-0.2157,0.4184,false,false,Velsen,Velsen
-"Oberwinterthur, Römerstr. 186",exact,"Oberwinterthur, Römerstr. 186",http://leiza-scit.github.io/CAA2026-alligator/nW7M9E,nW7M9E,8.0,13.0,0.479,0.0493,-0.5557,false,false,"Augst, Insula 31","Augst, Insula 31"
-Velsen,exact,Velsen,http://leiza-scit.github.io/CAA2026-alligator/p1J56k,p1J56k,16.0,28.0,0.8336,-0.1823,0.0086,true,true,,
-"Vindonissa, Königsfelden",exact,"Vindonissa, Königsfelden",http://leiza-scit.github.io/CAA2026-alligator/YoMv81,YoMv81,8.0,13.0,0.3832,0.2064,-1.0289,false,false,"Augst, Insula 31","Augst, Insula 31"
-Wiesbaden,exact,Wiesbaden,http://leiza-scit.github.io/CAA2026-alligator/NZ5ad2,NZ5ad2,8.0,13.0,0.4593,0.0995,-0.5028,false,false,"Augst, Insula 31","Augst, Insula 31"
-"Zurzach, Lager",exact,"Zurzach, Lager",http://leiza-scit.github.io/CAA2026-alligator/WzemGZ,WzemGZ,16.0,28.0,0.6625,-0.054,-0.2208,false,false,Velsen,Velsen
+"Nijmegen, Lager (Haalebos)",fuzzy,"Nijmegen, Lager",http://leiza-scit.github.io/CAA2026-alligator/JeMZlk,JeMZlk,-15.0,-9.0,-1.9696,-4.3352,-0.6857,false,false,Neuss,Dangstetten
+"Basel, Lager",exact,"Basel, Lager",http://leiza-scit.github.io/CAA2026-alligator/bmWAEr,bmWAEr,-15.0,-9.0,-1.2041,-0.5444,-0.0093,false,false,Dangstetten,Dangstetten
+"Vindonissa, Militärstation",exact,"Vindonissa, Militärstation",http://leiza-scit.github.io/CAA2026-alligator/Dn8Bn0,Dn8Bn0,-15.0,8.0,-0.6857,-0.2012,0.1651,false,false,Neuss,Rödgen
+Neuss,exact,Neuss,http://leiza-scit.github.io/CAA2026-alligator/o3MwAm,o3MwAm,-15.0,8.0,-0.4107,0.0405,-0.055,true,false,,Rödgen
+"Zürich, Lindenhof",exact,"Zürich, Lindenhof",http://leiza-scit.github.io/CAA2026-alligator/zmqV3M,zmqV3M,-15.0,-9.0,-1.5681,-3.3957,-0.2093,false,false,Neuss,Dangstetten
+Dangstetten,exact,Dangstetten,http://leiza-scit.github.io/CAA2026-alligator/ZleDlL,ZleDlL,-15.0,-9.0,-1.0624,0.2223,0.5173,true,true,,
+Oberaden,exact,Oberaden,http://leiza-scit.github.io/CAA2026-alligator/OVXy7g,OVXy7g,-11.0,-7.0,-0.6965,0.2155,0.4023,true,true,,
+Titelberg,exact,Titelberg,http://leiza-scit.github.io/CAA2026-alligator/X38zVk,X38zVk,-15.0,-9.0,-1.2119,-0.3813,-0.0643,false,false,Dangstetten,Dangstetten
+Rödgen,exact,Rödgen,http://leiza-scit.github.io/CAA2026-alligator/L77adz,L77adz,-12.0,8.0,-0.4825,0.1896,0.2972,true,true,,
+"Asberg, Lager",exact,"Asberg, Lager",http://leiza-scit.github.io/CAA2026-alligator/WA9n3v,WA9n3v,-15.0,8.0,-0.323,0.1081,0.1243,false,false,Neuss,Rödgen
+"Basel, Lagerdorf",exact,"Basel, Lagerdorf",http://leiza-scit.github.io/CAA2026-alligator/MqLE1V,MqLE1V,-15.0,9.0,-0.1599,0.0932,-0.0583,false,false,Neuss,Haltern
+Conimbriga,exact,Conimbriga,http://leiza-scit.github.io/CAA2026-alligator/XRJlAV,XRJlAV,-7.0,9.0,-0.1065,0.0456,-0.1097,false,false,Haltern,Haltern
+Lausanne-Vidy,exact,Lausanne-Vidy,http://leiza-scit.github.io/CAA2026-alligator/ZXxDlB,ZXxDlB,-15.0,9.0,-0.2726,-0.0157,-0.1228,false,false,Neuss,Haltern
+Tongeren,exact,Tongeren,http://leiza-scit.github.io/CAA2026-alligator/Wr3Lvj,Wr3Lvj,-7.0,9.0,0.063,0.0097,0.1545,false,false,Haltern,Haltern
+"Augst, Insula 31",exact,"Augst, Insula 31",http://leiza-scit.github.io/CAA2026-alligator/PwKzM5,PwKzM5,8.0,13.0,0.0998,0.1164,-0.3233,true,true,,
+"Bonn, Boeselagerhof",exact,"Bonn, Boeselagerhof",http://leiza-scit.github.io/CAA2026-alligator/ZN6ywM,ZN6ywM,-7.0,9.0,-0.007,0.0597,-0.1639,false,false,Haltern,Haltern
+Liberchies,exact,Liberchies,http://leiza-scit.github.io/CAA2026-alligator/Lb2pZM,Lb2pZM,-15.0,8.0,-0.3057,-0.0244,-0.0504,false,false,Neuss,Rödgen
+"Nijmegen, Lager (Brunsting)",exact,"Nijmegen, Lager (Brunsting)",http://leiza-scit.github.io/CAA2026-alligator/G3Yage,G3Yage,-7.0,9.0,0.3731,-0.0656,-0.2295,false,false,Haltern,Haltern
+Vetera I,exact,Vetera I,http://leiza-scit.github.io/CAA2026-alligator/gJnjWe,gJnjWe,-7.0,9.0,0.4039,-0.0911,0.218,false,false,Haltern,Haltern
+"Augst, Insula 20",exact,"Augst, Insula 20",http://leiza-scit.github.io/CAA2026-alligator/ZEvk2q,ZEvk2q,16.0,28.0,0.5106,-0.1593,0.2908,false,false,Velsen,Velsen
+Bad Nauheim,exact,Bad Nauheim,http://leiza-scit.github.io/CAA2026-alligator/nx57Z1,nx57Z1,-7.0,9.0,0.2199,0.034,-0.1879,false,false,Haltern,Haltern
+Haltern,exact,Haltern,http://leiza-scit.github.io/CAA2026-alligator/l7JM6p,l7JM6p,-7.0,9.0,0.1314,0.1361,-0.1036,true,true,,
+"Asberg, Lagerdorf",exact,"Asberg, Lagerdorf",http://leiza-scit.github.io/CAA2026-alligator/MZ2ObV,MZ2ObV,-7.0,9.0,0.2042,0.0864,-0.0158,false,false,Haltern,Haltern
+Augsburg-Oberhausen,exact,Augsburg-Oberhausen,http://leiza-scit.github.io/CAA2026-alligator/l84Nog,l84Nog,-15.0,9.0,-0.2301,0.2052,-0.153,false,false,Neuss,Haltern
+Braives,exact,Braives,http://leiza-scit.github.io/CAA2026-alligator/Voa579,Voa579,-7.0,9.0,0.186,-0.0421,0.267,false,false,Haltern,Haltern
+Bregenz,exact,Bregenz,http://leiza-scit.github.io/CAA2026-alligator/A4m6Rv,A4m6Rv,8.0,13.0,0.3196,0.1604,-0.7664,false,false,"Augst, Insula 31","Augst, Insula 31"
+Lorenzberg,exact,Lorenzberg,http://leiza-scit.github.io/CAA2026-alligator/YR56XQ,YR56XQ,-7.0,9.0,0.2099,0.065,0.039,false,false,Haltern,Haltern
+"Mainz, Legionslager",exact,"Mainz, Legionslager",http://leiza-scit.github.io/CAA2026-alligator/oppg2W,oppg2W,-7.0,9.0,0.0331,0.0481,0.2022,false,false,Haltern,Haltern
+Namur,exact,Namur,http://leiza-scit.github.io/CAA2026-alligator/WVBqb6,WVBqb6,-12.0,8.0,-0.1435,0.2008,0.3545,false,false,Rödgen,Rödgen
+"Nijmegen, Trajanusplein",exact,"Nijmegen, Trajanusplein",http://leiza-scit.github.io/CAA2026-alligator/VADk8Y,VADk8Y,8.0,13.0,0.4147,0.0385,-0.4235,false,false,"Augst, Insula 31","Augst, Insula 31"
+"Nijmegen, Valkhof",exact,"Nijmegen, Valkhof",http://leiza-scit.github.io/CAA2026-alligator/dNoZ2V,dNoZ2V,8.0,13.0,0.2432,0.1211,-0.268,false,false,"Augst, Insula 31","Augst, Insula 31"
+Vechten,exact,Vechten,http://leiza-scit.github.io/CAA2026-alligator/y2x4m1,y2x4m1,16.0,28.0,0.8037,-0.2304,0.3963,false,false,Velsen,Velsen
+"Vindonissa, Scheuerhof",exact,"Vindonissa, Scheuerhof",http://leiza-scit.github.io/CAA2026-alligator/ZjEqbL,ZjEqbL,-7.0,9.0,0.137,0.1014,0.0032,false,false,Haltern,Haltern
+Worms,exact,Worms,http://leiza-scit.github.io/CAA2026-alligator/k8nxQm,k8nxQm,-15.0,13.0,-0.5313,0.4841,-0.5543,false,false,Neuss,"Augst, Insula 31"
+"Augsburg, Stadt",exact,"Augsburg, Stadt",http://leiza-scit.github.io/CAA2026-alligator/OgMWNb,OgMWNb,8.0,13.0,0.5881,0.0313,-0.5718,false,false,"Augst, Insula 31","Augst, Insula 31"
+"Augst, Theater",exact,"Augst, Theater",http://leiza-scit.github.io/CAA2026-alligator/YRRWbO,YRRWbO,16.0,28.0,0.7059,-0.0757,-0.2543,false,false,Velsen,Velsen
+"Avenches, Insula 15",exact,"Avenches, Insula 15",http://leiza-scit.github.io/CAA2026-alligator/Y5e3Dg,Y5e3Dg,8.0,13.0,0.3853,-0.0153,-0.3444,false,false,"Augst, Insula 31","Augst, Insula 31"
+Friedberg,exact,Friedberg,http://leiza-scit.github.io/CAA2026-alligator/Zdqgb9,Zdqgb9,8.0,13.0,0.4748,0.0596,-0.3632,false,false,"Augst, Insula 31","Augst, Insula 31"
+Maastricht,exact,Maastricht,http://leiza-scit.github.io/CAA2026-alligator/l5MgeA,l5MgeA,16.0,28.0,0.8086,-0.2157,0.4184,false,false,Velsen,Velsen
+"Oberwinterthur, Römerstr. 186",exact,"Oberwinterthur, Römerstr. 186",http://leiza-scit.github.io/CAA2026-alligator/Xdo5Y9,Xdo5Y9,8.0,13.0,0.479,0.0493,-0.5557,false,false,"Augst, Insula 31","Augst, Insula 31"
+Velsen,exact,Velsen,http://leiza-scit.github.io/CAA2026-alligator/RxjVWG,RxjVWG,16.0,28.0,0.8336,-0.1823,0.0086,true,true,,
+"Vindonissa, Königsfelden",exact,"Vindonissa, Königsfelden",http://leiza-scit.github.io/CAA2026-alligator/Q5qW8B,Q5qW8B,8.0,13.0,0.3832,0.2064,-1.0289,false,false,"Augst, Insula 31","Augst, Insula 31"
+Wiesbaden,exact,Wiesbaden,http://leiza-scit.github.io/CAA2026-alligator/k24W0n,k24W0n,8.0,13.0,0.4593,0.0995,-0.5028,false,false,"Augst, Insula 31","Augst, Insula 31"
+"Zurzach, Lager",exact,"Zurzach, Lager",http://leiza-scit.github.io/CAA2026-alligator/Jl2mN8,Jl2mN8,16.0,28.0,0.6625,-0.054,-0.2208,false,false,Velsen,Velsen
