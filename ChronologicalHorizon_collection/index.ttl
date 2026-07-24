@@ -1,0 +1,15 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/ChronologicalHorizon_collection> a geo:FeatureCollection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "ChronologicalHorizon Instances Collection"@en ;
+    void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    rdfs:member <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> .
+

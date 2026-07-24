@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: hasEnd"@en ;
     void:property time:hasEnd ;
-    void:triples 56 .
+    void:triples 61 .
 

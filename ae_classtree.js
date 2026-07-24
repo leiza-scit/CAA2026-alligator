@@ -604,6 +604,26 @@ var tree={
     }
    },
    {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv0_",
+    "parent":"http://www.w3.org/2006/time#Interval",
+    "type":"instance",
+    "text":"Horizon 1 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_1)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv0_",
+    "parent":"http://www.w3.org/2006/time#Interval",
+    "type":"instance",
+    "text":"Horizon 5 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_5)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
     "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv0_",
     "parent":"http://www.w3.org/2006/time#Interval",
     "type":"instance",
@@ -634,6 +654,36 @@ var tree={
     }
    },
    {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv0_",
+    "parent":"http://www.w3.org/2006/time#Interval",
+    "type":"instance",
+    "text":"Horizon 2 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv0_",
+    "parent":"http://www.w3.org/2006/time#Interval",
+    "type":"instance",
+    "text":"Horizon 4 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv0_",
+    "parent":"http://www.w3.org/2006/time#Interval",
+    "type":"instance",
+    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
     "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_suniv0_",
     "parent":"http://www.w3.org/2006/time#Interval",
     "type":"instance",
@@ -657,8 +707,8 @@ var tree={
     "id":"http://www.w3.org/2006/time#Interval",
     "parent":"#",
     "type":"halfgeoclass",
-    "instancecount":56,
-    "text":"Interval (time:Interval) [56]",
+    "instancecount":61,
+    "text":"Interval (time:Interval) [61]",
     "data":{
      "from":{
       "http://www.w3.org/2000/01/rdf-schema#member":{
@@ -668,8 +718,8 @@ var tree={
      "to":{
       "http://rdfs.org/ns/void#inDataset":{
        "instancecount":4,
-       "http://www.w3.org/ns/adms#Asset":4,
-       "http://rdfs.org/ns/void#Dataset":4
+       "http://rdfs.org/ns/void#Dataset":4,
+       "http://www.w3.org/ns/adms#Asset":4
       },
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
        "instancecount":8
@@ -1369,6 +1419,106 @@ var tree={
     }
    },
    {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_begin",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_1_begin)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_end",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_1_end)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_begin",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_2_begin)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_end",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_2_end)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_begin",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_3_begin)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_end",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_3_end)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_begin",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_4_begin)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_end",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_4_end)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_begin",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_5_begin)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_end",
+    "parent":"http://www.w3.org/2006/time#Instant",
+    "type":"instance",
+    "text":" (aecol:horizon_5_end)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
     "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_begin",
     "parent":"http://www.w3.org/2006/time#Instant",
     "type":"instance",
@@ -1812,47 +1962,51 @@ var tree={
     "id":"http://www.w3.org/2006/time#Instant",
     "parent":"#",
     "type":"class",
-    "instancecount":112,
-    "text":"Instant (time:Instant) [112]",
+    "instancecount":122,
+    "text":"Instant (time:Instant) [122]",
     "data":{
      "from":{
       "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.w3.org/2004/02/skos/core#Collection":112
+       "http://www.w3.org/2004/02/skos/core#Collection":122
       },
       "http://www.w3.org/2006/time#hasEnd":{
        "http://archaeology.link/ontology#event":44,
        "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
        "http://fuzzy-sl.squirrel.link/ontology/Site":44,
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":56,
+       "http://www.w3.org/2006/time#Interval":61,
        "https://pleiades.stoa.org/places/vocab#Place":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4,
        "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":8
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":13,
+       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4,
+       "http://archaeology.link/ontology#ChronologicalHorizon":5,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5
       },
       "http://www.w3.org/2006/time#hasBeginning":{
        "http://archaeology.link/ontology#event":44,
        "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
        "http://fuzzy-sl.squirrel.link/ontology/Site":44,
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":56,
+       "http://www.w3.org/2006/time#Interval":61,
        "https://pleiades.stoa.org/places/vocab#Place":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4,
+       "http://archaeology.link/ontology#ChronologicalHorizon":5,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":13,
        "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":8
+       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4
       }
      },
      "to":{
       "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":112,
-       "http://www.w3.org/ns/adms#Asset":112,
-       "http://rdfs.org/ns/void#Dataset":112
+       "instancecount":122,
+       "http://rdfs.org/ns/void#Dataset":122,
+       "http://www.w3.org/ns/adms#Asset":122
       },
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":112
+       "instancecount":122
       },
       "http://www.w3.org/2006/time#inXSDgYear":{
-       "instancecount":112
+       "instancecount":122
       }
      }
     }
@@ -2355,8 +2509,8 @@ var tree={
       },
       "http://rdfs.org/ns/void#inDataset":{
        "instancecount":47,
-       "http://www.w3.org/ns/adms#Asset":47,
-       "http://rdfs.org/ns/void#Dataset":47
+       "http://rdfs.org/ns/void#Dataset":47,
+       "http://www.w3.org/ns/adms#Asset":47
       },
       "http://www.opengis.net/ont/geosparql#asWKT":{
        "instancecount":47
@@ -2418,33 +2572,85 @@ var tree={
     }
    },
    {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_geom",
+    "parent":"http://www.opengis.net/ont/sf#Polygon",
+    "type":"geoinstance",
+    "text":" (aecol:horizon_1_geom)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_geom",
+    "parent":"http://www.opengis.net/ont/sf#Polygon",
+    "type":"geoinstance",
+    "text":" (aecol:horizon_2_geom)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_geom",
+    "parent":"http://www.opengis.net/ont/sf#Polygon",
+    "type":"geoinstance",
+    "text":" (aecol:horizon_3_geom)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_geom",
+    "parent":"http://www.opengis.net/ont/sf#Polygon",
+    "type":"geoinstance",
+    "text":" (aecol:horizon_4_geom)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_geom",
+    "parent":"http://www.opengis.net/ont/sf#Polygon",
+    "type":"geoinstance",
+    "text":" (aecol:horizon_5_geom)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
     "id":"http://www.opengis.net/ont/sf#Polygon",
     "parent":"#",
     "type":"geoclass",
-    "instancecount":5,
-    "text":"Polygon (sf:Polygon) [5]",
+    "instancecount":10,
+    "text":"Polygon (sf:Polygon) [10]",
     "data":{
      "from":{
       "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
+       "http://archaeology.link/ontology#ChronologicalHorizon":5,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
+       "http://www.w3.org/2006/time#Interval":10,
+       "http://archaeology.link/ontology#PeriodCluster":5
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.opengis.net/ont/geosparql#GeometryCollection":5
+       "http://www.opengis.net/ont/geosparql#GeometryCollection":10
       }
      },
      "to":{
       "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":5,
-       "http://www.w3.org/ns/adms#Asset":5,
-       "http://rdfs.org/ns/void#Dataset":5
+       "instancecount":10,
+       "http://rdfs.org/ns/void#Dataset":10,
+       "http://www.w3.org/ns/adms#Asset":10
       },
       "http://www.opengis.net/ont/geosparql#asWKT":{
-       "instancecount":5
+       "instancecount":10
       },
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":5
+       "instancecount":10
       }
      }
     }
@@ -2479,8 +2685,8 @@ var tree={
      "to":{
       "http://rdfs.org/ns/void#inDataset":{
        "instancecount":1,
-       "http://www.w3.org/ns/adms#Asset":1,
-       "http://rdfs.org/ns/void#Dataset":1
+       "http://rdfs.org/ns/void#Dataset":1,
+       "http://www.w3.org/ns/adms#Asset":1
       },
       "http://www.opengis.net/ont/geosparql#asWKT":{
        "instancecount":1
@@ -4354,8 +4560,8 @@ var tree={
       },
       "http://rdfs.org/ns/void#inDataset":{
        "instancecount":1,
-       "http://www.w3.org/ns/adms#Asset":1,
-       "http://rdfs.org/ns/void#Dataset":1
+       "http://rdfs.org/ns/void#Dataset":1,
+       "http://www.w3.org/ns/adms#Asset":1
       },
       "http://www.opengis.net/ont/geosparql#hasGeometry":{
        "instancecount":1,
@@ -4827,10 +5033,18 @@ var tree={
        "http://www.opengis.net/ont/geosparql#FeatureCollection":44,
        "http://www.w3.org/2006/time#Interval":44
       },
-      "http://www.opengis.net/ont/geosparql#hasFeature":{
-       "http://archaeology.link/ontology#PeriodCluster":44,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":88,
+      "http://archaeology.link/ontology#hasHorizonMember":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":44,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":44,
        "http://www.w3.org/2006/time#Interval":44
+      },
+      "http://www.opengis.net/ont/geosparql#hasFeature":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":44,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":132,
+       "http://www.w3.org/2006/time#Interval":88,
+       "http://archaeology.link/ontology#PeriodCluster":44
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
        "http://www.w3.org/2004/02/skos/core#Collection":44,
@@ -4862,12 +5076,6 @@ var tree={
       "http://archaeology.link/ontology#nfsn":{
        "instancecount":37
       },
-      "http://archaeology.link/ontology#osm_entity":{
-       "instancecount":31
-      },
-      "http://archaeology.link/ontology#osm_tag":{
-       "instancecount":31
-      },
       "http://archaeology.link/ontology#pleiades":{
        "instancecount":44
       },
@@ -4882,27 +5090,26 @@ var tree={
       },
       "http://rdfs.org/ns/void#inDataset":{
        "instancecount":44,
-       "http://www.w3.org/ns/adms#Asset":44,
-       "http://rdfs.org/ns/void#Dataset":44
+       "http://rdfs.org/ns/void#Dataset":44,
+       "http://www.w3.org/ns/adms#Asset":44
       },
       "http://www.opengis.net/ont/geosparql#hasGeometry":{
        "instancecount":44,
        "http://www.opengis.net/ont/sf#Point":44
       },
       "http://www.opengis.net/ont/geosparql#memberOf":{
-       "instancecount":88,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":88,
+       "instancecount":132,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":132,
        "http://archaeology.link/ontology#PeriodCluster":44,
-       "http://www.w3.org/2006/time#Interval":44
+       "http://www.w3.org/2006/time#Interval":88,
+       "http://archaeology.link/ontology#ChronologicalHorizon":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":44
       },
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
        "instancecount":264
       },
       "http://www.w3.org/2000/01/rdf-schema#label":{
        "instancecount":44
-      },
-      "http://www.w3.org/2004/02/skos/core#relatedMatch":{
-       "instancecount":3
       },
       "http://www.w3.org/2006/time#hasBeginning":{
        "instancecount":44,
@@ -4912,11 +5119,20 @@ var tree={
        "instancecount":44,
        "http://www.w3.org/2006/time#Instant":44
       },
-      "http://www.w3.org/2004/02/skos/core#closeMatch":{
-       "instancecount":6
+      "http://archaeology.link/ontology#osm_entity":{
+       "instancecount":31
+      },
+      "http://archaeology.link/ontology#osm_tag":{
+       "instancecount":31
       },
       "http://www.w3.org/2004/02/skos/core#exactMatch":{
        "instancecount":1
+      },
+      "http://www.w3.org/2004/02/skos/core#relatedMatch":{
+       "instancecount":3
+      },
+      "http://www.w3.org/2004/02/skos/core#closeMatch":{
+       "instancecount":6
       }
      }
     }
@@ -5043,6 +5259,26 @@ var tree={
     }
    },
    {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv1_",
+    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "type":"instance",
+    "text":"Horizon 1 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_1)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv1_",
+    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "type":"instance",
+    "text":"Horizon 5 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_5)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
     "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv2_",
     "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
     "type":"instance",
@@ -5067,6 +5303,36 @@ var tree={
     "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
     "type":"instance",
     "text":"Period cluster 15 BCE \u2013 9 CE (aecol:cluster_bc0015_ad0009)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv1_",
+    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "type":"instance",
+    "text":"Horizon 2 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv1_",
+    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "type":"instance",
+    "text":"Horizon 4 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv1_",
+    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "type":"instance",
+    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
     "data":{
      "from":{},
      "to":{}
@@ -5163,11 +5429,31 @@ var tree={
     }
    },
    {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/ChronologicalHorizon_collection",
+    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "type":"featurecollection",
+    "text":"ChronologicalHorizon Instances Collection (ae:ChronologicalHorizon_collection)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/E4_Period_collection",
+    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
+    "type":"featurecollection",
+    "text":"E4_Period Instances Collection (ae:E4_Period_collection)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
     "id":"http://www.opengis.net/ont/geosparql#FeatureCollection",
     "parent":"http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
-    "instancecount":15,
+    "instancecount":22,
     "type":"collectionclass",
-    "text":" (gsp:FeatureCollection) [15]",
+    "text":" (gsp:FeatureCollection) [22]",
     "data":{
      "from":{
       "http://www.opengis.net/ont/geosparql#memberOf":{
@@ -5187,31 +5473,6 @@ var tree={
        "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
        "http://www.w3.org/2006/time#Interval":10
       },
-      "http://www.w3.org/2006/time#intervalBefore":{
-       "http://archaeology.link/ontology#PeriodCluster":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
-       "http://www.w3.org/2006/time#Interval":10
-      },
-      "http://www.w3.org/2006/time#intervalContains":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalFinishedBy":{
-       "http://archaeology.link/ontology#PeriodCluster":4,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
-       "http://www.w3.org/2006/time#Interval":4
-      },
-      "http://www.w3.org/2006/time#intervalMeets":{
-       "http://archaeology.link/ontology#PeriodCluster":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlappedBy":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
       "http://www.w3.org/2006/time#intervalDuring":{
        "http://archaeology.link/ontology#PeriodCluster":5,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
@@ -5222,50 +5483,53 @@ var tree={
        "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
        "http://www.w3.org/2006/time#Interval":4
       },
-      "http://www.w3.org/2006/time#intervalOverlaps":{
+      "http://www.w3.org/2006/time#intervalOverlappedBy":{
        "http://archaeology.link/ontology#PeriodCluster":5,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
        "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalStarts":{
-       "http://archaeology.link/ontology#PeriodCluster":3,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
-       "http://www.w3.org/2006/time#Interval":3
       },
       "http://www.w3.org/2006/time#intervalStartedBy":{
        "http://archaeology.link/ontology#PeriodCluster":3,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
        "http://www.w3.org/2006/time#Interval":3
       },
+      "http://www.w3.org/2006/time#intervalStarts":{
+       "http://archaeology.link/ontology#PeriodCluster":3,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
+       "http://www.w3.org/2006/time#Interval":3
+      },
+      "http://www.w3.org/2006/time#intervalBefore":{
+       "http://archaeology.link/ontology#PeriodCluster":10,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
+       "http://www.w3.org/2006/time#Interval":10
+      },
+      "http://www.w3.org/2006/time#intervalFinishedBy":{
+       "http://archaeology.link/ontology#PeriodCluster":4,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
+       "http://www.w3.org/2006/time#Interval":4
+      },
+      "http://www.w3.org/2006/time#intervalOverlaps":{
+       "http://archaeology.link/ontology#PeriodCluster":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
+      "http://www.w3.org/2006/time#intervalContains":{
+       "http://archaeology.link/ontology#PeriodCluster":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
       "http://www.w3.org/2006/time#intervalMetBy":{
+       "http://archaeology.link/ontology#PeriodCluster":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalMeets":{
        "http://archaeology.link/ontology#PeriodCluster":1,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
        "http://www.w3.org/2006/time#Interval":1
       }
      },
      "to":{
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":15,
-       "http://www.w3.org/ns/adms#Asset":15,
-       "http://rdfs.org/ns/void#Dataset":15
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":31
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":15
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "instancecount":232,
-       "http://archaeology.link/ontology#event":220,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":224,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":224,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":224,
-       "http://www.w3.org/2006/time#Interval":228,
-       "https://pleiades.stoa.org/places/vocab#Place":224,
-       "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":8
-      },
       "http://archaeology.link/ontology#hasClusterMember":{
        "instancecount":44,
        "http://archaeology.link/ontology#event":44,
@@ -5274,6 +5538,11 @@ var tree={
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
        "http://www.w3.org/2006/time#Interval":44,
        "https://pleiades.stoa.org/places/vocab#Place":44
+      },
+      "http://rdfs.org/ns/void#inDataset":{
+       "instancecount":17,
+       "http://rdfs.org/ns/void#Dataset":17,
+       "http://www.w3.org/ns/adms#Asset":17
       },
       "http://www.opengis.net/ont/geosparql#hasFeature":{
        "instancecount":89,
@@ -5287,8 +5556,14 @@ var tree={
       "http://www.opengis.net/ont/geosparql#hasGeometry":{
        "instancecount":8,
        "http://www.opengis.net/ont/sf#Polygon":5,
-       "http://www.opengis.net/ont/sf#LineString":1,
-       "http://www.opengis.net/ont/sf#Point":2
+       "http://www.opengis.net/ont/sf#Point":2,
+       "http://www.opengis.net/ont/sf#LineString":1
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
+       "instancecount":33
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label":{
+       "instancecount":17
       },
       "http://www.w3.org/2006/time#hasBeginning":{
        "instancecount":8,
@@ -5298,41 +5573,11 @@ var tree={
        "instancecount":8,
        "http://www.w3.org/2006/time#Instant":8
       },
-      "http://www.w3.org/2006/time#intervalAfter":{
-       "instancecount":10,
-       "http://archaeology.link/ontology#PeriodCluster":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
-       "http://www.w3.org/2006/time#Interval":10
-      },
       "http://www.w3.org/2006/time#intervalBefore":{
        "instancecount":10,
        "http://archaeology.link/ontology#PeriodCluster":10,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
        "http://www.w3.org/2006/time#Interval":10
-      },
-      "http://www.w3.org/2006/time#intervalDuring":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalFinishes":{
-       "instancecount":4,
-       "http://archaeology.link/ontology#PeriodCluster":4,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
-       "http://www.w3.org/2006/time#Interval":4
-      },
-      "http://www.w3.org/2006/time#intervalMetBy":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#PeriodCluster":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlaps":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
       },
       "http://www.w3.org/2006/time#intervalContains":{
        "instancecount":5,
@@ -5346,14 +5591,11 @@ var tree={
        "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
        "http://www.w3.org/2006/time#Interval":4
       },
-      "http://www.w3.org/2006/time#intervalOverlappedBy":{
+      "http://www.w3.org/2006/time#intervalOverlaps":{
        "instancecount":5,
        "http://archaeology.link/ontology#PeriodCluster":5,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
        "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2000/01/rdf-schema#comment":{
-       "instancecount":1
       },
       "http://www.w3.org/2006/time#intervalStartedBy":{
        "instancecount":3,
@@ -5367,7 +5609,53 @@ var tree={
        "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
        "http://www.w3.org/2006/time#Interval":3
       },
+      "http://www.w3.org/2006/time#intervalAfter":{
+       "instancecount":10,
+       "http://archaeology.link/ontology#PeriodCluster":10,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
+       "http://www.w3.org/2006/time#Interval":10
+      },
+      "http://www.w3.org/2006/time#intervalFinishes":{
+       "instancecount":4,
+       "http://archaeology.link/ontology#PeriodCluster":4,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
+       "http://www.w3.org/2006/time#Interval":4
+      },
+      "http://www.w3.org/2006/time#intervalOverlappedBy":{
+       "instancecount":5,
+       "http://archaeology.link/ontology#PeriodCluster":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
+      "http://www.w3.org/2000/01/rdf-schema#member":{
+       "instancecount":242,
+       "http://archaeology.link/ontology#ChronologicalHorizon":10,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":10,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":18,
+       "http://www.w3.org/2006/time#Interval":238,
+       "http://archaeology.link/ontology#event":220,
+       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":224,
+       "http://fuzzy-sl.squirrel.link/ontology/Site":224,
+       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":224,
+       "https://pleiades.stoa.org/places/vocab#Place":224,
+       "http://archaeology.link/ontology#PeriodCluster":8
+      },
+      "http://www.w3.org/2006/time#intervalDuring":{
+       "instancecount":5,
+       "http://archaeology.link/ontology#PeriodCluster":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
       "http://www.w3.org/2006/time#intervalMeets":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#PeriodCluster":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment":{
+       "instancecount":1
+      },
+      "http://www.w3.org/2006/time#intervalMetBy":{
        "instancecount":1,
        "http://archaeology.link/ontology#PeriodCluster":1,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
@@ -5384,6 +5672,342 @@ var tree={
     "data":{
      "from":{},
      "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv2_",
+    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
+    "type":"instance",
+    "text":"Horizon 1 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_1)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv2_",
+    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
+    "type":"instance",
+    "text":"Horizon 5 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_5)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv2_",
+    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
+    "type":"instance",
+    "text":"Horizon 2 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv2_",
+    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
+    "type":"instance",
+    "text":"Horizon 4 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv2_",
+    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
+    "type":"instance",
+    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://archaeology.link/ontology#ChronologicalHorizon",
+    "parent":"#",
+    "type":"class",
+    "instancecount":5,
+    "text":"ChronologicalHorizon (lado:ChronologicalHorizon) [5]",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv3_",
+    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "type":"instance",
+    "text":"Horizon 1 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_1)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv3_",
+    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "type":"instance",
+    "text":"Horizon 5 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_5)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv3_",
+    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "type":"instance",
+    "text":"Horizon 2 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv3_",
+    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "type":"instance",
+    "text":"Horizon 4 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv3_",
+    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "type":"instance",
+    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
+    "data":{
+     "from":{},
+     "to":{}
+    }
+   },
+   {
+    "id":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "parent":"#",
+    "type":"class",
+    "instancecount":5,
+    "text":"E4_Period (crm:E4_Period) [5]",
+    "data":{
+     "from":{
+      "http://www.opengis.net/ont/geosparql#memberOf":{
+       "http://archaeology.link/ontology#event":44,
+       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
+       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
+       "http://www.w3.org/2006/time#Interval":44,
+       "https://pleiades.stoa.org/places/vocab#Place":44
+      },
+      "http://www.w3.org/2000/01/rdf-schema#member":{
+       "http://www.w3.org/2004/02/skos/core#Collection":10,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":10
+      },
+      "http://www.w3.org/2006/time#intervalBefore":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":5,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
+      "http://www.w3.org/2006/time#intervalAfter":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":5,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
+      "http://www.w3.org/2006/time#intervalContains":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalMeets":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalOverlappedBy":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalDuring":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalFinishes":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalStarts":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalMetBy":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalStartedBy":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalFinishedBy":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalOverlaps":{
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      }
+     },
+     "to":{
+      "http://archaeology.link/ontology#hasHorizonMember":{
+       "instancecount":44,
+       "http://archaeology.link/ontology#event":44,
+       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
+       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
+       "http://www.w3.org/2006/time#Interval":44,
+       "https://pleiades.stoa.org/places/vocab#Place":44
+      },
+      "http://rdfs.org/ns/void#inDataset":{
+       "instancecount":5,
+       "http://rdfs.org/ns/void#Dataset":5,
+       "http://www.w3.org/ns/adms#Asset":5
+      },
+      "http://www.opengis.net/ont/geosparql#hasFeature":{
+       "instancecount":44,
+       "http://archaeology.link/ontology#event":44,
+       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
+       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
+       "http://www.w3.org/2006/time#Interval":44,
+       "https://pleiades.stoa.org/places/vocab#Place":44
+      },
+      "http://www.opengis.net/ont/geosparql#hasGeometry":{
+       "instancecount":5,
+       "http://www.opengis.net/ont/sf#Polygon":5
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
+       "instancecount":20
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label":{
+       "instancecount":10
+      },
+      "http://www.w3.org/2004/02/skos/core#notation":{
+       "instancecount":5
+      },
+      "http://www.w3.org/2006/time#hasBeginning":{
+       "instancecount":5,
+       "http://www.w3.org/2006/time#Instant":5
+      },
+      "http://www.w3.org/2006/time#hasEnd":{
+       "instancecount":5,
+       "http://www.w3.org/2006/time#Instant":5
+      },
+      "http://www.w3.org/2006/time#intervalAfter":{
+       "instancecount":5,
+       "http://archaeology.link/ontology#ChronologicalHorizon":5,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
+      "http://www.w3.org/2006/time#intervalBefore":{
+       "instancecount":5,
+       "http://archaeology.link/ontology#ChronologicalHorizon":5,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
+      "http://www.w3.org/2006/time#intervalDuring":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalMetBy":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalOverlaps":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalContains":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalFinishedBy":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalStartedBy":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalMeets":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalStarts":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalFinishes":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      },
+      "http://www.w3.org/2006/time#intervalOverlappedBy":{
+       "instancecount":1,
+       "http://archaeology.link/ontology#ChronologicalHorizon":1,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
+       "http://www.w3.org/2006/time#Interval":1
+      }
+     }
     }
    },
    {
@@ -5437,8 +6061,8 @@ var tree={
      "to":{
       "http://rdfs.org/ns/void#inDataset":{
        "instancecount":4,
-       "http://www.w3.org/ns/adms#Asset":4,
-       "http://rdfs.org/ns/void#Dataset":4
+       "http://rdfs.org/ns/void#Dataset":4,
+       "http://www.w3.org/ns/adms#Asset":4
       },
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
        "instancecount":4
@@ -5447,17 +6071,19 @@ var tree={
        "instancecount":4
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
-       "instancecount":181,
-       "http://www.w3.org/2006/time#Instant":112,
+       "instancecount":201,
+       "http://www.w3.org/2006/time#Instant":122,
+       "http://archaeology.link/ontology#PeriodCluster":16,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":27,
+       "http://www.w3.org/2006/time#Interval":78,
+       "http://archaeology.link/ontology#ChronologicalHorizon":10,
+       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":10,
        "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":8,
-       "http://www.w3.org/2006/time#Interval":68,
        "http://archaeology.link/ontology#event":44,
        "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
        "http://fuzzy-sl.squirrel.link/ontology/Site":44,
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "https://pleiades.stoa.org/places/vocab#Place":44,
-       "http://archaeology.link/ontology#PeriodCluster":16,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":17
+       "https://pleiades.stoa.org/places/vocab#Place":44
       }
      }
     }
@@ -5503,8 +6129,8 @@ var tree={
      "to":{
       "http://rdfs.org/ns/void#inDataset":{
        "instancecount":3,
-       "http://www.w3.org/ns/adms#Asset":3,
-       "http://rdfs.org/ns/void#Dataset":3
+       "http://rdfs.org/ns/void#Dataset":3,
+       "http://www.w3.org/ns/adms#Asset":3
       },
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
        "instancecount":3
@@ -5513,10 +6139,10 @@ var tree={
        "instancecount":3
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
-       "instancecount":53,
-       "http://www.opengis.net/ont/sf#LineString":1,
-       "http://www.opengis.net/ont/sf#Polygon":5,
-       "http://www.opengis.net/ont/sf#Point":47
+       "instancecount":58,
+       "http://www.opengis.net/ont/sf#Point":47,
+       "http://www.opengis.net/ont/sf#Polygon":10,
+       "http://www.opengis.net/ont/sf#LineString":1
       }
      }
     }

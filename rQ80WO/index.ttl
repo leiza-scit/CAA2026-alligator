@@ -30,7 +30,8 @@
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_geom> ;
     geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009> ;
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_end> .
 

@@ -11,5 +11,10 @@
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_geom>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_geom>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_geom>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_geom> .
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_geom>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_geom> .
 

@@ -45,6 +45,8 @@ void:Linkset a owl:Class .
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#Bp8JY3_suniv3_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#Bp8JY3_suniv4_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#Bp8JY3_suniv5_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#ChronologicalHorizon>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#ChronologicalHorizon_collection>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#Collection>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#D9L8l5_begin>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#D9L8l5_end>,
@@ -73,6 +75,8 @@ void:Linkset a owl:Class .
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#DeeX7G_suniv3_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#DeeX7G_suniv4_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#DeeX7G_suniv5_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E4_Period>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E4_Period_collection>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E53_Place>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E53_Place_collection>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E7_Activity>,
@@ -407,6 +411,41 @@ void:Linkset a owl:Class .
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#gw8Kxp_suniv3_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#gw8Kxp_suniv4_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#gw8Kxp_suniv5_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_begin>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_end>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_geom>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv0_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv1_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv2_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv3_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_begin>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_end>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_geom>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv0_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv1_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv2_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv3_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_begin>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_end>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_geom>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv0_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv1_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv2_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv3_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_begin>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_end>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_geom>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv0_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv1_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv2_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv3_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_begin>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_end>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_geom>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv0_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv1_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv2_>,
+        <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv3_>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#j2lK5y_begin>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#j2lK5y_end>,
         <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#j2lK5y_geom>,
@@ -583,6 +622,12 @@ void:Linkset a owl:Class .
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#Bp8JY3_suniv5_> ns1:forClass <http://archaeology.link/ontology#event> ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//Bp8JY3_suniv5_> .
 
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#ChronologicalHorizon> ns1:forClass <#> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//ChronologicalHorizon> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#ChronologicalHorizon_collection> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//ChronologicalHorizon_collection> .
+
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#Collection> ns1:forClass <#> ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//Collection> .
 
@@ -666,6 +711,12 @@ void:Linkset a owl:Class .
 
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#DeeX7G_suniv5_> ns1:forClass <http://archaeology.link/ontology#event> ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//DeeX7G_suniv5_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E4_Period> ns1:forClass <#> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//E4_Period> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E4_Period_collection> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//E4_Period_collection> .
 
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#E53_Place> ns1:forClass <#> ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//E53_Place> .
@@ -1669,6 +1720,111 @@ void:Linkset a owl:Class .
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#gw8Kxp_suniv5_> ns1:forClass <http://archaeology.link/ontology#event> ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//gw8Kxp_suniv5_> .
 
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_begin> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_1_begin> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_end> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_1_end> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_geom> ns1:forClass <http://www.opengis.net/ont/sf#Polygon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_1_geom> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv0_> ns1:forClass time:Interval ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_1_suniv0_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv1_> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_1_suniv1_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv2_> ns1:forClass <http://archaeology.link/ontology#ChronologicalHorizon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_1_suniv2_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_1_suniv3_> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_1_suniv3_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_begin> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_2_begin> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_end> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_2_end> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_geom> ns1:forClass <http://www.opengis.net/ont/sf#Polygon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_2_geom> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv0_> ns1:forClass time:Interval ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_2_suniv0_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv1_> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_2_suniv1_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv2_> ns1:forClass <http://archaeology.link/ontology#ChronologicalHorizon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_2_suniv2_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_2_suniv3_> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_2_suniv3_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_begin> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_3_begin> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_end> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_3_end> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_geom> ns1:forClass <http://www.opengis.net/ont/sf#Polygon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_3_geom> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv0_> ns1:forClass time:Interval ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_3_suniv0_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv1_> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_3_suniv1_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv2_> ns1:forClass <http://archaeology.link/ontology#ChronologicalHorizon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_3_suniv2_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_3_suniv3_> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_3_suniv3_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_begin> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_4_begin> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_end> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_4_end> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_geom> ns1:forClass <http://www.opengis.net/ont/sf#Polygon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_4_geom> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv0_> ns1:forClass time:Interval ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_4_suniv0_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv1_> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_4_suniv1_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv2_> ns1:forClass <http://archaeology.link/ontology#ChronologicalHorizon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_4_suniv2_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_4_suniv3_> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_4_suniv3_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_begin> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_5_begin> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_end> ns1:forClass time:Instant ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_5_end> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_geom> ns1:forClass <http://www.opengis.net/ont/sf#Polygon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_5_geom> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv0_> ns1:forClass time:Interval ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_5_suniv0_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv1_> ns1:forClass geo:FeatureCollection ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_5_suniv1_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv2_> ns1:forClass <http://archaeology.link/ontology#ChronologicalHorizon> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_5_suniv2_> .
+
+<https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#horizon_5_suniv3_> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+    ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//horizon_5_suniv3_> .
+
 <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl#j2lK5y_begin> ns1:forClass time:Instant ;
     ns1:instance <https://leiza-scit.github.io/CAA2026-alligator//j2lK5y_begin> .
 
@@ -2016,11 +2172,15 @@ geo:GeometryCollection a owl:Class ;
 geo:SpatialObjectCollection a owl:Class ;
     rdfs:subClassOf skos:Collection .
 
-<http://www.opengis.net/ont/sf#Polygon> a owl:Class .
+<http://archaeology.link/ontology#ChronologicalHorizon> a owl:Class .
+
+<http://www.cidoc-crm.org/cidoc-crm/E4_Period> a owl:Class .
 
 skos:Collection a owl:Class .
 
 <http://archaeology.link/ontology#PeriodCluster> a owl:Class .
+
+<http://www.opengis.net/ont/sf#Polygon> a owl:Class .
 
 geo:FeatureCollection a owl:Class ;
     rdfs:subClassOf geo:SpatialObjectCollection .

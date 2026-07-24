@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: intervalStartedBy"@en ;
     void:property time:intervalStartedBy ;
-    void:triples 3 .
+    void:triples 4 .
 

@@ -309,11 +309,11 @@ var vowlresult={
   },
   {
    "id": 55,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
   },
   {
    "id": 56,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
   },
   {
    "id": 57,
@@ -329,23 +329,23 @@ var vowlresult={
   },
   {
    "id": 60,
-   "type": "http://www.w3.org/2006/time#Instant"
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
   },
   {
    "id": 61,
-   "type": "http://www.w3.org/2006/time#Instant"
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
   },
   {
    "id": 62,
-   "type": "http://www.w3.org/2006/time#Instant"
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
   },
   {
    "id": 63,
-   "type": "http://www.w3.org/2006/time#Instant"
+   "type": "http://archaeology.link/ontology#PeriodCluster"
   },
   {
    "id": 64,
-   "type": "http://www.w3.org/2006/time#Instant"
+   "type": "http://archaeology.link/ontology#PeriodCluster"
   },
   {
    "id": 65,
@@ -777,63 +777,63 @@ var vowlresult={
   },
   {
    "id": 172,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 173,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 174,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 175,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 176,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 177,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 178,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 179,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 180,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 181,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 182,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 183,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 184,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 185,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 186,
-   "type": "http://www.opengis.net/ont/sf#Point"
+   "type": "http://www.w3.org/2006/time#Instant"
   },
   {
    "id": 187,
@@ -965,111 +965,111 @@ var vowlresult={
   },
   {
    "id": 219,
-   "type": "http://www.opengis.net/ont/sf#Polygon"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 220,
-   "type": "http://www.opengis.net/ont/sf#Polygon"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 221,
-   "type": "http://www.opengis.net/ont/sf#Polygon"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 222,
-   "type": "http://www.opengis.net/ont/sf#Polygon"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 223,
-   "type": "http://www.opengis.net/ont/sf#Polygon"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 224,
-   "type": "http://www.opengis.net/ont/sf#LineString"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 225,
-   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 226,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 227,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 228,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 229,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 230,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 231,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 232,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 233,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Point"
   },
   {
    "id": 234,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 235,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 236,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 237,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 238,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 239,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 240,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 241,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 242,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 243,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#Polygon"
   },
   {
    "id": 244,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://www.opengis.net/ont/sf#LineString"
   },
   {
    "id": 245,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
   },
   {
    "id": 246,
@@ -1169,7 +1169,7 @@ var vowlresult={
   },
   {
    "id": 270,
-   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 271,
@@ -1249,7 +1249,7 @@ var vowlresult={
   },
   {
    "id": 290,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
   },
   {
    "id": 291,
@@ -1349,7 +1349,7 @@ var vowlresult={
   },
   {
    "id": 315,
-   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 316,
@@ -1429,7 +1429,7 @@ var vowlresult={
   },
   {
    "id": 335,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
   },
   {
    "id": 336,
@@ -1529,7 +1529,7 @@ var vowlresult={
   },
   {
    "id": 360,
-   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 361,
@@ -1609,7 +1609,7 @@ var vowlresult={
   },
   {
    "id": 380,
-   "type": "http://archaeology.link/ontology#event"
+   "type": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite"
   },
   {
    "id": 381,
@@ -1885,71 +1885,211 @@ var vowlresult={
   },
   {
    "id": 449,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 450,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 451,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 452,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 453,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 454,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 455,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 456,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 457,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 458,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 459,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 460,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 461,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 462,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 463,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 464,
-   "type": "http://archaeology.link/ontology#PeriodCluster"
+   "type": "http://archaeology.link/ontology#event"
   },
   {
    "id": 465,
+   "type": "http://archaeology.link/ontology#event"
+  },
+  {
+   "id": 466,
+   "type": "http://archaeology.link/ontology#event"
+  },
+  {
+   "id": 467,
+   "type": "http://archaeology.link/ontology#event"
+  },
+  {
+   "id": 468,
+   "type": "http://archaeology.link/ontology#event"
+  },
+  {
+   "id": 469,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 470,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 471,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 472,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 473,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 474,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 475,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 476,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 477,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 478,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 479,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 480,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 481,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 482,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 483,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 484,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 485,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 486,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 487,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 488,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 489,
+   "type": "http://archaeology.link/ontology#PeriodCluster"
+  },
+  {
+   "id": 490,
    "type": "http://www.opengis.net/ont/geosparql#FeatureCollection"
+  },
+  {
+   "id": 491,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 492,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 493,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 494,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 495,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 496,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 497,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 498,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 499,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
+  },
+  {
+   "id": 500,
+   "type": "http://archaeology.link/ontology#ChronologicalHorizon"
   }
  ],
  "propertyAttribute": [
@@ -2785,6 +2925,34 @@ var vowlresult={
   },
   {
    "id": 55,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_1"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 56,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_5"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 57,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -2798,7 +2966,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 56,
+   "id": 58,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -2812,7 +2980,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 57,
+   "id": 59,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -2826,7 +2994,49 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 58,
+   "id": 60,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_2"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 61,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_4"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 62,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_3"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 63,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -2840,7 +3050,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 59,
+   "id": 64,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -2863,7 +3073,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 60,
+   "id": 65,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -2886,7 +3096,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 61,
+   "id": 66,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -2909,7 +3119,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 62,
+   "id": 67,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -2932,7 +3142,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 63,
+   "id": 68,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -2955,7 +3165,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 64,
+   "id": 69,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -2978,7 +3188,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 65,
+   "id": 70,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3001,7 +3211,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 66,
+   "id": 71,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3024,7 +3234,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 67,
+   "id": 72,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3047,7 +3257,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 68,
+   "id": 73,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3070,7 +3280,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 69,
+   "id": 74,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3093,7 +3303,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 70,
+   "id": 75,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3116,7 +3326,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 71,
+   "id": 76,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3139,7 +3349,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 72,
+   "id": 77,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3162,7 +3372,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 73,
+   "id": 78,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3185,7 +3395,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 74,
+   "id": 79,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3208,7 +3418,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 75,
+   "id": 80,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3231,7 +3441,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 76,
+   "id": 81,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3254,7 +3464,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 77,
+   "id": 82,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3277,7 +3487,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 78,
+   "id": 83,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3300,7 +3510,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 79,
+   "id": 84,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3323,7 +3533,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 80,
+   "id": 85,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3346,7 +3556,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 81,
+   "id": 86,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3369,7 +3579,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 82,
+   "id": 87,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3392,7 +3602,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 83,
+   "id": 88,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3415,7 +3625,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 84,
+   "id": 89,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3438,7 +3648,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 85,
+   "id": 90,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3461,7 +3671,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 86,
+   "id": 91,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3484,7 +3694,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 87,
+   "id": 92,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3507,7 +3717,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 88,
+   "id": 93,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3530,7 +3740,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 89,
+   "id": 94,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3553,7 +3763,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 90,
+   "id": 95,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3576,7 +3786,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 91,
+   "id": 96,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3599,7 +3809,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 92,
+   "id": 97,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3622,7 +3832,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 93,
+   "id": 98,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3645,7 +3855,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 94,
+   "id": 99,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3668,7 +3878,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 95,
+   "id": 100,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3691,7 +3901,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 96,
+   "id": 101,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3714,7 +3924,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 97,
+   "id": 102,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3737,7 +3947,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 98,
+   "id": 103,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3760,7 +3970,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 99,
+   "id": 104,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3783,7 +3993,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 100,
+   "id": 105,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3806,7 +4016,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 101,
+   "id": 106,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3829,7 +4039,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 102,
+   "id": 107,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3852,7 +4062,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 103,
+   "id": 108,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3875,7 +4085,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 104,
+   "id": 109,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3898,7 +4108,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 105,
+   "id": 110,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3921,7 +4131,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 106,
+   "id": 111,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3944,7 +4154,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 107,
+   "id": 112,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3967,7 +4177,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 108,
+   "id": 113,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -3990,7 +4200,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 109,
+   "id": 114,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4013,7 +4223,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 110,
+   "id": 115,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4036,7 +4246,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 111,
+   "id": 116,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4059,7 +4269,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 112,
+   "id": 117,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4082,7 +4292,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 113,
+   "id": 118,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4105,7 +4315,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 114,
+   "id": 119,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4128,7 +4338,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 115,
+   "id": 120,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4151,7 +4361,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 116,
+   "id": 121,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4174,7 +4384,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 117,
+   "id": 122,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4197,7 +4407,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 118,
+   "id": 123,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4220,7 +4430,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 119,
+   "id": 124,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4243,7 +4453,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 120,
+   "id": 125,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4266,7 +4476,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 121,
+   "id": 126,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4289,7 +4499,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 122,
+   "id": 127,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4312,7 +4522,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 123,
+   "id": 128,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4335,7 +4545,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 124,
+   "id": 129,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4358,7 +4568,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 125,
+   "id": 130,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4381,7 +4591,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 126,
+   "id": 131,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4404,7 +4614,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 127,
+   "id": 132,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -4427,7 +4637,237 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 128,
+   "id": 133,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_1_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0028",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 134,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_1_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0008",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 135,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_2_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 136,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_2_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0007",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 137,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_3_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0009",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 138,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_3_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0015",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 139,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_4_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0013",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 140,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_4_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0015",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 141,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_begin",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_5_begin"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "-0007",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 142,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_end",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_5_end"
+   },
+   "annotations": {
+    "http://www.w3.org/2006/time#inXSDgYear": [
+     {
+      "identifier": "http://www.w3.org/2006/time#inXSDgYear",
+      "language": "undefined",
+      "value": "0016",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 143,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4450,7 +4890,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 129,
+   "id": 144,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4473,7 +4913,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 130,
+   "id": 145,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4496,7 +4936,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 131,
+   "id": 146,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4519,7 +4959,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 132,
+   "id": 147,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4542,7 +4982,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 133,
+   "id": 148,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4565,7 +5005,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 134,
+   "id": 149,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4588,7 +5028,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 135,
+   "id": 150,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4611,7 +5051,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 136,
+   "id": 151,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4634,7 +5074,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 137,
+   "id": 152,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4657,7 +5097,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 138,
+   "id": 153,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4680,7 +5120,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 139,
+   "id": 154,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4703,7 +5143,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 140,
+   "id": 155,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4726,7 +5166,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 141,
+   "id": 156,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4749,7 +5189,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 142,
+   "id": 157,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4772,7 +5212,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 143,
+   "id": 158,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4795,7 +5235,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 144,
+   "id": 159,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4818,7 +5258,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 145,
+   "id": 160,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4841,7 +5281,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 146,
+   "id": 161,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4864,7 +5304,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 147,
+   "id": 162,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4887,7 +5327,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 148,
+   "id": 163,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4910,7 +5350,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 149,
+   "id": 164,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4933,7 +5373,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 150,
+   "id": 165,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4956,7 +5396,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 151,
+   "id": 166,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -4979,7 +5419,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 152,
+   "id": 167,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5002,7 +5442,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 153,
+   "id": 168,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5025,7 +5465,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 154,
+   "id": 169,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5048,7 +5488,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 155,
+   "id": 170,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5071,7 +5511,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 156,
+   "id": 171,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5094,7 +5534,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 157,
+   "id": 172,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5117,7 +5557,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 158,
+   "id": 173,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5140,7 +5580,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 159,
+   "id": 174,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5163,7 +5603,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 160,
+   "id": 175,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5186,7 +5626,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 161,
+   "id": 176,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5209,7 +5649,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 162,
+   "id": 177,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5232,7 +5672,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 163,
+   "id": 178,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5255,7 +5695,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 164,
+   "id": 179,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5278,7 +5718,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 165,
+   "id": 180,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5301,7 +5741,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 166,
+   "id": 181,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5324,7 +5764,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 167,
+   "id": 182,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5347,7 +5787,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 168,
+   "id": 183,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5370,7 +5810,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 169,
+   "id": 184,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5393,7 +5833,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 170,
+   "id": 185,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_begin",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5416,7 +5856,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 171,
+   "id": 186,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_end",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5447,7 +5887,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 172,
+   "id": 187,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5478,7 +5918,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 173,
+   "id": 188,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5509,7 +5949,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 174,
+   "id": 189,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5540,7 +5980,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 175,
+   "id": 190,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5571,7 +6011,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 176,
+   "id": 191,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5602,7 +6042,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 177,
+   "id": 192,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5633,7 +6073,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 178,
+   "id": 193,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5664,7 +6104,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 179,
+   "id": 194,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5695,7 +6135,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 180,
+   "id": 195,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5726,7 +6166,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 181,
+   "id": 196,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5757,7 +6197,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 182,
+   "id": 197,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5788,7 +6228,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 183,
+   "id": 198,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5819,7 +6259,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 184,
+   "id": 199,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5850,7 +6290,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 185,
+   "id": 200,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5881,7 +6321,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 186,
+   "id": 201,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5912,7 +6352,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 187,
+   "id": 202,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5943,7 +6383,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 188,
+   "id": 203,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -5974,7 +6414,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 189,
+   "id": 204,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6005,7 +6445,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 190,
+   "id": 205,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6036,7 +6476,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 191,
+   "id": 206,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6067,7 +6507,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 192,
+   "id": 207,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6098,7 +6538,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 193,
+   "id": 208,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6129,7 +6569,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 194,
+   "id": 209,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6160,7 +6600,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 195,
+   "id": 210,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6191,7 +6631,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 196,
+   "id": 211,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6222,7 +6662,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 197,
+   "id": 212,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6245,7 +6685,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 198,
+   "id": 213,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -6268,7 +6708,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 199,
+   "id": 214,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -6299,7 +6739,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 200,
+   "id": 215,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6330,7 +6770,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 201,
+   "id": 216,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6361,7 +6801,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 202,
+   "id": 217,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6392,7 +6832,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 203,
+   "id": 218,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6423,7 +6863,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 204,
+   "id": 219,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6454,7 +6894,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 205,
+   "id": 220,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6485,7 +6925,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 206,
+   "id": 221,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6516,7 +6956,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 207,
+   "id": 222,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6547,7 +6987,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 208,
+   "id": 223,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6578,7 +7018,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 209,
+   "id": 224,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6609,7 +7049,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 210,
+   "id": 225,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6640,7 +7080,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 211,
+   "id": 226,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6671,7 +7111,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 212,
+   "id": 227,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6702,7 +7142,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 213,
+   "id": 228,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6733,7 +7173,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 214,
+   "id": 229,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6764,7 +7204,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 215,
+   "id": 230,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6795,7 +7235,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 216,
+   "id": 231,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6826,7 +7266,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 217,
+   "id": 232,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6857,7 +7297,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 218,
+   "id": 233,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -6880,7 +7320,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 219,
+   "id": 234,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -6903,7 +7343,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 220,
+   "id": 235,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -6926,7 +7366,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 221,
+   "id": 236,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -6949,7 +7389,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 222,
+   "id": 237,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -6972,12 +7412,127 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 223,
+   "id": 238,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
     "IRI-based": "cluster_bc0015_bc0009_geom"
+   },
+   "annotations": {
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.72231 47.53323, 4.66829 52.45207, 5.16186 52.05774, 8.29349 47.59059, 7.72231 47.53323))",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 239,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_1_geom"
+   },
+   "annotations": {
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.04067 46.88028, 5.884209 51.839831, 8.7535 50.34167, 10.89655 48.37277, 9.74073 47.4979, 7.04067 46.88028))",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 240,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_2_geom"
+   },
+   "annotations": {
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, -8.49341 40.09905))",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 241,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_3_geom"
+   },
+   "annotations": {
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.60087 46.51651, 4.44349 50.51455, 6.67 51.43167, 8.7665 50.371, 10.88173 48.39021, 6.60087 46.51651))",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 242,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_4_geom"
+   },
+   "annotations": {
+    "http://www.opengis.net/ont/geosparql#asWKT": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
+      "language": "undefined",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 7.58444 51.6125, 8.540724 47.373008))",
+      "type": "label"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 243,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_geom",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_5_geom"
    },
    "annotations": {
     "http://www.opengis.net/ont/geosparql#asWKT": [
@@ -6995,7 +7550,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 224,
+   "id": 244,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_geom",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -7009,292 +7564,12 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 225,
+   "id": 245,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
     "IRI-based": "site_Trier-Petrisberg"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 226,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "BWYway"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 227,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Bp8JY3"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 228,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "D9L8l5"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 229,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "DJq1mg"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 230,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "DeeX7G"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 231,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "GEJedY"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 232,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Gjndwx"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 233,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "JwKRVN"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 234,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "K4wDrp"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 235,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "KROWel"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 236,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "LG4D5x"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 237,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "N48RZG"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 238,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "NRzOWx"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 239,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "O9rjkJ"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 240,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "OmaMbj"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 241,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Q48jL9"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 242,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "QLNMJk"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 243,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "QW3vzV"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 244,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "VJwKp7"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 245,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "VvXl2y"
    },
    "annotations": {},
    "range": [],
@@ -7304,11 +7579,11 @@ var vowlresult={
   },
   {
    "id": 246,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "Vx2doQ"
+    "IRI-based": "BWYway"
    },
    "annotations": {},
    "range": [],
@@ -7318,11 +7593,11 @@ var vowlresult={
   },
   {
    "id": 247,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "WNVNB2"
+    "IRI-based": "Bp8JY3"
    },
    "annotations": {},
    "range": [],
@@ -7332,11 +7607,11 @@ var vowlresult={
   },
   {
    "id": 248,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "XPb9J3"
+    "IRI-based": "D9L8l5"
    },
    "annotations": {},
    "range": [],
@@ -7346,11 +7621,11 @@ var vowlresult={
   },
   {
    "id": 249,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "XeE1dq"
+    "IRI-based": "DJq1mg"
    },
    "annotations": {},
    "range": [],
@@ -7360,11 +7635,11 @@ var vowlresult={
   },
   {
    "id": 250,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "b8OX2q"
+    "IRI-based": "DeeX7G"
    },
    "annotations": {},
    "range": [],
@@ -7374,11 +7649,11 @@ var vowlresult={
   },
   {
    "id": 251,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "bwrZ4y"
+    "IRI-based": "GEJedY"
    },
    "annotations": {},
    "range": [],
@@ -7388,11 +7663,11 @@ var vowlresult={
   },
   {
    "id": 252,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "eoE031"
+    "IRI-based": "Gjndwx"
    },
    "annotations": {},
    "range": [],
@@ -7402,11 +7677,11 @@ var vowlresult={
   },
   {
    "id": 253,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ewr5bR"
+    "IRI-based": "JwKRVN"
    },
    "annotations": {},
    "range": [],
@@ -7416,11 +7691,11 @@ var vowlresult={
   },
   {
    "id": 254,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "ez8xNq"
+    "IRI-based": "K4wDrp"
    },
    "annotations": {},
    "range": [],
@@ -7430,11 +7705,11 @@ var vowlresult={
   },
   {
    "id": 255,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "g64Ky0"
+    "IRI-based": "KROWel"
    },
    "annotations": {},
    "range": [],
@@ -7444,11 +7719,11 @@ var vowlresult={
   },
   {
    "id": 256,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gL6OAG"
+    "IRI-based": "LG4D5x"
    },
    "annotations": {},
    "range": [],
@@ -7458,11 +7733,11 @@ var vowlresult={
   },
   {
    "id": 257,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "gw8Kxp"
+    "IRI-based": "N48RZG"
    },
    "annotations": {},
    "range": [],
@@ -7472,11 +7747,11 @@ var vowlresult={
   },
   {
    "id": 258,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "j2lK5y"
+    "IRI-based": "NRzOWx"
    },
    "annotations": {},
    "range": [],
@@ -7486,11 +7761,11 @@ var vowlresult={
   },
   {
    "id": 259,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "kNA9dJ"
+    "IRI-based": "O9rjkJ"
    },
    "annotations": {},
    "range": [],
@@ -7500,11 +7775,11 @@ var vowlresult={
   },
   {
    "id": 260,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "lKmJ9q"
+    "IRI-based": "OmaMbj"
    },
    "annotations": {},
    "range": [],
@@ -7514,11 +7789,11 @@ var vowlresult={
   },
   {
    "id": 261,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "lwDA1d"
+    "IRI-based": "Q48jL9"
    },
    "annotations": {},
    "range": [],
@@ -7528,11 +7803,11 @@ var vowlresult={
   },
   {
    "id": 262,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "n47Ll8"
+    "IRI-based": "QLNMJk"
    },
    "annotations": {},
    "range": [],
@@ -7542,11 +7817,11 @@ var vowlresult={
   },
   {
    "id": 263,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "nrylrd"
+    "IRI-based": "QW3vzV"
    },
    "annotations": {},
    "range": [],
@@ -7556,11 +7831,11 @@ var vowlresult={
   },
   {
    "id": 264,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "qLXYbG"
+    "IRI-based": "VJwKp7"
    },
    "annotations": {},
    "range": [],
@@ -7570,11 +7845,11 @@ var vowlresult={
   },
   {
    "id": 265,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "rQ80WO"
+    "IRI-based": "VvXl2y"
    },
    "annotations": {},
    "range": [],
@@ -7584,11 +7859,11 @@ var vowlresult={
   },
   {
    "id": 266,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "v1O46L"
+    "IRI-based": "Vx2doQ"
    },
    "annotations": {},
    "range": [],
@@ -7598,11 +7873,11 @@ var vowlresult={
   },
   {
    "id": 267,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "wm71YX"
+    "IRI-based": "WNVNB2"
    },
    "annotations": {},
    "range": [],
@@ -7612,11 +7887,11 @@ var vowlresult={
   },
   {
    "id": 268,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "xVy2j7"
+    "IRI-based": "XPb9J3"
    },
    "annotations": {},
    "range": [],
@@ -7626,11 +7901,11 @@ var vowlresult={
   },
   {
    "id": 269,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
    "label": {
-    "IRI-based": "yJBpPg"
+    "IRI-based": "XeE1dq"
    },
    "annotations": {},
    "range": [],
@@ -7640,356 +7915,6 @@ var vowlresult={
   },
   {
    "id": 270,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "site_Trier-Petrisberg"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 271,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "BWYway"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 272,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Bp8JY3"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 273,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "D9L8l5"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 274,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "DJq1mg"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 275,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "DeeX7G"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 276,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "GEJedY"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 277,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Gjndwx"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 278,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "JwKRVN"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 279,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "K4wDrp"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 280,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "KROWel"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 281,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "LG4D5x"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 282,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "N48RZG"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 283,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "NRzOWx"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 284,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "O9rjkJ"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 285,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "OmaMbj"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 286,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Q48jL9"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 287,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "QLNMJk"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 288,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "QW3vzV"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 289,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "VJwKp7"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 290,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "VvXl2y"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 291,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "Vx2doQ"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 292,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "WNVNB2"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 293,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "XPb9J3"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 294,
-   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq",
-   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
-   "instances": 0,
-   "label": {
-    "IRI-based": "XeE1dq"
-   },
-   "annotations": {},
-   "range": [],
-   "domain": [],
-   "subProperties": [],
-   "superProperties": []
-  },
-  {
-   "id": 295,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8003,7 +7928,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 296,
+   "id": 271,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8017,7 +7942,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 297,
+   "id": 272,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8031,7 +7956,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 298,
+   "id": 273,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8045,7 +7970,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 299,
+   "id": 274,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8059,7 +7984,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 300,
+   "id": 275,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8073,7 +7998,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 301,
+   "id": 276,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8087,7 +8012,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 302,
+   "id": 277,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8101,7 +8026,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 303,
+   "id": 278,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8115,7 +8040,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 304,
+   "id": 279,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8129,7 +8054,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 305,
+   "id": 280,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8143,7 +8068,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 306,
+   "id": 281,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8157,7 +8082,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 307,
+   "id": 282,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8171,7 +8096,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 308,
+   "id": 283,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8185,7 +8110,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 309,
+   "id": 284,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8199,7 +8124,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 310,
+   "id": 285,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8213,7 +8138,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 311,
+   "id": 286,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8227,7 +8152,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 312,
+   "id": 287,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8241,7 +8166,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 313,
+   "id": 288,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8255,7 +8180,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 314,
+   "id": 289,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8269,7 +8194,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 315,
+   "id": 290,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8283,7 +8208,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 316,
+   "id": 291,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8297,7 +8222,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 317,
+   "id": 292,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8311,7 +8236,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 318,
+   "id": 293,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8325,7 +8250,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 319,
+   "id": 294,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8339,7 +8264,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 320,
+   "id": 295,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8353,7 +8278,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 321,
+   "id": 296,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8367,7 +8292,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 322,
+   "id": 297,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8381,7 +8306,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 323,
+   "id": 298,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8395,7 +8320,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 324,
+   "id": 299,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8409,7 +8334,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 325,
+   "id": 300,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8423,7 +8348,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 326,
+   "id": 301,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8437,7 +8362,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 327,
+   "id": 302,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8451,7 +8376,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 328,
+   "id": 303,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8465,7 +8390,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 329,
+   "id": 304,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8479,7 +8404,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 330,
+   "id": 305,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8493,7 +8418,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 331,
+   "id": 306,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8507,7 +8432,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 332,
+   "id": 307,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8521,7 +8446,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 333,
+   "id": 308,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8535,7 +8460,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 334,
+   "id": 309,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8549,7 +8474,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 335,
+   "id": 310,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8563,7 +8488,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 336,
+   "id": 311,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8577,7 +8502,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 337,
+   "id": 312,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8591,7 +8516,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 338,
+   "id": 313,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8605,7 +8530,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 339,
+   "id": 314,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8619,7 +8544,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 340,
+   "id": 315,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8633,7 +8558,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 341,
+   "id": 316,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8647,7 +8572,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 342,
+   "id": 317,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8661,7 +8586,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 343,
+   "id": 318,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8675,7 +8600,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 344,
+   "id": 319,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8689,7 +8614,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 345,
+   "id": 320,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8703,7 +8628,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 346,
+   "id": 321,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8717,7 +8642,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 347,
+   "id": 322,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8731,7 +8656,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 348,
+   "id": 323,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8745,7 +8670,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 349,
+   "id": 324,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8759,7 +8684,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 350,
+   "id": 325,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8773,7 +8698,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 351,
+   "id": 326,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8787,7 +8712,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 352,
+   "id": 327,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8801,7 +8726,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 353,
+   "id": 328,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8815,7 +8740,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 354,
+   "id": 329,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8829,7 +8754,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 355,
+   "id": 330,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8843,7 +8768,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 356,
+   "id": 331,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8857,7 +8782,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 357,
+   "id": 332,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8871,7 +8796,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 358,
+   "id": 333,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8885,7 +8810,637 @@ var vowlresult={
    "superProperties": []
   },
   {
+   "id": 334,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "yJBpPg"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 335,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "site_Trier-Petrisberg"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 336,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "BWYway"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 337,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Bp8JY3"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 338,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "D9L8l5"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 339,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "DJq1mg"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 340,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "DeeX7G"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 341,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "GEJedY"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 342,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Gjndwx"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 343,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "JwKRVN"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 344,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "K4wDrp"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 345,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "KROWel"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 346,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "LG4D5x"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 347,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "N48RZG"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 348,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "NRzOWx"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 349,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "O9rjkJ"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 350,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "OmaMbj"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 351,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Q48jL9"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 352,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "QLNMJk"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 353,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "QW3vzV"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 354,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "VJwKp7"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 355,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "VvXl2y"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 356,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "Vx2doQ"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 357,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "WNVNB2"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 358,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "XPb9J3"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
    "id": 359,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "XeE1dq"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 360,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "b8OX2q"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 361,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "bwrZ4y"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 362,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "eoE031"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 363,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ewr5bR"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 364,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "ez8xNq"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 365,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "g64Ky0"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 366,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "gL6OAG"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 367,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "gw8Kxp"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 368,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "j2lK5y"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 369,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "kNA9dJ"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 370,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "lKmJ9q"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 371,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "lwDA1d"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 372,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "n47Ll8"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 373,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "nrylrd"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 374,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "qLXYbG"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 375,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "rQ80WO"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 376,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "v1O46L"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 377,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "wm71YX"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 378,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
+   "instances": 0,
+   "label": {
+    "IRI-based": "xVy2j7"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 379,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8946,7 +9501,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 360,
+   "id": 380,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8960,7 +9515,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 361,
+   "id": 381,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8974,7 +9529,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 362,
+   "id": 382,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -8988,7 +9543,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 363,
+   "id": 383,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9002,7 +9557,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 364,
+   "id": 384,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9016,7 +9571,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 365,
+   "id": 385,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9030,7 +9585,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 366,
+   "id": 386,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9044,7 +9599,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 367,
+   "id": 387,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9058,7 +9613,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 368,
+   "id": 388,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9072,7 +9627,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 369,
+   "id": 389,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9086,7 +9641,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 370,
+   "id": 390,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9100,7 +9655,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 371,
+   "id": 391,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9114,7 +9669,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 372,
+   "id": 392,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9128,7 +9683,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 373,
+   "id": 393,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9142,7 +9697,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 374,
+   "id": 394,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9156,7 +9711,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 375,
+   "id": 395,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9170,7 +9725,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 376,
+   "id": 396,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9184,7 +9739,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 377,
+   "id": 397,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9198,7 +9753,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 378,
+   "id": 398,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9212,7 +9767,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 379,
+   "id": 399,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9226,7 +9781,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 380,
+   "id": 400,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9240,7 +9795,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 381,
+   "id": 401,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9254,7 +9809,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 382,
+   "id": 402,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9268,7 +9823,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 383,
+   "id": 403,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9282,7 +9837,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 384,
+   "id": 404,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9296,7 +9851,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 385,
+   "id": 405,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9310,7 +9865,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 386,
+   "id": 406,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9324,7 +9879,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 387,
+   "id": 407,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9338,7 +9893,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 388,
+   "id": 408,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9352,7 +9907,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 389,
+   "id": 409,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9366,7 +9921,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 390,
+   "id": 410,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9380,7 +9935,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 391,
+   "id": 411,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9394,7 +9949,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 392,
+   "id": 412,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9408,7 +9963,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 393,
+   "id": 413,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9422,7 +9977,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 394,
+   "id": 414,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9436,7 +9991,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 395,
+   "id": 415,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9450,7 +10005,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 396,
+   "id": 416,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9464,7 +10019,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 397,
+   "id": 417,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9478,7 +10033,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 398,
+   "id": 418,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9492,7 +10047,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 399,
+   "id": 419,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9506,7 +10061,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 400,
+   "id": 420,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9520,7 +10075,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 401,
+   "id": 421,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9534,7 +10089,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 402,
+   "id": 422,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9548,7 +10103,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 403,
+   "id": 423,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9562,7 +10117,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 404,
+   "id": 424,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9692,7 +10247,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -9719,7 +10274,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 405,
+   "id": 425,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/BWYway",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9833,7 +10388,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -9860,7 +10415,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 406,
+   "id": 426,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -9974,7 +10529,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -10001,7 +10556,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 407,
+   "id": 427,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -10131,7 +10686,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -10166,7 +10721,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 408,
+   "id": 428,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -10296,7 +10851,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -10323,7 +10878,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 409,
+   "id": 429,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -10437,7 +10992,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -10464,7 +11019,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 410,
+   "id": 430,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -10578,7 +11133,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -10605,7 +11160,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 411,
+   "id": 431,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -10735,7 +11290,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -10762,7 +11317,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 412,
+   "id": 432,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -10884,7 +11439,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -10911,7 +11466,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 413,
+   "id": 433,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -11025,7 +11580,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -11060,7 +11615,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 414,
+   "id": 434,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/KROWel",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -11174,7 +11729,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -11201,7 +11756,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 415,
+   "id": 435,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -11331,7 +11886,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -11358,7 +11913,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 416,
+   "id": 436,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -11488,7 +12043,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -11523,7 +12078,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 417,
+   "id": 437,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -11637,7 +12192,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -11664,7 +12219,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 418,
+   "id": 438,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -11778,7 +12333,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -11813,7 +12368,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 419,
+   "id": 439,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -11943,7 +12498,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -11970,7 +12525,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 420,
+   "id": 440,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -12100,7 +12655,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -12127,7 +12682,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 421,
+   "id": 441,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -12257,7 +12812,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -12284,7 +12839,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 422,
+   "id": 442,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -12398,7 +12953,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -12425,7 +12980,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 423,
+   "id": 443,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -12555,7 +13110,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -12590,7 +13145,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 424,
+   "id": 444,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -12720,7 +13275,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -12747,7 +13302,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 425,
+   "id": 445,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -12877,7 +13432,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -12904,7 +13459,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 426,
+   "id": 446,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -13018,7 +13573,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -13045,7 +13600,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 427,
+   "id": 447,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -13159,7 +13714,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -13186,7 +13741,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 428,
+   "id": 448,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -13316,7 +13871,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -13343,7 +13898,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 429,
+   "id": 449,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -13473,7 +14028,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -13500,7 +14055,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 430,
+   "id": 450,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -13630,7 +14185,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -13665,7 +14220,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 431,
+   "id": 451,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/eoE031",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -13795,7 +14350,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -13822,7 +14377,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 432,
+   "id": 452,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -13936,7 +14491,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -13963,7 +14518,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 433,
+   "id": 453,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -14093,7 +14648,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -14128,7 +14683,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 434,
+   "id": 454,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -14258,7 +14813,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -14293,7 +14848,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 435,
+   "id": 455,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -14407,7 +14962,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -14434,7 +14989,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 436,
+   "id": 456,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -14548,7 +15103,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -14575,7 +15130,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 437,
+   "id": 457,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -14705,7 +15260,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -14732,7 +15287,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 438,
+   "id": 458,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -14846,7 +15401,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -14873,7 +15428,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 439,
+   "id": 459,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -15003,7 +15558,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -15030,7 +15585,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 440,
+   "id": 460,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -15144,7 +15699,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -15171,7 +15726,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 441,
+   "id": 461,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -15285,7 +15840,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -15312,7 +15867,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 442,
+   "id": 462,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -15442,7 +15997,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -15469,7 +16024,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 443,
+   "id": 463,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -15583,7 +16138,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -15610,7 +16165,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 444,
+   "id": 464,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -15740,7 +16295,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -15767,7 +16322,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 445,
+   "id": 465,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -15897,7 +16452,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -15932,7 +16487,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 446,
+   "id": 466,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -16046,7 +16601,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -16073,7 +16628,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 447,
+   "id": 467,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -16203,7 +16758,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
@@ -16238,7 +16793,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 448,
+   "id": 468,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator",
    "instances": 0,
@@ -16252,7 +16807,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 449,
+   "id": 469,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16266,7 +16821,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 450,
+   "id": 470,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16280,7 +16835,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 451,
+   "id": 471,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16294,7 +16849,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 452,
+   "id": 472,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16308,7 +16863,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 453,
+   "id": 473,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16322,7 +16877,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 454,
+   "id": 474,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16336,7 +16891,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 455,
+   "id": 475,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16350,7 +16905,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 456,
+   "id": 476,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16435,7 +16990,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 457,
+   "id": 477,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16520,7 +17075,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 458,
+   "id": 478,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16629,8 +17184,36 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 459,
+   "id": 479,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "cluster_bc0012_ad0009"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 480,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_1"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 481,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": "Period cluster 15 BCE \u2013 9 BCE",
@@ -16706,7 +17289,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 460,
+   "id": 482,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16767,7 +17350,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 461,
+   "id": 483,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -16868,8 +17451,50 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 462,
+   "id": 484,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "cluster_bc0015_ad0009"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 485,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_2"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 486,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_4"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 487,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": "Period cluster 8 \u2013 13 CE",
@@ -16953,7 +17578,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 463,
+   "id": 488,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -17054,7 +17679,7 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 464,
+   "id": 489,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
@@ -17083,12 +17708,515 @@ var vowlresult={
    "superProperties": []
   },
   {
-   "id": 465,
+   "id": 490,
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
    "label": {
     "IRI-based": "arretine_sites"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 491,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_1"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 492,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_5"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 493,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_2"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 494,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_4"
+   },
+   "annotations": {},
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 495,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": "Horizon 1 (16 apr. J.-C. \u2013 28 apr. J.-C.)",
+   "annotations": {
+    "http://archaeology.link/ontology#hasHorizonMember": [
+     {
+      "identifier": "http://archaeology.link/ontology#hasHorizonMember",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasFeature": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+      "language": "undefined",
+      "value": "1",
+      "type": "label"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_end",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalAfter": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalAfter",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 496,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": "Horizon 5 (15 av. J.-C. \u2013 7 av. J.-C.)",
+   "annotations": {
+    "http://archaeology.link/ontology#hasHorizonMember": [
+     {
+      "identifier": "http://archaeology.link/ontology#hasHorizonMember",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasFeature": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+      "language": "undefined",
+      "value": "5",
+      "type": "label"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_end",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalBefore": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalBefore",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalMeets": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalMeets",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalStarts": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalStarts",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 497,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": "Horizon 2 (8 apr. J.-C. \u2013 13 apr. J.-C.)",
+   "annotations": {
+    "http://archaeology.link/ontology#hasHorizonMember": [
+     {
+      "identifier": "http://archaeology.link/ontology#hasHorizonMember",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasFeature": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+      "language": "undefined",
+      "value": "2",
+      "type": "label"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_end",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalAfter": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalAfter",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalBefore": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalBefore",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalFinishes": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalFinishes",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalOverlappedBy": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalOverlappedBy",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 498,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": "Horizon 4 (15 av. J.-C. \u2013 13 apr. J.-C.)",
+   "annotations": {
+    "http://archaeology.link/ontology#hasHorizonMember": [
+     {
+      "identifier": "http://archaeology.link/ontology#hasHorizonMember",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasFeature": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+      "language": "undefined",
+      "value": "4",
+      "type": "label"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_end",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalBefore": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalBefore",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalContains": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalContains",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalFinishedBy": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalFinishedBy",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalStartedBy": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalStartedBy",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 499,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": "Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.)",
+   "annotations": {
+    "http://archaeology.link/ontology#hasHorizonMember": [
+     {
+      "identifier": "http://archaeology.link/ontology#hasHorizonMember",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasFeature": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg",
+      "type": "iri"
+     }
+    ],
+    "http://www.opengis.net/ont/geosparql#hasGeometry": [
+     {
+      "identifier": "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_geom",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+     {
+      "identifier": "http://www.w3.org/2004/02/skos/core#notation",
+      "language": "undefined",
+      "value": "3",
+      "type": "label"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasBeginning": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasBeginning",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_begin",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#hasEnd": [
+     {
+      "identifier": "http://www.w3.org/2006/time#hasEnd",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_end",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalBefore": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalBefore",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalDuring": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalDuring",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalMetBy": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalMetBy",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalOverlaps": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalOverlaps",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "type": "iri"
+     }
+    ]
+   },
+   "range": [],
+   "domain": [],
+   "subProperties": [],
+   "superProperties": []
+  },
+  {
+   "id": 500,
+   "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+   "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
+   "instances": 0,
+   "label": {
+    "IRI-based": "horizon_3"
    },
    "annotations": {},
    "range": [],

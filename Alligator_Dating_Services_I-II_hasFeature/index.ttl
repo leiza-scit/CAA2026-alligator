@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: hasFeature"@en ;
     void:property geo:hasFeature ;
-    void:triples 89 .
+    void:triples 133 .
 

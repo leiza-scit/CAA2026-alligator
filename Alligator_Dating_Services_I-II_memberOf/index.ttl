@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: memberOf"@en ;
     void:property geo:memberOf ;
-    void:triples 89 .
+    void:triples 133 .
 

@@ -33,7 +33,8 @@
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_geom> ;
     geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013> ;
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2> ;
     skos:closeMatch <http://openstreetmap.org/way/115007886> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_end> .
