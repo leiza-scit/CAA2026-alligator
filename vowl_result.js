@@ -4626,7 +4626,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0016",
+      "value": "-0015",
       "type": "label"
      }
     ]
@@ -4649,7 +4649,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0028",
+      "value": "-0007",
       "type": "label"
      }
     ]
@@ -4672,7 +4672,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "0008",
+      "value": "-0015",
       "type": "label"
      }
     ]
@@ -4764,7 +4764,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0015",
+      "value": "0008",
       "type": "label"
      }
     ]
@@ -4810,7 +4810,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0015",
+      "value": "0016",
       "type": "label"
      }
     ]
@@ -4833,7 +4833,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#inXSDgYear",
       "language": "undefined",
-      "value": "-0007",
+      "value": "0028",
       "type": "label"
      }
     ]
@@ -7424,7 +7424,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.72231 47.53323, 4.66829 52.45207, 5.16186 52.05774, 8.29349 47.59059, 7.72231 47.53323))",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 7.58444 51.6125, 8.540724 47.373008))",
       "type": "label"
      }
     ]
@@ -7447,7 +7447,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.04067 46.88028, 5.884209 51.839831, 8.7535 50.34167, 10.89655 48.37277, 9.74073 47.4979, 7.04067 46.88028))",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.60087 46.51651, 4.44349 50.51455, 6.67 51.43167, 8.7665 50.371, 10.88173 48.39021, 6.60087 46.51651))",
       "type": "label"
      }
     ]
@@ -7493,7 +7493,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.60087 46.51651, 4.44349 50.51455, 6.67 51.43167, 8.7665 50.371, 10.88173 48.39021, 6.60087 46.51651))",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.04067 46.88028, 5.884209 51.839831, 8.7535 50.34167, 10.89655 48.37277, 9.74073 47.4979, 7.04067 46.88028))",
       "type": "label"
      }
     ]
@@ -7516,7 +7516,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#asWKT",
       "language": "undefined",
-      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 7.58444 51.6125, 8.540724 47.373008))",
+      "value": "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.72231 47.53323, 4.66829 52.45207, 5.16186 52.05774, 8.29349 47.59059, 7.72231 47.53323))",
       "type": "label"
      }
     ]
@@ -10247,7 +10247,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -10388,7 +10388,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -10686,7 +10686,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -10851,7 +10851,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -11290,7 +11290,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -11439,7 +11439,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -11580,7 +11580,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -11729,7 +11729,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -11886,7 +11886,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -12043,7 +12043,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -12192,7 +12192,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -12333,7 +12333,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -12812,7 +12812,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -12953,7 +12953,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -13110,7 +13110,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -13871,7 +13871,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -14028,7 +14028,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -14185,7 +14185,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -14350,7 +14350,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -14491,7 +14491,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -14648,7 +14648,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -14813,7 +14813,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -14962,7 +14962,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -15103,7 +15103,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -15260,7 +15260,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -15401,7 +15401,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -15699,7 +15699,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -15997,7 +15997,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -16138,7 +16138,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -16295,7 +16295,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -16452,7 +16452,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
@@ -16601,7 +16601,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#memberOf",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -17782,13 +17782,13 @@ var vowlresult={
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
-   "label": "Horizon 1 (16 apr. J.-C. \u2013 28 apr. J.-C.)",
+   "label": "Horizon 1 (15 av. J.-C. \u2013 7 av. J.-C.)",
    "annotations": {
     "http://archaeology.link/ontology#hasHorizonMember": [
      {
       "identifier": "http://archaeology.link/ontology#hasHorizonMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
       "type": "iri"
      }
     ],
@@ -17796,7 +17796,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
       "type": "iri"
      }
     ],
@@ -17832,11 +17832,27 @@ var vowlresult={
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalAfter": [
+    "http://www.w3.org/2006/time#intervalBefore": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalAfter",
+      "identifier": "http://www.w3.org/2006/time#intervalBefore",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalMeets": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalMeets",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+      "type": "iri"
+     }
+    ],
+    "http://www.w3.org/2006/time#intervalStarts": [
+     {
+      "identifier": "http://www.w3.org/2006/time#intervalStarts",
+      "language": "undefined",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ]
@@ -17851,13 +17867,13 @@ var vowlresult={
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
-   "label": "Horizon 5 (15 av. J.-C. \u2013 7 av. J.-C.)",
+   "label": "Horizon 5 (16 apr. J.-C. \u2013 28 apr. J.-C.)",
    "annotations": {
     "http://archaeology.link/ontology#hasHorizonMember": [
      {
       "identifier": "http://archaeology.link/ontology#hasHorizonMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
       "type": "iri"
      }
     ],
@@ -17865,7 +17881,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L",
       "type": "iri"
      }
     ],
@@ -17901,25 +17917,9 @@ var vowlresult={
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalBefore": [
+    "http://www.w3.org/2006/time#intervalAfter": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalBefore",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#intervalMeets": [
-     {
-      "identifier": "http://www.w3.org/2006/time#intervalMeets",
-      "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
-      "type": "iri"
-     }
-    ],
-    "http://www.w3.org/2006/time#intervalStarts": [
-     {
-      "identifier": "http://www.w3.org/2006/time#intervalStarts",
+      "identifier": "http://www.w3.org/2006/time#intervalAfter",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
@@ -17936,13 +17936,13 @@ var vowlresult={
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
-   "label": "Horizon 2 (8 apr. J.-C. \u2013 13 apr. J.-C.)",
+   "label": "Horizon 2 (15 av. J.-C. \u2013 13 apr. J.-C.)",
    "annotations": {
     "http://archaeology.link/ontology#hasHorizonMember": [
      {
       "identifier": "http://archaeology.link/ontology#hasHorizonMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
       "type": "iri"
      }
     ],
@@ -17950,7 +17950,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
       "type": "iri"
      }
     ],
@@ -17986,35 +17986,35 @@ var vowlresult={
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalAfter": [
+    "http://www.w3.org/2006/time#intervalBefore": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalAfter",
+      "identifier": "http://www.w3.org/2006/time#intervalBefore",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalBefore": [
+    "http://www.w3.org/2006/time#intervalContains": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalBefore",
+      "identifier": "http://www.w3.org/2006/time#intervalContains",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalFinishes": [
+    "http://www.w3.org/2006/time#intervalFinishedBy": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalFinishes",
+      "identifier": "http://www.w3.org/2006/time#intervalFinishedBy",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalOverlappedBy": [
+    "http://www.w3.org/2006/time#intervalStartedBy": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalOverlappedBy",
+      "identifier": "http://www.w3.org/2006/time#intervalStartedBy",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ]
@@ -18029,13 +18029,13 @@ var vowlresult={
    "iri": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
    "baseIRI": "http://leiza-scit.github.io/CAA2026-alligator/collections",
    "instances": 0,
-   "label": "Horizon 4 (15 av. J.-C. \u2013 13 apr. J.-C.)",
+   "label": "Horizon 4 (8 apr. J.-C. \u2013 13 apr. J.-C.)",
    "annotations": {
     "http://archaeology.link/ontology#hasHorizonMember": [
      {
       "identifier": "http://archaeology.link/ontology#hasHorizonMember",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
       "type": "iri"
      }
     ],
@@ -18043,7 +18043,7 @@ var vowlresult={
      {
       "identifier": "http://www.opengis.net/ont/geosparql#hasFeature",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX",
       "type": "iri"
      }
     ],
@@ -18079,35 +18079,35 @@ var vowlresult={
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalBefore": [
+    "http://www.w3.org/2006/time#intervalAfter": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalBefore",
+      "identifier": "http://www.w3.org/2006/time#intervalAfter",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalContains": [
+    "http://www.w3.org/2006/time#intervalBefore": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalContains",
+      "identifier": "http://www.w3.org/2006/time#intervalBefore",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalFinishedBy": [
+    "http://www.w3.org/2006/time#intervalFinishes": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalFinishedBy",
+      "identifier": "http://www.w3.org/2006/time#intervalFinishes",
       "language": "undefined",
       "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
-    "http://www.w3.org/2006/time#intervalStartedBy": [
+    "http://www.w3.org/2006/time#intervalOverlappedBy": [
      {
-      "identifier": "http://www.w3.org/2006/time#intervalStartedBy",
+      "identifier": "http://www.w3.org/2006/time#intervalOverlappedBy",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3",
       "type": "iri"
      }
     ]
@@ -18176,7 +18176,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#intervalBefore",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
       "type": "iri"
      }
     ],
@@ -18184,7 +18184,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#intervalDuring",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
       "type": "iri"
      }
     ],
@@ -18192,7 +18192,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#intervalMetBy",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1",
       "type": "iri"
      }
     ],
@@ -18200,7 +18200,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2006/time#intervalOverlaps",
       "language": "undefined",
-      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2",
+      "value": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4",
       "type": "iri"
      }
     ]

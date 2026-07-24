@@ -43,8 +43,8 @@
     skos:notation 3 ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_end> ;
-    time:intervalBefore <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1> ;
-    time:intervalDuring <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4> ;
-    time:intervalMetBy <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> ;
-    time:intervalOverlaps <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2> .
+    time:intervalBefore <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> ;
+    time:intervalDuring <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2> ;
+    time:intervalMetBy <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1> ;
+    time:intervalOverlaps <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4> .
 

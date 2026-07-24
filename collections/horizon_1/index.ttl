@@ -12,27 +12,27 @@
         time:Interval,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Horizon 1 (16 CE – 28 CE)"@en,
-        "Horizon 1 (16 apr. J.-C. – 28 apr. J.-C.)"@fr ;
-    ns1:hasHorizonMember <http://leiza-scit.github.io/CAA2026-alligator/KROWel>,
-        <http://leiza-scit.github.io/CAA2026-alligator/VJwKp7>,
-        <http://leiza-scit.github.io/CAA2026-alligator/VvXl2y>,
-        <http://leiza-scit.github.io/CAA2026-alligator/eoE031>,
-        <http://leiza-scit.github.io/CAA2026-alligator/qLXYbG>,
-        <http://leiza-scit.github.io/CAA2026-alligator/v1O46L> ;
+    rdfs:label "Horizon 1 (15 BCE – 7 BCE)"@en,
+        "Horizon 1 (15 av. J.-C. – 7 av. J.-C.)"@fr ;
+    ns1:hasHorizonMember <http://leiza-scit.github.io/CAA2026-alligator/DeeX7G>,
+        <http://leiza-scit.github.io/CAA2026-alligator/JwKRVN>,
+        <http://leiza-scit.github.io/CAA2026-alligator/g64Ky0>,
+        <http://leiza-scit.github.io/CAA2026-alligator/n47Ll8>,
+        <http://leiza-scit.github.io/CAA2026-alligator/rQ80WO>,
+        <http://leiza-scit.github.io/CAA2026-alligator/xVy2j7> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/KROWel>,
-        <http://leiza-scit.github.io/CAA2026-alligator/VJwKp7>,
-        <http://leiza-scit.github.io/CAA2026-alligator/VvXl2y>,
-        <http://leiza-scit.github.io/CAA2026-alligator/eoE031>,
-        <http://leiza-scit.github.io/CAA2026-alligator/qLXYbG>,
-        <http://leiza-scit.github.io/CAA2026-alligator/v1O46L> ;
+    geo:hasFeature <http://leiza-scit.github.io/CAA2026-alligator/DeeX7G>,
+        <http://leiza-scit.github.io/CAA2026-alligator/JwKRVN>,
+        <http://leiza-scit.github.io/CAA2026-alligator/g64Ky0>,
+        <http://leiza-scit.github.io/CAA2026-alligator/n47Ll8>,
+        <http://leiza-scit.github.io/CAA2026-alligator/rQ80WO>,
+        <http://leiza-scit.github.io/CAA2026-alligator/xVy2j7> ;
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_geom> ;
     skos:notation 1 ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_end> ;
-    time:intervalAfter <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> .
+    time:intervalBefore <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4>,
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> ;
+    time:intervalMeets <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3> ;
+    time:intervalStarts <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2> .
 

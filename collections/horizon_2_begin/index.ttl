@@ -6,5 +6,5 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     void:inDataset <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    time:inXSDgYear "0008"^^xsd:gYear .
+    time:inXSDgYear "-0015"^^xsd:gYear .
 

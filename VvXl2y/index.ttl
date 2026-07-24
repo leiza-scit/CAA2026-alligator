@@ -34,7 +34,7 @@
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_geom> ;
     geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1> ;
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> ;
     skos:exactMatch <http://openstreetmap.org/node/6654634631> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_end> .

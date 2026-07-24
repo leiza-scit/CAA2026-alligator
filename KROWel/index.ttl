@@ -32,7 +32,7 @@
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/KROWel_geom> ;
     geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1> ;
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5> ;
     skos:closeMatch <http://openstreetmap.org/way/106663898> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/KROWel_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/KROWel_end> .

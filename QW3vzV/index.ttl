@@ -33,7 +33,7 @@
     geo:hasGeometry <http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_geom> ;
     geo:memberOf <http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites>,
         <http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013>,
-        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2> ;
+        <http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4> ;
     time:hasBeginning <http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_begin> ;
     time:hasEnd <http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_end> .
 

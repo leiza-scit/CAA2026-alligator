@@ -371,22 +371,22 @@ aecol:cluster_bc0015_bc0009_geom a sf:Polygon ;
     geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 8.540724 47.373008))"^^geosparql:wktLiteral .
 
 aecol:horizon_1_begin a time:Instant ;
-    time:inXSDgYear "0016"^^xsd:gYear .
+    time:inXSDgYear "-0015"^^xsd:gYear .
 
 aecol:horizon_1_end a time:Instant ;
-    time:inXSDgYear "0028"^^xsd:gYear .
+    time:inXSDgYear "-0007"^^xsd:gYear .
 
 aecol:horizon_1_geom a sf:Polygon ;
-    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.72231 47.53323, 4.66829 52.45207, 5.16186 52.05774, 8.29349 47.59059, 7.72231 47.53323))"^^geosparql:wktLiteral .
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 7.58444 51.6125, 8.540724 47.373008))"^^geosparql:wktLiteral .
 
 aecol:horizon_2_begin a time:Instant ;
-    time:inXSDgYear "0008"^^xsd:gYear .
+    time:inXSDgYear "-0015"^^xsd:gYear .
 
 aecol:horizon_2_end a time:Instant ;
     time:inXSDgYear "0013"^^xsd:gYear .
 
 aecol:horizon_2_geom a sf:Polygon ;
-    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.04067 46.88028, 5.884209 51.839831, 8.7535 50.34167, 10.89655 48.37277, 9.74073 47.4979, 7.04067 46.88028))"^^geosparql:wktLiteral .
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.60087 46.51651, 4.44349 50.51455, 6.67 51.43167, 8.7665 50.371, 10.88173 48.39021, 6.60087 46.51651))"^^geosparql:wktLiteral .
 
 aecol:horizon_3_begin a time:Instant ;
     time:inXSDgYear "-0007"^^xsd:gYear .
@@ -398,22 +398,22 @@ aecol:horizon_3_geom a sf:Polygon ;
     geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, -8.49341 40.09905))"^^geosparql:wktLiteral .
 
 aecol:horizon_4_begin a time:Instant ;
-    time:inXSDgYear "-0015"^^xsd:gYear .
+    time:inXSDgYear "0008"^^xsd:gYear .
 
 aecol:horizon_4_end a time:Instant ;
     time:inXSDgYear "0013"^^xsd:gYear .
 
 aecol:horizon_4_geom a sf:Polygon ;
-    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.60087 46.51651, 4.44349 50.51455, 6.67 51.43167, 8.7665 50.371, 10.88173 48.39021, 6.60087 46.51651))"^^geosparql:wktLiteral .
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.04067 46.88028, 5.884209 51.839831, 8.7535 50.34167, 10.89655 48.37277, 9.74073 47.4979, 7.04067 46.88028))"^^geosparql:wktLiteral .
 
 aecol:horizon_5_begin a time:Instant ;
-    time:inXSDgYear "-0015"^^xsd:gYear .
+    time:inXSDgYear "0016"^^xsd:gYear .
 
 aecol:horizon_5_end a time:Instant ;
-    time:inXSDgYear "-0007"^^xsd:gYear .
+    time:inXSDgYear "0028"^^xsd:gYear .
 
 aecol:horizon_5_geom a sf:Polygon ;
-    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 7.58444 51.6125, 8.540724 47.373008))"^^geosparql:wktLiteral .
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.72231 47.53323, 4.66829 52.45207, 5.16186 52.05774, 8.29349 47.59059, 7.72231 47.53323))"^^geosparql:wktLiteral .
 
 ae:eoE031_begin a time:Instant ;
     time:inXSDgYear "0016"^^xsd:gYear .
@@ -659,7 +659,7 @@ ae:BWYway a lado:event,
     geosparql:hasGeometry ae:BWYway_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     time:hasBeginning ae:BWYway_begin ;
     time:hasEnd ae:BWYway_end .
 
@@ -685,7 +685,7 @@ ae:Bp8JY3 a lado:event,
     geosparql:hasGeometry ae:Bp8JY3_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:Bp8JY3_begin ;
     time:hasEnd ae:Bp8JY3_end .
 
@@ -739,7 +739,7 @@ ae:DJq1mg a lado:event,
     geosparql:hasGeometry ae:DJq1mg_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     skos:relatedMatch <http://openstreetmap.org/way/111263486> ;
     time:hasBeginning ae:DJq1mg_begin ;
     time:hasEnd ae:DJq1mg_end .
@@ -768,7 +768,7 @@ ae:DeeX7G a lado:event,
     geosparql:hasGeometry ae:DeeX7G_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_bc0009,
-        aecol:horizon_5 ;
+        aecol:horizon_1 ;
     time:hasBeginning ae:DeeX7G_begin ;
     time:hasEnd ae:DeeX7G_end .
 
@@ -848,7 +848,7 @@ ae:JwKRVN a lado:event,
     geosparql:hasGeometry ae:JwKRVN_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_bc0009,
-        aecol:horizon_5 ;
+        aecol:horizon_1 ;
     time:hasBeginning ae:JwKRVN_begin ;
     time:hasEnd ae:JwKRVN_end .
 
@@ -875,7 +875,7 @@ ae:K4wDrp a lado:event,
     geosparql:hasGeometry ae:K4wDrp_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:K4wDrp_begin ;
     time:hasEnd ae:K4wDrp_end .
 
@@ -901,7 +901,7 @@ ae:KROWel a lado:event,
     geosparql:hasGeometry ae:KROWel_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028,
-        aecol:horizon_1 ;
+        aecol:horizon_5 ;
     skos:closeMatch <http://openstreetmap.org/way/106663898> ;
     time:hasBeginning ae:KROWel_begin ;
     time:hasEnd ae:KROWel_end .
@@ -928,7 +928,7 @@ ae:LG4D5x a lado:event,
     geosparql:hasGeometry ae:LG4D5x_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     time:hasBeginning ae:LG4D5x_begin ;
     time:hasEnd ae:LG4D5x_end .
 
@@ -956,7 +956,7 @@ ae:N48RZG a lado:event,
     geosparql:hasGeometry ae:N48RZG_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:N48RZG_begin ;
     time:hasEnd ae:N48RZG_end .
 
@@ -984,7 +984,7 @@ ae:NRzOWx a lado:event,
     geosparql:hasGeometry ae:NRzOWx_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     skos:closeMatch <http://openstreetmap.org/way/115007886> ;
     time:hasBeginning ae:NRzOWx_begin ;
     time:hasEnd ae:NRzOWx_end .
@@ -1011,7 +1011,7 @@ ae:O9rjkJ a lado:event,
     geosparql:hasGeometry ae:O9rjkJ_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0012_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:O9rjkJ_begin ;
     time:hasEnd ae:O9rjkJ_end .
 
@@ -1037,7 +1037,7 @@ ae:OmaMbj a lado:event,
     geosparql:hasGeometry ae:OmaMbj_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     skos:closeMatch <http://openstreetmap.org/way/107475507> ;
     time:hasBeginning ae:OmaMbj_begin ;
     time:hasEnd ae:OmaMbj_end .
@@ -1122,7 +1122,7 @@ ae:QW3vzV a lado:event,
     geosparql:hasGeometry ae:QW3vzV_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     time:hasBeginning ae:QW3vzV_begin ;
     time:hasEnd ae:QW3vzV_end .
 
@@ -1148,7 +1148,7 @@ ae:VJwKp7 a lado:event,
     geosparql:hasGeometry ae:VJwKp7_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028,
-        aecol:horizon_1 ;
+        aecol:horizon_5 ;
     time:hasBeginning ae:VJwKp7_begin ;
     time:hasEnd ae:VJwKp7_end .
 
@@ -1176,7 +1176,7 @@ ae:VvXl2y a lado:event,
     geosparql:hasGeometry ae:VvXl2y_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028,
-        aecol:horizon_1 ;
+        aecol:horizon_5 ;
     skos:exactMatch <http://openstreetmap.org/node/6654634631> ;
     time:hasBeginning ae:VvXl2y_begin ;
     time:hasEnd ae:VvXl2y_end .
@@ -1313,7 +1313,7 @@ ae:b8OX2q a lado:event,
     geosparql:hasGeometry ae:b8OX2q_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:b8OX2q_begin ;
     time:hasEnd ae:b8OX2q_end .
 
@@ -1341,7 +1341,7 @@ ae:bwrZ4y a lado:event,
     geosparql:hasGeometry ae:bwrZ4y_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     time:hasBeginning ae:bwrZ4y_begin ;
     time:hasEnd ae:bwrZ4y_end .
 
@@ -1369,7 +1369,7 @@ ae:eoE031 a lado:event,
     geosparql:hasGeometry ae:eoE031_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028,
-        aecol:horizon_1 ;
+        aecol:horizon_5 ;
     skos:closeMatch <http://openstreetmap.org/way/107475469> ;
     time:hasBeginning ae:eoE031_begin ;
     time:hasEnd ae:eoE031_end .
@@ -1398,7 +1398,7 @@ ae:ewr5bR a lado:event,
     geosparql:hasGeometry ae:ewr5bR_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:ewr5bR_begin ;
     time:hasEnd ae:ewr5bR_end .
 
@@ -1424,7 +1424,7 @@ ae:ez8xNq a lado:event,
     geosparql:hasGeometry ae:ez8xNq_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     time:hasBeginning ae:ez8xNq_begin ;
     time:hasEnd ae:ez8xNq_end .
 
@@ -1452,7 +1452,7 @@ ae:g64Ky0 a lado:event,
     geosparql:hasGeometry ae:g64Ky0_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_bc0009,
-        aecol:horizon_5 ;
+        aecol:horizon_1 ;
     skos:closeMatch <http://openstreetmap.org/node/3483897061> ;
     time:hasBeginning ae:g64Ky0_begin ;
     time:hasEnd ae:g64Ky0_end .
@@ -1481,7 +1481,7 @@ ae:gL6OAG a lado:event,
     geosparql:hasGeometry ae:gL6OAG_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     skos:relatedMatch <http://openstreetmap.org/way/55938422> ;
     time:hasBeginning ae:gL6OAG_begin ;
     time:hasEnd ae:gL6OAG_end .
@@ -1508,7 +1508,7 @@ ae:gw8Kxp a lado:event,
     geosparql:hasGeometry ae:gw8Kxp_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0013,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:gw8Kxp_begin ;
     time:hasEnd ae:gw8Kxp_end .
 
@@ -1534,7 +1534,7 @@ ae:j2lK5y a lado:event,
     geosparql:hasGeometry ae:j2lK5y_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     time:hasBeginning ae:j2lK5y_begin ;
     time:hasEnd ae:j2lK5y_end .
 
@@ -1562,7 +1562,7 @@ ae:kNA9dJ a lado:event,
     geosparql:hasGeometry ae:kNA9dJ_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:kNA9dJ_begin ;
     time:hasEnd ae:kNA9dJ_end .
 
@@ -1588,7 +1588,7 @@ ae:lKmJ9q a lado:event,
     geosparql:hasGeometry ae:lKmJ9q_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0012_ad0009,
-        aecol:horizon_4 ;
+        aecol:horizon_2 ;
     time:hasBeginning ae:lKmJ9q_begin ;
     time:hasEnd ae:lKmJ9q_end .
 
@@ -1642,7 +1642,7 @@ ae:n47Ll8 a lado:event,
     geosparql:hasGeometry ae:n47Ll8_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0011_bc0007,
-        aecol:horizon_5 ;
+        aecol:horizon_1 ;
     time:hasBeginning ae:n47Ll8_begin ;
     time:hasEnd ae:n47Ll8_end .
 
@@ -1696,7 +1696,7 @@ ae:qLXYbG a lado:event,
     geosparql:hasGeometry ae:qLXYbG_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028,
-        aecol:horizon_1 ;
+        aecol:horizon_5 ;
     time:hasBeginning ae:qLXYbG_begin ;
     time:hasEnd ae:qLXYbG_end .
 
@@ -1722,7 +1722,7 @@ ae:rQ80WO a lado:event,
     geosparql:hasGeometry ae:rQ80WO_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_bc0009,
-        aecol:horizon_5 ;
+        aecol:horizon_1 ;
     time:hasBeginning ae:rQ80WO_begin ;
     time:hasEnd ae:rQ80WO_end .
 
@@ -1750,7 +1750,7 @@ ae:v1O46L a lado:event,
     geosparql:hasGeometry ae:v1O46L_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0016_ad0028,
-        aecol:horizon_1 ;
+        aecol:horizon_5 ;
     time:hasBeginning ae:v1O46L_begin ;
     time:hasEnd ae:v1O46L_end .
 
@@ -1778,7 +1778,7 @@ ae:wm71YX a lado:event,
     geosparql:hasGeometry ae:wm71YX_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_ad0008_ad0013,
-        aecol:horizon_2 ;
+        aecol:horizon_4 ;
     skos:closeMatch <http://openstreetmap.org/way/333211842> ;
     time:hasBeginning ae:wm71YX_begin ;
     time:hasEnd ae:wm71YX_end .
@@ -1805,7 +1805,7 @@ ae:xVy2j7 a lado:event,
     geosparql:hasGeometry ae:xVy2j7_geom ;
     geosparql:memberOf aecol:arretine_sites,
         aecol:cluster_bc0015_bc0009,
-        aecol:horizon_5 ;
+        aecol:horizon_1 ;
     time:hasBeginning ae:xVy2j7_begin ;
     time:hasEnd ae:xVy2j7_end .
 
@@ -1895,35 +1895,8 @@ aecol:horizon_1 a lado:ChronologicalHorizon,
         crm:E4_Period,
         geosparql:FeatureCollection,
         time:Interval ;
-    rdfs:label "Horizon 1 (16 CE – 28 CE)"@en,
-        "Horizon 1 (16 apr. J.-C. – 28 apr. J.-C.)"@fr ;
-    lado:hasHorizonMember ae:KROWel,
-        ae:VJwKp7,
-        ae:VvXl2y,
-        ae:eoE031,
-        ae:qLXYbG,
-        ae:v1O46L ;
-    geosparql:hasFeature ae:KROWel,
-        ae:VJwKp7,
-        ae:VvXl2y,
-        ae:eoE031,
-        ae:qLXYbG,
-        ae:v1O46L ;
-    geosparql:hasGeometry aecol:horizon_1_geom ;
-    skos:notation 1 ;
-    time:hasBeginning aecol:horizon_1_begin ;
-    time:hasEnd aecol:horizon_1_end ;
-    time:intervalAfter aecol:horizon_2,
-        aecol:horizon_3,
-        aecol:horizon_4,
-        aecol:horizon_5 .
-
-aecol:horizon_5 a lado:ChronologicalHorizon,
-        crm:E4_Period,
-        geosparql:FeatureCollection,
-        time:Interval ;
-    rdfs:label "Horizon 5 (15 BCE – 7 BCE)"@en,
-        "Horizon 5 (15 av. J.-C. – 7 av. J.-C.)"@fr ;
+    rdfs:label "Horizon 1 (15 BCE – 7 BCE)"@en,
+        "Horizon 1 (15 av. J.-C. – 7 av. J.-C.)"@fr ;
     lado:hasHorizonMember ae:DeeX7G,
         ae:JwKRVN,
         ae:g64Ky0,
@@ -1936,14 +1909,41 @@ aecol:horizon_5 a lado:ChronologicalHorizon,
         ae:n47Ll8,
         ae:rQ80WO,
         ae:xVy2j7 ;
+    geosparql:hasGeometry aecol:horizon_1_geom ;
+    skos:notation 1 ;
+    time:hasBeginning aecol:horizon_1_begin ;
+    time:hasEnd aecol:horizon_1_end ;
+    time:intervalBefore aecol:horizon_4,
+        aecol:horizon_5 ;
+    time:intervalMeets aecol:horizon_3 ;
+    time:intervalStarts aecol:horizon_2 .
+
+aecol:horizon_5 a lado:ChronologicalHorizon,
+        crm:E4_Period,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Horizon 5 (16 CE – 28 CE)"@en,
+        "Horizon 5 (16 apr. J.-C. – 28 apr. J.-C.)"@fr ;
+    lado:hasHorizonMember ae:KROWel,
+        ae:VJwKp7,
+        ae:VvXl2y,
+        ae:eoE031,
+        ae:qLXYbG,
+        ae:v1O46L ;
+    geosparql:hasFeature ae:KROWel,
+        ae:VJwKp7,
+        ae:VvXl2y,
+        ae:eoE031,
+        ae:qLXYbG,
+        ae:v1O46L ;
     geosparql:hasGeometry aecol:horizon_5_geom ;
     skos:notation 5 ;
     time:hasBeginning aecol:horizon_5_begin ;
     time:hasEnd aecol:horizon_5_end ;
-    time:intervalBefore aecol:horizon_1,
-        aecol:horizon_2 ;
-    time:intervalMeets aecol:horizon_3 ;
-    time:intervalStarts aecol:horizon_4 .
+    time:intervalAfter aecol:horizon_1,
+        aecol:horizon_2,
+        aecol:horizon_3,
+        aecol:horizon_4 .
 
 aecol:cluster_bc0015_bc0009 a lado:PeriodCluster,
         geosparql:FeatureCollection,
@@ -2030,43 +2030,8 @@ aecol:horizon_2 a lado:ChronologicalHorizon,
         crm:E4_Period,
         geosparql:FeatureCollection,
         time:Interval ;
-    rdfs:label "Horizon 2 (8 CE – 13 CE)"@en,
-        "Horizon 2 (8 apr. J.-C. – 13 apr. J.-C.)"@fr ;
-    lado:hasHorizonMember ae:BWYway,
-        ae:DJq1mg,
-        ae:LG4D5x,
-        ae:NRzOWx,
-        ae:OmaMbj,
-        ae:QW3vzV,
-        ae:bwrZ4y,
-        ae:ez8xNq,
-        ae:j2lK5y,
-        ae:wm71YX ;
-    geosparql:hasFeature ae:BWYway,
-        ae:DJq1mg,
-        ae:LG4D5x,
-        ae:NRzOWx,
-        ae:OmaMbj,
-        ae:QW3vzV,
-        ae:bwrZ4y,
-        ae:ez8xNq,
-        ae:j2lK5y,
-        ae:wm71YX ;
-    geosparql:hasGeometry aecol:horizon_2_geom ;
-    skos:notation 2 ;
-    time:hasBeginning aecol:horizon_2_begin ;
-    time:hasEnd aecol:horizon_2_end ;
-    time:intervalAfter aecol:horizon_5 ;
-    time:intervalBefore aecol:horizon_1 ;
-    time:intervalFinishes aecol:horizon_4 ;
-    time:intervalOverlappedBy aecol:horizon_3 .
-
-aecol:horizon_4 a lado:ChronologicalHorizon,
-        crm:E4_Period,
-        geosparql:FeatureCollection,
-        time:Interval ;
-    rdfs:label "Horizon 4 (15 BCE – 13 CE)"@en,
-        "Horizon 4 (15 av. J.-C. – 13 apr. J.-C.)"@fr ;
+    rdfs:label "Horizon 2 (15 BCE – 13 CE)"@en,
+        "Horizon 2 (15 av. J.-C. – 13 apr. J.-C.)"@fr ;
     lado:hasHorizonMember ae:Bp8JY3,
         ae:K4wDrp,
         ae:N48RZG,
@@ -2087,14 +2052,49 @@ aecol:horizon_4 a lado:ChronologicalHorizon,
         ae:gw8Kxp,
         ae:kNA9dJ,
         ae:lKmJ9q ;
+    geosparql:hasGeometry aecol:horizon_2_geom ;
+    skos:notation 2 ;
+    time:hasBeginning aecol:horizon_2_begin ;
+    time:hasEnd aecol:horizon_2_end ;
+    time:intervalBefore aecol:horizon_5 ;
+    time:intervalContains aecol:horizon_3 ;
+    time:intervalFinishedBy aecol:horizon_4 ;
+    time:intervalStartedBy aecol:horizon_1 .
+
+aecol:horizon_4 a lado:ChronologicalHorizon,
+        crm:E4_Period,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Horizon 4 (8 CE – 13 CE)"@en,
+        "Horizon 4 (8 apr. J.-C. – 13 apr. J.-C.)"@fr ;
+    lado:hasHorizonMember ae:BWYway,
+        ae:DJq1mg,
+        ae:LG4D5x,
+        ae:NRzOWx,
+        ae:OmaMbj,
+        ae:QW3vzV,
+        ae:bwrZ4y,
+        ae:ez8xNq,
+        ae:j2lK5y,
+        ae:wm71YX ;
+    geosparql:hasFeature ae:BWYway,
+        ae:DJq1mg,
+        ae:LG4D5x,
+        ae:NRzOWx,
+        ae:OmaMbj,
+        ae:QW3vzV,
+        ae:bwrZ4y,
+        ae:ez8xNq,
+        ae:j2lK5y,
+        ae:wm71YX ;
     geosparql:hasGeometry aecol:horizon_4_geom ;
     skos:notation 4 ;
     time:hasBeginning aecol:horizon_4_begin ;
     time:hasEnd aecol:horizon_4_end ;
-    time:intervalBefore aecol:horizon_1 ;
-    time:intervalContains aecol:horizon_3 ;
-    time:intervalFinishedBy aecol:horizon_2 ;
-    time:intervalStartedBy aecol:horizon_5 .
+    time:intervalAfter aecol:horizon_1 ;
+    time:intervalBefore aecol:horizon_5 ;
+    time:intervalFinishes aecol:horizon_2 ;
+    time:intervalOverlappedBy aecol:horizon_3 .
 
 aecol:horizon_3 a lado:ChronologicalHorizon,
         crm:E4_Period,
@@ -2130,10 +2130,10 @@ aecol:horizon_3 a lado:ChronologicalHorizon,
     skos:notation 3 ;
     time:hasBeginning aecol:horizon_3_begin ;
     time:hasEnd aecol:horizon_3_end ;
-    time:intervalBefore aecol:horizon_1 ;
-    time:intervalDuring aecol:horizon_4 ;
-    time:intervalMetBy aecol:horizon_5 ;
-    time:intervalOverlaps aecol:horizon_2 .
+    time:intervalBefore aecol:horizon_5 ;
+    time:intervalDuring aecol:horizon_2 ;
+    time:intervalMetBy aecol:horizon_1 ;
+    time:intervalOverlaps aecol:horizon_4 .
 
 aecol:cluster_ad0008_ad0013 a lado:PeriodCluster,
         geosparql:FeatureCollection,
