@@ -1,6 +1,6 @@
 ﻿horizon,start,end,n_findspots,findspots
-1,16.0,28.0,6,"Augst, Insula 20 · Augst, Theater · Maastricht · Vechten · Velsen · Zurzach, Lager"
-2,8.0,13.0,10,"Augsburg, Stadt · Augst, Insula 31 · Avenches, Insula 15 · Bregenz · Friedberg · Nijmegen, Trajanusplein · Nijmegen, Valkhof · Oberwinterthur, Römerstr. 186 · Vindonissa, Königsfelden · Wiesbaden"
+1,-15.0,-7.0,6,"Basel, Lager · Dangstetten · Nijmegen, Lager · Oberaden · Titelberg · Zürich, Lindenhof"
+2,-15.0,13.0,10,"Asberg, Lager · Augsburg-Oberhausen · Basel, Lagerdorf · Lausanne-Vidy · Liberchies · Namur · Neuss · Rödgen · Vindonissa, Militärstation · Worms"
 3,-7.0,9.0,12,"Asberg, Lagerdorf · Bad Nauheim · Bonn, Boeselagerhof · Braives · Conimbriga · Haltern · Lorenzberg · Mainz, Legionslager · Nijmegen, Lager (Brunsting) · Tongeren · Vetera I · Vindonissa, Scheuerhof"
-4,-15.0,13.0,10,"Asberg, Lager · Augsburg-Oberhausen · Basel, Lagerdorf · Lausanne-Vidy · Liberchies · Namur · Neuss · Rödgen · Vindonissa, Militärstation · Worms"
-5,-15.0,-7.0,6,"Basel, Lager · Dangstetten · Nijmegen, Lager · Oberaden · Titelberg · Zürich, Lindenhof"
+4,8.0,13.0,10,"Augsburg, Stadt · Augst, Insula 31 · Avenches, Insula 15 · Bregenz · Friedberg · Nijmegen, Trajanusplein · Nijmegen, Valkhof · Oberwinterthur, Römerstr. 186 · Vindonissa, Königsfelden · Wiesbaden"
+5,16.0,28.0,6,"Augst, Insula 20 · Augst, Theater · Maastricht · Vechten · Velsen · Zurzach, Lager"

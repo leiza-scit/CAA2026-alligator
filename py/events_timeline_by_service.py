@@ -56,6 +56,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import wd_repro  # noqa: E402, F401  (imported for its effect)
 from horizons import (  # noqa: E402  (shared horizon definition)
     FINDSPOT_HORIZON,
+    HORIZON_DISPLAY_ORDER,
     HORIZON_OF,
     HORIZONS,
     PERCENT_LABEL_CORRECTIONS,
@@ -224,7 +225,7 @@ STRINGS = {
             "construction rather than by measurement — those cells are printed on a "
             "grey background for that reason. Its share of the assemblage, however, "
             "is the strongest dating signal in the material: it runs from 6 % in "
-            "horizon 5 to 92 % in horizon 1. The two questions are separate; the "
+            "horizon 1 to 92 % in horizon 5. The two questions are separate; the "
             "shares are reported in the accompanying tables. A dash (—) marks the "
             "different case of no data at all."
         ),
@@ -294,8 +295,8 @@ STRINGS = {
             "d'un groupe sur SES PROPRES sous-types, et non la quantité présente de "
             "ce groupe. Le Service II ne comporte qu'un seul stade chronologique et "
             "reste donc indéfini ici (—), alors que sa part de l'assemblage est le "
-            "signal de datation le plus fort du matériel : de 6 % à l'horizon 5 à "
-            "92 % à l'horizon 1. Ce sont deux questions distinctes."
+            "signal de datation le plus fort du matériel : de 6 % à l'horizon 1 à "
+            "92 % à l'horizon 5. Ce sont deux questions distinctes."
         ),
     },
 }
@@ -383,7 +384,7 @@ HORIZON_CSV = OUTPUT_DIR / "horizon_intervals.csv"
 
 # ---------------------------------------------------------------------------
 # Chronological horizons
-# Assign each findspot to a horizon (1 = latest … 5 = earliest). This is the
+# Assign each findspot to a horizon (1 = earliest … 5 = latest). This is the
 # single place to edit: to MOVE a findspot to another horizon, just change its
 # number below. Everything downstream (aggregation, figure, CSV, the per-horizon
 # findspot list) is derived from this table automatically.
@@ -1120,7 +1121,10 @@ def plot_within_group_heatmap(results, output_path: Path, lang="en"):
     first = results[scheme_names[0]][0]
     measurable = results[scheme_names[0]][3]
     groups = list(first.columns)
-    horizons = list(first.index)
+    # Rows follow the timeline convention — latest material at the top — rather
+    # than the numerical order, so horizon 5 heads the figure and horizon 1
+    # closes it. See the note in py/horizons.py.
+    horizons = [h for h in HORIZON_DISPLAY_ORDER if h in first.index]
     col_labels = [gdisp.get(g, g) for g in groups]
 
     # One row per (scheme, horizon); blocks keep their scheme's order.

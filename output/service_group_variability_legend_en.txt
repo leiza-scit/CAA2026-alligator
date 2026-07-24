@@ -17,8 +17,8 @@ IMPORTANT: these panels measure only how a group's material is distributed over 
 They do not measure how much of a group is present. Service II, for instance, contains a single
 chronological stage, so its variance is 0.00 and its quality 1.00 by construction rather than by
 measurement — those cells are printed on a grey background for that reason. Its share of the
-assemblage, however, is the strongest dating signal in the material: it runs from 6 % in horizon 5
-to 92 % in horizon 1. The two questions are separate; the shares are reported in the accompanying
+assemblage, however, is the strongest dating signal in the material: it runs from 6 % in horizon 1
+to 92 % in horizon 5. The two questions are separate; the shares are reported in the accompanying
 tables. A dash (—) marks the different case of no data at all.
 
 Panels
@@ -36,13 +36,13 @@ Oblique-rim plate · Service I · Service II
 
 Findspots per horizon
 ---------------------
-Horizon 1: Zurzach, Lager · Velsen · Vechten · Maastricht · Augst, Theater · Augst, Insula 20
-Horizon 2: Wiesbaden · Vindonissa, Königsfelden · Oberwinterthur, Römerstr. 186 · Nijmegen, Valkhof
-           · Nijmegen, Trajanusplein · Friedberg · Bregenz · Avenches, Insula 15 · Augst, Insula 31
-           · Augsburg, Stadt
+Horizon 1: Oberaden · Zürich, Lindenhof · Titelberg · Nijmegen, Lager · Dangstetten · Basel, Lager
+Horizon 2: Rödgen · Namur · Worms · Vindonissa, Militärstation · Neuss · Liberchies · Lausanne-Vidy
+           · Basel, Lagerdorf · Augsburg-Oberhausen · Asberg, Lager
 Horizon 3: Vindonissa, Scheuerhof · Vetera I · Tongeren · Nijmegen, Lager (Brunsting) · Mainz,
            Legionslager · Lorenzberg · Haltern · Conimbriga · Braives · Bonn, Boeselagerhof · Bad
            Nauheim · Asberg, Lagerdorf
-Horizon 4: Rödgen · Namur · Worms · Vindonissa, Militärstation · Neuss · Liberchies · Lausanne-Vidy
-           · Basel, Lagerdorf · Augsburg-Oberhausen · Asberg, Lager
-Horizon 5: Oberaden · Zürich, Lindenhof · Titelberg · Nijmegen, Lager · Dangstetten · Basel, Lager
+Horizon 4: Wiesbaden · Vindonissa, Königsfelden · Oberwinterthur, Römerstr. 186 · Nijmegen, Valkhof
+           · Nijmegen, Trajanusplein · Friedberg · Bregenz · Avenches, Insula 15 · Augst, Insula 31
+           · Augsburg, Stadt
+Horizon 5: Zurzach, Lager · Velsen · Vechten · Maastricht · Augst, Theater · Augst, Insula 20

@@ -17,7 +17,7 @@ choix.
 IMPORTANT : ces panneaux mesurent uniquement la répartition du matériel d'un groupe sur SES PROPRES
 sous-types, et non la quantité présente de ce groupe. Le Service II ne comporte qu'un seul stade
 chronologique et reste donc indéfini ici (—), alors que sa part de l'assemblage est le signal de
-datation le plus fort du matériel : de 6 % à l'horizon 5 à 92 % à l'horizon 1. Ce sont deux
+datation le plus fort du matériel : de 6 % à l'horizon 1 à 92 % à l'horizon 5. Ce sont deux
 questions distinctes.
 
 Panneaux
@@ -36,13 +36,13 @@ Assiette à bord oblique · Service I · Service II
 
 Sites par horizon
 -----------------
-Horizon 1: Zurzach, Lager · Velsen · Vechten · Maastricht · Augst, Theater · Augst, Insula 20
-Horizon 2: Wiesbaden · Vindonissa, Königsfelden · Oberwinterthur, Römerstr. 186 · Nijmegen, Valkhof
-           · Nijmegen, Trajanusplein · Friedberg · Bregenz · Avenches, Insula 15 · Augst, Insula 31
-           · Augsburg, Stadt
+Horizon 1: Oberaden · Zürich, Lindenhof · Titelberg · Nijmegen, Lager · Dangstetten · Basel, Lager
+Horizon 2: Rödgen · Namur · Worms · Vindonissa, Militärstation · Neuss · Liberchies · Lausanne-Vidy
+           · Basel, Lagerdorf · Augsburg-Oberhausen · Asberg, Lager
 Horizon 3: Vindonissa, Scheuerhof · Vetera I · Tongeren · Nijmegen, Lager (Brunsting) · Mainz,
            Legionslager · Lorenzberg · Haltern · Conimbriga · Braives · Bonn, Boeselagerhof · Bad
            Nauheim · Asberg, Lagerdorf
-Horizon 4: Rödgen · Namur · Worms · Vindonissa, Militärstation · Neuss · Liberchies · Lausanne-Vidy
-           · Basel, Lagerdorf · Augsburg-Oberhausen · Asberg, Lager
-Horizon 5: Oberaden · Zürich, Lindenhof · Titelberg · Nijmegen, Lager · Dangstetten · Basel, Lager
+Horizon 4: Wiesbaden · Vindonissa, Königsfelden · Oberwinterthur, Römerstr. 186 · Nijmegen, Valkhof
+           · Nijmegen, Trajanusplein · Friedberg · Bregenz · Avenches, Insula 15 · Augst, Insula 31
+           · Augsburg, Stadt
+Horizon 5: Zurzach, Lager · Velsen · Vechten · Maastricht · Augst, Theater · Augst, Insula 20

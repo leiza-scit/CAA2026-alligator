@@ -14,7 +14,13 @@ matter:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from horizons import FINDSPOT_HORIZON, resolve_horizon, build_horizon_intervals
 
-Horizon 1 is the latest, horizon 5 the earliest.
+Horizon 1 is the EARLIEST, horizon 5 the latest — the archaeological reading,
+in which the numbering runs with time rather than against it.
+
+Note for figures: several of them stack the horizons vertically and keep the
+timeline convention of the latest material at the top. They therefore iterate
+over HORIZON_DISPLAY_ORDER (5 → 1), not over the plain numerical order, so that
+renumbering changed the labels without moving a single row.
 """
 
 from __future__ import annotations
@@ -41,24 +47,24 @@ PERCENT_LABEL_CORRECTIONS: dict[str, str] = {
 # Everything downstream — RDF graph, CSVs, figures — follows automatically.
 
 FINDSPOT_HORIZON = {
-    # Horizon 1 (latest)
-    "Zurzach, Lager": 1,
-    "Velsen": 1,
-    "Vechten": 1,
-    "Maastricht": 1,
-    "Augst, Theater": 1,
-    "Augst, Insula 20": 1,
-    # Horizon 2
-    "Wiesbaden": 2,
-    "Vindonissa, Königsfelden": 2,
-    "Oberwinterthur, Römerstr. 186": 2,
-    "Nijmegen, Valkhof": 2,
-    "Nijmegen, Trajanusplein": 2,
-    "Friedberg": 2,
-    "Bregenz": 2,
-    "Avenches, Insula 15": 2,
-    "Augst, Insula 31": 2,
-    "Augsburg, Stadt": 2,
+    # Horizon 5 (latest)
+    "Zurzach, Lager": 5,
+    "Velsen": 5,
+    "Vechten": 5,
+    "Maastricht": 5,
+    "Augst, Theater": 5,
+    "Augst, Insula 20": 5,
+    # Horizon 4
+    "Wiesbaden": 4,
+    "Vindonissa, Königsfelden": 4,
+    "Oberwinterthur, Römerstr. 186": 4,
+    "Nijmegen, Valkhof": 4,
+    "Nijmegen, Trajanusplein": 4,
+    "Friedberg": 4,
+    "Bregenz": 4,
+    "Avenches, Insula 15": 4,
+    "Augst, Insula 31": 4,
+    "Augsburg, Stadt": 4,
     # Horizon 3
     "Vindonissa, Scheuerhof": 3,
     "Vetera I": 3,
@@ -72,24 +78,24 @@ FINDSPOT_HORIZON = {
     "Bonn, Boeselagerhof": 3,
     "Bad Nauheim": 3,
     "Asberg, Lagerdorf": 3,
-    # Horizon 4
-    "Rödgen": 4,
-    "Namur": 4,
-    "Worms": 4,
-    "Vindonissa, Militärstation": 4,
-    "Neuss": 4,
-    "Liberchies": 4,
-    "Lausanne-Vidy": 4,
-    "Basel, Lagerdorf": 4,
-    "Augsburg-Oberhausen": 4,
-    "Asberg, Lager": 4,
-    # Horizon 5 (earliest)
-    "Oberaden": 5,   # moved from Horizon 4
-    "Zürich, Lindenhof": 5,
-    "Titelberg": 5,
-    "Nijmegen, Lager": 5,
-    "Dangstetten": 5,
-    "Basel, Lager": 5,
+    # Horizon 2
+    "Rödgen": 2,
+    "Namur": 2,
+    "Worms": 2,
+    "Vindonissa, Militärstation": 2,
+    "Neuss": 2,
+    "Liberchies": 2,
+    "Lausanne-Vidy": 2,
+    "Basel, Lagerdorf": 2,
+    "Augsburg-Oberhausen": 2,
+    "Asberg, Lager": 2,
+    # Horizon 1 (earliest)
+    "Oberaden": 1,   # moved from Horizon 4
+    "Zürich, Lindenhof": 1,
+    "Titelberg": 1,
+    "Nijmegen, Lager": 1,
+    "Dangstetten": 1,
+    "Basel, Lager": 1,
 }
 
 
@@ -99,6 +105,11 @@ HORIZONS: dict[int, list[str]] = {}
 for _label, _h in FINDSPOT_HORIZON.items():
     HORIZONS.setdefault(_h, []).append(_label)
 HORIZONS = {h: HORIZONS[h] for h in sorted(HORIZONS)}  # order 1..5
+
+# Numerical order (earliest first) for tables and the RDF graph, and display
+# order (latest first) for figures that stack horizons top to bottom.
+HORIZON_NUMBERS = sorted(HORIZONS)
+HORIZON_DISPLAY_ORDER = list(reversed(HORIZON_NUMBERS))
 
 
 # ==============================================================================

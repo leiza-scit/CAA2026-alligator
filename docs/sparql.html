@@ -39,7 +39,7 @@
   
   <section class="query" id="q-horizons-overview">
     <h2>1. The five chronological horizons</h2>
-    <p class="intro">The starting point for everything else: each horizon with its interval and how many findspots it holds. Horizon 1 is the latest, horizon 5 the earliest. The interval is the envelope of the horizon's findspots, from the earliest start to the latest end.</p>
+    <p class="intro">The starting point for everything else: each horizon with its interval and how many findspots it holds. Horizon 1 is the earliest, horizon 5 the latest. The interval is the envelope of the horizon's findspots, from the earliest start to the latest end.</p>
     
     <textarea class="sparql" id="src-horizons-overview" spellcheck="false"
               rows="13">SELECT ?horizon ?label ?begin ?end (COUNT(?site) AS ?findspots)
@@ -64,7 +64,7 @@ ORDER BY ?horizon</textarea>
   
   <section class="query" id="q-horizon-succession">
     <h2>2. How the horizons relate to one another</h2>
-    <p class="intro">The graph carries all twenty pairwise Allen relations between the horizons, so the sequence can be queried rather than read off a figure. Horizon 5 *meets* horizon 3 — one ends exactly where the other begins — while horizon 4 *contains* horizon 3 entirely.</p>
+    <p class="intro">The graph carries all twenty pairwise Allen relations between the horizons, so the sequence can be queried rather than read off a figure. Horizon 1 *meets* horizon 3 — one ends exactly where the other begins — while horizon 2 *contains* horizon 3 entirely.</p>
     
     <textarea class="sparql" id="src-horizon-succession" spellcheck="false"
               rows="9">SELECT ?horizonA ?relation ?horizonB
@@ -142,7 +142,7 @@ ORDER BY ?horizon ?findspot</textarea>
   
   <section class="query" id="q-horizon-cluster-composition">
     <h2>5. Which seriation clusters does each horizon absorb?</h2>
-    <p class="intro">Both groupings live in the same graph, so one query can join them. A period cluster is computed — findspots the seriation gave an identical start and end year; a horizon is interpretive. Horizons 1 to 3 rest on a single cluster each, horizons 4 and 5 merge several, which is exactly why their envelopes are wider than their members.</p>
+    <p class="intro">Both groupings live in the same graph, so one query can join them. A period cluster is computed — findspots the seriation gave an identical start and end year; a horizon is interpretive. Horizons 3 to 5 rest on a single cluster each, horizons 1 and 2 merge several, which is exactly why their envelopes are wider than their members.</p>
     
     <textarea class="sparql" id="src-horizon-cluster-composition" spellcheck="false"
               rows="13">SELECT ?horizon ?cluster (COUNT(?site) AS ?findspots)

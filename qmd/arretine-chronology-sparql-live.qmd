@@ -16,8 +16,8 @@ An interactive companion to the CAA 2026 contribution: the same queries as the p
 **Two groupings, one graph.** A `lado:PeriodCluster` groups findspots that the
 seriation gave exactly the same start and end year. A
 `lado:ChronologicalHorizon` is the phase a findspot was *assigned* to.
-Horizons 1–3 coincide with a single cluster each, but horizon 4 absorbs three
-clusters and horizon 5 two, so a horizon's interval is the *envelope* of its
+Horizons 3–5 coincide with a single cluster each, but horizon 2 absorbs three
+clusters and horizon 1 two, so a horizon's interval is the *envelope* of its
 members and can be wider than any findspot in it.
 
 **Astronomical year numbering.** Dates are `xsd:gYear` literals in the
@@ -104,7 +104,7 @@ print(f"{len(base)} triples loaded from {GRAPH_URL}")
 
 ## Step 2 — The five chronological horizons
 
-The starting point for everything else: each horizon with its interval and how many findspots it holds. Horizon 1 is the latest, horizon 5 the earliest. The interval is the envelope of the horizon's findspots, from the earliest start to the latest end.
+The starting point for everything else: each horizon with its interval and how many findspots it holds. Horizon 1 is the earliest, horizon 5 the latest. The interval is the envelope of the horizon's findspots, from the earliest start to the latest end.
 
 ```{pyodide}
 #| autorun: false
@@ -134,7 +134,7 @@ print(f"\n{len(rows)} rows")
 
 ## Step 3 — How the horizons relate to one another
 
-The graph carries all twenty pairwise Allen relations between the horizons, so the sequence can be queried rather than read off a figure. Horizon 5 *meets* horizon 3 — one ends exactly where the other begins — while horizon 4 *contains* horizon 3 entirely.
+The graph carries all twenty pairwise Allen relations between the horizons, so the sequence can be queried rather than read off a figure. Horizon 1 *meets* horizon 3 — one ends exactly where the other begins — while horizon 2 *contains* horizon 3 entirely.
 
 ```{pyodide}
 #| autorun: false
@@ -227,7 +227,7 @@ print(f"\n{len(rows)} rows")
 
 ## Step 6 — Which seriation clusters does each horizon absorb?
 
-Both groupings live in the same graph, so one query can join them. A period cluster is computed — findspots the seriation gave an identical start and end year; a horizon is interpretive. Horizons 1 to 3 rest on a single cluster each, horizons 4 and 5 merge several, which is exactly why their envelopes are wider than their members.
+Both groupings live in the same graph, so one query can join them. A period cluster is computed — findspots the seriation gave an identical start and end year; a horizon is interpretive. Horizons 3 to 5 rest on a single cluster each, horizons 1 and 2 merge several, which is exactly why their envelopes are wider than their members.
 
 ```{pyodide}
 #| autorun: false
