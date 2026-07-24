@@ -167,6 +167,10 @@ STRINGS = {
             "Schrägrandteller is a single form — no internal variability (—)."
         ),
         "horizon": "Horizon",
+        "rank_scheme_labels": {
+            "column": "ranks 1…k (stage + form)",
+            "stage": "ranks by stage only",
+        },
         "hz_timeline_title": "Chronological Horizons — Timeline",
         "hz_matrix_title": "Allen Interval Relations Between Horizons",
         "hz_chain_title": "Allen Interval Relations — Nearest-Neighbour Chain",
@@ -197,11 +201,24 @@ STRINGS = {
         ),
         "spread_note": (
             "RGZM method, applied WITHIN each group: every sherd is one observation "
-            "valued by the rank of its sub-type inside its group (column order 1..k). "
-            "variance = STDDEV_SAMP of those ranks · quality q = exp(−CV), CV = s/|x̄|. "
+            "valued by the rank of its sub-type inside its group. variance = "
+            "STDDEV_SAMP of those ranks · quality q = exp(−CV), CV = s/|x̄|. "
             "q → 1 = the group is concentrated in few sub-types; q → 0 = spread across "
-            "its sub-type sequence. n = sherds in that group. Schrägrandteller has one "
-            "sub-type (variance 0, q = 1 where present)."
+            "its sub-type sequence. n = sherds in that group."
+        ),
+        "rank_note": (
+            "The two blocks show the same data under the two competing rank "
+            "assignments. Upper block: ranks follow the column order (Ia cup = 1 … "
+            "Ic plate = 6), so stage and form are mixed and a change of form counts "
+            "as a full chronological step. Lower block: cup and plate of the same "
+            "stage share a rank (Ia = 1, Ib = 2, Ic = 3), so only the stage sequence "
+            "contributes. For Service I the reading is robust — the horizons keep "
+            "their order, the range of q is the same (0.14) and the two series "
+            "correlate at r = 0.998; only the level shifts up by about 0.03. Service "
+            "II, however, consists of a single stage, so under stage-only ranks it "
+            "has no internal spread left (variance 0, q = 1) and carries no "
+            "chronological information at that resolution. Schrägrandteller has one "
+            "sub-type and is trivially concentrated under either scheme."
         ),
     },
     "fr": {
@@ -215,6 +232,10 @@ STRINGS = {
             "Schrägrandteller est une forme unique — pas de variabilité interne (—)."
         ),
         "horizon": "Horizon",
+        "rank_scheme_labels": {
+            "column": "rangs 1…k (stade + forme)",
+            "stage": "rangs par stade seulement",
+        },
         "hz_timeline_title": "Horizons chronologiques — chronologie",
         "hz_matrix_title": "Relations d'intervalles d'Allen entre horizons",
         "hz_chain_title": "Relations d'Allen — chaîne du plus proche voisin",
@@ -245,11 +266,23 @@ STRINGS = {
         ),
         "spread_note": (
             "Méthode RGZM, appliquée À L'INTÉRIEUR de chaque groupe : chaque tesson est "
-            "une observation valuée par le rang de son sous-type dans son groupe (ordre "
-            "1..k). variance = STDDEV_SAMP des rangs · qualité q = exp(−CV), CV = s/|x̄|. "
+            "une observation valuée par le rang de son sous-type dans son groupe. "
+            "variance = STDDEV_SAMP des rangs · qualité q = exp(−CV), CV = s/|x̄|. "
             "q → 1 = groupe concentré sur peu de sous-types ; q → 0 = dispersé sur la "
-            "séquence. n = tessons du groupe. Schrägrandteller n'a qu'un sous-type "
-            "(variance 0, q = 1 si présent)."
+            "séquence. n = tessons du groupe."
+        ),
+        "rank_note": (
+            "Les deux blocs montrent les mêmes données sous les deux attributions de "
+            "rangs concurrentes. Bloc supérieur : les rangs suivent l'ordre des "
+            "colonnes (Ia tasse = 1 … Ic assiette = 6), stade et forme sont donc "
+            "mêlés. Bloc inférieur : tasse et assiette d'un même stade partagent un "
+            "rang (Ia = 1, Ib = 2, Ic = 3), seule la séquence des stades compte. Pour "
+            "le Service I la lecture est robuste — l'ordre des horizons est conservé, "
+            "l'amplitude de q est identique (0,14), les deux séries corrèlent à "
+            "r = 0,998 ; seul le niveau monte d'environ 0,03. Le Service II en "
+            "revanche ne comporte qu'un seul stade : avec les rangs par stade il n'a "
+            "plus de dispersion interne (variance 0, q = 1) et ne porte aucune "
+            "information chronologique à cette résolution."
         ),
     },
 }
@@ -277,6 +310,34 @@ GROUP_TINT = {
 
 # Findspots with fewer than this many sherds are flagged as low-reliability.
 LOW_N = 20
+
+# ---------------------------------------------------------------------------
+# Rank assignment within a group — the open modelling question
+# ---------------------------------------------------------------------------
+# Every sherd is an observation valued by the rank of its sub-type inside its
+# own group. How those ranks are assigned is a decision, not a fact, and the
+# figure reports both readings side by side rather than hiding the choice:
+#
+#   "column"  ranks follow the column order (Ia Tasse = 1 … Ic Teller = 6).
+#             Stage and form are mixed, so a change of form counts as a full
+#             chronological step even though a cup and a plate of the same
+#             stage are contemporary.
+#   "stage"   cup and plate of the same stage share a rank (Ia = 1, Ib = 2,
+#             Ic = 3), so only the stage sequence contributes. Service II then
+#             consists of a single stage and carries no chronological
+#             information at all — which is the honest consequence, not a bug.
+#
+# `None` means "number the sub-types 1..k in column order".
+RANK_SCHEMES = {
+    "column": None,
+    "stage": {
+        "Schrägrandteller": [1],
+        "Service I": [1, 1, 2, 2, 3, 3],
+        "Service II": [1, 1],
+    },
+}
+# Order in which the schemes appear as blocks in the figure.
+RANK_SCHEME_ORDER = ["column", "stage"]
 
 # ---------------------------------------------------------------------------
 # Timeline row order — manual overrides
@@ -870,11 +931,13 @@ def _rgzm_variance_quality(group_counts: np.ndarray, positions: np.ndarray):
     return (mean, s, cv, q, int(N))
 
 
-def compute_within_group_rgzm(counts_df):
+def compute_within_group_rgzm(counts_df, scheme="column"):
     """Per horizon and per GROUP: RGZM variance/quality *within* the group.
 
     Within each group the sub-types are the observations: every sherd is valued
-    by the rank of its sub-type inside its own group (column order → 1..k). The
+    by the rank of its sub-type inside its own group. Which ranks those are is
+    set by `scheme` (see RANK_SCHEMES): "column" numbers them 1..k in column
+    order, "stage" gives cup and plate of the same stage the same rank. The
     RGZM measures are then computed over those within-group ranks (see
     ``_rgzm_variance_quality``):
         s = STDDEV_SAMP(sub-type ranks)      (variance within the group)
@@ -889,6 +952,7 @@ def compute_within_group_rgzm(counts_df):
     group_names = list(groups)
     horizons = sorted(set(HORIZON_OF.values()))
     counts0 = counts_df.fillna(0)
+    rank_map = RANK_SCHEMES.get(scheme)
 
     var_df = pd.DataFrame(index=horizons, columns=group_names, dtype=float)
     qual_df = pd.DataFrame(index=horizons, columns=group_names, dtype=float)
@@ -901,7 +965,11 @@ def compute_within_group_rgzm(counts_df):
         n_horizon[h] = int(pooled.sum())
         for g in group_names:
             sub = pooled[groups[g]].to_numpy(dtype=float)   # sub-type counts
-            ranks = np.arange(1, len(sub) + 1, dtype=float)  # within-group ranks
+            if rank_map is None:
+                ranks = np.arange(1, len(sub) + 1, dtype=float)
+            else:
+                ranks = np.asarray(rank_map[g], dtype=float)
+            assert len(ranks) == len(sub), f"rank list for {g} has the wrong length"
             _, s, _, q, N = _rgzm_variance_quality(sub, ranks)
             var_df.loc[h, g] = s
             qual_df.loc[h, g] = q
@@ -913,17 +981,26 @@ def compute_within_group_rgzm(counts_df):
     return var_df, qual_df, ncell_df, n_horizon
 
 
-def write_group_spread_csv(var_df, qual_df, ncell_df, csv_path: Path):
-    """Write within-group variance, quality and n per horizon per group to CSV."""
+def write_group_spread_csv(results, csv_path: Path):
+    """Write within-group variance, quality and n per horizon, for every scheme.
+
+    One column block per rank scheme, so the two readings can be compared in a
+    spreadsheet as directly as in the figure.
+    """
     csv_path.parent.mkdir(parents=True, exist_ok=True)
-    out = pd.DataFrame(index=var_df.index)
-    out.index.name = var_df.index.name or "horizon"
-    for g in var_df.columns:
-        out[f"{g} — n"] = ncell_df[g].astype(int)
-        out[f"{g} — variance (STDDEV_SAMP)"] = var_df[g].round(3)
-        out[f"{g} — quality exp(-CV)"] = qual_df[g].round(3)
+    schemes = [k for k in RANK_SCHEME_ORDER if k in results]
+    first = results[schemes[0]][0]
+    out = pd.DataFrame(index=first.index)
+    out.index.name = first.index.name or "horizon"
+    for scheme in schemes:
+        var_df, qual_df, ncell_df = results[scheme]
+        for g in var_df.columns:
+            out[f"[{scheme}] {g} — n"] = ncell_df[g].astype(int)
+            out[f"[{scheme}] {g} — variance (STDDEV_SAMP)"] = var_df[g].round(3)
+            out[f"[{scheme}] {g} — quality exp(-CV)"] = qual_df[g].round(3)
     out.to_csv(csv_path, encoding="utf-8-sig")
-    print(f"✓ Within-group variance/quality CSV saved: {csv_path}  ({out.shape[0]} rows)")
+    print(f"✓ Within-group variance/quality CSV saved: {csv_path}  "
+          f"({out.shape[0]} rows, {len(schemes)} rank scheme(s))")
 
 
 def write_group_variability_legend(output_path: Path, lang="en", width=100):
@@ -946,6 +1023,8 @@ def write_group_variability_legend(output_path: Path, lang="en", width=100):
 
     lines += rule(s["legend_method"], "-")
     lines.append(textwrap.fill(s["spread_note"], width=width))
+    lines.append("")
+    lines.append(textwrap.fill(s["rank_note"], width=width))
     lines.append("")
 
     lines += rule(s["legend_panels"], "-")
@@ -974,24 +1053,48 @@ def write_group_variability_legend(output_path: Path, lang="en", width=100):
     print(f"✓ Legend text saved: {output_path}")
 
 
-def plot_within_group_heatmap(
-    var_df, qual_df, ncell_df, output_path: Path, lang="en"
-):
+def plot_within_group_heatmap(results, output_path: Path, lang="en"):
     """Paired heatmap of the within-group variance (left) and quality (right).
 
-    Rows are the five horizons (Horizon 1 at the top), columns the three service
-    groups. Left panel colours the within-group variance s (STDDEV_SAMP over the
-    group's sub-type ranks); right panel the within-group quality q = exp(−CV).
-    Each cell prints the value and, in small grey, the group's sherd count n.
-    Undefined cells (group absent, or n < 2) show "—" in light grey.
+    Columns are the three service groups. Rows are the five horizons, repeated
+    once per rank scheme: the two blocks show the same data read under the two
+    competing assignments of sub-type ranks (see RANK_SCHEMES), so the figure
+    reports the modelling choice instead of hiding it. Left panel colours the
+    variance s (STDDEV_SAMP over the ranks), right panel the quality q =
+    exp(−CV). Each cell prints the value and, in small grey, the group's sherd
+    count n; undefined cells (group absent, or n < 2) show "—".
+
+    Parameters
+    ----------
+    results     : dict  scheme name -> (var_df, qual_df, ncell_df)
+    output_path : Path  destination JPEG (a .svg twin is saved too)
+    lang        : str   UI language ("en" / "fr")
     """
     s = STRINGS.get(lang, STRINGS["en"])
     gdisp = GROUP_DISPLAY.get(lang, GROUP_DISPLAY["en"])
+    scheme_names = [k for k in RANK_SCHEME_ORDER if k in results]
 
-    groups = list(var_df.columns)
-    horizons = list(var_df.index)
-    n_rows = len(horizons)
+    first = results[scheme_names[0]][0]
+    groups = list(first.columns)
+    horizons = list(first.index)
     col_labels = [gdisp.get(g, g) for g in groups]
+
+    # One row per (scheme, horizon); blocks keep their scheme's order.
+    rows = [(scheme, h) for scheme in scheme_names for h in horizons]
+    n_rows = len(rows)
+    block_size = len(horizons)
+
+    # Blocks are separated by a band of empty background rather than by a rule:
+    # the gap reads as a break without adding a graphic element that competes
+    # with the cells. Row i of block b sits at y = i + b * BLOCK_GAP.
+    BLOCK_GAP = 0.65
+    row_y = [i + (i // block_size) * BLOCK_GAP for i in range(n_rows)]
+    y_min, y_max = -0.5, row_y[-1] + 0.5
+
+    def cell_value(kind, i, j):
+        """kind: 0 = variance, 1 = quality, 2 = n."""
+        scheme, h = rows[i]
+        return results[scheme][kind].loc[h, groups[j]]
 
 
     # Same red-green palette in both panels, but the variance scale is REVERSED:
@@ -1000,24 +1103,24 @@ def plot_within_group_heatmap(
     cmap_var = matplotlib.colormaps["RdYlGn_r"].copy()
     cmap_qual = matplotlib.colormaps["RdYlGn"].copy()
 
-    fig_h = max(3.6, n_rows * 0.72 + 2.4)
+    fig_h = max(3.6, n_rows * 0.62 + 2.8)
     fig, (ax_v, ax_q) = plt.subplots(
         1, 2, figsize=(12, fig_h), sharey=True,
         gridspec_kw={"wspace": 0.08}, layout="constrained",
     )
     fig.patch.set_facecolor("white")
 
-    def _draw(ax, cmap, vmin, vmax, title, fmt, source_df):
+    def _draw(ax, cmap, vmin, vmax, title, fmt, kind):
         # Cells are drawn as individual rectangles rather than with imshow, and
         # the colour bar is un-rasterised, so the SVG stays pure vector: no
         # embedded PNG, fully scalable, and identical byte-for-byte on rebuild.
         norm = Normalize(vmin=vmin, vmax=vmax)
         for i in range(n_rows):
             for j in range(len(groups)):
-                v = source_df.iat[i, j]
+                v = cell_value(kind, i, j)
                 face = "#eeeeee" if pd.isna(v) else cmap(norm(v))
                 ax.add_patch(plt.Rectangle(
-                    (j - 0.5, i - 0.5), 1, 1,
+                    (j - 0.5, row_y[i] - 0.5), 1, 1,
                     facecolor=face, edgecolor="white", linewidth=1.4, zorder=1))
 
         ax.xaxis.set_ticks_position("top")
@@ -1028,28 +1131,37 @@ def plot_within_group_heatmap(
             tick.set_color(GROUP_TINT.get(g, "#000000"))
             tick.set_fontweight("bold")
         ax.set_title(title, fontsize=12, fontweight="bold", pad=24, color="#111111")
-        # Match imshow's framing: row 0 at the top, half-cell margin all round.
+        # Row 0 at the top, half-cell margin all round; the extra height is the
+        # gap between the blocks.
         ax.set_xlim(-0.5, len(groups) - 0.5)
-        ax.set_ylim(n_rows - 0.5, -0.5)
+        ax.set_ylim(y_max, y_min)
 
         for i in range(n_rows):
             for j, g in enumerate(groups):
-                v = source_df.iat[i, j]
-                ng = int(ncell_df.iat[i, j])
+                v = cell_value(kind, i, j)
+                ng = int(cell_value(2, i, j))
                 if pd.isna(v):
-                    ax.text(j, i, "—", ha="center", va="center",
+                    ax.text(j, row_y[i], "—", ha="center", va="center",
                             fontsize=13, color="#888888", zorder=2)
                     continue
                 r, gg, b, _ = cmap(norm(v))
                 lum = 0.299 * r + 0.587 * gg + 0.114 * b
                 tcol = "#111111" if lum > 0.55 else "#ffffff"
-                ax.text(j, i - 0.13, fmt(v), ha="center", va="center",
+                ax.text(j, row_y[i] - 0.13, fmt(v), ha="center", va="center",
                         fontsize=13, color=tcol, zorder=2)
-                ax.text(j, i + 0.22, f"n={ng}", ha="center", va="center",
+                ax.text(j, row_y[i] + 0.22, f"n={ng}", ha="center", va="center",
                         fontsize=8, color=tcol, alpha=0.8, zorder=2)
         ax.tick_params(which="minor", length=0)
+        # No outer frame: each block is outlined separately so the gap between
+        # them stays white all the way through.
         for spine in ax.spines.values():
-            spine.set_edgecolor("#cccccc")
+            spine.set_visible(False)
+        for b in range(len(scheme_names)):
+            top = row_y[b * block_size] - 0.5
+            bottom = row_y[(b + 1) * block_size - 1] + 0.5
+            ax.add_patch(plt.Rectangle(
+                (-0.5, top), len(groups), bottom - top,
+                fill=False, edgecolor="#cccccc", linewidth=1.0, zorder=3))
 
         # Colour bar fed by a stand-alone mappable (there is no image any more);
         # set_rasterized(False) keeps its gradient as vector polygons.
@@ -1061,15 +1173,30 @@ def plot_within_group_heatmap(
         cbar.ax.tick_params(labelsize=9)
         return sm
 
-    var_vmax = float(np.nanmax(var_df.to_numpy(dtype=float))) or 1.0
-    _draw(ax_v, cmap_var, 0.0, var_vmax, s["var_panel"],
-          lambda v: f"{v:.2f}", var_df)
-    _draw(ax_q, cmap_qual, 0.0, 1.0, s["qual_panel"],
-          lambda v: f"{v:.2f}", qual_df)
+    # The variance scale is shared by both blocks, so the two readings stay
+    # comparable; it is taken over every scheme, not just the first.
+    all_var = np.concatenate([results[k][0].to_numpy(dtype=float).ravel()
+                              for k in scheme_names])
+    var_vmax = float(np.nanmax(all_var)) or 1.0
+    _draw(ax_v, cmap_var, 0.0, var_vmax, s["var_panel"], lambda v: f"{v:.2f}", 0)
+    _draw(ax_q, cmap_qual, 0.0, 1.0, s["qual_panel"], lambda v: f"{v:.2f}", 1)
 
-    ax_v.set_yticks(range(n_rows))
-    ax_v.set_yticklabels([f"{s['horizon']} {h}" for h in horizons],
+    ax_v.set_yticks(row_y)
+    ax_v.set_yticklabels([f"{s['horizon']} {h}" for _, h in rows],
                          fontsize=11, fontweight="bold")
+
+    # --- Scheme label per block (the blocks are set apart by the gap) -------
+    scheme_label = s.get("rank_scheme_labels", {})
+    y_tr = ax_q.get_yaxis_transform()   # x in axes fraction, y in data
+    for b, scheme in enumerate(scheme_names):
+        lo = row_y[b * block_size]
+        hi = row_y[(b + 1) * block_size - 1]
+        ax_q.plot([1.045, 1.045], [lo - 0.42, hi + 0.42], transform=y_tr,
+                  color="#555555", linewidth=1.4, clip_on=False, zorder=5)
+        ax_q.text(1.065, (lo + hi) / 2,
+                  scheme_label.get(scheme, scheme), transform=y_tr,
+                  rotation=90, ha="left", va="center", fontsize=11,
+                  fontweight="bold", color="#333333", clip_on=False)
 
     # The explanatory legend (method + findspots per horizon) is deliberately
     # NOT drawn here; it is written to a separate text file per language by
@@ -1814,8 +1941,14 @@ def main():
     # --- CSV deliverables ---
     write_percentages_csv(pct_df, PERCENT_CSV)
 
-    var_df, qual_df, ncell_df, n_horizon = compute_within_group_rgzm(counts_df)
-    write_group_spread_csv(var_df, qual_df, ncell_df, GROUP_VAR_CSV)
+    # Both rank schemes are computed; the figure shows them as two blocks so the
+    # modelling choice stays visible rather than being decided silently.
+    results = {}
+    for scheme in RANK_SCHEME_ORDER:
+        var_df, qual_df, ncell_df, n_horizon = compute_within_group_rgzm(
+            counts_df, scheme=scheme)
+        results[scheme] = (var_df, qual_df, ncell_df)
+    write_group_spread_csv(results, GROUP_VAR_CSV)
 
     # --- Timeline by service composition (EN + FR) ---
     plot_events_timeline_by_service(
@@ -1827,12 +1960,10 @@ def main():
 
     # --- Within-group variance/quality per horizon per group (EN + FR) ---
     plot_within_group_heatmap(
-        var_df, qual_df, ncell_df,
-        OUTPUT_DIR / "service_group_variability_en.jpg", lang="en"
+        results, OUTPUT_DIR / "service_group_variability_en.jpg", lang="en"
     )
     plot_within_group_heatmap(
-        var_df, qual_df, ncell_df,
-        OUTPUT_DIR / "service_group_variability_fr.jpg", lang="fr"
+        results, OUTPUT_DIR / "service_group_variability_fr.jpg", lang="fr"
     )
 
     # The figure's explanatory legend, as a separate text file per language.

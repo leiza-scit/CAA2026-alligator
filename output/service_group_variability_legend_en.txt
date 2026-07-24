@@ -4,10 +4,19 @@ Within-group variance and quality per horizon — legend
 Method
 ------
 RGZM method, applied WITHIN each group: every sherd is one observation valued by the rank of its
-sub-type inside its group (column order 1..k). variance = STDDEV_SAMP of those ranks · quality q =
-exp(−CV), CV = s/|x̄|. q → 1 = the group is concentrated in few sub-types; q → 0 = spread across its
-sub-type sequence. n = sherds in that group. Schrägrandteller has one sub-type (variance 0, q = 1
-where present).
+sub-type inside its group. variance = STDDEV_SAMP of those ranks · quality q = exp(−CV), CV =
+s/|x̄|. q → 1 = the group is concentrated in few sub-types; q → 0 = spread across its sub-type
+sequence. n = sherds in that group.
+
+The two blocks show the same data under the two competing rank assignments. Upper block: ranks
+follow the column order (Ia cup = 1 … Ic plate = 6), so stage and form are mixed and a change of
+form counts as a full chronological step. Lower block: cup and plate of the same stage share a rank
+(Ia = 1, Ib = 2, Ic = 3), so only the stage sequence contributes. For Service I the reading is
+robust — the horizons keep their order, the range of q is the same (0.14) and the two series
+correlate at r = 0.998; only the level shifts up by about 0.03. Service II, however, consists of a
+single stage, so under stage-only ranks it has no internal spread left (variance 0, q = 1) and
+carries no chronological information at that resolution. Schrägrandteller has one sub-type and is
+trivially concentrated under either scheme.
 
 Panels
 ------

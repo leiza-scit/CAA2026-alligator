@@ -4,10 +4,18 @@ Variance et qualité intra-groupe par horizon — légende
 Méthode
 -------
 Méthode RGZM, appliquée À L'INTÉRIEUR de chaque groupe : chaque tesson est une observation valuée
-par le rang de son sous-type dans son groupe (ordre 1..k). variance = STDDEV_SAMP des rangs ·
-qualité q = exp(−CV), CV = s/|x̄|. q → 1 = groupe concentré sur peu de sous-types ; q → 0 = dispersé
-sur la séquence. n = tessons du groupe. Schrägrandteller n'a qu'un sous-type (variance 0, q = 1 si
-présent).
+par le rang de son sous-type dans son groupe. variance = STDDEV_SAMP des rangs · qualité q =
+exp(−CV), CV = s/|x̄|. q → 1 = groupe concentré sur peu de sous-types ; q → 0 = dispersé sur la
+séquence. n = tessons du groupe.
+
+Les deux blocs montrent les mêmes données sous les deux attributions de rangs concurrentes. Bloc
+supérieur : les rangs suivent l'ordre des colonnes (Ia tasse = 1 … Ic assiette = 6), stade et forme
+sont donc mêlés. Bloc inférieur : tasse et assiette d'un même stade partagent un rang (Ia = 1, Ib =
+2, Ic = 3), seule la séquence des stades compte. Pour le Service I la lecture est robuste — l'ordre
+des horizons est conservé, l'amplitude de q est identique (0,14), les deux séries corrèlent à r =
+0,998 ; seul le niveau monte d'environ 0,03. Le Service II en revanche ne comporte qu'un seul stade
+: avec les rangs par stade il n'a plus de dispersion interne (variance 0, q = 1) et ne porte aucune
+information chronologique à cette résolution.
 
 Panneaux
 --------
