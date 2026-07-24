@@ -160,6 +160,19 @@ STRINGS = {
         ),
         "horizon": "Horizon",
         "share_xlabel": "Share of assemblage (%)",
+        "legend_heading": "Within-group variance and quality per horizon — legend",
+        "legend_method": "Method",
+        "legend_panels": "Panels",
+        "legend_left": "Left panel",
+        "legend_right": "Right panel",
+        "legend_findspots": "Findspots per horizon",
+        "legend_colour": (
+            "Both panels use the same red-green palette, with green always marking "
+            "the favourable case: on the left low variance (concentrated), on the "
+            "right high quality. The variance scale therefore runs green → red, the "
+            "quality scale red → green. Grey cells (—) mark a group that is absent "
+            "from the horizon, or has too few sherds to compute the measure."
+        ),
         "spread_note": (
             "RGZM method, applied WITHIN each group: every sherd is one observation "
             "valued by the rank of its sub-type inside its group (column order 1..k). "
@@ -181,6 +194,19 @@ STRINGS = {
         ),
         "horizon": "Horizon",
         "share_xlabel": "Part de l'assemblage (%)",
+        "legend_heading": "Variance et qualité intra-groupe par horizon — légende",
+        "legend_method": "Méthode",
+        "legend_panels": "Panneaux",
+        "legend_left": "Panneau de gauche",
+        "legend_right": "Panneau de droite",
+        "legend_findspots": "Sites par horizon",
+        "legend_colour": (
+            "Les deux panneaux utilisent la même palette rouge-vert, le vert marquant "
+            "toujours le cas favorable : à gauche une variance faible (concentrée), à "
+            "droite une qualité élevée. L'échelle de variance va donc du vert au rouge, "
+            "celle de qualité du rouge au vert. Les cellules grises (—) indiquent un "
+            "groupe absent de l'horizon, ou trop peu de tessons pour calculer la mesure."
+        ),
         "spread_note": (
             "Méthode RGZM, appliquée À L'INTÉRIEUR de chaque groupe : chaque tesson est "
             "une observation valuée par le rang de son sous-type dans son groupe (ordre "
@@ -623,6 +649,9 @@ def plot_events_timeline_by_service(events: dict, pct_df, output_path: Path, lan
                 "start": start,
                 "end": end,
                 "pct": pct_row,          # pandas Series or None
+                # Horizon is carried for the separator lines only — the row ORDER
+                # stays date-driven (sort below), it is not grouped by horizon.
+                "horizon": resolve_horizon(label),
             }
         )
 
@@ -731,12 +760,31 @@ def plot_events_timeline_by_service(events: dict, pct_df, output_path: Path, lan
             zorder=4,
         )
 
-        # Subtle separator between cluster groups (same rule as the original).
-        if i > 0 and (
-            rows[i]["start"] != rows[i - 1]["start"]
-            or rows[i]["end"] != rows[i - 1]["end"]
-        ):
-            ax.axhline(i - 0.5, color="#cccccc", linewidth=0.6, linestyle="--", zorder=1)
+    # --- Horizon blocks: separator lines and a label per block ---------------
+    # The rows are ordered so that each horizon forms one contiguous block; the
+    # dividing lines therefore mark the horizon boundaries (they used to mark
+    # every change of the estimated start/end, i.e. the Alligator clusters).
+    blocks = []
+    if n:
+        lo = 0
+        for i in range(1, n + 1):
+            if i == n or rows[i]["horizon"] != rows[lo]["horizon"]:
+                blocks.append((lo, i - 1, rows[lo]["horizon"]))
+                lo = i
+
+    y_tr = ax.get_yaxis_transform()  # x in axes fraction, y in data coordinates
+    for lo, hi, h in blocks:
+        if hi < n - 1:  # boundary line above this block
+            ax.axhline(hi + 0.5, color="#9aa4ad", linewidth=1.0,
+                       linestyle="--", zorder=1.6)
+        if h is None:
+            continue
+        # Bracket plus rotated label just outside the right-hand spine.
+        ax.plot([1.006, 1.006], [lo - 0.42, hi + 0.42], transform=y_tr,
+                color="#666666", linewidth=1.2, clip_on=False, zorder=5)
+        ax.text(1.016, (lo + hi) / 2, f"{s['horizon']} {h}", transform=y_tr,
+                rotation=90, ha="left", va="center", fontsize=11,
+                fontweight="bold", color="#333333", clip_on=False)
 
     # --- Axes (identical styling to the original) ---
     all_starts = [r["start"] for r in rows]
@@ -916,6 +964,54 @@ def write_group_spread_csv(var_df, qual_df, ncell_df, csv_path: Path):
     print(f"✓ Within-group variance/quality CSV saved: {csv_path}  ({out.shape[0]} rows)")
 
 
+def write_group_variability_legend(output_path: Path, lang="en", width=100):
+    """Write the figure's explanatory legend to a plain-text file.
+
+    Everything that used to sit underneath the heatmap — the method note, what
+    each panel shows, the colour convention and the findspots making up each
+    horizon — is written here instead, so the figure stays uncluttered and the
+    wording can be reused directly in a caption or catalogue entry.
+    """
+    s = STRINGS.get(lang, STRINGS["en"])
+    gdisp = GROUP_DISPLAY.get(lang, GROUP_DISPLAY["en"])
+
+    def rule(title, char="="):
+        return [title, char * len(title)]
+
+    lines = []
+    lines += rule(s["legend_heading"])
+    lines.append("")
+
+    lines += rule(s["legend_method"], "-")
+    lines.append(textwrap.fill(s["spread_note"], width=width))
+    lines.append("")
+
+    lines += rule(s["legend_panels"], "-")
+    pad = max(len(s["legend_left"]), len(s["legend_right"]))
+    lines.append(f"{(s['legend_left'] + ':').ljust(pad + 2)}{s['var_panel']}")
+    lines.append(f"{(s['legend_right'] + ':').ljust(pad + 2)}{s['qual_panel']}")
+    lines.append("")
+    lines.append(textwrap.fill(s["legend_colour"], width=width))
+    lines.append("")
+    # Column order of the heatmap, so the text stands on its own.
+    lines.append(" · ".join(gdisp.get(g, g) for g in GROUP_TINT))
+    lines.append("")
+
+    lines += rule(s["legend_findspots"], "-")
+    for h in sorted(HORIZONS):
+        prefix = f"{s['horizon']} {h}: "
+        members = " · ".join(HORIZONS[h])
+        lines.append(
+            textwrap.fill(members, width=width,
+                          initial_indent=prefix,
+                          subsequent_indent=" " * len(prefix))
+        )
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"✓ Legend text saved: {output_path}")
+
+
 def plot_within_group_heatmap(
     var_df, qual_df, ncell_df, output_path: Path, lang="en"
 ):
@@ -938,8 +1034,11 @@ def plot_within_group_heatmap(
     var_arr = np.ma.masked_invalid(var_df.to_numpy(dtype=float))
     qual_arr = np.ma.masked_invalid(qual_df.to_numpy(dtype=float))
 
-    cmap_var = matplotlib.colormaps["cividis"].copy()
-    cmap_qual = matplotlib.colormaps["RdYlGn"].copy()  # red = low, green = high
+    # Same red-green palette in both panels, but the variance scale is REVERSED:
+    # low variance is the favourable case, so green consistently marks "good" in
+    # both panels (low variance / high quality) and red the unfavourable end.
+    cmap_var = matplotlib.colormaps["RdYlGn_r"].copy()
+    cmap_qual = matplotlib.colormaps["RdYlGn"].copy()
     cmap_var.set_bad("#eeeeee")
     cmap_qual.set_bad("#eeeeee")
 
@@ -997,20 +1096,9 @@ def plot_within_group_heatmap(
     ax_v.set_yticklabels([f"{s['horizon']} {h}" for h in horizons],
                          fontsize=11, fontweight="bold")
 
-    foot_fs = 9
-    wrap_chars = max(80, int(fig.get_figwidth() * 72 / (foot_fs * 0.55)))
-    note_lines = [textwrap.fill(s["spread_note"], width=wrap_chars), ""]
-    for h in horizons:
-        prefix = f"{s['horizon']} {h}: "
-        members = " · ".join(HORIZONS.get(h, []))
-        note_lines.append(
-            textwrap.fill(members, width=wrap_chars,
-                          initial_indent=prefix,
-                          subsequent_indent=" " * len(prefix))
-        )
-    fig.text(0.01, -0.02, "\n".join(note_lines),
-             fontsize=foot_fs, color="#555555", ha="left", va="top",
-             linespacing=1.5)
+    # The explanatory legend (method + findspots per horizon) is deliberately
+    # NOT drawn here; it is written to a separate text file per language by
+    # write_group_variability_legend(), keeping the figure itself uncluttered.
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     fig.savefig(str(output_path), dpi=300, format="jpeg",
@@ -1053,6 +1141,14 @@ def main():
     plot_within_group_heatmap(
         var_df, qual_df, ncell_df,
         OUTPUT_DIR / "service_group_variability_fr.jpg", lang="fr"
+    )
+
+    # The figure's explanatory legend, as a separate text file per language.
+    write_group_variability_legend(
+        OUTPUT_DIR / "service_group_variability_legend_en.txt", lang="en"
+    )
+    write_group_variability_legend(
+        OUTPUT_DIR / "service_group_variability_legend_fr.txt", lang="fr"
     )
 
 

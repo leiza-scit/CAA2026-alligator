@@ -1,0 +1,35 @@
+Variance et qualité intra-groupe par horizon — légende
+======================================================
+
+Méthode
+-------
+Méthode RGZM, appliquée À L'INTÉRIEUR de chaque groupe : chaque tesson est une observation valuée
+par le rang de son sous-type dans son groupe (ordre 1..k). variance = STDDEV_SAMP des rangs ·
+qualité q = exp(−CV), CV = s/|x̄|. q → 1 = groupe concentré sur peu de sous-types ; q → 0 = dispersé
+sur la séquence. n = tessons du groupe. Schrägrandteller n'a qu'un sous-type (variance 0, q = 1 si
+présent).
+
+Panneaux
+--------
+Panneau de gauche: Variance intra-groupe  (STDDEV_SAMP des rangs de sous-types)
+Panneau de droite: Qualité intra-groupe  (q = exp(−CV))
+
+Les deux panneaux utilisent la même palette rouge-vert, le vert marquant toujours le cas favorable :
+à gauche une variance faible (concentrée), à droite une qualité élevée. L'échelle de variance va
+donc du vert au rouge, celle de qualité du rouge au vert. Les cellules grises (—) indiquent un
+groupe absent de l'horizon, ou trop peu de tessons pour calculer la mesure.
+
+Assiette à bord oblique · Service I · Service II
+
+Sites par horizon
+-----------------
+Horizon 1: Zurzach, Lager · Velsen · Vechten · Maastricht · Augst, Theater · Augst, Insula 20
+Horizon 2: Wiesbaden · Vindonissa, Königsfelden · Oberwinterthur, Römerstr. 186 · Nijmegen, Valkhof
+           · Nijmegen, Trajanusplein · Friedberg · Bregenz · Avenches, Insula 15 · Augst, Insula 31
+           · Augsburg, Stadt
+Horizon 3: Vindonissa, Scheuerhof · Vetera I · Tongeren · Nijmegen, Lager (Brunsting) · Mainz,
+           Legionslager · Lorenzberg · Haltern · Conimbriga · Braives · Bonn, Boeselagerhof · Bad
+           Nauheim · Asberg, Lagerdorf
+Horizon 4: Rödgen · Namur · Worms · Vindonissa, Militärstation · Neuss · Liberchies · Lausanne-Vidy
+           · Basel, Lagerdorf · Augsburg-Oberhausen · Asberg, Lager
+Horizon 5: Oberaden · Zürich, Lindenhof · Titelberg · Nijmegen, Lager · Dangstetten · Basel, Lager
