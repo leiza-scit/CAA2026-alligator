@@ -38,6 +38,7 @@ from __future__ import annotations
 # ==============================================================================
 
 from pathlib import Path
+import sys
 import textwrap
 
 import pandas as pd
@@ -45,12 +46,19 @@ import numpy as np
 import matplotlib
 
 matplotlib.use("Agg")  # Non-interactive backend — no display required
+
+# Byte-reproducible figure output: pins the SVG hash salt and SOURCE_DATE_EPOCH,
+# so an unchanged figure produces an identical file and a diff appears only when
+# something really changed. Imported for its effect; there is nothing to call.
+# The sys.path line makes the sibling module resolvable no matter which working
+# directory the script is launched from (VS Code often uses the repository root).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import wd_repro  # noqa: E402, F401  (imported for its effect)
+
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.ticker import AutoMinorLocator
 from rdflib import Graph, Namespace, RDF, RDFS
-
-import wd_repro          # noqa: F401  (imported for its effect)
 
 
 # ==============================================================================

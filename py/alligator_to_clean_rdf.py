@@ -36,6 +36,14 @@ import pandas as pd
 import matplotlib
 
 matplotlib.use("Agg")  # Non-interactive backend — no display required
+
+# Byte-reproducible figure output: pins the SVG hash salt and SOURCE_DATE_EPOCH,
+# so an unchanged figure produces an identical file and a diff appears only when
+# something really changed. Imported for its effect; there is nothing to call.
+# The sys.path line makes the sibling module resolvable no matter which working
+# directory the script is launched from (VS Code often uses the repository root).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import wd_repro  # noqa: E402, F401  (imported for its effect)
 import matplotlib.pyplot as plt
 from matplotlib.ticker import AutoMinorLocator
 import networkx as nx
@@ -43,8 +51,6 @@ from rdflib import Graph, Literal, Namespace, RDF, RDFS, URIRef
 from rdflib.namespace import DC, XSD
 from shapely.geometry import MultiPoint
 from shapely import wkt as shapely_wkt
-
-import wd_repro          # noqa: F401  (imported for its effect)
 
 
 # ==============================================================================
@@ -107,20 +113,6 @@ FEATURE_COLLECTION_URI = AE_COLLECTIONS["arretine_sites"]
 TTL_LABEL_CORRECTIONS = {
     "Vindoniss, Militärstation": "Vindonissa, Militärstation",
     "Avences, Insula 15": "Avenches, Insula 15",
-}
-
-# ---------------------------------------------------------------------------
-# Timeline row order — manual overrides
-# The individual events timeline sorts by (estimatedstart, estimatedend,
-# label). Where that ordering should be overridden for presentation, list the
-# findspot here together with the findspot it must appear DIRECTLY BELOW in
-# the figure. Only the row changes; the bar keeps its place on the time axis.
-# To move another findspot, add one line: "<findspot>": "<findspot above it>".
-# ---------------------------------------------------------------------------
-TIMELINE_ROW_BELOW = {
-    # Oberaden should sit between "Asberg, Lager" and "Zürich, Lindenhof"
-    # rather than between "Asberg, Lagerdorf" and "Rödgen".
-    "Oberaden": "Asberg, Lager",
 }
 MAPPING_COLS = [
     "csv_label",
@@ -1539,25 +1531,6 @@ def plot_alligator_events_timeline(
     # Sort: primary by estimatedstart, secondary by estimatedend, tertiary by label
     # This groups events by cluster period, matching the JS tool's visual grouping
     rows.sort(key=lambda r: (r["start"], r["end"], r["label"]))
-
-    # Apply the manual row overrides (see TIMELINE_ROW_BELOW in Section 2).
-    # `rows` runs bottom -> top, so "directly below X in the figure" means
-    # "directly before X in this list".
-    for _ovr_label, _ovr_anchor in TIMELINE_ROW_BELOW.items():
-        _moved = next((r for r in rows if r["label"] == _ovr_label), None)
-        if _moved is None:
-            continue
-        rows.remove(_moved)
-        _idx = next(
-            (i for i, r in enumerate(rows) if r["label"] == _ovr_anchor), None
-        )
-        if _idx is None:
-            print(f"  ⚠ Row override skipped: anchor {_ovr_anchor!r} not found.")
-            rows.append(_moved)
-            rows.sort(key=lambda r: (r["start"], r["end"], r["label"]))
-            continue
-        rows.insert(_idx, _moved)
-
     n = len(rows)
 
     # --- Colours matching the JS tool ---

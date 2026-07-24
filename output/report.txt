@@ -1,6 +1,6 @@
 ============================================================
 Alligator Event Mapping
-Timestamp: 2026-07-24 12:03:18
+Timestamp: 2026-07-24 12:14:35
 ============================================================
 Loading TTL file: C:\git\CAA2026-alligator\data\ArretineDatedSitesServicesI_II.ttl
 ✓ 44 events found
