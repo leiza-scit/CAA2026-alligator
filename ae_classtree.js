@@ -1819,17 +1819,6 @@ var tree={
       "http://www.w3.org/2000/01/rdf-schema#member":{
        "http://www.w3.org/2004/02/skos/core#Collection":112
       },
-      "http://www.w3.org/2006/time#hasBeginning":{
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":56,
-       "https://pleiades.stoa.org/places/vocab#Place":44,
-       "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":8,
-       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4
-      },
       "http://www.w3.org/2006/time#hasEnd":{
        "http://archaeology.link/ontology#event":44,
        "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
@@ -1837,9 +1826,20 @@ var tree={
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
        "http://www.w3.org/2006/time#Interval":56,
        "https://pleiades.stoa.org/places/vocab#Place":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4,
        "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":8,
-       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":8
+      },
+      "http://www.w3.org/2006/time#hasBeginning":{
+       "http://archaeology.link/ontology#event":44,
+       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
+       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
+       "http://www.w3.org/2006/time#Interval":56,
+       "https://pleiades.stoa.org/places/vocab#Place":44,
+       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4,
+       "http://archaeology.link/ontology#PeriodCluster":8,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":8
       }
      },
      "to":{
@@ -4901,6 +4901,9 @@ var tree={
       "http://www.w3.org/2000/01/rdf-schema#label":{
        "instancecount":44
       },
+      "http://www.w3.org/2004/02/skos/core#relatedMatch":{
+       "instancecount":3
+      },
       "http://www.w3.org/2006/time#hasBeginning":{
        "instancecount":44,
        "http://www.w3.org/2006/time#Instant":44
@@ -4909,14 +4912,11 @@ var tree={
        "instancecount":44,
        "http://www.w3.org/2006/time#Instant":44
       },
-      "http://www.w3.org/2004/02/skos/core#relatedMatch":{
-       "instancecount":3
+      "http://www.w3.org/2004/02/skos/core#closeMatch":{
+       "instancecount":6
       },
       "http://www.w3.org/2004/02/skos/core#exactMatch":{
        "instancecount":1
-      },
-      "http://www.w3.org/2004/02/skos/core#closeMatch":{
-       "instancecount":6
       }
      }
     }
@@ -5171,12 +5171,12 @@ var tree={
     "data":{
      "from":{
       "http://www.opengis.net/ont/geosparql#memberOf":{
+       "http://archaeology.link/ontology#event":88,
        "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":89,
        "http://fuzzy-sl.squirrel.link/ontology/Site":89,
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":89,
-       "https://pleiades.stoa.org/places/vocab#Place":89,
-       "http://archaeology.link/ontology#event":88,
-       "http://www.w3.org/2006/time#Interval":88
+       "http://www.w3.org/2006/time#Interval":88,
+       "https://pleiades.stoa.org/places/vocab#Place":89
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
        "http://www.w3.org/2004/02/skos/core#Collection":17,
@@ -5222,6 +5222,11 @@ var tree={
        "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
        "http://www.w3.org/2006/time#Interval":4
       },
+      "http://www.w3.org/2006/time#intervalOverlaps":{
+       "http://archaeology.link/ontology#PeriodCluster":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
       "http://www.w3.org/2006/time#intervalStarts":{
        "http://archaeology.link/ontology#PeriodCluster":3,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
@@ -5231,11 +5236,6 @@ var tree={
        "http://archaeology.link/ontology#PeriodCluster":3,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
        "http://www.w3.org/2006/time#Interval":3
-      },
-      "http://www.w3.org/2006/time#intervalOverlaps":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
       },
       "http://www.w3.org/2006/time#intervalMetBy":{
        "http://archaeology.link/ontology#PeriodCluster":1,
@@ -5257,26 +5257,14 @@ var tree={
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
        "instancecount":232,
-       "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":8,
-       "http://www.w3.org/2006/time#Interval":228,
        "http://archaeology.link/ontology#event":220,
        "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":224,
        "http://fuzzy-sl.squirrel.link/ontology/Site":224,
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":224,
-       "https://pleiades.stoa.org/places/vocab#Place":224
-      },
-      "http://www.opengis.net/ont/geosparql#hasFeature":{
-       "instancecount":89,
-       "http://archaeology.link/ontology#event":88,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":89,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":89,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":89,
-       "http://www.w3.org/2006/time#Interval":88,
-       "https://pleiades.stoa.org/places/vocab#Place":89
-      },
-      "http://www.w3.org/2000/01/rdf-schema#comment":{
-       "instancecount":1
+       "http://www.w3.org/2006/time#Interval":228,
+       "https://pleiades.stoa.org/places/vocab#Place":224,
+       "http://archaeology.link/ontology#PeriodCluster":8,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":8
       },
       "http://archaeology.link/ontology#hasClusterMember":{
        "instancecount":44,
@@ -5287,11 +5275,20 @@ var tree={
        "http://www.w3.org/2006/time#Interval":44,
        "https://pleiades.stoa.org/places/vocab#Place":44
       },
+      "http://www.opengis.net/ont/geosparql#hasFeature":{
+       "instancecount":89,
+       "http://archaeology.link/ontology#event":88,
+       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":89,
+       "http://fuzzy-sl.squirrel.link/ontology/Site":89,
+       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":89,
+       "http://www.w3.org/2006/time#Interval":88,
+       "https://pleiades.stoa.org/places/vocab#Place":89
+      },
       "http://www.opengis.net/ont/geosparql#hasGeometry":{
        "instancecount":8,
        "http://www.opengis.net/ont/sf#Polygon":5,
-       "http://www.opengis.net/ont/sf#Point":2,
-       "http://www.opengis.net/ont/sf#LineString":1
+       "http://www.opengis.net/ont/sf#LineString":1,
+       "http://www.opengis.net/ont/sf#Point":2
       },
       "http://www.w3.org/2006/time#hasBeginning":{
        "instancecount":8,
@@ -5349,6 +5346,15 @@ var tree={
        "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
        "http://www.w3.org/2006/time#Interval":4
       },
+      "http://www.w3.org/2006/time#intervalOverlappedBy":{
+       "instancecount":5,
+       "http://archaeology.link/ontology#PeriodCluster":5,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
+       "http://www.w3.org/2006/time#Interval":5
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment":{
+       "instancecount":1
+      },
       "http://www.w3.org/2006/time#intervalStartedBy":{
        "instancecount":3,
        "http://archaeology.link/ontology#PeriodCluster":3,
@@ -5360,12 +5366,6 @@ var tree={
        "http://archaeology.link/ontology#PeriodCluster":3,
        "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
        "http://www.w3.org/2006/time#Interval":3
-      },
-      "http://www.w3.org/2006/time#intervalOverlappedBy":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
       },
       "http://www.w3.org/2006/time#intervalMeets":{
        "instancecount":1,
@@ -5448,16 +5448,16 @@ var tree={
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
        "instancecount":181,
+       "http://www.w3.org/2006/time#Instant":112,
        "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":8,
        "http://www.w3.org/2006/time#Interval":68,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":17,
-       "http://archaeology.link/ontology#PeriodCluster":16,
-       "http://www.w3.org/2006/time#Instant":112,
        "http://archaeology.link/ontology#event":44,
        "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
        "http://fuzzy-sl.squirrel.link/ontology/Site":44,
        "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "https://pleiades.stoa.org/places/vocab#Place":44
+       "https://pleiades.stoa.org/places/vocab#Place":44,
+       "http://archaeology.link/ontology#PeriodCluster":16,
+       "http://www.opengis.net/ont/geosparql#FeatureCollection":17
       }
      }
     }
@@ -5514,9 +5514,9 @@ var tree={
       },
       "http://www.w3.org/2000/01/rdf-schema#member":{
        "instancecount":53,
-       "http://www.opengis.net/ont/sf#Point":47,
+       "http://www.opengis.net/ont/sf#LineString":1,
        "http://www.opengis.net/ont/sf#Polygon":5,
-       "http://www.opengis.net/ont/sf#LineString":1
+       "http://www.opengis.net/ont/sf#Point":47
       }
      }
     }
