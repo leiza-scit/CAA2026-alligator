@@ -58,6 +58,7 @@ import wd_repro  # noqa: E402, F401  (imported for its effect)
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.ticker import AutoMinorLocator
+import networkx as nx
 from rdflib import Graph, Namespace, RDF, RDFS
 
 
@@ -86,6 +87,9 @@ SERVICE_COL_END = 10           # column J inclusive -> slice stop is exclusive
 
 # Alligator input namespace (copied from alligator_to_clean_rdf.py, Section 2).
 ALLIGATOR = Namespace("http://archaeology.link/ontology#")
+
+# OWL-Time, used by the ported Allen interval relations (Section 5c).
+OWL_TIME = Namespace("http://www.w3.org/2006/time#")
 
 # Known label corrections for confirmed typos in the Alligator TTL output.
 # (Copied from alligator_to_clean_rdf.py, Section 2.)
@@ -159,6 +163,20 @@ STRINGS = {
             "Schrägrandteller is a single form — no internal variability (—)."
         ),
         "horizon": "Horizon",
+        "hz_timeline_title": "Chronological Horizons — Timeline",
+        "hz_matrix_title": "Allen Interval Relations Between Horizons",
+        "hz_chain_title": "Allen Interval Relations — Nearest-Neighbour Chain",
+        "n_sites": "Number of findspots",
+        "site": "findspot",
+        "sites": "findspots",
+        "axis_a": "Horizon A  (row)",
+        "axis_b": "Horizon B  (column)",
+        "allen_seq": "Sequential (before / after / meets / met-by)",
+        "allen_ovl": "Overlapping (overlaps / overlapped-by)",
+        "allen_con": "Containing (contains / during / starts / finishes …)",
+        "allen_eq": "Equal",
+        "allen_same": "Same horizon",
+        "allen_nearest": "before / after (nearest only)",
         "share_xlabel": "Share of assemblage (%)",
         "legend_heading": "Within-group variance and quality per horizon — legend",
         "legend_method": "Method",
@@ -193,6 +211,20 @@ STRINGS = {
             "Schrägrandteller est une forme unique — pas de variabilité interne (—)."
         ),
         "horizon": "Horizon",
+        "hz_timeline_title": "Horizons chronologiques — chronologie",
+        "hz_matrix_title": "Relations d'intervalles d'Allen entre horizons",
+        "hz_chain_title": "Relations d'Allen — chaîne du plus proche voisin",
+        "n_sites": "Nombre de sites",
+        "site": "site",
+        "sites": "sites",
+        "axis_a": "Horizon A  (ligne)",
+        "axis_b": "Horizon B  (colonne)",
+        "allen_seq": "Séquentiel (before / after / meets / met-by)",
+        "allen_ovl": "Chevauchement (overlaps / overlapped-by)",
+        "allen_con": "Inclusion (contains / during / starts / finishes …)",
+        "allen_eq": "Égal",
+        "allen_same": "Même horizon",
+        "allen_nearest": "before / after (plus proche uniquement)",
         "share_xlabel": "Part de l'assemblage (%)",
         "legend_heading": "Variance et qualité intra-groupe par horizon — légende",
         "legend_method": "Méthode",
@@ -351,6 +383,7 @@ ERA_LABELS = {
 # CSV outputs.
 PERCENT_CSV = OUTPUT_DIR / "service_percentages.csv"
 GROUP_VAR_CSV = OUTPUT_DIR / "service_group_variability.csv"
+HORIZON_CSV = OUTPUT_DIR / "horizon_intervals.csv"
 
 
 def build_service_colours(service_cols: list[str]) -> list:
@@ -1109,6 +1142,760 @@ def plot_within_group_heatmap(
     print(f"✓ Within-group heatmap saved: {output_path}")
 
 
+
+# ==============================================================================
+# SECTION 5c · Horizon intervals, Allen relations and their figures
+# ==============================================================================
+# The three figures below are horizon-based counterparts of the cluster figures
+# produced by alligator_to_clean_rdf.py (cluster_timeline, allen_matrix,
+# allen_chain). The plotting code is ported from that script — clearly marked at
+# each function — and left visually identical; only the underlying intervals
+# change: instead of Alligator's period clusters (events sharing an identical
+# start/end) the intervals are the five chronological horizons.
+#
+# A horizon's interval is the envelope of its findspots: from the earliest start
+# to the latest end of the events assigned to it. Horizons 1-3 happen to coincide
+# with a single cluster each; horizons 4 and 5 merge three and two clusters.
+
+
+def build_horizon_intervals(events: dict) -> list:
+    """Return one interval dict per horizon, shaped like a period cluster.
+
+    The dicts carry the same keys the ported plot functions expect ("start",
+    "end", "members") plus "horizon", so the code taken from
+    alligator_to_clean_rdf.py works unchanged.
+
+    The interval is the envelope over the horizon's findspots: start = earliest
+    estimatedstart, end = latest estimatedend. Horizons without a single dated
+    event are skipped.
+    """
+    buckets: dict = {}
+    for label, ev in events.items():
+        h = resolve_horizon(label)
+        if h is None:
+            continue
+        try:
+            start = float(ev["estimatedstart"])
+            end = float(ev["estimatedend"])
+        except (ValueError, TypeError):
+            continue
+        buckets.setdefault(h, []).append({"label": label, "start": start, "end": end})
+
+    horizons = []
+    for h in sorted(buckets):
+        members = buckets[h]
+        horizons.append({
+            "horizon": h,
+            "start": min(m["start"] for m in members),
+            "end": max(m["end"] for m in members),
+            "members": members,
+        })
+    # Earliest first, matching the ported timeline's own ordering.
+    horizons.sort(key=lambda c: (c["start"], c["end"]))
+    return horizons
+
+
+def write_horizon_intervals_csv(horizons: list, csv_path: Path):
+    """Write the horizon intervals and their membership to CSV."""
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    rows = [{
+        "horizon": c["horizon"],
+        "start": c["start"],
+        "end": c["end"],
+        "n_findspots": len(c["members"]),
+        "findspots": " · ".join(sorted(m["label"] for m in c["members"])),
+    } for c in sorted(horizons, key=lambda c: c["horizon"])]
+    pd.DataFrame(rows).to_csv(csv_path, index=False, encoding="utf-8-sig")
+    print(f"✓ Horizon intervals CSV saved: {csv_path}  ({len(rows)} rows)")
+
+
+# --- ported from alligator_to_clean_rdf.py (Sections 14 and 16) ---------------
+
+def _allen_relations(
+    a_start: float, a_end: float, b_start: float, b_end: float
+) -> list:
+    """Return the list of OWL-Time Allen relation properties that hold between
+    interval A [a_start, a_end] and interval B [b_start, b_end].
+
+    Returns
+    -------
+    list of URIRef
+        OWL-Time property URIs for the applicable Allen relation(s).
+    """
+    relations = []
+
+    if a_end < b_start:
+        relations.append(OWL_TIME.intervalBefore)
+    elif a_end == b_start:
+        relations.append(OWL_TIME.intervalMeets)
+    elif a_start < b_start and b_start < a_end and a_end < b_end:
+        relations.append(OWL_TIME.intervalOverlaps)
+    elif a_start < b_start and a_end == b_end:
+        relations.append(OWL_TIME.intervalFinishedBy)
+    elif a_start < b_start and a_end > b_end:
+        relations.append(OWL_TIME.intervalContains)
+    elif a_start == b_start and a_end < b_end:
+        relations.append(OWL_TIME.intervalStarts)
+    elif a_start == b_start and a_end == b_end:
+        relations.append(OWL_TIME.intervalEquals)
+    elif a_start == b_start and a_end > b_end:
+        relations.append(OWL_TIME.intervalStartedBy)
+    elif a_start > b_start and a_end < b_end:
+        relations.append(OWL_TIME.intervalDuring)
+    elif a_start > b_start and a_end == b_end:
+        relations.append(OWL_TIME.intervalFinishes)
+    elif b_start < a_start and a_start < b_end and b_end < a_end:
+        relations.append(OWL_TIME.intervalOverlappedBy)
+    elif b_end == a_start:
+        relations.append(OWL_TIME.intervalMetBy)
+    elif b_end < a_start:
+        relations.append(OWL_TIME.intervalAfter)
+
+    return relations
+
+
+def plot_horizon_timeline(clusters: list, output_path: Path, lang="en"):
+    """Draw a horizontal timeline showing the five horizons as labelled bars.
+
+    Each horizon is rendered as a bar spanning its own interval, i.e. from the
+    earliest start to the latest end of the findspots assigned to it. Bars are
+    stacked by start year (earliest at the bottom); the findspot count and the
+    year range are printed inside and beside each bar, and a colour gradient
+    encodes how many findspots the horizon contains.
+
+    Ported from plot_cluster_timeline in alligator_to_clean_rdf.py; the input is
+    the horizon list from build_horizon_intervals rather than period clusters.
+
+    Parameters
+    ----------
+    clusters    : list   Output of `build_horizon_intervals`.
+    output_path : Path   Destination JPEG file (a .svg twin is saved too).
+    lang        : str    UI language ("en" / "fr").
+    """
+    s = STRINGS.get(lang, STRINGS["en"])
+    if not clusters:
+        print("  ⚠ No clusters to plot — skipping timeline.")
+        return
+
+    # Sort earliest-start first (top of chart)
+    sorted_clusters = sorted(clusters, key=lambda c: c["start"])
+    n = len(sorted_clusters)
+
+    # --- Figure layout ---
+    fig_h = max(4, n * 0.65 + 2)
+    fig, ax = plt.subplots(figsize=(14, fig_h))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("#f7f7f7")
+
+    # Colour map: member count → colour intensity
+    max_members = max(len(c["members"]) for c in sorted_clusters)
+    cmap = plt.get_cmap("YlOrRd")
+
+    bar_height = 0.55
+    y_positions = list(range(n))
+    bar_labels = []  # filled in the loop, drawn after the axes are scaled
+
+    for i, cluster in enumerate(sorted_clusters):
+        y = y_positions[i]
+        start = cluster["start"]
+        end = cluster["end"]
+        duration = end - start if end != start else 0.5  # point-in-time: thin bar
+        n_members = len(cluster["members"])
+
+        colour = cmap(0.3 + 0.7 * (n_members / max_members))
+
+        # Bar
+        ax.barh(
+            y,
+            duration,
+            left=start,
+            height=bar_height,
+            color=colour,
+            edgecolor="#00000022",
+            linewidth=0.5,
+            align="center",
+        )
+
+        # Labels are placed in a second pass, once the axis limits are known —
+        # only then can the bar width be measured to decide whether the label
+        # fits inside it (see below).
+        bar_labels.append({
+            "y": y,
+            "start": start,
+            "end": end,
+            "range_label": (f"{s['horizon']} {cluster['horizon']} · "
+                            f"{_format_year_label(start)} – {_format_year_label(end)}"),
+            "member_label": (f"{n_members} "
+                             f"{s['site'] if n_members == 1 else s['sites']}"),
+        })
+
+    # --- Axes styling ---
+    all_starts = [c["start"] for c in sorted_clusters]
+    all_ends = [c["end"] for c in sorted_clusters]
+    x_min = min(all_starts) - 3
+    x_max = max(all_ends) + 8
+
+    ax.set_xlim(x_min, x_max)
+    ax.set_ylim(-0.8, n - 0.2)
+    ax.set_yticks([])
+
+    # X-axis: convert to BC/AD labels
+    x_ticks = [t for t in range(int(x_min), int(x_max) + 1, 5)]
+    ax.set_xticks(x_ticks)
+    ax.set_xticklabels(
+        [_format_year_label(t) for t in x_ticks],
+        rotation=45,
+        ha="right",
+        fontsize=8,
+        color="#333333",
+    )
+    ax.xaxis.set_minor_locator(AutoMinorLocator(5))
+    ax.tick_params(axis="x", which="minor", length=3, color="#aaaaaa")
+    ax.tick_params(axis="x", which="major", length=6, color="#888888")
+
+    # Grid lines — only subtle ticks on x-axis, no vertical lines through bars
+    ax.set_axisbelow(True)
+    ax.grid(axis="x", which="major", color="#dddddd", linewidth=0.5, zorder=0)
+    ax.grid(axis="x", which="minor", visible=False)
+
+    # Spine styling
+    for spine in ax.spines.values():
+        spine.set_edgecolor("#cccccc")
+
+    # --- Bar labels: inside the bar when they fit, otherwise beside it --------
+    # The bar width is only known once the x-axis is scaled, so the label pass
+    # happens here. Each label is measured against its bar; if it is wider, the
+    # range and the findspot count are printed together to the right of the bar
+    # instead of spilling out of it onto the background.
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    for bl in bar_labels:
+        y = bl["y"]
+        probe = ax.text(0, 0, bl["range_label"], fontsize=7.5, fontweight="bold")
+        text_px = probe.get_window_extent(renderer=renderer).width
+        probe.remove()
+
+        x0_px = ax.transData.transform((bl["start"], y))[0]
+        x1_px = ax.transData.transform((bl["end"], y))[0]
+        fits = text_px <= (x1_px - x0_px) - 10  # 10 px breathing space
+
+        if fits:
+            ax.text((bl["start"] + bl["end"]) / 2, y, bl["range_label"],
+                    ha="center", va="center", fontsize=7.5,
+                    color="white", fontweight="bold", clip_on=True)
+            ax.text(bl["end"] + 0.3, y, f"  {bl['member_label']}",
+                    ha="left", va="center", fontsize=7.5, color="#333333")
+        else:
+            ax.text(bl["end"] + 0.3, y,
+                    f"  {bl['range_label']} · {bl['member_label']}",
+                    ha="left", va="center", fontsize=7.5,
+                    color="#333333", fontweight="bold")
+
+    # Colorbar gradient legend (continuous, not discrete patches)
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin=1, vmax=max_members))
+    sm.set_array([])
+    cbar = fig.colorbar(
+        sm, ax=ax, orientation="vertical", fraction=0.02, pad=0.02, aspect=20
+    )
+    # Render the colour bar as vector polygons (not a raster image) in SVG output
+    if cbar.solids is not None:
+        cbar.solids.set_rasterized(False)
+    cbar.set_label(s["n_sites"], fontsize=8, color="#333333")
+    cbar.ax.yaxis.set_tick_params(color="#333333", labelsize=7)
+    plt.setp(cbar.ax.yaxis.get_ticklabels(), color="#333333")
+
+    ax.set_title(
+        s["hz_timeline_title"],
+        color="#111111",
+        fontsize=13,
+        fontweight="bold",
+        pad=12,
+    )
+    ax.set_xlabel(s["xlabel"], color="#333333", fontsize=9)
+
+    plt.tight_layout()
+    fig.savefig(
+        str(output_path),
+        dpi=300,
+        format="jpeg",
+        bbox_inches="tight",
+        facecolor=fig.get_facecolor(),
+    )
+    fig.savefig(
+        str(output_path.with_suffix(".svg")),
+        format="svg",
+        bbox_inches="tight",
+        facecolor=fig.get_facecolor(),
+    )
+    plt.close(fig)
+    print(f"✓ Horizon timeline saved: {output_path}")
+
+
+def plot_horizon_allen_matrix(clusters: list, output_path: Path, lang="en"):
+    """Draw a matrix of the Allen interval relations between the horizons.
+
+    Each cell (row A, col B) shows the Allen relation that holds between
+    cluster A and cluster B. Cells are colour-coded by relation family:
+
+      Sequential  (blue)   : before, after, meets, metBy
+      Overlapping (orange) : overlaps, overlappedBy
+      Containing  (red)    : contains, during, starts, startedBy,
+                             finishes, finishedBy
+      Equal       (green)  : equals
+
+    The relation abbreviation is printed inside each cell.
+
+    Parameters
+    ----------
+    clusters    : list   Output of `build_horizon_intervals`.
+    output_path : Path   Destination JPEG file.
+    """
+    s = STRINGS.get(lang, STRINGS["en"])
+    if not clusters:
+        print("  ⚠ No clusters to plot — skipping Allen matrix.")
+        return
+
+    # --- Relation metadata: OWL-Time local name → (abbreviation, colour family) ---
+    RELATIONS = {
+        "intervalBefore": ("before", "#4a90d9"),  # blue
+        "intervalAfter": ("after", "#2c5f8a"),  # dark blue
+        "intervalMeets": ("meets", "#7ab3e0"),  # light blue
+        "intervalMetBy": ("met-by", "#5a9fc5"),  # mid blue
+        "intervalOverlaps": ("overlaps", "#f0a500"),  # orange
+        "intervalOverlappedBy": ("ovlp-by", "#c97d00"),  # dark orange
+        "intervalContains": ("contains", "#d94a4a"),  # red
+        "intervalDuring": ("during", "#a03030"),  # dark red
+        "intervalStarts": ("starts", "#e07070"),  # light red
+        "intervalStartedBy": ("started-by", "#c05050"),  # mid red
+        "intervalFinishes": ("finishes", "#e09090"),  # pink-red
+        "intervalFinishedBy": ("finished-by", "#b04060"),  # rose
+        "intervalEquals": ("equals", "#4caf50"),  # green
+    }
+
+    n = len(clusters)
+
+    # Build short axis labels from year range
+    def _cluster_label(c: dict) -> str:
+        a = round(c["start"])
+        b = round(c["end"])
+        al = f"{abs(a)}BC" if a < 0 else f"AD{a}"
+        bl = f"{abs(b)}BC" if b < 0 else f"AD{b}"
+        return f"{s['horizon'][:1]}{c['horizon']} · {al}–{bl}"
+
+    labels = [_cluster_label(c) for c in clusters]
+
+    # Pre-compute Allen relations for every ordered pair
+    cell_data = {}  # (i, j) → (abbrev, colour)
+    for i, ca in enumerate(clusters):
+        for j, cb in enumerate(clusters):
+            if i == j:
+                continue
+            rels = _allen_relations(ca["start"], ca["end"], cb["start"], cb["end"])
+            if rels:
+                # Extract local name from URIRef, e.g. "...#intervalBefore"
+                rel_local = str(rels[0]).split("#")[-1]
+                if rel_local in RELATIONS:
+                    abbrev, colour = RELATIONS[rel_local]
+                    cell_data[(i, j)] = (abbrev, colour)
+
+    # --- Figure ---
+    cell_size = 1.1
+    fig_size = max(8, n * cell_size + 2)
+    fig, ax = plt.subplots(figsize=(fig_size, fig_size))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("#f9f9f9")
+
+    # Draw cells
+    for (i, j), (abbrev, colour) in cell_data.items():
+        # i = row (A), j = col (B)  — matrix origin top-left
+        rect = plt.Rectangle(
+            [j, n - i - 1], 1, 1, facecolor=colour, edgecolor="white", linewidth=1.5
+        )
+        ax.add_patch(rect)
+        ax.text(
+            j + 0.5,
+            n - i - 0.5,
+            abbrev,
+            ha="center",
+            va="center",
+            fontsize=7,
+            color="white",
+            fontweight="bold",
+        )
+
+    # Diagonal — same cluster, no relation
+    for k in range(n):
+        rect = plt.Rectangle(
+            [k, n - k - 1], 1, 1, facecolor="#dddddd", edgecolor="white", linewidth=1.5
+        )
+        ax.add_patch(rect)
+        ax.text(
+            k + 0.5,
+            n - k - 0.5,
+            "—",
+            ha="center",
+            va="center",
+            fontsize=8,
+            color="#999999",
+        )
+
+    # Axes
+    ax.set_xlim(0, n)
+    ax.set_ylim(0, n)
+    ax.set_xticks([i + 0.5 for i in range(n)])
+    ax.set_yticks([i + 0.5 for i in range(n)])
+    ax.set_xticklabels(labels, rotation=45, ha="left", fontsize=8)
+    ax.set_yticklabels(list(reversed(labels)), fontsize=8)
+    ax.xaxis.set_ticks_position("top")
+    ax.xaxis.set_label_position("top")
+    ax.tick_params(length=0)
+
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+
+    # --- Legend ---
+    import matplotlib.patches as mpatches
+
+    legend_items = [
+        mpatches.Patch(
+            color="#4a90d9", label=s["allen_seq"]
+        ),
+        mpatches.Patch(color="#f0a500", label=s["allen_ovl"]),
+        mpatches.Patch(
+            color="#d94a4a",
+            label=s["allen_con"],
+        ),
+        mpatches.Patch(color="#4caf50", label=s["allen_eq"]),
+        mpatches.Patch(color="#dddddd", label=s["allen_same"]),
+    ]
+    ax.legend(
+        handles=legend_items,
+        loc="lower right",
+        bbox_to_anchor=(1.0, -0.22),
+        fontsize=8,
+        framealpha=0.9,
+        facecolor="white",
+        edgecolor="#cccccc",
+        ncol=2,
+    )
+
+    ax.set_title(
+        s["hz_matrix_title"],
+        color="#111111",
+        fontsize=13,
+        fontweight="bold",
+        pad=28,
+    )
+
+    ax.set_xlabel(s["axis_b"], color="#555555", fontsize=9, labelpad=8)
+    ax.set_ylabel(s["axis_a"], color="#555555", fontsize=9, labelpad=8)
+
+    plt.tight_layout()
+    fig.savefig(
+        str(output_path), dpi=300, format="jpeg", bbox_inches="tight", facecolor="white"
+    )
+    fig.savefig(
+        str(output_path.with_suffix(".svg")),
+        format="svg",
+        bbox_inches="tight",
+        facecolor="white",
+    )
+    plt.close(fig)
+    print(f"✓ Horizon Allen matrix saved: {output_path}")
+
+
+def plot_horizon_allen_chain(clusters: list, output_path: Path, lang="en"):
+    """Draw a directed graph showing only the nearest Allen relation per horizon.
+
+    For each horizon, only the single most immediate relation to its nearest
+    temporal neighbour in each direction (earlier / later) is shown. This
+    produces a clean chain rather than a fully-connected graph.
+
+    Ported from plot_allen_chain in alligator_to_clean_rdf.py; the nodes are the
+    five horizons rather than the period clusters.
+
+    Relation priority (most specific wins):
+      meets > overlaps > contains/during/starts/finishes > before
+
+    Parameters
+    ----------
+    clusters    : list   Output of `build_horizon_intervals`.
+    output_path : Path   Destination JPEG file.
+    """
+    s = STRINGS.get(lang, STRINGS["en"])
+    if not clusters:
+        print("  ⚠ No clusters to plot — skipping Allen chain.")
+        return
+
+    # Relation metadata
+    REL_STYLE = {
+        "intervalMeets": ("#4a90d9", "-", 2.2, "meets"),
+        "intervalOverlaps": ("#f0a500", "--", 2.0, "overlaps"),
+        "intervalOverlappedBy": ("#c97d00", "--", 2.0, "ovlp-by"),
+        "intervalContains": ("#d94a4a", ":", 1.8, "contains"),
+        "intervalDuring": ("#a03030", ":", 1.8, "during"),
+        "intervalStarts": ("#e07070", ":", 1.6, "starts"),
+        "intervalStartedBy": ("#c05050", ":", 1.6, "started-by"),
+        "intervalFinishes": ("#e09090", ":", 1.6, "finishes"),
+        "intervalFinishedBy": ("#b04060", ":", 1.6, "finished-by"),
+        "intervalBefore": ("#aaaaaa", "-", 1.2, "before"),
+        "intervalAfter": ("#aaaaaa", "-", 1.2, "after"),
+    }
+
+    # Priority: lower = more specific / interesting
+    REL_PRIORITY = {
+        "intervalMeets": 0,
+        "intervalOverlaps": 1,
+        "intervalOverlappedBy": 1,
+        "intervalStartedBy": 2,
+        "intervalStarts": 2,
+        "intervalFinishedBy": 2,
+        "intervalFinishes": 2,
+        "intervalContains": 3,
+        "intervalDuring": 3,
+        "intervalBefore": 4,  # fallback — keeps isolated nodes connected
+        "intervalAfter": 4,
+    }
+
+    def _short_label(c: dict) -> str:
+        # Locals deliberately named a/b: `s` is the STRINGS table in this scope.
+        a = round(c["start"])
+        b = round(c["end"])
+        al = f"{abs(a)}BC" if a < 0 else f"AD{a}"
+        bl = f"{abs(b)}BC" if b < 0 else f"AD{b}"
+        return f"{s['horizon'][:1]}{c['horizon']}\n{al}–{bl}"
+
+    n = len(clusters)
+    max_members = max(len(c["members"]) for c in clusters)
+
+    # --- For each cluster, find the single best relation to each other cluster
+    #     but only keep the nearest neighbour in each direction (by midpoint) ---
+    def _midpoint(c):
+        return (c["start"] + c["end"]) / 2
+
+    # Build candidate edges: (i → j, rel_local) keeping only best priority
+    best_edge = {}  # (i, j) → (rel_local, priority)
+    for i, ca in enumerate(clusters):
+        for j, cb in enumerate(clusters):
+            if i == j:
+                continue
+            rels = _allen_relations(ca["start"], ca["end"], cb["start"], cb["end"])
+            for rel_uri in rels:
+                rel_local = str(rel_uri).split("#")[-1]
+                if rel_local not in REL_PRIORITY:
+                    continue
+                prio = REL_PRIORITY[rel_local]
+                if (i, j) not in best_edge or prio < best_edge[(i, j)][1]:
+                    best_edge[(i, j)] = (rel_local, prio)
+
+    # For each cluster keep only the single nearest neighbour in each direction
+    # Use a generous search radius so no cluster stays isolated
+    kept_edges = set()
+    for i, ca in enumerate(clusters):
+        mid_i = _midpoint(ca)
+
+        # All earlier neighbours (no distance cutoff — always connect to nearest)
+        earlier = [
+            (j, _midpoint(clusters[j]))
+            for j in range(n)
+            if j != i and _midpoint(clusters[j]) < mid_i and (i, j) in best_edge
+        ]
+        if earlier:
+            nearest_j = max(earlier, key=lambda x: x[1])[0]
+            kept_edges.add((i, nearest_j))
+
+        # All later neighbours
+        later = [
+            (j, _midpoint(clusters[j]))
+            for j in range(n)
+            if j != i and _midpoint(clusters[j]) > mid_i and (i, j) in best_edge
+        ]
+        if later:
+            nearest_j = min(later, key=lambda x: x[1])[0]
+            kept_edges.add((i, nearest_j))
+
+    # --- Build graph ---
+    G = nx.DiGraph()
+    G.add_nodes_from(range(n))
+    for i, j in kept_edges:
+        rel_local, _ = best_edge[(i, j)]
+        G.add_edge(i, j, rel=rel_local)
+
+    # --- Node positions ---
+    # X = temporal midpoint on time axis
+    # Y = rank within clusters sharing similar midpoints, staggered to avoid overlap
+    # Sort clusters by midpoint for consistent ranking
+    sorted_idx = sorted(
+        range(n),
+        key=lambda i: (
+            _midpoint(clusters[i]),
+            clusters[i]["end"] - clusters[i]["start"],
+        ),
+    )
+
+    # Assign Y by grouping clusters with similar midpoints into lanes
+    pos = {}
+    lane_width = 3.0  # year units — clusters within this range share a lane group
+    lanes: list[list[int]] = []
+    for i in sorted_idx:
+        mid = _midpoint(clusters[i])
+        placed = False
+        for lane in lanes:
+            if abs(_midpoint(clusters[lane[0]]) - mid) < lane_width:
+                lane.append(i)
+                placed = True
+                break
+        if not placed:
+            lanes.append([i])
+
+    # Within each lane group, spread nodes vertically
+    y_spread = 8.0
+    for lane in lanes:
+        x_mid = _midpoint(clusters[lane[0]])
+        if len(lane) == 1:
+            pos[lane[0]] = (x_mid, 0)
+        else:
+            for k, idx in enumerate(lane):
+                y = (k - (len(lane) - 1) / 2) * (y_spread / max(len(lane) - 1, 1))
+                pos[idx] = (x_mid, y)
+
+    node_labels = {i: _short_label(clusters[i]) for i in range(n)}
+    cmap = plt.get_cmap("YlOrRd")
+    node_colours = [
+        cmap(0.3 + 0.7 * len(clusters[i]["members"]) / max_members) for i in range(n)
+    ]
+    node_sizes = [800 + 250 * len(clusters[i]["members"]) for i in range(n)]
+
+    # --- Figure ---
+    fig, ax = plt.subplots(figsize=(16, 8))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("#f9f9f9")
+
+    # Nodes
+    nx.draw_networkx_nodes(
+        G,
+        pos,
+        ax=ax,
+        node_color=node_colours,
+        node_size=node_sizes,
+        edgecolors="#333333",
+        linewidths=0.8,
+    )
+    nx.draw_networkx_labels(
+        G,
+        pos,
+        labels=node_labels,
+        ax=ax,
+        font_size=7.5,
+        font_color="#111111",
+        font_weight="bold",
+    )
+
+    # Edges — draw each separately to respect individual styles, no labels
+    for i, j in G.edges():
+        rel_local = G[i][j]["rel"]
+        colour, ls, lw, _ = REL_STYLE.get(rel_local, ("#888888", "-", 1.5, rel_local))
+
+        nx.draw_networkx_edges(
+            G,
+            pos,
+            edgelist=[(i, j)],
+            ax=ax,
+            edge_color=[colour],
+            width=lw,
+            style=ls,
+            arrows=True,
+            arrowsize=18,
+            arrowstyle="-|>",
+            connectionstyle="arc3,rad=0.15",
+            min_source_margin=24,
+            min_target_margin=24,
+        )
+
+    # --- Axes ---
+    all_starts = [c["start"] for c in clusters]
+    all_ends = [c["end"] for c in clusters]
+    x_min = min(all_starts) - 3
+    x_max = max(all_ends) + 3
+    ax.set_xlim(x_min, x_max)
+    x_ticks = list(range(int(x_min), int(x_max) + 1, 5))
+    ax.set_xticks(x_ticks)
+    ax.set_xticklabels(
+        [_format_year_label(t) for t in x_ticks],
+        rotation=45,
+        ha="right",
+        fontsize=8,
+        color="#333333",
+    )
+    ax.set_yticks([])
+    ax.grid(axis="x", color="#dddddd", linewidth=0.5, zorder=0)
+    ax.set_axisbelow(True)
+    for spine in ax.spines.values():
+        spine.set_edgecolor("#cccccc")
+
+    # --- Legend ---
+    import matplotlib.lines as mlines
+
+    legend_items = [
+        mlines.Line2D(
+            [], [], color="#4a90d9", linewidth=2.2, linestyle="-", label="meets"
+        ),
+        mlines.Line2D(
+            [],
+            [],
+            color="#f0a500",
+            linewidth=2.0,
+            linestyle="--",
+            label="overlaps / overlapped-by",
+        ),
+        mlines.Line2D(
+            [],
+            [],
+            color="#d94a4a",
+            linewidth=1.8,
+            linestyle=":",
+            label="contains / during / starts / finishes …",
+        ),
+        mlines.Line2D(
+            [],
+            [],
+            color="#aaaaaa",
+            linewidth=1.2,
+            linestyle="-",
+            label=s["allen_nearest"],
+        ),
+    ]
+    ax.legend(
+        handles=legend_items,
+        loc="lower right",
+        fontsize=8,
+        framealpha=0.9,
+        facecolor="white",
+        edgecolor="#cccccc",
+    )
+
+    ax.set_title(
+        s["hz_chain_title"],
+        color="#111111",
+        fontsize=13,
+        fontweight="bold",
+        pad=12,
+    )
+
+    plt.tight_layout()
+    fig.savefig(
+        str(output_path), dpi=300, format="jpeg", bbox_inches="tight", facecolor="white"
+    )
+    fig.savefig(
+        str(output_path.with_suffix(".svg")),
+        format="svg",
+        bbox_inches="tight",
+        facecolor="white",
+    )
+    plt.close(fig)
+    print(f"✓ Allen chain saved: {output_path}")
+
+
 # ==============================================================================
 # SECTION 6 · Main Entry Point
 # ==============================================================================
@@ -1150,6 +1937,17 @@ def main():
     write_group_variability_legend(
         OUTPUT_DIR / "service_group_variability_legend_fr.txt", lang="fr"
     )
+
+    # --- Horizon counterparts of the cluster figures (EN + FR) ---
+    horizons = build_horizon_intervals(events)
+    write_horizon_intervals_csv(horizons, HORIZON_CSV)
+    for lg in ("en", "fr"):
+        plot_horizon_timeline(
+            horizons, OUTPUT_DIR / f"horizon_timeline_{lg}.jpg", lang=lg)
+        plot_horizon_allen_matrix(
+            horizons, OUTPUT_DIR / f"horizon_allen_matrix_{lg}.jpg", lang=lg)
+        plot_horizon_allen_chain(
+            horizons, OUTPUT_DIR / f"horizon_allen_chain_{lg}.jpg", lang=lg)
 
 
 if __name__ == "__main__":
