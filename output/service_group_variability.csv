@@ -1,6 +1,6 @@
-﻿horizon,[column] Schrägrandteller — n,[column] Schrägrandteller — variance (STDDEV_SAMP),[column] Schrägrandteller — quality exp(-CV),[column] Service I — n,[column] Service I — variance (STDDEV_SAMP),[column] Service I — quality exp(-CV),[column] Service II — n,[column] Service II — variance (STDDEV_SAMP),[column] Service II — quality exp(-CV),[stage] Schrägrandteller — n,[stage] Schrägrandteller — variance (STDDEV_SAMP),[stage] Schrägrandteller — quality exp(-CV),[stage] Service I — n,[stage] Service I — variance (STDDEV_SAMP),[stage] Service I — quality exp(-CV),[stage] Service II — n,[stage] Service II — variance (STDDEV_SAMP),[stage] Service II — quality exp(-CV)
-1,0,,,103,0.788,0.868,1231,0.435,0.707,0,,,103,0.31,0.898,1231,0.0,1.0
-2,0,,,149,1.009,0.829,327,0.489,0.737,0,,,149,0.437,0.854,327,0.0,1.0
-3,0,,,908,1.073,0.812,1224,0.487,0.704,0,,,908,0.456,0.847,1224,0.0,1.0
-4,4,0.0,1.0,1741,1.356,0.745,961,0.498,0.71,4,0.0,1.0,1741,0.618,0.78,961,0.0,1.0
-5,6,0.0,1.0,446,1.402,0.724,30,0.507,0.708,6,0.0,1.0,446,0.683,0.756,30,0.0,1.0
+﻿horizon,[stage] Schrägrandteller — n,[stage] Schrägrandteller — variance (STDDEV_SAMP),[stage] Schrägrandteller — quality exp(-CV),[stage] Schrägrandteller — measured,[stage] Service I — n,[stage] Service I — variance (STDDEV_SAMP),[stage] Service I — quality exp(-CV),[stage] Service II — n,[stage] Service II — variance (STDDEV_SAMP),[stage] Service II — quality exp(-CV),[stage] Service II — measured
+1,0,,,no (single stage),103,0.31,0.898,1231,0.0,1.0,no (single stage)
+2,0,,,no (single stage),149,0.437,0.854,327,0.0,1.0,no (single stage)
+3,0,,,no (single stage),908,0.456,0.847,1224,0.0,1.0,no (single stage)
+4,4,0.0,1.0,no (single stage),1741,0.618,0.78,961,0.0,1.0,no (single stage)
+5,6,0.0,1.0,no (single stage),446,0.683,0.756,30,0.0,1.0,no (single stage)

@@ -8,25 +8,29 @@ sub-type inside its group. variance = STDDEV_SAMP of those ranks · quality q = 
 s/|x̄|. q → 1 = the group is concentrated in few sub-types; q → 0 = spread across its sub-type
 sequence. n = sherds in that group.
 
-The two blocks show the same data under the two competing rank assignments. Upper block: ranks
-follow the column order (Ia cup = 1 … Ic plate = 6), so stage and form are mixed and a change of
-form counts as a full chronological step. Lower block: cup and plate of the same stage share a rank
-(Ia = 1, Ib = 2, Ic = 3), so only the stage sequence contributes. For Service I the reading is
-robust — the horizons keep their order, the range of q is the same (0.14) and the two series
-correlate at r = 0.998; only the level shifts up by about 0.03. Service II, however, consists of a
-single stage, so under stage-only ranks it has no internal spread left (variance 0, q = 1) and
-carries no chronological information at that resolution. Schrägrandteller has one sub-type and is
-trivially concentrated under either scheme.
+Ranks follow the chronological STAGE: cup and plate of one stage share a rank (Ia = 1, Ib = 2, Ic =
+3), because a cup and a plate of the same stage are contemporary and a change of form is not a step
+in time. The alternative — numbering the sub-types 1..k in column order — was tested and gives the
+same picture (identical order of horizons, r = 0.998), so the reading does not depend on the choice.
+
+IMPORTANT: these panels measure only how a group's material is distributed over its OWN sub-types.
+They do not measure how much of a group is present. Service II, for instance, contains a single
+chronological stage, so its variance is 0.00 and its quality 1.00 by construction rather than by
+measurement — those cells are printed on a grey background for that reason. Its share of the
+assemblage, however, is the strongest dating signal in the material: it runs from 6 % in horizon 5
+to 92 % in horizon 1. The two questions are separate; the shares are reported in the accompanying
+tables. A dash (—) marks the different case of no data at all.
 
 Panels
 ------
 Left panel:  Within-group variance  (STDDEV_SAMP of sub-type ranks)
 Right panel: Within-group quality  (q = exp(−CV))
 
-Both panels use the same red-green palette, with green always marking the favourable case: on the
-left low variance (concentrated), on the right high quality. The variance scale therefore runs green
-→ red, the quality scale red → green. Grey cells (—) mark a group that is absent from the horizon,
-or has too few sherds to compute the measure.
+Grey cells carry a value that follows from the rank list alone (a group of a single stage), or a
+dash where there is no material at all. Both panels use the same red-green palette, with green
+always marking the favourable case: on the left low variance (concentrated), on the right high
+quality. The variance scale therefore runs green → red, the quality scale red → green. Grey cells
+(—) mark a group that is absent from the horizon, or has too few sherds to compute the measure.
 
 Oblique-rim plate · Service I · Service II
 

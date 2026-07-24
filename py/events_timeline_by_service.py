@@ -193,6 +193,8 @@ STRINGS = {
         "legend_right": "Right panel",
         "legend_findspots": "Findspots per horizon",
         "legend_colour": (
+            "Grey cells carry a value that follows from the rank list alone (a group "
+            "of a single stage), or a dash where there is no material at all. "
             "Both panels use the same red-green palette, with green always marking "
             "the favourable case: on the left low variance (concentrated), on the "
             "right high quality. The variance scale therefore runs green → red, the "
@@ -207,18 +209,24 @@ STRINGS = {
             "its sub-type sequence. n = sherds in that group."
         ),
         "rank_note": (
-            "The two blocks show the same data under the two competing rank "
-            "assignments. Upper block: ranks follow the column order (Ia cup = 1 … "
-            "Ic plate = 6), so stage and form are mixed and a change of form counts "
-            "as a full chronological step. Lower block: cup and plate of the same "
-            "stage share a rank (Ia = 1, Ib = 2, Ic = 3), so only the stage sequence "
-            "contributes. For Service I the reading is robust — the horizons keep "
-            "their order, the range of q is the same (0.14) and the two series "
-            "correlate at r = 0.998; only the level shifts up by about 0.03. Service "
-            "II, however, consists of a single stage, so under stage-only ranks it "
-            "has no internal spread left (variance 0, q = 1) and carries no "
-            "chronological information at that resolution. Schrägrandteller has one "
-            "sub-type and is trivially concentrated under either scheme."
+            "Ranks follow the chronological STAGE: cup and plate of one stage share "
+            "a rank (Ia = 1, Ib = 2, Ic = 3), because a cup and a plate of the same "
+            "stage are contemporary and a change of form is not a step in time. The "
+            "alternative — numbering the sub-types 1..k in column order — was tested "
+            "and gives the same picture (identical order of horizons, r = 0.998), so "
+            "the reading does not depend on the choice."
+        ),
+        "scope_note": (
+            "IMPORTANT: these panels measure only how a group's material is "
+            "distributed over its OWN sub-types. They do not measure how much of a "
+            "group is present. Service II, for instance, contains a single "
+            "chronological stage, so its variance is 0.00 and its quality 1.00 by "
+            "construction rather than by measurement — those cells are printed on a "
+            "grey background for that reason. Its share of the assemblage, however, "
+            "is the strongest dating signal in the material: it runs from 6 % in "
+            "horizon 5 to 92 % in horizon 1. The two questions are separate; the "
+            "shares are reported in the accompanying tables. A dash (—) marks the "
+            "different case of no data at all."
         ),
     },
     "fr": {
@@ -258,6 +266,8 @@ STRINGS = {
         "legend_right": "Panneau de droite",
         "legend_findspots": "Sites par horizon",
         "legend_colour": (
+            "Les cellules grises portent une valeur qui découle des seuls rangs (groupe "
+            "à un seul stade), ou un tiret s'il n'y a aucun matériel. "
             "Les deux panneaux utilisent la même palette rouge-vert, le vert marquant "
             "toujours le cas favorable : à gauche une variance faible (concentrée), à "
             "droite une qualité élevée. L'échelle de variance va donc du vert au rouge, "
@@ -272,17 +282,20 @@ STRINGS = {
             "séquence. n = tessons du groupe."
         ),
         "rank_note": (
-            "Les deux blocs montrent les mêmes données sous les deux attributions de "
-            "rangs concurrentes. Bloc supérieur : les rangs suivent l'ordre des "
-            "colonnes (Ia tasse = 1 … Ic assiette = 6), stade et forme sont donc "
-            "mêlés. Bloc inférieur : tasse et assiette d'un même stade partagent un "
-            "rang (Ia = 1, Ib = 2, Ic = 3), seule la séquence des stades compte. Pour "
-            "le Service I la lecture est robuste — l'ordre des horizons est conservé, "
-            "l'amplitude de q est identique (0,14), les deux séries corrèlent à "
-            "r = 0,998 ; seul le niveau monte d'environ 0,03. Le Service II en "
-            "revanche ne comporte qu'un seul stade : avec les rangs par stade il n'a "
-            "plus de dispersion interne (variance 0, q = 1) et ne porte aucune "
-            "information chronologique à cette résolution."
+            "Les rangs suivent le STADE chronologique : tasse et assiette d'un même "
+            "stade partagent un rang (Ia = 1, Ib = 2, Ic = 3), car elles sont "
+            "contemporaines et un changement de forme n'est pas un pas dans le temps. "
+            "L'alternative — numéroter les sous-types 1..k dans l'ordre des colonnes — "
+            "a été testée et donne la même image (ordre des horizons identique, "
+            "r = 0,998) ; la lecture ne dépend donc pas de ce choix."
+        ),
+        "scope_note": (
+            "IMPORTANT : ces panneaux mesurent uniquement la répartition du matériel "
+            "d'un groupe sur SES PROPRES sous-types, et non la quantité présente de "
+            "ce groupe. Le Service II ne comporte qu'un seul stade chronologique et "
+            "reste donc indéfini ici (—), alors que sa part de l'assemblage est le "
+            "signal de datation le plus fort du matériel : de 6 % à l'horizon 5 à "
+            "92 % à l'horizon 1. Ce sont deux questions distinctes."
         ),
     },
 }
@@ -337,7 +350,11 @@ RANK_SCHEMES = {
     },
 }
 # Order in which the schemes appear as blocks in the figure.
-RANK_SCHEME_ORDER = ["column", "stage"]
+# Only the stage reading is reported: cup and plate of one stage are
+# contemporary, so treating a change of form as a chronological step would
+# be an artefact. "column" is kept so the alternative can be re-checked by
+# adding it back here — the finding does not depend on the choice (r = 0.998).
+RANK_SCHEME_ORDER = ["stage"]
 
 # ---------------------------------------------------------------------------
 # Timeline row order — manual overrides
@@ -916,6 +933,11 @@ def _rgzm_variance_quality(group_counts: np.ndarray, positions: np.ndarray):
     q → 1 : the assemblage is chronologically concentrated on one rank
             (tightly defined); q → 0 : it is spread across the group sequence.
     Returns (mean, s, cv, q, N). Undefined (nan) when N < 2 or x̄ = 0.
+
+    A group whose rank list holds a single value (Schrägrandteller, and
+    Service II under the stage scheme) necessarily yields s = 0 and q = 1.
+    Those are correct but structurally determined rather than measured, so
+    the figure prints them on a grey background — see `_group_is_measurable`.
     """
     G = np.asarray(group_counts, dtype=float)
     N = float(G.sum())
@@ -929,6 +951,19 @@ def _rgzm_variance_quality(group_counts: np.ndarray, positions: np.ndarray):
     cv = s / abs(mean)
     q = float(np.exp(-cv))
     return (mean, s, cv, q, int(N))
+
+
+def _group_is_measurable(group: str, scheme: str, k: int) -> bool:
+    """Does this group's rank list hold more than one distinct rank?
+
+    If not, the group consists of a single chronological stage: s = 0 and q = 1
+    follow from the rank assignment alone, whatever the sherds do. Such cells are
+    still shown — archaeologically a dash reads as missing data — but on a grey
+    background, so a structural constant is not mistaken for a measurement.
+    """
+    rank_map = RANK_SCHEMES.get(scheme)
+    ranks = list(range(1, k + 1)) if rank_map is None else rank_map[group]
+    return len(set(ranks)) > 1
 
 
 def compute_within_group_rgzm(counts_df, scheme="column"):
@@ -945,8 +980,9 @@ def compute_within_group_rgzm(counts_df, scheme="column"):
     q → 1: the group's material is concentrated in few sub-types; q → 0: it is
     spread across the group's sub-type sequence.
 
-    Returns (var_df, qual_df, ncell_df, n_horizon) indexed by horizon; the first
-    three have one column per group.
+    Returns (var_df, qual_df, ncell_df, n_horizon, measurable) indexed by
+    horizon; the first three have one column per group. `measurable` maps each
+    group to True/False (see `_group_is_measurable`).
     """
     groups = _group_members(list(counts_df.columns))
     group_names = list(groups)
@@ -978,7 +1014,9 @@ def compute_within_group_rgzm(counts_df, scheme="column"):
     for df in (var_df, qual_df, ncell_df):
         df.index.name = "horizon"
     n_horizon.index.name = "horizon"
-    return var_df, qual_df, ncell_df, n_horizon
+    measurable = {g: _group_is_measurable(g, scheme, len(groups[g]))
+                  for g in group_names}
+    return var_df, qual_df, ncell_df, n_horizon, measurable
 
 
 def write_group_spread_csv(results, csv_path: Path):
@@ -993,11 +1031,14 @@ def write_group_spread_csv(results, csv_path: Path):
     out = pd.DataFrame(index=first.index)
     out.index.name = first.index.name or "horizon"
     for scheme in schemes:
-        var_df, qual_df, ncell_df = results[scheme]
+        var_df, qual_df, ncell_df = results[scheme][:3]
+        measurable = results[scheme][3]
         for g in var_df.columns:
             out[f"[{scheme}] {g} — n"] = ncell_df[g].astype(int)
             out[f"[{scheme}] {g} — variance (STDDEV_SAMP)"] = var_df[g].round(3)
             out[f"[{scheme}] {g} — quality exp(-CV)"] = qual_df[g].round(3)
+            if not measurable[g]:
+                out[f"[{scheme}] {g} — measured"] = "no (single stage)"
     out.to_csv(csv_path, encoding="utf-8-sig")
     print(f"✓ Within-group variance/quality CSV saved: {csv_path}  "
           f"({out.shape[0]} rows, {len(schemes)} rank scheme(s))")
@@ -1025,6 +1066,8 @@ def write_group_variability_legend(output_path: Path, lang="en", width=100):
     lines.append(textwrap.fill(s["spread_note"], width=width))
     lines.append("")
     lines.append(textwrap.fill(s["rank_note"], width=width))
+    lines.append("")
+    lines.append(textwrap.fill(s["scope_note"], width=width))
     lines.append("")
 
     lines += rule(s["legend_panels"], "-")
@@ -1075,6 +1118,7 @@ def plot_within_group_heatmap(results, output_path: Path, lang="en"):
     scheme_names = [k for k in RANK_SCHEME_ORDER if k in results]
 
     first = results[scheme_names[0]][0]
+    measurable = results[scheme_names[0]][3]
     groups = list(first.columns)
     horizons = list(first.index)
     col_labels = [gdisp.get(g, g) for g in groups]
@@ -1118,7 +1162,12 @@ def plot_within_group_heatmap(results, output_path: Path, lang="en"):
         for i in range(n_rows):
             for j in range(len(groups)):
                 v = cell_value(kind, i, j)
-                face = "#eeeeee" if pd.isna(v) else cmap(norm(v))
+                if pd.isna(v) or not measurable[groups[j]]:
+                    # No data, or a value that follows from the rank list alone:
+                    # shown, but on grey so it is not read as a measurement.
+                    face = "#eeeeee"
+                else:
+                    face = cmap(norm(v))
                 ax.add_patch(plt.Rectangle(
                     (j - 0.5, row_y[i] - 0.5), 1, 1,
                     facecolor=face, edgecolor="white", linewidth=1.4, zorder=1))
@@ -1143,10 +1192,16 @@ def plot_within_group_heatmap(results, output_path: Path, lang="en"):
                 if pd.isna(v):
                     ax.text(j, row_y[i], "—", ha="center", va="center",
                             fontsize=13, color="#888888", zorder=2)
+                    if ng:
+                        ax.text(j, row_y[i] + 0.22, f"n={ng}", ha="center",
+                                va="center", fontsize=8, color="#888888", zorder=2)
                     continue
-                r, gg, b, _ = cmap(norm(v))
-                lum = 0.299 * r + 0.587 * gg + 0.114 * b
-                tcol = "#111111" if lum > 0.55 else "#ffffff"
+                if not measurable[groups[j]]:
+                    tcol = "#666666"          # dark grey on the grey background
+                else:
+                    r, gg, b, _ = cmap(norm(v))
+                    lum = 0.299 * r + 0.587 * gg + 0.114 * b
+                    tcol = "#111111" if lum > 0.55 else "#ffffff"
                 ax.text(j, row_y[i] - 0.13, fmt(v), ha="center", va="center",
                         fontsize=13, color=tcol, zorder=2)
                 ax.text(j, row_y[i] + 0.22, f"n={ng}", ha="center", va="center",
@@ -1175,8 +1230,9 @@ def plot_within_group_heatmap(results, output_path: Path, lang="en"):
 
     # The variance scale is shared by both blocks, so the two readings stay
     # comparable; it is taken over every scheme, not just the first.
-    all_var = np.concatenate([results[k][0].to_numpy(dtype=float).ravel()
-                              for k in scheme_names])
+    measured_cols = [g for g in groups if measurable[g]]
+    all_var = np.concatenate([results[k][0][measured_cols].to_numpy(dtype=float).ravel()
+                              for k in scheme_names]) if measured_cols else np.array([1.0])
     var_vmax = float(np.nanmax(all_var)) or 1.0
     _draw(ax_v, cmap_var, 0.0, var_vmax, s["var_panel"], lambda v: f"{v:.2f}", 0)
     _draw(ax_q, cmap_qual, 0.0, 1.0, s["qual_panel"], lambda v: f"{v:.2f}", 1)
@@ -1945,9 +2001,9 @@ def main():
     # modelling choice stays visible rather than being decided silently.
     results = {}
     for scheme in RANK_SCHEME_ORDER:
-        var_df, qual_df, ncell_df, n_horizon = compute_within_group_rgzm(
+        var_df, qual_df, ncell_df, n_horizon, measurable = compute_within_group_rgzm(
             counts_df, scheme=scheme)
-        results[scheme] = (var_df, qual_df, ncell_df)
+        results[scheme] = (var_df, qual_df, ncell_df, measurable)
     write_group_spread_csv(results, GROUP_VAR_CSV)
 
     # --- Timeline by service composition (EN + FR) ---

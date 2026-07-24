@@ -31,10 +31,22 @@ Run standalone (``python py/build_sparql.py``) or as the ``sparql`` step of
 from __future__ import annotations
 
 import json
+import logging
 import shutil
 import sys
 import textwrap
 from pathlib import Path
+
+# --- deviation from the verbatim asset (keep on re-sync) --------------------
+# The graph dates events in the first century BC, so it carries xsd:gYear
+# literals with negative years ("-0015"). That is valid XSD, but rdflib tries to
+# map every literal onto a Python datetime.date, whose minimum year is 1 — the
+# conversion raises and rdflib logs a full traceback per literal at WARNING.
+# Dozens of tracebacks scroll past on every build and look like a failure, while
+# nothing is actually wrong: the literals keep their lexical form, and both the
+# queries here and the notebook read them via STR() rather than .value.
+# Silencing this one logger keeps real warnings visible.
+logging.getLogger("rdflib.term").setLevel(logging.ERROR)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import wd_paths  # noqa: E402

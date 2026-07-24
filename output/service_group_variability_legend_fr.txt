@@ -8,24 +8,29 @@ par le rang de son sous-type dans son groupe. variance = STDDEV_SAMP des rangs �
 exp(−CV), CV = s/|x̄|. q → 1 = groupe concentré sur peu de sous-types ; q → 0 = dispersé sur la
 séquence. n = tessons du groupe.
 
-Les deux blocs montrent les mêmes données sous les deux attributions de rangs concurrentes. Bloc
-supérieur : les rangs suivent l'ordre des colonnes (Ia tasse = 1 … Ic assiette = 6), stade et forme
-sont donc mêlés. Bloc inférieur : tasse et assiette d'un même stade partagent un rang (Ia = 1, Ib =
-2, Ic = 3), seule la séquence des stades compte. Pour le Service I la lecture est robuste — l'ordre
-des horizons est conservé, l'amplitude de q est identique (0,14), les deux séries corrèlent à r =
-0,998 ; seul le niveau monte d'environ 0,03. Le Service II en revanche ne comporte qu'un seul stade
-: avec les rangs par stade il n'a plus de dispersion interne (variance 0, q = 1) et ne porte aucune
-information chronologique à cette résolution.
+Les rangs suivent le STADE chronologique : tasse et assiette d'un même stade partagent un rang (Ia =
+1, Ib = 2, Ic = 3), car elles sont contemporaines et un changement de forme n'est pas un pas dans le
+temps. L'alternative — numéroter les sous-types 1..k dans l'ordre des colonnes — a été testée et
+donne la même image (ordre des horizons identique, r = 0,998) ; la lecture ne dépend donc pas de ce
+choix.
+
+IMPORTANT : ces panneaux mesurent uniquement la répartition du matériel d'un groupe sur SES PROPRES
+sous-types, et non la quantité présente de ce groupe. Le Service II ne comporte qu'un seul stade
+chronologique et reste donc indéfini ici (—), alors que sa part de l'assemblage est le signal de
+datation le plus fort du matériel : de 6 % à l'horizon 5 à 92 % à l'horizon 1. Ce sont deux
+questions distinctes.
 
 Panneaux
 --------
 Panneau de gauche: Variance intra-groupe  (STDDEV_SAMP des rangs de sous-types)
 Panneau de droite: Qualité intra-groupe  (q = exp(−CV))
 
-Les deux panneaux utilisent la même palette rouge-vert, le vert marquant toujours le cas favorable :
-à gauche une variance faible (concentrée), à droite une qualité élevée. L'échelle de variance va
-donc du vert au rouge, celle de qualité du rouge au vert. Les cellules grises (—) indiquent un
-groupe absent de l'horizon, ou trop peu de tessons pour calculer la mesure.
+Les cellules grises portent une valeur qui découle des seuls rangs (groupe à un seul stade), ou un
+tiret s'il n'y a aucun matériel. Les deux panneaux utilisent la même palette rouge-vert, le vert
+marquant toujours le cas favorable : à gauche une variance faible (concentrée), à droite une qualité
+élevée. L'échelle de variance va donc du vert au rouge, celle de qualité du rouge au vert. Les
+cellules grises (—) indiquent un groupe absent de l'horizon, ou trop peu de tessons pour calculer la
+mesure.
 
 Assiette à bord oblique · Service I · Service II
 

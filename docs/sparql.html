@@ -293,6 +293,14 @@ await micropip.install("rdflib==7.1.1")
 from pyodide.http import pyfetch
 from rdflib import Graph
 
+# Deviation from the verbatim template (keep on re-sync): this graph dates
+# events BC, so it carries xsd:gYear literals with negative years. rdflib tries
+# to map them onto a Python datetime.date (minimum year 1), fails, and logs a
+# traceback per literal. Nothing is wrong — the queries read the lexical form —
+# but dozens of tracebacks in the browser console look alarming.
+import logging
+logging.getLogger("rdflib.term").setLevel(logging.ERROR)
+
 _graphs = {}
 
 async def load(url, key):
