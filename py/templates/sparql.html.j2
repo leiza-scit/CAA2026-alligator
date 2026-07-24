@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default("Query the graph") }} &mdash; {{ repo.title }}</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/pyodide/v{{ pyodide_version }}/full/pyodide.js"></script>
+</head>
+<body>
+<div class="container">
+  <nav class="nav">
+    {% for link in page.nav | default([]) %}
+    <a href="{{ link.href }}"{% if link.active %} class="active"{% endif %}>{{ link.label }}</a>
+    {% endfor %}
+  </nav>
+
+  <header class="page-head">
+    <span class="badge">SPARQL</span>
+    <h1>{{ page.title | default("Query the graph") }}</h1>
+    <p class="intro">{{ page.intro }}</p>
+    <p class="note">
+      There is no SPARQL endpoint and no server. The graph is fetched as a static
+      file and parsed client-side with <code>rdflib</code> under Pyodide. That is
+      deliberate: an archived copy of this repository stays queryable without a
+      service having to be kept alive for it.
+    </p>
+  </header>
+
+  <div class="status" id="status">
+    <span class="dot" id="dot"></span>
+    <span id="status-text">Loading the Python runtime (~10 MB on first visit)&hellip;</span>
+  </div>
+
+  <p class="note" id="graph-note" hidden></p>
+
+  {% for q in queries %}
+  <section class="query" id="q-{{ q.id }}">
+    <h2>{{ loop.index }}. {{ q.title }}</h2>
+    <p class="intro">{{ q.intro }}</p>
+    {% if q.needs %}
+    <p class="note warn">
+      Also loads the {{ graph.extra[q.needs].label }} from GitHub
+      ({{ graph.extra[q.needs].note }}) &mdash; the first run of this query takes
+      a few seconds longer. If it fails with a network error, you are offline or
+      GitHub is unreachable; the other queries are unaffected.
+    </p>
+    {% endif %}
+    <textarea class="sparql" id="src-{{ q.id }}" spellcheck="false"
+              rows="{{ q.rows }}">{{ q.sparql }}</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="{{ q.id }}" data-needs="{{ q.needs|default('', true) }}" disabled>Run</button>
+      <button class="reset" data-q="{{ q.id }}">Reset</button>
+      <span class="timing" id="time-{{ q.id }}"></span>
+    </div>
+    <div class="result" id="out-{{ q.id }}"></div>
+  </section>
+  {% endfor %}
+
+  <footer class="page-foot">
+    <p>
+      Graph: <a href="{{ graph.url }}"><code>{{ graph.file }}</code></a>{% if page.vocabulary_note %}
+      &middot; {{ page.vocabulary_note }}{% endif %}
+      A <a href="https://quarto.org">quarto-live</a> version of this page, for
+      reuse as teaching material, is in <code>qmd/</code> in the repository.
+    </p>
+  </footer>
+</div>
+
+<script>
+/* Query definitions, written from queries.yaml by py/build_sparql.py, so this
+   page and the quarto-live variant cannot drift apart. */
+const PREFIXES = {{ prefixes_json | safe }};
+const QUERIES  = {{ queries_json | safe }};
+const GRAPH    = {{ graph_json | safe }};
+const MAX_ROWS = {{ max_rows }};
+
+const statusText = document.getElementById('status-text');
+const dot = document.getElementById('dot');
+let pyodide = null;
+
+function setStatus(text, state) {
+  statusText.textContent = text;
+  dot.className = 'dot ' + (state || '');
+}
+
+/* Escape once, centrally: cell values come from the graph and may contain <, &
+   or a stray quote, and building a table by string concatenation without this is
+   how an injection bug gets in. */
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+function renderTable(cols, rows, elId, total) {
+  const out = document.getElementById(elId);
+  if (!rows.length) {
+    out.innerHTML = '<p class="note">No results. The query is valid but matched nothing.</p>';
+    return;
+  }
+  let h = '<div class="table-scroll"><table class="layer-table"><thead><tr>';
+  h += cols.map(c => `<th>${esc(c)}</th>`).join('');
+  h += '</tr></thead><tbody>';
+  for (const r of rows) {
+    h += '<tr>' + cols.map(c => {
+      const v = r[c];
+      if (v === null || v === undefined) return '<td class="nil">&mdash;</td>';
+      const s = String(v);
+      return /^https?:\/\//.test(s)
+        ? `<td><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a></td>`
+        : `<td>${esc(s)}</td>`;
+    }).join('') + '</tr>';
+  }
+  h += '</tbody></table></div>';
+  h += `<p class="note">${total > rows.length
+    ? `Showing the first ${rows.length} of ${total} rows.`
+    : `${rows.length} row${rows.length === 1 ? '' : 's'}.`}</p>`;
+  out.innerHTML = h;
+}
+
+async function boot() {
+  try {
+    pyodide = await loadPyodide();
+    setStatus('Installing rdflib\u2026', 'busy');
+    await pyodide.loadPackage('micropip');
+    await pyodide.runPythonAsync(`
+import micropip
+await micropip.install("rdflib=={{ rdflib_version }}")
+`);
+    setStatus('Loading the graph\u2026', 'busy');
+    await pyodide.runPythonAsync(`
+from pyodide.http import pyfetch
+from rdflib import Graph
+
+_graphs = {}
+
+async def load(url, key):
+    """Fetch a Turtle file and parse it. Cached: a query re-run must not refetch."""
+    if key in _graphs:
+        return _graphs[key]
+    resp = await pyfetch(url)
+    if resp.status != 200:
+        raise RuntimeError(f"{url} -> HTTP {resp.status}")
+    text = await resp.string()
+    g = Graph()
+    g.parse(data=text, format="turtle")
+    _graphs[key] = g
+    return g
+
+base = await load(${JSON.stringify(GRAPH.url)}, "base")
+n_base = len(base)
+`);
+    const n = pyodide.globals.get('n_base');
+    const note = document.getElementById('graph-note');
+    note.hidden = false;
+    note.innerHTML = `Graph loaded: <strong>${n}</strong> triples from <code>${GRAPH.file}</code>.`;
+    setStatus('Ready \u2014 edit a query and press Run.', 'ok');
+    document.querySelectorAll('button.run').forEach(b => (b.disabled = false));
+  } catch (err) {
+    setStatus('Could not start: ' + err.message, 'err');
+    console.error(err);
+  }
+}
+
+async function runQuery(id, needs) {
+  const btn = document.querySelector(`button.run[data-q="${id}"]`);
+  const timing = document.getElementById('time-' + id);
+  const out = document.getElementById('out-' + id);
+  btn.disabled = true;
+  timing.textContent = needs ? 'fetching the extra graph\u2026' : 'running\u2026';
+  out.innerHTML = '';
+  const t0 = performance.now();
+  try {
+    const src = document.getElementById('src-' + id).value;
+    pyodide.globals.set('_q_src', PREFIXES + '\n' + src);
+    pyodide.globals.set('_q_extra', needs ? GRAPH.extra[needs].url : '');
+    const json = await pyodide.runPythonAsync(`
+import json
+g = _graphs["base"]
+if _q_extra:
+    # Merge the extra graph into a copy, so the base graph stays as loaded and
+    # the other queries are not silently answering over a different dataset.
+    extra = await load(_q_extra, _q_extra)
+    merged = Graph()
+    for t in _graphs["base"]: merged.add(t)
+    for t in extra: merged.add(t)
+    g = merged
+
+res = g.query(_q_src)
+cols = [str(v) for v in res.vars]
+_all = list(res)
+rows = [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)}
+        for r in _all[:${MAX_ROWS}]]
+json.dumps({"cols": cols, "rows": rows, "n": len(g), "total": len(_all)})
+`);
+    const data = JSON.parse(json);
+    renderTable(data.cols, data.rows, 'out-' + id, data.total);
+    const dt = ((performance.now() - t0) / 1000).toFixed(1);
+    timing.textContent = `${dt}s over ${data.n} triples`;
+  } catch (err) {
+    /* Show the real error. A malformed query is the normal case here - people are
+       meant to edit these - so the message has to be the actual parse error. */
+    out.innerHTML = `<pre class="error">${esc(err.message)}</pre>`;
+    timing.textContent = '';
+  }
+  btn.disabled = false;
+}
+
+document.querySelectorAll('button.run').forEach(b =>
+  b.addEventListener('click', () => runQuery(b.dataset.q, b.dataset.needs)));
+document.querySelectorAll('button.reset').forEach(b =>
+  b.addEventListener('click', () => {
+    const id = b.dataset.q;
+    document.getElementById('src-' + id).value = QUERIES[id];
+    document.getElementById('out-' + id).innerHTML = '';
+    document.getElementById('time-' + id).textContent = '';
+  }));
+
+boot();
+</script>
+</body>
+</html>

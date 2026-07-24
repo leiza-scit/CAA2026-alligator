@@ -1,0 +1,221 @@
+# Source of truth for the interactive query page.
+#
+#   queries.yaml -> py/build_sparql.py -> docs/sparql.html            (browser)
+#                                      -> docs/downloads/queries/*.rq (plain files)
+#                                      -> qmd/<name>.qmd              (quarto-live)
+#
+# Every query below is executed against the real graph at build time. A query
+# that returns no rows fails the build: SPARQL does not error on a mistyped IRI,
+# it returns nothing, so an empty result is the ordinary symptom of a broken
+# graph rather than of a boring question.
+
+graph:
+  file: output/arretine_sites_minigraph.ttl   # repo-relative, verified at build time
+  url: arretine_sites_minigraph.ttl           # how the browser reaches it, from docs/
+  publish: true                               # copy it into docs/
+
+page:
+  title: "Query the Arretine chronology graph"
+  intro: >-
+    The graph behind the CAA 2026 contribution: 45 Arretine ware findspots in the
+    north-western Roman provinces, each with a dated interval, grouped both by
+    the seriation output and by archaeological horizon. Every query below runs in
+    your browser — edit them and press Run.
+  vocabulary_note: >-
+    Vocabularies: CIDOC-CRM, OWL-Time, GeoSPARQL, SKOS and
+    <code>lado:</code> (archaeology.link). Findspots link to Wikidata and Pleiades.
+  nav:
+    - {href: "index.html", label: "Overview"}
+    - {href: "sparql.html", label: "Query", active: true}
+
+qmd:
+  file: arretine-chronology-sparql-live.qmd
+  title: "Querying the Arretine chronology graph"
+  graph_url: "https://leiza-scit.github.io/CAA2026-alligator/arretine_sites_minigraph.ttl"
+  about: >-
+    An interactive companion to the CAA 2026 contribution: the same queries as the
+    published query page, in a notebook you can extend. Everything runs in the
+    browser under Pyodide; there is no endpoint and nothing leaves your machine.
+  notes: |
+    **Two groupings, one graph.** A `lado:PeriodCluster` groups findspots that the
+    seriation gave exactly the same start and end year. A
+    `lado:ChronologicalHorizon` is the phase a findspot was *assigned* to.
+    Horizons 1–3 coincide with a single cluster each, but horizon 4 absorbs three
+    clusters and horizon 5 two, so a horizon's interval is the *envelope* of its
+    members and can be wider than any findspot in it.
+
+    **Astronomical year numbering.** Dates are `xsd:gYear` literals in the
+    proleptic Gregorian calendar, which has a year zero: `"-0008"` is 9 BC, not
+    8 BC. rdflib does not compare `xsd:gYear` literals the way you would expect
+    either — cast them first, as the queries below do with
+    `xsd:integer(STR(?year))`.
+
+    **Fixed versus estimated boundaries.** `lado:startfixed` and `lado:endfixed`
+    mark boundaries resting on a historically dated event rather than on
+    seriation alone. Only seven findspots carry such an anchor, and the whole
+    chronology hangs on them.
+
+prefixes: |
+  PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+  PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+  PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+  PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+  PREFIX lado:      <http://archaeology.link/ontology#>
+  PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+  PREFIX time:      <http://www.w3.org/2006/time#>
+  PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+queries:
+  - id: horizons-overview
+    title: "The five chronological horizons"
+    intro: >-
+      The starting point for everything else: each horizon with its interval and
+      how many findspots it holds. Horizon 1 is the latest, horizon 5 the
+      earliest. The interval is the envelope of the horizon's findspots, from the
+      earliest start to the latest end.
+    sparql: |
+      SELECT ?horizon ?label ?begin ?end (COUNT(?site) AS ?findspots)
+      WHERE {
+        ?h a lado:ChronologicalHorizon ;
+           skos:notation                     ?horizon ;
+           rdfs:label                        ?label ;
+           time:hasBeginning/time:inXSDgYear ?begin ;
+           time:hasEnd/time:inXSDgYear       ?end ;
+           lado:hasHorizonMember             ?site .
+        FILTER(langMatches(LANG(?label), "en"))
+      }
+      GROUP BY ?horizon ?label ?begin ?end
+      ORDER BY ?horizon
+
+  - id: horizon-succession
+    title: "How the horizons relate to one another"
+    intro: >-
+      The graph carries all twenty pairwise Allen relations between the horizons,
+      so the sequence can be queried rather than read off a figure. Horizon 5
+      *meets* horizon 3 — one ends exactly where the other begins — while horizon
+      4 *contains* horizon 3 entirely.
+    sparql: |
+      SELECT ?horizonA ?relation ?horizonB
+      WHERE {
+        ?a a lado:ChronologicalHorizon ; skos:notation ?horizonA ; ?rel ?b .
+        ?b a lado:ChronologicalHorizon ; skos:notation ?horizonB .
+        FILTER(STRSTARTS(STR(?rel), STR(time:)))
+        BIND(REPLACE(STR(?rel), "^.*#interval", "") AS ?relation)
+      }
+      ORDER BY ?horizonA ?horizonB
+
+  - id: horizon-anchors
+    title: "Which findspots anchor the chronology?"
+    intro: >-
+      Alligator marks a boundary as fixed when it rests on a historically dated
+      event rather than on seriation alone. Only seven findspots carry such an
+      anchor — and every horizon has at least one, which is what makes the
+      sequence defensible.
+    sparql: |
+      SELECT ?horizon ?findspot ?startFixed ?endFixed ?begin ?end
+      WHERE {
+        ?h a lado:ChronologicalHorizon ;
+           skos:notation         ?horizon ;
+           lado:hasHorizonMember ?site .
+
+        ?site rdfs:label                        ?findspot ;
+              lado:startfixed                   ?startFixed ;
+              lado:endfixed                     ?endFixed ;
+              time:hasBeginning/time:inXSDgYear ?begin ;
+              time:hasEnd/time:inXSDgYear       ?end .
+
+        FILTER(?startFixed || ?endFixed)
+      }
+      ORDER BY ?horizon ?findspot
+
+  - id: horizon-internal-structure
+    title: "Findspots that do not fill their horizon"
+    intro: >-
+      Where every findspot carries the same dating, the horizon envelope
+      describes the horizon exactly. Where members differ, the envelope is wider
+      than any single findspot. This query returns only the findspots narrower
+      than their horizon — none of them are in horizons 1 to 3, which is the
+      quickest evidence that those three are internally homogeneous.
+    sparql: |
+      SELECT ?horizon ?findspot ?siteBegin ?siteEnd ?horizonBegin ?horizonEnd
+      WHERE {
+        ?h a lado:ChronologicalHorizon ;
+           skos:notation                     ?horizon ;
+           time:hasBeginning/time:inXSDgYear ?horizonBegin ;
+           time:hasEnd/time:inXSDgYear       ?horizonEnd ;
+           lado:hasHorizonMember             ?site .
+
+        ?site rdfs:label                        ?findspot ;
+              time:hasBeginning/time:inXSDgYear ?siteBegin ;
+              time:hasEnd/time:inXSDgYear       ?siteEnd .
+
+        FILTER(xsd:integer(STR(?siteBegin)) != xsd:integer(STR(?horizonBegin))
+            || xsd:integer(STR(?siteEnd))   != xsd:integer(STR(?horizonEnd)))
+      }
+      ORDER BY ?horizon ?findspot
+
+  - id: horizon-cluster-composition
+    title: "Which seriation clusters does each horizon absorb?"
+    intro: >-
+      Both groupings live in the same graph, so one query can join them. A period
+      cluster is computed — findspots the seriation gave an identical start and
+      end year; a horizon is interpretive. Horizons 1 to 3 rest on a single
+      cluster each, horizons 4 and 5 merge several, which is exactly why their
+      envelopes are wider than their members.
+    sparql: |
+      SELECT ?horizon ?cluster (COUNT(?site) AS ?findspots)
+      WHERE {
+        ?h a lado:ChronologicalHorizon ;
+           skos:notation         ?horizon ;
+           lado:hasHorizonMember ?site .
+
+        ?c a lado:PeriodCluster ;
+           rdfs:label            ?cluster ;
+           lado:hasClusterMember ?site .
+      }
+      GROUP BY ?horizon ?cluster
+      ORDER BY ?horizon ?cluster
+
+  - id: findspots-at-clades-variana
+    title: "Which findspots were still in use in AD 9?"
+    intro: >-
+      The question the companion notebook works through in three different ways.
+      Here it is resolved on the horizon level and in plain SPARQL: a findspot
+      qualifies when its own interval covers AD 9, the year of the Clades
+      Variana. Note the cast — rdflib will not compare xsd:gYear literals
+      directly.
+    sparql: |
+      SELECT ?horizon ?findspot ?begin ?end
+      WHERE {
+        ?h a lado:ChronologicalHorizon ;
+           skos:notation         ?horizon ;
+           lado:hasHorizonMember ?site .
+
+        ?site rdfs:label                        ?findspot ;
+              time:hasBeginning/time:inXSDgYear ?begin ;
+              time:hasEnd/time:inXSDgYear       ?end .
+
+        FILTER(xsd:integer(STR(?begin)) <= 9 && xsd:integer(STR(?end)) >= 9)
+      }
+      ORDER BY ?horizon ?findspot
+
+  - id: horizon-authority-links
+    title: "How well is each horizon linked to gazetteers?"
+    intro: >-
+      A practical linked-data question: can every findspot be reconciled against
+      an external authority? Gaps mark the places where this graph cannot yet be
+      joined to Wikidata or Pleiades.
+    sparql: |
+      SELECT ?horizon (COUNT(DISTINCT ?site) AS ?findspots)
+                      (COUNT(DISTINCT ?wikidata) AS ?withWikidata)
+                      (COUNT(DISTINCT ?pleiades) AS ?withPleiades)
+      WHERE {
+        ?h a lado:ChronologicalHorizon ;
+           skos:notation         ?horizon ;
+           lado:hasHorizonMember ?site .
+        OPTIONAL { ?site lado:wikidata ?wikidata }
+        OPTIONAL { ?site lado:pleiades ?pleiades }
+      }
+      GROUP BY ?horizon
+      ORDER BY ?horizon

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Query the Arretine chronology graph &mdash; </title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+</head>
+<body>
+<div class="container">
+  <nav class="nav">
+    
+    <a href="index.html">Overview</a>
+    
+    <a href="sparql.html" class="active">Query</a>
+    
+  </nav>
+
+  <header class="page-head">
+    <span class="badge">SPARQL</span>
+    <h1>Query the Arretine chronology graph</h1>
+    <p class="intro">The graph behind the CAA 2026 contribution: 45 Arretine ware findspots in the north-western Roman provinces, each with a dated interval, grouped both by the seriation output and by archaeological horizon. Every query below runs in your browser — edit them and press Run.</p>
+    <p class="note">
+      There is no SPARQL endpoint and no server. The graph is fetched as a static
+      file and parsed client-side with <code>rdflib</code> under Pyodide. That is
+      deliberate: an archived copy of this repository stays queryable without a
+      service having to be kept alive for it.
+    </p>
+  </header>
+
+  <div class="status" id="status">
+    <span class="dot" id="dot"></span>
+    <span id="status-text">Loading the Python runtime (~10 MB on first visit)&hellip;</span>
+  </div>
+
+  <p class="note" id="graph-note" hidden></p>
+
+  
+  <section class="query" id="q-horizons-overview">
+    <h2>1. The five chronological horizons</h2>
+    <p class="intro">The starting point for everything else: each horizon with its interval and how many findspots it holds. Horizon 1 is the latest, horizon 5 the earliest. The interval is the envelope of the horizon's findspots, from the earliest start to the latest end.</p>
+    
+    <textarea class="sparql" id="src-horizons-overview" spellcheck="false"
+              rows="13">SELECT ?horizon ?label ?begin ?end (COUNT(?site) AS ?findspots)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation                     ?horizon ;
+     rdfs:label                        ?label ;
+     time:hasBeginning/time:inXSDgYear ?begin ;
+     time:hasEnd/time:inXSDgYear       ?end ;
+     lado:hasHorizonMember             ?site .
+  FILTER(langMatches(LANG(?label), "en"))
+}
+GROUP BY ?horizon ?label ?begin ?end
+ORDER BY ?horizon</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="horizons-overview" data-needs="" disabled>Run</button>
+      <button class="reset" data-q="horizons-overview">Reset</button>
+      <span class="timing" id="time-horizons-overview"></span>
+    </div>
+    <div class="result" id="out-horizons-overview"></div>
+  </section>
+  
+  <section class="query" id="q-horizon-succession">
+    <h2>2. How the horizons relate to one another</h2>
+    <p class="intro">The graph carries all twenty pairwise Allen relations between the horizons, so the sequence can be queried rather than read off a figure. Horizon 5 *meets* horizon 3 — one ends exactly where the other begins — while horizon 4 *contains* horizon 3 entirely.</p>
+    
+    <textarea class="sparql" id="src-horizon-succession" spellcheck="false"
+              rows="9">SELECT ?horizonA ?relation ?horizonB
+WHERE {
+  ?a a lado:ChronologicalHorizon ; skos:notation ?horizonA ; ?rel ?b .
+  ?b a lado:ChronologicalHorizon ; skos:notation ?horizonB .
+  FILTER(STRSTARTS(STR(?rel), STR(time:)))
+  BIND(REPLACE(STR(?rel), "^.*#interval", "") AS ?relation)
+}
+ORDER BY ?horizonA ?horizonB</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="horizon-succession" data-needs="" disabled>Run</button>
+      <button class="reset" data-q="horizon-succession">Reset</button>
+      <span class="timing" id="time-horizon-succession"></span>
+    </div>
+    <div class="result" id="out-horizon-succession"></div>
+  </section>
+  
+  <section class="query" id="q-horizon-anchors">
+    <h2>3. Which findspots anchor the chronology?</h2>
+    <p class="intro">Alligator marks a boundary as fixed when it rests on a historically dated event rather than on seriation alone. Only seven findspots carry such an anchor — and every horizon has at least one, which is what makes the sequence defensible.</p>
+    
+    <textarea class="sparql" id="src-horizon-anchors" spellcheck="false"
+              rows="16">SELECT ?horizon ?findspot ?startFixed ?endFixed ?begin ?end
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?site rdfs:label                        ?findspot ;
+        lado:startfixed                   ?startFixed ;
+        lado:endfixed                     ?endFixed ;
+        time:hasBeginning/time:inXSDgYear ?begin ;
+        time:hasEnd/time:inXSDgYear       ?end .
+
+  FILTER(?startFixed || ?endFixed)
+}
+ORDER BY ?horizon ?findspot</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="horizon-anchors" data-needs="" disabled>Run</button>
+      <button class="reset" data-q="horizon-anchors">Reset</button>
+      <span class="timing" id="time-horizon-anchors"></span>
+    </div>
+    <div class="result" id="out-horizon-anchors"></div>
+  </section>
+  
+  <section class="query" id="q-horizon-internal-structure">
+    <h2>4. Findspots that do not fill their horizon</h2>
+    <p class="intro">Where every findspot carries the same dating, the horizon envelope describes the horizon exactly. Where members differ, the envelope is wider than any single findspot. This query returns only the findspots narrower than their horizon — none of them are in horizons 1 to 3, which is the quickest evidence that those three are internally homogeneous.</p>
+    
+    <textarea class="sparql" id="src-horizon-internal-structure" spellcheck="false"
+              rows="17">SELECT ?horizon ?findspot ?siteBegin ?siteEnd ?horizonBegin ?horizonEnd
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation                     ?horizon ;
+     time:hasBeginning/time:inXSDgYear ?horizonBegin ;
+     time:hasEnd/time:inXSDgYear       ?horizonEnd ;
+     lado:hasHorizonMember             ?site .
+
+  ?site rdfs:label                        ?findspot ;
+        time:hasBeginning/time:inXSDgYear ?siteBegin ;
+        time:hasEnd/time:inXSDgYear       ?siteEnd .
+
+  FILTER(xsd:integer(STR(?siteBegin)) != xsd:integer(STR(?horizonBegin))
+      || xsd:integer(STR(?siteEnd))   != xsd:integer(STR(?horizonEnd)))
+}
+ORDER BY ?horizon ?findspot</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="horizon-internal-structure" data-needs="" disabled>Run</button>
+      <button class="reset" data-q="horizon-internal-structure">Reset</button>
+      <span class="timing" id="time-horizon-internal-structure"></span>
+    </div>
+    <div class="result" id="out-horizon-internal-structure"></div>
+  </section>
+  
+  <section class="query" id="q-horizon-cluster-composition">
+    <h2>5. Which seriation clusters does each horizon absorb?</h2>
+    <p class="intro">Both groupings live in the same graph, so one query can join them. A period cluster is computed — findspots the seriation gave an identical start and end year; a horizon is interpretive. Horizons 1 to 3 rest on a single cluster each, horizons 4 and 5 merge several, which is exactly why their envelopes are wider than their members.</p>
+    
+    <textarea class="sparql" id="src-horizon-cluster-composition" spellcheck="false"
+              rows="13">SELECT ?horizon ?cluster (COUNT(?site) AS ?findspots)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?c a lado:PeriodCluster ;
+     rdfs:label            ?cluster ;
+     lado:hasClusterMember ?site .
+}
+GROUP BY ?horizon ?cluster
+ORDER BY ?horizon ?cluster</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="horizon-cluster-composition" data-needs="" disabled>Run</button>
+      <button class="reset" data-q="horizon-cluster-composition">Reset</button>
+      <span class="timing" id="time-horizon-cluster-composition"></span>
+    </div>
+    <div class="result" id="out-horizon-cluster-composition"></div>
+  </section>
+  
+  <section class="query" id="q-findspots-at-clades-variana">
+    <h2>6. Which findspots were still in use in AD 9?</h2>
+    <p class="intro">The question the companion notebook works through in three different ways. Here it is resolved on the horizon level and in plain SPARQL: a findspot qualifies when its own interval covers AD 9, the year of the Clades Variana. Note the cast — rdflib will not compare xsd:gYear literals directly.</p>
+    
+    <textarea class="sparql" id="src-findspots-at-clades-variana" spellcheck="false"
+              rows="14">SELECT ?horizon ?findspot ?begin ?end
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?site rdfs:label                        ?findspot ;
+        time:hasBeginning/time:inXSDgYear ?begin ;
+        time:hasEnd/time:inXSDgYear       ?end .
+
+  FILTER(xsd:integer(STR(?begin)) <= 9 && xsd:integer(STR(?end)) >= 9)
+}
+ORDER BY ?horizon ?findspot</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="findspots-at-clades-variana" data-needs="" disabled>Run</button>
+      <button class="reset" data-q="findspots-at-clades-variana">Reset</button>
+      <span class="timing" id="time-findspots-at-clades-variana"></span>
+    </div>
+    <div class="result" id="out-findspots-at-clades-variana"></div>
+  </section>
+  
+  <section class="query" id="q-horizon-authority-links">
+    <h2>7. How well is each horizon linked to gazetteers?</h2>
+    <p class="intro">A practical linked-data question: can every findspot be reconciled against an external authority? Gaps mark the places where this graph cannot yet be joined to Wikidata or Pleiades.</p>
+    
+    <textarea class="sparql" id="src-horizon-authority-links" spellcheck="false"
+              rows="13">SELECT ?horizon (COUNT(DISTINCT ?site) AS ?findspots)
+                (COUNT(DISTINCT ?wikidata) AS ?withWikidata)
+                (COUNT(DISTINCT ?pleiades) AS ?withPleiades)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+  OPTIONAL { ?site lado:wikidata ?wikidata }
+  OPTIONAL { ?site lado:pleiades ?pleiades }
+}
+GROUP BY ?horizon
+ORDER BY ?horizon</textarea>
+    <div class="query-bar">
+      <button class="run" data-q="horizon-authority-links" data-needs="" disabled>Run</button>
+      <button class="reset" data-q="horizon-authority-links">Reset</button>
+      <span class="timing" id="time-horizon-authority-links"></span>
+    </div>
+    <div class="result" id="out-horizon-authority-links"></div>
+  </section>
+  
+
+  <footer class="page-foot">
+    <p>
+      Graph: <a href="arretine_sites_minigraph.ttl"><code>output/arretine_sites_minigraph.ttl</code></a>
+      &middot; Vocabularies: CIDOC-CRM, OWL-Time, GeoSPARQL, SKOS and <code>lado:</code> (archaeology.link). Findspots link to Wikidata and Pleiades.
+      A <a href="https://quarto.org">quarto-live</a> version of this page, for
+      reuse as teaching material, is in <code>qmd/</code> in the repository.
+    </p>
+  </footer>
+</div>
+
+<script>
+/* Query definitions, written from queries.yaml by py/build_sparql.py, so this
+   page and the quarto-live variant cannot drift apart. */
+const PREFIXES = "PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>\nPREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>\nPREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>\nPREFIX geosparql: <http://www.opengis.net/ont/geosparql#>\nPREFIX lado:      <http://archaeology.link/ontology#>\nPREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos:      <http://www.w3.org/2004/02/skos/core#>\nPREFIX time:      <http://www.w3.org/2006/time#>\nPREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>\n";
+const QUERIES  = {"horizons-overview": "SELECT ?horizon ?label ?begin ?end (COUNT(?site) AS ?findspots)\nWHERE {\n  ?h a lado:ChronologicalHorizon ;\n     skos:notation                     ?horizon ;\n     rdfs:label                        ?label ;\n     time:hasBeginning/time:inXSDgYear ?begin ;\n     time:hasEnd/time:inXSDgYear       ?end ;\n     lado:hasHorizonMember             ?site .\n  FILTER(langMatches(LANG(?label), \"en\"))\n}\nGROUP BY ?horizon ?label ?begin ?end\nORDER BY ?horizon", "horizon-succession": "SELECT ?horizonA ?relation ?horizonB\nWHERE {\n  ?a a lado:ChronologicalHorizon ; skos:notation ?horizonA ; ?rel ?b .\n  ?b a lado:ChronologicalHorizon ; skos:notation ?horizonB .\n  FILTER(STRSTARTS(STR(?rel), STR(time:)))\n  BIND(REPLACE(STR(?rel), \"^.*#interval\", \"\") AS ?relation)\n}\nORDER BY ?horizonA ?horizonB", "horizon-anchors": "SELECT ?horizon ?findspot ?startFixed ?endFixed ?begin ?end\nWHERE {\n  ?h a lado:ChronologicalHorizon ;\n     skos:notation         ?horizon ;\n     lado:hasHorizonMember ?site .\n\n  ?site rdfs:label                        ?findspot ;\n        lado:startfixed                   ?startFixed ;\n        lado:endfixed                     ?endFixed ;\n        time:hasBeginning/time:inXSDgYear ?begin ;\n        time:hasEnd/time:inXSDgYear       ?end .\n\n  FILTER(?startFixed || ?endFixed)\n}\nORDER BY ?horizon ?findspot", "horizon-internal-structure": "SELECT ?horizon ?findspot ?siteBegin ?siteEnd ?horizonBegin ?horizonEnd\nWHERE {\n  ?h a lado:ChronologicalHorizon ;\n     skos:notation                     ?horizon ;\n     time:hasBeginning/time:inXSDgYear ?horizonBegin ;\n     time:hasEnd/time:inXSDgYear       ?horizonEnd ;\n     lado:hasHorizonMember             ?site .\n\n  ?site rdfs:label                        ?findspot ;\n        time:hasBeginning/time:inXSDgYear ?siteBegin ;\n        time:hasEnd/time:inXSDgYear       ?siteEnd .\n\n  FILTER(xsd:integer(STR(?siteBegin)) != xsd:integer(STR(?horizonBegin))\n      || xsd:integer(STR(?siteEnd))   != xsd:integer(STR(?horizonEnd)))\n}\nORDER BY ?horizon ?findspot", "horizon-cluster-composition": "SELECT ?horizon ?cluster (COUNT(?site) AS ?findspots)\nWHERE {\n  ?h a lado:ChronologicalHorizon ;\n     skos:notation         ?horizon ;\n     lado:hasHorizonMember ?site .\n\n  ?c a lado:PeriodCluster ;\n     rdfs:label            ?cluster ;\n     lado:hasClusterMember ?site .\n}\nGROUP BY ?horizon ?cluster\nORDER BY ?horizon ?cluster", "findspots-at-clades-variana": "SELECT ?horizon ?findspot ?begin ?end\nWHERE {\n  ?h a lado:ChronologicalHorizon ;\n     skos:notation         ?horizon ;\n     lado:hasHorizonMember ?site .\n\n  ?site rdfs:label                        ?findspot ;\n        time:hasBeginning/time:inXSDgYear ?begin ;\n        time:hasEnd/time:inXSDgYear       ?end .\n\n  FILTER(xsd:integer(STR(?begin)) <= 9 && xsd:integer(STR(?end)) >= 9)\n}\nORDER BY ?horizon ?findspot", "horizon-authority-links": "SELECT ?horizon (COUNT(DISTINCT ?site) AS ?findspots)\n                (COUNT(DISTINCT ?wikidata) AS ?withWikidata)\n                (COUNT(DISTINCT ?pleiades) AS ?withPleiades)\nWHERE {\n  ?h a lado:ChronologicalHorizon ;\n     skos:notation         ?horizon ;\n     lado:hasHorizonMember ?site .\n  OPTIONAL { ?site lado:wikidata ?wikidata }\n  OPTIONAL { ?site lado:pleiades ?pleiades }\n}\nGROUP BY ?horizon\nORDER BY ?horizon"};
+const GRAPH    = {"file": "output/arretine_sites_minigraph.ttl", "url": "arretine_sites_minigraph.ttl", "publish": true, "megabytes": "0.1"};
+const MAX_ROWS = 500;
+
+const statusText = document.getElementById('status-text');
+const dot = document.getElementById('dot');
+let pyodide = null;
+
+function setStatus(text, state) {
+  statusText.textContent = text;
+  dot.className = 'dot ' + (state || '');
+}
+
+/* Escape once, centrally: cell values come from the graph and may contain <, &
+   or a stray quote, and building a table by string concatenation without this is
+   how an injection bug gets in. */
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+function renderTable(cols, rows, elId, total) {
+  const out = document.getElementById(elId);
+  if (!rows.length) {
+    out.innerHTML = '<p class="note">No results. The query is valid but matched nothing.</p>';
+    return;
+  }
+  let h = '<div class="table-scroll"><table class="layer-table"><thead><tr>';
+  h += cols.map(c => `<th>${esc(c)}</th>`).join('');
+  h += '</tr></thead><tbody>';
+  for (const r of rows) {
+    h += '<tr>' + cols.map(c => {
+      const v = r[c];
+      if (v === null || v === undefined) return '<td class="nil">&mdash;</td>';
+      const s = String(v);
+      return /^https?:\/\//.test(s)
+        ? `<td><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a></td>`
+        : `<td>${esc(s)}</td>`;
+    }).join('') + '</tr>';
+  }
+  h += '</tbody></table></div>';
+  h += `<p class="note">${total > rows.length
+    ? `Showing the first ${rows.length} of ${total} rows.`
+    : `${rows.length} row${rows.length === 1 ? '' : 's'}.`}</p>`;
+  out.innerHTML = h;
+}
+
+async function boot() {
+  try {
+    pyodide = await loadPyodide();
+    setStatus('Installing rdflib\u2026', 'busy');
+    await pyodide.loadPackage('micropip');
+    await pyodide.runPythonAsync(`
+import micropip
+await micropip.install("rdflib==7.1.1")
+`);
+    setStatus('Loading the graph\u2026', 'busy');
+    await pyodide.runPythonAsync(`
+from pyodide.http import pyfetch
+from rdflib import Graph
+
+_graphs = {}
+
+async def load(url, key):
+    """Fetch a Turtle file and parse it. Cached: a query re-run must not refetch."""
+    if key in _graphs:
+        return _graphs[key]
+    resp = await pyfetch(url)
+    if resp.status != 200:
+        raise RuntimeError(f"{url} -> HTTP {resp.status}")
+    text = await resp.string()
+    g = Graph()
+    g.parse(data=text, format="turtle")
+    _graphs[key] = g
+    return g
+
+base = await load(${JSON.stringify(GRAPH.url)}, "base")
+n_base = len(base)
+`);
+    const n = pyodide.globals.get('n_base');
+    const note = document.getElementById('graph-note');
+    note.hidden = false;
+    note.innerHTML = `Graph loaded: <strong>${n}</strong> triples from <code>${GRAPH.file}</code>.`;
+    setStatus('Ready \u2014 edit a query and press Run.', 'ok');
+    document.querySelectorAll('button.run').forEach(b => (b.disabled = false));
+  } catch (err) {
+    setStatus('Could not start: ' + err.message, 'err');
+    console.error(err);
+  }
+}
+
+async function runQuery(id, needs) {
+  const btn = document.querySelector(`button.run[data-q="${id}"]`);
+  const timing = document.getElementById('time-' + id);
+  const out = document.getElementById('out-' + id);
+  btn.disabled = true;
+  timing.textContent = needs ? 'fetching the extra graph\u2026' : 'running\u2026';
+  out.innerHTML = '';
+  const t0 = performance.now();
+  try {
+    const src = document.getElementById('src-' + id).value;
+    pyodide.globals.set('_q_src', PREFIXES + '\n' + src);
+    pyodide.globals.set('_q_extra', needs ? GRAPH.extra[needs].url : '');
+    const json = await pyodide.runPythonAsync(`
+import json
+g = _graphs["base"]
+if _q_extra:
+    # Merge the extra graph into a copy, so the base graph stays as loaded and
+    # the other queries are not silently answering over a different dataset.
+    extra = await load(_q_extra, _q_extra)
+    merged = Graph()
+    for t in _graphs["base"]: merged.add(t)
+    for t in extra: merged.add(t)
+    g = merged
+
+res = g.query(_q_src)
+cols = [str(v) for v in res.vars]
+_all = list(res)
+rows = [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)}
+        for r in _all[:${MAX_ROWS}]]
+json.dumps({"cols": cols, "rows": rows, "n": len(g), "total": len(_all)})
+`);
+    const data = JSON.parse(json);
+    renderTable(data.cols, data.rows, 'out-' + id, data.total);
+    const dt = ((performance.now() - t0) / 1000).toFixed(1);
+    timing.textContent = `${dt}s over ${data.n} triples`;
+  } catch (err) {
+    /* Show the real error. A malformed query is the normal case here - people are
+       meant to edit these - so the message has to be the actual parse error. */
+    out.innerHTML = `<pre class="error">${esc(err.message)}</pre>`;
+    timing.textContent = '';
+  }
+  btn.disabled = false;
+}
+
+document.querySelectorAll('button.run').forEach(b =>
+  b.addEventListener('click', () => runQuery(b.dataset.q, b.dataset.needs)));
+document.querySelectorAll('button.reset').forEach(b =>
+  b.addEventListener('click', () => {
+    const id = b.dataset.q;
+    document.getElementById('src-' + id).value = QUERIES[id];
+    document.getElementById('out-' + id).innerHTML = '';
+    document.getElementById('time-' + id).textContent = '';
+  }));
+
+boot();
+</script>
+</body>
+</html>

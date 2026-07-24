@@ -31,6 +31,7 @@ from __future__ import annotations
 # ==============================================================================
 
 import argparse
+import shutil
 import subprocess
 import sys
 import time
@@ -51,7 +52,8 @@ OUTPUT_DIR = REPO_ROOT / "output"
 #   key      short name for the --only switch
 #   script   file in root/py/
 #   resets   True if the script clears root/output/ before writing
-#   expects  a few representative output files, checked after the step runs
+#   expects  representative output files (repo-root relative), checked after
+#            the step runs — a step may write outside output/, e.g. into docs/
 #
 # ORDER MATTERS: the step with resets=True has to come first, otherwise it
 # deletes the figures produced by the steps before it.
@@ -61,7 +63,7 @@ STEPS = [
         "script": "alligator_to_clean_rdf.py",
         "label": "RDF pipeline · clusters, Allen matrix, events timeline",
         "resets": True,
-        "expects": ["events_timeline.jpg", "events_timeline.svg"],
+        "expects": ["output/events_timeline.jpg", "output/events_timeline.svg"],
     },
     {
         "key": "service",
@@ -69,13 +71,27 @@ STEPS = [
         "label": "Service composition · timeline, within-group variance/quality",
         "resets": False,
         "expects": [
-            "events_timeline_by_service_en.jpg",
-            "events_timeline_by_service_fr.jpg",
-            "service_group_variability_en.jpg",
-            "service_group_variability_fr.jpg",
-            "service_percentages.csv",
-            "service_group_variability.csv",
+            "output/events_timeline_by_service_en.jpg",
+            "output/events_timeline_by_service_fr.jpg",
+            "output/service_group_variability_en.jpg",
+            "output/service_group_variability_fr.jpg",
+            "output/service_percentages.csv",
+            "output/service_group_variability.csv",
         ],
+    },
+    {
+        "key": "sparql",
+        "script": "build_sparql.py",
+        "label": "Interactive query page · docs/sparql.html, .rq files, qmd",
+        "resets": False,
+        "expects": [
+            "docs/sparql.html",
+            "docs/arretine_sites_minigraph.ttl",
+            "docs/downloads/queries",
+        ],
+        # The page links style.css next to itself; the canonical copy lives in
+        # py/templates/, so it is synced here rather than maintained twice.
+        "copy_after": [("py/templates/style.css", "docs/style.css")],
     },
 ]
 
@@ -117,8 +133,17 @@ def run_step(step: dict) -> bool:
 
     print(f"\n✓ {step['script']} finished in {elapsed:.1f} s")
 
+    for src_rel, dst_rel in step.get("copy_after", []):
+        src, dst = REPO_ROOT / src_rel, REPO_ROOT / dst_rel
+        if src.exists():
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(src, dst)
+            print(f"  copied {src_rel} -> {dst_rel}")
+        else:
+            print(f"  ⚠ {src_rel} not found; {dst_rel} not updated")
+
     # Verify the representative outputs actually landed in root/output/.
-    missing = [f for f in step["expects"] if not (OUTPUT_DIR / f).exists()]
+    missing = [f for f in step["expects"] if not (REPO_ROOT / f).exists()]
     if missing:
         print("  ⚠ Expected output(s) missing:")
         for f in missing:

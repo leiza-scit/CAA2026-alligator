@@ -1,0 +1,136 @@
+---
+title: "{{ qmd.title }}"
+format: live-html
+engine: knitr
+pyodide:
+  packages:
+    - micropip
+---
+
+{% raw %}{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}{% endraw %}
+
+## About this notebook
+
+{{ qmd.about }}
+
+{{ qmd.notes }}
+
+## Step 1 — Set up and load the graph
+
+`rdflib` is not pre-bundled with Pyodide, so it is installed with `micropip`.
+HTTP has to go through `pyodide.http.pyfetch`: `requests` and `urllib.request`
+do not work in the browser.
+
+```{pyodide}
+#| autorun: false
+#| label: setup
+#| output: false
+import micropip
+await micropip.install("rdflib=={{ rdflib_version }}")
+
+from pyodide.http import pyfetch
+from rdflib import Graph
+
+GRAPH_URL = "{{ qmd.graph_url }}"
+
+_cache = {}
+
+async def load(url):
+    """Fetch a Turtle file and parse it into a Graph. Cached per URL."""
+    if url in _cache:
+        return _cache[url]
+    resp = await pyfetch(url)
+    if resp.status != 200:
+        raise RuntimeError(f"{url} -> HTTP {resp.status}")
+    g = Graph()
+    g.parse(data=await resp.string(), format="turtle")
+    _cache[url] = g
+    return g
+
+def show(graph, query):
+    """Run a query and return the rows as a list of dicts."""
+    res = graph.query(PREFIXES + query)
+    cols = [str(v) for v in res.vars]
+    return [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)}
+            for r in res]
+
+PREFIXES = """
+{{ prefixes }}"""
+```
+
+Now fetch the graph itself. It is about {{ qmd.megabytes }} MB, most of which is
+WKT geometry literals; the triple count is small.
+
+```{pyodide}
+#| autorun: false
+#| label: load-graph
+base = await load(GRAPH_URL)
+print(f"{len(base)} triples loaded from {GRAPH_URL}")
+```
+
+{% for q in queries %}
+## Step {{ loop.index + 1 }} — {{ q.title }}
+
+{{ q.intro }}
+
+```{pyodide}
+#| autorun: false
+#| label: query-{{ q.id }}
+assert "base" in dir(), "Run the 'load-graph' cell first."
+{% if q.needs %}
+# This query needs the wider geo-lod graph as well: {{ graph.extra[q.needs].label }}.
+# It is merged into a copy, so `base` stays exactly as loaded.
+extra = await load("{{ graph.extra[q.needs].url }}")
+g = Graph()
+for t in base: g.add(t)
+for t in extra: g.add(t)
+print(f"{len(base)} + {len(extra)} -> {len(g)} triples")
+{% else %}
+g = base
+{% endif %}
+rows = show(g, """
+{{ q.sparql }}""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+{% endfor %}
+
+## Step {{ queries|length + 2 }} — Explore
+
+The graph is in `base` and stays in scope. A few things worth trying:
+
+- Swap the map IRI in the first query for `#output-map-b-eifel-overview` or
+  `#output-sisal-alps-sites`.
+- Replace `wdtgeo:atLocality` with `crm:P89_falls_within` in the second query —
+  it is a sub-property, so the results are the same, but the query now also
+  catches any other containment relation added later.
+- List the classes actually used: that is the cell below.
+- Ask what every feature is licensed under, and by whom — the graph carries
+  per-feature attribution, because different layers came from different sources.
+
+```{pyodide}
+#| autorun: false
+#| label: explore
+assert "base" in dir(), "Run the 'load-graph' cell first."
+
+rows = show(base, """
+SELECT ?type (COUNT(?f) AS ?n) WHERE {
+  ?f a ?cls .
+  FILTER(STRSTARTS(STR(?cls), "http://w3id.org/geo-lod/wdttest/geo#"))
+  BIND(REPLACE(STR(?cls), "^.*#", "") AS ?type)
+}
+GROUP BY ?type
+ORDER BY DESC(?n)""")
+
+for r in rows:
+    print(f"{r['n']:>4}  {r['type']}")
+```
+
+---
+
+Produced for the supplementary materials of the WD1 (Walsdorfer Maar) manuscript.
+Vocabulary: `metadata/geo_ontology.ttl`, extending the
+[geo-lod](http://w3id.org/geo-lod/) core ontology.
+Notebook structure follows the NFDI4Objects OER template.

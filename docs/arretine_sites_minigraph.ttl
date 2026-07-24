@@ -1,0 +1,2260 @@
+@prefix ae: <http://leiza-scit.github.io/CAA2026-alligator/> .
+@prefix aecol: <http://leiza-scit.github.io/CAA2026-alligator/collections/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fsl: <http://fuzzy-sl.squirrel.link/ontology/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix lado: <http://archaeology.link/ontology#> .
+@prefix pleiades: <https://pleiades.stoa.org/places/vocab#> .
+@prefix pleiadesplace: <https://pleiades.stoa.org/places/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ae:event_Clades_Variana a crm:E7_Activity,
+        time:Interval ;
+    rdfs:label "Clades Variana"@en ;
+    time:hasBeginning ae:event_Clades_Variana_begin ;
+    time:hasEnd ae:event_Clades_Variana_end .
+
+ae:event_Drusus_campaigns a crm:E7_Activity,
+        time:Interval ;
+    rdfs:label "Drusus campaigns"@en ;
+    time:hasBeginning ae:event_Drusus_campaigns_begin ;
+    time:hasEnd ae:event_Drusus_campaigns_end .
+
+ae:event_Germanicus_campaigns a crm:E7_Activity,
+        time:Interval ;
+    rdfs:label "Germanicus campaigns"@en ;
+    time:hasBeginning ae:event_Germanicus_campaigns_begin ;
+    time:hasEnd ae:event_Germanicus_campaigns_end .
+
+ae:event_Tiberian_campaign a crm:E7_Activity,
+        time:Interval ;
+    rdfs:label "Tiberian campaign"@en ;
+    time:hasBeginning ae:event_Tiberian_campaign_begin ;
+    time:hasEnd ae:event_Tiberian_campaign_end .
+
+ae:BWYway_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:BWYway_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:BWYway_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7535 50.34167)"^^geosparql:wktLiteral .
+
+ae:Bp8JY3_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:Bp8JY3_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:Bp8JY3_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.44349 50.51455)"^^geosparql:wktLiteral .
+
+ae:D9L8l5_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:D9L8l5_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:D9L8l5_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.1455 50.6296)"^^geosparql:wktLiteral .
+
+ae:DJq1mg_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:DJq1mg_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:DJq1mg_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.23879 50.08434)"^^geosparql:wktLiteral .
+
+ae:DeeX7G_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:DeeX7G_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
+
+ae:DeeX7G_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.593 47.5557)"^^geosparql:wktLiteral .
+
+ae:GEJedY_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:GEJedY_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:GEJedY_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)"^^geosparql:wktLiteral .
+
+ae:Gjndwx_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:Gjndwx_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:Gjndwx_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.17052 51.73947)"^^geosparql:wktLiteral .
+
+ae:JwKRVN_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:JwKRVN_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
+
+ae:JwKRVN_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.85972 49.54028)"^^geosparql:wktLiteral .
+
+ae:K4wDrp_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:K4wDrp_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:K4wDrp_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.721944 51.183889)"^^geosparql:wktLiteral .
+
+ae:KROWel_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:KROWel_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+ae:KROWel_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.66829 52.45207)"^^geosparql:wktLiteral .
+
+ae:LG4D5x_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:LG4D5x_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:LG4D5x_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geosparql:wktLiteral .
+
+ae:N48RZG_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:N48RZG_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:N48RZG_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.67 51.43167)"^^geosparql:wktLiteral .
+
+ae:NRzOWx_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:NRzOWx_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:NRzOWx_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.73756 47.49726)"^^geosparql:wktLiteral .
+
+ae:O9rjkJ_begin a time:Instant ;
+    time:inXSDgYear "-0012"^^xsd:gYear .
+
+ae:O9rjkJ_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:O9rjkJ_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7665 50.371)"^^geosparql:wktLiteral .
+
+ae:OmaMbj_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:OmaMbj_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:OmaMbj_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)"^^geosparql:wktLiteral .
+
+ae:Q48jL9_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:Q48jL9_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:Q48jL9_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.09938 50.7448)"^^geosparql:wktLiteral .
+
+ae:QLNMJk_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:QLNMJk_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:QLNMJk_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.7522 50.36987)"^^geosparql:wktLiteral .
+
+ae:QW3vzV_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:QW3vzV_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:QW3vzV_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geosparql:wktLiteral .
+
+ae:VJwKp7_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:VJwKp7_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+ae:VJwKp7_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.16186 52.05774)"^^geosparql:wktLiteral .
+
+ae:VvXl2y_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:VvXl2y_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+ae:VvXl2y_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)"^^geosparql:wktLiteral .
+
+ae:Vx2doQ_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:Vx2doQ_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:Vx2doQ_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.46486 50.78096)"^^geosparql:wktLiteral .
+
+ae:WNVNB2_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:WNVNB2_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:WNVNB2_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(-8.49341 40.09905)"^^geosparql:wktLiteral .
+
+ae:XPb9J3_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:XPb9J3_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:XPb9J3_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.90977 47.90988)"^^geosparql:wktLiteral .
+
+ae:XeE1dq_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:XeE1dq_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:XeE1dq_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geosparql:wktLiteral .
+
+ae:b8OX2q_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:b8OX2q_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:b8OX2q_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.60087 46.51651)"^^geosparql:wktLiteral .
+
+ae:bwrZ4y_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:bwrZ4y_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:bwrZ4y_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)"^^geosparql:wktLiteral .
+
+aecol:cluster_ad0008_ad0013_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+aecol:cluster_ad0008_ad0013_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+aecol:cluster_ad0008_ad0013_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.04067 46.88028, 5.884209 51.839831, 8.7535 50.34167, 10.89655 48.37277, 9.74073 47.4979, 7.04067 46.88028))"^^geosparql:wktLiteral .
+
+aecol:cluster_ad0016_ad0028_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+aecol:cluster_ad0016_ad0028_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+aecol:cluster_ad0016_ad0028_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.72231 47.53323, 4.66829 52.45207, 5.16186 52.05774, 8.29349 47.59059, 7.72231 47.53323))"^^geosparql:wktLiteral .
+
+aecol:cluster_bc0007_ad0009_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+aecol:cluster_bc0007_ad0009_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+aecol:cluster_bc0007_ad0009_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, -8.49341 40.09905))"^^geosparql:wktLiteral .
+
+aecol:cluster_bc0011_bc0007_begin a time:Instant ;
+    time:inXSDgYear "-0011"^^xsd:gYear .
+
+aecol:cluster_bc0011_bc0007_end a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+aecol:cluster_bc0011_bc0007_geom a sf:Point ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT (7.58444 51.6125)"^^geosparql:wktLiteral .
+
+aecol:cluster_bc0012_ad0009_begin a time:Instant ;
+    time:inXSDgYear "-0012"^^xsd:gYear .
+
+aecol:cluster_bc0012_ad0009_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+aecol:cluster_bc0012_ad0009_geom a sf:LineString ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> LINESTRING (8.7665 50.371, 4.86063 50.45949)"^^geosparql:wktLiteral .
+
+aecol:cluster_bc0015_ad0009_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+aecol:cluster_bc0015_ad0009_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+aecol:cluster_bc0015_ad0009_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.60087 46.51651, 4.44349 50.51455, 6.67 51.43167, 10.88173 48.39021, 6.60087 46.51651))"^^geosparql:wktLiteral .
+
+aecol:cluster_bc0015_ad0013_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+aecol:cluster_bc0015_ad0013_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+aecol:cluster_bc0015_ad0013_geom a sf:Point ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT (8.35978 49.63007)"^^geosparql:wktLiteral .
+
+aecol:cluster_bc0015_bc0009_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+aecol:cluster_bc0015_bc0009_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
+
+aecol:cluster_bc0015_bc0009_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 8.540724 47.373008))"^^geosparql:wktLiteral .
+
+aecol:horizon_1_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+aecol:horizon_1_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+aecol:horizon_1_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.72231 47.53323, 4.66829 52.45207, 5.16186 52.05774, 8.29349 47.59059, 7.72231 47.53323))"^^geosparql:wktLiteral .
+
+aecol:horizon_2_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+aecol:horizon_2_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+aecol:horizon_2_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((7.04067 46.88028, 5.884209 51.839831, 8.7535 50.34167, 10.89655 48.37277, 9.74073 47.4979, 7.04067 46.88028))"^^geosparql:wktLiteral .
+
+aecol:horizon_3_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+aecol:horizon_3_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+aecol:horizon_3_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-8.49341 40.09905, 5.884209 51.839831, 7.17052 51.73947, 8.7522 50.36987, 10.90977 47.90988, -8.49341 40.09905))"^^geosparql:wktLiteral .
+
+aecol:horizon_4_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+aecol:horizon_4_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+aecol:horizon_4_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((6.60087 46.51651, 4.44349 50.51455, 6.67 51.43167, 8.7665 50.371, 10.88173 48.39021, 6.60087 46.51651))"^^geosparql:wktLiteral .
+
+aecol:horizon_5_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+aecol:horizon_5_end a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+aecol:horizon_5_geom a sf:Polygon ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((8.540724 47.373008, 7.593 47.5557, 5.85972 49.54028, 5.884209 51.839831, 7.58444 51.6125, 8.540724 47.373008))"^^geosparql:wktLiteral .
+
+ae:eoE031_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:eoE031_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+ae:eoE031_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.72231 47.53323)"^^geosparql:wktLiteral .
+
+ae:event_Clades_Variana_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:event_Clades_Variana_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:event_Drusus_campaigns_begin a time:Instant ;
+    time:inXSDgYear "-0012"^^xsd:gYear .
+
+ae:event_Drusus_campaigns_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
+
+ae:event_Germanicus_campaigns_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:event_Germanicus_campaigns_end a time:Instant ;
+    time:inXSDgYear "0017"^^xsd:gYear .
+
+ae:event_Tiberian_campaign_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:event_Tiberian_campaign_end a time:Instant ;
+    time:inXSDgYear "-0014"^^xsd:gYear .
+
+ae:ewr5bR_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:ewr5bR_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:ewr5bR_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.593 47.5557)"^^geosparql:wktLiteral .
+
+ae:ez8xNq_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:ez8xNq_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:ez8xNq_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.89655 48.37277)"^^geosparql:wktLiteral .
+
+ae:g64Ky0_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:g64Ky0_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
+
+ae:g64Ky0_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.540724 47.373008)"^^geosparql:wktLiteral .
+
+ae:gL6OAG_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:gL6OAG_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:gL6OAG_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(10.88173 48.39021)"^^geosparql:wktLiteral .
+
+ae:gw8Kxp_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:gw8Kxp_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:gw8Kxp_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.35978 49.63007)"^^geosparql:wktLiteral .
+
+ae:j2lK5y_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:j2lK5y_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:j2lK5y_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(9.74073 47.4979)"^^geosparql:wktLiteral .
+
+ae:kNA9dJ_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:kNA9dJ_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:kNA9dJ_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)"^^geosparql:wktLiteral .
+
+ae:lKmJ9q_begin a time:Instant ;
+    time:inXSDgYear "-0012"^^xsd:gYear .
+
+ae:lKmJ9q_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:lKmJ9q_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(4.86063 50.45949)"^^geosparql:wktLiteral .
+
+ae:lwDA1d_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:lwDA1d_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:lwDA1d_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.233333 47.46667)"^^geosparql:wktLiteral .
+
+ae:n47Ll8_begin a time:Instant ;
+    time:inXSDgYear "-0011"^^xsd:gYear .
+
+ae:n47Ll8_end a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:n47Ll8_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.58444 51.6125)"^^geosparql:wktLiteral .
+
+ae:nrylrd_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:nrylrd_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:nrylrd_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.46999 51.64639)"^^geosparql:wktLiteral .
+
+ae:qLXYbG_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:qLXYbG_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+ae:qLXYbG_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.6938 50.84841)"^^geosparql:wktLiteral .
+
+ae:rQ80WO_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:rQ80WO_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
+
+ae:rQ80WO_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.884209 51.839831)"^^geosparql:wktLiteral .
+
+ae:site_Trier-Petrisberg a fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        pleiades:Place ;
+    rdfs:label "Trier-Petrisberg"@en ;
+    lado:osm_entity <http://openstreetmap.org/way/104871217> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:108894 ;
+    lado:wikidata wikidata:Q20578867 ;
+    geosparql:hasGeometry ae:site_Trier-Petrisberg_geom ;
+    geosparql:memberOf aecol:arretine_sites .
+
+ae:site_Trier-Petrisberg_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(6.664117 49.752021)"^^geosparql:wktLiteral .
+
+ae:v1O46L_begin a time:Instant ;
+    time:inXSDgYear "0016"^^xsd:gYear .
+
+ae:v1O46L_end a time:Instant ;
+    time:inXSDgYear "0028"^^xsd:gYear .
+
+ae:v1O46L_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.29349 47.59059)"^^geosparql:wktLiteral .
+
+ae:wm71YX_begin a time:Instant ;
+    time:inXSDgYear "0008"^^xsd:gYear .
+
+ae:wm71YX_end a time:Instant ;
+    time:inXSDgYear "0013"^^xsd:gYear .
+
+ae:wm71YX_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(7.04067 46.88028)"^^geosparql:wktLiteral .
+
+ae:xVy2j7_begin a time:Instant ;
+    time:inXSDgYear "-0015"^^xsd:gYear .
+
+ae:xVy2j7_end a time:Instant ;
+    time:inXSDgYear "-0009"^^xsd:gYear .
+
+ae:xVy2j7_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.31083 47.58889)"^^geosparql:wktLiteral .
+
+ae:yJBpPg_begin a time:Instant ;
+    time:inXSDgYear "-0007"^^xsd:gYear .
+
+ae:yJBpPg_end a time:Instant ;
+    time:inXSDgYear "0009"^^xsd:gYear .
+
+ae:yJBpPg_geom a sf:Point ;
+    fsl:certaintyDesc "Mapping done by Allard Mees."@en ;
+    geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(8.27387 49.99891)"^^geosparql:wktLiteral .
+
+ae:BWYway a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Friedberg"@en ;
+    lado:cax 0.4748 ;
+    lado:cay 0.0596 ;
+    lado:caz -0.3632 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/node/725895648> ;
+    lado:osm_tag "place=hamlet" ;
+    lado:pleiades pleiadesplace:118681 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1011847 ;
+    dc:identifier "BWYway" ;
+    geosparql:hasGeometry ae:BWYway_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    time:hasBeginning ae:BWYway_begin ;
+    time:hasEnd ae:BWYway_end .
+
+ae:Bp8JY3 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Liberchies"@en ;
+    lado:cax -0.3057 ;
+    lado:cay -0.0244 ;
+    lado:caz -0.0504 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Rödgen" ;
+    lado:nfsn "Neuss" ;
+    lado:pleiades pleiadesplace:109003 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2371918 ;
+    dc:identifier "Bp8JY3" ;
+    geosparql:hasGeometry ae:Bp8JY3_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:Bp8JY3_begin ;
+    time:hasEnd ae:Bp8JY3_end .
+
+ae:D9L8l5 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Braives"@en ;
+    lado:cax 0.186 ;
+    lado:cay -0.0421 ;
+    lado:caz 0.267 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:109245 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q681153 ;
+    dc:identifier "D9L8l5" ;
+    geosparql:hasGeometry ae:D9L8l5_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:D9L8l5_begin ;
+    time:hasEnd ae:D9L8l5_end .
+
+ae:DJq1mg a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Wiesbaden"@en ;
+    lado:cax 0.4593 ;
+    lado:cay 0.0995 ;
+    lado:caz -0.5028 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/way/111263486> ;
+    lado:osm_tag "tourism=attraction" ;
+    lado:pleiades pleiadesplace:108750 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1094536 ;
+    dc:identifier "DJq1mg" ;
+    geosparql:hasGeometry ae:DJq1mg_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    skos:relatedMatch <http://openstreetmap.org/way/111263486> ;
+    time:hasBeginning ae:DJq1mg_begin ;
+    time:hasEnd ae:DJq1mg_end .
+
+ae:DeeX7G a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Basel, Lager"@en ;
+    lado:cax -1.2041 ;
+    lado:cay -0.5444 ;
+    lado:caz -0.0093 ;
+    lado:endfixed false ;
+    lado:estimatedend -9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Dangstetten" ;
+    lado:nfsn "Dangstetten" ;
+    lado:osm_entity <http://openstreetmap.org/way/168318389> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:177468 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q666479 ;
+    dc:identifier "DeeX7G" ;
+    geosparql:hasGeometry ae:DeeX7G_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_bc0009,
+        aecol:horizon_5 ;
+    time:hasBeginning ae:DeeX7G_begin ;
+    time:hasEnd ae:DeeX7G_end .
+
+ae:GEJedY a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Asberg, Lagerdorf"@en ;
+    lado:cax 0.2042 ;
+    lado:cay 0.0864 ;
+    lado:caz -0.0158 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:108761 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q723019 ;
+    dc:identifier "GEJedY" ;
+    geosparql:hasGeometry ae:GEJedY_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:GEJedY_begin ;
+    time:hasEnd ae:GEJedY_end .
+
+ae:Gjndwx a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Haltern"@en ;
+    lado:cax 0.1314 ;
+    lado:cay 0.1361 ;
+    lado:caz -0.1036 ;
+    lado:endfixed true ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/435021824> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:109029 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q2179592 ;
+    dc:identifier "Gjndwx" ;
+    geosparql:hasGeometry ae:Gjndwx_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:Gjndwx_begin ;
+    time:hasEnd ae:Gjndwx_end .
+
+ae:JwKRVN a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Titelberg"@en ;
+    lado:cax -1.2119 ;
+    lado:cay -0.3813 ;
+    lado:caz -0.0643 ;
+    lado:endfixed false ;
+    lado:estimatedend -9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Dangstetten" ;
+    lado:nfsn "Dangstetten" ;
+    lado:osm_entity <http://openstreetmap.org/way/32545380> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:109381 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1463952 ;
+    dc:identifier "JwKRVN" ;
+    geosparql:hasGeometry ae:JwKRVN_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_bc0009,
+        aecol:horizon_5 ;
+    time:hasBeginning ae:JwKRVN_begin ;
+    time:hasEnd ae:JwKRVN_end .
+
+ae:K4wDrp a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Neuss"@en ;
+    lado:cax -0.4107 ;
+    lado:cay 0.0405 ;
+    lado:caz -0.055 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Rödgen" ;
+    lado:osm_entity <http://openstreetmap.org/node/6358516450> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:109215 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q318196 ;
+    dc:identifier "K4wDrp" ;
+    geosparql:hasGeometry ae:K4wDrp_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:K4wDrp_begin ;
+    time:hasEnd ae:K4wDrp_end .
+
+ae:KROWel a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Velsen"@en ;
+    lado:cax 0.8336 ;
+    lado:cay -0.1823 ;
+    lado:caz 0.0086 ;
+    lado:endfixed true ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/106663898> ;
+    lado:osm_tag "natural=water" ;
+    lado:pleiades pleiadesplace:99058 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q615397 ;
+    dc:identifier "KROWel" ;
+    geosparql:hasGeometry ae:KROWel_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0016_ad0028,
+        aecol:horizon_1 ;
+    skos:closeMatch <http://openstreetmap.org/way/106663898> ;
+    time:hasBeginning ae:KROWel_begin ;
+    time:hasEnd ae:KROWel_end .
+
+ae:LG4D5x a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Nijmegen, Trajanusplein"@en ;
+    lado:cax 0.4147 ;
+    lado:cay 0.0385 ;
+    lado:caz -0.4235 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:pleiades pleiadesplace:98921 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1309708 ;
+    dc:identifier "LG4D5x" ;
+    geosparql:hasGeometry ae:LG4D5x_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    time:hasBeginning ae:LG4D5x_begin ;
+    time:hasEnd ae:LG4D5x_end .
+
+ae:N48RZG a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Asberg, Lager"@en ;
+    lado:cax -0.323 ;
+    lado:cay 0.1081 ;
+    lado:caz 0.1243 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Rödgen" ;
+    lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/way/144455109> ;
+    lado:osm_tag "natural=scrub" ;
+    lado:pleiades pleiadesplace:108761 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q723019 ;
+    dc:identifier "N48RZG" ;
+    geosparql:hasGeometry ae:N48RZG_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:N48RZG_begin ;
+    time:hasEnd ae:N48RZG_end .
+
+ae:NRzOWx a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Oberwinterthur, Römerstr. 186"@en ;
+    lado:cax 0.479 ;
+    lado:cay 0.0493 ;
+    lado:caz -0.5557 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/way/115007886> ;
+    lado:osm_tag "building=appartments" ;
+    lado:pleiades pleiadesplace:187624 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q164912 ;
+    dc:identifier "NRzOWx" ;
+    geosparql:hasGeometry ae:NRzOWx_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    skos:closeMatch <http://openstreetmap.org/way/115007886> ;
+    time:hasBeginning ae:NRzOWx_begin ;
+    time:hasEnd ae:NRzOWx_end .
+
+ae:O9rjkJ a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Rödgen"@en ;
+    lado:cax -0.4825 ;
+    lado:cay 0.1896 ;
+    lado:caz 0.2972 ;
+    lado:endfixed true ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -12.0 ;
+    lado:osm_entity <http://openstreetmap.org/node/6700040031> ;
+    lado:osm_tag "tourism=information" ;
+    lado:pleiades pleiadesplace:220408239 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q2179598 ;
+    dc:identifier "O9rjkJ" ;
+    geosparql:hasGeometry ae:O9rjkJ_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0012_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:O9rjkJ_begin ;
+    time:hasEnd ae:O9rjkJ_end .
+
+ae:OmaMbj a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Augst, Insula 31"@en ;
+    lado:cax 0.0998 ;
+    lado:cay 0.1164 ;
+    lado:caz -0.3233 ;
+    lado:endfixed true ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/107475507> ;
+    lado:osm_tag "building=yes" ;
+    lado:pleiades pleiadesplace:177494 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q610371 ;
+    dc:identifier "OmaMbj" ;
+    geosparql:hasGeometry ae:OmaMbj_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    skos:closeMatch <http://openstreetmap.org/way/107475507> ;
+    time:hasBeginning ae:OmaMbj_begin ;
+    time:hasEnd ae:OmaMbj_end .
+
+ae:Q48jL9 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Bonn, Boeselagerhof"@en ;
+    lado:cax -0.007 ;
+    lado:cay 0.0597 ;
+    lado:caz -0.1639 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/1191145951> ;
+    lado:osm_tag "information=tactile_model" ;
+    lado:pleiades pleiadesplace:108818 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1146198 ;
+    dc:identifier "Q48jL9" ;
+    geosparql:hasGeometry ae:Q48jL9_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:Q48jL9_begin ;
+    time:hasEnd ae:Q48jL9_end .
+
+ae:QLNMJk a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Bad Nauheim"@en ;
+    lado:cax 0.2199 ;
+    lado:cay 0.034 ;
+    lado:caz -0.1879 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/333175552> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:118588 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2179578 ;
+    dc:identifier "QLNMJk" ;
+    geosparql:hasGeometry ae:QLNMJk_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:QLNMJk_begin ;
+    time:hasEnd ae:QLNMJk_end .
+
+ae:QW3vzV a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Nijmegen, Valkhof"@en ;
+    lado:cax 0.2432 ;
+    lado:cay 0.1211 ;
+    lado:caz -0.268 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/node/10075892871> ;
+    lado:osm_tag "tourism=museum" ;
+    lado:pleiades pleiadesplace:98921 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1309708 ;
+    dc:identifier "QW3vzV" ;
+    geosparql:hasGeometry ae:QW3vzV_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    time:hasBeginning ae:QW3vzV_begin ;
+    time:hasEnd ae:QW3vzV_end .
+
+ae:VJwKp7 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Vechten"@en ;
+    lado:cax 0.8037 ;
+    lado:cay -0.2304 ;
+    lado:caz 0.3963 ;
+    lado:endfixed false ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:nfen "Velsen" ;
+    lado:nfsn "Velsen" ;
+    lado:pleiades pleiadesplace:98956 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2311719 ;
+    dc:identifier "VJwKp7" ;
+    geosparql:hasGeometry ae:VJwKp7_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0016_ad0028,
+        aecol:horizon_1 ;
+    time:hasBeginning ae:VJwKp7_begin ;
+    time:hasEnd ae:VJwKp7_end .
+
+ae:VvXl2y a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Augst, Theater"@en ;
+    lado:cax 0.7059 ;
+    lado:cay -0.0757 ;
+    lado:caz -0.2543 ;
+    lado:endfixed false ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:nfen "Velsen" ;
+    lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/node/6654634631> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:177494 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q610371 ;
+    dc:identifier "VvXl2y" ;
+    geosparql:hasGeometry ae:VvXl2y_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0016_ad0028,
+        aecol:horizon_1 ;
+    skos:exactMatch <http://openstreetmap.org/node/6654634631> ;
+    time:hasBeginning ae:VvXl2y_begin ;
+    time:hasEnd ae:VvXl2y_end .
+
+ae:Vx2doQ a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Tongeren"@en ;
+    lado:cax 0.063 ;
+    lado:cay 0.0097 ;
+    lado:caz 0.1545 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/way/346290310> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:108765 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1863929 ;
+    dc:identifier "Vx2doQ" ;
+    geosparql:hasGeometry ae:Vx2doQ_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:Vx2doQ_begin ;
+    time:hasEnd ae:Vx2doQ_end .
+
+ae:WNVNB2 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Conimbriga"@en ;
+    lado:cax -0.1065 ;
+    lado:cay 0.0456 ;
+    lado:caz -0.1097 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/7878861331> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:236443 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q868754 ;
+    dc:identifier "WNVNB2" ;
+    geosparql:hasGeometry ae:WNVNB2_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:WNVNB2_begin ;
+    time:hasEnd ae:WNVNB2_end .
+
+ae:XPb9J3 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Lorenzberg"@en ;
+    lado:cax 0.2099 ;
+    lado:cay 0.065 ;
+    lado:caz 0.039 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:187242 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1346749 ;
+    dc:identifier "XPb9J3" ;
+    geosparql:hasGeometry ae:XPb9J3_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:XPb9J3_begin ;
+    time:hasEnd ae:XPb9J3_end .
+
+ae:XeE1dq a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Nijmegen, Lager (Brunsting)"@en ;
+    lado:cax 0.3731 ;
+    lado:cay -0.0656 ;
+    lado:caz -0.2295 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:98921 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1309708 ;
+    dc:identifier "XeE1dq" ;
+    geosparql:hasGeometry ae:XeE1dq_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:XeE1dq_begin ;
+    time:hasEnd ae:XeE1dq_end .
+
+ae:b8OX2q a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Lausanne-Vidy"@en ;
+    lado:cax -0.2726 ;
+    lado:cay -0.0157 ;
+    lado:caz -0.1228 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/way/699387398> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:177565 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q3264025 ;
+    dc:identifier "b8OX2q" ;
+    geosparql:hasGeometry ae:b8OX2q_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:b8OX2q_begin ;
+    time:hasEnd ae:b8OX2q_end .
+
+ae:bwrZ4y a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Vindonissa, Königsfelden"@en ;
+    lado:cax 0.3832 ;
+    lado:cay 0.2064 ;
+    lado:caz -1.0289 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/node/6420816733> ;
+    lado:osm_tag "historic=castle" ;
+    lado:pleiades pleiadesplace:177661 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q103199316 ;
+    dc:identifier "bwrZ4y" ;
+    geosparql:hasGeometry ae:bwrZ4y_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    time:hasBeginning ae:bwrZ4y_begin ;
+    time:hasEnd ae:bwrZ4y_end .
+
+ae:eoE031 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Augst, Insula 20"@en ;
+    lado:cax 0.5106 ;
+    lado:cay -0.1593 ;
+    lado:caz 0.2908 ;
+    lado:endfixed false ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:nfen "Velsen" ;
+    lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/way/107475469> ;
+    lado:osm_tag "building=yes" ;
+    lado:pleiades pleiadesplace:177494 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q610371 ;
+    dc:identifier "eoE031" ;
+    geosparql:hasGeometry ae:eoE031_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0016_ad0028,
+        aecol:horizon_1 ;
+    skos:closeMatch <http://openstreetmap.org/way/107475469> ;
+    time:hasBeginning ae:eoE031_begin ;
+    time:hasEnd ae:eoE031_end .
+
+ae:ewr5bR a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Basel, Lagerdorf"@en ;
+    lado:cax -0.1599 ;
+    lado:cay 0.0932 ;
+    lado:caz -0.0583 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/node/1796082995> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:177468 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q666479 ;
+    dc:identifier "ewr5bR" ;
+    geosparql:hasGeometry ae:ewr5bR_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:ewr5bR_begin ;
+    time:hasEnd ae:ewr5bR_end .
+
+ae:ez8xNq a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Augsburg, Stadt"@en ;
+    lado:cax 0.5881 ;
+    lado:cay 0.0313 ;
+    lado:caz -0.5718 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:pleiades pleiadesplace:118580 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q765823 ;
+    dc:identifier "ez8xNq" ;
+    geosparql:hasGeometry ae:ez8xNq_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    time:hasBeginning ae:ez8xNq_begin ;
+    time:hasEnd ae:ez8xNq_end .
+
+ae:g64Ky0 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Zürich, Lindenhof"@en ;
+    lado:cax -1.5681 ;
+    lado:cay -3.3957 ;
+    lado:caz -0.2093 ;
+    lado:endfixed false ;
+    lado:estimatedend -9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Dangstetten" ;
+    lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/node/3483897061> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:187596 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q10987378 ;
+    dc:identifier "g64Ky0" ;
+    geosparql:hasGeometry ae:g64Ky0_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_bc0009,
+        aecol:horizon_5 ;
+    skos:closeMatch <http://openstreetmap.org/node/3483897061> ;
+    time:hasBeginning ae:g64Ky0_begin ;
+    time:hasEnd ae:g64Ky0_end .
+
+ae:gL6OAG a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Augsburg-Oberhausen"@en ;
+    lado:cax -0.2301 ;
+    lado:cay 0.2052 ;
+    lado:caz -0.153 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/way/55938422> ;
+    lado:osm_tag "landuse=brownfield" ;
+    lado:pleiades pleiadesplace:118580 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q760496 ;
+    dc:identifier "gL6OAG" ;
+    geosparql:hasGeometry ae:gL6OAG_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0009,
+        aecol:horizon_4 ;
+    skos:relatedMatch <http://openstreetmap.org/way/55938422> ;
+    time:hasBeginning ae:gL6OAG_begin ;
+    time:hasEnd ae:gL6OAG_end .
+
+ae:gw8Kxp a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Worms"@en ;
+    lado:cax -0.5313 ;
+    lado:cay 0.4841 ;
+    lado:caz -0.5543 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Neuss" ;
+    lado:pleiades pleiadesplace:108820 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1094541 ;
+    dc:identifier "gw8Kxp" ;
+    geosparql:hasGeometry ae:gw8Kxp_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0013,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:gw8Kxp_begin ;
+    time:hasEnd ae:gw8Kxp_end .
+
+ae:j2lK5y a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Bregenz"@en ;
+    lado:cax 0.3196 ;
+    lado:cay 0.1604 ;
+    lado:caz -0.7664 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:pleiades pleiadesplace:187325 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q13452589 ;
+    dc:identifier "j2lK5y" ;
+    geosparql:hasGeometry ae:j2lK5y_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    time:hasBeginning ae:j2lK5y_begin ;
+    time:hasEnd ae:j2lK5y_end .
+
+ae:kNA9dJ a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Vindonissa, Militärstation"@en ;
+    lado:cax -0.6857 ;
+    lado:cay -0.2012 ;
+    lado:caz 0.1651 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Rödgen" ;
+    lado:nfsn "Neuss" ;
+    lado:osm_entity <http://openstreetmap.org/node/6420816733> ;
+    lado:osm_tag "historic=castle" ;
+    lado:pleiades pleiadesplace:177661 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q103199316 ;
+    dc:identifier "kNA9dJ" ;
+    geosparql:hasGeometry ae:kNA9dJ_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:kNA9dJ_begin ;
+    time:hasEnd ae:kNA9dJ_end .
+
+ae:lKmJ9q a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Namur"@en ;
+    lado:cax -0.1435 ;
+    lado:cay 0.2008 ;
+    lado:caz 0.3545 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -12.0 ;
+    lado:nfen "Rödgen" ;
+    lado:nfsn "Rödgen" ;
+    lado:pleiades pleiadesplace:109188 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q134121 ;
+    dc:identifier "lKmJ9q" ;
+    geosparql:hasGeometry ae:lKmJ9q_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0012_ad0009,
+        aecol:horizon_4 ;
+    time:hasBeginning ae:lKmJ9q_begin ;
+    time:hasEnd ae:lKmJ9q_end .
+
+ae:lwDA1d a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Vindonissa, Scheuerhof"@en ;
+    lado:cax 0.137 ;
+    lado:cay 0.1014 ;
+    lado:caz 0.0032 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/6420816733> ;
+    lado:osm_tag "historic=castle" ;
+    lado:pleiades pleiadesplace:177661 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q103199316 ;
+    dc:identifier "lwDA1d" ;
+    geosparql:hasGeometry ae:lwDA1d_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:lwDA1d_begin ;
+    time:hasEnd ae:lwDA1d_end .
+
+ae:n47Ll8 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Oberaden"@en ;
+    lado:cax -0.6965 ;
+    lado:cay 0.2155 ;
+    lado:caz 0.4023 ;
+    lado:endfixed true ;
+    lado:estimatedend -7.0 ;
+    lado:estimatedstart -11.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/157929084> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:109229 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q577724 ;
+    dc:identifier "n47Ll8" ;
+    geosparql:hasGeometry ae:n47Ll8_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0011_bc0007,
+        aecol:horizon_5 ;
+    time:hasBeginning ae:n47Ll8_begin ;
+    time:hasEnd ae:n47Ll8_end .
+
+ae:nrylrd a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Vetera I"@en ;
+    lado:cax 0.4039 ;
+    lado:cay -0.0911 ;
+    lado:caz 0.218 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:pleiades pleiadesplace:108867 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q532466 ;
+    dc:identifier "nrylrd" ;
+    geosparql:hasGeometry ae:nrylrd_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    time:hasBeginning ae:nrylrd_begin ;
+    time:hasEnd ae:nrylrd_end .
+
+ae:qLXYbG a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Maastricht"@en ;
+    lado:cax 0.8086 ;
+    lado:cay -0.2157 ;
+    lado:caz 0.4184 ;
+    lado:endfixed false ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:nfen "Velsen" ;
+    lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/node/2804902056> ;
+    lado:osm_tag "tourism=museum" ;
+    lado:pleiades pleiadesplace:109386 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q2250231 ;
+    dc:identifier "qLXYbG" ;
+    geosparql:hasGeometry ae:qLXYbG_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0016_ad0028,
+        aecol:horizon_1 ;
+    time:hasBeginning ae:qLXYbG_begin ;
+    time:hasEnd ae:qLXYbG_end .
+
+ae:rQ80WO a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Nijmegen, Lager (Haalebos)"@en ;
+    lado:cax -1.9696 ;
+    lado:cay -4.3352 ;
+    lado:caz -0.6857 ;
+    lado:endfixed false ;
+    lado:estimatedend -9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:nfen "Dangstetten" ;
+    lado:nfsn "Neuss" ;
+    lado:pleiades pleiadesplace:98921 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q1309708 ;
+    dc:identifier "rQ80WO" ;
+    geosparql:hasGeometry ae:rQ80WO_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_bc0009,
+        aecol:horizon_5 ;
+    time:hasBeginning ae:rQ80WO_begin ;
+    time:hasEnd ae:rQ80WO_end .
+
+ae:v1O46L a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Zurzach, Lager"@en ;
+    lado:cax 0.6625 ;
+    lado:cay -0.054 ;
+    lado:caz -0.2208 ;
+    lado:endfixed false ;
+    lado:estimatedend 28.0 ;
+    lado:estimatedstart 16.0 ;
+    lado:nfen "Velsen" ;
+    lado:nfsn "Velsen" ;
+    lado:osm_entity <http://openstreetmap.org/way/1054468269> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:177639 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q25388900 ;
+    dc:identifier "v1O46L" ;
+    geosparql:hasGeometry ae:v1O46L_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0016_ad0028,
+        aecol:horizon_1 ;
+    time:hasBeginning ae:v1O46L_begin ;
+    time:hasEnd ae:v1O46L_end .
+
+ae:wm71YX a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Avenches, Insula 15"@en ;
+    lado:cax 0.3853 ;
+    lado:cay -0.0153 ;
+    lado:caz -0.3444 ;
+    lado:endfixed false ;
+    lado:estimatedend 13.0 ;
+    lado:estimatedstart 8.0 ;
+    lado:nfen "Augst, Insula 31" ;
+    lado:nfsn "Augst, Insula 31" ;
+    lado:osm_entity <http://openstreetmap.org/way/333211842> ;
+    lado:osm_tag "building=yes" ;
+    lado:pleiades pleiadesplace:177495 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q670912 ;
+    dc:identifier "wm71YX" ;
+    geosparql:hasGeometry ae:wm71YX_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_ad0008_ad0013,
+        aecol:horizon_2 ;
+    skos:closeMatch <http://openstreetmap.org/way/333211842> ;
+    time:hasBeginning ae:wm71YX_begin ;
+    time:hasEnd ae:wm71YX_end .
+
+ae:xVy2j7 a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Dangstetten"@en ;
+    lado:cax -1.0624 ;
+    lado:cay 0.2223 ;
+    lado:caz 0.5173 ;
+    lado:endfixed true ;
+    lado:estimatedend -9.0 ;
+    lado:estimatedstart -15.0 ;
+    lado:osm_entity <http://openstreetmap.org/way/103687183> ;
+    lado:osm_tag "landuse=quarry" ;
+    lado:pleiades pleiadesplace:970740488 ;
+    lado:startfixed true ;
+    lado:wikidata wikidata:Q2179590 ;
+    dc:identifier "xVy2j7" ;
+    geosparql:hasGeometry ae:xVy2j7_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0015_bc0009,
+        aecol:horizon_5 ;
+    time:hasBeginning ae:xVy2j7_begin ;
+    time:hasEnd ae:xVy2j7_end .
+
+ae:yJBpPg a lado:event,
+        fsl:ArchaeologicalSite,
+        fsl:Site,
+        crm:E53_Place,
+        time:Interval,
+        pleiades:Place ;
+    rdfs:label "Mainz, Legionslager"@en ;
+    lado:cax 0.0331 ;
+    lado:cay 0.0481 ;
+    lado:caz 0.2022 ;
+    lado:endfixed false ;
+    lado:estimatedend 9.0 ;
+    lado:estimatedstart -7.0 ;
+    lado:nfen "Haltern" ;
+    lado:nfsn "Haltern" ;
+    lado:osm_entity <http://openstreetmap.org/node/1930543644> ;
+    lado:osm_tag "historic=archaeological_site" ;
+    lado:pleiades pleiadesplace:109169 ;
+    lado:startfixed false ;
+    lado:wikidata wikidata:Q571790 ;
+    dc:identifier "yJBpPg" ;
+    geosparql:hasGeometry ae:yJBpPg_geom ;
+    geosparql:memberOf aecol:arretine_sites,
+        aecol:cluster_bc0007_ad0009,
+        aecol:horizon_3 ;
+    skos:relatedMatch <http://openstreetmap.org/node/1930543644> ;
+    time:hasBeginning ae:yJBpPg_begin ;
+    time:hasEnd ae:yJBpPg_end .
+
+aecol:cluster_bc0011_bc0007 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 11 BCE – 7 BCE"@en ;
+    lado:hasClusterMember ae:n47Ll8 ;
+    geosparql:hasFeature ae:n47Ll8 ;
+    geosparql:hasGeometry aecol:cluster_bc0011_bc0007_geom ;
+    time:hasBeginning aecol:cluster_bc0011_bc0007_begin ;
+    time:hasEnd aecol:cluster_bc0011_bc0007_end ;
+    time:intervalBefore aecol:cluster_ad0008_ad0013,
+        aecol:cluster_ad0016_ad0028 ;
+    time:intervalDuring aecol:cluster_bc0012_ad0009,
+        aecol:cluster_bc0015_ad0009,
+        aecol:cluster_bc0015_ad0013 ;
+    time:intervalMeets aecol:cluster_bc0007_ad0009 ;
+    time:intervalOverlappedBy aecol:cluster_bc0015_bc0009 .
+
+aecol:cluster_bc0015_ad0013 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 15 BCE – 13 CE"@en ;
+    lado:hasClusterMember ae:gw8Kxp ;
+    geosparql:hasFeature ae:gw8Kxp ;
+    geosparql:hasGeometry aecol:cluster_bc0015_ad0013_geom ;
+    time:hasBeginning aecol:cluster_bc0015_ad0013_begin ;
+    time:hasEnd aecol:cluster_bc0015_ad0013_end ;
+    time:intervalBefore aecol:cluster_ad0016_ad0028 ;
+    time:intervalContains aecol:cluster_bc0007_ad0009,
+        aecol:cluster_bc0011_bc0007,
+        aecol:cluster_bc0012_ad0009 ;
+    time:intervalFinishedBy aecol:cluster_ad0008_ad0013 ;
+    time:intervalStartedBy aecol:cluster_bc0015_ad0009,
+        aecol:cluster_bc0015_bc0009 .
+
+aecol:cluster_bc0012_ad0009 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 12 BCE – 9 CE"@en ;
+    lado:hasClusterMember ae:O9rjkJ,
+        ae:lKmJ9q ;
+    geosparql:hasFeature ae:O9rjkJ,
+        ae:lKmJ9q ;
+    geosparql:hasGeometry aecol:cluster_bc0012_ad0009_geom ;
+    time:hasBeginning aecol:cluster_bc0012_ad0009_begin ;
+    time:hasEnd aecol:cluster_bc0012_ad0009_end ;
+    time:intervalBefore aecol:cluster_ad0016_ad0028 ;
+    time:intervalContains aecol:cluster_bc0011_bc0007 ;
+    time:intervalDuring aecol:cluster_bc0015_ad0013 ;
+    time:intervalFinishedBy aecol:cluster_bc0007_ad0009 ;
+    time:intervalFinishes aecol:cluster_bc0015_ad0009 ;
+    time:intervalOverlappedBy aecol:cluster_bc0015_bc0009 ;
+    time:intervalOverlaps aecol:cluster_ad0008_ad0013 .
+
+aecol:horizon_1 a lado:ChronologicalHorizon,
+        crm:E4_Period,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Horizon 1 (16 CE – 28 CE)"@en,
+        "Horizon 1 (16 apr. J.-C. – 28 apr. J.-C.)"@fr ;
+    lado:hasHorizonMember ae:KROWel,
+        ae:VJwKp7,
+        ae:VvXl2y,
+        ae:eoE031,
+        ae:qLXYbG,
+        ae:v1O46L ;
+    geosparql:hasFeature ae:KROWel,
+        ae:VJwKp7,
+        ae:VvXl2y,
+        ae:eoE031,
+        ae:qLXYbG,
+        ae:v1O46L ;
+    geosparql:hasGeometry aecol:horizon_1_geom ;
+    skos:notation 1 ;
+    time:hasBeginning aecol:horizon_1_begin ;
+    time:hasEnd aecol:horizon_1_end ;
+    time:intervalAfter aecol:horizon_2,
+        aecol:horizon_3,
+        aecol:horizon_4,
+        aecol:horizon_5 .
+
+aecol:horizon_5 a lado:ChronologicalHorizon,
+        crm:E4_Period,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Horizon 5 (15 BCE – 7 BCE)"@en,
+        "Horizon 5 (15 av. J.-C. – 7 av. J.-C.)"@fr ;
+    lado:hasHorizonMember ae:DeeX7G,
+        ae:JwKRVN,
+        ae:g64Ky0,
+        ae:n47Ll8,
+        ae:rQ80WO,
+        ae:xVy2j7 ;
+    geosparql:hasFeature ae:DeeX7G,
+        ae:JwKRVN,
+        ae:g64Ky0,
+        ae:n47Ll8,
+        ae:rQ80WO,
+        ae:xVy2j7 ;
+    geosparql:hasGeometry aecol:horizon_5_geom ;
+    skos:notation 5 ;
+    time:hasBeginning aecol:horizon_5_begin ;
+    time:hasEnd aecol:horizon_5_end ;
+    time:intervalBefore aecol:horizon_1,
+        aecol:horizon_2 ;
+    time:intervalMeets aecol:horizon_3 ;
+    time:intervalStarts aecol:horizon_4 .
+
+aecol:cluster_bc0015_bc0009 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 15 BCE – 9 BCE"@en ;
+    lado:hasClusterMember ae:DeeX7G,
+        ae:JwKRVN,
+        ae:g64Ky0,
+        ae:rQ80WO,
+        ae:xVy2j7 ;
+    geosparql:hasFeature ae:DeeX7G,
+        ae:JwKRVN,
+        ae:g64Ky0,
+        ae:rQ80WO,
+        ae:xVy2j7 ;
+    geosparql:hasGeometry aecol:cluster_bc0015_bc0009_geom ;
+    time:hasBeginning aecol:cluster_bc0015_bc0009_begin ;
+    time:hasEnd aecol:cluster_bc0015_bc0009_end ;
+    time:intervalBefore aecol:cluster_ad0008_ad0013,
+        aecol:cluster_ad0016_ad0028,
+        aecol:cluster_bc0007_ad0009 ;
+    time:intervalOverlaps aecol:cluster_bc0011_bc0007,
+        aecol:cluster_bc0012_ad0009 ;
+    time:intervalStarts aecol:cluster_bc0015_ad0009,
+        aecol:cluster_bc0015_ad0013 .
+
+aecol:cluster_ad0016_ad0028 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 16 – 28 CE"@en ;
+    lado:hasClusterMember ae:KROWel,
+        ae:VJwKp7,
+        ae:VvXl2y,
+        ae:eoE031,
+        ae:qLXYbG,
+        ae:v1O46L ;
+    geosparql:hasFeature ae:KROWel,
+        ae:VJwKp7,
+        ae:VvXl2y,
+        ae:eoE031,
+        ae:qLXYbG,
+        ae:v1O46L ;
+    geosparql:hasGeometry aecol:cluster_ad0016_ad0028_geom ;
+    time:hasBeginning aecol:cluster_ad0016_ad0028_begin ;
+    time:hasEnd aecol:cluster_ad0016_ad0028_end ;
+    time:intervalAfter aecol:cluster_ad0008_ad0013,
+        aecol:cluster_bc0007_ad0009,
+        aecol:cluster_bc0011_bc0007,
+        aecol:cluster_bc0012_ad0009,
+        aecol:cluster_bc0015_ad0009,
+        aecol:cluster_bc0015_ad0013,
+        aecol:cluster_bc0015_bc0009 .
+
+aecol:cluster_bc0015_ad0009 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 15 BCE – 9 CE"@en ;
+    lado:hasClusterMember ae:Bp8JY3,
+        ae:K4wDrp,
+        ae:N48RZG,
+        ae:b8OX2q,
+        ae:ewr5bR,
+        ae:gL6OAG,
+        ae:kNA9dJ ;
+    geosparql:hasFeature ae:Bp8JY3,
+        ae:K4wDrp,
+        ae:N48RZG,
+        ae:b8OX2q,
+        ae:ewr5bR,
+        ae:gL6OAG,
+        ae:kNA9dJ ;
+    geosparql:hasGeometry aecol:cluster_bc0015_ad0009_geom ;
+    time:hasBeginning aecol:cluster_bc0015_ad0009_begin ;
+    time:hasEnd aecol:cluster_bc0015_ad0009_end ;
+    time:intervalBefore aecol:cluster_ad0016_ad0028 ;
+    time:intervalContains aecol:cluster_bc0011_bc0007 ;
+    time:intervalFinishedBy aecol:cluster_bc0007_ad0009,
+        aecol:cluster_bc0012_ad0009 ;
+    time:intervalOverlaps aecol:cluster_ad0008_ad0013 ;
+    time:intervalStartedBy aecol:cluster_bc0015_bc0009 ;
+    time:intervalStarts aecol:cluster_bc0015_ad0013 .
+
+aecol:horizon_2 a lado:ChronologicalHorizon,
+        crm:E4_Period,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Horizon 2 (8 CE – 13 CE)"@en,
+        "Horizon 2 (8 apr. J.-C. – 13 apr. J.-C.)"@fr ;
+    lado:hasHorizonMember ae:BWYway,
+        ae:DJq1mg,
+        ae:LG4D5x,
+        ae:NRzOWx,
+        ae:OmaMbj,
+        ae:QW3vzV,
+        ae:bwrZ4y,
+        ae:ez8xNq,
+        ae:j2lK5y,
+        ae:wm71YX ;
+    geosparql:hasFeature ae:BWYway,
+        ae:DJq1mg,
+        ae:LG4D5x,
+        ae:NRzOWx,
+        ae:OmaMbj,
+        ae:QW3vzV,
+        ae:bwrZ4y,
+        ae:ez8xNq,
+        ae:j2lK5y,
+        ae:wm71YX ;
+    geosparql:hasGeometry aecol:horizon_2_geom ;
+    skos:notation 2 ;
+    time:hasBeginning aecol:horizon_2_begin ;
+    time:hasEnd aecol:horizon_2_end ;
+    time:intervalAfter aecol:horizon_5 ;
+    time:intervalBefore aecol:horizon_1 ;
+    time:intervalFinishes aecol:horizon_4 ;
+    time:intervalOverlappedBy aecol:horizon_3 .
+
+aecol:horizon_4 a lado:ChronologicalHorizon,
+        crm:E4_Period,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Horizon 4 (15 BCE – 13 CE)"@en,
+        "Horizon 4 (15 av. J.-C. – 13 apr. J.-C.)"@fr ;
+    lado:hasHorizonMember ae:Bp8JY3,
+        ae:K4wDrp,
+        ae:N48RZG,
+        ae:O9rjkJ,
+        ae:b8OX2q,
+        ae:ewr5bR,
+        ae:gL6OAG,
+        ae:gw8Kxp,
+        ae:kNA9dJ,
+        ae:lKmJ9q ;
+    geosparql:hasFeature ae:Bp8JY3,
+        ae:K4wDrp,
+        ae:N48RZG,
+        ae:O9rjkJ,
+        ae:b8OX2q,
+        ae:ewr5bR,
+        ae:gL6OAG,
+        ae:gw8Kxp,
+        ae:kNA9dJ,
+        ae:lKmJ9q ;
+    geosparql:hasGeometry aecol:horizon_4_geom ;
+    skos:notation 4 ;
+    time:hasBeginning aecol:horizon_4_begin ;
+    time:hasEnd aecol:horizon_4_end ;
+    time:intervalBefore aecol:horizon_1 ;
+    time:intervalContains aecol:horizon_3 ;
+    time:intervalFinishedBy aecol:horizon_2 ;
+    time:intervalStartedBy aecol:horizon_5 .
+
+aecol:horizon_3 a lado:ChronologicalHorizon,
+        crm:E4_Period,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Horizon 3 (7 BCE – 9 CE)"@en,
+        "Horizon 3 (7 av. J.-C. – 9 apr. J.-C.)"@fr ;
+    lado:hasHorizonMember ae:D9L8l5,
+        ae:GEJedY,
+        ae:Gjndwx,
+        ae:Q48jL9,
+        ae:QLNMJk,
+        ae:Vx2doQ,
+        ae:WNVNB2,
+        ae:XPb9J3,
+        ae:XeE1dq,
+        ae:lwDA1d,
+        ae:nrylrd,
+        ae:yJBpPg ;
+    geosparql:hasFeature ae:D9L8l5,
+        ae:GEJedY,
+        ae:Gjndwx,
+        ae:Q48jL9,
+        ae:QLNMJk,
+        ae:Vx2doQ,
+        ae:WNVNB2,
+        ae:XPb9J3,
+        ae:XeE1dq,
+        ae:lwDA1d,
+        ae:nrylrd,
+        ae:yJBpPg ;
+    geosparql:hasGeometry aecol:horizon_3_geom ;
+    skos:notation 3 ;
+    time:hasBeginning aecol:horizon_3_begin ;
+    time:hasEnd aecol:horizon_3_end ;
+    time:intervalBefore aecol:horizon_1 ;
+    time:intervalDuring aecol:horizon_4 ;
+    time:intervalMetBy aecol:horizon_5 ;
+    time:intervalOverlaps aecol:horizon_2 .
+
+aecol:cluster_ad0008_ad0013 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 8 – 13 CE"@en ;
+    lado:hasClusterMember ae:BWYway,
+        ae:DJq1mg,
+        ae:LG4D5x,
+        ae:NRzOWx,
+        ae:OmaMbj,
+        ae:QW3vzV,
+        ae:bwrZ4y,
+        ae:ez8xNq,
+        ae:j2lK5y,
+        ae:wm71YX ;
+    geosparql:hasFeature ae:BWYway,
+        ae:DJq1mg,
+        ae:LG4D5x,
+        ae:NRzOWx,
+        ae:OmaMbj,
+        ae:QW3vzV,
+        ae:bwrZ4y,
+        ae:ez8xNq,
+        ae:j2lK5y,
+        ae:wm71YX ;
+    geosparql:hasGeometry aecol:cluster_ad0008_ad0013_geom ;
+    time:hasBeginning aecol:cluster_ad0008_ad0013_begin ;
+    time:hasEnd aecol:cluster_ad0008_ad0013_end ;
+    time:intervalAfter aecol:cluster_bc0011_bc0007,
+        aecol:cluster_bc0015_bc0009 ;
+    time:intervalBefore aecol:cluster_ad0016_ad0028 ;
+    time:intervalFinishes aecol:cluster_bc0015_ad0013 ;
+    time:intervalOverlappedBy aecol:cluster_bc0007_ad0009,
+        aecol:cluster_bc0012_ad0009,
+        aecol:cluster_bc0015_ad0009 .
+
+aecol:cluster_bc0007_ad0009 a lado:PeriodCluster,
+        geosparql:FeatureCollection,
+        time:Interval ;
+    rdfs:label "Period cluster 7 BCE – 9 CE"@en ;
+    lado:hasClusterMember ae:D9L8l5,
+        ae:GEJedY,
+        ae:Gjndwx,
+        ae:Q48jL9,
+        ae:QLNMJk,
+        ae:Vx2doQ,
+        ae:WNVNB2,
+        ae:XPb9J3,
+        ae:XeE1dq,
+        ae:lwDA1d,
+        ae:nrylrd,
+        ae:yJBpPg ;
+    geosparql:hasFeature ae:D9L8l5,
+        ae:GEJedY,
+        ae:Gjndwx,
+        ae:Q48jL9,
+        ae:QLNMJk,
+        ae:Vx2doQ,
+        ae:WNVNB2,
+        ae:XPb9J3,
+        ae:XeE1dq,
+        ae:lwDA1d,
+        ae:nrylrd,
+        ae:yJBpPg ;
+    geosparql:hasGeometry aecol:cluster_bc0007_ad0009_geom ;
+    time:hasBeginning aecol:cluster_bc0007_ad0009_begin ;
+    time:hasEnd aecol:cluster_bc0007_ad0009_end ;
+    time:intervalAfter aecol:cluster_bc0015_bc0009 ;
+    time:intervalBefore aecol:cluster_ad0016_ad0028 ;
+    time:intervalDuring aecol:cluster_bc0015_ad0013 ;
+    time:intervalFinishes aecol:cluster_bc0012_ad0009,
+        aecol:cluster_bc0015_ad0009 ;
+    time:intervalMetBy aecol:cluster_bc0011_bc0007 ;
+    time:intervalOverlaps aecol:cluster_ad0008_ad0013 .
+
+aecol:arretine_sites a geosparql:FeatureCollection ;
+    rdfs:label "Arretine Dated Sites Collection"@en ;
+    geosparql:hasFeature ae:BWYway,
+        ae:Bp8JY3,
+        ae:D9L8l5,
+        ae:DJq1mg,
+        ae:DeeX7G,
+        ae:GEJedY,
+        ae:Gjndwx,
+        ae:JwKRVN,
+        ae:K4wDrp,
+        ae:KROWel,
+        ae:LG4D5x,
+        ae:N48RZG,
+        ae:NRzOWx,
+        ae:O9rjkJ,
+        ae:OmaMbj,
+        ae:Q48jL9,
+        ae:QLNMJk,
+        ae:QW3vzV,
+        ae:VJwKp7,
+        ae:VvXl2y,
+        ae:Vx2doQ,
+        ae:WNVNB2,
+        ae:XPb9J3,
+        ae:XeE1dq,
+        ae:b8OX2q,
+        ae:bwrZ4y,
+        ae:eoE031,
+        ae:ewr5bR,
+        ae:ez8xNq,
+        ae:g64Ky0,
+        ae:gL6OAG,
+        ae:gw8Kxp,
+        ae:j2lK5y,
+        ae:kNA9dJ,
+        ae:lKmJ9q,
+        ae:lwDA1d,
+        ae:n47Ll8,
+        ae:nrylrd,
+        ae:qLXYbG,
+        ae:rQ80WO,
+        ae:site_Trier-Petrisberg,
+        ae:v1O46L,
+        ae:wm71YX,
+        ae:xVy2j7,
+        ae:yJBpPg ;
+    rdfs:comment "Collection of archaeological sites with Arretine pottery finds"@en .
+

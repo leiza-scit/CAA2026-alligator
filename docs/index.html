@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAA 2026 &mdash; Arretine chronology</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <nav class="nav">
+    <a href="index.html" class="active">Overview</a>
+    <a href="sparql.html">Query</a>
+  </nav>
+
+  <header class="page-head">
+    <span class="badge">CAA 2026</span>
+    <h1>From seriation output to a chronological knowledge graph</h1>
+    <p class="intro">
+      Supplementary materials for a CAA 2026 contribution on the chronology of
+      Arretine ware (<em>terra sigillata</em>) findspots in the north-western
+      Roman provinces. A Python pipeline reads the output of the Alligator
+      seriation tool, merges it with findspot data, and produces a
+      standards-compliant RDF knowledge graph together with the figures.
+    </p>
+  </header>
+
+  <section class="query">
+    <h2>1. The knowledge graph</h2>
+    <p class="intro">
+      45 findspots, each carrying a dated interval, grouped in two different
+      ways. Both groupings hold OWL-Time intervals and the full set of Allen
+      relations between them, so the same temporal reasoning applies to either.
+    </p>
+    <table>
+      <thead>
+        <tr><th></th><th>Period cluster</th><th>Chronological horizon</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Class</td>
+          <td><code>lado:PeriodCluster</code></td>
+          <td><code>lado:ChronologicalHorizon</code>, <code>crm:E4_Period</code></td>
+        </tr>
+        <tr>
+          <td>Origin</td>
+          <td>computed &mdash; identical start and end year</td>
+          <td>interpretive &mdash; the assigned phase</td>
+        </tr>
+        <tr><td>Count</td><td>8</td><td>5</td></tr>
+      </tbody>
+    </table>
+    <p class="note">
+      Vocabularies: CIDOC-CRM, OWL-Time, GeoSPARQL, SKOS and
+      <code>lado:</code>. Findspots link to Wikidata and Pleiades.
+      <a href="arretine_sites_minigraph.ttl">Download the graph (Turtle)</a>.
+    </p>
+  </section>
+
+  <section class="query">
+    <h2>2. Query it in your browser</h2>
+    <p class="intro">
+      The <a href="sparql.html">query page</a> runs SPARQL against the graph
+      entirely in your browser: <code>rdflib</code> under Pyodide, against a
+      static Turtle file. There is no endpoint and no server, the example
+      queries are editable, and nothing you type leaves your machine.
+    </p>
+    <p class="note">
+      That is deliberate for supplementary materials. An archived copy of this
+      repository, unpacked years from now, stays queryable without a service
+      having to be kept alive for it.
+    </p>
+  </section>
+
+  <section class="query">
+    <h2>3. Reproduce it</h2>
+    <p class="intro">
+      Everything is rebuilt from the repository root with two commands.
+    </p>
+    <pre><code>pip install -r requirements.txt
+python py/main.py</code></pre>
+    <p class="note">
+      The pipeline runs in a fixed order: the RDF step first (it clears
+      <code>output/</code>), then the service-composition figures, then this
+      query page. Figures are written as 300&nbsp;dpi JPEG and pure-vector SVG,
+      and the output is byte-reproducible &mdash; rebuilding without changing
+      anything produces identical files, so a diff appears only when something
+      really changed.
+    </p>
+  </section>
+
+  <footer class="page-foot">
+    <p>
+      Repository:
+      <a href="https://github.com/leiza-scit/CAA2026-alligator">leiza-scit/CAA2026-alligator</a>
+      &middot; seriation: Alligator &middot; variance and quality measures
+      following the RGZM method (A.&nbsp;Mees).
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

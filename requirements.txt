@@ -2,6 +2,7 @@
 #   · alligator_to_clean_rdf.py      (pandas, matplotlib, networkx, rdflib, shapely)
 #   · read_arretine_services.py      (pandas, openpyxl)
 #   · events_timeline_by_service.py  (pandas, matplotlib, rdflib, openpyxl)
+#   · build_sparql.py                (pyyaml, jinja2, rdflib)
 # (all other imports used by the scripts are part of the Python standard library)
 #
 # Install with:  pip install -r requirements.txt
@@ -16,3 +17,5 @@ networkx>=3.0      # tested with 3.6.1
 rdflib>=7.0        # tested with 7.6.0
 shapely>=2.0       # tested with 2.1.2
 openpyxl>=3.1      # tested with 3.1.5 — Excel engine used by pandas.read_excel (.xlsx)
+pyyaml>=6.0        # tested with 6.0.2 — reads queries.yaml
+jinja2>=3.1        # tested with 3.1.4 — renders the query page templates
