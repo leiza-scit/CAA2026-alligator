@@ -44,6 +44,10 @@ matplotlib.use("Agg")  # Non-interactive backend — no display required
 # directory the script is launched from (VS Code often uses the repository root).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import wd_repro  # noqa: E402, F401  (imported for its effect)
+from horizons import (  # noqa: E402  (shared horizon definition)
+    HORIZONS,
+    build_horizon_intervals,
+)
 import matplotlib.pyplot as plt
 from matplotlib.ticker import AutoMinorLocator
 import networkx as nx
@@ -1164,6 +1168,157 @@ def add_period_clusters_to_graph(g: Graph, clusters: list) -> list:
 
     print(f"✓ {len(cluster_uris)} period clusters added to graph")
     return cluster_uris
+
+
+
+def add_horizons_to_graph(g: Graph, events: dict) -> list:
+    """Add the five chronological horizons to the RDF graph.
+
+    Horizons are the interpretive counterpart of the computed PeriodClusters:
+    a cluster groups events that happen to share an identical start/end, whereas
+    a horizon is the archaeological phase a findspot has been assigned to (see
+    py/horizons.py). Both are written into the graph so a query can use either.
+
+    Each horizon receives, mirroring the PeriodCluster pattern:
+    - rdf:type  lado:ChronologicalHorizon, crm:E4_Period, time:Interval,
+                geosparql:FeatureCollection
+    - rdfs:label  in English and French
+    - skos:notation  the horizon number, so results can be ordered by phase
+    - time:hasBeginning / time:hasEnd  →  time:Instant with time:inXSDgYear
+    - lado:hasHorizonMember  →  each member event URI (plus the inverse
+      geosparql:memberOf on the findspot, as for clusters)
+    - geosparql:hasGeometry  →  ConvexHull over the member findspots
+
+    The interval is the envelope of its members: earliest start to latest end.
+
+    Parameters
+    ----------
+    g      : Graph   RDF graph to write into.
+    events : dict    Output of `load_alligator_events`.
+
+    Returns
+    -------
+    list
+        (horizon_number, URIRef) pairs for every horizon added.
+    """
+    print("\nAdding chronological horizons to graph...")
+
+    horizons = build_horizon_intervals(events)
+    if not horizons:
+        print("  ⚠ No horizons could be built — skipping.")
+        return []
+
+    # WKT lookup for the member findspots, reusing the geometry already in the
+    # graph (same approach as build_period_clusters).
+    def _wkt_of(event_uri: str) -> str | None:
+        for geom_uri in g.objects(URIRef(event_uri), GEOSPARQL.hasGeometry):
+            wkt_lit = g.value(geom_uri, GEOSPARQL.asWKT)
+            if wkt_lit:
+                raw = str(wkt_lit)
+                return raw.split("> ", 1)[-1] if "> " in raw else raw
+        return None
+
+    def _year_label(y: int, lang: str) -> str:
+        if lang == "fr":
+            return f"{abs(y)} av. J.-C." if y < 0 else f"{y} apr. J.-C."
+        return f"{abs(y)} BCE" if y < 0 else f"{y} CE"
+
+    added = []
+    for horizon in sorted(horizons, key=lambda c: c["horizon"]):
+        number = horizon["horizon"]
+        start_yr = round(horizon["start"])
+        end_yr = round(horizon["end"])
+
+        horizon_uri = AE_COLLECTIONS[f"horizon_{number}"]
+        added.append((number, horizon_uri))
+
+        # --- Type assertions ---
+        g.add((horizon_uri, RDF.type, LADO.ChronologicalHorizon))
+        g.add((horizon_uri, RDF.type, CRM.E4_Period))
+        g.add((horizon_uri, RDF.type, OWL_TIME.Interval))
+        g.add((horizon_uri, RDF.type, GEOSPARQL.FeatureCollection))
+
+        # --- Labels and ordinal ---
+        for lang in ("en", "fr"):
+            word = "Horizon" if lang == "en" else "Horizon"
+            g.add((horizon_uri, RDFS.label, Literal(
+                f"{word} {number} ({_year_label(start_yr, lang)} – "
+                f"{_year_label(end_yr, lang)})", lang=lang)))
+        g.add((horizon_uri, SKOS.notation,
+               Literal(number, datatype=XSD.integer)))
+
+        # --- OWL-Time temporal boundaries ---
+        begin_uri = URIRef(str(horizon_uri) + "_begin")
+        end_uri = URIRef(str(horizon_uri) + "_end")
+
+        g.add((horizon_uri, OWL_TIME.hasBeginning, begin_uri))
+        g.add((begin_uri, RDF.type, OWL_TIME.Instant))
+        g.add((begin_uri, OWL_TIME.inXSDgYear,
+               Literal(_year_to_xsd_gyear(start_yr), datatype=XSD.gYear)))
+
+        g.add((horizon_uri, OWL_TIME.hasEnd, end_uri))
+        g.add((end_uri, RDF.type, OWL_TIME.Instant))
+        g.add((end_uri, OWL_TIME.inXSDgYear,
+               Literal(_year_to_xsd_gyear(end_yr), datatype=XSD.gYear)))
+
+        # --- Member links + FeatureCollection membership ---
+        wkt_list = []
+        for member in horizon["members"]:
+            if not member.get("event_uri"):
+                continue
+            member_uri = URIRef(member["event_uri"])
+            g.add((horizon_uri, LADO.hasHorizonMember, member_uri))
+            g.add((horizon_uri, GEOSPARQL.hasFeature, member_uri))
+            g.add((member_uri, GEOSPARQL.memberOf, horizon_uri))
+            wkt = _wkt_of(member["event_uri"])
+            if wkt:
+                wkt_list.append(wkt)
+
+        # --- ConvexHull geometry over the member findspots ---
+        hull_wkt, sf_type = _build_convex_hull_wkt(wkt_list)
+        if hull_wkt and sf_type:
+            geom_uri = URIRef(str(horizon_uri) + "_geom")
+            g.add((horizon_uri, GEOSPARQL.hasGeometry, geom_uri))
+            g.add((geom_uri, RDF.type, URIRef(str(SF) + sf_type)))
+            g.add((geom_uri, GEOSPARQL.asWKT, Literal(
+                f"<http://www.opengis.net/def/crs/EPSG/0/4326> {hull_wkt}",
+                datatype=GEOSPARQL.wktLiteral)))
+        else:
+            print(f"  ⚠ No geometry available for horizon {number}")
+
+    print(f"✓ {len(added)} chronological horizons added to graph")
+    return added
+
+
+def add_horizon_allen_relations_to_graph(g: Graph, events: dict) -> int:
+    """Write the Allen interval relations between the horizons into the graph.
+
+    Same computation as `add_allen_relations_to_graph`, applied to the horizon
+    envelopes instead of the period clusters. Both directions are written, so a
+    query works regardless of which horizon is the subject.
+
+    Returns
+    -------
+    int
+        Number of relation triples written.
+    """
+    print("\nComputing Allen relations between horizons...")
+
+    horizons = sorted(build_horizon_intervals(events), key=lambda c: c["horizon"])
+    n_written = 0
+
+    for a in horizons:
+        for b in horizons:
+            if a["horizon"] == b["horizon"]:
+                continue
+            a_uri = AE_COLLECTIONS[f"horizon_{a['horizon']}"]
+            b_uri = AE_COLLECTIONS[f"horizon_{b['horizon']}"]
+            for rel in _allen_relations(a["start"], a["end"], b["start"], b["end"]):
+                g.add((a_uri, rel, b_uri))
+                n_written += 1
+
+    print(f"✓ {n_written} Allen relation triples written between horizons")
+    return n_written
 
 
 # ==============================================================================
@@ -2390,11 +2545,23 @@ def main():
         # Step 9 – Compute and write Allen interval relations between clusters
         add_allen_relations_to_graph(rdf_graph, clusters, cluster_uris)
 
+        # Step 9b – Chronological horizons (the interpretive grouping) and
+        #           their Allen relations, alongside the computed clusters
+        add_horizons_to_graph(rdf_graph, events)
+        add_horizon_allen_relations_to_graph(rdf_graph, events)
+
         # Step 10 – Serialise the final combined graph
         output_file = OUTPUT_DIR / "arretine_sites_minigraph.ttl"
         rdf_graph.serialize(destination=str(output_file), format="turtle")
         print(f"\n✓ Final RDF graph saved: {output_file}")
         print(f"  Triples total: {len(rdf_graph)}")
+
+        # Keep the notebook working copy in step with the graph just written,
+        # so clades_variana_temporal.ipynb never queries a stale snapshot.
+        notebook_copy = REPO_ROOT / "notebook" / output_file.name
+        if notebook_copy.parent.exists():
+            shutil.copyfile(output_file, notebook_copy)
+            print(f"  Copied to notebook: {notebook_copy}")
 
         # Step 11 – Visualisations
         print("\n" + "=" * 60)

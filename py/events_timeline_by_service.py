@@ -54,9 +54,18 @@ matplotlib.use("Agg")  # Non-interactive backend — no display required
 # directory the script is launched from (VS Code often uses the repository root).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import wd_repro  # noqa: E402, F401  (imported for its effect)
+from horizons import (  # noqa: E402  (shared horizon definition)
+    FINDSPOT_HORIZON,
+    HORIZON_OF,
+    HORIZONS,
+    PERCENT_LABEL_CORRECTIONS,
+    build_horizon_intervals,
+    resolve_horizon,
+)
 
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+from matplotlib.colors import Normalize
 from matplotlib.ticker import AutoMinorLocator
 import networkx as nx
 from rdflib import Graph, Namespace, RDF, RDFS
@@ -101,11 +110,6 @@ TTL_LABEL_CORRECTIONS = {
 # Optional bridge for cases where a (corrected) TTL event label still differs
 # from the authoritative xlsx findspot label. Map  TTL label -> xlsx label.
 # Populate this if the mismatch warning below lists any findspots.
-PERCENT_LABEL_CORRECTIONS: dict[str, str] = {
-    # The TTL calls the Haalebos camp simply "Nijmegen, Lager"; the workbook
-    # disambiguates it from the Brunsting camp with a suffix.
-    "Nijmegen, Lager": "Nijmegen, Lager (Haalebos)",
-}
 
 # Colour scheme, assigned by service-type *group* (not a flat palette):
 #   · "Schrägrandteller"  → a single blue
@@ -288,92 +292,6 @@ TIMELINE_ROW_BELOW = {
     "Oberaden": "Asberg, Lager",
 }
 
-# ---------------------------------------------------------------------------
-# Chronological horizons
-# Assign each findspot to a horizon (1 = latest … 5 = earliest). This is the
-# single place to edit: to MOVE a findspot to another horizon, just change its
-# number below. Everything downstream (aggregation, figure, CSV, the per-horizon
-# findspot list) is derived from this table automatically.
-# Membership uses the timeline (TTL) labels; xlsx-only spellings are resolved
-# via PERCENT_LABEL_CORRECTIONS.
-# ---------------------------------------------------------------------------
-FINDSPOT_HORIZON = {
-    # Horizon 1 (latest)
-    "Zurzach, Lager": 1,
-    "Velsen": 1,
-    "Vechten": 1,
-    "Maastricht": 1,
-    "Augst, Theater": 1,
-    "Augst, Insula 20": 1,
-    # Horizon 2
-    "Wiesbaden": 2,
-    "Vindonissa, Königsfelden": 2,
-    "Oberwinterthur, Römerstr. 186": 2,
-    "Nijmegen, Valkhof": 2,
-    "Nijmegen, Trajanusplein": 2,
-    "Friedberg": 2,
-    "Bregenz": 2,
-    "Avenches, Insula 15": 2,
-    "Augst, Insula 31": 2,
-    "Augsburg, Stadt": 2,
-    # Horizon 3
-    "Vindonissa, Scheuerhof": 3,
-    "Vetera I": 3,
-    "Tongeren": 3,
-    "Nijmegen, Lager (Brunsting)": 3,
-    "Mainz, Legionslager": 3,
-    "Lorenzberg": 3,
-    "Haltern": 3,
-    "Conimbriga": 3,
-    "Braives": 3,
-    "Bonn, Boeselagerhof": 3,
-    "Bad Nauheim": 3,
-    "Asberg, Lagerdorf": 3,
-    # Horizon 4
-    "Rödgen": 4,
-    "Namur": 4,
-    "Worms": 4,
-    "Vindonissa, Militärstation": 4,
-    "Neuss": 4,
-    "Liberchies": 4,
-    "Lausanne-Vidy": 4,
-    "Basel, Lagerdorf": 4,
-    "Augsburg-Oberhausen": 4,
-    "Asberg, Lager": 4,
-    # Horizon 5 (earliest)
-    "Oberaden": 5,   # moved from Horizon 4
-    "Zürich, Lindenhof": 5,
-    "Titelberg": 5,
-    "Nijmegen, Lager": 5,
-    "Dangstetten": 5,
-    "Basel, Lager": 5,
-}
-
-# Derived: findspot -> horizon, and horizon -> ordered member list.
-HORIZON_OF = dict(FINDSPOT_HORIZON)
-HORIZONS: dict[int, list[str]] = {}
-for _label, _h in FINDSPOT_HORIZON.items():
-    HORIZONS.setdefault(_h, []).append(_label)
-HORIZONS = {h: HORIZONS[h] for h in sorted(HORIZONS)}  # order 1..5
-
-
-def resolve_horizon(label: str):
-    """Return the horizon number for a findspot label, or None if unassigned.
-
-    Tries the label directly, then via PERCENT_LABEL_CORRECTIONS (so an xlsx
-    spelling like "Nijmegen, Lager (Haalebos)" resolves to its TTL horizon).
-    """
-    if label in HORIZON_OF:
-        return HORIZON_OF[label]
-    bridged = PERCENT_LABEL_CORRECTIONS.get(label)
-    if bridged and bridged in HORIZON_OF:
-        return HORIZON_OF[bridged]
-    # xlsx→TTL inverse bridge (e.g. "Nijmegen, Lager (Haalebos)" → "Nijmegen, Lager")
-    for ttl_label, xlsx_label in PERCENT_LABEL_CORRECTIONS.items():
-        if xlsx_label == label and ttl_label in HORIZON_OF:
-            return HORIZON_OF[ttl_label]
-    return None
-
 # Era suffixes for year tick labels, per language.
 ERA_LABELS = {
     "en": {"bc": "BC", "ad": "AD"},   # 15 BC / AD 9
@@ -384,6 +302,17 @@ ERA_LABELS = {
 PERCENT_CSV = OUTPUT_DIR / "service_percentages.csv"
 GROUP_VAR_CSV = OUTPUT_DIR / "service_group_variability.csv"
 HORIZON_CSV = OUTPUT_DIR / "horizon_intervals.csv"
+
+# ---------------------------------------------------------------------------
+# Chronological horizons
+# Assign each findspot to a horizon (1 = latest … 5 = earliest). This is the
+# single place to edit: to MOVE a findspot to another horizon, just change its
+# number below. Everything downstream (aggregation, figure, CSV, the per-horizon
+# findspot list) is derived from this table automatically.
+# Membership uses the timeline (TTL) labels; xlsx-only spellings are resolved
+# via PERCENT_LABEL_CORRECTIONS.
+# ---------------------------------------------------------------------------
+
 
 
 def build_service_colours(service_cols: list[str]) -> list:
@@ -1064,16 +993,12 @@ def plot_within_group_heatmap(
     n_rows = len(horizons)
     col_labels = [gdisp.get(g, g) for g in groups]
 
-    var_arr = np.ma.masked_invalid(var_df.to_numpy(dtype=float))
-    qual_arr = np.ma.masked_invalid(qual_df.to_numpy(dtype=float))
 
     # Same red-green palette in both panels, but the variance scale is REVERSED:
     # low variance is the favourable case, so green consistently marks "good" in
     # both panels (low variance / high quality) and red the unfavourable end.
     cmap_var = matplotlib.colormaps["RdYlGn_r"].copy()
     cmap_qual = matplotlib.colormaps["RdYlGn"].copy()
-    cmap_var.set_bad("#eeeeee")
-    cmap_qual.set_bad("#eeeeee")
 
     fig_h = max(3.6, n_rows * 0.72 + 2.4)
     fig, (ax_v, ax_q) = plt.subplots(
@@ -1082,8 +1007,19 @@ def plot_within_group_heatmap(
     )
     fig.patch.set_facecolor("white")
 
-    def _draw(ax, arr, cmap, vmin, vmax, title, fmt, source_df):
-        im = ax.imshow(arr, aspect="auto", cmap=cmap, vmin=vmin, vmax=vmax)
+    def _draw(ax, cmap, vmin, vmax, title, fmt, source_df):
+        # Cells are drawn as individual rectangles rather than with imshow, and
+        # the colour bar is un-rasterised, so the SVG stays pure vector: no
+        # embedded PNG, fully scalable, and identical byte-for-byte on rebuild.
+        norm = Normalize(vmin=vmin, vmax=vmax)
+        for i in range(n_rows):
+            for j in range(len(groups)):
+                v = source_df.iat[i, j]
+                face = "#eeeeee" if pd.isna(v) else cmap(norm(v))
+                ax.add_patch(plt.Rectangle(
+                    (j - 0.5, i - 0.5), 1, 1,
+                    facecolor=face, edgecolor="white", linewidth=1.4, zorder=1))
+
         ax.xaxis.set_ticks_position("top")
         ax.xaxis.set_label_position("top")
         ax.set_xticks(range(len(groups)))
@@ -1092,37 +1028,43 @@ def plot_within_group_heatmap(
             tick.set_color(GROUP_TINT.get(g, "#000000"))
             tick.set_fontweight("bold")
         ax.set_title(title, fontsize=12, fontweight="bold", pad=24, color="#111111")
+        # Match imshow's framing: row 0 at the top, half-cell margin all round.
         ax.set_xlim(-0.5, len(groups) - 0.5)
-        norm = im.norm
+        ax.set_ylim(n_rows - 0.5, -0.5)
+
         for i in range(n_rows):
             for j, g in enumerate(groups):
                 v = source_df.iat[i, j]
                 ng = int(ncell_df.iat[i, j])
                 if pd.isna(v):
                     ax.text(j, i, "—", ha="center", va="center",
-                            fontsize=13, color="#888888")
+                            fontsize=13, color="#888888", zorder=2)
                     continue
                 r, gg, b, _ = cmap(norm(v))
                 lum = 0.299 * r + 0.587 * gg + 0.114 * b
                 tcol = "#111111" if lum > 0.55 else "#ffffff"
                 ax.text(j, i - 0.13, fmt(v), ha="center", va="center",
-                        fontsize=13, color=tcol)
+                        fontsize=13, color=tcol, zorder=2)
                 ax.text(j, i + 0.22, f"n={ng}", ha="center", va="center",
-                        fontsize=8, color=tcol, alpha=0.8)
-        ax.set_xticks(np.arange(-0.5, len(groups), 1), minor=True)
-        ax.set_yticks(np.arange(-0.5, n_rows, 1), minor=True)
-        ax.grid(which="minor", color="white", linewidth=1.4)
+                        fontsize=8, color=tcol, alpha=0.8, zorder=2)
         ax.tick_params(which="minor", length=0)
         for spine in ax.spines.values():
             spine.set_edgecolor("#cccccc")
-        cbar = fig.colorbar(im, ax=ax, fraction=0.05, pad=0.03, location="bottom")
+
+        # Colour bar fed by a stand-alone mappable (there is no image any more);
+        # set_rasterized(False) keeps its gradient as vector polygons.
+        sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
+        sm.set_array([])
+        cbar = fig.colorbar(sm, ax=ax, fraction=0.05, pad=0.03, location="bottom")
+        if cbar.solids is not None:
+            cbar.solids.set_rasterized(False)
         cbar.ax.tick_params(labelsize=9)
-        return im
+        return sm
 
     var_vmax = float(np.nanmax(var_df.to_numpy(dtype=float))) or 1.0
-    _draw(ax_v, var_arr, cmap_var, 0.0, var_vmax, s["var_panel"],
+    _draw(ax_v, cmap_var, 0.0, var_vmax, s["var_panel"],
           lambda v: f"{v:.2f}", var_df)
-    _draw(ax_q, qual_arr, cmap_qual, 0.0, 1.0, s["qual_panel"],
+    _draw(ax_q, cmap_qual, 0.0, 1.0, s["qual_panel"],
           lambda v: f"{v:.2f}", qual_df)
 
     ax_v.set_yticks(range(n_rows))
@@ -1156,43 +1098,6 @@ def plot_within_group_heatmap(
 # A horizon's interval is the envelope of its findspots: from the earliest start
 # to the latest end of the events assigned to it. Horizons 1-3 happen to coincide
 # with a single cluster each; horizons 4 and 5 merge three and two clusters.
-
-
-def build_horizon_intervals(events: dict) -> list:
-    """Return one interval dict per horizon, shaped like a period cluster.
-
-    The dicts carry the same keys the ported plot functions expect ("start",
-    "end", "members") plus "horizon", so the code taken from
-    alligator_to_clean_rdf.py works unchanged.
-
-    The interval is the envelope over the horizon's findspots: start = earliest
-    estimatedstart, end = latest estimatedend. Horizons without a single dated
-    event are skipped.
-    """
-    buckets: dict = {}
-    for label, ev in events.items():
-        h = resolve_horizon(label)
-        if h is None:
-            continue
-        try:
-            start = float(ev["estimatedstart"])
-            end = float(ev["estimatedend"])
-        except (ValueError, TypeError):
-            continue
-        buckets.setdefault(h, []).append({"label": label, "start": start, "end": end})
-
-    horizons = []
-    for h in sorted(buckets):
-        members = buckets[h]
-        horizons.append({
-            "horizon": h,
-            "start": min(m["start"] for m in members),
-            "end": max(m["end"] for m in members),
-            "members": members,
-        })
-    # Earliest first, matching the ported timeline's own ordering.
-    horizons.sort(key=lambda c: (c["start"], c["end"]))
-    return horizons
 
 
 def write_horizon_intervals_csv(horizons: list, csv_path: Path):
