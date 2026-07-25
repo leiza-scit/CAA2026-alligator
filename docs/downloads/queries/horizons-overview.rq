@@ -1,0 +1,29 @@
+# The five chronological horizons
+# The starting point for everything else: each horizon with its interval and
+# how many findspots it holds. Horizon 1 is the earliest, horizon 5 the
+# latest. The interval is the envelope of the horizon's findspots, from the
+# earliest start to the latest end.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizon ?label ?begin ?end (COUNT(?site) AS ?findspots)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation                     ?horizon ;
+     rdfs:label                        ?label ;
+     time:hasBeginning/time:inXSDgYear ?begin ;
+     time:hasEnd/time:inXSDgYear       ?end ;
+     lado:hasHorizonMember             ?site .
+  FILTER(langMatches(LANG(?label), "en"))
+}
+GROUP BY ?horizon ?label ?begin ?end
+ORDER BY ?horizon

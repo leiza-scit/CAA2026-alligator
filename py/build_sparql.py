@@ -5,6 +5,11 @@
     docs/downloads/queries/*.rq   the same queries as plain files
     qmd/<name>.qmd                the quarto-live variant, for reuse as an OER
 
+A query may additionally carry a ``viz:`` list naming short Python files under
+``py/viz/``. Those turn that query's rows into a browser figure, and both the
+page and the notebook draw them: the figure code is the same file in either
+case, so a figure cannot be right in one place and stale in the other.
+
 All three are rendered from the same ``queries.yaml``, so they cannot drift
 apart. The HTML page is what the repository publishes and what ``py/main.py``
 always builds; the ``.qmd`` is always *written* (so it is versioned and citable)
@@ -92,6 +97,59 @@ def load_config():
     return cfg
 
 
+def _inline_json(value):
+    """JSON for embedding in an inline <script> block.
+
+    The figure code contains HTML, and HTML contains ``</script>``. Inside an
+    inline script that sequence ends the script element, wherever it appears -
+    including in the middle of a string literal - and the rest of the page's
+    JavaScript is then parsed as text. Escaping the slash prevents the match;
+    ``\\/`` is a legal JSON escape for ``/`` and reads back as itself.
+    """
+    return json.dumps(value, ensure_ascii=False).replace("</", "<\\/")
+
+
+def load_viz(cfg):
+    """Read the figure code referenced from queries.yaml into the config.
+
+    Deviation from the verbatim asset (keep on re-sync): the shared generator
+    has no figure mechanism. The code lives in files under ``py/viz/`` rather
+    than inline in the YAML so it stays lintable, diffable and editable with
+    syntax highlighting, and it is read here so that a missing or renamed file
+    fails the build rather than a reader's browser.
+
+    Returns the number of figures found.
+    """
+    def read(rel):
+        path = wd_paths.ROOT / rel
+        if not path.exists():
+            sys.exit(f"  !!  queries.yaml refers to {rel}, which is missing.")
+        return path.read_text(encoding="utf-8").rstrip("\n")
+
+    qmd_cfg = cfg.setdefault("qmd", {})
+    prelude = qmd_cfg.get("viz_prelude")
+    qmd_cfg["viz_prelude_code"] = read(prelude) if prelude else ""
+
+    total = 0
+    for q in cfg["queries"]:
+        for figure in q.get("viz") or []:
+            code = read(figure["file"])
+            # Both consumers need the value of the last expression. The
+            # notebook gets it for free - it is the cell's value - but the HTML
+            # page has to evaluate that line on its own, which only works if it
+            # is a single line. Checking here means the contract is enforced
+            # once, at build time, rather than failing in someone's browser.
+            last = code.rstrip().rsplit("\n", 1)[-1]
+            if not last.startswith("Frame("):
+                sys.exit(f"  !!  {figure['file']} must end in a single-line "
+                         f"Frame(...) call; it ends in: {last[:40]!r}")
+            figure["code"] = code
+            total += 1
+    if total:
+        print(f"  OK  {total} figure(s) from py/viz/")
+    return total
+
+
 def check_queries(cfg, graph_file):
     """Run every query against the real graph before shipping it.
 
@@ -167,6 +225,8 @@ def build():
         repo = yaml.safe_load(META_YAML.read_text(encoding="utf-8")).get("repo", {})
 
     check_queries(cfg, graph_file)
+    n_figures = load_viz(cfg)
+    viz_prelude = cfg["qmd"]["viz_prelude_code"]
     write_rq_files(cfg)
 
     docs = _docs_dir()
@@ -200,11 +260,17 @@ def build():
         pyodide_version=PYODIDE_VERSION, rdflib_version=RDFLIB_VERSION,
         max_rows=MAX_ROWS,
         prefixes_json=json.dumps(cfg["prefixes"]),
+        viz_prelude_json=_inline_json(viz_prelude if n_figures else ""),
+        figures_json=_inline_json(
+            {q["id"]: [{"title": f["title"], "code": f["code"]}
+                       for f in q.get("viz") or []]
+             for q in queries if q.get("viz")}),
         graph_json=json.dumps(graph_cfg, ensure_ascii=False),
         queries_json=json.dumps({q["id"]: q["sparql"] for q in queries},
                                 ensure_ascii=False))
     (docs / "sparql.html").write_text(html, encoding="utf-8")
-    print(f"  OK  docs/sparql.html  ({len(queries)} queries)")
+    print(f"  OK  docs/sparql.html  ({len(queries)} queries, "
+          f"{n_figures} figure(s))")
 
     qmd_cfg = dict(cfg.get("qmd", {}))
     if qmd_cfg.get("file"):
@@ -214,10 +280,11 @@ def build():
         qmd_cfg["megabytes"] = graph_cfg["megabytes"]
         qmd = env.get_template("sparql.qmd.j2").render(
             graph=graph_cfg, queries=queries, qmd=qmd_cfg,
-            rdflib_version=RDFLIB_VERSION,
+            rdflib_version=RDFLIB_VERSION, has_viz=bool(n_figures),
             prefixes=cfg["prefixes"].rstrip("\n"))
         (QMD_DIR / qmd_cfg["file"]).write_text(qmd, encoding="utf-8")
-        print(f"  OK  qmd/{qmd_cfg['file']}  (render with Quarto; optional)")
+        print(f"  OK  qmd/{qmd_cfg['file']}  ({len(queries)} queries, "
+              f"{n_figures} figure(s); render with Quarto, optional)")
 
 
 def main():

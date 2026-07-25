@@ -1,0 +1,30 @@
+# Which findspots were still in use in AD 9?
+# The question the companion notebook works through in three different ways.
+# Here it is resolved on the horizon level and in plain SPARQL: a findspot
+# qualifies when its own interval covers AD 9, the year of the Clades Variana.
+# Note the cast — rdflib will not compare xsd:gYear literals directly.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizon ?findspot ?begin ?end
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?site rdfs:label                        ?findspot ;
+        time:hasBeginning/time:inXSDgYear ?begin ;
+        time:hasEnd/time:inXSDgYear       ?end .
+
+  FILTER(xsd:integer(STR(?begin)) <= 9 && xsd:integer(STR(?end)) >= 9)
+}
+ORDER BY ?horizon ?findspot

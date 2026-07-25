@@ -55,10 +55,53 @@ qmd:
     seriation alone. Only seven findspots carry such an anchor, and the whole
     chronology hangs on them.
 
+    **Figures.** Three of the queries below draw something rather than print a
+    table. They are the same figures as in `notebook/clades_variana_temporal
+    .ipynb`, rebuilt from the query result rather than from a pandas frame, so
+    the browser notebook and the Jupyter one show the same thing. The map
+    fetches tiles from openstreetmap.org; everything else is computed from the
+    Turtle file alone.
+
+  # Pasted into the setup cell, above the figure code: the colours, the
+  # relation vocabulary and the year formatting the figures share.
+  viz_prelude: py/viz/_prelude.py
+
+  explore:
+    intro: |
+      The graph is in `base` and stays in scope, as does `results`, which holds
+      the rows of every query above under its id. A few things worth trying:
+
+      - Change the year in the *Clades Variana* queries to 15 BC, the start of
+        the Drusus campaigns: `ae:event_Drusus_campaigns` is in the graph too,
+        with its own interval.
+      - Swap `lado:hasHorizonMember` for `geosparql:memberOf` in the other
+        direction — the graph carries both, and the second also reaches the
+        period clusters and the corpus collection.
+      - Ask for the findspots a horizon's convex hull covers, via
+        `geosparql:hasGeometry`, and compare it with the points on the map.
+      - List what the graph is actually made of: that is the cell below.
+    sparql: |
+      SELECT ?class (COUNT(?s) AS ?instances)
+      WHERE {
+        ?s a ?c .
+        BIND(REPLACE(REPLACE(STR(?c), "^.*#", ""), "^.*/", "") AS ?class)
+      }
+      GROUP BY ?class
+      ORDER BY DESC(?instances) ?class
+
+  footer: |
+    Produced for the CAA 2026 contribution *Seriation, Chronology and Linked
+    Open Data* (LEIZA). The graph is built by `py/alligator_to_clean_rdf.py`
+    from the output of [Alligator](https://tools.leiza.de/alligator/);
+    vocabularies: CIDOC-CRM, OWL-Time, GeoSPARQL, SKOS and
+    [LADO](http://archaeology.link/). Notebook structure follows the
+    NFDI4Objects OER template.
+
 prefixes: |
   PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
   PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
   PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+  PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
   PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
   PREFIX lado:      <http://archaeology.link/ontology#>
   PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
@@ -200,6 +243,73 @@ queries:
       }
       ORDER BY ?horizon ?findspot
 
+  - id: allen-relations-to-clades-variana
+    title: "Every findspot's Allen relation to the Clades Variana"
+    intro: >-
+      The companion notebook computes Allen's thirteen interval relations in
+      pandas. They can be derived in the query instead, with a chain of nested
+      IFs testing the cases in Allen's order. Note that the event's interval is
+      read from the graph rather than written into the query: the Clades
+      Variana is recorded as AD 8 to 9, not as the single year AD 9, and
+      hard-coding the year would quietly give different answers. The 44
+      findspots fall into five of the thirteen relations, and both figures
+      below are drawn from these rows.
+    viz:
+      - file: py/viz/allen_distribution.py
+        title: "Distribution across the thirteen relations"
+        intro: >-
+          Coloured bars are the relations that count as contemporary with or
+          later than the event; grey is *before*. Only five of the thirteen are
+          occupied, and that is worth pausing on: the event's interval, AD 8 to
+          9, falls exactly on two of the boundaries the seriation produced, so
+          most findspots either end precisely where it ends (*finishedBy*, 21)
+          or begin precisely where it begins (*startedBy*, 10). The relation is
+          reporting a coincidence of boundaries, not a smooth distribution.
+      - file: py/viz/clades_variana_timeline.py
+        title: "The qualifying findspots on a timeline"
+        intro: >-
+          The same rows, narrowed to the qualifying relations and drawn as
+          intervals, with AD 9 marked. Sort by relation to separate the four
+          groups: the 21 findspots ending in the year of the defeat, the ten
+          beginning in AD 8 where the event's interval opens, the single one
+          spanning it — Worms, 15 BC to AD 13 — and the six that begin only
+          afterwards.
+    sparql: |
+      SELECT ?site ?findspot ?begin ?end ?relation
+      WHERE {
+        ae:event_Clades_Variana
+            time:hasBeginning/time:inXSDgYear ?eventBeginYear ;
+            time:hasEnd/time:inXSDgYear       ?eventEndYear .
+
+        ?s a fsl:Site , time:Interval ;
+           rdfs:label                        ?findspot ;
+           time:hasBeginning/time:inXSDgYear ?beginYear ;
+           time:hasEnd/time:inXSDgYear       ?endYear .
+
+        BIND(xsd:integer(STR(?beginYear))      AS ?begin)
+        BIND(xsd:integer(STR(?endYear))        AS ?end)
+        BIND(xsd:integer(STR(?eventBeginYear)) AS ?eventBegin)
+        BIND(xsd:integer(STR(?eventEndYear))   AS ?eventEnd)
+        BIND(REPLACE(STR(?s), "^.*/", "")      AS ?site)
+
+        BIND(IF(?end   <  ?eventBegin, "before",
+             IF(?begin >  ?eventEnd,   "after",
+             IF(?end   =  ?eventBegin, "meets",
+             IF(?begin =  ?eventEnd,   "metBy",
+             IF(?begin =  ?eventBegin && ?end =  ?eventEnd, "equals",
+             IF(?begin <  ?eventBegin && ?end >  ?eventEnd, "contains",
+             IF(?begin >  ?eventBegin && ?end <  ?eventEnd, "during",
+             IF(?begin =  ?eventBegin && ?end <  ?eventEnd, "starts",
+             IF(?begin =  ?eventBegin && ?end >  ?eventEnd, "startedBy",
+             IF(?begin <  ?eventBegin && ?end =  ?eventEnd, "finishedBy",
+             IF(?begin >  ?eventBegin && ?end =  ?eventEnd, "finishes",
+             IF(?begin <  ?eventBegin && ?end <  ?eventEnd, "overlaps",
+             IF(?begin >  ?eventBegin && ?end >  ?eventEnd, "overlappedBy",
+                                                            "unknown")))))))))))))
+             AS ?relation)
+      }
+      ORDER BY ?begin ?findspot
+
   - id: horizon-authority-links
     title: "How well is each horizon linked to gazetteers?"
     intro: >-
@@ -219,3 +329,51 @@ queries:
       }
       GROUP BY ?horizon
       ORDER BY ?horizon
+
+  - id: findspot-coordinates
+    title: "Where the findspots are"
+    intro: >-
+      Every findspot carries a point geometry as a GeoSPARQL WKT literal, so
+      the horizons can be read as a distribution as well as a sequence. WKT
+      gives the coordinates in longitude-latitude order and prefixes the CRS
+      IRI, hence the two REPLACE calls; the horizon and the authority links
+      come along for the map's popups.
+    viz:
+      - file: py/viz/site_map.py
+        title: "The findspots on a map"
+        intro: >-
+          Points are coloured by horizon, cold to warm, and each horizon is its
+          own layer — switch them off in the control at the top right to see
+          one phase at a time. The Rhine, the Danube and the roads between them
+          account for all but one findspot: Conimbriga, in horizon 3, sits 1411
+          km from its nearest neighbour in the corpus. It is worth switching
+          horizon 3 on and off, because that single point is what makes the
+          horizon's convex hull so much larger than the others — a reminder
+          that a wide hull can mean one distant site rather than a wide
+          distribution.
+    sparql: |
+      SELECT ?findspot ?horizon ?begin ?end ?latitude ?longitude
+             ?wikidata ?pleiades
+      WHERE {
+        ?site a fsl:Site ;
+              rdfs:label                            ?findspot ;
+              geosparql:hasGeometry/geosparql:asWKT ?wkt ;
+              time:hasBeginning/time:inXSDgYear     ?beginYear ;
+              time:hasEnd/time:inXSDgYear           ?endYear .
+
+        OPTIONAL {
+          ?h a lado:ChronologicalHorizon ;
+             skos:notation         ?horizon ;
+             lado:hasHorizonMember ?site .
+        }
+        OPTIONAL { ?site lado:wikidata ?wikidata }
+        OPTIONAL { ?site lado:pleiades ?pleiades }
+
+        BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+        BIND(xsd:integer(STR(?endYear))   AS ?end)
+        BIND(REPLACE(STR(?wkt),
+             "^.*POINT\\s*\\(\\s*(\\S+)\\s+(\\S+)\\s*\\).*$", "$1") AS ?longitude)
+        BIND(REPLACE(STR(?wkt),
+             "^.*POINT\\s*\\(\\s*(\\S+)\\s+(\\S+)\\s*\\).*$", "$2") AS ?latitude)
+      }
+      ORDER BY ?horizon ?findspot

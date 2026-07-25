@@ -1,0 +1,54 @@
+# Every findspot's Allen relation to the Clades Variana
+# The companion notebook computes Allen's thirteen interval relations in
+# pandas. They can be derived in the query instead, with a chain of nested IFs
+# testing the cases in Allen's order. Note that the event's interval is read
+# from the graph rather than written into the query: the Clades Variana is
+# recorded as AD 8 to 9, not as the single year AD 9, and hard-coding the year
+# would quietly give different answers. The 44 findspots fall into five of the
+# thirteen relations, and both figures below are drawn from these rows.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?site ?findspot ?begin ?end ?relation
+WHERE {
+  ae:event_Clades_Variana
+      time:hasBeginning/time:inXSDgYear ?eventBeginYear ;
+      time:hasEnd/time:inXSDgYear       ?eventEndYear .
+
+  ?s a fsl:Site , time:Interval ;
+     rdfs:label                        ?findspot ;
+     time:hasBeginning/time:inXSDgYear ?beginYear ;
+     time:hasEnd/time:inXSDgYear       ?endYear .
+
+  BIND(xsd:integer(STR(?beginYear))      AS ?begin)
+  BIND(xsd:integer(STR(?endYear))        AS ?end)
+  BIND(xsd:integer(STR(?eventBeginYear)) AS ?eventBegin)
+  BIND(xsd:integer(STR(?eventEndYear))   AS ?eventEnd)
+  BIND(REPLACE(STR(?s), "^.*/", "")      AS ?site)
+
+  BIND(IF(?end   <  ?eventBegin, "before",
+       IF(?begin >  ?eventEnd,   "after",
+       IF(?end   =  ?eventBegin, "meets",
+       IF(?begin =  ?eventEnd,   "metBy",
+       IF(?begin =  ?eventBegin && ?end =  ?eventEnd, "equals",
+       IF(?begin <  ?eventBegin && ?end >  ?eventEnd, "contains",
+       IF(?begin >  ?eventBegin && ?end <  ?eventEnd, "during",
+       IF(?begin =  ?eventBegin && ?end <  ?eventEnd, "starts",
+       IF(?begin =  ?eventBegin && ?end >  ?eventEnd, "startedBy",
+       IF(?begin <  ?eventBegin && ?end =  ?eventEnd, "finishedBy",
+       IF(?begin >  ?eventBegin && ?end =  ?eventEnd, "finishes",
+       IF(?begin <  ?eventBegin && ?end <  ?eventEnd, "overlaps",
+       IF(?begin >  ?eventBegin && ?end >  ?eventEnd, "overlappedBy",
+                                                      "unknown")))))))))))))
+       AS ?relation)
+}
+ORDER BY ?begin ?findspot

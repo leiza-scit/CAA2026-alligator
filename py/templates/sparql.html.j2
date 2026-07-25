@@ -54,6 +54,18 @@
       <span class="timing" id="time-{{ q.id }}"></span>
     </div>
     <div class="result" id="out-{{ q.id }}"></div>
+    {% if q.viz %}
+    <div class="figures">
+      {% for f in q.viz %}
+      <figure class="figure">
+        <figcaption><strong>{{ f.title }}</strong> {{ f.intro }}</figcaption>
+        <div class="figure-body" id="fig-{{ q.id }}-{{ loop.index0 }}">
+          <p class="note">Press Run to draw this.</p>
+        </div>
+      </figure>
+      {% endfor %}
+    </div>
+    {% endif %}
   </section>
   {% endfor %}
 
@@ -74,6 +86,13 @@ const PREFIXES = {{ prefixes_json | safe }};
 const QUERIES  = {{ queries_json | safe }};
 const GRAPH    = {{ graph_json | safe }};
 const MAX_ROWS = {{ max_rows }};
+
+/* Figure code, read from py/viz/ by py/build_sparql.py. The same files are
+   inlined into the quarto-live notebook, so a figure is drawn from one source
+   in both places. Each ends in a single-line Frame(...) call, checked at build
+   time; see renderFigures below for why that matters. */
+const FIGURES     = {{ figures_json | safe }};
+const VIZ_PRELUDE = {{ viz_prelude_json | safe }};
 
 const statusText = document.getElementById('status-text');
 const dot = document.getElementById('dot');
@@ -159,6 +178,48 @@ async def load(url, key):
 base = await load(${JSON.stringify(GRAPH.url)}, "base")
 n_base = len(base)
 `);
+    if (VIZ_PRELUDE) {
+      pyodide.globals.set('_viz_prelude', VIZ_PRELUDE);
+      await pyodide.runPythonAsync(`
+import json
+from html import escape
+
+
+class Frame:
+    """A self-contained HTML document, shown inline as a figure.
+
+    The document goes into an iframe rather than straight into the page. That
+    is not only isolation of the figure's CSS and element ids, though it is
+    also that: a <script> tag inserted with innerHTML never executes, whereas
+    a browser does load an iframe's document after the element is in the DOM.
+    """
+
+    def __init__(self, html, height=520):
+        self.html = html
+        self.height = height
+
+    def _repr_html_(self):
+        # Only these two need escaping inside a double-quoted attribute, and
+        # the ampersand has to go first or it would escape the escapes.
+        doc = self.html.replace("&", "&amp;").replace('"', "&quot;")
+        return (f'<iframe srcdoc="{doc}" loading="lazy"'
+                f' sandbox="allow-scripts allow-popups'
+                f' allow-popups-to-escape-sandbox"'
+                f' style="width:100%;height:{self.height}px;border:0"></iframe>')
+
+
+_viz_scope = {"json": json, "escape": escape, "Frame": Frame}
+exec(_viz_prelude, _viz_scope)
+
+
+def render_figure(code, rows):
+    """Run one figure's code over a query's rows and return its HTML."""
+    scope = dict(_viz_scope, rows=rows)
+    body, _, last = code.rstrip().rpartition("\\n")
+    exec(body, scope)
+    return eval(last, scope)._repr_html_()
+`);
+    }
     const n = pyodide.globals.get('n_base');
     const note = document.getElementById('graph-note');
     note.hidden = false;
@@ -168,6 +229,28 @@ n_base = len(base)
   } catch (err) {
     setStatus('Could not start: ' + err.message, 'err');
     console.error(err);
+  }
+}
+
+/* Draw whatever figures the query has, from the rows it just produced. The
+   query box is editable, so a figure can find its columns renamed out from
+   under it; that surfaces as the ordinary Python error rather than as an empty
+   box, because a reader who has just edited a query needs to know which of the
+   two broke. */
+async function renderFigures(id) {
+  const figs = FIGURES[id];
+  if (!figs) return;
+  for (let i = 0; i < figs.length; i++) {
+    const box = document.getElementById(`fig-${id}-${i}`);
+    if (!box) continue;
+    box.innerHTML = '<p class="note">Drawing\u2026</p>';
+    try {
+      pyodide.globals.set('_fig_code', figs[i].code);
+      const html = await pyodide.runPythonAsync('render_figure(_fig_code, _fig_rows)');
+      box.innerHTML = html;
+    } catch (err) {
+      box.innerHTML = `<pre class="error">${esc(err.message)}</pre>`;
+    }
   }
 }
 
@@ -198,12 +281,16 @@ if _q_extra:
 res = g.query(_q_src)
 cols = [str(v) for v in res.vars]
 _all = list(res)
-rows = [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)}
-        for r in _all[:${MAX_ROWS}]]
+# The table is capped, the figures are not: a figure that quietly drew the
+# first 500 of a larger result would be wrong without looking wrong.
+_fig_rows = [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)}
+             for r in _all]
+rows = _fig_rows[:${MAX_ROWS}]
 json.dumps({"cols": cols, "rows": rows, "n": len(g), "total": len(_all)})
 `);
     const data = JSON.parse(json);
     renderTable(data.cols, data.rows, 'out-' + id, data.total);
+    await renderFigures(id);
     const dt = ((performance.now() - t0) / 1000).toFixed(1);
     timing.textContent = `${dt}s over ${data.n} triples`;
   } catch (err) {
@@ -223,6 +310,10 @@ document.querySelectorAll('button.reset').forEach(b =>
     document.getElementById('src-' + id).value = QUERIES[id];
     document.getElementById('out-' + id).innerHTML = '';
     document.getElementById('time-' + id).textContent = '';
+    (FIGURES[id] || []).forEach((f, i) => {
+      const box = document.getElementById(`fig-${id}-${i}`);
+      if (box) box.innerHTML = '<p class="note">Press Run to draw this.</p>';
+    });
   }));
 
 boot();

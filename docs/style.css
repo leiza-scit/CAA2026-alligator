@@ -448,3 +448,36 @@ pre.error {
   border-left: 3px solid #d99000;
   padding-left: 0.6rem;
 }
+/* ---- figures on the query page ----------------------------------------- */
+/* A figure is drawn only after its query has run, so the box exists from the
+   start and is filled in on Run; without the border it would read as an
+   accidental gap rather than as something waiting. */
+.figures {
+  margin-top: 0.9rem;
+}
+.figure {
+  margin: 0 0 1.1rem;
+  padding: 0.8rem 0.9rem 0.9rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #ffffff;
+}
+.figure:last-child {
+  margin-bottom: 0;
+}
+.figure figcaption {
+  max-width: 74ch;
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.figure figcaption strong {
+  color: var(--ink);
+}
+.figure-body .note {
+  margin: 0;
+}
+.figure-body iframe {
+  display: block;
+}

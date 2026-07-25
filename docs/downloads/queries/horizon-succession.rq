@@ -1,0 +1,25 @@
+# How the horizons relate to one another
+# The graph carries all twenty pairwise Allen relations between the horizons,
+# so the sequence can be queried rather than read off a figure. Horizon 1
+# *meets* horizon 3 — one ends exactly where the other begins — while horizon
+# 2 *contains* horizon 3 entirely.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizonA ?relation ?horizonB
+WHERE {
+  ?a a lado:ChronologicalHorizon ; skos:notation ?horizonA ; ?rel ?b .
+  ?b a lado:ChronologicalHorizon ; skos:notation ?horizonB .
+  FILTER(STRSTARTS(STR(?rel), STR(time:)))
+  BIND(REPLACE(STR(?rel), "^.*#interval", "") AS ?relation)
+}
+ORDER BY ?horizonA ?horizonB

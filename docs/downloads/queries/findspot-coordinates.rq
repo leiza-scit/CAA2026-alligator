@@ -1,0 +1,43 @@
+# Where the findspots are
+# Every findspot carries a point geometry as a GeoSPARQL WKT literal, so the
+# horizons can be read as a distribution as well as a sequence. WKT gives the
+# coordinates in longitude-latitude order and prefixes the CRS IRI, hence the
+# two REPLACE calls; the horizon and the authority links come along for the
+# map's popups.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?findspot ?horizon ?begin ?end ?latitude ?longitude
+       ?wikidata ?pleiades
+WHERE {
+  ?site a fsl:Site ;
+        rdfs:label                            ?findspot ;
+        geosparql:hasGeometry/geosparql:asWKT ?wkt ;
+        time:hasBeginning/time:inXSDgYear     ?beginYear ;
+        time:hasEnd/time:inXSDgYear           ?endYear .
+
+  OPTIONAL {
+    ?h a lado:ChronologicalHorizon ;
+       skos:notation         ?horizon ;
+       lado:hasHorizonMember ?site .
+  }
+  OPTIONAL { ?site lado:wikidata ?wikidata }
+  OPTIONAL { ?site lado:pleiades ?pleiades }
+
+  BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+  BIND(xsd:integer(STR(?endYear))   AS ?end)
+  BIND(REPLACE(STR(?wkt),
+       "^.*POINT\\s*\\(\\s*(\\S+)\\s+(\\S+)\\s*\\).*$", "$1") AS ?longitude)
+  BIND(REPLACE(STR(?wkt),
+       "^.*POINT\\s*\\(\\s*(\\S+)\\s+(\\S+)\\s*\\).*$", "$2") AS ?latitude)
+}
+ORDER BY ?horizon ?findspot

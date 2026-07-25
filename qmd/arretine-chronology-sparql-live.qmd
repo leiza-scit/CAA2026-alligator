@@ -31,6 +31,13 @@ mark boundaries resting on a historically dated event rather than on
 seriation alone. Only seven findspots carry such an anchor, and the whole
 chronology hangs on them.
 
+**Figures.** Three of the queries below draw something rather than print a
+table. They are the same figures as in `notebook/clades_variana_temporal
+.ipynb`, rebuilt from the query result rather than from a pandas frame, so
+the browser notebook and the Jupyter one show the same thing. The map
+fetches tiles from openstreetmap.org; everything else is computed from the
+Turtle file alone.
+
 
 ## Step 1 — Set up and load the graph
 
@@ -83,12 +90,130 @@ PREFIXES = """
 PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
 PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
 PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX lado:      <http://archaeology.link/ontology#>
 PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
 PREFIX time:      <http://www.w3.org/2006/time#>
 PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>"""
+
+# --- figures (deviation from the verbatim template; keep on re-sync) --------
+# Some queries carry a `viz:` block in queries.yaml: a short Python file that
+# turns that query's rows into a browser figure. Two small things make that
+# work here.
+#
+# `results` keeps each query's rows under its id, so a figure cell can be
+# re-run, or run after some other query, without the rows underneath it having
+# silently changed.
+#
+# `Frame` renders a self-contained HTML document inside an iframe. It has to:
+# quarto-live inserts cell output with `innerHTML`, and a `<script>` tag
+# inserted that way never executes, whereas a browser does load an iframe's
+# document after the element is in the DOM. The frame also keeps the figure's
+# CSS and element ids away from the page, which is why the Jupyter version of
+# these figures uses `IPython.display.IFrame` and a fresh uuid per cell.
+import json
+from html import escape
+
+results = {}
+
+
+class Frame:
+    """A self-contained HTML document, shown inline as a figure."""
+
+    def __init__(self, html, height=520):
+        self.html = html
+        self.height = height
+
+    def _repr_html_(self):
+        # Only these two need escaping inside a double-quoted attribute, and
+        # the ampersand has to go first or it would escape the escapes.
+        doc = self.html.replace("&", "&amp;").replace('"', "&quot;")
+        return (f'<iframe srcdoc="{doc}" loading="lazy"'
+                f' sandbox="allow-scripts allow-popups'
+                f' allow-popups-to-escape-sandbox"'
+                f' style="width:100%;height:{self.height}px;border:0">'
+                f'</iframe>')
+
+# Shared helpers for the figures in py/viz/, inlined into the notebook's setup
+# cell (queries.yaml -> qmd.viz_prelude). Nothing here is generic: it is the
+# vocabulary this particular graph is discussed in.
+#
+# This file is *not* imported. It is pasted into a Pyodide cell, so it may only
+# use the standard library and must not assume a working directory.
+
+# The Allen relation palette from alligator_to_clean_rdf.py, so a relation is
+# the same colour in the browser figures and in the figures of the paper.
+ALLEN_COLOUR = {
+    "before":       "#4a90d9",   # blue
+    "after":        "#2c5f8a",   # dark blue
+    "meets":        "#7ab3e0",   # light blue
+    "metBy":        "#5a9fc5",   # mid blue
+    "overlaps":     "#f0a500",   # orange
+    "overlappedBy": "#c97d00",   # dark orange
+    "contains":     "#d94a4a",   # red
+    "during":       "#a03030",   # dark red
+    "starts":       "#e07070",   # light red
+    "startedBy":    "#c05050",   # mid red
+    "finishes":     "#e09090",   # pink-red
+    "finishedBy":   "#b04060",   # rose
+    "equals":       "#4caf50",   # green
+}
+
+# Allen's own ordering, from wholly earlier to wholly later. Sorting the bar
+# chart by frequency would hide that the occupied relations form one block.
+ALLEN_ORDER = [
+    "before", "meets", "overlaps", "finishedBy", "contains", "starts",
+    "equals", "startedBy", "during", "finishes", "overlappedBy", "metBy",
+    "after",
+]
+
+# Relations that mean "contemporary with, or later than" the reference event,
+# copied from the companion notebook so both give the same answer. 'meets' is
+# deliberately included: an interval ending exactly where the event begins was
+# still in use when it began.
+#
+# 'overlaps' is the one omission, and it is worth knowing about. Against a
+# single-year event it would be unreachable, but the graph dates the Clades
+# Variana AD 8 to 9, so a findspot ending in AD 8 would fall into it — and
+# would then be dropped, although it was in use when the event opened. No
+# findspot in this corpus does, so the two readings agree here; whether they
+# should agree in general is a question for Allard.
+CONTEMPORARY_OR_LATER = {
+    "after", "metBy", "equals", "during", "starts", "startedBy", "finishes",
+    "finishedBy", "overlappedBy", "contains", "meets",
+}
+
+# One colour per chronological horizon, cold (early) to warm (late), so the
+# map can be read as a sequence without consulting the legend.
+HORIZON_COLOUR = {
+    "1": "#0d4a70",
+    "2": "#2e86ab",
+    "3": "#7fb800",
+    "4": "#f0a500",
+    "5": "#c1440e",
+}
+
+# The reference event, for the two temporal figures. This is the year the
+# timeline marks, i.e. the defeat itself; the Allen relations in the query are
+# computed against the full interval the graph records, AD 8 to 9.
+EVENT_LABEL = "Clades Variana"
+EVENT_YEAR = 9
+EVENT_COLOUR = "#993c1d"
+
+
+def year(value):
+    """Astronomical year number to a reading label: -9 -> '9 BC', 9 -> 'AD 9'.
+
+    The graph stores xsd:gYear in the proleptic Gregorian calendar, which has a
+    year zero; historical year numbering does not. Within this corpus nothing
+    is dated to year 0, so the shift can be ignored and the conversion is the
+    plain sign flip below.
+    """
+    v = int(value)
+    return f"{-v} BC" if v < 0 else f"AD {v}"
+
 ```
 
 Now fetch the graph itself. It is about 0.1 MB, most of which is
@@ -127,10 +252,13 @@ WHERE {
 GROUP BY ?horizon ?label ?begin ?end
 ORDER BY ?horizon""")
 
+
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+
 ```
+
 
 ## Step 3 — How the horizons relate to one another
 
@@ -153,10 +281,13 @@ WHERE {
 }
 ORDER BY ?horizonA ?horizonB""")
 
+
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+
 ```
+
 
 ## Step 4 — Which findspots anchor the chronology?
 
@@ -186,10 +317,13 @@ WHERE {
 }
 ORDER BY ?horizon ?findspot""")
 
+
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+
 ```
+
 
 ## Step 5 — Findspots that do not fill their horizon
 
@@ -220,10 +354,13 @@ WHERE {
 }
 ORDER BY ?horizon ?findspot""")
 
+
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+
 ```
+
 
 ## Step 6 — Which seriation clusters does each horizon absorb?
 
@@ -250,10 +387,13 @@ WHERE {
 GROUP BY ?horizon ?cluster
 ORDER BY ?horizon ?cluster""")
 
+
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+
 ```
+
 
 ## Step 7 — Which findspots were still in use in AD 9?
 
@@ -281,12 +421,337 @@ WHERE {
 }
 ORDER BY ?horizon ?findspot""")
 
+
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+
 ```
 
-## Step 8 — How well is each horizon linked to gazetteers?
+
+## Step 8 — Every findspot's Allen relation to the Clades Variana
+
+The companion notebook computes Allen's thirteen interval relations in pandas. They can be derived in the query instead, with a chain of nested IFs testing the cases in Allen's order. Note that the event's interval is read from the graph rather than written into the query: the Clades Variana is recorded as AD 8 to 9, not as the single year AD 9, and hard-coding the year would quietly give different answers. The 44 findspots fall into five of the thirteen relations, and both figures below are drawn from these rows.
+
+```{pyodide}
+#| autorun: false
+#| label: query-allen-relations-to-clades-variana
+assert "base" in dir(), "Run the 'load-graph' cell first."
+
+g = base
+
+rows = show(g, """
+SELECT ?site ?findspot ?begin ?end ?relation
+WHERE {
+  ae:event_Clades_Variana
+      time:hasBeginning/time:inXSDgYear ?eventBeginYear ;
+      time:hasEnd/time:inXSDgYear       ?eventEndYear .
+
+  ?s a fsl:Site , time:Interval ;
+     rdfs:label                        ?findspot ;
+     time:hasBeginning/time:inXSDgYear ?beginYear ;
+     time:hasEnd/time:inXSDgYear       ?endYear .
+
+  BIND(xsd:integer(STR(?beginYear))      AS ?begin)
+  BIND(xsd:integer(STR(?endYear))        AS ?end)
+  BIND(xsd:integer(STR(?eventBeginYear)) AS ?eventBegin)
+  BIND(xsd:integer(STR(?eventEndYear))   AS ?eventEnd)
+  BIND(REPLACE(STR(?s), "^.*/", "")      AS ?site)
+
+  BIND(IF(?end   <  ?eventBegin, "before",
+       IF(?begin >  ?eventEnd,   "after",
+       IF(?end   =  ?eventBegin, "meets",
+       IF(?begin =  ?eventEnd,   "metBy",
+       IF(?begin =  ?eventBegin && ?end =  ?eventEnd, "equals",
+       IF(?begin <  ?eventBegin && ?end >  ?eventEnd, "contains",
+       IF(?begin >  ?eventBegin && ?end <  ?eventEnd, "during",
+       IF(?begin =  ?eventBegin && ?end <  ?eventEnd, "starts",
+       IF(?begin =  ?eventBegin && ?end >  ?eventEnd, "startedBy",
+       IF(?begin <  ?eventBegin && ?end =  ?eventEnd, "finishedBy",
+       IF(?begin >  ?eventBegin && ?end =  ?eventEnd, "finishes",
+       IF(?begin <  ?eventBegin && ?end <  ?eventEnd, "overlaps",
+       IF(?begin >  ?eventBegin && ?end >  ?eventEnd, "overlappedBy",
+                                                      "unknown")))))))))))))
+       AS ?relation)
+}
+ORDER BY ?begin ?findspot""")
+
+results["allen-relations-to-clades-variana"] = rows
+
+# The figure below is the point of this query; a full table of its rows would
+# bury it, so only the first few are printed.
+for r in rows[:5]:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows (showing {min(5, len(rows))})")
+
+```
+
+### Distribution across the thirteen relations
+
+Coloured bars are the relations that count as contemporary with or later than the event; grey is *before*. Only five of the thirteen are occupied, and that is worth pausing on: the event's interval, AD 8 to 9, falls exactly on two of the boundaries the seriation produced, so most findspots either end precisely where it ends (*finishedBy*, 21) or begin precisely where it begins (*startedBy*, 10). The relation is reporting a coincidence of boundaries, not a smooth distribution.
+
+```{pyodide}
+#| autorun: false
+#| label: figure-allen-relations-to-clades-variana-1
+assert "allen-relations-to-clades-variana" in results, "Run the query cell just above this one first."
+rows = results["allen-relations-to-clades-variana"]
+
+# Figure: how the 44 findspots distribute across Allen's thirteen relations to
+# the Clades Variana. Ported from section 10 of notebook/clades_variana_temporal
+# .ipynb, which built the same chart from a relation computed in pandas; here
+# the relation arrives from the query above, computed in SPARQL.
+#
+# Runs in a Pyodide cell with `rows` (the query result) and the helpers from
+# py/viz/_prelude.py in scope. It must end in a Frame.
+
+counts = {rel: 0 for rel in ALLEN_ORDER}
+for r in rows:
+    counts[r["relation"]] = counts.get(r["relation"], 0) + 1
+
+labels = ALLEN_ORDER
+values = [counts[rel] for rel in labels]
+colours = [ALLEN_COLOUR[rel] if rel in CONTEMPORARY_OR_LATER else "#b4b2a9"
+           for rel in labels]
+
+occupied = sum(1 for v in values if v)
+qualifying = sum(v for rel, v in zip(labels, values)
+                 if rel in CONTEMPORARY_OR_LATER)
+
+chart = f"""<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js">
+</script>
+</head>
+<body style="margin:0;font-family:sans-serif;padding:8px 4px 4px">
+<p style="font-size:12px;color:#555;margin:0 0 6px">
+  {len(rows)} findspots over {occupied} of the thirteen relations.
+  <span style="display:inline-block;width:10px;height:10px;
+    background:{ALLEN_COLOUR['finishedBy']};border-radius:2px;
+    vertical-align:middle"></span>
+  contemporary with or later than <em>{EVENT_LABEL}</em>
+  ({qualifying}) &mdash;
+  <span style="display:inline-block;width:10px;height:10px;background:#b4b2a9;
+    border-radius:2px;vertical-align:middle"></span>
+  wholly before it ({len(rows) - qualifying}).
+</p>
+<div style="position:relative;width:100%;height:{len(labels) * 30 + 60}px">
+  <canvas id="allen"></canvas>
+</div>
+<script>
+new Chart(document.getElementById("allen"), {{
+  type: "bar",
+  data: {{
+    labels: {json.dumps(labels)},
+    datasets: [{{
+      data: {json.dumps(values)},
+      backgroundColor: {json.dumps(colours)},
+      borderWidth: 0, borderRadius: 3
+    }}]
+  }},
+  options: {{
+    indexAxis: "y", responsive: true, maintainAspectRatio: false,
+    plugins: {{
+      legend: {{display: false}},
+      tooltip: {{callbacks: {{label: function (c) {{
+        return " " + c.parsed.x + " findspot" + (c.parsed.x === 1 ? "" : "s");
+      }}}}}}
+    }},
+    scales: {{
+      x: {{beginAtZero: true, ticks: {{stepSize: 1, font: {{size: 12}}}},
+          title: {{display: true, text: "Number of findspots",
+                   font: {{size: 12}}}}}},
+      y: {{ticks: {{font: {{size: 12, family: "monospace"}}}}}}
+    }}
+  }}
+}});
+</script>
+</body></html>"""
+
+Frame(chart, height=len(labels) * 30 + 130)
+```
+
+### The qualifying findspots on a timeline
+
+The same rows, narrowed to the qualifying relations and drawn as intervals, with AD 9 marked. Sort by relation to separate the four groups: the 21 findspots ending in the year of the defeat, the ten beginning in AD 8 where the event's interval opens, the single one spanning it — Worms, 15 BC to AD 13 — and the six that begin only afterwards.
+
+```{pyodide}
+#| autorun: false
+#| label: figure-allen-relations-to-clades-variana-2
+assert "allen-relations-to-clades-variana" in results, "Run the query cell just above this one first."
+rows = results["allen-relations-to-clades-variana"]
+
+# Figure: a Gantt-style timeline of every findspot still in use at, or first
+# used after, the Clades Variana, with AD 9 marked. Ported from section 11 of
+# notebook/clades_variana_temporal.ipynb.
+#
+# One deliberate change from the notebook version. There the colour map and the
+# filter listed 'after', 'contains' and 'meets', which are not the relations
+# this corpus actually contains: every bar that came out 'finishedBy' or
+# 'startedBy' fell through to the grey default and could not be filtered for.
+# Legend and filter are built from the data instead, so they cannot drift from
+# it again.
+#
+# Runs in a Pyodide cell with `rows` (the query result) and the helpers from
+# py/viz/_prelude.py in scope. It must end in a Frame.
+
+# This figure and the one above share a query. The notebook does the same: one
+# frame of all findspots with their relation, and the qualifying subset taken
+# from it in Python rather than asked for a second time.
+sites = [{"id": r["site"],
+          "label": r["findspot"],
+          "start": int(r["begin"]),
+          "end": int(r["end"]),
+          "rel": r["relation"]}
+         for r in rows if r["relation"] in CONTEMPORARY_OR_LATER]
+
+# Relations present, in Allen's order rather than in order of appearance.
+present = [rel for rel in ALLEN_ORDER if any(s["rel"] == rel for s in sites)]
+
+# Bar fill: the relation colour at about a tenth of its strength, so the
+# outline stays the thing that carries the meaning.
+fill = {rel: ALLEN_COLOUR[rel] + "1f" for rel in present}
+stroke = {rel: ALLEN_COLOUR[rel] for rel in present}
+
+span_min = min(s["start"] for s in sites)
+span_max = max(s["end"] for s in sites)
+pad = max(2, round((span_max - span_min) * 0.06))
+
+legend = "".join(
+    f'<span><b style="background:{ALLEN_COLOUR[rel]}"></b>{rel} '
+    f'({sum(1 for s in sites if s["rel"] == rel)})</span>'
+    for rel in present)
+options = "".join(f'<option value="{rel}">{rel}</option>' for rel in present)
+
+payload = json.dumps({"sites": sites, "fill": fill, "stroke": stroke,
+                      "min": span_min - pad, "max": span_max + pad,
+                      "event": EVENT_YEAR, "eventLabel": EVENT_LABEL,
+                      "eventColour": EVENT_COLOUR})
+
+style = """
+  body{margin:0;font-family:sans-serif;padding:6px 4px 4px}
+  #ctrl{display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+    padding:.3rem 0}
+  #ctrl label{font-size:12px;color:#666}
+  #ctrl select{font-size:12px;padding:2px 6px;border-radius:4px;
+    border:1px solid #ccc;background:#fff;color:#333}
+  #leg{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:#555;
+    padding:.2rem 0 .3rem}
+  #leg span{display:flex;align-items:center;gap:4px}
+  #leg b{width:10px;height:10px;border-radius:2px;display:inline-block}
+"""
+
+script = """
+(function () {
+  var C = JSON.parse(document.getElementById("payload").textContent);
+  var se = document.getElementById("sort");
+  var fe = document.getElementById("filter");
+  var ce = document.getElementById("chart");
+
+  function yr(v) { return v < 0 ? (-v) + " BC" : "AD " + v; }
+
+  function ticks(lo, hi) {
+    var step = (hi - lo) > 60 ? 10 : 5, out = [], t;
+    for (t = Math.ceil(lo / step) * step; t <= hi; t += step) out.push(t);
+    if (out.indexOf(C.event) < 0) out.push(C.event);
+    return out.sort(function (a, b) { return a - b; });
+  }
+
+  function draw() {
+    var s = se.value, f = fe.value;
+    var d = f === "all" ? C.sites.slice()
+                        : C.sites.filter(function (x) { return x.rel === f; });
+    d.sort(function (a, b) {
+      if (s === "start") return a.start - b.start || a.label.localeCompare(b.label);
+      if (s === "end")   return a.end   - b.end   || a.label.localeCompare(b.label);
+      if (s === "rel")   return a.rel.localeCompare(b.rel) || a.start - b.start;
+      return a.label.localeCompare(b.label);
+    });
+
+    var LW = 200, RH = 21, RG = 4, MT = 38, MB = 36, CW = 480;
+    var W = LW + CW + 24, H = MT + d.length * (RH + RG) + MB;
+    function px(y) { return LW + (y - C.min) / (C.max - C.min) * CW; }
+
+    var o = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '"'
+          + ' height="' + H + '" style="font-family:sans-serif;overflow:visible">';
+
+    ticks(C.min, C.max).forEach(function (t) {
+      var p = px(t), ev = (t === C.event);
+      o += '<line x1="' + p + '" y1="' + (MT - 4) + '" x2="' + p + '"'
+         + ' y2="' + (H - MB) + '" stroke="' + (ev ? C.eventColour : "#ddd") + '"'
+         + ' stroke-width="' + (ev ? 1.5 : 0.5) + '"'
+         + (ev ? ' stroke-dasharray="4 3"' : "") + "/>";
+      o += '<text x="' + p + '" y="' + (MT - 8) + '" text-anchor="middle"'
+         + ' font-size="10" fill="' + (ev ? C.eventColour : "#999") + '">'
+         + yr(t) + "</text>";
+    });
+
+    d.forEach(function (x, i) {
+      var y = MT + i * (RH + RG);
+      var x1 = px(x.start), x2 = px(x.end), bw = Math.max(x2 - x1, 3);
+      var sc = C.stroke[x.rel] || "#888", fc = C.fill[x.rel] || "#eee";
+      o += '<text x="' + (LW - 6) + '" y="' + (y + RH * 0.72) + '"'
+         + ' text-anchor="end" font-size="11" fill="#444">' + x.label + "</text>";
+      o += '<rect x="' + x1 + '" y="' + (y + 2) + '" width="' + bw + '"'
+         + ' height="' + (RH - 4) + '" rx="3" fill="' + fc + '"'
+         + ' stroke="' + sc + '" stroke-width="1.2"><title>' + x.label
+         + " \\u00b7 " + yr(x.start) + "\\u2013" + yr(x.end) + " \\u00b7 "
+         + x.rel + "</title></rect>";
+      var wide = bw > 70;
+      o += '<text x="' + (wide ? x1 + bw / 2 : x2 + 4) + '"'
+         + ' y="' + (y + RH * 0.72) + '"'
+         + ' text-anchor="' + (wide ? "middle" : "start") + '" font-size="10"'
+         + ' fill="' + (wide ? sc : "#999") + '">'
+         + yr(x.start) + "\\u2013" + yr(x.end) + "</text>";
+    });
+
+    var ex = px(C.event);
+    o += '<rect x="' + (ex - 44) + '" y="' + (H - MB + 4) + '" width="88"'
+       + ' height="16" rx="3" fill="#faece7" stroke="' + C.eventColour + '"'
+       + ' stroke-width=".8"/>';
+    o += '<text x="' + ex + '" y="' + (H - MB + 15) + '" text-anchor="middle"'
+       + ' font-size="10" fill="' + C.eventColour + '">' + C.eventLabel
+       + "</text>";
+    o += "</svg>";
+    ce.innerHTML = o;
+  }
+
+  se.addEventListener("change", draw);
+  fe.addEventListener("change", draw);
+  draw();
+})();
+"""
+
+timeline = f"""<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>{style}</style></head>
+<body>
+<div id="ctrl">
+  <label for="sort">Sort by</label>
+  <select id="sort">
+    <option value="start">Start year</option>
+    <option value="end">End year</option>
+    <option value="rel">Allen relation</option>
+    <option value="label">Findspot</option>
+  </select>
+  <label for="filter">Relation</label>
+  <select id="filter">
+    <option value="all">all ({len(sites)})</option>
+    {options}
+  </select>
+</div>
+<div id="leg">{legend}
+  <span><b style="background:{EVENT_COLOUR};opacity:.7"></b>
+    {EVENT_LABEL} {year(EVENT_YEAR)}</span>
+</div>
+<div id="chart"></div>
+<script id="payload" type="application/json">{payload}</script>
+<script>{script}</script>
+</body></html>"""
+
+Frame(timeline, height=38 + len(sites) * 25 + 36 + 110)
+```
+
+
+## Step 9 — How well is each horizon linked to gazetteers?
 
 A practical linked-data question: can every findspot be reconciled against an external authority? Gaps mark the places where this graph cannot yet be joined to Wikidata or Pleiades.
 
@@ -311,24 +776,211 @@ WHERE {
 GROUP BY ?horizon
 ORDER BY ?horizon""")
 
+
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+
 ```
 
 
-## Step 9 — Explore
+## Step 10 — Where the findspots are
 
-The graph is in `base` and stays in scope. A few things worth trying:
+Every findspot carries a point geometry as a GeoSPARQL WKT literal, so the horizons can be read as a distribution as well as a sequence. WKT gives the coordinates in longitude-latitude order and prefixes the CRS IRI, hence the two REPLACE calls; the horizon and the authority links come along for the map's popups.
 
-- Swap the map IRI in the first query for `#output-map-b-eifel-overview` or
-  `#output-sisal-alps-sites`.
-- Replace `wdtgeo:atLocality` with `crm:P89_falls_within` in the second query —
-  it is a sub-property, so the results are the same, but the query now also
-  catches any other containment relation added later.
-- List the classes actually used: that is the cell below.
-- Ask what every feature is licensed under, and by whom — the graph carries
-  per-feature attribution, because different layers came from different sources.
+```{pyodide}
+#| autorun: false
+#| label: query-findspot-coordinates
+assert "base" in dir(), "Run the 'load-graph' cell first."
+
+g = base
+
+rows = show(g, """
+SELECT ?findspot ?horizon ?begin ?end ?latitude ?longitude
+       ?wikidata ?pleiades
+WHERE {
+  ?site a fsl:Site ;
+        rdfs:label                            ?findspot ;
+        geosparql:hasGeometry/geosparql:asWKT ?wkt ;
+        time:hasBeginning/time:inXSDgYear     ?beginYear ;
+        time:hasEnd/time:inXSDgYear           ?endYear .
+
+  OPTIONAL {
+    ?h a lado:ChronologicalHorizon ;
+       skos:notation         ?horizon ;
+       lado:hasHorizonMember ?site .
+  }
+  OPTIONAL { ?site lado:wikidata ?wikidata }
+  OPTIONAL { ?site lado:pleiades ?pleiades }
+
+  BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+  BIND(xsd:integer(STR(?endYear))   AS ?end)
+  BIND(REPLACE(STR(?wkt),
+       "^.*POINT\\s*\\(\\s*(\\S+)\\s+(\\S+)\\s*\\).*$", "$1") AS ?longitude)
+  BIND(REPLACE(STR(?wkt),
+       "^.*POINT\\s*\\(\\s*(\\S+)\\s+(\\S+)\\s*\\).*$", "$2") AS ?latitude)
+}
+ORDER BY ?horizon ?findspot""")
+
+results["findspot-coordinates"] = rows
+
+# The figure below is the point of this query; a full table of its rows would
+# bury it, so only the first few are printed.
+for r in rows[:5]:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows (showing {min(5, len(rows))})")
+
+```
+
+### The findspots on a map
+
+Points are coloured by horizon, cold to warm, and each horizon is its own layer — switch them off in the control at the top right to see one phase at a time. The Rhine, the Danube and the roads between them account for all but one findspot: Conimbriga, in horizon 3, sits 1411 km from its nearest neighbour in the corpus. It is worth switching horizon 3 on and off, because that single point is what makes the horizon's convex hull so much larger than the others — a reminder that a wide hull can mean one distant site rather than a wide distribution.
+
+```{pyodide}
+#| autorun: false
+#| label: figure-findspot-coordinates-1
+assert "findspot-coordinates" in results, "Run the query cell just above this one first."
+rows = results["findspot-coordinates"]
+
+# Figure: the findspots on a slippy map, coloured and grouped by chronological
+# horizon. There is no counterpart in notebook/clades_variana_temporal.ipynb —
+# this is the spatial reading of the same graph, added because every findspot
+# carries a geosparql:asWKT point and the horizons are as much a distribution
+# as a sequence.
+#
+# The tiles come from openstreetmap.org, so this is the one figure in the
+# notebook that makes a network request beyond the graph itself. Everything
+# else, including which point sits where, is computed from the Turtle file.
+#
+# Runs in a Pyodide cell with `rows` (the query result) and the helpers from
+# py/viz/_prelude.py in scope. It must end in a Frame.
+
+# One entry per findspot. The OPTIONAL blocks in the query would multiply rows
+# if a findspot ever gained a second authority link, so collapse on the label.
+sites = {}
+for r in rows:
+    sites[r["findspot"]] = {
+        "label": r["findspot"],
+        "horizon": r["horizon"],
+        "start": int(r["begin"]),
+        "end": int(r["end"]),
+        "lat": float(r["latitude"]),
+        "lon": float(r["longitude"]),
+        "span": f'{year(r["begin"])}\u2013{year(r["end"])}',
+        "wikidata": r.get("wikidata"),
+        "pleiades": r.get("pleiades"),
+    }
+
+horizons = sorted({s["horizon"] for s in sites.values()})
+by_horizon = {h: sum(1 for s in sites.values() if s["horizon"] == h)
+              for h in horizons}
+
+payload = json.dumps({
+    "sites": sorted(sites.values(), key=lambda s: (s["horizon"], s["label"])),
+    "colour": {h: HORIZON_COLOUR.get(h, "#666666") for h in horizons},
+})
+
+legend = "".join(
+    f'<span><b style="background:{HORIZON_COLOUR.get(h, "#666")}"></b>'
+    f'Horizon {escape(h)} ({by_horizon[h]})</span>' for h in horizons)
+
+# Leaflet sizes the map from its container, and a container given a percentage
+# height inside an unsized body collapses to nothing. So the frame height is
+# fixed here and the map gets what is left after the legend.
+FRAME_HEIGHT = 580
+MAP_HEIGHT = FRAME_HEIGHT - 46
+
+style = f"""
+  body{{margin:0;font-family:sans-serif;padding:6px 4px 4px}}
+  #leg{{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:#555;
+    padding:.2rem 0 .4rem}}
+  #leg span{{display:flex;align-items:center;gap:4px}}
+  #leg b{{width:10px;height:10px;border-radius:50%;display:inline-block}}
+  #map{{width:100%;height:{MAP_HEIGHT}px;border:1px solid #ddd;
+    border-radius:4px}}
+  .leaflet-popup-content{{font-size:12px;line-height:1.45;margin:8px 12px}}
+  .leaflet-popup-content b{{font-size:13px}}
+  .leaflet-popup-content .meta{{color:#666}}
+  .leaflet-popup-content a{{color:#185fa5}}
+"""
+
+script = """
+(function () {
+  var C = JSON.parse(document.getElementById("payload").textContent);
+  var map = L.map("map", {scrollWheelZoom: false});
+
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 12, minZoom: 3,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright"'
+               + ' target="_blank" rel="noopener">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  function link(url, text) {
+    if (!url) return "";
+    return ' <a href="' + url + '" target="_blank" rel="noopener">'
+         + text + "</a>";
+  }
+
+  var layers = {}, bounds = [];
+  C.sites.forEach(function (s) {
+    var colour = C.colour[s.horizon] || "#666666";
+    var marker = L.circleMarker([s.lat, s.lon], {
+      radius: 6, color: "#ffffff", weight: 1.5,
+      fillColor: colour, fillOpacity: 0.9
+    });
+    var authorities = link(s.wikidata, "Wikidata") + link(s.pleiades, "Pleiades");
+    marker.bindPopup(
+      "<b>" + s.label + "</b><br>"
+      + '<span class="meta">' + s.span + " \\u00b7 horizon " + s.horizon
+      + "</span>" + (authorities ? "<br>" + authorities : ""));
+    marker.bindTooltip(s.label, {direction: "top", offset: [0, -6]});
+
+    var key = "Horizon " + s.horizon;
+    if (!layers[key]) layers[key] = L.layerGroup().addTo(map);
+    marker.addTo(layers[key]);
+    bounds.push([s.lat, s.lon]);
+  });
+
+  L.control.layers(null, layers, {collapsed: false}).addTo(map);
+  map.fitBounds(bounds, {padding: [24, 24]});
+})();
+"""
+
+site_map = f"""<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js">
+</script>
+<style>{style}</style>
+</head>
+<body>
+<div id="leg">{legend}</div>
+<div id="map"></div>
+<script id="payload" type="application/json">{payload}</script>
+<script>{script}</script>
+</body></html>"""
+
+Frame(site_map, height=FRAME_HEIGHT)
+```
+
+
+
+
+## Step 11 — Explore
+
+The graph is in `base` and stays in scope, as does `results`, which holds
+the rows of every query above under its id. A few things worth trying:
+
+- Change the year in the *Clades Variana* queries to 15 BC, the start of
+  the Drusus campaigns: `ae:event_Drusus_campaigns` is in the graph too,
+  with its own interval.
+- Swap `lado:hasHorizonMember` for `geosparql:memberOf` in the other
+  direction — the graph carries both, and the second also reaches the
+  period clusters and the corpus collection.
+- Ask for the findspots a horizon's convex hull covers, via
+  `geosparql:hasGeometry`, and compare it with the points on the map.
+- List what the graph is actually made of: that is the cell below.
 
 ```{pyodide}
 #| autorun: false
@@ -336,21 +988,26 @@ The graph is in `base` and stays in scope. A few things worth trying:
 assert "base" in dir(), "Run the 'load-graph' cell first."
 
 rows = show(base, """
-SELECT ?type (COUNT(?f) AS ?n) WHERE {
-  ?f a ?cls .
-  FILTER(STRSTARTS(STR(?cls), "http://w3id.org/geo-lod/wdttest/geo#"))
-  BIND(REPLACE(STR(?cls), "^.*#", "") AS ?type)
+SELECT ?class (COUNT(?s) AS ?instances)
+WHERE {
+  ?s a ?c .
+  BIND(REPLACE(REPLACE(STR(?c), "^.*#", ""), "^.*/", "") AS ?class)
 }
-GROUP BY ?type
-ORDER BY DESC(?n)""")
+GROUP BY ?class
+ORDER BY DESC(?instances) ?class
+""")
 
 for r in rows:
-    print(f"{r['n']:>4}  {r['type']}")
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 ```
+
 
 ---
 
-Produced for the supplementary materials of the WD1 (Walsdorfer Maar) manuscript.
-Vocabulary: `metadata/geo_ontology.ttl`, extending the
-[geo-lod](http://w3id.org/geo-lod/) core ontology.
-Notebook structure follows the NFDI4Objects OER template.
+Produced for the CAA 2026 contribution *Seriation, Chronology and Linked
+Open Data* (LEIZA). The graph is built by `py/alligator_to_clean_rdf.py`
+from the output of [Alligator](https://tools.leiza.de/alligator/);
+vocabularies: CIDOC-CRM, OWL-Time, GeoSPARQL, SKOS and
+[LADO](http://archaeology.link/). Notebook structure follows the
+NFDI4Objects OER template.
+

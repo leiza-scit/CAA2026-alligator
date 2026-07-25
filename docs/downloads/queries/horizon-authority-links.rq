@@ -1,0 +1,28 @@
+# How well is each horizon linked to gazetteers?
+# A practical linked-data question: can every findspot be reconciled against
+# an external authority? Gaps mark the places where this graph cannot yet be
+# joined to Wikidata or Pleiades.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizon (COUNT(DISTINCT ?site) AS ?findspots)
+                (COUNT(DISTINCT ?wikidata) AS ?withWikidata)
+                (COUNT(DISTINCT ?pleiades) AS ?withPleiades)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+  OPTIONAL { ?site lado:wikidata ?wikidata }
+  OPTIONAL { ?site lado:pleiades ?pleiades }
+}
+GROUP BY ?horizon
+ORDER BY ?horizon

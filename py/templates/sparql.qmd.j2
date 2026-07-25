@@ -64,6 +64,47 @@ def show(graph, query):
 
 PREFIXES = """
 {{ prefixes }}"""
+{% if has_viz %}
+# --- figures (deviation from the verbatim template; keep on re-sync) --------
+# Some queries carry a `viz:` block in queries.yaml: a short Python file that
+# turns that query's rows into a browser figure. Two small things make that
+# work here.
+#
+# `results` keeps each query's rows under its id, so a figure cell can be
+# re-run, or run after some other query, without the rows underneath it having
+# silently changed.
+#
+# `Frame` renders a self-contained HTML document inside an iframe. It has to:
+# quarto-live inserts cell output with `innerHTML`, and a `<script>` tag
+# inserted that way never executes, whereas a browser does load an iframe's
+# document after the element is in the DOM. The frame also keeps the figure's
+# CSS and element ids away from the page, which is why the Jupyter version of
+# these figures uses `IPython.display.IFrame` and a fresh uuid per cell.
+import json
+from html import escape
+
+results = {}
+
+
+class Frame:
+    """A self-contained HTML document, shown inline as a figure."""
+
+    def __init__(self, html, height=520):
+        self.html = html
+        self.height = height
+
+    def _repr_html_(self):
+        # Only these two need escaping inside a double-quoted attribute, and
+        # the ampersand has to go first or it would escape the escapes.
+        doc = self.html.replace("&", "&amp;").replace('"', "&quot;")
+        return (f'<iframe srcdoc="{doc}" loading="lazy"'
+                f' sandbox="allow-scripts allow-popups'
+                f' allow-popups-to-escape-sandbox"'
+                f' style="width:100%;height:{self.height}px;border:0">'
+                f'</iframe>')
+
+{{ qmd.viz_prelude_code }}
+{% endif %}
 ```
 
 Now fetch the graph itself. It is about {{ qmd.megabytes }} MB, most of which is
@@ -98,47 +139,55 @@ g = base
 {% endif %}
 rows = show(g, """
 {{ q.sparql }}""")
+{% if q.viz %}
+results["{{ q.id }}"] = rows
+
+# The figure below is the point of this query; a full table of its rows would
+# bury it, so only the first few are printed.
+for r in rows[:5]:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows (showing {min(5, len(rows))})")
+{% else %}
 
 for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
+{% endif %}
+```
+{% for figure in q.viz or [] %}
+### {{ figure.title }}
+
+{{ figure.intro }}
+
+```{pyodide}
+#| autorun: false
+#| label: figure-{{ q.id }}-{{ loop.index }}
+assert "{{ q.id }}" in results, "Run the query cell just above this one first."
+rows = results["{{ q.id }}"]
+
+{{ figure.code }}
 ```
 {% endfor %}
+{% endfor %}
 
+{% if qmd.explore %}
 ## Step {{ queries|length + 2 }} — Explore
 
-The graph is in `base` and stays in scope. A few things worth trying:
-
-- Swap the map IRI in the first query for `#output-map-b-eifel-overview` or
-  `#output-sisal-alps-sites`.
-- Replace `wdtgeo:atLocality` with `crm:P89_falls_within` in the second query —
-  it is a sub-property, so the results are the same, but the query now also
-  catches any other containment relation added later.
-- List the classes actually used: that is the cell below.
-- Ask what every feature is licensed under, and by whom — the graph carries
-  per-feature attribution, because different layers came from different sources.
-
+{{ qmd.explore.intro }}
 ```{pyodide}
 #| autorun: false
 #| label: explore
 assert "base" in dir(), "Run the 'load-graph' cell first."
 
 rows = show(base, """
-SELECT ?type (COUNT(?f) AS ?n) WHERE {
-  ?f a ?cls .
-  FILTER(STRSTARTS(STR(?cls), "http://w3id.org/geo-lod/wdttest/geo#"))
-  BIND(REPLACE(STR(?cls), "^.*#", "") AS ?type)
-}
-GROUP BY ?type
-ORDER BY DESC(?n)""")
+{{ qmd.explore.sparql }}""")
 
 for r in rows:
-    print(f"{r['n']:>4}  {r['type']}")
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 ```
-
+{% endif %}
+{% if qmd.footer %}
 ---
 
-Produced for the supplementary materials of the WD1 (Walsdorfer Maar) manuscript.
-Vocabulary: `metadata/geo_ontology.ttl`, extending the
-[geo-lod](http://w3id.org/geo-lod/) core ontology.
-Notebook structure follows the NFDI4Objects OER template.
+{{ qmd.footer }}
+{% endif %}

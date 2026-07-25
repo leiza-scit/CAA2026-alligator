@@ -1,0 +1,34 @@
+# Findspots that do not fill their horizon
+# Where every findspot carries the same dating, the horizon envelope describes
+# the horizon exactly. Where members differ, the envelope is wider than any
+# single findspot. This query returns only the findspots narrower than their
+# horizon — none of them are in horizons 1 to 3, which is the quickest
+# evidence that those three are internally homogeneous.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizon ?findspot ?siteBegin ?siteEnd ?horizonBegin ?horizonEnd
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation                     ?horizon ;
+     time:hasBeginning/time:inXSDgYear ?horizonBegin ;
+     time:hasEnd/time:inXSDgYear       ?horizonEnd ;
+     lado:hasHorizonMember             ?site .
+
+  ?site rdfs:label                        ?findspot ;
+        time:hasBeginning/time:inXSDgYear ?siteBegin ;
+        time:hasEnd/time:inXSDgYear       ?siteEnd .
+
+  FILTER(xsd:integer(STR(?siteBegin)) != xsd:integer(STR(?horizonBegin))
+      || xsd:integer(STR(?siteEnd))   != xsd:integer(STR(?horizonEnd)))
+}
+ORDER BY ?horizon ?findspot
