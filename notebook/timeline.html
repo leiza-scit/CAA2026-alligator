@@ -2,48 +2,48 @@
 <html><head><meta charset="utf-8">
 <style>
   body{margin:0;font-family:sans-serif;padding:6px 4px 4px}
-  #ctrlc746576cff384ff09f64465a5e2a559f{display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+  #ctrlea242967155a422a8745464749252128{display:flex;gap:12px;flex-wrap:wrap;align-items:center;
     padding:.3rem 0 .3rem}
-  #ctrlc746576cff384ff09f64465a5e2a559f label{font-size:12px;color:#666}
-  #ctrlc746576cff384ff09f64465a5e2a559f select{font-size:12px;padding:2px 6px;border-radius:4px;
+  #ctrlea242967155a422a8745464749252128 label{font-size:12px;color:#666}
+  #ctrlea242967155a422a8745464749252128 select{font-size:12px;padding:2px 6px;border-radius:4px;
     border:1px solid #ccc;background:#fff;color:#333}
-  #legc746576cff384ff09f64465a5e2a559f{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;
+  #legea242967155a422a8745464749252128{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;
     color:#555;padding:.2rem 0 .3rem}
-  #legc746576cff384ff09f64465a5e2a559f span{display:flex;align-items:center;gap:4px}
-  #legc746576cff384ff09f64465a5e2a559f b{width:10px;height:10px;border-radius:2px;display:inline-block}
+  #legea242967155a422a8745464749252128 span{display:flex;align-items:center;gap:4px}
+  #legea242967155a422a8745464749252128 b{width:10px;height:10px;border-radius:2px;display:inline-block}
 </style>
 </head><body>
-<div id="ctrlc746576cff384ff09f64465a5e2a559f">
+<div id="ctrlea242967155a422a8745464749252128">
   <label>Sort by</label>
-  <select id="sortc746576cff384ff09f64465a5e2a559f">
+  <select id="sortea242967155a422a8745464749252128">
     <option value="start">Start year</option>
     <option value="end">End year</option>
     <option value="allen">Allen relation</option>
     <option value="label">Site name</option>
   </select>
   <label>Filter</label>
-  <select id="filtc746576cff384ff09f64465a5e2a559f">
+  <select id="filtea242967155a422a8745464749252128">
     <option value="all">All qualifying relations</option>
     <option value="after">after</option>
     <option value="contains">contains</option>
     <option value="meets">meets (ends at AD 9)</option>
   </select>
 </div>
-<div id="legc746576cff384ff09f64465a5e2a559f">
+<div id="legea242967155a422a8745464749252128">
   <span><b style="background:#185FA5"></b>after &mdash; begins post-AD&nbsp;9</span>
   <span><b style="background:#3B6D11"></b>contains &mdash; spans AD&nbsp;9</span>
   <span><b style="background:#BA7517"></b>meets &mdash; ends at AD&nbsp;9</span>
   <span><b style="background:#993C1D;opacity:.7"></b>Clades Variana AD&nbsp;9</span>
 </div>
-<div id="contc746576cff384ff09f64465a5e2a559f"></div>
+<div id="contea242967155a422a8745464749252128"></div>
 <script>
 (function(){
   var D=[{id:"eoE031",label:"Augst, Insula 20",start:16,end:28,rel:"after"},{id:"VvXl2y",label:"Augst, Theater",start:16,end:28,rel:"after"},{id:"qLXYbG",label:"Maastricht",start:16,end:28,rel:"after"},{id:"VJwKp7",label:"Vechten",start:16,end:28,rel:"after"},{id:"KROWel",label:"Velsen",start:16,end:28,rel:"after"},{id:"v1O46L",label:"Zurzach, Lager",start:16,end:28,rel:"after"},{id:"gw8Kxp",label:"Worms",start:-15,end:13,rel:"contains"},{id:"N48RZG",label:"Asberg, Lager",start:-15,end:9,rel:"finishedBy"},{id:"gL6OAG",label:"Augsburg-Oberhausen",start:-15,end:9,rel:"finishedBy"},{id:"ewr5bR",label:"Basel, Lagerdorf",start:-15,end:9,rel:"finishedBy"},{id:"b8OX2q",label:"Lausanne-Vidy",start:-15,end:9,rel:"finishedBy"},{id:"Bp8JY3",label:"Liberchies",start:-15,end:9,rel:"finishedBy"},{id:"K4wDrp",label:"Neuss",start:-15,end:9,rel:"finishedBy"},{id:"kNA9dJ",label:"Vindonissa, Militärstation",start:-15,end:9,rel:"finishedBy"},{id:"lKmJ9q",label:"Namur",start:-12,end:9,rel:"finishedBy"},{id:"O9rjkJ",label:"Rödgen",start:-12,end:9,rel:"finishedBy"},{id:"GEJedY",label:"Asberg, Lagerdorf",start:-7,end:9,rel:"finishedBy"},{id:"QLNMJk",label:"Bad Nauheim",start:-7,end:9,rel:"finishedBy"},{id:"Q48jL9",label:"Bonn, Boeselagerhof",start:-7,end:9,rel:"finishedBy"},{id:"D9L8l5",label:"Braives",start:-7,end:9,rel:"finishedBy"},{id:"WNVNB2",label:"Conimbriga",start:-7,end:9,rel:"finishedBy"},{id:"Gjndwx",label:"Haltern",start:-7,end:9,rel:"finishedBy"},{id:"XPb9J3",label:"Lorenzberg",start:-7,end:9,rel:"finishedBy"},{id:"yJBpPg",label:"Mainz, Legionslager",start:-7,end:9,rel:"finishedBy"},{id:"XeE1dq",label:"Nijmegen, Lager (Brunsting)",start:-7,end:9,rel:"finishedBy"},{id:"Vx2doQ",label:"Tongeren",start:-7,end:9,rel:"finishedBy"},{id:"nrylrd",label:"Vetera I",start:-7,end:9,rel:"finishedBy"},{id:"lwDA1d",label:"Vindonissa, Scheuerhof",start:-7,end:9,rel:"finishedBy"},{id:"ez8xNq",label:"Augsburg, Stadt",start:8,end:13,rel:"startedBy"},{id:"OmaMbj",label:"Augst, Insula 31",start:8,end:13,rel:"startedBy"},{id:"wm71YX",label:"Avenches, Insula 15",start:8,end:13,rel:"startedBy"},{id:"j2lK5y",label:"Bregenz",start:8,end:13,rel:"startedBy"},{id:"BWYway",label:"Friedberg",start:8,end:13,rel:"startedBy"},{id:"LG4D5x",label:"Nijmegen, Trajanusplein",start:8,end:13,rel:"startedBy"},{id:"QW3vzV",label:"Nijmegen, Valkhof",start:8,end:13,rel:"startedBy"},{id:"NRzOWx",label:"Oberwinterthur, Römerstr. 186",start:8,end:13,rel:"startedBy"},{id:"bwrZ4y",label:"Vindonissa, Königsfelden",start:8,end:13,rel:"startedBy"},{id:"DJq1mg",label:"Wiesbaden",start:8,end:13,rel:"startedBy"}];
   var COL={after:"#185FA5",contains:"#3B6D11",meets:"#BA7517"};
   var FIL={after:"#E6F1FB",contains:"#EAF3DE",meets:"#FAEEDA"};
-  var se=document.getElementById("sortc746576cff384ff09f64465a5e2a559f");
-  var fe=document.getElementById("filtc746576cff384ff09f64465a5e2a559f");
-  var ce=document.getElementById("contc746576cff384ff09f64465a5e2a559f");
+  var se=document.getElementById("sortea242967155a422a8745464749252128");
+  var fe=document.getElementById("filtea242967155a422a8745464749252128");
+  var ce=document.getElementById("contea242967155a422a8745464749252128");
   function yr(v){return v<0?(-v)+" BC":"AD "+v;}
   function draw(){
     var s=se.value,f=fe.value;
