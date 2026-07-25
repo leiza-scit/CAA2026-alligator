@@ -1,0 +1,30 @@
+# Which seriation clusters does each horizon absorb?
+# Both groupings live in the same graph, so one query can join them. A period
+# cluster is computed — findspots the seriation gave an identical start and
+# end year; a horizon is interpretive. Horizons 3 to 5 rest on a single
+# cluster each, horizons 1 and 2 merge several, which is exactly why their
+# envelopes are wider than their members.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizon ?cluster (COUNT(?site) AS ?findspots)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?c a lado:PeriodCluster ;
+     rdfs:label            ?cluster ;
+     lado:hasClusterMember ?site .
+}
+GROUP BY ?horizon ?cluster
+ORDER BY ?horizon ?cluster

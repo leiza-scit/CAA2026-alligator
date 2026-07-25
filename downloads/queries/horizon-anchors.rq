@@ -1,0 +1,32 @@
+# Which findspots anchor the chronology?
+# Alligator marks a boundary as fixed when it rests on a historically dated
+# event rather than on seriation alone. Only seven findspots carry such an
+# anchor — and every horizon has at least one, which is what makes the
+# sequence defensible.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizon ?findspot ?startFixed ?endFixed ?begin ?end
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?site rdfs:label                        ?findspot ;
+        lado:startfixed                   ?startFixed ;
+        lado:endfixed                     ?endFixed ;
+        time:hasBeginning/time:inXSDgYear ?begin ;
+        time:hasEnd/time:inXSDgYear       ?end .
+
+  FILTER(?startFixed || ?endFixed)
+}
+ORDER BY ?horizon ?findspot
