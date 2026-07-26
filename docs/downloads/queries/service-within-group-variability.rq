@@ -1,0 +1,50 @@
+# How tightly each horizon is defined
+# The RGZM variance and quality of Allard Mees, computed in the query as far
+# as SPARQL reaches. Every sherd counts as one observation valued by the rank
+# of its sub-type within its group, so N, the sum of the ranks and the sum of
+# their squares are enough to derive the rest — which is fortunate, because
+# rdflib's SPARQL has neither SQRT nor EXP and `s` and `q = exp(−CV)` have to
+# be taken in Python. Both rank readings come back from the one query: the
+# stage reading this project reports, and the column reading kept for
+# comparison. `COUNT(DISTINCT ?rank)` reports how many ranks a group actually
+# holds, so a cell whose value follows from the rank assignment alone can be
+# told apart from one that was measured.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX aeont:     <http://leiza-scit.github.io/CAA2026-alligator/ontology#>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?horizon ?group (SUM(?sherds) AS ?sherds)
+       (SUM(?stage * ?sherds)            AS ?sumStage)
+       (SUM(?stage * ?stage * ?sherds)   AS ?sumStageSq)
+       (COUNT(DISTINCT ?stage)           AS ?stageSteps)
+       (SUM(?column * ?sherds)           AS ?sumColumn)
+       (SUM(?column * ?column * ?sherds) AS ?sumColumnSq)
+       (COUNT(DISTINCT ?column)          AS ?columnSteps)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?obs aeont:atFindspot  ?site ;
+       aeont:serviceType ?concept ;
+       aeont:sherdCount  ?sherds .
+
+  # The group is the concept's top concept, reached through skos:broader.
+  ?concept aeont:stageRank  ?stage ;
+           aeont:columnRank ?column ;
+           skos:broader*    ?top .
+  ?top skos:topConceptOf ?scheme ;
+       skos:prefLabel    ?group .
+  FILTER(lang(?group) = "en")
+}
+GROUP BY ?horizon ?group
+ORDER BY ?horizon ?group

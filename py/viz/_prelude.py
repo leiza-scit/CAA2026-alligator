@@ -65,6 +65,55 @@ EVENT_YEAR = 9
 EVENT_COLOUR = "#993c1d"
 
 
+# The service-type palette, taken from py/events_timeline_by_service.py by
+# sampling the same colormaps at the same points (Reds 0.35-0.90 over the six
+# Service I types, Greens 0.45-0.88 over the two Service II types). Written out
+# here because Pyodide has no matplotlib: a type must be the same colour in the
+# browser as in the printed figure, and the only way to guarantee that without
+# matplotlib is to carry the values.
+SERVICE_COLOUR = {
+    "Schrägrandteller":  "#1f77b4",
+    "Service Ia Tasse":  "#fc9b7c",
+    "Service Ia Teller": "#fb7757",
+    "Service Ib Tasse":  "#f4503a",
+    "Service Ib Teller": "#de2b25",
+    "Service Ic Tasse":  "#be151a",
+    "Service Ic Teller": "#980c13",
+    "Service II Tasse":  "#86cc85",
+    "Service II Teller": "#006b2b",
+}
+
+# Fill for a heatmap cell whose value follows from the rank assignment alone
+# rather than from the sherds — see the quality figure.
+STRUCTURAL_GREY = "#d9d9d9"
+
+
+def rgzm(n, sum_rank, sum_rank_sq):
+    """RGZM within-group variance and quality from the sums a query can return.
+
+    SPARQL has no EXP or SQRT — rdflib's does not even parse them — so the query
+    returns the three sums and the last step happens here:
+
+        x̄  = Σ(rank·count) / N
+        s  = sqrt( (Σ(rank²·count) − N·x̄²) / (N − 1) )    (STDDEV_SAMP)
+        q  = exp(−s/|x̄|)                                  (quality, in (0, 1])
+
+    Every sherd is one observation valued by the rank of its sub-type, which is
+    what makes the sums above sufficient. q → 1 means the group's material sits
+    on one rank; q → 0 means it is spread across the group's sequence.
+    """
+    import math
+
+    if n < 2:
+        return float("nan"), float("nan")
+    mean = sum_rank / n
+    variance = (sum_rank_sq - n * mean * mean) / (n - 1)
+    s = math.sqrt(max(variance, 0.0))
+    if mean == 0:
+        return s, float("nan")
+    return s, math.exp(-(s / abs(mean)))
+
+
 def year(value):
     """Astronomical year number to a reading label: -9 -> '9 BC', 9 -> 'AD 9'.
 
@@ -75,3 +124,24 @@ def year(value):
     """
     v = int(value)
     return f"{-v} BC" if v < 0 else f"AD {v}"
+
+
+# Service-type colours, sampled from the same matplotlib colormaps and the same
+# ranges as build_service_colours() in events_timeline_by_service.py, so a type
+# is the same colour in the browser as in the figures of the paper.
+# Schrägrandteller is a fixed blue; Service I runs light to dark red over its
+# six sub-types, Service II light to dark green over its two.
+SERVICE_COLOUR = {
+    "Schraegrandteller": "#1f77b4",
+    "ServiceIa_Tasse":   "#fc9b7c",
+    "ServiceIa_Teller":  "#fb7757",
+    "ServiceIb_Tasse":   "#f4503a",
+    "ServiceIb_Teller":  "#de2b25",
+    "ServiceIc_Tasse":   "#be151a",
+    "ServiceIc_Teller":  "#980c13",
+    "ServiceII_Tasse":   "#86cc85",
+    "ServiceII_Teller":  "#006b2b",
+}
+
+# Rows of the horizon figures run latest at the top, the timeline convention.
+HORIZON_DISPLAY_ORDER = ["5", "4", "3", "2", "1"]

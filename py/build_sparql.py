@@ -150,6 +150,47 @@ def load_viz(cfg):
     return total
 
 
+def load_extra(spec, key, query_id):
+    """Load a graph a query needs in addition to the base graph.
+
+    Two cases, and they want opposite treatment.
+
+    A graph this repository produces itself carries a ``file:`` and is read
+    from disk. It has to be: fetching it from the published URL would verify
+    the queries against the *previously* published version, so a change to the
+    modelling would only surface a release later - and before the first
+    release the URL does not resolve at all, which would quietly suspend the
+    check for the newest queries. A missing file is therefore an error.
+
+    A genuinely external graph has only a ``url:``. Whether it is reachable is
+    not something this repository controls, so an unreachable one is reported
+    and the query ships unverified rather than blocking the build.
+    """
+    from rdflib import Graph
+
+    if "file" in spec:
+        path = wd_paths.ROOT / spec["file"]
+        if not path.exists():
+            print(f"  !!  query {query_id}: needs '{key}', but "
+                  f"{spec['file']} does not exist. Build it first.")
+            return None
+        loaded = Graph().parse(path, format="turtle")
+        print(f"  ..  {Path(spec['file']).name}: {len(loaded)} triples "
+              f"(extra graph '{key}')")
+        return loaded
+
+    try:
+        import urllib.request
+        with urllib.request.urlopen(spec["url"], timeout=30) as response:
+            loaded = Graph()
+            loaded.parse(data=response.read().decode("utf-8"), format="turtle")
+        return loaded
+    except Exception as exc:                           # noqa: BLE001
+        print(f"  ..  {query_id}: could not fetch '{key}' to verify "
+              f"({type(exc).__name__}); shipped unverified.")
+        return None
+
+
 def check_queries(cfg, graph_file):
     """Run every query against the real graph before shipping it.
 
@@ -169,19 +210,16 @@ def check_queries(cfg, graph_file):
         key = q.get("needs")
         if key:
             if key not in extra_graphs:
-                url = cfg["graph"]["extra"][key]["url"]
-                try:
-                    import urllib.request
-                    with urllib.request.urlopen(url, timeout=30) as response:
-                        loaded = Graph()
-                        loaded.parse(data=response.read().decode("utf-8"),
-                                     format="turtle")
-                    extra_graphs[key] = loaded
-                except Exception as exc:               # noqa: BLE001
-                    print(f"  ..  {q['id']}: could not fetch '{key}' to verify "
-                          f"({type(exc).__name__}); shipped unverified.")
-                    extra_graphs[key] = None
-            if extra_graphs[key] is not None:
+                extra_graphs[key] = load_extra(cfg["graph"]["extra"][key],
+                                               key, q["id"])
+            if extra_graphs[key] is None:
+                # An extra graph this repository builds itself must be present.
+                # Falling back to "shipped unverified" would drop the guarantee
+                # for exactly the queries that most need it, so this is fatal.
+                if "file" in cfg["graph"]["extra"][key]:
+                    ok = False
+                    continue
+            else:
                 target = base + extra_graphs[key]
         try:
             rows = list(target.query(cfg["prefixes"] + "\n" + q["sparql"]))
@@ -240,6 +278,18 @@ def build():
         print(f"  OK  docs/{graph_cfg['url']}  "
               f"({target.stat().st_size / 1e6:.1f} MB)")
     graph_cfg["megabytes"] = f"{graph_file.stat().st_size / 1e6:.1f}"
+
+    # An extra graph this repository builds itself has to reach docs/ too, or
+    # the page would fetch a URL that only resolves after the next release.
+    for key, spec in (graph_cfg.get("extra") or {}).items():
+        if not (spec.get("publish") and spec.get("file")):
+            continue
+        source = wd_paths.ROOT / spec["file"]
+        target = docs / spec["url"]
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, target)
+        print(f"  OK  docs/{spec['url']}  (extra graph '{key}', "
+              f"{target.stat().st_size / 1e6:.1f} MB)")
 
     queries = []
     for q in cfg["queries"]:

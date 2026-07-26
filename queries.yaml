@@ -14,6 +14,18 @@ graph:
   url: arretine_sites_minigraph.ttl           # how the browser reaches it, from docs/
   publish: true                               # copy it into docs/
 
+  # Extra graphs, loaded by a query that declares `needs: <key>`. A `file:` marks
+  # one this repository builds itself: it is verified from disk at build time
+  # rather than fetched from the published URL, so a change to the modelling
+  # fails the build now instead of a release later.
+  extra:
+    services:
+      file: output/arretine_services.ttl
+      url: arretine_services.ttl
+      publish: true
+      label: "service-type counts"
+      note: "1208 triples, built by py/services_to_rdf.py from the workbook"
+
 page:
   title: "Query the Arretine chronology graph"
   intro: >-
@@ -101,6 +113,7 @@ prefixes: |
   PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
   PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
   PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+  PREFIX aeont:     <http://leiza-scit.github.io/CAA2026-alligator/ontology#>
   PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
   PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
   PREFIX lado:      <http://archaeology.link/ontology#>
@@ -377,3 +390,103 @@ queries:
              "^.*POINT\\s*\\(\\s*(\\S+)\\s+(\\S+)\\s*\\).*$", "$2") AS ?latitude)
       }
       ORDER BY ?horizon ?findspot
+  - id: service-composition
+    title: "What each assemblage is made of"
+    needs: services
+    intro: >-
+      The first query over the evidence rather than over the result. The counts
+      live in a second graph, built by `py/services_to_rdf.py` from the
+      workbook and merged with this one on the fly — the notice above says when
+      it is being fetched. Percentages are computed here rather than stored: a
+      derived number kept beside the number it derives from is a second thing
+      that has to stay true.
+    viz:
+      - file: py/viz/service_composition.py
+        title: "Service composition per findspot"
+        intro: >-
+          Every bar is 100% of that findspot's sherds, so assemblages of very
+          different size can be compared; the figure at the right is how many
+          sherds that is. Sorted by start year the shift is plain — the red
+          Service I types give way to the green Service II ones — but so is how
+          thin the evidence gets at both ends of the sequence.
+    sparql: |
+      SELECT ?findspot ?begin ?horizon ?type ?rank ?sherds ?total
+      WHERE {
+        ?obs aeont:atFindspot  ?site ;
+             aeont:serviceType ?concept ;
+             aeont:sherdCount  ?sherds .
+
+        ?site rdfs:label                        ?findspot ;
+              time:hasBeginning/time:inXSDgYear ?beginYear .
+
+        ?concept skos:prefLabel        ?type ;
+                 aeont:typologicalRank ?rank .
+        FILTER(lang(?type) = "de")
+
+        OPTIONAL {
+          ?h a lado:ChronologicalHorizon ;
+             skos:notation         ?horizon ;
+             lado:hasHorizonMember ?site .
+        }
+
+        # The findspot's own total, so the share can be worked out per row.
+        {
+          SELECT ?site (SUM(?k) AS ?total)
+          WHERE { ?o aeont:atFindspot ?site ; aeont:sherdCount ?k }
+          GROUP BY ?site
+        }
+
+        BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+      }
+      ORDER BY ?begin ?findspot ?rank
+
+  - id: service-within-group-variability
+    title: "How tightly each horizon is defined"
+    needs: services
+    intro: >-
+      The RGZM variance and quality of Allard Mees, computed in the query as far
+      as SPARQL reaches. Every sherd counts as one observation valued by the rank
+      of its sub-type within its group, so N, the sum of the ranks and the sum of
+      their squares are enough to derive the rest — which is fortunate, because
+      rdflib's SPARQL has neither SQRT nor EXP and `s` and `q = exp(−CV)` have to
+      be taken in Python. Both rank readings come back from the one query: the
+      stage reading this project reports, and the column reading kept for
+      comparison. `COUNT(DISTINCT ?rank)` reports how many ranks a group actually
+      holds, so a cell whose value follows from the rank assignment alone can be
+      told apart from one that was measured.
+    viz:
+      - file: py/viz/service_variability.py
+        title: "Within-group variance and quality per horizon"
+        intro: >-
+          Quality rises steadily from the earliest horizon to the latest under
+          both readings, and the two order the horizons identically — the
+          finding does not rest on the choice between them. Service II is grey
+          throughout because it holds one stage: its numbers are structural, not
+          measured.
+    sparql: |
+      SELECT ?horizon ?group (SUM(?sherds) AS ?sherds)
+             (SUM(?stage * ?sherds)            AS ?sumStage)
+             (SUM(?stage * ?stage * ?sherds)   AS ?sumStageSq)
+             (COUNT(DISTINCT ?stage)           AS ?stageSteps)
+             (SUM(?column * ?sherds)           AS ?sumColumn)
+             (SUM(?column * ?column * ?sherds) AS ?sumColumnSq)
+             (COUNT(DISTINCT ?column)          AS ?columnSteps)
+      WHERE {
+        ?h a lado:ChronologicalHorizon ;
+           skos:notation         ?horizon ;
+           lado:hasHorizonMember ?site .
+
+        ?obs aeont:atFindspot  ?site ;
+             aeont:serviceType ?concept ;
+             aeont:sherdCount  ?sherds .
+
+        # The group is the concept's top concept, reached through skos:broader.
+        ?concept aeont:stageRank  ?stage ;
+                 aeont:columnRank ?column ;
+                 skos:broader*    ?top .
+        ?top skos:topConceptOf ?scheme ;
+             skos:prefLabel    ?group .
+        FILTER(lang(?group) = "en")
+      }
+      GROUP BY ?horizon ?group
+      ORDER BY ?horizon ?group

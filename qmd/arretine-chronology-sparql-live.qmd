@@ -90,6 +90,7 @@ PREFIXES = """
 PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
 PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
 PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX aeont:     <http://leiza-scit.github.io/CAA2026-alligator/ontology#>
 PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX lado:      <http://archaeology.link/ontology#>
@@ -203,6 +204,55 @@ EVENT_YEAR = 9
 EVENT_COLOUR = "#993c1d"
 
 
+# The service-type palette, taken from py/events_timeline_by_service.py by
+# sampling the same colormaps at the same points (Reds 0.35-0.90 over the six
+# Service I types, Greens 0.45-0.88 over the two Service II types). Written out
+# here because Pyodide has no matplotlib: a type must be the same colour in the
+# browser as in the printed figure, and the only way to guarantee that without
+# matplotlib is to carry the values.
+SERVICE_COLOUR = {
+    "Schrägrandteller":  "#1f77b4",
+    "Service Ia Tasse":  "#fc9b7c",
+    "Service Ia Teller": "#fb7757",
+    "Service Ib Tasse":  "#f4503a",
+    "Service Ib Teller": "#de2b25",
+    "Service Ic Tasse":  "#be151a",
+    "Service Ic Teller": "#980c13",
+    "Service II Tasse":  "#86cc85",
+    "Service II Teller": "#006b2b",
+}
+
+# Fill for a heatmap cell whose value follows from the rank assignment alone
+# rather than from the sherds — see the quality figure.
+STRUCTURAL_GREY = "#d9d9d9"
+
+
+def rgzm(n, sum_rank, sum_rank_sq):
+    """RGZM within-group variance and quality from the sums a query can return.
+
+    SPARQL has no EXP or SQRT — rdflib's does not even parse them — so the query
+    returns the three sums and the last step happens here:
+
+        x̄  = Σ(rank·count) / N
+        s  = sqrt( (Σ(rank²·count) − N·x̄²) / (N − 1) )    (STDDEV_SAMP)
+        q  = exp(−s/|x̄|)                                  (quality, in (0, 1])
+
+    Every sherd is one observation valued by the rank of its sub-type, which is
+    what makes the sums above sufficient. q → 1 means the group's material sits
+    on one rank; q → 0 means it is spread across the group's sequence.
+    """
+    import math
+
+    if n < 2:
+        return float("nan"), float("nan")
+    mean = sum_rank / n
+    variance = (sum_rank_sq - n * mean * mean) / (n - 1)
+    s = math.sqrt(max(variance, 0.0))
+    if mean == 0:
+        return s, float("nan")
+    return s, math.exp(-(s / abs(mean)))
+
+
 def year(value):
     """Astronomical year number to a reading label: -9 -> '9 BC', 9 -> 'AD 9'.
 
@@ -213,6 +263,27 @@ def year(value):
     """
     v = int(value)
     return f"{-v} BC" if v < 0 else f"AD {v}"
+
+
+# Service-type colours, sampled from the same matplotlib colormaps and the same
+# ranges as build_service_colours() in events_timeline_by_service.py, so a type
+# is the same colour in the browser as in the figures of the paper.
+# Schrägrandteller is a fixed blue; Service I runs light to dark red over its
+# six sub-types, Service II light to dark green over its two.
+SERVICE_COLOUR = {
+    "Schraegrandteller": "#1f77b4",
+    "ServiceIa_Tasse":   "#fc9b7c",
+    "ServiceIa_Teller":  "#fb7757",
+    "ServiceIb_Tasse":   "#f4503a",
+    "ServiceIb_Teller":  "#de2b25",
+    "ServiceIc_Tasse":   "#be151a",
+    "ServiceIc_Teller":  "#980c13",
+    "ServiceII_Tasse":   "#86cc85",
+    "ServiceII_Teller":  "#006b2b",
+}
+
+# Rows of the horizon figures run latest at the top, the timeline convention.
+HORIZON_DISPLAY_ORDER = ["5", "4", "3", "2", "1"]
 
 ```
 
@@ -965,9 +1036,425 @@ Frame(site_map, height=FRAME_HEIGHT)
 ```
 
 
+## Step 11 — What each assemblage is made of
+
+The first query over the evidence rather than over the result. The counts live in a second graph, built by `py/services_to_rdf.py` from the workbook and merged with this one on the fly — the notice above says when it is being fetched. Percentages are computed here rather than stored: a derived number kept beside the number it derives from is a second thing that has to stay true.
+
+```{pyodide}
+#| autorun: false
+#| label: query-service-composition
+assert "base" in dir(), "Run the 'load-graph' cell first."
+
+# This query needs the wider geo-lod graph as well: service-type counts.
+# It is merged into a copy, so `base` stays exactly as loaded.
+extra = await load("arretine_services.ttl")
+g = Graph()
+for t in base: g.add(t)
+for t in extra: g.add(t)
+print(f"{len(base)} + {len(extra)} -> {len(g)} triples")
+
+rows = show(g, """
+SELECT ?findspot ?begin ?horizon ?type ?rank ?sherds ?total
+WHERE {
+  ?obs aeont:atFindspot  ?site ;
+       aeont:serviceType ?concept ;
+       aeont:sherdCount  ?sherds .
+
+  ?site rdfs:label                        ?findspot ;
+        time:hasBeginning/time:inXSDgYear ?beginYear .
+
+  ?concept skos:prefLabel        ?type ;
+           aeont:typologicalRank ?rank .
+  FILTER(lang(?type) = "de")
+
+  OPTIONAL {
+    ?h a lado:ChronologicalHorizon ;
+       skos:notation         ?horizon ;
+       lado:hasHorizonMember ?site .
+  }
+
+  # The findspot's own total, so the share can be worked out per row.
+  {
+    SELECT ?site (SUM(?k) AS ?total)
+    WHERE { ?o aeont:atFindspot ?site ; aeont:sherdCount ?k }
+    GROUP BY ?site
+  }
+
+  BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+}
+ORDER BY ?begin ?findspot ?rank""")
+
+results["service-composition"] = rows
+
+# The figure below is the point of this query; a full table of its rows would
+# bury it, so only the first few are printed.
+for r in rows[:5]:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows (showing {min(5, len(rows))})")
+
+```
+
+### Service composition per findspot
+
+Every bar is 100% of that findspot's sherds, so assemblages of very different size can be compared; the figure at the right is how many sherds that is. Sorted by start year the shift is plain — the red Service I types give way to the green Service II ones — but so is how thin the evidence gets at both ends of the sequence.
+
+```{pyodide}
+#| autorun: false
+#| label: figure-service-composition-1
+assert "service-composition" in results, "Run the query cell just above this one first."
+rows = results["service-composition"]
+
+# Figure: what each findspot's Arretine assemblage is made of, as a proportional
+# bar split into service types, findspots ordered by the year the seriation gives
+# them. The browser counterpart of output/events_timeline_by_service_en.svg —
+# with one difference: that figure places each bar on the time axis, spanning the
+# findspot's interval, whereas this one gives every findspot a full-width bar so
+# the composition can be compared across findspots of very different duration.
+#
+# The percentages are not stored in the graph. They are computed by the query
+# from aeont:sherdCount, which is why the numbers here and in the printed figure
+# cannot drift apart: there is one copy of the counts and no copy of the shares.
+#
+# Runs in a Pyodide cell with `rows` (the query result) and the helpers from
+# py/viz/_prelude.py in scope. It must end in a Frame.
+
+# rows arrive one per findspot-and-type, ordered by year then typological rank.
+sites, order = {}, []
+for r in rows:
+    name = r["findspot"]
+    if name not in sites:
+        sites[name] = {"label": name, "begin": int(r["begin"]),
+                       "horizon": r.get("horizon"), "total": int(r["total"]),
+                       "parts": []}
+        order.append(name)
+    sites[name]["parts"].append({
+        "type": r["type"],
+        "sherds": int(r["sherds"]),
+        "share": 100 * int(r["sherds"]) / int(r["total"]),
+    })
+
+present = [t for t in SERVICE_COLOUR if any(
+    p["type"] == t for s in sites.values() for p in s["parts"])]
+
+legend = "".join(
+    f'<span><b style="background:{SERVICE_COLOUR[t]}"></b>{escape(t)}</span>'
+    for t in present)
+
+payload = json.dumps({
+    "sites": [sites[n] for n in order],
+    "colour": {t: SERVICE_COLOUR[t] for t in present},
+})
+
+style = """
+  body{margin:0;font-family:sans-serif;padding:6px 4px 4px}
+  #ctrl{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:.3rem 0}
+  #ctrl label{font-size:12px;color:#666}
+  #ctrl select{font-size:12px;padding:2px 6px;border-radius:4px;
+    border:1px solid #ccc;background:#fff;color:#333}
+  #leg{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:#555;
+    padding:.2rem 0 .4rem}
+  #leg span{display:flex;align-items:center;gap:4px}
+  #leg b{width:10px;height:10px;border-radius:2px;display:inline-block}
+"""
+
+script = """
+(function () {
+  var C = JSON.parse(document.getElementById("payload").textContent);
+  var se = document.getElementById("sort");
+  var ce = document.getElementById("chart");
+
+  function yr(v) { return v < 0 ? (-v) + " BC" : "AD " + v; }
+
+  function draw() {
+    var s = se.value;
+    var d = C.sites.slice();
+    d.sort(function (a, b) {
+      if (s === "year")    return a.begin - b.begin || a.label.localeCompare(b.label);
+      if (s === "sherds")  return b.total - a.total;
+      if (s === "horizon") return (a.horizon || "") > (b.horizon || "") ? 1
+                                : (a.horizon || "") < (b.horizon || "") ? -1
+                                : a.begin - b.begin;
+      return a.label.localeCompare(b.label);
+    });
+
+    var LW = 210, RH = 18, RG = 3, MT = 20, MB = 8, CW = 400, NW = 62;
+    var W = LW + CW + NW + 12, H = MT + d.length * (RH + RG) + MB;
+
+    var o = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '"'
+          + ' height="' + H + '" style="font-family:sans-serif;overflow:visible">';
+
+    [0, 25, 50, 75, 100].forEach(function (pc) {
+      var x = LW + pc / 100 * CW;
+      o += '<line x1="' + x + '" y1="' + (MT - 3) + '" x2="' + x + '"'
+         + ' y2="' + (H - MB) + '" stroke="#e8e8e8" stroke-width=".5"/>';
+      o += '<text x="' + x + '" y="' + (MT - 7) + '" text-anchor="middle"'
+         + ' font-size="9" fill="#aaa">' + pc + "%</text>";
+    });
+
+    d.forEach(function (x, i) {
+      var y = MT + i * (RH + RG), cursor = LW;
+      o += '<text x="' + (LW - 6) + '" y="' + (y + RH * 0.72) + '"'
+         + ' text-anchor="end" font-size="10.5" fill="#444">' + x.label
+         + '<title>' + x.label + " \\u00b7 " + yr(x.begin)
+         + (x.horizon ? " \\u00b7 horizon " + x.horizon : "")
+         + " \\u00b7 " + x.total + " sherds</title></text>";
+
+      x.parts.forEach(function (p) {
+        var w = p.share / 100 * CW;
+        o += '<rect x="' + cursor + '" y="' + (y + 2) + '"'
+           + ' width="' + Math.max(w, 0.4) + '" height="' + (RH - 4) + '"'
+           + ' fill="' + (C.colour[p.type] || "#ccc") + '">'
+           + "<title>" + x.label + " \\u2014 " + p.type + ": " + p.sherds
+           + " sherds, " + p.share.toFixed(1) + "%</title></rect>";
+        cursor += w;
+      });
+
+      o += '<text x="' + (LW + CW + 6) + '" y="' + (y + RH * 0.72) + '"'
+         + ' font-size="9.5" fill="#999">' + x.total + "</text>";
+    });
+
+    o += "</svg>";
+    ce.innerHTML = o;
+  }
+
+  se.addEventListener("change", draw);
+  draw();
+})();
+"""
+
+composition = f"""<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>{style}</style></head>
+<body>
+<div id="ctrl">
+  <label for="sort">Sort by</label>
+  <select id="sort">
+    <option value="year">Start year</option>
+    <option value="horizon">Horizon</option>
+    <option value="sherds">Sherds (most first)</option>
+    <option value="label">Findspot</option>
+  </select>
+  <span style="font-size:11px;color:#888">
+    {len(sites)} findspots &middot; bar = 100% of that findspot's sherds
+    &middot; figure at the right = sherds counted
+  </span>
+</div>
+<div id="leg">{legend}</div>
+<div id="chart"></div>
+<script id="payload" type="application/json">{payload}</script>
+<script>{script}</script>
+</body></html>"""
+
+Frame(composition, height=20 + len(sites) * 21 + 8 + 110)
+```
 
 
-## Step 11 — Explore
+## Step 12 — How tightly each horizon is defined
+
+The RGZM variance and quality of Allard Mees, computed in the query as far as SPARQL reaches. Every sherd counts as one observation valued by the rank of its sub-type within its group, so N, the sum of the ranks and the sum of their squares are enough to derive the rest — which is fortunate, because rdflib's SPARQL has neither SQRT nor EXP and `s` and `q = exp(−CV)` have to be taken in Python. Both rank readings come back from the one query: the stage reading this project reports, and the column reading kept for comparison. `COUNT(DISTINCT ?rank)` reports how many ranks a group actually holds, so a cell whose value follows from the rank assignment alone can be told apart from one that was measured.
+
+```{pyodide}
+#| autorun: false
+#| label: query-service-within-group-variability
+assert "base" in dir(), "Run the 'load-graph' cell first."
+
+# This query needs the wider geo-lod graph as well: service-type counts.
+# It is merged into a copy, so `base` stays exactly as loaded.
+extra = await load("arretine_services.ttl")
+g = Graph()
+for t in base: g.add(t)
+for t in extra: g.add(t)
+print(f"{len(base)} + {len(extra)} -> {len(g)} triples")
+
+rows = show(g, """
+SELECT ?horizon ?group (SUM(?sherds) AS ?sherds)
+       (SUM(?stage * ?sherds)            AS ?sumStage)
+       (SUM(?stage * ?stage * ?sherds)   AS ?sumStageSq)
+       (COUNT(DISTINCT ?stage)           AS ?stageSteps)
+       (SUM(?column * ?sherds)           AS ?sumColumn)
+       (SUM(?column * ?column * ?sherds) AS ?sumColumnSq)
+       (COUNT(DISTINCT ?column)          AS ?columnSteps)
+WHERE {
+  ?h a lado:ChronologicalHorizon ;
+     skos:notation         ?horizon ;
+     lado:hasHorizonMember ?site .
+
+  ?obs aeont:atFindspot  ?site ;
+       aeont:serviceType ?concept ;
+       aeont:sherdCount  ?sherds .
+
+  # The group is the concept's top concept, reached through skos:broader.
+  ?concept aeont:stageRank  ?stage ;
+           aeont:columnRank ?column ;
+           skos:broader*    ?top .
+  ?top skos:topConceptOf ?scheme ;
+       skos:prefLabel    ?group .
+  FILTER(lang(?group) = "en")
+}
+GROUP BY ?horizon ?group
+ORDER BY ?horizon ?group""")
+
+results["service-within-group-variability"] = rows
+
+# The figure below is the point of this query; a full table of its rows would
+# bury it, so only the first few are printed.
+for r in rows[:5]:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows (showing {min(5, len(rows))})")
+
+```
+
+### Within-group variance and quality per horizon
+
+Quality rises steadily from the earliest horizon to the latest under both readings, and the two order the horizons identically — the finding does not rest on the choice between them. Service II is grey throughout because it holds one stage: its numbers are structural, not measured.
+
+```{pyodide}
+#| autorun: false
+#| label: figure-service-within-group-variability-1
+assert "service-within-group-variability" in results, "Run the query cell just above this one first."
+rows = results["service-within-group-variability"]
+
+# Figure: the RGZM within-group variance and quality per horizon and service
+# group, under both rank readings side by side. The browser counterpart of
+# output/service_group_variability_en.svg.
+#
+# The query returns N, Σ(rank·count) and Σ(rank²·count); the standard deviation
+# and exp(−CV) are taken here, because rdflib's SPARQL has neither SQRT nor EXP.
+# See rgzm() in py/viz/_prelude.py.
+#
+# Two readings, not one. Under the stage reading a cup and a plate of the same
+# stage share a rank, which is what this project reports: a change of vessel
+# form is not a chronological step. The column reading counts every sub-type as
+# a step and is kept so the alternative can be re-checked. They rank the
+# horizons the same way, which is the point of showing both.
+#
+# Cells whose group holds only one rank are drawn grey. Their s = 0 and q = 1
+# follow from the rank assignment alone, whatever the sherds do, and a
+# structurally determined constant should not read as a measurement.
+#
+# Runs in a Pyodide cell with `rows` (the query result) and the helpers from
+# py/viz/_prelude.py in scope. It must end in a Frame.
+
+READINGS = [
+    ("stage", "Stage reading", "stageSteps", "sumStage", "sumStageSq",
+     "cup and plate of one stage share a rank \u2014 reported"),
+    ("column", "Column reading", "columnSteps", "sumColumn", "sumColumnSq",
+     "every sub-type its own step \u2014 kept for comparison"),
+]
+
+horizons, groups, cells = [], [], {}
+for r in rows:
+    horizon, group, n = r["horizon"], r["group"], int(r["sherds"])
+    if horizon not in horizons:
+        horizons.append(horizon)
+    if group not in groups:
+        groups.append(group)
+    for key, _title, steps_field, sum_field, sumsq_field, _note in READINGS:
+        s, q = rgzm(n, float(r[sum_field]), float(r[sumsq_field]))
+        cells[(key, horizon, group)] = {
+            "n": n, "s": s, "q": q,
+            "measured": int(r[steps_field]) > 1,
+        }
+
+horizons.sort()
+# Latest horizon at the top, as the printed figures do.
+rows_order = list(reversed(horizons))
+
+# Quality drives the colour: dark where the assemblage sits on one rank, light
+# where it is spread. Only measured cells are shaded.
+measured_q = [c["q"] for c in cells.values() if c["measured"]]
+lo, hi = (min(measured_q), max(measured_q)) if measured_q else (0.0, 1.0)
+
+
+def shade(q):
+    """A green ramp over the measured range, dark = concentrated."""
+    if hi == lo:
+        t = 0.5
+    else:
+        t = (q - lo) / (hi - lo)
+    top = (0, 68, 27)
+    bottom = (229, 245, 224)
+    rgb = [round(bottom[i] + (top[i] - bottom[i]) * t) for i in range(3)]
+    return "#%02x%02x%02x" % tuple(rgb), ("#ffffff" if t > 0.45 else "#1a1a1a")
+
+
+def block(key, title, note):
+    head = "".join(
+        f'<th title="{escape(group)}">{escape(group)}</th>' for group in groups)
+    body = ""
+    for horizon in rows_order:
+        body += f'<tr><th class="h">H{escape(horizon)}</th>'
+        for group in groups:
+            cell = cells.get((key, horizon, group))
+            if cell is None:
+                body += '<td class="absent">&mdash;</td>'
+                continue
+            if cell["measured"]:
+                fill, ink = shade(cell["q"])
+                cls = ""
+            else:
+                fill, ink, cls = STRUCTURAL_GREY, "#666", " structural"
+            tip = (f'{group}, horizon {horizon}: {cell["n"]} sherds, '
+                   f's = {cell["s"]:.3f}, q = {cell["q"]:.3f}'
+                   + ("" if cell["measured"]
+                      else " \u2014 one rank only, so this follows from the "
+                           "rank assignment rather than from the sherds"))
+            body += (f'<td class="cell{cls}" style="background:{fill};'
+                     f'color:{ink}" title="{escape(tip)}">'
+                     f'<span class="q">{cell["q"]:.3f}</span>'
+                     f'<span class="s">s {cell["s"]:.3f}</span>'
+                     f'<span class="n">{cell["n"]} sherds</span></td>')
+        body += "</tr>"
+    return (f'<div class="block"><h3>{escape(title)}</h3>'
+            f'<p class="note">{escape(note)}</p>'
+            f'<table><thead><tr><th></th>{head}</tr></thead>'
+            f"<tbody>{body}</tbody></table></div>")
+
+style = f"""
+  body{{margin:0;font-family:sans-serif;padding:6px 4px 4px;color:#333}}
+  .wrap{{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start}}
+  .block h3{{margin:0 0 2px;font-size:13px;font-weight:600}}
+  .block .note{{margin:0 0 8px;font-size:11px;color:#888;max-width:34ch}}
+  table{{border-collapse:separate;border-spacing:3px}}
+  th{{font-size:11px;font-weight:600;color:#666;text-align:center;
+    padding:0 4px;max-width:96px}}
+  th.h{{text-align:right;color:#444}}
+  td.cell{{width:96px;padding:5px 6px;border-radius:4px;text-align:center;
+    line-height:1.25;cursor:help}}
+  td.absent{{width:96px;text-align:center;color:#ccc;font-size:12px}}
+  td.cell.structural{{border:1px dashed #b9b9b9}}
+  .q{{display:block;font-size:14px;font-weight:600}}
+  .s{{display:block;font-size:10px;opacity:.85}}
+  .n{{display:block;font-size:9.5px;opacity:.7}}
+  .key{{margin-top:10px;font-size:11px;color:#777;max-width:70ch;
+    line-height:1.5}}
+  .key b{{display:inline-block;width:10px;height:10px;border-radius:2px;
+    background:{STRUCTURAL_GREY};border:1px dashed #b9b9b9;
+    vertical-align:middle}}
+"""
+
+heatmap = f"""<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>{style}</style></head>
+<body>
+<div class="wrap">
+  {"".join(block(k, t, note) for k, t, _s, _a, _b, note in READINGS)}
+</div>
+<p class="key">
+  Large figure is the quality <em>q</em> = exp(&minus;CV); below it the standard
+  deviation <em>s</em> over the within-group ranks, and the number of sherds the
+  two are computed from. Darker means the group's material sits on fewer ranks.
+  <b></b> grey with a dashed border: the group holds a single rank, so
+  <em>s</em> = 0 and <em>q</em> = 1 follow from the rank assignment rather than
+  from the material. Hover any cell for the full figures.
+</p>
+</body></html>"""
+
+Frame(heatmap, height=len(horizons) * 62 + 210)
+```
+
+
+
+
+## Step 13 — Explore
 
 The graph is in `base` and stays in scope, as does `results`, which holds
 the rows of every query above under its id. A few things worth trying:

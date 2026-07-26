@@ -80,6 +80,19 @@ STEPS = [
         ],
     },
     {
+        # Not "services": "service" is already taken by the figure step above,
+        # and two --only keys a letter apart is a trap.
+        "key": "enrich",
+        "script": "services_to_rdf.py",
+        "label": "Service counts \u00b7 RDF layer over the minigraph",
+        "resets": False,
+        # Reads the minigraph the first step wrote and the workbook, and writes
+        # a separate file beside them. It never touches the minigraph, so the
+        # two layers stay separately citable - and it has to run before the
+        # query page, which verifies the service queries against this file.
+        "expects": ["output/arretine_services.ttl"],
+    },
+    {
         "key": "sparql",
         "script": "build_sparql.py",
         "label": "Interactive query page · docs/sparql.html, .rq files, qmd",
@@ -87,6 +100,7 @@ STEPS = [
         "expects": [
             "docs/sparql.html",
             "docs/arretine_sites_minigraph.ttl",
+            "docs/arretine_services.ttl",
             "docs/downloads/queries",
         ],
         # The page links style.css next to itself; the canonical copy lives in
