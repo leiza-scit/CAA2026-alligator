@@ -4,6 +4,7 @@
     docs/sparql.html              generated directly; opens anywhere, no Quarto
     docs/downloads/queries/*.rq   the same queries as plain files
     qmd/<name>.qmd                the quarto-live variant, for reuse as an OER
+    notebook/<name>.ipynb         the same queries as a plain Jupyter notebook
 
 A query may additionally carry a ``viz:`` list naming short Python files under
 ``py/viz/``. Those turn that query's rows into a browser figure, and both the
@@ -191,6 +192,213 @@ def load_extra(spec, key, query_id):
         return None
 
 
+def _cell(kind, source, index):
+    """One notebook cell.
+
+    The source is stored as a list of lines with their newlines kept, which is
+    what nbformat expects and what lets a generated notebook diff readably.
+
+    nbformat 4.5 wants an id per cell. It is derived from the position rather
+    than generated at random, so rebuilding an unchanged notebook produces the
+    same bytes and git shows nothing.
+    """
+    lines = source.rstrip("\n").split("\n")
+    src = [line + "\n" for line in lines[:-1]] + [lines[-1]]
+    cell = {"id": f"cell-{index:03d}", "cell_type": kind,
+            "metadata": {}, "source": src}
+    if kind == "code":
+        cell["execution_count"] = None
+        cell["outputs"] = []
+    return cell
+
+
+NOTEBOOK_SETUP = '''import json
+import logging
+from html import escape
+from pathlib import Path
+
+import pandas as pd
+from rdflib import Graph
+
+# This graph dates events BC, so it carries xsd:gYear literals with negative
+# years. rdflib tries to map each onto a datetime.date, whose minimum year is
+# 1, fails, and logs a traceback per literal. Nothing is wrong - the queries
+# read the lexical form via STR() - but the tracebacks look alarming.
+logging.getLogger("rdflib.term").setLevel(logging.ERROR)
+
+PREFIXES = """
+%(prefixes)s
+"""
+
+
+def _load(name):
+    """Parse a Turtle file, whether it sits beside this notebook or in output/."""
+    for candidate in (Path(name), Path("..") / "output" / name):
+        if candidate.exists():
+            return Graph().parse(candidate, format="turtle")
+    raise FileNotFoundError(
+        f"{name} found neither here nor in ../output/ - "
+        f"run python py/main.py first.")
+
+
+g = _load(%(base_name)r)
+print(f"{len(g):,} triples from %(base_name)s")%(extra_loads)s
+
+
+def show(graph, query):
+    """Run a query and return its rows as a list of dicts of strings.
+
+    Strings, deliberately: it is what the figures expect, and it keeps this
+    notebook and the browser variants reading the same values rather than one
+    of them quietly getting a typed object the others never see.
+    """
+    result = graph.query(PREFIXES + query)
+    columns = [str(v) for v in result.vars]
+    return [{c: (None if row[i] is None else str(row[i]))
+             for i, c in enumerate(columns)} for row in result]
+
+
+def table(rows):
+    """A query result as a DataFrame, for display."""
+    return pd.DataFrame(rows) if rows else pd.DataFrame()
+
+
+# Each query's rows are kept here under its id, so a figure cell can be re-run
+# on its own without the rows underneath it having silently changed.
+results = {}
+
+
+class Frame:
+    """A self-contained HTML document, shown inline as a figure.
+
+    The document goes into an iframe rather than straight into the output. That
+    keeps the figure's CSS and element ids away from the notebook, and it means
+    the scripts inside actually run - a <script> injected into a notebook's
+    output area does not.
+    """
+
+    def __init__(self, html, height=520):
+        self.html = html
+        self.height = height
+
+    def _repr_html_(self):
+        # Only these two need escaping inside a double-quoted attribute, and
+        # the ampersand has to go first or it would escape the escapes.
+        doc = self.html.replace("&", "&amp;").replace('"', "&quot;")
+        return (f'<iframe srcdoc="{doc}" loading="lazy"'
+                f' sandbox="allow-scripts allow-popups'
+                f' allow-popups-to-escape-sandbox"'
+                f' style="width:100%%;height:{self.height}px;border:0">'
+                f'</iframe>')
+
+
+%(prelude)s'''
+
+
+def write_notebook(cfg, graph_cfg, queries, viz_prelude):
+    """Write the plain Jupyter variant of the query page.
+
+    Deviation from the verbatim asset (keep on re-sync): the shared generator
+    produces the HTML page and the quarto-live notebook only.
+
+    Assembled as a dict and dumped with json.dumps rather than rendered from a
+    template. A notebook is JSON, and a templated JSON file is one unescaped
+    quotation mark away from being unreadable; here the escaping is the JSON
+    encoder's problem, which it does not get wrong.
+
+    The figure code is the same file under py/viz/ that the page and the .qmd
+    use. It ends in a Frame, whose _repr_html_ Jupyter renders natively, so no
+    figure needs a Jupyter-specific branch.
+    """
+    nb_cfg = cfg.get("notebook")
+    if not nb_cfg:
+        return None
+    qmd_cfg = cfg.get("qmd", {})
+
+    extras = {k: v for k, v in (graph_cfg.get("extra") or {}).items()
+              if "file" in v}
+    extra_loads = ""
+    for key, spec in extras.items():
+        name = Path(spec["file"]).name
+        extra_loads += (f"\n{key} = _load({name!r})"
+                        f"\nprint(f\"  + {{len({key}):,}} triples from {name}\")")
+
+    base_name = Path(graph_cfg["file"]).name
+    setup = NOTEBOOK_SETUP % {
+        "prefixes": cfg["prefixes"].rstrip("\n"),
+        "base_name": base_name,
+        "extra_loads": extra_loads,
+        "prelude": viz_prelude,
+    }
+
+    title = nb_cfg.get("title") or qmd_cfg.get("title", "Query the graph")
+    about = nb_cfg.get("about") or qmd_cfg.get("about", "")
+
+    cells = []
+
+    def add(kind, source):
+        cells.append(_cell(kind, source, len(cells)))
+
+    add("markdown", f"# {title}\n\n{about}")
+    add("markdown", "## Setup")
+    add("code", setup)
+    if qmd_cfg.get("notes"):
+        add("markdown", "## Notes\n\n" + qmd_cfg["notes"])
+
+    for i, q in enumerate(queries, start=1):
+        add("markdown", f"## {i} \u00b7 {q['title']}\n\n{q['intro']}")
+
+        sparql = q["sparql"].rstrip("\n")
+        # The query is emitted as a raw Python string, which cannot end in a
+        # backslash and must not contain a triple quote.
+        if sparql.endswith("\\") or '"""' in sparql:
+            sys.exit(f"  !!  query {q['id']} cannot be embedded as a raw "
+                     f"string; remove the trailing backslash or triple quote.")
+        if q.get("needs"):
+            key = q["needs"]
+            code = (f"# This query also needs the {extras[key]['label']}, so it\n"
+                    f"# runs against the two graphs merged.\n"
+                    f'rows = show(g + {key}, r"""\n{sparql}""")\n')
+        else:
+            code = f'rows = show(g, r"""\n{sparql}""")\n'
+        if q.get("viz"):
+            code += f"results[{q['id']!r}] = rows\n"
+        code += '\nprint(f"{len(rows)} rows")\ntable(rows)'
+        add("code", code)
+
+        for figure in q.get("viz") or []:
+            add("markdown", f"### {figure['title']}\n\n{figure['intro']}")
+            add("code", f"rows = results[{q['id']!r}]\n\n{figure['code']}")
+
+    if qmd_cfg.get("explore"):
+        explore = qmd_cfg["explore"]
+        add("markdown", "## Explore\n\n" + explore["intro"])
+        add("code", f'rows = show(g, r"""\n'
+                    f'{explore["sparql"].rstrip()}""")\ntable(rows)')
+    if qmd_cfg.get("footer"):
+        add("markdown", "---\n\n" + qmd_cfg["footer"])
+
+    notebook = {
+        "cells": cells,
+        "metadata": {
+            "kernelspec": {"display_name": "Python 3", "language": "python",
+                           "name": "python3"},
+            "language_info": {"name": "python", "file_extension": ".py",
+                              "mimetype": "text/x-python",
+                              "nbconvert_exporter": "python",
+                              "pygments_lexer": "ipython3"},
+        },
+        "nbformat": 4,
+        "nbformat_minor": 5,
+    }
+
+    target = wd_paths.ROOT / "notebook" / nb_cfg["file"]
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(json.dumps(notebook, indent=1, ensure_ascii=False) + "\n",
+                      encoding="utf-8")
+    return target
+
+
 def check_queries(cfg, graph_file):
     """Run every query against the real graph before shipping it.
 
@@ -335,6 +543,11 @@ def build():
         (QMD_DIR / qmd_cfg["file"]).write_text(qmd, encoding="utf-8")
         print(f"  OK  qmd/{qmd_cfg['file']}  ({len(queries)} queries, "
               f"{n_figures} figure(s); render with Quarto, optional)")
+
+    written = write_notebook(cfg, graph_cfg, queries, viz_prelude)
+    if written:
+        print(f"  OK  notebook/{written.name}  ({len(queries)} queries, "
+              f"{n_figures} figure(s))")
 
 
 def main():

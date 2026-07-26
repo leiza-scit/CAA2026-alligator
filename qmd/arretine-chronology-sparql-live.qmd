@@ -357,7 +357,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizon ?label ?begin ?end (COUNT(?site) AS ?findspots)
 WHERE {
   ?h a lado:ChronologicalHorizon ;
@@ -531,7 +533,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizonA ?beginA ?endA ?relation ?horizonB
 WHERE {
   ?a a lado:ChronologicalHorizon ;
@@ -688,7 +692,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizon ?findspot ?startFixed ?endFixed ?begin ?end
 WHERE {
   ?h a lado:ChronologicalHorizon ;
@@ -724,7 +730,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizon ?findspot ?siteBegin ?siteEnd ?horizonBegin ?horizonEnd
 WHERE {
   ?h a lado:ChronologicalHorizon ;
@@ -761,7 +769,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizon ?cluster (COUNT(?site) AS ?findspots)
 WHERE {
   ?h a lado:ChronologicalHorizon ;
@@ -794,7 +804,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizon ?findspot ?begin ?end
 WHERE {
   ?h a lado:ChronologicalHorizon ;
@@ -828,7 +840,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?site ?findspot ?begin ?end ?relation
 WHERE {
   ae:event_Clades_Variana
@@ -1162,7 +1176,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizon (COUNT(DISTINCT ?site) AS ?findspots)
                 (COUNT(DISTINCT ?wikidata) AS ?withWikidata)
                 (COUNT(DISTINCT ?pleiades) AS ?withPleiades)
@@ -1195,7 +1211,9 @@ assert "base" in dir(), "Run the 'load-graph' cell first."
 
 g = base
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?findspot ?horizon ?begin ?end ?latitude ?longitude
        ?wikidata ?pleiades
 WHERE {
@@ -1382,7 +1400,9 @@ for t in base: g.add(t)
 for t in extra: g.add(t)
 print(f"{len(base)} + {len(extra)} -> {len(g)} triples")
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?findspot ?begin ?end ?horizon ?slug ?type ?rank ?sherds ?total
 WHERE {
   ?obs aeont:atFindspot  ?site ;
@@ -1657,7 +1677,9 @@ for t in base: g.add(t)
 for t in extra: g.add(t)
 print(f"{len(base)} + {len(extra)} -> {len(g)} triples")
 
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 SELECT ?horizon ?group (SUM(?sherds) AS ?sherds)
        (SUM(?stage * ?sherds)            AS ?sumStage)
        (SUM(?stage * ?stage * ?sherds)   AS ?sumStageSq)

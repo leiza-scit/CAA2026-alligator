@@ -525,3 +525,19 @@ queries:
       }
       GROUP BY ?horizon ?group
       ORDER BY ?horizon ?group
+
+notebook:
+  file: arretine-chronology-sparql.ipynb
+  title: "Querying the Arretine chronology graph"
+  about: >-
+    The same eleven queries as the published query page, as a plain notebook. It
+    runs locally against the Turtle files in `output/`, so it needs only rdflib
+    and pandas — no Quarto, no Pyodide, no endpoint. Page, notebook and the
+    quarto-live variant are all generated from `queries.yaml`, and the figures
+    are the same files under `py/viz/`, so none of the three can drift from the
+    others.
+
+    This is not the same thing as `clades_variana_temporal.ipynb`, which is an
+    argument about one event and was written independently. Its queries could be
+    folded in here later; until then the two overlap in what they ask and are
+    maintained separately.

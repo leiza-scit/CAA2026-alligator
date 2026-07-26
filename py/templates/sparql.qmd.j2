@@ -137,7 +137,9 @@ print(f"{len(base)} + {len(extra)} -> {len(g)} triples")
 {% else %}
 g = base
 {% endif %}
-rows = show(g, """
+# A raw string: a SPARQL regex carries its own backslashes, and in an ordinary
+# Python literal "\\s" would arrive at rdflib as "\s", which SPARQL rejects.
+rows = show(g, r"""
 {{ q.sparql }}""")
 {% if q.viz %}
 results["{{ q.id }}"] = rows

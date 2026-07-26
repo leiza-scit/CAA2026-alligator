@@ -102,6 +102,7 @@ STEPS = [
             "docs/arretine_sites_minigraph.ttl",
             "docs/arretine_services.ttl",
             "docs/downloads/queries",
+            "notebook/arretine-chronology-sparql.ipynb",
         ],
         # The page links style.css next to itself; the canonical copy lives in
         # py/templates/, so it is synced here rather than maintained twice.
