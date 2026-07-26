@@ -488,11 +488,16 @@ queries:
       - file: py/viz/service_variability.py
         title: "Within-group variance and quality per horizon"
         intro: >-
-          Quality rises steadily from the earliest horizon to the latest under
-          both readings, and the two order the horizons identically — the
-          finding does not rest on the choice between them. Service II is grey
-          throughout because it holds one stage: its numbers are structural, not
-          measured.
+          Service I is the group to read, and it says the same thing under
+          either reading: quality rises steadily from the earliest horizon to
+          the latest, and the two readings order the horizons identically, so
+          the finding does not rest on the choice between them. What the switch
+          does change is Service II — grey under the stage reading, because it
+          holds a single stage and its numbers follow from the rank assignment
+          rather than from the sherds, and measured under the sub-type reading,
+          where cup and plate count as two steps. Whether that second reading
+          says anything archaeological is exactly the question the stage reading
+          answers with no.
     sparql: |
       SELECT ?horizon ?group (SUM(?sherds) AS ?sherds)
              (SUM(?stage * ?sherds)            AS ?sumStage)

@@ -26,9 +26,17 @@ for h in horizons:
 span_min = min(h["begin"] for h in horizons)
 span_max = max(h["end"] for h in horizons)
 
+# The right margin has to hold the longest string that can end up outside a
+# bar, or it is silently clipped — which is what happened to horizon 5. There
+# is no text metric available here, so width is estimated from the character
+# count; the constant is deliberately generous.
+longest = max(len(f'{h["label"]} · {h["findspots"]} findspots')
+              for h in horizons)
+
 payload = json.dumps({
     "horizons": sorted(horizons, key=lambda h: h["horizon"]),
     "min": span_min - 3, "max": span_max + 5,
+    "rightMargin": round(longest * 6.6) + 24,
 })
 
 bar = colourbar(YLORRD[3:], 1, most, width=200, fmt="{:.0f}")
@@ -47,7 +55,8 @@ script = """
 
   function yr(v) { return v < 0 ? (-v) + " BC" : "AD " + v; }
 
-  var RH = 46, RG = 14, MT = 16, MB = 34, LW = 8, CW = 660, RW = 120;
+  var RH = 46, RG = 14, MT = 16, MB = 34, LW = 8, CW = 660,
+      RW = C.rightMargin;
   var d = C.horizons.slice().reverse();          // latest at the top
   var W = LW + CW + RW, H = MT + d.length * (RH + RG) + MB;
   function px(y) { return LW + (y - C.min) / (C.max - C.min) * CW; }
@@ -76,7 +85,12 @@ script = """
        + " findspots</title></rect>";
     // The count goes on every bar. Printing it only when the label fits
     // inside meant four of the five horizons silently lost it.
-    var inside = w > 210, count = h.findspots + " findspots";
+    //
+    // "Fits" is measured against the label rather than against a fixed bar
+    // width: at 210px horizon 5 was pushed outside although its bar is wide
+    // enough to hold the text, which is where the printed figure puts it.
+    var count = h.findspots + " findspots";
+    var inside = w > h.label.length * 6.9 + 18;
     if (inside) {
       o += '<text x="' + (x1 + w / 2) + '" y="' + (y + RH / 2 + 4) + '"'
          + ' font-size="12.5" font-weight="600" text-anchor="middle"'
