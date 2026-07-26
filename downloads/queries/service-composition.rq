@@ -18,18 +18,23 @@ PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
 PREFIX time:      <http://www.w3.org/2006/time#>
 PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?findspot ?begin ?horizon ?type ?rank ?sherds ?total
+SELECT ?findspot ?begin ?end ?horizon ?slug ?type ?rank ?sherds ?total
 WHERE {
   ?obs aeont:atFindspot  ?site ;
        aeont:serviceType ?concept ;
        aeont:sherdCount  ?sherds .
 
   ?site rdfs:label                        ?findspot ;
-        time:hasBeginning/time:inXSDgYear ?beginYear .
+        time:hasBeginning/time:inXSDgYear ?beginYear ;
+        time:hasEnd/time:inXSDgYear       ?endYear .
 
+  # The label is what the figure prints, the slug is what it keys its
+  # colours by. Keeping the two apart means a figure does not quietly
+  # lose its palette the moment the display language changes.
   ?concept skos:prefLabel        ?type ;
            aeont:typologicalRank ?rank .
-  FILTER(lang(?type) = "de")
+  FILTER(lang(?type) = "en")
+  BIND(REPLACE(STR(?concept), "^.*/", "") AS ?slug)
 
   OPTIONAL {
     ?h a lado:ChronologicalHorizon ;
@@ -45,5 +50,6 @@ WHERE {
   }
 
   BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+  BIND(xsd:integer(STR(?endYear))   AS ?end)
 }
 ORDER BY ?begin ?findspot ?rank
