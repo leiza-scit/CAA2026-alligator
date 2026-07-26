@@ -1,0 +1,49 @@
+# What each assemblage is made of
+# The first query over the evidence rather than over the result. The counts
+# live in a second graph, built by `py/services_to_rdf.py` from the workbook
+# and merged with this one on the fly — the notice above says when it is being
+# fetched. Percentages are computed here rather than stored: a derived number
+# kept beside the number it derives from is a second thing that has to stay
+# true.
+
+PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
+PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
+PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX aeont:     <http://leiza-scit.github.io/CAA2026-alligator/ontology#>
+PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX lado:      <http://archaeology.link/ontology#>
+PREFIX rdfs:      <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+PREFIX time:      <http://www.w3.org/2006/time#>
+PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?findspot ?begin ?horizon ?type ?rank ?sherds ?total
+WHERE {
+  ?obs aeont:atFindspot  ?site ;
+       aeont:serviceType ?concept ;
+       aeont:sherdCount  ?sherds .
+
+  ?site rdfs:label                        ?findspot ;
+        time:hasBeginning/time:inXSDgYear ?beginYear .
+
+  ?concept skos:prefLabel        ?type ;
+           aeont:typologicalRank ?rank .
+  FILTER(lang(?type) = "de")
+
+  OPTIONAL {
+    ?h a lado:ChronologicalHorizon ;
+       skos:notation         ?horizon ;
+       lado:hasHorizonMember ?site .
+  }
+
+  # The findspot's own total, so the share can be worked out per row.
+  {
+    SELECT ?site (SUM(?k) AS ?total)
+    WHERE { ?o aeont:atFindspot ?site ; aeont:sherdCount ?k }
+    GROUP BY ?site
+  }
+
+  BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+}
+ORDER BY ?begin ?findspot ?rank

@@ -7,6 +7,7 @@
 PREFIX ae:        <http://leiza-scit.github.io/CAA2026-alligator/>
 PREFIX aecol:     <http://leiza-scit.github.io/CAA2026-alligator/collections/>
 PREFIX crm:       <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX aeont:     <http://leiza-scit.github.io/CAA2026-alligator/ontology#>
 PREFIX fsl:       <http://fuzzy-sl.squirrel.link/ontology/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 PREFIX lado:      <http://archaeology.link/ontology#>
