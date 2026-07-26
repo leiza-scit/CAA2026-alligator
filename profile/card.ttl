@@ -1,12 +1,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/ns/solid/terms#> .
-@prefix ns2: <http://www.w3.org/ns/pim/space#> .
+@prefix ns1: <http://www.w3.org/ns/pim/space#> .
+@prefix ns2: <http://www.w3.org/ns/solid/terms#> .
 
 <docs//profile/card> a foaf:PersonalProfileDocument ;
     foaf:primaryTopic <https://leiza-scit.github.io/CAA2026-alligator//profile/card#> .
 
 <https://leiza-scit.github.io/CAA2026-alligator//profile/card#> a foaf:Person ;
-    ns2:storage <https://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
-    ns1:privateTypeIndex <https://leiza-scit.github.io/CAA2026-alligator//settings/privateTypeIndex.ttl> ;
-    ns1:publicTypeIndex <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl> .
+    ns1:storage <https://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> ;
+    ns2:privateTypeIndex <https://leiza-scit.github.io/CAA2026-alligator//settings/privateTypeIndex.ttl> ;
+    ns2:publicTypeIndex <https://leiza-scit.github.io/CAA2026-alligator//settings/publicTypeIndex.ttl> .
 
