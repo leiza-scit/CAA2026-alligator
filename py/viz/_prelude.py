@@ -84,8 +84,56 @@ SERVICE_COLOUR = {
 }
 
 # Fill for a heatmap cell whose value follows from the rank assignment alone
-# rather than from the sherds — see the quality figure.
-STRUCTURAL_GREY = "#d9d9d9"
+# rather than from the sherds — see the quality figure. Same grey as the
+# printed version uses for those cells.
+STRUCTURAL_GREY = "#eeeeee"
+
+# Matplotlib's RdYlGn and YlOrRd, sampled at eleven stops. The printed figures
+# use them directly; Pyodide has no matplotlib, so the stops travel with the
+# code and ramp() interpolates between them. Same colormap, same values, same
+# colours in the browser as on the page.
+RDYLGN = ["#a50026", "#d62f27", "#f46d43", "#fdad60", "#fee08b", "#feffbe",
+          "#d9ef8b", "#a5d86a", "#66bd63", "#199750", "#006837"]
+YLORRD = ["#ffffcc", "#fff1a9", "#fee187", "#feca66", "#feab49", "#fd8c3c",
+          "#fc5b2e", "#ed2e21", "#d41020", "#b00026", "#800026"]
+
+
+def ramp(stops, t):
+    """Colour at position t in [0, 1] along a list of hex stops."""
+    t = min(max(t, 0.0), 1.0)
+    span = t * (len(stops) - 1)
+    i = min(int(span), len(stops) - 2)
+    f = span - i
+    a = [int(stops[i][k:k + 2], 16) for k in (1, 3, 5)]
+    b = [int(stops[i + 1][k:k + 2], 16) for k in (1, 3, 5)]
+    return "#%02x%02x%02x" % tuple(round(a[k] + (b[k] - a[k]) * f)
+                                   for k in range(3))
+
+
+def ink_on(hex_colour):
+    """Black or white text, whichever stays legible on the given fill."""
+    r, g, b = (int(hex_colour[k:k + 2], 16) for k in (1, 3, 5))
+    return "#1a1a1a" if (0.299 * r + 0.587 * g + 0.114 * b) > 150 else "#ffffff"
+
+
+def colourbar(stops, lo, hi, width=190, height=10, fmt="{:.1f}"):
+    """A horizontal colourbar as pure SVG.
+
+    Drawn as thin segments rather than a gradient element so the figure stays
+    a plain vector that survives being saved or printed — the same reason the
+    printed figures avoid a rasterised colorbar.
+    """
+    steps = 60
+    bars = "".join(
+        f'<rect x="{i * width / steps:.2f}" y="0" '
+        f'width="{width / steps + 0.6:.2f}" height="{height}" '
+        f'fill="{ramp(stops, i / (steps - 1))}"/>' for i in range(steps))
+    ticks = "".join(
+        f'<text x="{f * width:.1f}" y="{height + 11}" font-size="9" '
+        f'fill="#888" text-anchor="{a}">{fmt.format(lo + f * (hi - lo))}</text>'
+        for f, a in ((0.0, "start"), (0.5, "middle"), (1.0, "end")))
+    return (f'<svg width="{width}" height="{height + 15}" '
+            f'xmlns="http://www.w3.org/2000/svg">{bars}{ticks}</svg>')
 
 
 def rgzm(n, sum_rank, sum_rank_sq):

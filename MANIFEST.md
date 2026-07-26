@@ -17,7 +17,7 @@ Delete `MANIFEST.md` afterwards; it is not part of the repository.
 | `py/templates/sparql.qmd.j2` | figure cells, `results` registry, `Frame` helper; Explore section and footer now come from `queries.yaml` instead of being hard-coded |
 | `py/templates/style.css` | `.figures`, `.figure`, `.figure-body` rules |
 
-## Source — new (7)
+## Source — new (9)
 
 | File | What it is |
 |---|---|
@@ -26,8 +26,10 @@ Delete `MANIFEST.md` afterwards; it is not part of the repository.
 | `py/viz/allen_distribution.py` | Allen relation distribution (Chart.js) |
 | `py/viz/clades_variana_timeline.py` | interval timeline against AD 9 (SVG) |
 | `py/viz/site_map.py` | findspots by horizon (Leaflet) |
-| `py/viz/service_composition.py` | proportional service composition per findspot (SVG) |
-| `py/viz/service_variability.py` | RGZM variance/quality per horizon, both rank readings (HTML) |
+| `py/viz/service_composition.py` | service composition on the time axis, grouped by horizon (SVG) |
+| `py/viz/service_variability.py` | RGZM variance/quality, two panels with colourbars (HTML) |
+| `py/viz/horizon_timeline.py` | the horizons as intervals, coloured by findspot count (SVG) |
+| `py/viz/horizon_allen_matrix.py` | Allen relations between horizons as a matrix (HTML) |
 
 ## Generated — included for convenience, not required (16)
 

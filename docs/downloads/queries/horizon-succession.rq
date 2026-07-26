@@ -16,9 +16,13 @@ PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
 PREFIX time:      <http://www.w3.org/2006/time#>
 PREFIX xsd:       <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?horizonA ?relation ?horizonB
+SELECT ?horizonA ?beginA ?endA ?relation ?horizonB
 WHERE {
-  ?a a lado:ChronologicalHorizon ; skos:notation ?horizonA ; ?rel ?b .
+  ?a a lado:ChronologicalHorizon ;
+     skos:notation                     ?horizonA ;
+     time:hasBeginning/time:inXSDgYear ?beginA ;
+     time:hasEnd/time:inXSDgYear       ?endA ;
+     ?rel                              ?b .
   ?b a lado:ChronologicalHorizon ; skos:notation ?horizonB .
   FILTER(STRSTARTS(STR(?rel), STR(time:)))
   BIND(REPLACE(STR(?rel), "^.*#interval", "") AS ?relation)

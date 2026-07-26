@@ -1,136 +1,197 @@
 # Figure: the RGZM within-group variance and quality per horizon and service
-# group, under both rank readings side by side. The browser counterpart of
-# output/service_group_variability_en.svg.
+# group. The browser counterpart of output/service_group_variability_en.svg and
+# drawn to match it: two panels side by side, variance on RdYlGn_r from 0 to the
+# largest value, quality on RdYlGn from 0 to 1, latest horizon at the top, a
+# colourbar under each panel, and grey for the cells whose value follows from
+# the rank assignment rather than from the sherds.
+#
+# One thing the printed figure cannot do is offered here instead of a second
+# page: the rank reading can be switched. The stage reading is what the project
+# reports — a cup and a plate of one stage share a rank, because a change of
+# vessel form is not a chronological step. The sub-type reading counts every
+# type as a step and is kept so the alternative can be re-checked; it orders the
+# horizons the same way.
 #
 # The query returns N, Σ(rank·count) and Σ(rank²·count); the standard deviation
-# and exp(−CV) are taken here, because rdflib's SPARQL has neither SQRT nor EXP.
-# See rgzm() in py/viz/_prelude.py.
-#
-# Two readings, not one. Under the stage reading a cup and a plate of the same
-# stage share a rank, which is what this project reports: a change of vessel
-# form is not a chronological step. The column reading counts every sub-type as
-# a step and is kept so the alternative can be re-checked. They rank the
-# horizons the same way, which is the point of showing both.
-#
-# Cells whose group holds only one rank are drawn grey. Their s = 0 and q = 1
-# follow from the rank assignment alone, whatever the sherds do, and a
-# structurally determined constant should not read as a measurement.
+# and exp(−CV) are taken by rgzm() in py/viz/_prelude.py, because rdflib's
+# SPARQL has neither SQRT nor EXP.
 #
 # Runs in a Pyodide cell with `rows` (the query result) and the helpers from
 # py/viz/_prelude.py in scope. It must end in a Frame.
 
 READINGS = [
-    ("stage", "Stage reading", "stageSteps", "sumStage", "sumStageSq",
-     "cup and plate of one stage share a rank \u2014 reported"),
-    ("column", "Column reading", "columnSteps", "sumColumn", "sumColumnSq",
-     "every sub-type its own step \u2014 kept for comparison"),
+    ("stage", "ranks by stage only", "stageSteps", "sumStage", "sumStageSq"),
+    ("column", "ranks by sub-type", "columnSteps", "sumColumn", "sumColumnSq"),
 ]
 
-horizons, groups, cells = [], [], {}
+horizons, groups, data = [], [], {}
 for r in rows:
     horizon, group, n = r["horizon"], r["group"], int(r["sherds"])
     if horizon not in horizons:
         horizons.append(horizon)
     if group not in groups:
         groups.append(group)
-    for key, _title, steps_field, sum_field, sumsq_field, _note in READINGS:
+    for key, _note, steps_field, sum_field, sumsq_field in READINGS:
         s, q = rgzm(n, float(r[sum_field]), float(r[sumsq_field]))
-        cells[(key, horizon, group)] = {
-            "n": n, "s": s, "q": q,
-            "measured": int(r[steps_field]) > 1,
-        }
+        data[(key, horizon, group)] = {
+            "n": n, "s": s, "q": q, "measured": int(r[steps_field]) > 1}
 
 horizons.sort()
-# Latest horizon at the top, as the printed figures do.
-rows_order = list(reversed(horizons))
 
-# Quality drives the colour: dark where the assemblage sits on one rank, light
-# where it is spread. Only measured cells are shaded.
-measured_q = [c["q"] for c in cells.values() if c["measured"]]
-lo, hi = (min(measured_q), max(measured_q)) if measured_q else (0.0, 1.0)
+payload = json.dumps({
+    "readings": {k: note for k, note, *_ in READINGS},
+    "horizons": horizons,
+    "groups": groups,
+    # Keyed "reading|horizon|group", so switching the reading is a redraw
+    # rather than a second query.
+    "cells": {f"{k}|{h}|{g}": v for (k, h, g), v in data.items()},
+    "vmax": {k: max((v["s"] for (rk, _h, _g), v in data.items()
+                     if rk == k and v["measured"]), default=1.0)
+             for k, *_ in READINGS},
+    "rdylgn": RDYLGN,
+    "grey": STRUCTURAL_GREY,
+})
 
+# The variance panel is scaled to its own largest value, so its bar is labelled
+# with that; the quality panel always runs 0 to 1, as in the printed figure.
+bars = {k: colourbar(RDYLGN[::-1], 0, v, width=250, fmt="{:.2f}")
+        for k, v in json.loads(payload)["vmax"].items()}
+bar_qual = colourbar(RDYLGN, 0, 1, width=250, fmt="{:.1f}")
 
-def shade(q):
-    """A green ramp over the measured range, dark = concentrated."""
-    if hi == lo:
-        t = 0.5
-    else:
-        t = (q - lo) / (hi - lo)
-    top = (0, 68, 27)
-    bottom = (229, 245, 224)
-    rgb = [round(bottom[i] + (top[i] - bottom[i]) * t) for i in range(3)]
-    return "#%02x%02x%02x" % tuple(rgb), ("#ffffff" if t > 0.45 else "#1a1a1a")
-
-
-def block(key, title, note):
-    head = "".join(
-        f'<th title="{escape(group)}">{escape(group)}</th>' for group in groups)
-    body = ""
-    for horizon in rows_order:
-        body += f'<tr><th class="h">H{escape(horizon)}</th>'
-        for group in groups:
-            cell = cells.get((key, horizon, group))
-            if cell is None:
-                body += '<td class="absent">&mdash;</td>'
-                continue
-            if cell["measured"]:
-                fill, ink = shade(cell["q"])
-                cls = ""
-            else:
-                fill, ink, cls = STRUCTURAL_GREY, "#666", " structural"
-            tip = (f'{group}, horizon {horizon}: {cell["n"]} sherds, '
-                   f's = {cell["s"]:.3f}, q = {cell["q"]:.3f}'
-                   + ("" if cell["measured"]
-                      else " \u2014 one rank only, so this follows from the "
-                           "rank assignment rather than from the sherds"))
-            body += (f'<td class="cell{cls}" style="background:{fill};'
-                     f'color:{ink}" title="{escape(tip)}">'
-                     f'<span class="q">{cell["q"]:.3f}</span>'
-                     f'<span class="s">s {cell["s"]:.3f}</span>'
-                     f'<span class="n">{cell["n"]} sherds</span></td>')
-        body += "</tr>"
-    return (f'<div class="block"><h3>{escape(title)}</h3>'
-            f'<p class="note">{escape(note)}</p>'
-            f'<table><thead><tr><th></th>{head}</tr></thead>'
-            f"<tbody>{body}</tbody></table></div>")
-
-style = f"""
-  body{{margin:0;font-family:sans-serif;padding:6px 4px 4px;color:#333}}
-  .wrap{{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start}}
-  .block h3{{margin:0 0 2px;font-size:13px;font-weight:600}}
-  .block .note{{margin:0 0 8px;font-size:11px;color:#888;max-width:34ch}}
-  table{{border-collapse:separate;border-spacing:3px}}
-  th{{font-size:11px;font-weight:600;color:#666;text-align:center;
-    padding:0 4px;max-width:96px}}
-  th.h{{text-align:right;color:#444}}
-  td.cell{{width:96px;padding:5px 6px;border-radius:4px;text-align:center;
-    line-height:1.25;cursor:help}}
-  td.absent{{width:96px;text-align:center;color:#ccc;font-size:12px}}
-  td.cell.structural{{border:1px dashed #b9b9b9}}
-  .q{{display:block;font-size:14px;font-weight:600}}
-  .s{{display:block;font-size:10px;opacity:.85}}
-  .n{{display:block;font-size:9.5px;opacity:.7}}
-  .key{{margin-top:10px;font-size:11px;color:#777;max-width:70ch;
-    line-height:1.5}}
-  .key b{{display:inline-block;width:10px;height:10px;border-radius:2px;
-    background:{STRUCTURAL_GREY};border:1px dashed #b9b9b9;
-    vertical-align:middle}}
+style = """
+  body{margin:0;font-family:sans-serif;padding:6px 4px 4px;color:#333}
+  #ctrl{display:flex;gap:10px;align-items:center;font-size:12px;color:#666;
+    padding:0 0 .6rem}
+  #ctrl select{font-size:12px;padding:2px 6px;border-radius:4px;
+    border:1px solid #ccc;background:#fff;color:#333}
+  #ctrl em{font-style:normal;color:#999}
+  .panels{display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start}
+  .panel h3{margin:0 0 8px;font-size:12.5px;font-weight:700;text-align:center}
+  table{border-collapse:separate;border-spacing:2px}
+  th{font-size:11.5px;font-weight:700;padding:0 4px 4px;text-align:center}
+  th.side{text-align:right;white-space:nowrap}
+  td{width:104px;height:56px;text-align:center;line-height:1.25;cursor:help}
+  .v{display:block;font-size:15px;font-weight:600}
+  .n{display:block;font-size:9.5px;opacity:.65}
+  .cbar{margin-top:8px;text-align:center}
+  .cbar span{display:block;font-size:10px;color:#999;margin-bottom:2px}
+  .foot{font-size:11px;color:#888;max-width:82ch;line-height:1.55;
+    padding:.8rem 0 0}
+  .foot b{display:inline-block;width:11px;height:11px;background:#eeeeee;
+    border:1px solid #ddd;vertical-align:middle}
 """
+
+script = """
+(function () {
+  var C = JSON.parse(document.getElementById("payload").textContent);
+  var se = document.getElementById("reading");
+  var ne = document.getElementById("note");
+
+  // The group colours of the printed figure's header row.
+  var HEAD = {"Oblique-rim plate": "#1f77b4", "Service I": "#d62728",
+              "Service II": "#2ca02c"};
+
+  function ramp(stops, t) {
+    t = Math.min(Math.max(t, 0), 1);
+    var span = t * (stops.length - 1);
+    var i = Math.min(Math.floor(span), stops.length - 2), f = span - i;
+    var out = "#", k, v;
+    for (k = 1; k < 6; k += 2) {
+      v = Math.round(parseInt(stops[i].substr(k, 2), 16)
+        + (parseInt(stops[i + 1].substr(k, 2), 16)
+           - parseInt(stops[i].substr(k, 2), 16)) * f);
+      out += ("0" + v.toString(16)).slice(-2);
+    }
+    return out;
+  }
+
+  function ink(hex) {
+    var r = parseInt(hex.substr(1, 2), 16), g = parseInt(hex.substr(3, 2), 16),
+        b = parseInt(hex.substr(5, 2), 16);
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 150 ? "#1a1a1a" : "#ffffff";
+  }
+
+  function panel(kind, reading) {
+    var vmax = kind === "s" ? C.vmax[reading] : 1;
+    var stops = kind === "s" ? C.rdylgn.slice().reverse() : C.rdylgn;
+    var h = "<table><thead><tr><th></th>";
+    C.groups.forEach(function (g) {
+      h += '<th style="color:' + (HEAD[g] || "#444") + '">' + g + "</th>";
+    });
+    h += "</tr></thead><tbody>";
+    C.horizons.slice().reverse().forEach(function (hz) {
+      h += '<tr><th class="side">Horizon ' + hz + "</th>";
+      C.groups.forEach(function (g) {
+        var c = C.cells[reading + "|" + hz + "|" + g];
+        if (!c) {
+          h += '<td style="background:' + C.grey + ';color:#bbb">&mdash;</td>';
+          return;
+        }
+        var v = kind === "s" ? c.s : c.q;
+        var fill = c.measured ? ramp(stops, vmax ? v / vmax : 0) : C.grey;
+        var tone = c.measured ? ink(fill) : "#888";
+        var tip = g + ", horizon " + hz + ": " + c.n + " sherds, s = "
+                + c.s.toFixed(3) + ", q = " + c.q.toFixed(3)
+                + (c.measured ? "" : " \\u2014 one rank only, so this follows"
+                   + " from the rank assignment rather than from the sherds");
+        h += '<td style="background:' + fill + ';color:' + tone + '"'
+           + ' title="' + tip + '"><span class="v">' + v.toFixed(2)
+           + '</span><span class="n">n=' + c.n + "</span></td>";
+      });
+      h += "</tr>";
+    });
+    return h + "</tbody></table>";
+  }
+
+  function draw() {
+    var reading = se.value;
+    ne.textContent = C.readings[reading];
+    document.getElementById("pv").innerHTML = panel("s", reading);
+    document.getElementById("pq").innerHTML = panel("q", reading);
+    Array.prototype.forEach.call(
+      document.querySelectorAll("[data-bar]"), function (el) {
+        el.style.display = el.getAttribute("data-bar") === reading ? "" : "none";
+      });
+  }
+
+  se.addEventListener("change", draw);
+  draw();
+})();
+"""
+
+var_bars = "".join(f'<div data-bar="{k}">{bar}</div>' for k, bar in bars.items())
 
 heatmap = f"""<!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>{style}</style></head>
 <body>
-<div class="wrap">
-  {"".join(block(k, t, note) for k, t, _s, _a, _b, note in READINGS)}
+<div id="ctrl">
+  <label for="reading">Rank reading</label>
+  <select id="reading">
+    <option value="stage">Stage &mdash; reported</option>
+    <option value="column">Sub-type &mdash; for comparison</option>
+  </select>
+  <em id="note"></em>
 </div>
-<p class="key">
-  Large figure is the quality <em>q</em> = exp(&minus;CV); below it the standard
-  deviation <em>s</em> over the within-group ranks, and the number of sherds the
-  two are computed from. Darker means the group's material sits on fewer ranks.
-  <b></b> grey with a dashed border: the group holds a single rank, so
-  <em>s</em> = 0 and <em>q</em> = 1 follow from the rank assignment rather than
-  from the material. Hover any cell for the full figures.
+<div class="panels">
+  <div class="panel">
+    <h3>Within-group variance &nbsp;(STDDEV_SAMP of sub-type ranks)</h3>
+    <div id="pv"></div>
+    <div class="cbar"><span>variance</span>{var_bars}</div>
+  </div>
+  <div class="panel">
+    <h3>Within-group quality &nbsp;(q = exp(&minus;CV))</h3>
+    <div id="pq"></div>
+    <div class="cbar"><span>quality</span>{bar_qual}</div>
+  </div>
+</div>
+<p class="foot">
+  Every sherd is one observation valued by the rank of its sub-type within its
+  group. <b></b> grey: the group holds a single rank, so <em>s</em> = 0 and
+  <em>q</em> = 1 follow from the rank assignment rather than from the material.
+  Hover a cell for both figures and the sherd count.
 </p>
+<script id="payload" type="application/json">{payload}</script>
+<script>{script}</script>
 </body></html>"""
 
-Frame(heatmap, height=len(horizons) * 62 + 210)
+Frame(heatmap, height=len(horizons) * 62 + 250)

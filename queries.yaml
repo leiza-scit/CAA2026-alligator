@@ -130,6 +130,14 @@ queries:
       how many findspots it holds. Horizon 1 is the earliest, horizon 5 the
       latest. The interval is the envelope of the horizon's findspots, from the
       earliest start to the latest end.
+    viz:
+      - file: py/viz/horizon_timeline.py
+        title: "The horizons as intervals"
+        intro: >-
+          The same figure as `output/horizon_timeline_en.svg`, drawn from the
+          query above. Colour is the number of findspots. Horizons 1 and 2 both
+          open in 15 BC and horizon 2 runs to AD 13, so the sequence is not a
+          simple ladder — an envelope can swallow the one after it.
     sparql: |
       SELECT ?horizon ?label ?begin ?end (COUNT(?site) AS ?findspots)
       WHERE {
@@ -151,10 +159,23 @@ queries:
       so the sequence can be queried rather than read off a figure. Horizon 1
       *meets* horizon 3 — one ends exactly where the other begins — while horizon
       2 *contains* horizon 3 entirely.
+    viz:
+      - file: py/viz/horizon_allen_matrix.py
+        title: "The succession as a matrix"
+        intro: >-
+          The same figure as `output/horizon_allen_matrix_en.svg`. Read a cell
+          as “row relation column”. Only the blue family means one horizon is
+          wholly done before the next begins; the red cells are the pairs whose
+          intervals contain one another, which is where the sequence stops
+          being a line.
     sparql: |
-      SELECT ?horizonA ?relation ?horizonB
+      SELECT ?horizonA ?beginA ?endA ?relation ?horizonB
       WHERE {
-        ?a a lado:ChronologicalHorizon ; skos:notation ?horizonA ; ?rel ?b .
+        ?a a lado:ChronologicalHorizon ;
+           skos:notation                     ?horizonA ;
+           time:hasBeginning/time:inXSDgYear ?beginA ;
+           time:hasEnd/time:inXSDgYear       ?endA ;
+           ?rel                              ?b .
         ?b a lado:ChronologicalHorizon ; skos:notation ?horizonB .
         FILTER(STRSTARTS(STR(?rel), STR(time:)))
         BIND(REPLACE(STR(?rel), "^.*#interval", "") AS ?relation)
@@ -404,24 +425,32 @@ queries:
       - file: py/viz/service_composition.py
         title: "Service composition per findspot"
         intro: >-
-          Every bar is 100% of that findspot's sherds, so assemblages of very
-          different size can be compared; the figure at the right is how many
-          sherds that is. Sorted by start year the shift is plain — the red
-          Service I types give way to the green Service II ones — but so is how
-          thin the evidence gets at both ends of the sequence.
+          The same figure as `output/events_timeline_by_service_en.svg`: each
+          bar sits on the time axis over the findspot's interval and is split
+          into the shares of its service types, with the horizons separated.
+          The shift from the red Service I types to the green Service II ones
+          is plain, and so is what the printed version shows about horizon 5 —
+          six findspots, far to the right, almost pure Service II. Switch to
+          equal-width bars to compare compositions without the intervals
+          getting in the way.
     sparql: |
-      SELECT ?findspot ?begin ?horizon ?type ?rank ?sherds ?total
+      SELECT ?findspot ?begin ?end ?horizon ?slug ?type ?rank ?sherds ?total
       WHERE {
         ?obs aeont:atFindspot  ?site ;
              aeont:serviceType ?concept ;
              aeont:sherdCount  ?sherds .
 
         ?site rdfs:label                        ?findspot ;
-              time:hasBeginning/time:inXSDgYear ?beginYear .
+              time:hasBeginning/time:inXSDgYear ?beginYear ;
+              time:hasEnd/time:inXSDgYear       ?endYear .
 
+        # The label is what the figure prints, the slug is what it keys its
+        # colours by. Keeping the two apart means a figure does not quietly
+        # lose its palette the moment the display language changes.
         ?concept skos:prefLabel        ?type ;
                  aeont:typologicalRank ?rank .
-        FILTER(lang(?type) = "de")
+        FILTER(lang(?type) = "en")
+        BIND(REPLACE(STR(?concept), "^.*/", "") AS ?slug)
 
         OPTIONAL {
           ?h a lado:ChronologicalHorizon ;
@@ -437,6 +466,7 @@ queries:
         }
 
         BIND(xsd:integer(STR(?beginYear)) AS ?begin)
+        BIND(xsd:integer(STR(?endYear))   AS ?end)
       }
       ORDER BY ?begin ?findspot ?rank
 
