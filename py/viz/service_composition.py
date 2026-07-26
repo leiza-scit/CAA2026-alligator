@@ -128,9 +128,11 @@ script = """
          + ' text-anchor="end" font-size="10.5" font-weight="600"'
          + ' fill="#333">' + x.label + "</text>";
       if (onAxis && x1 > LW + 2) {
+        // Faint enough not to compete with the bars, dark enough to survive
+        // being looked at on a screen - #d5d5d5 at 0.8 was invisible.
         o += '<line x1="' + (LW - 5) + '" y1="' + (y + RH / 2) + '"'
-           + ' x2="' + x1 + '" y2="' + (y + RH / 2) + '"'
-           + ' stroke="#d5d5d5" stroke-width=".8"/>';
+           + ' x2="' + (x1 - 2) + '" y2="' + (y + RH / 2) + '"'
+           + ' stroke="#9aa0a6" stroke-width="1" stroke-dasharray="1 3"/>';
       }
 
       var cursor = x1;

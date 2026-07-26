@@ -25,9 +25,16 @@ sites = [{"id": r["site"],
 # Relations present, in Allen's order rather than in order of appearance.
 present = [rel for rel in ALLEN_ORDER if any(s["rel"] == rel for s in sites)]
 
-# Bar fill: the relation colour at about a tenth of its strength, so the
-# outline stays the thing that carries the meaning.
-fill = {rel: ALLEN_COLOUR[rel] + "1f" for rel in present}
+# Bar fill: the relation colour mixed into white. A tenth of the colour left
+# the bars almost blank on screen and made the relations hard to tell apart;
+# a fifth still lets the outline carry the meaning but is actually visible.
+def _tint(hex_colour, strength=0.20):
+    rgb = [int(hex_colour[k:k + 2], 16) for k in (1, 3, 5)]
+    return "#%02x%02x%02x" % tuple(
+        round(255 + (c - 255) * strength) for c in rgb)
+
+
+fill = {rel: _tint(ALLEN_COLOUR[rel]) for rel in present}
 stroke = {rel: ALLEN_COLOUR[rel] for rel in present}
 
 span_min = min(s["start"] for s in sites)
@@ -69,8 +76,13 @@ script = """
 
   function ticks(lo, hi) {
     var step = (hi - lo) > 60 ? 10 : 5, out = [], t;
-    for (t = Math.ceil(lo / step) * step; t <= hi; t += step) out.push(t);
-    if (out.indexOf(C.event) < 0) out.push(C.event);
+    for (t = Math.ceil(lo / step) * step; t <= hi; t += step) {
+      // The event's own tick is always drawn, so a regular tick sitting on
+      // top of it has to give way - AD 9 and AD 10 were printed over
+      // each other.
+      if (Math.abs(t - C.event) > 2) out.push(t);
+    }
+    out.push(C.event);
     return out.sort(function (a, b) { return a - b; });
   }
 

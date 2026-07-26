@@ -467,14 +467,20 @@ script = """
        + ' height="' + RH + '" fill="' + h.colour + '">'
        + "<title>" + h.label + " \\u00b7 " + h.findspots
        + " findspots</title></rect>";
-    var inside = w > 210;
-    o += '<text x="' + (inside ? x1 + w / 2 : x1 + w + 8) + '"'
-       + ' y="' + (y + RH / 2 + 4) + '" font-size="12.5" font-weight="600"'
-       + ' text-anchor="' + (inside ? "middle" : "start") + '"'
-       + ' fill="' + (inside ? h.ink : "#333") + '">' + h.label + "</text>";
+    // The count goes on every bar. Printing it only when the label fits
+    // inside meant four of the five horizons silently lost it.
+    var inside = w > 210, count = h.findspots + " findspots";
     if (inside) {
+      o += '<text x="' + (x1 + w / 2) + '" y="' + (y + RH / 2 + 4) + '"'
+         + ' font-size="12.5" font-weight="600" text-anchor="middle"'
+         + ' fill="' + h.ink + '">' + h.label + "</text>";
       o += '<text x="' + (x1 + w + 8) + '" y="' + (y + RH / 2 + 4) + '"'
-         + ' font-size="11.5" fill="#555">' + h.findspots + " findspots</text>";
+         + ' font-size="11.5" fill="#555">' + count + "</text>";
+    } else {
+      o += '<text x="' + (x1 + w + 8) + '" y="' + (y + RH / 2 + 4) + '"'
+         + ' font-size="12.5" font-weight="600" fill="#333">' + h.label
+         + '<tspan font-weight="400" fill="#666"> \u00b7 ' + count
+         + "</tspan></text>";
     }
   });
 
@@ -975,9 +981,16 @@ sites = [{"id": r["site"],
 # Relations present, in Allen's order rather than in order of appearance.
 present = [rel for rel in ALLEN_ORDER if any(s["rel"] == rel for s in sites)]
 
-# Bar fill: the relation colour at about a tenth of its strength, so the
-# outline stays the thing that carries the meaning.
-fill = {rel: ALLEN_COLOUR[rel] + "1f" for rel in present}
+# Bar fill: the relation colour mixed into white. A tenth of the colour left
+# the bars almost blank on screen and made the relations hard to tell apart;
+# a fifth still lets the outline carry the meaning but is actually visible.
+def _tint(hex_colour, strength=0.20):
+    rgb = [int(hex_colour[k:k + 2], 16) for k in (1, 3, 5)]
+    return "#%02x%02x%02x" % tuple(
+        round(255 + (c - 255) * strength) for c in rgb)
+
+
+fill = {rel: _tint(ALLEN_COLOUR[rel]) for rel in present}
 stroke = {rel: ALLEN_COLOUR[rel] for rel in present}
 
 span_min = min(s["start"] for s in sites)
@@ -1019,8 +1032,13 @@ script = """
 
   function ticks(lo, hi) {
     var step = (hi - lo) > 60 ? 10 : 5, out = [], t;
-    for (t = Math.ceil(lo / step) * step; t <= hi; t += step) out.push(t);
-    if (out.indexOf(C.event) < 0) out.push(C.event);
+    for (t = Math.ceil(lo / step) * step; t <= hi; t += step) {
+      // The event's own tick is always drawn, so a regular tick sitting on
+      // top of it has to give way - AD 9 and AD 10 were printed over
+      // each other.
+      if (Math.abs(t - C.event) > 2) out.push(t);
+    }
+    out.push(C.event);
     return out.sort(function (a, b) { return a - b; });
   }
 
@@ -1537,9 +1555,11 @@ script = """
          + ' text-anchor="end" font-size="10.5" font-weight="600"'
          + ' fill="#333">' + x.label + "</text>";
       if (onAxis && x1 > LW + 2) {
+        // Faint enough not to compete with the bars, dark enough to survive
+        // being looked at on a screen - #d5d5d5 at 0.8 was invisible.
         o += '<line x1="' + (LW - 5) + '" y1="' + (y + RH / 2) + '"'
-           + ' x2="' + x1 + '" y2="' + (y + RH / 2) + '"'
-           + ' stroke="#d5d5d5" stroke-width=".8"/>';
+           + ' x2="' + (x1 - 2) + '" y2="' + (y + RH / 2) + '"'
+           + ' stroke="#9aa0a6" stroke-width="1" stroke-dasharray="1 3"/>';
       }
 
       var cursor = x1;

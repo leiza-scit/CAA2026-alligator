@@ -74,14 +74,20 @@ script = """
        + ' height="' + RH + '" fill="' + h.colour + '">'
        + "<title>" + h.label + " \\u00b7 " + h.findspots
        + " findspots</title></rect>";
-    var inside = w > 210;
-    o += '<text x="' + (inside ? x1 + w / 2 : x1 + w + 8) + '"'
-       + ' y="' + (y + RH / 2 + 4) + '" font-size="12.5" font-weight="600"'
-       + ' text-anchor="' + (inside ? "middle" : "start") + '"'
-       + ' fill="' + (inside ? h.ink : "#333") + '">' + h.label + "</text>";
+    // The count goes on every bar. Printing it only when the label fits
+    // inside meant four of the five horizons silently lost it.
+    var inside = w > 210, count = h.findspots + " findspots";
     if (inside) {
+      o += '<text x="' + (x1 + w / 2) + '" y="' + (y + RH / 2 + 4) + '"'
+         + ' font-size="12.5" font-weight="600" text-anchor="middle"'
+         + ' fill="' + h.ink + '">' + h.label + "</text>";
       o += '<text x="' + (x1 + w + 8) + '" y="' + (y + RH / 2 + 4) + '"'
-         + ' font-size="11.5" fill="#555">' + h.findspots + " findspots</text>";
+         + ' font-size="11.5" fill="#555">' + count + "</text>";
+    } else {
+      o += '<text x="' + (x1 + w + 8) + '" y="' + (y + RH / 2 + 4) + '"'
+         + ' font-size="12.5" font-weight="600" fill="#333">' + h.label
+         + '<tspan font-weight="400" fill="#666"> \u00b7 ' + count
+         + "</tspan></text>";
     }
   });
 
