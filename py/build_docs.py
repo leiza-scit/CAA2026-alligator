@@ -46,7 +46,13 @@ from docs_facts import collect                                   # noqa: E402
 # ==============================================================================
 
 ROOT = wd_paths.ROOT
+# Built into output/ with the rest of the pipeline's products, then mirrored
+# into the Pages tree. One build, two destinations: output/docs/ is where the
+# figures for the article are picked up, docs/docu/ is what the site serves.
+# The copy is made from the freshly written files rather than rendered twice,
+# so the two cannot say different things.
 OUT_DIR = ROOT / "output" / "docs"
+PAGES_DIR = ROOT / "docs" / "docu"
 LANGS = ("en", "fr")
 
 # Matplotlib's RdYlGn at eleven stops, the same list as py/viz/_prelude.py, so a
@@ -843,9 +849,15 @@ NOTE_YAML = Path(__file__).resolve().parent / "note.yaml"
 ASSET_DIR = Path(__file__).resolve().parent / "docs_assets"
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 
+PAGE = {"en": "service_group_variability_explained.html",
+        "fr": "service_group_variability_explained_fr.html"}
+
 CHROME = {
     "en": {
         "lang_tag": "en-GB", "toc_heading": "Contents",
+        "nav_sparql": "← Query page", "nav_this": "Variability note",
+        "nav_other": "Français", "nav_other_href": "service_group_variability_explained_fr.html",
+        "nav_self": "service_group_variability_explained.html",
         "title": "Within-group variability by service type — how the heatmap is built and how to read it",
         "kicker": "CAA 2026 · Alligator pipeline · figure note",
         "h1": "Within-group variability<br>by service type",
@@ -861,6 +873,9 @@ CHROME = {
     },
     "fr": {
         "lang_tag": "fr", "toc_heading": "Sommaire",
+        "nav_sparql": "← Page d’interrogation", "nav_this": "Note de variabilité",
+        "nav_other": "English", "nav_other_href": "service_group_variability_explained.html",
+        "nav_self": "service_group_variability_explained_fr.html",
         "title": "Variabilité intra-groupe par type de service — construction et lecture de la figure",
         "kicker": "CAA 2026 · chaîne Alligator · note de figure",
         "h1": "Variabilité intra-groupe<br>par type de service",
@@ -1029,6 +1044,129 @@ def audit(path: Path, facts) -> list[str]:
 
 
 # ==============================================================================
+# SECTION 5 · Publishing to the Pages tree
+# ==============================================================================
+
+LANDING = {
+    "en": dict(
+        lang="English", title="Within-group variability by service type",
+        blurb="How the variance and quality heatmap is built, and how to read it. "
+              "Fifteen sections, seventeen figures.",
+        book="Derivation workbook (.xlsx)",
+        figures="The figures as standalone SVG",
+        query="Interactive query page"),
+    "fr": dict(
+        lang="Français", title="Variabilité intra-groupe par type de service",
+        blurb="Construction et lecture de la carte de variance et de qualité. "
+              "Quinze sections, dix-sept figures.",
+        book="Classeur de dérivation (.xlsx)",
+        figures="Les figures en SVG autonome",
+        query="Page d’interrogation interactive"),
+}
+
+
+def write_landing(path: Path, figure_count: int) -> None:
+    """A small bilingual index so .../docu/ resolves to something useful.
+
+    Deliberately not a copy of either note: duplicating 127 KB to give the
+    directory an index would leave two files to keep in step. This one is a
+    few hundred bytes and links to both.
+    """
+    cards = []
+    for lang in LANGS:
+        m = LANDING[lang]
+        book = "" if lang == "en" else "_" + lang
+        cards.append(
+            f'  <section>\n'
+            f'    <p class="lang">{m["lang"]}</p>\n'
+            f'    <h2><a href="{PAGE[lang]}">{m["title"]}</a></h2>\n'
+            f'    <p>{m["blurb"]}</p>\n'
+            f'    <ul>\n'
+            f'      <li><a href="downloads/service_group_variability_derivation{book}.xlsx">'
+            f'{m["book"]}</a></li>\n'
+            f'      <li><a href="figures/">{m["figures"]}</a> &middot; {figure_count}</li>\n'
+            f'      <li><a href="../sparql.html">{m["query"]}</a></li>\n'
+            f'    </ul>\n'
+            f'  </section>')
+    style = (
+        "body{margin:0; background:#fbfaf7; color:#1b2430;"
+        " font-family:\"Public Sans\",system-ui,sans-serif; line-height:1.6}"
+        "header{background:#1b2430; color:#fbfaf7; padding:2.6rem 24px;"
+        " border-bottom:3px solid #9e3b26}"
+        "header div,main,footer{max-width:820px; margin:0 auto}"
+        "header p{margin:0 0 .5rem; font-size:.76rem; letter-spacing:.16em;"
+        " text-transform:uppercase; color:#b07d31}"
+        "header h1{font-family:Spectral,Georgia,serif; font-weight:600;"
+        " margin:0; font-size:1.9rem}"
+        "main{padding:0 24px 3rem} footer{padding:0 24px 3rem; font-size:.84rem;"
+        " color:#46525f}"
+        "section{border-bottom:1px solid #d9d3c6; padding:1.8rem 0}"
+        ".lang{font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;"
+        " color:#46525f; margin:0 0 .3rem}"
+        "h2{font-family:Spectral,Georgia,serif; font-weight:600; margin:0 0 .4rem;"
+        " font-size:1.3rem} a{color:#9e3b26}"
+        "ul{margin:.6rem 0 0; padding-left:1.2rem; font-size:.94rem}")
+    html = (
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
+        '<meta charset="UTF-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<title>Variability note &middot; CAA 2026 &middot; Alligator</title>\n'
+        '<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600'
+        '&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">\n'
+        f"<style>{style}</style>\n</head>\n<body>\n"
+        '<header><div>\n  <p>CAA 2026 &middot; leiza-scit/CAA2026-alligator</p>\n'
+        '  <h1>Variability note</h1>\n</div></header>\n<main>\n'
+        + "\n".join(cards) +
+        '\n</main>\n<footer>\n'
+        '  <p>Generated by <code>py/build_docs.py</code>. Every quantity is read '
+        'from the published graphs; the build fails rather than let the text '
+        'disagree with them.</p>\n</footer>\n</body>\n</html>\n')
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(html, encoding="utf-8", newline="\n")
+
+
+def publish(out_dir: Path, pages_dir: Path, figure_count: int) -> int:
+    """Mirror the built note into the Pages tree. Returns the file count.
+
+    Copied rather than rendered a second time, and the target is cleared
+    first, so a figure that stopped being generated cannot linger on the site
+    after it has left the build.
+    """
+    import shutil
+    if pages_dir.exists():
+        shutil.rmtree(pages_dir)
+    shutil.copytree(out_dir, pages_dir)
+    write_landing(pages_dir / "index.html", figure_count)
+    write_figure_index(pages_dir / "figures")
+    return sum(1 for f in pages_dir.rglob("*") if f.is_file())
+
+
+def write_figure_index(figures: Path) -> None:
+    """List the figures. GitHub Pages serves no directory listing of its own."""
+    items = []
+    for svg in sorted(figures.glob("*.svg")):
+        name = svg.stem.rsplit("_", 1)
+        label = name[0].replace("_", " ")
+        items.append(f'  <li><a href="{svg.name}">{label}</a> '
+                     f'<span>{name[-1]}</span></li>')
+    html = (
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        "<title>Figures &middot; variability note</title>\n"
+        "<style>body{margin:0 auto; max-width:760px; padding:2.5rem 24px;"
+        " background:#fbfaf7; color:#1b2430;"
+        ' font-family:system-ui,sans-serif; line-height:1.6}'
+        "h1{font-size:1.4rem} ul{padding-left:1.1rem} a{color:#9e3b26}"
+        " span{color:#8a8272; font-size:.85rem}</style>\n</head>\n<body>\n"
+        "<h1>Figures</h1>\n"
+        "<p>Standalone SVG, drawn from the published graphs. "
+        '<a href="../">Back to the note</a>.</p>\n<ul>\n'
+        + "\n".join(items) +
+        "\n</ul>\n</body>\n</html>\n")
+    figures.mkdir(parents=True, exist_ok=True)
+    (figures / "index.html").write_text(html, encoding="utf-8", newline="\n")
+
+# ==============================================================================
 # SECTION 5 · Entry point
 # ==============================================================================
 
@@ -1038,7 +1176,13 @@ def build_figures(facts, out_dir: Path):
     Returns {lang: {name: svg}} for the note to inline, and writes the same
     figures as standalone files so they can be dropped into the article.
     """
-    out_dir.mkdir(parents=True, exist_ok=True)
+    # Cleared rather than written over: --only docs does not reset output/, so a
+    # figure that was renamed would otherwise survive under its old name and be
+    # published alongside its replacement.
+    import shutil
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
+    (out_dir / "figures").mkdir(parents=True, exist_ok=True)
     made_all, problems = {lang: {} for lang in LANGS}, []
     for lang in LANGS:
         for name, builder in FIGURES.items():
@@ -1050,8 +1194,9 @@ def build_figures(facts, out_dir: Path):
             if bad:
                 problems += [f"{name} [{lang}]: {p}" for p in bad]
             markup = svg(width, height, body, f"{name.replace('_', ' ')} ({lang})")
-            (out_dir / f"{name}_{lang}.svg").write_text(markup, encoding="utf-8",
-                                                        newline="\n")
+            target = out_dir / "figures" / f"{name}_{lang}.svg"
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(markup, encoding="utf-8", newline="\n")
             made_all[lang][name] = re.sub(r'\s*xmlns="[^"]*"|\s*version="1.1"', "",
                                           markup, count=2)
     if problems:
@@ -1087,8 +1232,7 @@ def main() -> None:
     notes = {}
     for lang in LANGS:
         html = render_note(facts, lang, figures[lang], doc)
-        suffix = "" if lang == "en" else f"_{lang}"
-        path = args.out / f"service_group_variability_explained{suffix}.html"
+        path = args.out / PAGE[lang]
         path.write_text(html, encoding="utf-8", newline="\n")
         notes[lang] = path
         print(f"  OK  {path.relative_to(ROOT)}  ({len(html) // 1024} KB)")
@@ -1103,12 +1247,15 @@ def main() -> None:
         raise SystemExit("audit failed — the prose quotes numbers the graph does not")
     for lang in LANGS:
         suffix = "" if lang == "en" else f"_{lang}"
-        book = args.out / f"service_group_variability_derivation{suffix}.xlsx"
+        book = args.out / "downloads" / f"service_group_variability_derivation{suffix}.xlsx"
         build_workbook(facts, book, lang)
         print(f"  OK  {book.relative_to(ROOT)}")
 
     print(f"  OK  audit: {len(notes) + len(args.audit or [])} note(s), "
           f"every quoted number agrees with the graph")
+
+    published = publish(args.out, PAGES_DIR, count)
+    print(f"  OK  {PAGES_DIR.relative_to(ROOT)}  ({published} file(s) for GitHub Pages)")
 
     print("=" * 60)
     print("Done.")
