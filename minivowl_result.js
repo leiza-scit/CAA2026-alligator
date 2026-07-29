@@ -93,596 +93,246 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
    "source": 13,
-   "target": 14,
-   "valueTo": "intervalContains",
+   "target": 10,
+   "valueTo": "hasFeature",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
   },
   {
    "source": 13,
    "target": 1,
-   "valueTo": "intervalContains",
+   "valueTo": "hasFeature",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
   },
   {
    "source": 13,
-   "target": 13,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalContains",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalContains"
-  },
-  {
-   "source": 10,
-   "target": 14,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 10,
-   "target": 1,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 10,
-   "target": 13,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 10,
-   "target": 11,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 10,
-   "target": 12,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 6,
-   "target": 14,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 6,
-   "target": 1,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 6,
-   "target": 13,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 6,
-   "target": 11,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 6,
-   "target": 12,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 9,
-   "target": 14,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 9,
-   "target": 1,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 9,
-   "target": 13,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 9,
-   "target": 11,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 9,
-   "target": 12,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 8,
-   "target": 14,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 8,
-   "target": 1,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 8,
-   "target": 13,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 8,
-   "target": 11,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 8,
-   "target": 12,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 7,
-   "target": 14,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 7,
-   "target": 1,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 7,
-   "target": 13,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 7,
-   "target": 11,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 7,
-   "target": 12,
-   "valueTo": "memberOf",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
-  },
-  {
-   "source": 16,
-   "target": 14,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 6,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 8,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 2,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 0,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 1,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 3,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 13,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
    "target": 9,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 13,
+   "target": 6,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 13,
+   "target": 8,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 13,
+   "target": 7,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 11,
+   "target": 10,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 11,
+   "target": 9,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 11,
+   "target": 6,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 11,
+   "target": 8,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 11,
+   "target": 7,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 14,
+   "target": 10,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 14,
+   "target": 9,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 14,
+   "target": 6,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 14,
+   "target": 8,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 14,
+   "target": 7,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 1,
+   "target": 10,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 1,
+   "target": 9,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 1,
+   "target": 6,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 1,
+   "target": 8,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 1,
+   "target": 7,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 12,
+   "target": 10,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 12,
+   "target": 9,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 12,
+   "target": 6,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 12,
+   "target": 8,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 12,
+   "target": 7,
+   "valueTo": "hasFeature",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
+  },
+  {
+   "source": 12,
+   "target": 13,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
-   "source": 16,
-   "target": 12,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 4,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 5,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
-   "target": 11,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 16,
+   "source": 12,
    "target": 10,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
-   "source": 16,
-   "target": 7,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 14,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 6,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 8,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 2,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 0,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 1,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 3,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 13,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 9,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 12,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 4,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
-   "target": 5,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 15,
+   "source": 12,
    "target": 11,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
-   "source": 15,
-   "target": 10,
+   "source": 12,
+   "target": 3,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
-   "source": 15,
-   "target": 7,
+   "source": 12,
+   "target": 4,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
@@ -696,28 +346,7 @@ var minivowlresult={
   },
   {
    "source": 12,
-   "target": 6,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 12,
-   "target": 8,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 12,
-   "target": 2,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 12,
-   "target": 0,
+   "target": 5,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
@@ -731,14 +360,14 @@ var minivowlresult={
   },
   {
    "source": 12,
-   "target": 3,
+   "target": 0,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 12,
-   "target": 13,
+   "target": 6,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
@@ -759,28 +388,7 @@ var minivowlresult={
   },
   {
    "source": 12,
-   "target": 4,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 12,
-   "target": 5,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 12,
-   "target": 10,
+   "target": 8,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
@@ -791,6 +399,1658 @@ var minivowlresult={
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 12,
+   "target": 2,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 13,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 10,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 11,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 3,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 4,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 14,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 5,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 1,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 0,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 6,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 9,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 12,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 8,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 7,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 16,
+   "target": 2,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 13,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 10,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 11,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 3,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 4,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 14,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 5,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 1,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 0,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 6,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 9,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 12,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 8,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 7,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 15,
+   "target": 2,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 13,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 13,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 13,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 10,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 10,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 10,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 11,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 11,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 11,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 14,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 14,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 14,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 1,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 1,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 1,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 9,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 9,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 9,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 6,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 6,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 6,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 12,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 12,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 12,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 8,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 8,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 8,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 7,
+   "target": 3,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 7,
+   "target": 4,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 7,
+   "target": 5,
+   "valueTo": "hasGeometry",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalOverlappedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalAfter",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+  },
+  {
+   "source": 10,
+   "target": 13,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 10,
+   "target": 11,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 10,
+   "target": 14,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 10,
+   "target": 1,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 10,
+   "target": 12,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 9,
+   "target": 13,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 9,
+   "target": 11,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 9,
+   "target": 14,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 9,
+   "target": 1,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 9,
+   "target": 12,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 6,
+   "target": 13,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 6,
+   "target": 11,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 6,
+   "target": 14,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 6,
+   "target": 1,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 6,
+   "target": 12,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 8,
+   "target": 13,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 8,
+   "target": 11,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 8,
+   "target": 14,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 8,
+   "target": 1,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 8,
+   "target": 12,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 7,
+   "target": 13,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 7,
+   "target": 11,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 7,
+   "target": 14,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 7,
+   "target": 1,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 7,
+   "target": 12,
+   "valueTo": "memberOf",
+   "propertyTo": "class",
+   "uriTo": "http://www.opengis.net/ont/geosparql#memberOf"
+  },
+  {
+   "source": 1,
+   "target": 10,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 1,
+   "target": 9,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 1,
+   "target": 6,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 1,
+   "target": 8,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 1,
+   "target": 7,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 13,
+   "target": 10,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 13,
+   "target": 9,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 13,
+   "target": 6,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 13,
+   "target": 8,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 13,
+   "target": 7,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 14,
+   "target": 10,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 14,
+   "target": 9,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 14,
+   "target": 6,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 14,
+   "target": 8,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 14,
+   "target": 7,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 12,
+   "target": 10,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 12,
+   "target": 9,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 12,
+   "target": 6,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 12,
+   "target": 8,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 12,
+   "target": 7,
+   "valueTo": "hasHorizonMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
+  },
+  {
+   "source": 11,
+   "target": 10,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 11,
+   "target": 9,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 11,
+   "target": 6,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 11,
+   "target": 8,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 11,
+   "target": 7,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 1,
+   "target": 10,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 1,
+   "target": 9,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 1,
+   "target": 6,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 1,
+   "target": 8,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 1,
+   "target": 7,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 12,
+   "target": 10,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 12,
+   "target": 9,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 12,
+   "target": 6,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 12,
+   "target": 8,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 12,
+   "target": 7,
+   "valueTo": "hasClusterMember",
+   "propertyTo": "class",
+   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalBefore",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalMetBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+  },
+  {
+   "source": 13,
+   "target": 2,
+   "valueTo": "hasEnd",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#hasEnd"
+  },
+  {
+   "source": 10,
+   "target": 2,
+   "valueTo": "hasEnd",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#hasEnd"
+  },
+  {
+   "source": 11,
+   "target": 2,
+   "valueTo": "hasEnd",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#hasEnd"
   },
   {
    "source": 14,
@@ -800,14 +2060,7 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2006/time#hasEnd"
   },
   {
-   "source": 6,
-   "target": 2,
-   "valueTo": "hasEnd",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasEnd"
-  },
-  {
-   "source": 8,
+   "source": 1,
    "target": 2,
    "valueTo": "hasEnd",
    "propertyTo": "class",
@@ -821,14 +2074,7 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2006/time#hasEnd"
   },
   {
-   "source": 1,
-   "target": 2,
-   "valueTo": "hasEnd",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasEnd"
-  },
-  {
-   "source": 13,
+   "source": 6,
    "target": 2,
    "valueTo": "hasEnd",
    "propertyTo": "class",
@@ -849,14 +2095,7 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2006/time#hasEnd"
   },
   {
-   "source": 11,
-   "target": 2,
-   "valueTo": "hasEnd",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasEnd"
-  },
-  {
-   "source": 10,
+   "source": 8,
    "target": 2,
    "valueTo": "hasEnd",
    "propertyTo": "class",
@@ -870,648 +2109,25 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2006/time#hasEnd"
   },
   {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
    "source": 13,
-   "target": 14,
-   "valueTo": "intervalBefore",
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalBefore",
+   "source": 10,
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
    "source": 11,
-   "target": 14,
-   "valueTo": "intervalBefore",
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalBefore",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalBefore"
-  },
-  {
-   "source": 1,
-   "target": 6,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 1,
-   "target": 8,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 1,
-   "target": 9,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 1,
-   "target": 10,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 1,
-   "target": 7,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 11,
-   "target": 6,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 11,
-   "target": 8,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 11,
-   "target": 9,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 11,
-   "target": 10,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 11,
-   "target": 7,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 12,
-   "target": 6,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 12,
-   "target": 8,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 12,
-   "target": 9,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 12,
-   "target": 10,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 12,
-   "target": 7,
-   "valueTo": "hasClusterMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasClusterMember"
-  },
-  {
-   "source": 1,
-   "target": 6,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 1,
-   "target": 8,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 1,
-   "target": 9,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 1,
-   "target": 10,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 1,
-   "target": 7,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 14,
-   "target": 6,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 14,
-   "target": 8,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 14,
-   "target": 9,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 14,
-   "target": 10,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 14,
-   "target": 7,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 13,
-   "target": 6,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 13,
-   "target": 8,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 13,
-   "target": 9,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 13,
-   "target": 10,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 13,
-   "target": 7,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 12,
-   "target": 6,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 12,
-   "target": 8,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 12,
-   "target": 9,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 12,
-   "target": 10,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 12,
-   "target": 7,
-   "valueTo": "hasHorizonMember",
-   "propertyTo": "class",
-   "uriTo": "http://archaeology.link/ontology#hasHorizonMember"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalOverlaps",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
    "source": 14,
@@ -1521,14 +2137,7 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
-   "source": 6,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 8,
+   "source": 1,
    "target": 2,
    "valueTo": "hasBeginning",
    "propertyTo": "class",
@@ -1542,1765 +2151,225 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
-   "source": 1,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 13,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 9,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 12,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 11,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 10,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 7,
-   "target": 2,
-   "valueTo": "hasBeginning",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
-  },
-  {
-   "source": 14,
-   "target": 6,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 14,
-   "target": 8,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 14,
-   "target": 9,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 14,
-   "target": 10,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 14,
-   "target": 7,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 1,
-   "target": 6,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 1,
-   "target": 8,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 1,
-   "target": 9,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 1,
-   "target": 10,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 1,
-   "target": 7,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 13,
-   "target": 6,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 13,
-   "target": 8,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 13,
-   "target": 9,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 13,
-   "target": 10,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 13,
-   "target": 7,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 11,
-   "target": 6,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 11,
-   "target": 8,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 11,
-   "target": 9,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 11,
-   "target": 10,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 11,
-   "target": 7,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 12,
-   "target": 6,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 12,
-   "target": 8,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 12,
-   "target": 9,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 12,
-   "target": 10,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 12,
-   "target": 7,
-   "valueTo": "hasFeature",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasFeature"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalDuring",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
-  },
-  {
-   "source": 14,
-   "target": 5,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 14,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 14,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 10,
-   "target": 5,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 10,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 10,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
    "source": 6,
-   "target": 5,
-   "valueTo": "hasGeometry",
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 6,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 6,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 1,
-   "target": 5,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 1,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 1,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 13,
-   "target": 5,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 13,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 13,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
    "source": 9,
-   "target": 5,
-   "valueTo": "hasGeometry",
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 9,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 9,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
    "source": 12,
-   "target": 5,
-   "valueTo": "hasGeometry",
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 12,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 12,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 11,
-   "target": 5,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 11,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 11,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
    "source": 8,
-   "target": 5,
-   "valueTo": "hasGeometry",
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 8,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 8,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
    "source": 7,
-   "target": 5,
-   "valueTo": "hasGeometry",
+   "target": 2,
+   "valueTo": "hasBeginning",
    "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 7,
-   "target": 3,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 7,
-   "target": 4,
-   "valueTo": "hasGeometry",
-   "propertyTo": "class",
-   "uriTo": "http://www.opengis.net/ont/geosparql#hasGeometry"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+   "uriTo": "http://www.w3.org/2006/time#hasBeginning"
   },
   {
    "source": 13,
    "target": 13,
-   "valueTo": "intervalStarts",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 13,
    "target": 11,
-   "valueTo": "intervalStarts",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 13,
    "target": 12,
-   "valueTo": "intervalStarts",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 11,
    "target": 13,
-   "valueTo": "intervalStarts",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 11,
    "target": 11,
-   "valueTo": "intervalStarts",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 11,
    "target": 12,
-   "valueTo": "intervalStarts",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalStarts",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 14,
    "target": 13,
-   "valueTo": "intervalOverlappedBy",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 14,
    "target": 11,
-   "valueTo": "intervalOverlappedBy",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 14,
    "target": 12,
-   "valueTo": "intervalOverlappedBy",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 1,
    "target": 13,
-   "valueTo": "intervalOverlappedBy",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 1,
    "target": 11,
-   "valueTo": "intervalOverlappedBy",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalOverlappedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalOverlappedBy"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 1,
    "target": 14,
-   "valueTo": "intervalAfter",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 1,
    "target": 1,
-   "valueTo": "intervalAfter",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 1,
    "target": 12,
-   "valueTo": "intervalAfter",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalAfter",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 12,
    "target": 13,
-   "valueTo": "intervalAfter",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 12,
    "target": 11,
-   "valueTo": "intervalAfter",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalOverlaps",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 12,
    "target": 12,
-   "valueTo": "intervalAfter",
+   "valueTo": "intervalOverlaps",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalAfter"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalOverlaps"
   },
   {
    "source": 13,
-   "target": 14,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalStartedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalFinishedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 14,
-   "target": 13,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 14,
-   "target": 11,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 12,
-   "target": 12,
-   "valueTo": "intervalMeets",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
-  },
-  {
-   "source": 14,
-   "target": 14,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 14,
    "target": 13,
    "valueTo": "intervalFinishes",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
-   "source": 14,
+   "source": 13,
    "target": 11,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 14,
-   "target": 12,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 1,
-   "target": 12,
    "valueTo": "intervalFinishes",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
@@ -3321,21 +2390,21 @@ var minivowlresult={
   },
   {
    "source": 13,
+   "target": 12,
+   "valueTo": "intervalFinishes",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 11,
    "target": 13,
    "valueTo": "intervalFinishes",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
-   "source": 13,
+   "source": 11,
    "target": 11,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 13,
-   "target": 12,
    "valueTo": "intervalFinishes",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
@@ -3356,55 +2425,6 @@ var minivowlresult={
   },
   {
    "source": 11,
-   "target": 13,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 12,
-   "target": 13,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 12,
-   "target": 11,
-   "valueTo": "intervalFinishes",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
-  },
-  {
-   "source": 12,
    "target": 12,
    "valueTo": "intervalFinishes",
    "propertyTo": "class",
@@ -3412,178 +2432,1158 @@ var minivowlresult={
   },
   {
    "source": 14,
-   "target": 14,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 14,
-   "target": 1,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 14,
    "target": 13,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 14,
    "target": 11,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalFinishes",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalFinishes",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 14,
    "target": 12,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 1,
    "target": 13,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 1,
    "target": 11,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalFinishes",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalFinishes",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 1,
    "target": 12,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 13,
-   "target": 14,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 13,
-   "target": 1,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 13,
-   "target": 13,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 13,
-   "target": 11,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 13,
-   "target": 12,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 11,
-   "target": 14,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 11,
-   "target": 1,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 11,
-   "target": 13,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 11,
-   "target": 11,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 11,
-   "target": 12,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 12,
-   "target": 14,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
-  },
-  {
-   "source": 12,
-   "target": 1,
-   "valueTo": "intervalMetBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 12,
    "target": 13,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 12,
    "target": 11,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalFinishes",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalFinishes",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
   },
   {
    "source": 12,
    "target": 12,
-   "valueTo": "intervalMetBy",
+   "valueTo": "intervalFinishes",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2006/time#intervalMetBy"
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishes"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalStartedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStartedBy"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalFinishedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalFinishedBy"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalContains",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalContains"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalStarts",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalStarts"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalDuring",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalDuring"
+  },
+  {
+   "source": 13,
+   "target": 13,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 13,
+   "target": 11,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 13,
+   "target": 14,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 13,
+   "target": 1,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 13,
+   "target": 12,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 11,
+   "target": 13,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 11,
+   "target": 11,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 11,
+   "target": 14,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 11,
+   "target": 1,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 11,
+   "target": 12,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 14,
+   "target": 13,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 14,
+   "target": 11,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 14,
+   "target": 14,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 14,
+   "target": 1,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 14,
+   "target": 12,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 12,
+   "target": 13,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 12,
+   "target": 11,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 12,
+   "target": 14,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 12,
+   "target": 1,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
+  },
+  {
+   "source": 12,
+   "target": 12,
+   "valueTo": "intervalMeets",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2006/time#intervalMeets"
   }
  ]
 }
