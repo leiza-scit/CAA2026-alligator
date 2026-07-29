@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variabilité intra-groupe par type de service — construction et lecture de la figure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+                     svg: { fontCache: 'global' } };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+:root{
+  --ink:#1b2430;
+  --ink-soft:#46525f;
+  --paper:#fbfaf7;
+  --paper-2:#f2efe8;
+  --rule:#d9d3c6;
+  --slip:#9e3b26;
+  --slip-tint:#f6e8e3;
+  --ochre:#b07d31;
+  --sage:#40655c;
+  --sage-tint:#e6efeb;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,sans-serif;
+  font-size:16px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+
+.tabs{position:sticky; top:0; z-index:50; background:var(--ink); border-bottom:3px solid var(--slip)}
+.tabs-inner{max-width:1080px; margin:0 auto; display:flex; align-items:stretch; gap:2px; padding:0 24px}
+.tab{
+  display:flex; align-items:center; gap:.55rem;
+  padding:.85rem 1.4rem; text-decoration:none;
+  font-size:.83rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  color:#9aa7b4; border-bottom:3px solid transparent; margin-bottom:-3px;
+}
+.tab:hover{color:#e7e3da; background:rgba(255,255,255,.05)}
+.tab[aria-current="page"]{color:var(--paper); border-bottom-color:var(--slip); background:rgba(158,59,38,.18)}
+.tab .num{font-family:"IBM Plex Mono",monospace; font-size:.72rem; opacity:.65; font-weight:400}
+
+header.mast{background:var(--ink); color:var(--paper); padding:3.4rem 24px 3rem}
+.mast-inner{max-width:1080px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:2.5rem; align-items:end}
+.mast h1{
+  font-family:Spectral,Georgia,serif; font-weight:600;
+  font-size:clamp(1.9rem,4vw,2.9rem); line-height:1.14; margin:0 0 .7rem; letter-spacing:-.01em;
+}
+.mast .kicker{
+  font-family:"IBM Plex Mono",monospace; font-size:.76rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ochre); margin:0 0 1.1rem;
+}
+.mast p.lede{margin:0; max-width:56ch; color:#c3cbd3; font-size:1.02rem}
+.stamp{opacity:.9}
+
+main{max-width:1080px; margin:0 auto; padding:0 24px 6rem}
+section{padding-top:3.2rem; scroll-margin-top:4.5rem}
+h2{font-family:Spectral,Georgia,serif; font-weight:600; font-size:1.55rem; margin:0 0 .3rem; display:flex; align-items:center; gap:.85rem}
+h3{font-family:Spectral,Georgia,serif; font-weight:600; font-size:1.13rem; margin:2rem 0 .5rem}
+h2 + .sub{margin:0 0 1.5rem 3.6rem; color:var(--ink-soft); font-size:.94rem; border-left:2px solid var(--rule); padding-left:.9rem}
+p{max-width:74ch}
+a{color:var(--slip)}
+code,.mono{font-family:"IBM Plex Mono",monospace; font-size:.88em}
+p code, li code, td code{background:var(--paper-2); padding:.1em .38em; border-radius:2px}
+
+.ansa{flex:0 0 auto}
+
+.formula{background:#fff; border:1px solid var(--rule); border-left:3px solid var(--slip); padding:.4rem 1.3rem; margin:1.2rem 0; overflow-x:auto}
+.formula .why{font-size:.88rem; color:var(--ink-soft); border-top:1px dashed var(--rule); margin-top:.2rem; padding:.7rem 0 .3rem}
+.note{background:var(--sage-tint); border-left:3px solid var(--sage); padding:.9rem 1.2rem; margin:1.3rem 0; font-size:.94rem}
+.warn{background:var(--slip-tint); border-left:3px solid var(--slip); padding:.9rem 1.2rem; margin:1.3rem 0; font-size:.94rem}
+.note strong,.warn strong{font-weight:600}
+.open{border:1px dashed var(--ochre); background:#fdf8ef; padding:.9rem 1.2rem; margin:1.3rem 0; font-size:.94rem}
+.open::before{
+  content:"Open question"; display:block;
+  font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ochre); margin-bottom:.35rem;
+}
+
+table{border-collapse:collapse; width:100%; margin:1.3rem 0; font-size:.9rem}
+th,td{border-bottom:1px solid var(--rule); padding:.55rem .7rem; text-align:left; vertical-align:top}
+th.num,td.num{text-align:right; white-space:nowrap}
+thead th.raw{text-transform:none; letter-spacing:.02em; font-size:.8rem}
+thead th{background:var(--paper-2); border-bottom:2px solid var(--ink); font-size:.74rem; letter-spacing:.07em; text-transform:uppercase; font-weight:600}
+td.num{text-align:right; font-family:"IBM Plex Mono",monospace}
+tbody tr:hover{background:#fff}
+tr.degen td{color:var(--ink-soft)}
+
+pre{
+  background:var(--ink); color:#dfe5ea; padding:1.1rem 1.3rem; overflow-x:auto;
+  font-family:"IBM Plex Mono",monospace; font-size:.82rem; line-height:1.55;
+  border-left:3px solid var(--ochre); margin:1.2rem 0;
+}
+pre .c{color:#8d9aa6; font-style:italic}
+pre .k{color:#e0a06a}
+
+figure{margin:1.8rem 0}
+figure svg{max-width:100%; height:auto; display:block}
+/* keep inline maths inline — MathJax containers otherwise break the line */
+mjx-container{display:inline-block !important; margin:0 .12em; line-height:0}
+mjx-container[display="true"]{display:block !important; margin:.7em 0; text-align:center}
+
+figcaption{font-size:.85rem; color:var(--ink-soft); margin-top:.6rem; border-top:1px solid var(--rule); padding-top:.5rem; max-width:74ch}
+
+.pill{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; padding:.15em .55em; border:1px solid currentColor; border-radius:2px; vertical-align:.1em}
+.pill.keep{color:var(--sage)}
+.pill.drop{color:var(--slip)}
+.pill.legacy{color:var(--ochre)}
+
+nav.toc{background:#fff; border:1px solid var(--rule); padding:1.3rem 1.5rem; margin-top:2.6rem; columns:2; column-gap:2.5rem}
+nav.toc h2{font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; font-family:"IBM Plex Mono",monospace; margin:0 0 .7rem; column-span:all; color:var(--ink-soft)}
+nav.toc ol{margin:0; padding-left:1.4rem; font-size:.9rem}
+nav.toc li{margin:.28rem 0; break-inside:avoid}
+nav.toc a{text-decoration:none; color:var(--ink)}
+nav.toc a:hover{color:var(--slip); text-decoration:underline}
+
+footer{border-top:3px solid var(--ink); margin-top:4rem; padding:2rem 24px 3rem; font-size:.85rem; color:var(--ink-soft)}
+footer .fi{max-width:1080px; margin:0 auto}
+
+@media (max-width:760px){
+  .mast-inner{grid-template-columns:1fr}
+  .stamp{display:none}
+  nav.toc{columns:1}
+  h2 + .sub{margin-left:0}
+}
+@media print{
+  .tabs{display:none} header.mast{background:#fff;color:#000}
+  .mast .lede{color:#333} pre{background:#f4f4f4;color:#000}
+}
+</style>
+</head>
+<body>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    <a class="tab" href="../sparql.html">← Page d’interrogation</a>
+    <a class="tab" aria-current="page" href="service_group_variability_explained_fr.html">Note de variabilité</a>
+    <a class="tab" href="service_group_variability_explained.html">English</a>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="mast-inner">
+    <div>
+      <p class="kicker">CAA 2026 · chaîne Alligator · note de figure</p>
+      <h1>Variabilité intra-groupe<br>par type de service</h1>
+      <p class="lede">Guide de lecture de <code>service_group_variability</code> : ce que compte une cellule, ce que les deux panneaux s’apportent — et ne s’apportent pas — mutuellement, et le trait structurel des données qui rend deux des trois colonnes illisibles tant qu’il n’est pas déclaré.</p>
+    </div>
+    <svg class="stamp" width="230" height="120" viewBox="0 0 230 120" aria-hidden="true">
+      <g fill="none" stroke="#b07d31" stroke-width="1.5">
+        <path d="M45 30 L185 30 L185 90 L45 90 Z"/>
+        <path d="M45 30 L18 45 L18 75 L45 90"/>
+        <path d="M185 30 L212 45 L212 75 L185 90"/>
+        <path d="M52 37 L178 37 L178 83 L52 83 Z" stroke-opacity=".45"/>
+      </g>
+      <text x="115" y="68" text-anchor="middle" fill="#fbfaf7"
+            font-family="Spectral, Georgia, serif" font-size="23" letter-spacing="3">SERV I·II</text>
+    </svg>
+  </div>
+</header>
+
+<main>
+
+<nav class="toc">
+  <h2>Sommaire</h2>
+  <ol>    <li><a href="#cell">Ce qu’est une cellule</a></li>    <li><a href="#chain">Du tableur à la cellule</a></li>    <li><a href="#seriation">D’où viennent les cinq lignes</a></li>    <li><a href="#graph">La statistique comme donnée</a></li>    <li><a href="#ranks">La grandeur qui se disperse</a></li>    <li><a href="#sigma">Variance intra-groupe</a></li>    <li><a href="#q">De \(\sigma\) à \(q\)</a></li>    <li><a href="#panels">Pourquoi les deux panneaux ne font qu’une grandeur</a></li>    <li><a href="#degenerate">La cellule dégénérée</a></li>    <li><a href="#n">Ce qu’est \(n\)</a></li>    <li><a href="#servicei">Lire la colonne Service I</a></li>    <li><a href="#cells">Tableau des cellules</a></li>    <li><a href="#limits">Limites et questions ouvertes</a></li>    <li><a href="#origin">Ce que la déclaration fixe</a></li>    <li><a href="#legend">Glossaire de la légende</a></li>  </ol>
+</nav>
+
+<section id="cell">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">1</text></svg>Ce qu’est une cellule</h2>  <p class="sub">L’unité de la figure, énoncée avant tout calcul.</p>  <p>Une cellule, dans l’un ou l’autre panneau, est un couple : un <strong>horizon</strong> chronologique (ligne) et un <strong>groupe de service</strong> (colonne). Trois groupes sont portés — <em>Assiette à bord oblique</em>, <em>Service I</em>, <em>Service II</em> — face à cinq horizons, soit quinze positions, dont douze sont occupées.</p>  <p>Ce que la cellule rapporte n’est <em>ni</em> une date <em>ni</em> un effectif. C’est une mesure de l’écartement des rangs chronologiques des sous-types du groupe, sur l’ensemble du matériel affecté à cet horizon. Le panneau gauche donne cette dispersion en unités de rang ; le panneau droit, la même dispersion ramenée à un score borné. Rien, dans aucun des deux, ne s’exprime en années.</p>  <div class="note"><strong>Lire la figure comme une seule mesure montrée deux fois.</strong> Le panneau droit est une fonction déterministe du gauche, évaluée cellule par cellule. Une cellule rouge à gauche est nécessairement basse à droite. Les deux panneaux ne constituent pas deux faisceaux d’indices et ne doivent jamais être cités comme se confirmant l’un l’autre.</div></section>
+<section id="chain">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">2</text></svg>Du tableur à la cellule</h2>  <p class="sub">Quatre affectations, dont chacune se discute séparément.</p>  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 250" role="img" aria-label="Aggregation chain from the spreadsheet through horizon assignment and group assignment to one heatmap cell, with the counts running in a separate lane"> <defs> <marker id="ch-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"> <path d="M0,0 L8,4 L0,8 z" fill="#46525f"/> </marker> <marker id="ch-ar-g" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"> <path d="M0,0 L8,4 L0,8 z" fill="#a29b8c"/> </marker> </defs> <!-- stage boxes --> <g fill="#fff" stroke="#d9d3c6"> <rect x="14" y="26" width="150" height="66"/> <rect x="190" y="26" width="150" height="66"/> <rect x="366" y="26" width="150" height="66"/> </g> <rect x="556" y="26" width="128" height="66" fill="#9e3b26" fill-opacity=".14" stroke="#9e3b26"/> <g font-family="Public Sans" font-size="10.5" fill="#1b2430" text-anchor="middle"> <text x="89" y="48">ArretineDatedSites</text> <text x="89" y="62">ServicesI_II.xlsx</text> <text x="89" y="80" fill="#46525f">45 sites · 9 sous-types</text> <text x="265" y="48">affecter chaque site</text> <text x="265" y="62">à un horizon</text> <text x="265" y="80" fill="#46525f">FINDSPOT_HORIZON · 5 classes</text> <text x="441" y="48">affecter chaque sous-type</text> <text x="441" y="62">à un groupe de service</text> <text x="441" y="80" fill="#46525f">9 sous-types → 3 groupes</text> <text x="620" y="52" fill="#9e3b26" font-size="11.5" font-weight="600">une cellule</text> <text x="620" y="70" fill="#9e3b26">(horizon, groupe)</text> </g> <g stroke="#46525f" stroke-width="1.2" marker-end="url(#ch-ar)"> <line x1="164" y1="59" x2="184" y2="59"/> <line x1="340" y1="59" x2="360" y2="59"/> <line x1="516" y1="59" x2="550" y2="59"/> </g> <!-- outputs --> <g stroke="#46525f" stroke-width="1.2" fill="none"> <line x1="620" y1="92" x2="620" y2="116"/> <line x1="470" y1="116" x2="620" y2="116"/> <line x1="470" y1="116" x2="470" y2="134" marker-end="url(#ch-ar)"/> <line x1="620" y1="116" x2="620" y2="134" marker-end="url(#ch-ar)"/> </g> <rect x="400" y="140" width="140" height="34" fill="#fff" stroke="#9e3b26"/> <rect x="556" y="140" width="128" height="34" fill="#fff" stroke="#40655c"/> <g font-family="Public Sans" font-size="10.5" text-anchor="middle"> <text x="470" y="161" fill="#9e3b26">σ · panneau gauche</text> <text x="620" y="161" fill="#40655c">q · panneau droit</text> </g> <!-- counts feed both statistics: n is the N of the formula, not a caption --> <g stroke="#46525f" stroke-width="1.2" fill="none"> <line x1="89" y1="92" x2="89" y2="218"/> <line x1="89" y1="218" x2="620" y2="218"/> <line x1="470" y1="218" x2="470" y2="180" marker-end="url(#ch-ar)"/> <line x1="620" y1="218" x2="620" y2="180" marker-end="url(#ch-ar)"/> </g> <g font-family="Public Sans" font-size="10.5" fill="#46525f"> <text x="240" y="238" text-anchor="middle">effectifs de tessons — le N des deux statistiques, non une légende à côté d’elles</text> </g> </svg>
+    <figcaption>Deux des quatre étapes sont des conventions et non des mesures : l’affectation aux horizons est un dictionnaire en dur, et le regroupement des neuf sous-types en trois groupes de service est une décision typologique. Toutes deux relèvent de la provenance de tout export RDF, car aucune ne se déduit des nombres. Les effectifs ne sont pas une cinquième étape mais l’échantillon lui-même — voir <a href="#n">§8</a>.</figcaption>
+  </figure></section>
+<section id="seriation">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">2a</text></svg>D’où viennent les cinq lignes</h2>  <p class="sub">L’affectation aux horizons, et jusqu’où elle suit la sériation.</p>  <p>Les lignes de la figure ne sont pas une découpe mécanique de la sériation. <code>FINDSPOT_HORIZON</code> est une table tenue à la main — une ligne par site, modifiée quand l’archéologie l’exige — et les intervalles d’horizon sont ensuite l’enveloppe des dates estimées de leurs membres. Porter les sites sur le premier axe de l’analyse factorielle des correspondances montre à quel point les deux concordent, et exactement où elles divergent.</p>  <p>Les libellés de sites diffèrent entre le classeur et le TTL : la recherche n’est donc pas un simple accès au dictionnaire. <code>resolve_horizon()</code> essaie le libellé, puis <code>PERCENT_LABEL_CORRECTIONS</code>, puis ce pont en sens inverse. Le camp que le TTL nomme <em>Nijmegen, Lager</em> figure dans le classeur comme <em>Nijmegen, Lager (Haalebos)</em>, et constitue un site distinct de <em>Nijmegen, Lager (Brunsting)</em>. Tout code lisant l’horizon d’un site doit passer par <code>resolve_horizon()</code> plutôt qu’indexer directement <code>FINDSPOT_HORIZON</code>, faute de quoi le camp de Haalebos disparaît silencieusement.</p>  <figure>
+    <svg viewBox="0 0 700 300" role="img" aria-label="seriation to horizons (fr)">
+  <rect x="0" y="0" width="700" height="300" fill="#fbfaf7"/>
+      <line x1="70.0" y1="230" x2="600.0" y2="230" stroke="#46525f"/>
+      <line x1="70.0" y1="66" x2="600.0" y2="66" stroke="#eee8dc"/>
+      <text x="62.0" y="70" text-anchor="end" font-family="Public Sans" font-size="10.5" fill="#9e3b26">H1</text>
+      <text x="610.0" y="70" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="8.5" fill="#8a8272">-15 … -7</text>
+      <line x1="70.0" y1="100" x2="600.0" y2="100" stroke="#eee8dc"/>
+      <text x="62.0" y="104" text-anchor="end" font-family="Public Sans" font-size="10.5" fill="#b8604a">H2</text>
+      <text x="610.0" y="104" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="8.5" fill="#8a8272">-15 … 13</text>
+      <line x1="70.0" y1="134" x2="600.0" y2="134" stroke="#eee8dc"/>
+      <text x="62.0" y="138" text-anchor="end" font-family="Public Sans" font-size="10.5" fill="#b07d31">H3</text>
+      <text x="610.0" y="138" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="8.5" fill="#8a8272">-7 … 9</text>
+      <line x1="70.0" y1="168" x2="600.0" y2="168" stroke="#eee8dc"/>
+      <text x="62.0" y="172" text-anchor="end" font-family="Public Sans" font-size="10.5" fill="#6b8a6a">H4</text>
+      <text x="610.0" y="172" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="8.5" fill="#8a8272">8 … 13</text>
+      <line x1="70.0" y1="202" x2="600.0" y2="202" stroke="#eee8dc"/>
+      <text x="62.0" y="206" text-anchor="end" font-family="Public Sans" font-size="10.5" fill="#40655c">H5</text>
+      <text x="610.0" y="206" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="8.5" fill="#8a8272">16 … 28</text>
+      <circle cx="89.6" cy="66" r="3.6" fill="#9e3b26"/>
+      <circle cx="159.9" cy="66" r="3.6" fill="#9e3b26"/>
+      <circle cx="222.3" cy="66" r="3.6" fill="#9e3b26"/>
+      <circle cx="223.6" cy="66" r="3.6" fill="#9e3b26"/>
+      <circle cx="248.4" cy="66" r="3.6" fill="#9e3b26"/>
+      <circle cx="312.5" cy="66" r="3.6" fill="#9e3b26"/>
+      <circle cx="314.4" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="341.4" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="350.0" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="362.5" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="377.9" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="380.9" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="386.7" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="394.2" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="406.4" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="409.3" cy="100" r="3.6" fill="#b8604a"/>
+      <circle cx="415.8" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="433.2" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="440.2" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="445.5" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="451.9" cy="168" r="7.5" fill="none" stroke="#9e3b26" stroke-width="1.3"/>
+      <circle cx="451.9" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="457.4" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="458.4" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="467.0" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="470.2" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="471.2" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="472.9" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="477.0" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="490.4" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="499.8" cy="134" r="7.5" fill="none" stroke="#9e3b26" stroke-width="1.3"/>
+      <circle cx="499.8" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="501.5" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="501.9" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="505.1" cy="134" r="7.5" fill="none" stroke="#9e3b26" stroke-width="1.3"/>
+      <circle cx="505.1" cy="134" r="3.6" fill="#b07d31"/>
+      <circle cx="507.0" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="514.8" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="517.6" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="518.3" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="523.8" cy="202" r="7.5" fill="none" stroke="#9e3b26" stroke-width="1.3"/>
+      <circle cx="523.8" cy="202" r="3.6" fill="#40655c"/>
+      <circle cx="537.4" cy="168" r="3.6" fill="#6b8a6a"/>
+      <circle cx="550.4" cy="202" r="3.6" fill="#40655c"/>
+      <circle cx="558.0" cy="202" r="3.6" fill="#40655c"/>
+      <circle cx="575.1" cy="202" r="3.6" fill="#40655c"/>
+      <circle cx="576.0" cy="202" r="3.6" fill="#40655c"/>
+      <circle cx="580.4" cy="202" r="3.6" fill="#40655c"/>
+      <text x="70.0" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">-2,1</text>
+      <text x="176.0" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">-1,5</text>
+      <text x="282.0" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">-0,9</text>
+      <text x="388.00000000000006" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">-0,3</text>
+      <text x="494.0" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">0,3</text>
+      <text x="600.0" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">0,9</text>
+      <text x="335" y="268" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">premier axe de l’analyse factorielle des correspondances — l’ordre de sériation</text>
+      <circle cx="86" cy="286" r="7.5" fill="none" stroke="#9e3b26" stroke-width="1.3"/>
+      <circle cx="86" cy="286" r="3.6" fill="#b07d31"/>
+      <text x="102" y="290" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#1b2430">4 sites contre l’ordre de sériation</text>
+      <text x="352" y="290" text-anchor="start" font-family="Public Sans" font-size="10" fill="#8a8272">non porté : Trier-Petrisberg, sans coordonnée AFC</text>
+</svg>
+
+    <figcaption>Quarante des quarante-quatre sites portés se placent dans l’ordre de sériation ; quatre non. Augst Insula 31 se trouve au milieu du champ de l’horizon 3, Nimègue (Brunsting) et Vetera I parmi le matériel de l’horizon 4, et Augst Insula 20 devant le dernier site de l’horizon 4. On notera aussi que l’horizon 2 couvre de 15 av. J.-C. à 13 apr. J.-C. — presque toute la séquence — parce que son enveloppe est fixée par des sites aux intervalles estimés très larges. Le point le plus à gauche est le camp de Haalebos à Nimègue, le plus ancien sur l’axe et dans l’horizon le plus ancien. Le quarante-cinquième site, Trèves-Petrisberg, n’est pas porté : il n’a aucun événement daté, donc aucune coordonnée AFC, et par conséquent aucun horizon.</figcaption>
+  </figure>  <div class="note"><strong>Pourquoi cette figure a sa place dans l’article.</strong> Elle énonce honnêtement ce qu’est ici un horizon : un jugement archéologique informé par la sériation, non un quantile de celle-ci. Quatre écarts sur quarante-quatre constituent un bon accord, et une affirmation bien plus solide qu’un accord jamais vérifié — et un lecteur souhaitant éprouver le résultat de variance sur un autre regroupement sait désormais précisément quelles quatre affectations faire varier.</div>  <h3>Le quarante-cinquième site, et pourquoi il n’est pas ici</h3>  <p>L’analyse des correspondances a besoin de co-occurrences : un site gagne sa position sur l’axe par la compagnie que ses types tiennent sur les autres sites. Un site ne présentant qu’un seul type n’offre aucune information de ce genre — sa ligne de la matrice ne porte qu’une marque — et il en sort. Il n’a donc pas de coordonnée AFC, et sans elle l’Alligator ne peut le dater : il n’atteint aucun horizon.</p>  <p>Un seul site du corpus se trouve dans ce cas. Trèves-Petrisberg ne livre qu’une assiette à bord oblique et rien d’autre. Le compte se referme dessus :</p>  <table><thead><tr><th>tessons</th><th class="num">effectif</th><th>où</th></tr></thead> <tbody> <tr><td>dans le graphe des services</td><td class="num">7131</td><td>262 observations, tous sites confondus</td></tr> <tr><td>à l’intérieur d’un horizon</td><td class="num">7130</td><td>les douze cellules occupées de la figure</td></tr> <tr><td>différence</td><td class="num">1</td><td>Trèves-Petrisberg, une assiette à bord oblique</td></tr> </tbody></table>  <p>L’exclusion ne coûte rien à la figure. La colonne de l’assiette à bord oblique est dégénérée dans tous les horizons — un sous-type, rang de stade 1 — de sorte que ce tesson ferait monter un \(n\) d’une unité et laisserait \(s = 0{,}00\) et \(q = 1{,}00\) exactement où ils sont. L’inclure supposerait d’attribuer à la main un horizon à un site que la sériation ne peut pas placer du tout, ce qui constitue dans <code>FINDSPOT_HORIZON</code> une entrée d’une autre nature qu’une correction apportée à une position effectivement fournie par la sériation. Le graphique ci-dessus gagnerait un point sans valeur sur son propre axe des abscisses, et l’affirmation selon laquelle quarante sites sur quarante-quatre suivent l’ordre de sériation cesserait d’être vérifiable.</p>  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 245" role="img" aria-label="Une matrice de présence-absence où un site ne présente qu’un type, à côté d’un axe de rangs où un groupe ne tient qu’un rang"> <text x="20" y="24" font-family="Public Sans" font-size="11.5" font-weight="600" fill="#1b2430">Dans l’analyse des correspondances</text> <text x="380" y="24" font-family="Public Sans" font-size="11.5" font-weight="600" fill="#1b2430">Dans le panneau de variance</text> <line x1="352" y1="34" x2="352" y2="190" stroke="#e2ddd1"/> <text x="200" y="46" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#8a8272">types présents →</text> <rect x="120" y="56" width="18" height="18" fill="#46525f"/> <rect x="146" y="56" width="18" height="18" fill="#46525f"/> <rect x="172" y="56" width="18" height="18" fill="#46525f"/> <rect x="198" y="56" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <rect x="224" y="56" width="18" height="18" fill="#46525f"/> <rect x="120" y="80" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <rect x="146" y="80" width="18" height="18" fill="#46525f"/> <rect x="172" y="80" width="18" height="18" fill="#46525f"/> <rect x="198" y="80" width="18" height="18" fill="#46525f"/> <rect x="224" y="80" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <rect x="120" y="104" width="18" height="18" fill="#46525f"/> <rect x="146" y="104" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <rect x="172" y="104" width="18" height="18" fill="#46525f"/> <rect x="198" y="104" width="18" height="18" fill="#46525f"/> <rect x="224" y="104" width="18" height="18" fill="#46525f"/> <rect x="120" y="128" width="18" height="18" fill="#9e3b26"/> <rect x="146" y="128" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <rect x="172" y="128" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <rect x="198" y="128" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <rect x="224" y="128" width="18" height="18" fill="#ffffff" stroke="#d9d3c6"/> <text x="112" y="69" text-anchor="end" font-family="Public Sans" font-size="10" fill="#46525f">site A</text> <text x="112" y="93" text-anchor="end" font-family="Public Sans" font-size="10" fill="#46525f">site B</text> <text x="112" y="117" text-anchor="end" font-family="Public Sans" font-size="10" fill="#46525f">site C</text> <text x="112" y="141" text-anchor="end" font-family="Public Sans" font-size="10" fill="#9e3b26">Trèves-Petrisberg</text> <rect x="114" y="126" width="132" height="22" fill="none" stroke="#9e3b26" stroke-width="1.2"/> <g font-family="Public Sans" font-size="10" fill="#46525f"> <text x="20" y="168">une ligne à une seule marque n’a aucune co-occurrence ;</text> <text x="20" y="182">l’analyse n’a rien contre quoi la positionner</text> </g> <g stroke="#e2ddd1"> <line x1="440" y1="50" x2="440" y2="128"/><line x1="510" y1="50" x2="510" y2="128"/><line x1="580" y1="50" x2="580" y2="128"/> </g> <line x1="400" y1="128" x2="620" y2="128" stroke="#46525f"/> <circle cx="510" cy="58" r="5" fill="#2ca02c"/><circle cx="510" cy="72" r="5" fill="#2ca02c"/><circle cx="510" cy="86" r="5" fill="#2ca02c"/><circle cx="510" cy="100" r="5" fill="#2ca02c"/> <text x="510" y="146" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">Service II · rang 1</text> <g font-family="Public Sans" font-size="10" fill="#46525f"> <text x="380" y="168">tous les tessons portent un seul rang ;</text> <text x="380" y="182">il n’y a aucun contraste dont prendre la variance</text> </g> <line x1="20" y1="204" x2="680" y2="204" stroke="#d9d3c6"/> <text x="350" y="226" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#9e3b26">le même fait structurel à deux échelles — une catégorie unique ne laisse rien à comparer</text> </svg>
+    <figcaption>À gauche : une matrice de présence-absence. Trois sites partagent des types entre eux et peuvent être ordonnés par ce partage ; le quatrième ne porte qu’une marque et ne le peut pas. À droite : la situation du <a href="#degenerate">§7</a>, un groupe dont tous les tessons portent un rang unique. Les deux sont le même fait structurel rencontré à des échelles différentes de la chaîne de traitement — dans l’un comme dans l’autre, une catégorie unique ne laisse rien à comparer, et la sortie honnête est une absence plutôt qu’un nombre.</figcaption>
+  </figure>  <div class="note"><strong>Consigner l’exclusion plutôt que le site.</strong> Un tesson sur 7131 n’est pas un problème ; un écart non documenté entre le total du classeur et celui de la figure en est un. Une table compagnon de <code>FINDSPOT_HORIZON</code> — le site, et la raison pour laquelle il ne porte aucun horizon — coûte trois lignes, survit à une reconstruction et peut être affirmée dans le graphe au titre de la provenance plutôt que de vivre dans une légende. La règle qui la sous-tend a également sa place dans la section méthodologique : <em>les sites ne présentant qu’un seul type sont écartés par l’analyse des correspondances</em> est un filtre avec une conséquence sur la taille d’échantillon, et un rapporteur posera la question.</div></section>
+<section id="graph">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">2b</text></svg>La statistique comme donnée</h2>  <p class="sub">Pourquoi les rangs sont des propriétés de concepts et non des constantes de script.</p>  <p>Chaque grandeur sur laquelle repose la figure est un triplet d’un graphe publié : l’effectif de tessons, le rang de stade, l’appartenance au groupe, l’horizon. Rien n’est un nombre magique enfoui dans le code de tracé, et il en résulte que la figure peut être recalculée par un lecteur qui n’a jamais vu le script.</p>  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 340" role="img" aria-label="La forme RDF derrière la figure : nœuds horizon, site, observation, concept et groupe"> <defs><marker id="rdf-a" markerWidth="7" markerHeight="7" refX="6.4" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#46525f"/></marker></defs> <rect x="8" y="40" width="150" height="40" fill="#40655c" fill-opacity=".12" stroke="#40655c"/> <text x="83" y="58" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#40655c">aecol:horizon_3</text> <text x="83" y="72" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">lado:ChronologicalHorizon</text> <rect x="8" y="140" width="150" height="40" fill="#fff" stroke="#d9d3c6"/> <text x="83" y="158" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#1b2430">ae:Gjndwx</text> <text x="83" y="172" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">« Haltern » · graphe de base</text> <rect x="268" y="140" width="164" height="40" fill="#9e3b26" fill-opacity=".12" stroke="#9e3b26"/> <text x="350" y="158" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#9e3b26">aeobs:Gjndwx_ServiceIc_Teller</text> <text x="350" y="172" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">aeont:ServiceCount</text> <rect x="268" y="238" width="164" height="34" fill="#f2efe8" stroke="#d9d3c6"/> <text x="350" y="259" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#1b2430">aeont:sherdCount 287</text> <rect x="530" y="140" width="162" height="40" fill="#b07d31" fill-opacity=".12" stroke="#b07d31"/> <text x="611" y="158" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#b07d31">aevoc:ServiceIc_Teller</text> <text x="611" y="172" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">skos:Concept · feuille</text> <rect x="530" y="238" width="162" height="46" fill="#f2efe8" stroke="#d9d3c6"/> <text x="611" y="256" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#1b2430">aeont:stageRank 3</text> <text x="611" y="272" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">aeont:columnRank 6</text> <rect x="526" y="40" width="170" height="40" fill="#fff" stroke="#d9d3c6"/> <text x="611" y="58" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#1b2430">aevoc:ServiceI</text> <text x="611" y="72" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">skos:topConceptOf · le groupe</text> <g stroke="#46525f" stroke-width="1.1" fill="none" marker-end="url(#rdf-a)"> <line x1="83" y1="80" x2="83" y2="134"/> <line x1="262" y1="160" x2="164" y2="160"/> <line x1="438" y1="160" x2="524" y2="160"/> <line x1="350" y1="180" x2="350" y2="232"/> <line x1="611" y1="180" x2="611" y2="232"/> <line x1="611" y1="134" x2="611" y2="86"/> </g> <g font-family="IBM Plex Mono, monospace" font-size="9" fill="#46525f"> <text x="90" y="112">lado:hasHorizonMember</text> <text x="620" y="112">skos:broader*</text> </g> <g font-family="IBM Plex Mono, monospace" font-size="8.5" fill="#46525f" text-anchor="middle"> <text x="213" y="152">aeont:atFindspot</text> <text x="481" y="152">aeont:serviceType</text> </g> <line x1="8" y1="302" x2="692" y2="302" stroke="#d9d3c6"/> <text x="8" y="320" font-family="Public Sans" font-size="10.5" fill="#1b2430">Une seule requête SPARQL sur cette forme renvoie N, &#931;r&#183;c et &#931;r&#178;&#183;c par (horizon, groupe)</text> <text x="8" y="334" font-family="Public Sans" font-size="10.5" fill="#1b2430">— toute la statistique, recalculable par quiconque.</text> </svg>
+    <figcaption>Les effectifs résident dans un graphe satellite posé sur le graphe de sériation plutôt que fusionnés avec lui : les données et l’analyse restent séparables. Le site conserve l’identifiant opaque forgé par l’Alligator — <code>ae:Gjndwx</code>, étiqueté Haltern — plutôt qu’un identifiant dérivé du libellé, ce qui permet à la couche des décomptes de pointer vers le graphe de base sans rien affirmer à son sujet. Les deux lectures de rang sont portées par concept, <code>aeont:stageRank</code> et <code>aeont:columnRank</code>, ce qui fait de la comparaison du §7 le changement d’une variable dans une requête plutôt qu’une seconde chaîne de traitement.</figcaption>
+  </figure>  <div class="note"><strong>Les statistiques exhaustives sont l’argument d’interopérabilité.</strong> Comme la variance intra-groupe ne requiert que \(N\), \(\sum r c\) et \(\sum r^{2} c\), la méthode tout entière survit à un moteur de requête dépourvu de <code>SQRT</code> et d’<code>EXP</code> — ce qui est le cas du SPARQL de rdflib. La requête renvoie trois sommes par cellule ; la figure imprimée, la figure du navigateur et le carnet exécutent tous les deux dernières étapes en Python à partir de ces mêmes trois nombres, si bien qu’aucun des trois ne peut diverger des autres.</div></section>
+<section id="ranks">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">3</text></svg>La grandeur qui se disperse</h2>  <p class="sub">Des rangs, non des années — et un stade n’est pas un horizon.</p>  <p>Deux systèmes d’ordre se rencontrent dans cette figure et se confondent aisément, car tous deux vont du plus ancien au plus récent et tous deux sont numérotés à partir de 1.</p>  <table><thead><tr><th></th><th>Horizon</th><th>Stade</th></tr></thead> <tbody> <tr><td>ordonne</td><td>les sites</td><td>les sous-types</td></tr> <tr><td>combien</td><td>5, pour tout le corpus</td><td>1 à 3, recommençant dans chaque groupe</td></tr> <tr><td>provient de</td><td>la sériation, figée dans <code>FINDSPOT_HORIZON</code></td><td>la typologie, dérivée dans <code>services_to_rdf.py</code></td></tr> <tr><td>dans la figure</td><td>les cinq lignes</td><td>la valeur portée par chaque cellule</td></tr> <tr><td>calendrier</td><td>porte des intervalles datés (15 av. – 7 av. J.-C. …)</td><td>aucun ; purement ordinal</td></tr> </tbody></table>  <p>Un horizon est une classe de <em>contextes fouillés</em> : Oberaden, Dangstetten et Bâle relèvent de l’horizon 1 parce que la sériation les y place. Un stade est une position dans la <em>séquence typologique d’un groupe de service</em> : Service Ia, Ib, Ic. Rien n’oblige un ensemble de l’horizon 1 à se composer de matériel du stade 1, et de fait il ne s’y compose pas — l’horizon 1 est déjà à 55 % du stade Ic. La figure existe précisément pour mesurer ce mélange.</p>  <figure>
+    <svg viewBox="0 0 700 170" role="img" aria-label="typology ranks (fr)">
+  <rect x="0" y="0" width="700" height="170" fill="#fbfaf7"/>
+      <rect x="20.0" y="26" width="69.3" height="26" fill="#1f77b4" fill-opacity=".14" stroke="#1f77b4"/>
+      <text x="54.666666666666664" y="44" text-anchor="middle" font-family="Public Sans" font-size="7.5" fill="#1f77b4" font-weight="600">Assiette à bord oblique</text>
+      <line x1="54.7" y1="52" x2="54.7" y2="84" stroke="#b9b2a3"/>
+      <rect x="24.0" y="84" width="61.3" height="24" fill="#fff" stroke="#1f77b4"/>
+      <text x="54.666666666666664" y="100" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1f77b4">stade · rang 1</text>
+      <line x1="54.7" y1="108" x2="54.7" y2="132" stroke="#b9b2a3"/>
+      <rect x="25.0" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="54.666666666666664" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">oblique</text>
+      <rect x="107.3" y="26" width="416.0" height="26" fill="#d62728" fill-opacity=".14" stroke="#d62728"/>
+      <text x="315.3333333333333" y="44" text-anchor="middle" font-family="Public Sans" font-size="11.0" fill="#d62728" font-weight="600">Service I</text>
+      <line x1="315.3" y1="52" x2="176.7" y2="84" stroke="#b9b2a3"/>
+      <rect x="111.3" y="84" width="130.7" height="24" fill="#fff" stroke="#d62728"/>
+      <text x="176.66666666666666" y="100" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#d62728">stade · rang 1</text>
+      <line x1="176.7" y1="108" x2="142.0" y2="132" stroke="#b9b2a3"/>
+      <rect x="112.3" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="142.0" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">tasse</text>
+      <line x1="176.7" y1="108" x2="211.3" y2="132" stroke="#b9b2a3"/>
+      <rect x="181.7" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="211.33333333333331" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">assiette</text>
+      <line x1="315.3" y1="52" x2="315.3" y2="84" stroke="#b9b2a3"/>
+      <rect x="250.0" y="84" width="130.7" height="24" fill="#fff" stroke="#d62728"/>
+      <text x="315.3333333333333" y="100" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#d62728">stade · rang 2</text>
+      <line x1="315.3" y1="108" x2="280.7" y2="132" stroke="#b9b2a3"/>
+      <rect x="251.0" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="280.6666666666667" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">tasse</text>
+      <line x1="315.3" y1="108" x2="350.0" y2="132" stroke="#b9b2a3"/>
+      <rect x="320.3" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="350.0" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">assiette</text>
+      <line x1="315.3" y1="52" x2="454.0" y2="84" stroke="#b9b2a3"/>
+      <rect x="388.7" y="84" width="130.7" height="24" fill="#fff" stroke="#d62728"/>
+      <text x="453.99999999999994" y="100" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#d62728">stade · rang 3</text>
+      <line x1="454.0" y1="108" x2="419.3" y2="132" stroke="#b9b2a3"/>
+      <rect x="389.7" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="419.3333333333333" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">tasse</text>
+      <line x1="454.0" y1="108" x2="488.7" y2="132" stroke="#b9b2a3"/>
+      <rect x="459.0" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="488.66666666666663" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">assiette</text>
+      <rect x="541.3" y="26" width="138.7" height="26" fill="#2ca02c" fill-opacity=".14" stroke="#2ca02c"/>
+      <text x="610.6666666666667" y="44" text-anchor="middle" font-family="Public Sans" font-size="11.0" fill="#2ca02c" font-weight="600">Service II</text>
+      <line x1="610.7" y1="52" x2="610.7" y2="84" stroke="#b9b2a3"/>
+      <rect x="545.3" y="84" width="130.7" height="24" fill="#fff" stroke="#2ca02c"/>
+      <text x="610.6666666666667" y="100" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#2ca02c">stade · rang 1</text>
+      <line x1="610.7" y1="108" x2="576.0" y2="132" stroke="#b9b2a3"/>
+      <rect x="546.3" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="576.0" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">tasse</text>
+      <line x1="610.7" y1="108" x2="645.3" y2="132" stroke="#b9b2a3"/>
+      <rect x="615.7" y="132" width="59.3" height="22" fill="#f2efe8" stroke="#d9d3c6"/>
+      <text x="645.3333333333334" y="147" text-anchor="middle" font-family="Public Sans" font-size="9.5" fill="#46525f">assiette</text>
+</svg>
+
+    <figcaption>Dérivé de la typologie dans <code>services_to_rdf.py</code>, et non écrit à la main : les rangs ne peuvent donc pas s’écarter de <code>TYPES</code>. Le Service I compte trois stades et six sous-types ; le Service II, un stade et deux sous-types ; l’assiette à bord oblique est un groupe d’un seul élément. Voilà toute l’explication des deux colonnes plates — voir <a href="#degenerate">§7</a>.</figcaption>
+  </figure>  <figure>
+    <svg viewBox="0 0 700 308" role="img" aria-label="stage composition (fr)">
+  <rect x="0" y="0" width="700" height="308" fill="#fbfaf7"/>
+      <rect x="150" y="18" width="14" height="12" fill="#f2c3bb"/>
+      <text x="170" y="28" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">stade · rang 1</text>
+      <rect x="272" y="18" width="14" height="12" fill="#cc7264"/>
+      <text x="292" y="28" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">stade · rang 2</text>
+      <rect x="394" y="18" width="14" height="12" fill="#9e3b26"/>
+      <text x="414" y="28" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">stade · rang 3</text>
+      <text x="140" y="80" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 5</text>
+      <rect x="150.0" y="62" width="37.4" height="26" fill="#cc7264"/>
+      <text x="168.68932038834953" y="80" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">11%</text>
+      <rect x="187.4" y="62" width="312.6" height="26" fill="#9e3b26"/>
+      <text x="343.68932038834953" y="80" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">89%</text>
+      <text x="512.0" y="75" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,89 · s = 0,31</text>
+      <text x="512.0" y="86" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 103</text>
+      <text x="140" y="118" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 4</text>
+      <rect x="150.0" y="100" width="2.3" height="26" fill="#f2c3bb"/>
+      <rect x="152.3" y="100" width="75.2" height="26" fill="#cc7264"/>
+      <text x="189.93288590604027" y="118" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">21%</text>
+      <rect x="227.5" y="100" width="272.5" height="26" fill="#9e3b26"/>
+      <text x="363.758389261745" y="118" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">78%</text>
+      <text x="512.0" y="113" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,77 · s = 0,44</text>
+      <text x="512.0" y="124" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 149</text>
+      <text x="140" y="156" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 3</text>
+      <rect x="150.0" y="138" width="3.1" height="26" fill="#f2c3bb"/>
+      <rect x="153.1" y="138" width="83.3" height="26" fill="#cc7264"/>
+      <text x="194.7136563876652" y="156" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">24%</text>
+      <rect x="236.3" y="138" width="263.7" height="26" fill="#9e3b26"/>
+      <text x="368.17180616740086" y="156" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">75%</text>
+      <text x="512.0" y="151" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,74 · s = 0,46</text>
+      <text x="512.0" y="162" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 908</text>
+      <text x="140" y="194" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 2</text>
+      <rect x="150.0" y="176" width="23.1" height="26" fill="#f2c3bb"/>
+      <rect x="173.1" y="176" width="132.9" height="26" fill="#cc7264"/>
+      <text x="239.56059735784032" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">38%</text>
+      <rect x="306.0" y="176" width="194.0" height="26" fill="#9e3b26"/>
+      <text x="403.0011487650776" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">55%</text>
+      <text x="512.0" y="189" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,49 · s = 0,62</text>
+      <text x="512.0" y="200" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 1741</text>
+      <text x="140" y="232" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 1</text>
+      <rect x="150.0" y="214" width="38.5" height="26" fill="#f2c3bb"/>
+      <text x="169.22645739910314" y="232" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1a1a1a">11%</text>
+      <rect x="188.5" y="214" width="120.1" height="26" fill="#cc7264"/>
+      <text x="248.48654708520178" y="232" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">34%</text>
+      <rect x="308.5" y="214" width="191.5" height="26" fill="#9e3b26"/>
+      <text x="404.26008968609864" y="232" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">55%</text>
+      <text x="512.0" y="227" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,44 · s = 0,68</text>
+      <text x="512.0" y="238" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 446</text>
+      <line x1="150" y1="262" x2="500" y2="262" stroke="#d9d3c6"/>
+      <text x="325" y="280" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">part des tessons du Service I, par stade</text>
+      <text x="325" y="296" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#9e3b26">horizon plus tardif → la masse se concentre sur un rang → s diminue</text>
+</svg>
+
+    <figcaption>Service I, effectifs réels. <em>s</em> n’est rien de plus mystérieux que l’étalement de ces trois bandes : les 446 tessons de l’horizon 1, répartis 11 / 34 / 55 sur les rangs 1, 2 et 3, donnent x&#772; = 2,44 et <em>s</em> = 0,68 ; à l’horizon 5 presque tout se trouve sur le rang 3, x&#772; monte à 2,89 et <em>s</em> tombe à 0,31. Chaque <em>tesson</em> est une observation — et non chaque sous-type. Le détail du calcul pour l’horizon 1 figure au <a href="#sigma">§4</a>.</figcaption>
+  </figure>  <figure>
+    <svg viewBox="0 0 700 264" role="img" aria-label="rank axis mean sd (fr)">
+  <rect x="0" y="0" width="700" height="264" fill="#fbfaf7"/>
+      <text x="20" y="24" text-anchor="start" font-family="Public Sans" font-size="11.5" fill="#d62728" font-weight="600">Service I · 3 stades</text>
+      <line x1="200" y1="36" x2="200" y2="212" stroke="#e2ddd1"/>
+      <line x1="360" y1="36" x2="360" y2="212" stroke="#e2ddd1"/>
+      <line x1="520" y1="36" x2="520" y2="212" stroke="#e2ddd1"/>
+      <text x="150" y="58" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 5</text>
+      <circle cx="360" cy="54" r="5.94" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="520" cy="54" r="11.51" fill="#9e3b26" fill-opacity=".78"/>
+      <line x1="453.3" y1="69" x2="552.6" y2="69" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="453.3" y1="65" x2="453.3" y2="73" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="552.6" y1="65" x2="552.6" y2="73" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="502.9" y1="41" x2="502.9" y2="73" stroke="#1b2430" stroke-width="1.4"/>
+      <text x="600" y="53" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">s = 0,310</text>
+      <text x="600" y="65" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 103</text>
+      <text x="150" y="92" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 4</text>
+      <circle cx="200" cy="88" r="3.74" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="360" cy="88" r="7.17" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="520" cy="88" r="10.94" fill="#9e3b26" fill-opacity=".78"/>
+      <line x1="413.6" y1="103" x2="553.4" y2="103" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="413.6" y1="99" x2="413.6" y2="107" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="553.4" y1="99" x2="553.4" y2="107" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="483.5" y1="75" x2="483.5" y2="107" stroke="#1b2430" stroke-width="1.4"/>
+      <text x="600" y="87" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">s = 0,437</text>
+      <text x="600" y="99" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 149</text>
+      <text x="150" y="126" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 3</text>
+      <circle cx="200" cy="122" r="3.84" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="360" cy="122" r="7.39" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="520" cy="122" r="10.81" fill="#9e3b26" fill-opacity=".78"/>
+      <line x1="406.1" y1="137" x2="552.1" y2="137" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="406.1" y1="133" x2="406.1" y2="141" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="552.1" y1="133" x2="552.1" y2="141" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="479.1" y1="109" x2="479.1" y2="141" stroke="#1b2430" stroke-width="1.4"/>
+      <text x="600" y="121" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">s = 0,456</text>
+      <text x="600" y="133" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 908</text>
+      <text x="150" y="160" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 2</text>
+      <circle cx="200" cy="156" r="5.31" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="360" cy="156" r="8.55" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="520" cy="156" r="9.70" fill="#9e3b26" fill-opacity=".78"/>
+      <line x1="339.2" y1="171" x2="537.0" y2="171" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="339.2" y1="167" x2="339.2" y2="175" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="537.0" y1="167" x2="537.0" y2="175" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="438.1" y1="143" x2="438.1" y2="175" stroke="#1b2430" stroke-width="1.4"/>
+      <text x="600" y="155" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">s = 0,618</text>
+      <text x="600" y="167" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 1741</text>
+      <text x="150" y="194" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 1</text>
+      <circle cx="200" cy="190" r="5.98" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="360" cy="190" r="8.27" fill="#9e3b26" fill-opacity=".78"/>
+      <circle cx="520" cy="190" r="9.66" fill="#9e3b26" fill-opacity=".78"/>
+      <line x1="320.6" y1="205" x2="539.3" y2="205" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="320.6" y1="201" x2="320.6" y2="209" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="539.3" y1="201" x2="539.3" y2="209" stroke="#b07d31" stroke-width="1.5"/>
+      <line x1="430.0" y1="177" x2="430.0" y2="209" stroke="#1b2430" stroke-width="1.4"/>
+      <text x="600" y="189" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">s = 0,683</text>
+      <text x="600" y="201" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 446</text>
+      <line x1="160" y1="212" x2="600" y2="212" stroke="#46525f"/>
+      <text x="200" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rang 1</text>
+      <text x="360" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rang 2</text>
+      <text x="520" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rang 3</text>
+      <text x="380" y="252" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">rang de stade â l’aire du point est la part des tessons, le trait est x̄, la barre est ±s</text>
+</svg>
+
+    <figcaption>Les mêmes cinq cellules que les barres ci-dessus, portées sur l’axe où vit réellement la statistique. En remontant le bloc, la masse glisse du rang 1 vers le rang 3, le trait la suit et la barre se resserre : ce resserrement <em>est</em> \(s\). Le Service II est tracé sous un filet plutôt qu’en sixième ligne, car son rang 1 est un autre rang — le compteur repart dans chaque groupe et les deux axes ne peuvent être superposés.</figcaption>
+  </figure>  <div class="warn"><strong>L’échelle des rangs n’a ni zéro ni unité.</strong> Les rangs sont des étiquettes ordinales 1, 2, 3… Leur écart-type se défend comme mesure descriptive d’étalement, mais ce n’est pas une variance en années, et il change si l’on renumérote — par exemple si l’on supprime un stade vide et resserre les rangs restants. La numérotation employée doit accompagner la figure.</div></section>
+<section id="sigma">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">4</text></svg>Variance intra-groupe</h2>  <p class="sub">Le panneau gauche. <code>compute_within_group_rgzm()</code>, selon la méthode du RGZM.</p>  <p>Fixons un horizon \(h\) et un groupe de service \(g\). Les observations sont les <strong>tessons</strong> de \(g\) recueillis sur les sites de \(h\) ; chacun prend pour valeur le rang de stade de son sous-type. Notons \(c_j\) l’effectif de tessons du sous-type \(j\) et \(r_j\) son rang.</p>  <div class="formula">\[ N = \sum_j c_j \qquad \overline{x} = \frac{1}{N}\sum_j r_j c_j \qquad s_{g,h} = \sqrt{\frac{\sum_j r_j^{2}c_j - N\overline{x}^{2}}{N-1}} \] <div class="why">L’écart-type d’échantillon — <code>STDDEV_SAMP</code>, dénominateur \(N-1\). C’est la valeur imprimée et colorée dans le panneau gauche, exprimée en unités de rang : \(s = 0\) signifie que tous les tessons sont sur un même rang, et pour un groupe à trois stades la valeur maximale atteignable avoisine 1,0, obtenue lorsque la masse se partage à parts égales entre les rangs 1 et 3. Rapportés à ce plafond, les 0,68 de l’horizon 1 désignent un ensemble véritablement mêlé, et les 0,31 de l’horizon 5 un ensemble concentré.</div></div>  <figure>
+    <svg viewBox="0 0 700 300" role="img" aria-label="one cell worked example (fr)">
+  <rect x="0" y="0" width="700" height="300" fill="#fbfaf7"/>
+      <text x="20" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">l’échantillon</text>
+      <text x="266" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">trois sommes Â· SPARQL</text>
+      <text x="482" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">quatre nombres Â· Python</text>
+      <line x1="246" y1="30" x2="246" y2="252" stroke="#d9d3c6"/>
+      <line x1="462" y1="30" x2="462" y2="252" stroke="#d9d3c6"/>
+      <text x="20" y="64" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#46525f">rang 1</text>
+      <rect x="72" y="52" width="24.3" height="16" fill="#f2c3bb"/>
+      <text x="102.29918032786885" y="64" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#1b2430">49</text>
+      <text x="20" y="98" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#46525f">rang 2</text>
+      <rect x="72" y="86" width="75.9" height="16" fill="#cc7264"/>
+      <text x="153.87295081967213" y="98" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#1b2430">153</text>
+      <text x="20" y="132" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#46525f">rang 3</text>
+      <rect x="72" y="120" width="121.0" height="16" fill="#9e3b26"/>
+      <text x="199.0" y="132" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#1b2430">244</text>
+      <line x1="20" y1="148" x2="226" y2="148" stroke="#d9d3c6"/>
+      <text x="20" y="168" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">tessons de Service I sur les</text>
+      <text x="20" y="184" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">sites de l’horizon 1, selon</text>
+      <text x="20" y="200" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">le rang de stade de leur sous-type</text>
+      <text x="266" y="62" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">N      = 446</text>
+      <text x="266" y="96" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">&#931; r&#183;c  = 1087</text>
+      <text x="266" y="130" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">&#931; r&#178;&#183;c = 2857</text>
+      <text x="266" y="168" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">statistiques exhaustives â la</text>
+      <text x="266" y="184" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">requête n’a besoin de rien de plus,</text>
+      <text x="266" y="200" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">heureusement, car le SPARQL de</text>
+      <text x="266" y="216" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">rdflib n’a ni SQRT ni EXP</text>
+      <text x="482" y="62" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">x&#772;  = 2,437</text>
+      <text x="482" y="96" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">s  = 0,683</text>
+      <text x="482" y="130" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">CV = 0,280</text>
+      <rect x="474" y="146" width="150" height="30" fill="#9e3b26" fill-opacity=".12" stroke="#9e3b26"/>
+      <text x="482" y="166" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#9e3b26">q  = 0,756</text>
+      <text x="482" y="200" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">les deux valeurs imprimées sont</text>
+      <text x="482" y="216" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">s et q ; x̄ et CV sont les</text>
+      <text x="482" y="232" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">étapes intermédiaires</text>
+      <line x1="20" y1="266" x2="660" y2="266" stroke="#d9d3c6"/>
+      <text x="20" y="288" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 1 Â· Service I Â· la cellule la plus sombre de la figure, des tessons aux deux nombres qu’elle porte.</text>
+</svg>
+
+    <figcaption>Étalonnage de l’unité de rang : dans un groupe à trois stades, \(s\) peut atteindre 1,00, ce qui correspond à un ensemble partagé également entre le premier et le dernier stade ; une répartition uniforme sur les trois donne 0,82 ; un stade unique donne 0. Les 0,68 de l’horizon 1 signalent donc un ensemble fortement mêlé et les 0,31 de l’horizon 5 un ensemble concentré — l’échelle n’est pas arbitraire, il faut seulement la lire par rapport à ce plafond.</figcaption>
+  </figure>  <h3>Le calcul détaillé — horizon 1, Service I</h3>  <p>La cellule imprime 0,68 et 0,756 au-dessus de <code>n=446</code>. Ces 446 tessons sont six sous-types portant trois rangs de stade distincts ; tout le reste découle de l’arithmétique.</p>  <table><thead><tr><th>sous-type</th><th class="num raw">rang de stade r</th><th class="num">tessons c</th><th class="num raw">r · c</th><th class="num raw">r² · c</th></tr></thead> <tbody> <tr><td>Tasse Service Ia</td><td class="num">1</td><td class="num">29</td><td class="num">29</td><td class="num">29</td></tr> <tr><td>Assiette Service Ia</td><td class="num">1</td><td class="num">20</td><td class="num">20</td><td class="num">20</td></tr> <tr><td>Tasse Service Ib</td><td class="num">2</td><td class="num">61</td><td class="num">122</td><td class="num">244</td></tr> <tr><td>Assiette Service Ib</td><td class="num">2</td><td class="num">92</td><td class="num">184</td><td class="num">368</td></tr> <tr><td>Tasse Service Ic</td><td class="num">3</td><td class="num">151</td><td class="num">453</td><td class="num">1359</td></tr> <tr><td>Assiette Service Ic</td><td class="num">3</td><td class="num">93</td><td class="num">279</td><td class="num">837</td></tr> <tr><td><strong>totaux</strong></td><td class="num">—</td><td class="num"><strong>446</strong></td><td class="num"><strong>1087</strong></td><td class="num"><strong>2857</strong></td></tr> </tbody></table>  <p>Regroupés par rang plutôt que par sous-type : 49 tessons sur le rang 1, 153 sur le rang 2, 244 sur le rang 3. Tasse et assiette fusionnent parce qu’elles partagent un stade.</p>  <div class="formula">\[ N=\sum_j c_j = 446 \qquad \sum_j r_j c_j = 1087 \qquad \sum_j r_j^{2} c_j = 2857 \] <div class="why">Les trois sommes que renvoie la requête SPARQL. Tout ce qui suit tient en quatre lignes de Python et n’exige plus aucun accès au graphe.</div></div>  <p><strong>Étape 1 — le rang moyen.</strong></p>  <div class="formula">\[ \overline{x}=\frac{1087}{446}=2{,}437220 \;\longrightarrow\; \textbf{2,44} \]</div>  <p><strong>Étape 2 — la somme des écarts au carré,</strong> sous la forme calculatoire qui n’exige que les trois sommes :</p>  <div class="formula">\[ \overline{x}^{\,2}=5{,}940040 \qquad N\overline{x}^{\,2}=446\times 5{,}940040=2649{,}257848 \] \[ \sum_j r_j^{2}c_j - N\overline{x}^{\,2}=2857-2649{,}257848=207{,}742152 \]</div>  <p><strong>Étape 3 — variance et écart-type.</strong> Le dénominateur est \(N-1\) et non \(N\) : c’est ce que signifie <code>STDDEV_SAMP</code>.</p>  <div class="formula">\[ \mathrm{Var}=\frac{207{,}742152}{445}=0{,}466836 \qquad s=\sqrt{0{,}466836}=0{,}683254 \;\longrightarrow\; \textbf{0,68} \]</div>  <p><strong>Étape 4 — le score borné.</strong></p>  <div class="formula">\[ \mathrm{CV}=\frac{0{,}683254}{2{,}437220}=0{,}280342 \qquad q=e^{-0{,}280342}=0{,}755526 \;\longrightarrow\; \textbf{0,756} \]</div>  <h3>Le même nombre par la voie longue</h3>  <p>Le raccourci calculatoire ci-dessus se laisse difficilement croire sur parole ; voici donc la définition elle-même, \(\sum_j c_j\,(r_j-\overline{x})^{2}\), évaluée rang par rang.</p>  <table><thead><tr><th class="num">rang r</th><th class="num">tessons c</th><th class="num raw">r − x̄</th><th class="num raw">(r − x̄)²</th><th class="num raw">c(r − x̄)²</th></tr></thead> <tbody> <tr><td class="num">1</td><td class="num">49</td><td class="num">−1,437220</td><td class="num">2,065601</td><td class="num">101,2144</td></tr> <tr><td class="num">2</td><td class="num">153</td><td class="num">−0,437220</td><td class="num">0,191161</td><td class="num">29,2476</td></tr> <tr><td class="num">3</td><td class="num">244</td><td class="num">+0,562780</td><td class="num">0,316722</td><td class="num">77,2801</td></tr> <tr><td><strong>total</strong></td><td class="num"><strong>446</strong></td><td class="num">—</td><td class="num">—</td><td class="num"><strong>207,7422</strong></td></tr> </tbody></table>  <p>Identique à l’étape 2, comme il se doit. Les tessons du rang 3 fournissent l’essentiel de la dispersion non parce qu’ils sont éloignés de la moyenne — le rang 1 l’est trois fois plus — mais parce qu’ils sont 244. C’est la pondération à l’œuvre, et c’est pourquoi les mêmes six sous-types dans un horizon autrement composé donnent un \(s\) différent.</p>  <div class="note"><strong>Pourquoi le code emploie la forme calculatoire.</strong> \(\sum c(r-\overline{x})^{2}\) exige de connaître \(\overline{x}\) avant de commencer, donc deux passages sur les données. La forme utilisant \(\sum r^{2}c\) n’en demande qu’un, ce qui permet de décrire toute la cellule par trois nombres qu’une requête sait agréger. Sur 446 tessons, la différence est nulle ; à l’échelle du graphe, c’est la différence entre une statistique qui voyage et une qui ne voyage pas.</div>  <div class="warn"><strong>Arrondis.</strong> Les 0,68 et 2,44 imprimés sont des valeurs d’affichage. Recalculer à partir d’elles — \(0{,}68/2{,}44=0{,}2787\), \(e^{-0{,}2787}=0{,}7567\) — manque le \(q\) publié d’un millième. Le classeur joint conserve la précision complète, et tout chiffre cité dans le texte devrait en provenir plutôt que d’être relevé sur le graphique.</div>  <p><strong>Intra, non inter.</strong> La variance est prise à l’intérieur de chaque groupe, sur sa propre séquence de stades. Ce n’est pas la variance des moyennes de groupes les unes par rapport aux autres, ni une variance de sites. Une cellule répond à : <em>dans quelle mesure le matériel de ce groupe, dans cet horizon, s’étale-t-il sur les stades propres au groupe ?</em></p>  <div class="warn"><strong>Elle ne mesure pas la quantité présente d’un groupe.</strong> C’est une autre question, et pour ce matériel le signal chronologique le plus fort : la part du Service II dans l’ensemble passe d’environ 6 % à l’horizon 1 à environ 92 % à l’horizon 5. Le panneau de variance y est aveugle par construction. Les deux doivent être lus côte à côte, et la part a sa place dans la légende, afin qu’une colonne Service II plate ne soit pas prise pour une colonne vide.</div>  <figure>
+    <svg viewBox="0 0 700 286" role="img" aria-label="group shares by horizon (fr)">
+  <rect x="0" y="0" width="700" height="286" fill="#fbfaf7"/>
+      <text x="20" y="24" text-anchor="start" font-family="Public Sans" font-size="11.5" fill="#1b2430" font-weight="600">Part de chaque groupe de service, par horizon</text>
+      <rect x="150" y="30" width="13" height="12" fill="#1f77b4" fill-opacity=".85"/>
+      <text x="169" y="40" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">Assiette à bord oblique</text>
+      <rect x="308.79999999999995" y="30" width="13" height="12" fill="#d62728" fill-opacity=".85"/>
+      <text x="327.79999999999995" y="40" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">Service I</text>
+      <rect x="389.19999999999993" y="30" width="13" height="12" fill="#2ca02c" fill-opacity=".85"/>
+      <text x="408.19999999999993" y="40" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">Service II</text>
+      <text x="140" y="77" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 5</text>
+      <rect x="150.0" y="58" width="31.7" height="28" fill="#d62728" fill-opacity=".85"/>
+      <text x="165.82833583208395" y="77" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">8%</text>
+      <rect x="181.7" y="58" width="378.3" height="28" fill="#2ca02c" fill-opacity=".85"/>
+      <text x="370.8283358320839" y="77" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">92%</text>
+      <text x="572.0" y="77" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 1334</text>
+      <text x="140" y="115" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 4</text>
+      <rect x="150.0" y="96" width="128.3" height="28" fill="#d62728" fill-opacity=".85"/>
+      <text x="214.17016806722688" y="115" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">31%</text>
+      <rect x="278.3" y="96" width="281.7" height="28" fill="#2ca02c" fill-opacity=".85"/>
+      <text x="419.1701680672269" y="115" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">69%</text>
+      <text x="572.0" y="115" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 476</text>
+      <text x="140" y="153" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 3</text>
+      <rect x="150.0" y="134" width="174.6" height="28" fill="#d62728" fill-opacity=".85"/>
+      <text x="237.30769230769232" y="153" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">43%</text>
+      <rect x="324.6" y="134" width="235.4" height="28" fill="#2ca02c" fill-opacity=".85"/>
+      <text x="442.3076923076923" y="153" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">57%</text>
+      <text x="572.0" y="153" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 2132</text>
+      <text x="140" y="191" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 2</text>
+      <rect x="150.0" y="172" width="0.6" height="28" fill="#1f77b4" fill-opacity=".85"/>
+      <rect x="150.6" y="172" width="263.8" height="28" fill="#d62728" fill-opacity=".85"/>
+      <text x="282.5" y="191" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">64%</text>
+      <rect x="414.4" y="172" width="145.6" height="28" fill="#2ca02c" fill-opacity=".85"/>
+      <text x="487.1969696969697" y="191" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">36%</text>
+      <text x="572.0" y="191" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 2706</text>
+      <text x="140" y="229" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 1</text>
+      <rect x="150.0" y="210" width="5.1" height="28" fill="#1f77b4" fill-opacity=".85"/>
+      <rect x="155.1" y="210" width="379.4" height="28" fill="#d62728" fill-opacity=".85"/>
+      <text x="344.79253112033194" y="229" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#ffffff">93%</text>
+      <rect x="534.5" y="210" width="25.5" height="28" fill="#2ca02c" fill-opacity=".85"/>
+      <text x="572.0" y="229" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 482</text>
+      <line x1="150" y1="256" x2="560" y2="256" stroke="#d9d3c6"/>
+      <text x="355" y="274" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#9e3b26">le remplacement d’un groupe par un autre — le signal que les panneaux de variance ne voient pas</text>
+</svg>
+
+    <figcaption>Les mêmes 7131 tessons, interrogés autrement. Le Service I passe de 93 % de l’ensemble à l’horizon 1 à 8 % à l’horizon 5, tandis que le Service II monte de 6 % à 92 % ; le croisement se situe entre les horizons 2 et 3. C’est un signal monotone et de grande amplitude, celui par lequel un lecteur attend qu’un article de chronologie commence. Imprimé à côté des panneaux de variance, il lève aussi la mélecture habituelle : une colonne Service II plate à 1,00 ne ressemble plus à une colonne vide.</figcaption>
+  </figure></section>
+<section id="q">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">5</text></svg>De \(\sigma\) à \(q\)</h2>  <p class="sub">Le panneau droit. Une seule étape adimensionnelle, plus modeste qu’il n’y paraît.</p>  <div class="formula">\[ \mathrm{CV}_{g,h} = \frac{s_{g,h}}{\overline{r}_{g,h}} \qquad\qquad q_{g,h} = \exp\!\left(-\,\mathrm{CV}_{g,h}\right) \] <div class="why">Le coefficient de variation rend la dispersion adimensionnelle en la mesurant en unités du rang moyen propre au groupe ; l’exponentielle envoie \([0,\infty)\) sur \((0,1]\), de sorte que \(q = 1\) marque un accord interne parfait et \(q \to 0\) une dispersion excédant largement la moyenne. C’est la même construction \(\exp(-\mathrm{CV})\) que \(q_{\text{interval}}\) dans la note sur la datation des sites — et <em>non</em> l’équitabilité de Pielou, avec laquelle on la confond aisément.</div></div>  <p>Comme \(q\) est inversible, le rang moyen derrière chaque cellule se relit sur le couple imprimé : \(\overline{x} = s / (-\ln q)\). Pour la colonne Service I, les valeurs exactes sont 2,44, 2,49, 2,74, 2,77 et 2,89 — la moyenne ne progresse pas d’un demi-rang tandis que \(s\) est plus que divisé par deux : la montée de \(q\) le long de la colonne traduit donc massivement une baisse de dispersion et non un déplacement du centre.</p>  <figure>
+    <svg viewBox="0 0 700 224" role="img" aria-label="exp transform (fr)">
+  <rect x="0" y="0" width="700" height="224" fill="#fbfaf7"/>
+      <rect x="70" y="30" width="165" height="140" fill="#b07d31" fill-opacity=".08"/>
+      <text x="152.7007862882738" y="24" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#b07d31">plage réellement occupée par cette figure</text>
+      <line x1="70" y1="30" x2="70" y2="170" stroke="#46525f"/>
+      <line x1="70" y1="170" x2="665" y2="170" stroke="#46525f"/>
+      <line x1="70" y1="40" x2="660" y2="170" stroke="#46525f" stroke-width="1" stroke-dasharray="4,3" stroke-opacity=".55"/>
+      <text x="565" y="150" text-anchor="end" font-family="Public Sans" font-size="10.5" fill="#46525f">q = 1 &#8722; CV</text>
+      <polyline fill="none" stroke="#1b2430" stroke-width="2" points="70,40.0 100,46.3 129,52.4 158,58.1 188,63.6 218,68.8 247,73.7 276,78.4 306,82.9 336,87.1 365,91.2 394,95.0 424,98.7 454,102.1 483,105.4 512,108.6 542,111.6 572,114.4 601,117.1 630,119.7 660,122.2"/>
+      <circle cx="133.3" cy="53.2" r="4" fill="#9e3b26"/>
+      <text x="143.29137492711806" y="56.22360718803415" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9e3b26">H5 · 0,898</text>
+      <circle cx="163.0" cy="59.0" r="4" fill="#9e3b26"/>
+      <text x="172.98268911120994" y="61.95487254938085" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9e3b26">H4 · 0,854</text>
+      <circle cx="168.1" cy="59.9" r="4" fill="#9e3b26"/>
+      <text x="178.06137558093315" y="62.90664043683343" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9e3b26">H3 · 0,847</text>
+      <circle cx="216.6" cy="68.6" r="4" fill="#9e3b26"/>
+      <text x="226.58898800848758" y="71.5994476301372" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9e3b26">H2 · 0,780</text>
+      <circle cx="235.4" cy="71.8" r="4" fill="#9e3b26"/>
+      <text x="245.4015725765476" y="74.78167548045273" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9e3b26">H1 · 0,756</text>
+      <text x="62" y="44" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">1,0</text>
+      <text x="62" y="174" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,0</text>
+      <text x="365" y="192" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,5</text>
+      <text x="660" y="192" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">1,0</text>
+      <text x="365" y="212" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">coefficient de variation  CV = s / x̄  →</text>
+</svg>
+
+    <figcaption>Toutes les cellules observées se situent sous \(\mathrm{CV} = 0{,}28\), où \(\exp(-\mathrm{CV})\) et \(1 - \mathrm{CV}\) diffèrent de moins de quatre centièmes. L’exponentielle ne comprime pratiquement rien sur cette plage : sur les présentes données, le panneau droit est, à deux décimales près, une remise à l’échelle linéaire du gauche. Son intérêt tient à ce qu’il est borné et comparable, non à ce qu’il transformerait quoi que ce soit.</figcaption>
+  </figure></section>
+<section id="panels">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">6</text></svg>Pourquoi les deux panneaux ne font qu’une grandeur</h2>  <p class="sub">Et pourquoi les échelles de couleurs sont inversées.</p>  <p>Les échelles sont inversées l’une par rapport à l’autre pour que le vert signifie <em>bon</em> dans les deux panneaux : faible dispersion à gauche, forte qualité à droite. C’est une aide délibérée à la lecture, et c’est aussi la raison pour laquelle les deux panneaux ressemblent à des confirmations indépendantes alors qu’ils n’en sont pas.</p>  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 205" role="img" aria-label="The two colour ramps side by side: the variance ramp is scaled to the observed maximum, the quality ramp to the fixed interval zero to one"> <defs> <linearGradient id="ramp-var" x1="0" x2="1"> <stop offset="0" stop-color="#006837"/> <stop offset="0.25" stop-color="#a6d96a"/> <stop offset="0.5" stop-color="#ffffbf"/> <stop offset="0.75" stop-color="#fdae61"/> <stop offset="1" stop-color="#a50026"/> </linearGradient> <linearGradient id="ramp-q" x1="0" x2="1"> <stop offset="0" stop-color="#a50026"/> <stop offset="0.25" stop-color="#fdae61"/> <stop offset="0.5" stop-color="#ffffbf"/> <stop offset="0.75" stop-color="#a6d96a"/> <stop offset="1" stop-color="#006837"/> </linearGradient> </defs> <text x="40" y="34" font-family="Public Sans" font-size="11.5" font-weight="600" fill="#1b2430">Panneau de variance</text> <rect x="40" y="46" width="280" height="24" fill="url(#ramp-var)" stroke="#1b2430" stroke-width=".6"/> <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f"> <text x="40" y="86">0,00</text> <text x="320" y="86" text-anchor="end">0,68</text> </g> <text x="180" y="106" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#9e3b26">borne haute = plus grande valeur de ce jeu de données</text> <text x="180" y="122" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#9e3b26">→ couleurs relatives ; non comparables d’une exécution à l’autre</text> <text x="380" y="34" font-family="Public Sans" font-size="11.5" font-weight="600" fill="#1b2430">Panneau de qualité</text> <rect x="380" y="46" width="280" height="24" fill="url(#ramp-q)" stroke="#1b2430" stroke-width=".6"/> <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f"> <text x="380" y="86">0,00</text> <text x="660" y="86" text-anchor="end">1,00</text> </g> <text x="520" y="106" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#40655c">borne haute = maximum théorique de q</text> <text x="520" y="122" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#40655c">→ couleurs absolues ; comparables d’une exécution à l’autre</text> <line x1="40" y1="146" x2="660" y2="146" stroke="#d9d3c6"/> <text x="350" y="170" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#1b2430">vert = bon dans les deux panneaux · les échelles sont inversées, la mesure ne l’est pas</text> <text x="350" y="190" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#46525f">gris = cellule dégénérée, retirée de l’échelle</text> </svg>
+    <figcaption>L’asymétrie passe facilement inaperçue et compte pour la publication. Ajoutez un second jeu de données comportant une cellule à 1,20 : toutes les couleurs du panneau gauche se déplacent, tandis que le panneau droit reste inchangé. Si la figure doit être réutilisée ou comparée d’une analyse à l’autre, l’échelle de variance devrait être fixée à un maximum constant, et ce maximum consigné dans la légende.</figcaption>
+  </figure></section>
+<section id="degenerate">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">7</text></svg>La cellule dégénérée</h2>  <p class="sub">Dix des douze cellules occupées. Le point le plus important à déclarer.</p>  <p>Toutes les cellules des colonnes <em>Assiette à bord oblique</em> et <em>Service II</em> affichent \(0{,}00\) à gauche et \(1{,}00\) à droite, dans tous les horizons, de \(n = 4\) à \(n = 1231\). Un lecteur qui prend le panneau droit au pied de la lettre en conclut que le Service II est chronologiquement irréprochable de bout en bout. Ce n’est pas ce que dit le nombre.</p>  <p>La cause est désormais exactement identifiable d’après le <a href="#ranks">§3</a>. Le Service II ne compte qu’un stade : sa tasse et son assiette portent toutes deux le rang de stade 1. Chacun de ses 3773 tessons est donc une observation de la valeur 1, et l’écart-type d’une constante est nul quel que soit \(N\). L’assiette à bord oblique illustre la même situation plus crûment encore — un groupe à une seule feuille. Aucune de ces cellules n’est une mesure ; toutes deux ne font que reformuler la table des rangs.</p>  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 265" role="img" aria-label="Three configurations that produce a heatmap cell: one sub-type, several sub-types sharing a rank, and several sub-types on genuinely near ranks"> <g font-family="Public Sans" font-size="11" font-weight="600" fill="#1b2430" text-anchor="middle"> <text x="118" y="24" fill="#1f77b4">a · Assiette à bord oblique</text> <text x="350" y="24" fill="#2ca02c">b · Service II</text> <text x="582" y="24" fill="#d62728">c · Service I</text> </g> <g font-family="Public Sans" font-size="10.5" fill="#46525f" text-anchor="middle"> <text x="118" y="41">1 sous-type · 1 rang</text> <text x="350" y="41">2 sous-types · 1 rang</text> <text x="582" y="41">6 sous-types · 3 rangs</text> </g> <!-- mini rank axes --> <g stroke="#46525f"> <line x1="34" y1="118" x2="202" y2="118"/> <line x1="266" y1="118" x2="434" y2="118"/> <line x1="498" y1="118" x2="666" y2="118"/> </g> <g stroke="#e2ddd1"> <line x1="76" y1="56" x2="76" y2="118"/><line x1="118" y1="56" x2="118" y2="118"/><line x1="160" y1="56" x2="160" y2="118"/> <line x1="308" y1="56" x2="308" y2="118"/><line x1="350" y1="56" x2="350" y2="118"/><line x1="392" y1="56" x2="392" y2="118"/> <line x1="540" y1="56" x2="540" y2="118"/><line x1="582" y1="56" x2="582" y2="118"/><line x1="624" y1="56" x2="624" y2="118"/> </g> <g fill="#1f77b4"> <circle cx="118" cy="100" r="4.5"/> </g> <g fill="#2ca02c"> <circle cx="350" cy="100" r="4.5"/><circle cx="350" cy="86" r="4.5"/> </g> <g fill="#d62728"> <circle cx="540" cy="100" r="4.5"/><circle cx="540" cy="86" r="4.5"/> <circle cx="582" cy="100" r="4.5"/><circle cx="582" cy="86" r="4.5"/> <circle cx="624" cy="100" r="4.5"/><circle cx="624" cy="86" r="4.5"/> </g> <!-- resulting cells --> <rect x="46" y="146" width="144" height="62" fill="#eaeaea" stroke="#ffffff" stroke-width="2"/> <rect x="278" y="146" width="144" height="62" fill="#eaeaea" stroke="#ffffff" stroke-width="2"/> <rect x="510" y="146" width="144" height="62" fill="#42ab5a" stroke="#ffffff" stroke-width="2"/> <g font-family="Public Sans" font-size="19" text-anchor="middle" fill="#46525f"> <text x="118" y="180">1,00</text> <text x="350" y="180">1,00</text> <text x="582" y="180" fill="#ffffff">0,85</text> </g> <g font-family="Public Sans" font-size="10" text-anchor="middle" fill="#8a8272"> <text x="118" y="198">n = 6 · horizon 1</text> <text x="350" y="198">n = 1231 · horizon 5</text> <text x="582" y="198" fill="#e8f2e8">n = 908 · horizon 3</text> </g> <line x1="46" y1="228" x2="422" y2="228" stroke="#9e3b26" stroke-width="1.4"/> <text x="234" y="248" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#9e3b26">indiscernables sur la figure · seul (c) est une mesure</text> </svg>
+    <figcaption>Cellules réelles, une de chaque espèce. (a) et (b) donnent tous deux \(s = 0\) par construction : toutes les observations portent le même rang, si bien que la dispersion de l’échantillon est celle d’une constante. Six tessons et 1231 tessons renvoient le même score pour la même raison. Seul (c) dispose de plus d’un rang sur lequel se disperser, et c’est la seule colonne de la figure qui mesure quelque chose.</figcaption>
+  </figure>  <div class="warn"><strong>Ici, \(q = 1{,}00\) signifie « aucune comparaison n’était possible », et non « la comparaison est parfaite ».</strong> Une cellule dont tous les tessons portent un même rang n’offre aucune dispersion intra-groupe à mesurer ; la formule du RGZM renvoie son élément neutre et l’échelle de couleurs le rend comme le meilleur résultat possible. Sur un graphique, c’est simplement trompeur. Exporté en RDF comme assertion de qualité portant sur une entité temporelle, c’est faux, et l’objection est de même nature que celle visant les valeurs de repli fabriquées par <code>COALESCE</code> dans la requête de datation des sites.</div>  <div class="note"><strong>La chaîne le sait déjà.</strong> La requête renvoie <code>COUNT(DISTINCT ?stage)</code> et le code de la figure pose <code>measured = stageSteps &gt; 1</code>, ce qui commande précisément le remplissage gris. Le statut est calculé, non deviné — il manque seulement que la figure imprimée le dise. Deux améliorations peu coûteuses : porter le nombre de rangs dans la cellule (<code>k = 1</code>), afin que le gris s’explique de lui-même sur le papier comme il le fait déjà dans l’infobulle du navigateur ; et préciser en légende que le gris signifie <em>découle de la table des rangs</em> et non <em>valeur basse</em>.</div>  <div class="note"><strong>La lecture alternative est déjà implémentée.</strong> La version interactive de cette figure comporte un basculement entre la lecture par stade et une lecture par sous-type où tasse et assiette comptent comme des pas distincts (<code>columnRank</code>). Sous cette lecture, le Service II devient mesuré — \(q\) autour de 0,71 dans chaque horizon, plat, parce que le rapport tasse/assiette ne bouge presque pas. Cette platitude est elle-même l’argument en faveur de la lecture par stade : la variation captée est un changement de forme, non un pas dans le temps. Pour le Service I, les deux lectures ordonnent les horizons de façon identique, avec \(r = 0{,}998\) entre leurs valeurs de \(q\) : le résultat publié ne dépend donc pas de ce choix.</div>  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 300" role="img" aria-label="Qualité par horizon selon la lecture par stade et la lecture par sous-type"> <line x1="90" y1="40" x2="90" y2="220" stroke="#46525f"/> <line x1="90" y1="220" x2="525" y2="220" stroke="#46525f"/> <g stroke="#e2ddd1" stroke-dasharray="3,3"> <line x1="90" y1="65.5" x2="525" y2="65.5"/><line x1="90" y1="142.7" x2="525" y2="142.7"/> </g> <polyline fill="none" stroke="#9e3b26" stroke-width="2" points="120,176.7 220,158.2 320,106.4 420,101.0 520,67.0"/> <circle cx="120" cy="176.7" r="3.6" fill="#9e3b26"/> <circle cx="220" cy="158.2" r="3.6" fill="#9e3b26"/> <circle cx="320" cy="106.4" r="3.6" fill="#9e3b26"/> <circle cx="420" cy="101.0" r="3.6" fill="#9e3b26"/> <circle cx="520" cy="67.0" r="3.6" fill="#9e3b26"/> <text x="532" y="70.5" font-family="Public Sans" font-size="10" fill="#9e3b26">stade · Service I</text> <polyline fill="none" stroke="#b07d31" stroke-width="2" points="120,201.5 220,185.2 320,133.5 420,120.3 520,90.2"/> <circle cx="120" cy="201.5" r="3.6" fill="#b07d31"/> <circle cx="220" cy="185.2" r="3.6" fill="#b07d31"/> <circle cx="320" cy="133.5" r="3.6" fill="#b07d31"/> <circle cx="420" cy="120.3" r="3.6" fill="#b07d31"/> <circle cx="520" cy="90.2" r="3.6" fill="#b07d31"/> <text x="532" y="93.7" font-family="Public Sans" font-size="10" fill="#b07d31">sous-type · Service I</text> <polyline fill="none" stroke="#2ca02c" stroke-width="2" stroke-dasharray="5,3" points="120,213.8 220,212.3 320,216.9 420,191.4 520,214.6"/> <circle cx="120" cy="213.8" r="3.6" fill="#2ca02c"/> <circle cx="220" cy="212.3" r="3.6" fill="#2ca02c"/> <circle cx="320" cy="216.9" r="3.6" fill="#2ca02c"/> <circle cx="420" cy="191.4" r="3.6" fill="#2ca02c"/> <circle cx="520" cy="214.6" r="3.6" fill="#2ca02c"/> <text x="532" y="218.1" font-family="Public Sans" font-size="10" fill="#2ca02c">sous-type · Service II</text> <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f" text-anchor="end"> <text x="82" y="69">0,90</text><text x="82" y="146">0,80</text><text x="82" y="224">0,70</text> </g> <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f" text-anchor="middle"> <text x="120" y="238">H1</text><text x="220" y="238">H2</text><text x="320" y="238">H3</text> <text x="420" y="238">H4</text><text x="520" y="238">H5</text> </g> <text x="34" y="130" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f" transform="rotate(-90 34 130)">q</text> <line x1="90" y1="256" x2="660" y2="256" stroke="#d9d3c6"/> <text x="90" y="276" font-family="Public Sans" font-size="10.5" fill="#1b2430">Service I : r = 0,998 entre les deux lectures, et ordre des horizons identique.</text> <text x="90" y="292" font-family="Public Sans" font-size="10.5" fill="#1b2430">Service II : mesuré sous la lecture par sous-type, mais plat — un rapport de formes, non une date.</text> </svg>
+    <figcaption>Les deux lectures du Service I montent de concert et ne se croisent jamais ; leur corrélation sur les cinq horizons vaut 0,998, de sorte que le gradient publié ne dépend pas de la décision de modélisation. La troisième courbe est l’argument en faveur de cette décision : sous la lecture par sous-type, le Service II devient mesurable et ne dit aussitôt rien, car ce qu’elle mesure est le rapport des tasses aux assiettes, qui ne bouge guère. Une lecture qui convertit un rapport de formes en score chronologique vaut moins qu’une lecture qui renonce à noter.</figcaption>
+  </figure></section>
+<section id="n">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">8</text></svg>Ce qu’est \(n\)</h2>  <p class="sub">La taille de l’échantillon. C’est la pondération, et elle est déjà appliquée.</p>  <div class="warn"><strong>Correction d’une version antérieure de cette page.</strong> Une version précédente affirmait que \(n\) était imprimé sans entrer dans le calcul, et se demandait s’il fallait pondérer les rangs par l’effectif de tessons. C’était une mélecture de la figure, et elle est retirée. La mesure est déjà pondérée par les tessons : <code>rgzm()</code> reçoit \(N\), \(\sum r\cdot c\) et \(\sum r^{2}c\), de sorte que <em>chaque tesson est une observation prenant pour valeur le rang de son sous-type</em>. Rien n’est à changer. Ce qui suit en apporte la preuve, et montre ce qu’aurait coûté la variante non pondérée.</div>  <p>\(n\) n’est donc pas une annotation posée à côté de la statistique : c’est le \(N\) qu’elle contient. L’horizon 1 du Service I ne compte pas quatre ou six observations mais 446, réparties en 49 sur le rang 1, 153 sur le rang 2 et 244 sur le rang 3. Les sommes que renvoie la requête SPARQL sont exactement les statistiques exhaustives de cette pondération : voilà pourquoi la requête peut s’arrêter à trois nombres et laisser à Python la racine carrée et l’exponentielle.</p>  <div class="formula">\[ N = \sum_j c_j \qquad \overline{x} = \frac{1}{N}\sum_j r_j c_j \qquad s = \sqrt{\frac{\sum_j r_j^{2} c_j - N\overline{x}^{2}}{N-1}} \] <div class="why">\(c_j\) est l’effectif de tessons du sous-type \(j\), \(r_j\) son rang de stade. Écrite ainsi, la pondération est visible ; écrite <code>STDDEV_SAMP(rank)</code> sur une table de tessons, c’est la même chose, mais plus facile à mal lire — ce qui s’est précisément produit ici.</div></div>  <h3>Ce que ferait la variante non pondérée</h3>  <p>Donner une voix à chaque sous-type plutôt qu’une voix par tesson est une mesure cohérente — elle décrit le répertoire typologique et non l’ensemble recueilli. Sur ce matériel, elle est aussi inutilisable, et la raison mérite d’être dite car elle n’a rien d’évident a priori.</p>  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 336" role="img" aria-label="Service I quality by horizon under sherd weighting and under one vote per sub-type; the unweighted column is identical for horizons one to three"> <defs><linearGradient id="w8ramp" x1="0" x2="1"><stop offset="0.0" stop-color="#a50026"/><stop offset="0.25" stop-color="#f88d52"/><stop offset="0.5" stop-color="#feffbe"/><stop offset="0.75" stop-color="#86ca66"/><stop offset="1.0" stop-color="#006837"/></linearGradient></defs> <g font-family="Public Sans" font-size="11.5" font-weight="600" text-anchor="middle" fill="#1b2430"> <text x="255" y="26">tel que calculé · pondéré par les tessons</text> <text x="500" y="26">variante · une voix par sous-type</text> </g> <g stroke="#ffffff" stroke-width="2"> <rect x="170" y="38" width="170" height="40" fill="#1b9850"/> <rect x="170" y="80" width="170" height="40" fill="#3ca859"/> <rect x="170" y="122" width="170" height="40" fill="#42ab5a"/> <rect x="170" y="164" width="170" height="40" fill="#73c264"/> <rect x="170" y="206" width="170" height="40" fill="#82c966"/> <rect x="415" y="38" width="170" height="40" fill="#6abf63"/> <rect x="415" y="80" width="170" height="40" fill="#addc6f"/> <rect x="415" y="122" width="170" height="40" fill="#c5e67e"/> <rect x="415" y="164" width="170" height="40" fill="#c5e67e"/> <rect x="415" y="206" width="170" height="40" fill="#c5e67e"/> </g> <g font-family="Public Sans" font-size="16" text-anchor="middle"> <text x="255" y="64" fill="#ffffff">0,898</text> <text x="255" y="106" fill="#ffffff">0,854</text> <text x="255" y="148" fill="#ffffff">0,847</text> <text x="255" y="190" fill="#1a1a1a">0,780</text> <text x="255" y="232" fill="#1a1a1a">0,756</text> <text x="500" y="64" fill="#1a1a1a">0,639</text> <text x="500" y="106" fill="#1a1a1a">0,684</text> <text x="500" y="148" fill="#1a1a1a">0,639</text> <text x="500" y="190" fill="#1a1a1a">0,639</text> <text x="500" y="232" fill="#1a1a1a">0,639</text> </g> <g font-family="Public Sans" font-size="11" text-anchor="end" fill="#1b2430"> <text x="158" y="63">Horizon 5</text><text x="158" y="105">Horizon 4</text> <text x="158" y="147">Horizon 3</text><text x="158" y="189">Horizon 2</text> <text x="158" y="231">Horizon 1</text> </g> <g font-family="IBM Plex Mono, monospace" font-size="9" text-anchor="end" fill="#8a8272"> <text x="158" y="75">n=103</text><text x="158" y="117">n=149</text> <text x="158" y="159">n=908</text><text x="158" y="201">n=1741</text> <text x="158" y="243">n=446</text> </g> <path d="M600 122 L612 122 L612 246 L600 246" fill="none" stroke="#9e3b26" stroke-width="1.4"/> <text x="620" y="180" font-family="Public Sans" font-size="10.5" fill="#9e3b26">identique</text> <text x="620" y="194" font-family="Public Sans" font-size="10.5" fill="#9e3b26">k = 6 dans</text> <text x="620" y="208" font-family="Public Sans" font-size="10.5" fill="#9e3b26">aux trois</text> <line x1="40" y1="262" x2="660" y2="262" stroke="#d9d3c6"/> <text x="40" y="282" font-family="Public Sans" font-size="11" fill="#1b2430">Sans pondération, la valeur ne dépend que des sous-types <tspan font-style="italic">présents</tspan> — jamais de leur abondance.</text> <rect x="40" y="296" width="240" height="14" fill="url(#w8ramp)" stroke="#1b2430" stroke-width=".5"/> <g font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f" text-anchor="middle"> <text x="40" y="324">0,0</text><text x="160" y="324">0,5</text><text x="280" y="324">1,0</text> </g> <text x="292" y="307" font-family="Public Sans" font-size="9.5" fill="#8a8272">échelle absolue, 0 à 1 — la même rampe que le panneau de qualité imprimé</text> </svg>
+    <figcaption>Les horizons 1 à 3 contiennent chacun les six sous-types du Service I : le multiensemble de rangs non pondéré vaut \(\{1,1,2,2,3,3\}\) dans les trois et renvoie le même 0,639, que l’horizon compte 446 ou 1741 tessons. Le gradient auquel la figure est destinée disparaît. Ce qui subsiste — 0,684 à l’horizon 4, 0,794 à l’horizon 5 — provient uniquement de sous-types absents des deux horizons les plus petits : le panneau non pondéré se lirait donc comme une mesure de la taille d’échantillon portant l’étiquette de la précision chronologique.</figcaption>
+  </figure>  <div class="note"><strong>Les deux figures s’accordent bien.</strong> La méthode de datation des sites pondère par les occurrences ; celle-ci pondère par l’effectif de tessons. Toutes deux laissent parler la quantité de matériel, et l’affirmation antérieure d’une divergence était erronée. La différence qui subsiste est une différence d’unité — occurrences d’une estampille là, tessons d’un sous-type ici — c’est-à-dire une différence de ce que l’on compte, non de la manière dont on pondère.</div></section>
+<section id="servicei">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">9</text></svg>Lire la colonne Service I</h2>  <p class="sub">La seule colonne qui porte un signal, et ce qu’est ce signal.</p>  <p>Le Service I est le seul groupe dont les sous-types chevauchent plusieurs stades dans chaque horizon : c’est donc la seule colonne où la mesure est définie de bout en bout. Sa dispersion décroît de façon monotone de l’horizon 1 à l’horizon 5.</p>  <figure>
+    <svg viewBox="0 0 700 275" role="img" aria-label="service variance (fr)">
+  <rect x="0" y="0" width="700" height="275" fill="#fbfaf7"/>
+      <text x="20" y="22" text-anchor="start" font-family="Public Sans" font-size="11.5" fill="#1b2430" font-weight="600">Variance intra-groupe · s  (panneau gauche de la figure imprimée)</text>
+      <line x1="70" y1="34" x2="70" y2="176" stroke="#46525f"/>
+      <line x1="70" y1="176" x2="665" y2="176" stroke="#46525f"/>
+      <line x1="70" y1="108.0" x2="660" y2="108.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="62" y="112.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,34</text>
+      <line x1="70" y1="40.0" x2="660" y2="40.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="62" y="44.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,68</text>
+      <text x="62" y="180" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,00</text>
+      <rect x="95" y="40.0" width="70" height="136.0" fill="#a50026" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="130" y="64.0" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#ffffff" font-weight="600">0,68</text>
+      <text x="130" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 1</text>
+      <text x="130" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=446</text>
+      <rect x="215" y="52.9" width="70" height="123.1" fill="#d42d27" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="250" y="76.94603494328024" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#ffffff" font-weight="600">0,62</text>
+      <text x="250" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 2</text>
+      <text x="250" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=1741</text>
+      <rect x="335" y="85.2" width="70" height="90.8" fill="#fdbe6e" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="370" y="109.204409127538" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#1a1a1a" font-weight="600">0,46</text>
+      <text x="370" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 3</text>
+      <text x="370" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=908</text>
+      <rect x="455" y="89.0" width="70" height="87.0" fill="#fecc7a" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="490" y="113.04982228914496" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#1a1a1a" font-weight="600">0,44</text>
+      <text x="490" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 4</text>
+      <text x="490" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=149</text>
+      <rect x="575" y="114.2" width="70" height="61.8" fill="#edf8a7" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="610" y="138.22280882879858" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#1a1a1a" font-weight="600">0,31</text>
+      <text x="610" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 5</text>
+      <text x="610" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=103</text>
+      <text x="367" y="228" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#1b2430">plus ancien  →  plus récent</text>
+      <defs><linearGradient id="ramp_s" x1="0" x2="1"><stop offset="0.0000" stop-color="#006837"/><stop offset="0.1000" stop-color="#199750"/><stop offset="0.2000" stop-color="#66bd63"/><stop offset="0.3000" stop-color="#a5d86a"/><stop offset="0.4000" stop-color="#d9ef8b"/><stop offset="0.5000" stop-color="#feffbe"/><stop offset="0.6000" stop-color="#fee08b"/><stop offset="0.7000" stop-color="#fdad60"/><stop offset="0.8000" stop-color="#f46d43"/><stop offset="0.9000" stop-color="#d62f27"/><stop offset="1.0000" stop-color="#a50026"/></linearGradient></defs>
+      <rect x="230" y="242" width="240" height="14" fill="url(#ramp_s)" stroke="#1b2430" stroke-width=".5"/>
+      <text x="230" y="270" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">0,00</text>
+      <text x="470" y="270" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">0,68</text>
+      <text x="482" y="253" text-anchor="start" font-family="Public Sans" font-size="9.5" fill="#8a8272">l’échelle s’arrête au plus grand s observé</text>
+</svg>
+
+    <figcaption>Le gradient constitue le résultat de fond de la figure : les ensembles du Service I deviennent typologiquement plus homogènes au fil de la séquence. Les couleurs des cellules sont celles du panneau de variance imprimé — même rampe RdYlGn, même maximum — de sorte que ce diagramme et la colonne de la carte thermique se lisent directement l’un contre l’autre. On notera que <em>n</em> s’effondre dans le même sens : les horizons 4 et 5 reposent sur 149 et 103 tessons, de sorte que le resserrement et la raréfaction des données sont confondus et ne peuvent être démêlés à l’intérieur de cette figure.</figcaption>
+  </figure>  <figure>
+    <svg viewBox="0 0 700 275" role="img" aria-label="service quality (fr)">
+  <rect x="0" y="0" width="700" height="275" fill="#fbfaf7"/>
+      <text x="20" y="22" text-anchor="start" font-family="Public Sans" font-size="11.5" fill="#1b2430" font-weight="600">Qualité intra-groupe · q = exp(−CV)  (panneau droit)</text>
+      <line x1="70" y1="34" x2="70" y2="176" stroke="#46525f"/>
+      <line x1="70" y1="176" x2="665" y2="176" stroke="#46525f"/>
+      <line x1="70" y1="142.0" x2="660" y2="142.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="62" y="146.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,25</text>
+      <line x1="70" y1="108.0" x2="660" y2="108.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="62" y="112.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,50</text>
+      <line x1="70" y1="74.0" x2="660" y2="74.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="62" y="78.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,75</text>
+      <line x1="70" y1="40.0" x2="660" y2="40.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="62" y="44.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">1,00</text>
+      <text x="62" y="180" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,00</text>
+      <rect x="95" y="73.2" width="70" height="102.8" fill="#82c966" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="130" y="97.24852204108902" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#1a1a1a" font-weight="600">0,756</text>
+      <text x="130" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 1</text>
+      <text x="130" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=446</text>
+      <rect x="215" y="69.9" width="70" height="106.1" fill="#73c264" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="250" y="93.91942213614354" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#1a1a1a" font-weight="600">0,780</text>
+      <text x="250" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 2</text>
+      <text x="250" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=1741</text>
+      <rect x="335" y="60.8" width="70" height="115.2" fill="#42ab5a" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="370" y="84.82540845699496" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#ffffff" font-weight="600">0,847</text>
+      <text x="370" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 3</text>
+      <text x="370" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=908</text>
+      <rect x="455" y="59.8" width="70" height="116.2" fill="#3ca859" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="490" y="83.82971282089075" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#ffffff" font-weight="600">0,854</text>
+      <text x="490" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 4</text>
+      <text x="490" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=149</text>
+      <rect x="575" y="53.8" width="70" height="122.2" fill="#1a9850" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="610" y="77.83392751978958" text-anchor="middle" font-family="Public Sans" font-size="14" fill="#ffffff" font-weight="600">0,898</text>
+      <text x="610" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">Horizon 5</text>
+      <text x="610" y="208" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a8272">n=103</text>
+      <text x="367" y="228" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#1b2430">plus ancien  →  plus récent</text>
+      <defs><linearGradient id="ramp_q" x1="0" x2="1"><stop offset="0.0000" stop-color="#a50026"/><stop offset="0.1000" stop-color="#d62f27"/><stop offset="0.2000" stop-color="#f46d43"/><stop offset="0.3000" stop-color="#fdad60"/><stop offset="0.4000" stop-color="#fee08b"/><stop offset="0.5000" stop-color="#feffbe"/><stop offset="0.6000" stop-color="#d9ef8b"/><stop offset="0.7000" stop-color="#a5d86a"/><stop offset="0.8000" stop-color="#66bd63"/><stop offset="0.9000" stop-color="#199750"/><stop offset="1.0000" stop-color="#006837"/></linearGradient></defs>
+      <rect x="230" y="242" width="240" height="14" fill="url(#ramp_q)" stroke="#1b2430" stroke-width=".5"/>
+      <text x="230" y="270" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">0,0</text>
+      <text x="470" y="270" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#46525f">1,0</text>
+      <text x="482" y="253" text-anchor="start" font-family="Public Sans" font-size="9.5" fill="#8a8272">échelle absolue, 0 à 1</text>
+</svg>
+
+    <figcaption>Les mêmes cinq cellules que le panneau droit de la figure imprimée, tracées sur toute l’étendue que \(q\) peut prendre. Les valeurs sont données à trois décimales ; la figure elle-même arrondit à deux et imprime donc 0,85 pour l’horizon 3 comme pour l’horizon 4, que la troisième décimale sépare. L’axe mérite la place qu’il coûte : toutes les barres se tiennent dans le quart supérieur de l’échelle, et tout le gradient chronologique vaut 0,14 sur un maximum de 1,00. C’est la traduction visuelle du point établi au <a href="#q">§5</a> — à ces coefficients de variation, \(\exp(-\mathrm{CV})\) ne comprime presque rien, de sorte que \(q\) reste loin de sa borne basse et que de petits écarts sur lui ne sont pas de petits écarts dans le matériel. Comme \(q\) est une fonction monotone de \(s\) évaluée cellule par cellule, ce panneau ne porte aucune information que les barres ci-dessus n’auraient pas : il figure ici parce que c’est la forme que citera l’article, et parce que sa rampe est absolue là où celle de la variance est relative au jeu de données.</figcaption>
+  </figure>  <div class="note"><strong>Par lequel des deux commencer.</strong> \(s\) s’exprime en unités de rang et ne dépend pas de l’origine des rangs ; \(q\) est borné, comparable d’une analyse à l’autre, et dépend de la numérotation déclarée au <a href="#origin">§11a</a>. Pour un énoncé portant sur ce matériel — l’horizon 5 est plus resserré que l’horizon 1 — l’un ou l’autre convient. Pour un chiffre cité à côté de résultats venus d’ailleurs, c’est \(q\) qui voyage, à condition que la déclaration voyage avec lui.</div>  <div class="note"><strong>Deux lectures, toutes deux compatibles avec les nombres.</strong> Ou bien les horizons tardifs puisent réellement dans un répertoire typologique plus étroit, ou bien ils sont assez petits pour que les sous-types rares n’y apparaissent pas. Un contrôle par raréfaction les départagerait ; il ne fait pas partie de la présente analyse, et la forme honnête dans le texte consiste donc à énoncer le gradient avec les tailles d’échantillon et à laisser les deux lectures ouvertes. Le gradient est monotone sur une plage de \(n\) variant d’un facteur dix-sept, ce à quoi ne ressemble pas d’ordinaire un pur artefact d’échantillonnage — sans que cela tienne lieu de test.</div></section>
+<section id="cells">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">10</text></svg>Tableau des cellules</h2>  <p class="sub">Chaque position occupée, avec le rang moyen restitué à partir du couple imprimé.</p>  <table><thead><tr><th>Horizon</th><th>Groupe</th><th class="num">sous-types</th><th class="num">n tessons</th><th class="num">s</th><th class="num">q</th><th class="num raw">x̄</th><th>Statut</th></tr></thead> <tbody> <tr><td>1</td><td>Service I</td><td class="num">6</td><td class="num">446</td><td class="num">0,683</td><td class="num">0,756</td><td class="num">2,44</td><td><span class="pill keep">mesuré</span></td></tr> <tr><td>2</td><td>Service I</td><td class="num">6</td><td class="num">1741</td><td class="num">0,618</td><td class="num">0,780</td><td class="num">2,49</td><td><span class="pill keep">mesuré</span></td></tr> <tr><td>3</td><td>Service I</td><td class="num">6</td><td class="num">908</td><td class="num">0,456</td><td class="num">0,847</td><td class="num">2,74</td><td><span class="pill keep">mesuré</span></td></tr> <tr><td>4</td><td>Service I</td><td class="num">5</td><td class="num">149</td><td class="num">0,437</td><td class="num">0,854</td><td class="num">2,77</td><td><span class="pill keep">mesuré</span></td></tr> <tr><td>5</td><td>Service I</td><td class="num">4</td><td class="num">103</td><td class="num">0,310</td><td class="num">0,898</td><td class="num">2,89</td><td><span class="pill keep">mesuré</span></td></tr> <tr class="degen"><td>1</td><td>Service II</td><td class="num">2</td><td class="num">30</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>2</td><td>Service II</td><td class="num">2</td><td class="num">961</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>3</td><td>Service II</td><td class="num">2</td><td class="num">1224</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>4</td><td>Service II</td><td class="num">2</td><td class="num">327</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>5</td><td>Service II</td><td class="num">2</td><td class="num">1231</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>1</td><td>Assiette à bord oblique</td><td class="num">1</td><td class="num">6</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>2</td><td>Assiette à bord oblique</td><td class="num">1</td><td class="num">4</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>3–5</td><td>Assiette à bord oblique</td><td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td><span class="pill legacy">absent</span></td></tr> </tbody></table>  <div class="note"><strong>Le tiret et le zéro ne disent pas la même chose.</strong> L’assiette à bord oblique est absente des horizons 3 à 5 — aucun matériel, à juste titre laissé vide. Partout ailleurs, le zéro signifie que du matériel est présent mais tient sur un seul rang. Les distinguer visuellement, comme le fait la figure, est correct ; la légende devrait le dire explicitement, car un lecteur ne peut le déduire.</div>  <div class="note"><strong>Où le nombre de sous-types diminue.</strong> Le Service I perd la <em>tasse Service Ia</em> à l’horizon 4 et les deux sous-types Ia à l’horizon 5 — le stade le plus ancien s’épuise, tout simplement. C’est une véritable observation chronologique, et c’est aussi la raison pour laquelle la variante non pondérée du <a href="#n">§8</a> produit un gradient quelconque.</div></section>
+<section id="limits">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">11</text></svg>Limites et questions ouvertes</h2>  <p class="sub">À trancher avant que la figure n’entre dans l’article.</p>  <ol><li><strong>Rangs par stade seulement.</strong> Comme les sous-types d’un même stade partagent un rang, la dispersion de tout groupe à stade unique est nulle par construction. C’est la cause directe des deux colonnes plates. Du point de vue archéologique, la décision de modélisation est la bonne — une tasse et une assiette d’un même stade sont contemporaines — mais elle implique que ces colonnes ne portent aucune mesure, et la légende doit le dire. <a href="#ranks">§3</a></li> <li><strong>Une dispersion indéfinie imprimée comme un nombre.</strong> Lorsqu’un groupe ne tient qu’un rang, \(s = 0\) et \(q = 1\) découlent de la table des rangs, non des tessons. La figure les grise ; le grisé est calculé à partir de <code>COUNT(DISTINCT ?stage)</code> et est donc fiable, mais il n’est pas explicité. <a href="#degenerate">§7</a></li> <li><strong>L’étalement intra-groupe n’est pas la part du groupe.</strong> Les panneaux ne disent rien de la quantité présente de chaque groupe, qui pour ce matériel constitue le signal le plus fort (Service II : d’environ 6 % à environ 92 % au fil de la séquence). Publier les deux ensemble. <a href="#sigma">§4</a></li> <li><strong>Échelle de couleurs relative au jeu de données dans le panneau gauche.</strong> L’échelle de variance s’arrête à la plus grande valeur observée : les couleurs ne sont donc pas stables d’une exécution à l’autre. <a href="#panels">§6</a></li> <li><strong>Confusion entre \(s\) et la taille d’échantillon.</strong> La dispersion et \(n\) décroissent ensemble le long de la colonne Service I : l’horizon 5 repose sur 103 tessons contre 1741 pour l’horizon 2. Un contrôle par raréfaction les départagerait. <a href="#servicei">§9</a></li> <li><strong>L’affectation aux horizons est une convention codée en dur.</strong> Cinq classes issues de <code>FINDSPOT_HORIZON</code>, avec une table de correspondance pour les sites que le classeur et le TTL orthographient différemment. Maintenable et à source unique, mais elle doit accompagner la figure au titre de la provenance plutôt que de ne vivre que dans le module.</li> <li><strong>Des rangs ordinaux sous une statistique d’échelle de rapport — tranché par déclaration.</strong> Le coefficient de variation divise par la moyenne : \(q\) dépend donc du point de départ de la numérotation, ce qui n’est pas le cas de \(s\). Le projet a besoin de \(q\) : la numérotation relève désormais de la méthode et non d’un détail d’implémentation — <strong>le premier stade de chaque groupe porte le rang 1, et les rangs courent de 1 à k dans l’ordre des stades, sans lacune.</strong> Elle est dérivée de <code>TYPES</code> dans <code>services_to_rdf.py</code> et publiée sous <code>aeont:stageRank</code> : tout lecteur peut donc recalculer sur cette base. Voir ci-dessous ce que cela fixe. <a href="#origin">§11 a</a></li></ol>  <div class="note"><strong>Décision : l’origine des rangs est fixée à 1 et déclarée.</strong> \(q\) est nécessaire ; l’autre voie — abandonner \(q\) et ne publier que \(s\) — n’a donc pas été retenue. Il en résulte une obligation plutôt qu’une réserve : la numérotation doit être énoncée dans la section méthodologique, portée dans le graphe sous <code>aeont:stageRank</code>, et répétée dans la légende de la figure, car un \(q\) cité sans elle n’est pas reproductible.</div></section>
+<section id="origin">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="9">11a</text></svg>Ce que la déclaration fixe</h2>  <p class="sub">Quelle part de \(q\) vient des données et quelle part de la numérotation.</p>  <figure>
+    <svg viewBox="0 0 700 270" role="img" aria-label="rank origin sensitivity (fr)">
+  <rect x="0" y="0" width="700" height="270" fill="#fbfaf7"/>
+      <rect x="178" y="40" width="44" height="180" fill="#b07d31" fill-opacity=".10"/>
+      <text x="200" y="34" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#b07d31">déclaré</text>
+      <line x1="90" y1="40" x2="90" y2="220" stroke="#46525f"/>
+      <line x1="90" y1="220" x2="620" y2="220" stroke="#46525f"/>
+      <line x1="90" y1="200.0" x2="615" y2="200.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="82" y="204.00000000000003" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,60</text>
+      <line x1="90" y1="120.0" x2="615" y2="120.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="82" y="124.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0,80</text>
+      <line x1="90" y1="40.0" x2="615" y2="40.0" stroke="#e2ddd1" stroke-dasharray="3,3"/>
+      <text x="82" y="44.0" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">1,00</text>
+      <polyline fill="none" stroke="#9e3b26" stroke-width="1.8" points="110,191.3 200,137.8 290,112.1 380,97.1 470,80.3 560,63.2"/>
+      <circle cx="110" cy="191.3" r="3.4" fill="#9e3b26"/>
+      <circle cx="200" cy="137.8" r="3.4" fill="#9e3b26"/>
+      <circle cx="290" cy="112.1" r="3.4" fill="#9e3b26"/>
+      <circle cx="380" cy="97.1" r="3.4" fill="#9e3b26"/>
+      <circle cx="470" cy="80.3" r="3.4" fill="#9e3b26"/>
+      <circle cx="560" cy="63.2" r="3.4" fill="#9e3b26"/>
+      <text x="572" y="66.69605538896369" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9e3b26">H1</text>
+      <polyline fill="none" stroke="#b8604a" stroke-width="1.8" points="110,176.0 200,128.0 290,105.0 380,91.5 470,76.4 560,61.0"/>
+      <circle cx="110" cy="176.0" r="3.4" fill="#b8604a"/>
+      <circle cx="200" cy="128.0" r="3.4" fill="#b8604a"/>
+      <circle cx="290" cy="105.0" r="3.4" fill="#b8604a"/>
+      <circle cx="380" cy="91.5" r="3.4" fill="#b8604a"/>
+      <circle cx="470" cy="76.4" r="3.4" fill="#b8604a"/>
+      <circle cx="560" cy="61.0" r="3.4" fill="#b8604a"/>
+      <text x="572" y="64.45622973573299" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#b8604a">H2</text>
+      <polyline fill="none" stroke="#b07d31" stroke-width="1.8" points="110,132.0 200,101.3 290,85.9 380,76.7 470,66.2 560,55.2"/>
+      <circle cx="110" cy="132.0" r="3.4" fill="#b07d31"/>
+      <circle cx="200" cy="101.3" r="3.4" fill="#b07d31"/>
+      <circle cx="290" cy="85.9" r="3.4" fill="#b07d31"/>
+      <circle cx="380" cy="76.7" r="3.4" fill="#b07d31"/>
+      <circle cx="470" cy="66.2" r="3.4" fill="#b07d31"/>
+      <circle cx="560" cy="55.2" r="3.4" fill="#b07d31"/>
+      <text x="572" y="58.7379752725262" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#b07d31">H3</text>
+      <polyline fill="none" stroke="#6b8a6a" stroke-width="1.8" points="110,127.4 200,98.3 290,83.7 380,75.0 470,65.0 560,54.6"/>
+      <circle cx="110" cy="127.4" r="3.4" fill="#6b8a6a"/>
+      <circle cx="200" cy="98.3" r="3.4" fill="#6b8a6a"/>
+      <circle cx="290" cy="83.7" r="3.4" fill="#6b8a6a"/>
+      <circle cx="380" cy="75.0" r="3.4" fill="#6b8a6a"/>
+      <circle cx="470" cy="65.0" r="3.4" fill="#6b8a6a"/>
+      <circle cx="560" cy="54.6" r="3.4" fill="#6b8a6a"/>
+      <text x="572" y="58.07127338870765" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#6b8a6a">H4</text>
+      <polyline fill="none" stroke="#40655c" stroke-width="1.8" points="110,100.5 200,80.7 290,70.6 380,64.6 470,57.6 560,50.3"/>
+      <circle cx="110" cy="100.5" r="3.4" fill="#40655c"/>
+      <circle cx="200" cy="80.7" r="3.4" fill="#40655c"/>
+      <circle cx="290" cy="70.6" r="3.4" fill="#40655c"/>
+      <circle cx="380" cy="64.6" r="3.4" fill="#40655c"/>
+      <circle cx="470" cy="57.6" r="3.4" fill="#40655c"/>
+      <circle cx="560" cy="50.3" r="3.4" fill="#40655c"/>
+      <text x="572" y="53.80334756555655" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#40655c">H5</text>
+      <text x="110" y="238" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">0</text>
+      <text x="200" y="238" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">1</text>
+      <text x="290" y="238" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">2</text>
+      <text x="380" y="238" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">3</text>
+      <text x="470" y="238" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">5</text>
+      <text x="560" y="238" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">10</text>
+      <text x="355" y="258" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">rang du premier stade — le choix arbitraire</text>
+      <text transform="rotate(-90 34 130)" x="34" y="130" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">q</text>
+</svg>
+
+    <figcaption>Service I, les cinq horizons, sous toute numérotation plausible. Deux choses valent en même temps. Le <em>niveau</em> de \(q\) n’est pas une propriété des tessons : l’horizon 1 vaut 0,622 si le premier stade est numéroté 0 et 0,942 s’il est numéroté 10, et toute la famille est poussée vers 1 à mesure que l’origine croît, car une moyenne plus grande réduit le CV. Mais l’<em>ordre</em> ne change jamais : l’horizon 1 est le plus dispersé pour toute origine et l’horizon 5 le moins, et aucune courbe n’en croise une autre. Toutes les valeurs de \(s\) sont identiques le long de chaque courbe.</figcaption>
+  </figure>  <div class="note"><strong>Ce que cela autorise dans le texte.</strong> Les comparaisons entre horizons — « l’horizon 5 est plus resserré que l’horizon 1 » — sont sûres : elles survivent à toute numérotation. Un niveau cité seul — « la qualité de l’horizon 3 vaut 0,85 » — n’a de sens qu’accompagné de la déclaration, et n’est comparable à un \(q\) d’une autre étude que si celle-ci numérote ses rangs de la même façon. La formulation la plus sûre dans l’article consiste à mener avec \(s\), indépendant de l’origine, et à introduire \(q\) comme sa présentation bornée.</div>  <div class="warn"><strong>Trois endroits où la numérotation doit figurer.</strong> La section méthodologique, en une phrase ; le graphe, où <code>aeont:stageRank</code> la porte déjà par concept, ce qui rend l’assertion vérifiable par machine ; et la légende de la figure, puisque celle-ci sera réutilisée hors de l’article. Si elle ne figure qu’aux deux premiers endroits, c’est justement la légende qui sera citée.</div></section>
+<section id="legend">
+  <h2><svg class="ansa" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><g fill="none" stroke="#9e3b26" stroke-width="1.3"><path d="M7 3 L27 3 L27 19 L7 19 Z"/><path d="M7 3 L1 7 L1 15 L7 19"/><path d="M27 3 L33 7 L33 15 L27 19"/></g><text x="17" y="15" text-anchor="middle" fill="#9e3b26" font-family="IBM Plex Mono, monospace" font-size="10">12</text></svg>Glossaire de la légende</h2>  <p class="sub">Chaque marque de la figure, et ce qui l’autorise.</p>  <table><thead><tr><th>Marque</th><th>Signification</th><th>Source</th></tr></thead> <tbody> <tr><td>étiquette de ligne <code>Horizon 1…5</code></td><td>classe chronologique du site</td><td><code>FINDSPOT_HORIZON</code></td></tr> <tr><td>étiquette de colonne</td><td>groupe de service ; couleur accordée aux figures de frise</td><td>table sous-type → groupe</td></tr> <tr><td>grand nombre, à gauche</td><td>\(s\), écart-type d’échantillon du rang de stade sur les tessons</td><td><code>rgzm()</code>, <code>py/viz/_prelude.py</code></td></tr> <tr><td>grand nombre, à droite</td><td>\(q = \exp(-s/\overline{x})\)</td><td>même fonction</td></tr> <tr><td>petit <code>n=</code></td><td>tessons de la cellule — le \(N\) de la statistique <span class="pill keep">dans la formule</span></td><td>effectifs du classeur via <code>aeont:sherdCount</code></td></tr> <tr><td>remplissage gris</td><td>cellule dégénérée, hors de l’échelle de couleurs</td><td><a href="#degenerate">§7</a></td></tr> <tr><td>tiret</td><td>groupe non représenté dans cet horizon</td><td><a href="#cells">§10</a></td></tr> <tr><td>note de l’axe droit</td><td><em>rangs par stade seulement</em> — la règle d’attribution des rangs ; la lecture par sous-type en est la variante commutable</td><td><a href="#ranks">§3</a></td></tr> <tr><td>barre de couleurs, à gauche</td><td>0 → plus grand \(s\) observé <span class="pill legacy">relative</span></td><td><a href="#panels">§6</a></td></tr> <tr><td>barre de couleurs, à droite</td><td>0 → 1 <span class="pill keep">absolue</span></td><td><a href="#panels">§6</a></td></tr> </tbody></table></section>
+
+</main>
+
+<footer>
+  <div class="fi">
+    <p style="margin:0 0 .3rem"><strong>CAA 2026 · leiza-scit/CAA2026-alligator</strong></p>
+    <p style="margin:0">Chaque grandeur de cette page est lue dans les graphes publiés par <code>py/docs_facts.py</code>. En cas de désaccord entre la page et le graphe, la compilation échoue plutôt que la page ne mente.</p>
+    <p style="margin:.6rem 0 0; font-size:.8rem">Généré par py/build_docs.py — ne pas éditer ce fichier ; éditer py/note_fr.yaml.</p>
+  </div>
+</footer>
+
+</body>
+</html>
