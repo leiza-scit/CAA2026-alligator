@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 300" role="img" aria-label="one cell worked example (en)">
   <rect x="0" y="0" width="700" height="300" fill="#fbfaf7"/>
       <text x="20" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">the sample</text>
-      <text x="266" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">three sums Â· SPARQL</text>
-      <text x="482" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">four numbers Â· Python</text>
+      <text x="266" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">three sums · SPARQL</text>
+      <text x="482" y="22" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430" font-weight="600">four numbers · Python</text>
       <line x1="246" y1="30" x2="246" y2="252" stroke="#d9d3c6"/>
       <line x1="462" y1="30" x2="462" y2="252" stroke="#d9d3c6"/>
       <text x="20" y="64" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#46525f">rank 1</text>
@@ -21,7 +21,7 @@
       <text x="266" y="62" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">N      = 446</text>
       <text x="266" y="96" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">&#931; r&#183;c  = 1087</text>
       <text x="266" y="130" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1b2430">&#931; r&#178;&#183;c = 2857</text>
-      <text x="266" y="168" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">sufficient statistics â the</text>
+      <text x="266" y="168" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">sufficient statistics — the</text>
       <text x="266" y="184" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">query needs no more, which</text>
       <text x="266" y="200" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">is fortunate, because rdflib</text>
       <text x="266" y="216" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">has neither SQRT nor EXP</text>
@@ -34,5 +34,5 @@
       <text x="482" y="216" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">s and q; x̄ and CV are the</text>
       <text x="482" y="232" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">steps between them</text>
       <line x1="20" y1="266" x2="660" y2="266" stroke="#d9d3c6"/>
-      <text x="20" y="288" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 1 Â· Service I Â· the darkest cell of the printed figure, from the sherds to the two numbers in it.</text>
+      <text x="20" y="288" text-anchor="start" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 1 · Service I · the darkest cell of the printed figure, from the sherds to the two numbers in it.</text>
 </svg>
