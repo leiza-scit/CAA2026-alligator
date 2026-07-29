@@ -20,6 +20,8 @@
 <http://leiza-scit.github.io/CAA2026-alligator/graph/arretine_services>
     rdf:type prov:Entity ;
     dct:description "Sherd counts per findspot and service type, the evidence the seriation in arretine_sites_minigraph.ttl was computed from. Merge the two graphs to query across both."@en ;
+    dct:description "Trier-Petrisberg — aucun horizon chronologique : un seul type de service représenté (Schrägrandteller uniquement) : l'analyse des correspondances écarte donc le site, qui n'a ni coordonnée AFC, ni date Alligator, ni horizon."@fr ;
+    dct:description "Trier-Petrisberg — no chronological horizon: one service type represented (Schrägrandteller only), so the correspondence analysis drops the findspot: no CA coordinate, hence no Alligator date and no horizon."@en ;
     prov:wasDerivedFrom <http://leiza-scit.github.io/CAA2026-alligator/graph/arretine_sites_minigraph> ;
     prov:wasDerivedFrom <http://leiza-scit.github.io/CAA2026-alligator/source/ArretineDatedSitesServicesI_II.xlsx> ;
     rdfs:label "Arretine service-type counts"@en .
@@ -1610,7 +1612,7 @@ aeont:atFindspot
 
 aeont:columnRank
     rdf:type rdf:Property ;
-    rdfs:comment "Rank within the concept's own group, numbering the group's sub-types 1..k in column order, so a cup and a plate of the same stage are one step apart. The 'column' reading of the RGZM rank schemes; kept so the alternative can be re-checked, not because it is preferred."@en ;
+    rdfs:comment "Rank within the concept's own group, numbering the group's sub-types 1..k in column order, so a cup and a plate of the same stage are one step apart. The 'column' reading of the RGZM rank schemes; kept so the alternative can be re-checked, not because it is preferred. Numbering starts at 1 with no gaps, as for stage rank."@en ;
     rdfs:domain skos:Concept ;
     rdfs:label "column rank"@en ;
     rdfs:range xsd:integer .
@@ -1631,7 +1633,7 @@ aeont:sherdCount
 
 aeont:stageRank
     rdf:type rdf:Property ;
-    rdfs:comment "Rank within the concept's own group, numbering stages rather than sub-types, so a cup and a plate of the same stage share a rank. The reading this project reports: a change of vessel form is not a chronological step, and treating it as one would be an artefact. The two readings agree closely in any case (r = 0.998)."@en ;
+    rdfs:comment "Rank within the concept's own group, numbering stages rather than sub-types, so a cup and a plate of the same stage share a rank. The reading this project reports: a change of vessel form is not a chronological step, and treating it as one would be an artefact. The two readings agree closely in any case (r = 0.998). NUMBERING CONVENTION, part of the method rather than an implementation detail: the first stage of every group carries rank 1 and ranks run 1..k in stage order with no gaps. The quality score q = exp(-s/x̄) divides by the mean rank and so depends on where the numbering starts; the standard deviation s does not. Any q quoted from this graph is only reproducible together with this convention."@en ;
     rdfs:domain skos:Concept ;
     rdfs:label "stage rank"@en ;
     rdfs:range xsd:integer .
@@ -1649,6 +1651,10 @@ aeont:vesselForm
     rdfs:domain skos:Concept ;
     rdfs:label "vessel form"@en ;
     rdfs:range skos:Concept .
+
+ae:site_Trier-Petrisberg
+    dct:description "Aucun horizon chronologique : un seul type de service représenté (Schrägrandteller uniquement) : l'analyse des correspondances écarte donc le site, qui n'a ni coordonnée AFC, ni date Alligator, ni horizon."@fr ;
+    dct:description "No chronological horizon: one service type represented (Schrägrandteller only), so the correspondence analysis drops the findspot: no CA coordinate, hence no Alligator date and no horizon."@en .
 
 <http://leiza-scit.github.io/CAA2026-alligator/source/ArretineDatedSitesServicesI_II.xlsx>
     rdf:type prov:Entity ;

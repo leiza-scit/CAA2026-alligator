@@ -49,7 +49,8 @@ from rdflib.namespace import RDF, RDFS, SKOS, XSD
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import wd_paths                                              # noqa: E402
-from horizons import PERCENT_LABEL_CORRECTIONS               # noqa: E402
+from horizons import (  # noqa: E402
+    FINDSPOT_EXCLUSIONS, PERCENT_LABEL_CORRECTIONS, exclusion_reason)
 
 
 # ==============================================================================
@@ -258,14 +259,22 @@ def build_graph(counts, findspots) -> tuple[Graph, dict[str, int]]:
          "Rank within the concept's own group, numbering the group's sub-types "
          "1..k in column order, so a cup and a plate of the same stage are one "
          "step apart. The 'column' reading of the RGZM rank schemes; kept so "
-         "the alternative can be re-checked, not because it is preferred.",
+         "the alternative can be re-checked, not because it is preferred. "
+         "Numbering starts at 1 with no gaps, as for stage rank.",
          SKOS.Concept, XSD.integer),
         (AEONT.stageRank, "stage rank",
          "Rank within the concept's own group, numbering stages rather than "
          "sub-types, so a cup and a plate of the same stage share a rank. The "
          "reading this project reports: a change of vessel form is not a "
          "chronological step, and treating it as one would be an artefact. "
-         "The two readings agree closely in any case (r = 0.998).",
+         "The two readings agree closely in any case (r = 0.998). "
+         "NUMBERING CONVENTION, part of the method rather than an "
+         "implementation detail: the first stage of every group carries "
+         "rank 1 and ranks run 1..k in stage order with no gaps. The "
+         "quality score q = exp(-s/x̄) divides by the mean rank and so "
+         "depends on where the numbering starts; the standard deviation s "
+         "does not. Any q quoted from this graph is only reproducible "
+         "together with this convention.",
          SKOS.Concept, XSD.integer),
     ]:
         g.add((prop, RDF.type, RDF.Property))
@@ -384,6 +393,24 @@ def build_graph(counts, findspots) -> tuple[Graph, dict[str, int]]:
         "the two graphs to query across both.", lang="en")))
     g.add((layer, PROV.wasDerivedFrom, workbook))
     g.add((layer, PROV.wasDerivedFrom, AE["graph/arretine_sites_minigraph"]))
+
+    # Findspots the correspondence analysis could not place carry counts here
+    # but reach no horizon, so horizon-keyed queries return fewer sherds than
+    # this graph holds. Saying so in the graph turns that difference from an
+    # unexplained gap into a checkable statement.
+    lead = {"en": ("No chronological horizon", ": "),
+            "fr": ("Aucun horizon chronologique", "\u00a0: ")}
+    for label, reasons in FINDSPOT_EXCLUSIONS.items():
+        if label not in findspots:
+            continue
+        for lang in reasons:
+            reason = exclusion_reason(label, lang)
+            head, colon = lead.get(lang, lead["en"])
+            g.add((layer, DCT.description, Literal(
+                f"{label} — {head[0].lower()}{head[1:]}{colon}{reason}.",
+                lang=lang)))
+            g.add((findspots[label], DCT.description, Literal(
+                f"{head}{colon}{reason}.", lang=lang)))
     g.add((workbook, RDF.type, PROV.Entity))
     g.add((workbook, RDFS.label, Literal(
         "ArretineDatedSitesServicesI_II.xlsx", lang="en")))

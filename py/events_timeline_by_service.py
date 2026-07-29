@@ -55,12 +55,14 @@ matplotlib.use("Agg")  # Non-interactive backend — no display required
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import wd_repro  # noqa: E402, F401  (imported for its effect)
 from horizons import (  # noqa: E402  (shared horizon definition)
+    FINDSPOT_EXCLUSIONS,
     FINDSPOT_HORIZON,
     HORIZON_DISPLAY_ORDER,
     HORIZON_OF,
     HORIZONS,
     PERCENT_LABEL_CORRECTIONS,
     build_horizon_intervals,
+    exclusion_reason,
     resolve_horizon,
 )
 
@@ -193,21 +195,44 @@ STRINGS = {
         "legend_left": "Left panel",
         "legend_right": "Right panel",
         "legend_findspots": "Findspots per horizon",
+        "legend_excluded": "Findspots outside the seriation",
+        "excluded_tally": (
+            "Sherds in the workbook: {overall} · sherds inside a horizon, i.e. in "
+            "these panels: {in_horizon} · difference: {gap}."
+        ),
+        "origin_note": (
+            "NUMBERING CONVENTION — part of the method, not an implementation "
+            "detail: the first stage of every group carries rank 1 and ranks run "
+            "1..k in stage order with no gaps. CV divides by the mean rank, so q "
+            "depends on where the numbering starts while s does not: renumbering "
+            "the Service I stages 0, 1, 2 would move q for horizon 1 from 0.756 "
+            "to 0.607 and leave every s untouched. Comparisons between horizons "
+            "survive any numbering; a quoted level of q is only reproducible "
+            "together with this sentence."
+        ),
+        "excluded_note": (
+            "The correspondence analysis needs co-occurrence: a findspot earns its "
+            "position from the company its types keep elsewhere. A findspot with a "
+            "single type represented offers none and drops out, so it has no CA "
+            "coordinate, no Alligator date and no horizon. Such findspots are "
+            "listed below with their reason. Their material is in the workbook and "
+            "in the RDF graph but not in these panels, which is why the two totals "
+            "differ by exactly that much."
+        ),
         "legend_colour": (
             "Grey cells carry a value that follows from the rank list alone (a group "
             "of a single stage), or a dash where there is no material at all. "
             "Both panels use the same red-green palette, with green always marking "
             "the favourable case: on the left low variance (concentrated), on the "
             "right high quality. The variance scale therefore runs green → red, the "
-            "quality scale red → green. Grey cells (—) mark a group that is absent "
-            "from the horizon, or has too few sherds to compute the measure."
+            "quality scale red → green."
         ),
         "spread_note": (
             "RGZM method, applied WITHIN each group: every sherd is one observation "
             "valued by the rank of its sub-type inside its group. variance = "
             "STDDEV_SAMP of those ranks · quality q = exp(−CV), CV = s/|x̄|. "
-            "q → 1 = the group is concentrated in few sub-types; q → 0 = spread across "
-            "its sub-type sequence. n = sherds in that group."
+            "q → 1 = the group's sherds sit on few ranks; q → 0 = they are spread "
+            "across its rank sequence. n = sherds in that group."
         ),
         "rank_note": (
             "Ranks follow the chronological STAGE: cup and plate of one stage share "
@@ -266,21 +291,45 @@ STRINGS = {
         "legend_left": "Panneau de gauche",
         "legend_right": "Panneau de droite",
         "legend_findspots": "Sites par horizon",
+        "legend_excluded": "Sites hors sériation",
+        "excluded_tally": (
+            "Tessons dans le classeur : {overall} · tessons à l'intérieur d'un "
+            "horizon, c'est-à-dire dans ces panneaux : {in_horizon} · écart : {gap}."
+        ),
+        "origin_note": (
+            "CONVENTION DE NUMÉROTATION — elle relève de la méthode et non d'un "
+            "détail d'implémentation : le premier stade de chaque groupe porte le "
+            "rang 1 et les rangs courent de 1 à k dans l'ordre des stades, sans "
+            "lacune. Le CV divise par le rang moyen : q dépend donc du point de "
+            "départ de la numérotation, ce qui n'est pas le cas de s. Numéroter les "
+            "stades du Service I 0, 1, 2 ferait passer q de 0,756 à 0,607 pour "
+            "l'horizon 1 sans toucher à aucun s. Les comparaisons entre horizons "
+            "survivent à toute numérotation ; un niveau de q cité n'est "
+            "reproductible qu'accompagné de cette phrase."
+        ),
+        "excluded_note": (
+            "L'analyse des correspondances a besoin de co-occurrences : un site "
+            "gagne sa position par la compagnie que ses types tiennent ailleurs. Un "
+            "site ne présentant qu'un seul type n'en offre aucune et en sort : il "
+            "n'a ni coordonnée AFC, ni date Alligator, ni horizon. Ces sites sont "
+            "listés ci-dessous avec leur motif. Leur matériel figure dans le "
+            "classeur et dans le graphe RDF mais non dans ces panneaux, d'où "
+            "l'écart exact entre les deux totaux."
+        ),
         "legend_colour": (
             "Les cellules grises portent une valeur qui découle des seuls rangs (groupe "
             "à un seul stade), ou un tiret s'il n'y a aucun matériel. "
             "Les deux panneaux utilisent la même palette rouge-vert, le vert marquant "
             "toujours le cas favorable : à gauche une variance faible (concentrée), à "
             "droite une qualité élevée. L'échelle de variance va donc du vert au rouge, "
-            "celle de qualité du rouge au vert. Les cellules grises (—) indiquent un "
-            "groupe absent de l'horizon, ou trop peu de tessons pour calculer la mesure."
+            "celle de qualité du rouge au vert."
         ),
         "spread_note": (
             "Méthode RGZM, appliquée À L'INTÉRIEUR de chaque groupe : chaque tesson est "
             "une observation valuée par le rang de son sous-type dans son groupe. "
             "variance = STDDEV_SAMP des rangs · qualité q = exp(−CV), CV = s/|x̄|. "
-            "q → 1 = groupe concentré sur peu de sous-types ; q → 0 = dispersé sur la "
-            "séquence. n = tessons du groupe."
+            "q → 1 = tessons du groupe concentrés sur peu de rangs ; q → 0 = dispersés "
+            "sur la séquence des rangs. n = tessons du groupe."
         ),
         "rank_note": (
             "Les rangs suivent le STADE chronologique : tasse et assiette d'un même "
@@ -293,10 +342,14 @@ STRINGS = {
         "scope_note": (
             "IMPORTANT : ces panneaux mesurent uniquement la répartition du matériel "
             "d'un groupe sur SES PROPRES sous-types, et non la quantité présente de "
-            "ce groupe. Le Service II ne comporte qu'un seul stade chronologique et "
-            "reste donc indéfini ici (—), alors que sa part de l'assemblage est le "
-            "signal de datation le plus fort du matériel : de 6 % à l'horizon 1 à "
-            "92 % à l'horizon 5. Ce sont deux questions distinctes."
+            "ce groupe. Le Service II ne comporte qu'un seul stade chronologique : sa "
+            "variance vaut donc 0,00 et sa qualité 1,00 par construction et non par "
+            "mesure — ces cellules sont imprimées sur fond gris pour cette raison. Sa "
+            "part de l'assemblage est en revanche le signal de datation le plus fort "
+            "du matériel : de 6 % à l'horizon 1 à 92 % à l'horizon 5. Ce sont deux "
+            "questions distinctes ; les parts sont publiées dans les tableaux "
+            "joints. Un tiret (—) marque le cas différent d'une absence totale de "
+            "données."
         ),
     },
 }
@@ -978,8 +1031,10 @@ def compute_within_group_rgzm(counts_df, scheme="column"):
     ``_rgzm_variance_quality``):
         s = STDDEV_SAMP(sub-type ranks)      (variance within the group)
         q = exp(−CV), CV = s / |x̄|           (quality within the group)
-    q → 1: the group's material is concentrated in few sub-types; q → 0: it is
-    spread across the group's sub-type sequence.
+    q → 1: the group's sherds sit on few ranks; q → 0: they are spread across
+    the group's rank sequence. Under the stage reading a group may hold several
+    sub-types on one rank — Service II is two sub-types and q = 1.00 — so it is
+    ranks, not sub-types, that q counts.
 
     Returns (var_df, qual_df, ncell_df, n_horizon, measurable) indexed by
     horizon; the first three have one column per group. `measurable` maps each
@@ -1045,13 +1100,18 @@ def write_group_spread_csv(results, csv_path: Path):
           f"({out.shape[0]} rows, {len(schemes)} rank scheme(s))")
 
 
-def write_group_variability_legend(output_path: Path, lang="en", width=100):
+def write_group_variability_legend(output_path: Path, lang="en", width=100,
+                                  sherd_totals=None):
     """Write the figure's explanatory legend to a plain-text file.
 
     Everything that used to sit underneath the heatmap — the method note, what
     each panel shows, the colour convention and the findspots making up each
     horizon — is written here instead, so the figure stays uncluttered and the
     wording can be reused directly in a caption or catalogue entry.
+
+    `sherd_totals` is an optional (in_horizon, overall) pair. When given, the
+    legend states both numbers so the material missing from the panels is
+    accounted for by arithmetic rather than by assertion.
     """
     s = STRINGS.get(lang, STRINGS["en"])
     gdisp = GROUP_DISPLAY.get(lang, GROUP_DISPLAY["en"])
@@ -1067,6 +1127,8 @@ def write_group_variability_legend(output_path: Path, lang="en", width=100):
     lines.append(textwrap.fill(s["spread_note"], width=width))
     lines.append("")
     lines.append(textwrap.fill(s["rank_note"], width=width))
+    lines.append("")
+    lines.append(textwrap.fill(s["origin_note"], width=width))
     lines.append("")
     lines.append(textwrap.fill(s["scope_note"], width=width))
     lines.append("")
@@ -1091,6 +1153,25 @@ def write_group_variability_legend(output_path: Path, lang="en", width=100):
                           initial_indent=prefix,
                           subsequent_indent=" " * len(prefix))
         )
+
+    if FINDSPOT_EXCLUSIONS:
+        lines.append("")
+        lines += rule(s["legend_excluded"], "-")
+        lines.append(textwrap.fill(s["excluded_note"], width=width))
+        lines.append("")
+        for label in sorted(FINDSPOT_EXCLUSIONS):
+            prefix = f"{label}: "
+            lines.append(
+                textwrap.fill(exclusion_reason(label, lang), width=width,
+                              initial_indent=prefix,
+                              subsequent_indent=" " * len(prefix))
+            )
+        if sherd_totals:
+            in_horizon, overall = sherd_totals
+            lines.append("")
+            lines.append(s["excluded_tally"].format(
+                overall=overall, in_horizon=in_horizon,
+                gap=overall - in_horizon))
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -2008,6 +2089,7 @@ def main():
         var_df, qual_df, ncell_df, n_horizon, measurable = compute_within_group_rgzm(
             counts_df, scheme=scheme)
         results[scheme] = (var_df, qual_df, ncell_df, measurable)
+        sherds_in_horizon = int(n_horizon.sum())
     write_group_spread_csv(results, GROUP_VAR_CSV)
 
     # --- Timeline by service composition (EN + FR) ---
@@ -2027,11 +2109,14 @@ def main():
     )
 
     # The figure's explanatory legend, as a separate text file per language.
+    sherd_totals = (sherds_in_horizon, int(counts_df.fillna(0).to_numpy().sum()))
     write_group_variability_legend(
-        OUTPUT_DIR / "service_group_variability_legend_en.txt", lang="en"
+        OUTPUT_DIR / "service_group_variability_legend_en.txt", lang="en",
+        sherd_totals=sherd_totals
     )
     write_group_variability_legend(
-        OUTPUT_DIR / "service_group_variability_legend_fr.txt", lang="fr"
+        OUTPUT_DIR / "service_group_variability_legend_fr.txt", lang="fr",
+        sherd_totals=sherd_totals
     )
 
     # --- Horizon counterparts of the cluster figures (EN + FR) ---

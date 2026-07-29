@@ -14,6 +14,11 @@ matter:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from horizons import FINDSPOT_HORIZON, resolve_horizon, build_horizon_intervals
 
+Findspots the correspondence analysis could not place carry no horizon at
+all; they are listed with their reason in FINDSPOT_EXCLUSIONS (section 3), so
+that a gap between the workbook totals and the figure totals is always
+accounted for rather than inferred.
+
 Horizon 1 is the EARLIEST, horizon 5 the latest — the archaeological reading,
 in which the numbering runs with time rather than against it.
 
@@ -113,7 +118,58 @@ HORIZON_DISPLAY_ORDER = list(reversed(HORIZON_NUMBERS))
 
 
 # ==============================================================================
-# SECTION 3 · Lookup helpers
+# SECTION 3 · Findspots outside the seriation
+# ==============================================================================
+# The second table to edit. A findspot listed here carries no horizon and is
+# absent from every horizon-keyed output — not because it was overlooked, but
+# because the correspondence analysis could not place it. Recording the reason
+# here keeps the exclusion machine-readable and keeps the sherd totals
+# reconcilable: the difference between the workbook total and the figure total
+# is exactly the material of the findspots named below.
+#
+# The correspondence analysis works on co-occurrence: a findspot earns its
+# position from the company its types keep elsewhere. A findspot with a single
+# type represented offers none, drops out of the analysis, and therefore has no
+# CA coordinate, no Alligator date and no horizon.
+
+# Reasons are language-keyed, like FORMS and GROUPS in services_to_rdf.py, so
+# the bilingual outputs do not have to fall back to English. Add a "de" entry
+# when a German output needs one; exclusion_reason falls back to "en".
+FINDSPOT_EXCLUSIONS: dict[str, dict[str, str]] = {
+    "Trier-Petrisberg": {
+        "en": ("one service type represented (Schrägrandteller only), so the "
+               "correspondence analysis drops the findspot: no CA coordinate, "
+               "hence no Alligator date and no horizon"),
+        "fr": ("un seul type de service représenté (Schrägrandteller uniquement) : "
+               "l'analyse des correspondances écarte donc le site, qui n'a ni "
+               "coordonnée AFC, ni date Alligator, ni horizon"),
+    },
+}
+
+
+def exclusion_reason(label: str, lang: str = "en"):
+    """Return why a findspot carries no horizon, or None if it is not excluded.
+
+    Follows the same label bridge as resolve_horizon, so either spelling of a
+    findspot finds its entry. Falls back to English where a language is missing.
+    """
+    entry = FINDSPOT_EXCLUSIONS.get(label)
+    if entry is None:
+        bridged = PERCENT_LABEL_CORRECTIONS.get(label)
+        if bridged:
+            entry = FINDSPOT_EXCLUSIONS.get(bridged)
+    if entry is None:
+        for ttl_label, xlsx_label in PERCENT_LABEL_CORRECTIONS.items():
+            if xlsx_label == label:
+                entry = FINDSPOT_EXCLUSIONS.get(ttl_label)
+                break
+    if entry is None:
+        return None
+    return entry.get(lang) or entry["en"]
+
+
+# ==============================================================================
+# SECTION 4 · Lookup helpers
 # ==============================================================================
 
 

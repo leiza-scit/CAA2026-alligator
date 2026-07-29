@@ -5,8 +5,8 @@ Méthode
 -------
 Méthode RGZM, appliquée À L'INTÉRIEUR de chaque groupe : chaque tesson est une observation valuée
 par le rang de son sous-type dans son groupe. variance = STDDEV_SAMP des rangs · qualité q =
-exp(−CV), CV = s/|x̄|. q → 1 = groupe concentré sur peu de sous-types ; q → 0 = dispersé sur la
-séquence. n = tessons du groupe.
+exp(−CV), CV = s/|x̄|. q → 1 = tessons du groupe concentrés sur peu de rangs ; q → 0 = dispersés sur
+la séquence des rangs. n = tessons du groupe.
 
 Les rangs suivent le STADE chronologique : tasse et assiette d'un même stade partagent un rang (Ia =
 1, Ib = 2, Ic = 3), car elles sont contemporaines et un changement de forme n'est pas un pas dans le
@@ -14,11 +14,21 @@ temps. L'alternative — numéroter les sous-types 1..k dans l'ordre des colonne
 donne la même image (ordre des horizons identique, r = 0,998) ; la lecture ne dépend donc pas de ce
 choix.
 
+CONVENTION DE NUMÉROTATION — elle relève de la méthode et non d'un détail d'implémentation : le
+premier stade de chaque groupe porte le rang 1 et les rangs courent de 1 à k dans l'ordre des
+stades, sans lacune. Le CV divise par le rang moyen : q dépend donc du point de départ de la
+numérotation, ce qui n'est pas le cas de s. Numéroter les stades du Service I 0, 1, 2 ferait passer
+q de 0,756 à 0,607 pour l'horizon 1 sans toucher à aucun s. Les comparaisons entre horizons
+survivent à toute numérotation ; un niveau de q cité n'est reproductible qu'accompagné de cette
+phrase.
+
 IMPORTANT : ces panneaux mesurent uniquement la répartition du matériel d'un groupe sur SES PROPRES
 sous-types, et non la quantité présente de ce groupe. Le Service II ne comporte qu'un seul stade
-chronologique et reste donc indéfini ici (—), alors que sa part de l'assemblage est le signal de
-datation le plus fort du matériel : de 6 % à l'horizon 1 à 92 % à l'horizon 5. Ce sont deux
-questions distinctes.
+chronologique : sa variance vaut donc 0,00 et sa qualité 1,00 par construction et non par mesure —
+ces cellules sont imprimées sur fond gris pour cette raison. Sa part de l'assemblage est en revanche
+le signal de datation le plus fort du matériel : de 6 % à l'horizon 1 à 92 % à l'horizon 5. Ce sont
+deux questions distinctes ; les parts sont publiées dans les tableaux joints. Un tiret (—) marque le
+cas différent d'une absence totale de données.
 
 Panneaux
 --------
@@ -28,9 +38,7 @@ Panneau de droite: Qualité intra-groupe  (q = exp(−CV))
 Les cellules grises portent une valeur qui découle des seuls rangs (groupe à un seul stade), ou un
 tiret s'il n'y a aucun matériel. Les deux panneaux utilisent la même palette rouge-vert, le vert
 marquant toujours le cas favorable : à gauche une variance faible (concentrée), à droite une qualité
-élevée. L'échelle de variance va donc du vert au rouge, celle de qualité du rouge au vert. Les
-cellules grises (—) indiquent un groupe absent de l'horizon, ou trop peu de tessons pour calculer la
-mesure.
+élevée. L'échelle de variance va donc du vert au rouge, celle de qualité du rouge au vert.
 
 Assiette à bord oblique · Service I · Service II
 
@@ -46,3 +54,17 @@ Horizon 4: Wiesbaden · Vindonissa, Königsfelden · Oberwinterthur, Römerstr. 
            · Nijmegen, Trajanusplein · Friedberg · Bregenz · Avenches, Insula 15 · Augst, Insula 31
            · Augsburg, Stadt
 Horizon 5: Zurzach, Lager · Velsen · Vechten · Maastricht · Augst, Theater · Augst, Insula 20
+
+Sites hors sériation
+--------------------
+L'analyse des correspondances a besoin de co-occurrences : un site gagne sa position par la
+compagnie que ses types tiennent ailleurs. Un site ne présentant qu'un seul type n'en offre aucune
+et en sort : il n'a ni coordonnée AFC, ni date Alligator, ni horizon. Ces sites sont listés ci-
+dessous avec leur motif. Leur matériel figure dans le classeur et dans le graphe RDF mais non dans
+ces panneaux, d'où l'écart exact entre les deux totaux.
+
+Trier-Petrisberg: un seul type de service représenté (Schrägrandteller uniquement) : l'analyse des
+                  correspondances écarte donc le site, qui n'a ni coordonnée AFC, ni date Alligator,
+                  ni horizon
+
+Tessons dans le classeur : 7131 · tessons à l'intérieur d'un horizon, c'est-à-dire dans ces panneaux : 7130 · écart : 1.
