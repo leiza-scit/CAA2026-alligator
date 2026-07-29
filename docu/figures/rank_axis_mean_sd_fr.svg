@@ -57,5 +57,5 @@
       <text x="200" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rang 1</text>
       <text x="360" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rang 2</text>
       <text x="520" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rang 3</text>
-      <text x="380" y="252" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">rang de stade â l’aire du point est la part des tessons, le trait est x̄, la barre est ±s</text>
+      <text x="380" y="252" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">rang de stade — l’aire du point est la part des tessons, le trait est x̄, la barre est ±s</text>
 </svg>

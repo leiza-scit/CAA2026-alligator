@@ -57,5 +57,5 @@
       <text x="200" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rank 1</text>
       <text x="360" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rank 2</text>
       <text x="520" y="230" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#46525f">rank 3</text>
-      <text x="380" y="252" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">stage rank â dot area is the share of sherds, the tick is x̄, the bracket is ±s</text>
+      <text x="380" y="252" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">stage rank — dot area is the share of sherds, the tick is x̄, the bracket is ±s</text>
 </svg>
