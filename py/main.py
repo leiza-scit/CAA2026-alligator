@@ -108,6 +108,23 @@ STEPS = [
         # py/templates/, so it is synced here rather than maintained twice.
         "copy_after": [("py/templates/style.css", "docs/style.css")],
     },
+    {
+        "key": "docs",
+        "script": "build_docs.py",
+        "label": "Variability note \u00b7 the whole document, generated and audited",
+        "resets": False,
+        # Draws every data-bearing figure of the companion note from
+        # docs_facts.collect(), so a changed count moves the figures with it,
+        # and cross-checks the facts against themselves before drawing
+        # anything. Runs last: it reads both graphs.
+        "expects": [
+            "output/docs/service_group_variability_explained.html",
+            "output/docs/service_group_variability_explained_fr.html",
+            "output/docs/service_group_variability_derivation.xlsx",
+            "output/docs/service_variance_en.svg",
+            "output/docs/seriation_to_horizons_fr.svg",
+        ],
+    },
 ]
 
 

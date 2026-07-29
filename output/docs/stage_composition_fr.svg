@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 308" role="img" aria-label="stage composition (fr)">
+  <rect x="0" y="0" width="700" height="308" fill="#fbfaf7"/>
+      <rect x="150" y="18" width="14" height="12" fill="#f2c3bb"/>
+      <text x="170" y="28" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">stade · rang 1</text>
+      <rect x="272" y="18" width="14" height="12" fill="#cc7264"/>
+      <text x="292" y="28" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">stade · rang 2</text>
+      <rect x="394" y="18" width="14" height="12" fill="#9e3b26"/>
+      <text x="414" y="28" text-anchor="start" font-family="Public Sans" font-size="10.5" fill="#46525f">stade · rang 3</text>
+      <text x="140" y="80" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 5</text>
+      <rect x="150.0" y="62" width="37.4" height="26" fill="#cc7264"/>
+      <text x="168.68932038834953" y="80" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">11%</text>
+      <rect x="187.4" y="62" width="312.6" height="26" fill="#9e3b26"/>
+      <text x="343.68932038834953" y="80" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">89%</text>
+      <text x="512.0" y="75" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,89 · s = 0,31</text>
+      <text x="512.0" y="86" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 103</text>
+      <text x="140" y="118" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 4</text>
+      <rect x="150.0" y="100" width="2.3" height="26" fill="#f2c3bb"/>
+      <rect x="152.3" y="100" width="75.2" height="26" fill="#cc7264"/>
+      <text x="189.93288590604027" y="118" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">21%</text>
+      <rect x="227.5" y="100" width="272.5" height="26" fill="#9e3b26"/>
+      <text x="363.758389261745" y="118" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">78%</text>
+      <text x="512.0" y="113" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,77 · s = 0,44</text>
+      <text x="512.0" y="124" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 149</text>
+      <text x="140" y="156" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 3</text>
+      <rect x="150.0" y="138" width="3.1" height="26" fill="#f2c3bb"/>
+      <rect x="153.1" y="138" width="83.3" height="26" fill="#cc7264"/>
+      <text x="194.7136563876652" y="156" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">24%</text>
+      <rect x="236.3" y="138" width="263.7" height="26" fill="#9e3b26"/>
+      <text x="368.17180616740086" y="156" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">75%</text>
+      <text x="512.0" y="151" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,74 · s = 0,46</text>
+      <text x="512.0" y="162" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 908</text>
+      <text x="140" y="194" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 2</text>
+      <rect x="150.0" y="176" width="23.1" height="26" fill="#f2c3bb"/>
+      <rect x="173.1" y="176" width="132.9" height="26" fill="#cc7264"/>
+      <text x="239.56059735784032" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">38%</text>
+      <rect x="306.0" y="176" width="194.0" height="26" fill="#9e3b26"/>
+      <text x="403.0011487650776" y="194" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">55%</text>
+      <text x="512.0" y="189" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,49 · s = 0,62</text>
+      <text x="512.0" y="200" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 1741</text>
+      <text x="140" y="232" text-anchor="end" font-family="Public Sans" font-size="11" fill="#1b2430">Horizon 1</text>
+      <rect x="150.0" y="214" width="38.5" height="26" fill="#f2c3bb"/>
+      <text x="169.22645739910314" y="232" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1a1a1a">11%</text>
+      <rect x="188.5" y="214" width="120.1" height="26" fill="#cc7264"/>
+      <text x="248.48654708520178" y="232" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">34%</text>
+      <rect x="308.5" y="214" width="191.5" height="26" fill="#9e3b26"/>
+      <text x="404.26008968609864" y="232" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#ffffff">55%</text>
+      <text x="512.0" y="227" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#1b2430">x&#772; = 2,44 · s = 0,68</text>
+      <text x="512.0" y="238" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8a8272">n = 446</text>
+      <line x1="150" y1="262" x2="500" y2="262" stroke="#d9d3c6"/>
+      <text x="325" y="280" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#46525f">part des tessons du Service I, par stade</text>
+      <text x="325" y="296" text-anchor="middle" font-family="Public Sans" font-size="10.5" fill="#9e3b26">horizon plus tardif → la masse se concentre sur un rang → s diminue</text>
+</svg>

@@ -1,0 +1,1204 @@
+# The variability note, one source for both languages.
+#
+# Every piece of text carries an 'en' and an 'fr'. That is the point of the
+# single file: a block cannot be revised in one language and forgotten in the
+# other, because build_docs.py refuses to render a note in which any string is
+# missing a translation. The two versions are therefore always the same
+# document, block for block, or there is no document at all.
+#
+# 'figure' names a builder in build_docs.FIGURES, or an SVG in py/docs_assets/
+# named <figure>_<lang>.svg. 'marker' is the number in the section's tabula
+# ansata. Edit here; output/docs/*.html is overwritten on every run.
+
+sections:
+- id: cell
+  marker: '1'
+  heading:
+    en: What one cell is
+    fr: Ce qu’est une cellule
+  sub:
+    en: The unit of the figure, stated before anything is computed from it.
+    fr: L’unité de la figure, énoncée avant tout calcul.
+  blocks:
+  - type: p
+    html:
+      en: 'One cell of either panel is a pair: a chronological <strong>horizon</strong> (row) and a <strong>service
+        group</strong> (column). Three groups are plotted — <em>Assiette à bord oblique</em>, <em>Service
+        I</em>, <em>Service II</em> — against five horizons, so the grid has fifteen positions, of which
+        twelve are occupied.'
+      fr: 'Une cellule, dans l’un ou l’autre panneau, est un couple : un <strong>horizon</strong> chronologique
+        (ligne) et un <strong>groupe de service</strong> (colonne). Trois groupes sont portés — <em>Assiette
+        à bord oblique</em>, <em>Service I</em>, <em>Service II</em> — face à cinq horizons, soit quinze
+        positions, dont douze sont occupées.'
+  - type: p
+    html:
+      en: What the cell reports is <em>not</em> a date, and not a count. It is a measure of how far apart
+        the chronological ranks of that group's sub-types lie, taken across all the material assigned
+        to that horizon. The left panel gives that spread in rank units; the right panel gives the same
+        spread rescaled to a bounded score. Nothing in either panel is calendar years.
+      fr: Ce que la cellule rapporte n’est <em>ni</em> une date <em>ni</em> un effectif. C’est une mesure
+        de l’écartement des rangs chronologiques des sous-types du groupe, sur l’ensemble du matériel
+        affecté à cet horizon. Le panneau gauche donne cette dispersion en unités de rang ; le panneau
+        droit, la même dispersion ramenée à un score borné. Rien, dans aucun des deux, ne s’exprime en
+        années.
+  - type: note
+    html:
+      en: <strong>Read the figure as one measurement shown twice.</strong> The right panel is a deterministic
+        function of the left, evaluated cell by cell. A cell that is red on the left is necessarily low
+        on the right. The two panels are not two lines of evidence and must never be cited as agreeing
+        with one another.
+      fr: <strong>Lire la figure comme une seule mesure montrée deux fois.</strong> Le panneau droit est
+        une fonction déterministe du gauche, évaluée cellule par cellule. Une cellule rouge à gauche est
+        nécessairement basse à droite. Les deux panneaux ne constituent pas deux faisceaux d’indices et
+        ne doivent jamais être cités comme se confirmant l’un l’autre.
+- id: chain
+  marker: '2'
+  heading:
+    en: From the spreadsheet to the cell
+    fr: Du tableur à la cellule
+  sub:
+    en: Four assignments, each of which can be argued with separately.
+    fr: Quatre affectations, dont chacune se discute séparément.
+  blocks:
+  - type: figure
+    figure: aggregation_chain
+    caption:
+      en: 'Two of the four steps are conventions rather than measurements: the horizon assignment is a
+        hardcoded dictionary, and the grouping of nine sub-types into three service groups is a typological
+        decision. Both belong in the provenance of any RDF export, because neither can be recovered from
+        the numbers. The counts are not a fifth step but the sample itself — see <a href="#n">§8</a>.'
+      fr: 'Deux des quatre étapes sont des conventions et non des mesures : l’affectation aux horizons
+        est un dictionnaire en dur, et le regroupement des neuf sous-types en trois groupes de service
+        est une décision typologique. Toutes deux relèvent de la provenance de tout export RDF, car aucune
+        ne se déduit des nombres. Les effectifs ne sont pas une cinquième étape mais l’échantillon lui-même
+        — voir <a href="#n">§8</a>.'
+- id: seriation
+  marker: 2a
+  heading:
+    en: Where the five rows come from
+    fr: D’où viennent les cinq lignes
+  sub:
+    en: The horizon assignment, and how far it follows the seriation.
+    fr: L’affectation aux horizons, et jusqu’où elle suit la sériation.
+  blocks:
+  - type: p
+    html:
+      en: The rows of the figure are not a mechanical cut of the seriation. <code>FINDSPOT_HORIZON</code>
+        is a hand-maintained table — one line per findspot, edited when the archaeology says so — and
+        the horizon intervals are then the envelope of the estimated dates of its members. Plotting the
+        findspots on the first correspondence-analysis axis shows how closely the two agree, and exactly
+        where they do not.
+      fr: Les lignes de la figure ne sont pas une découpe mécanique de la sériation. <code>FINDSPOT_HORIZON</code>
+        est une table tenue à la main — une ligne par site, modifiée quand l’archéologie l’exige — et
+        les intervalles d’horizon sont ensuite l’enveloppe des dates estimées de leurs membres. Porter
+        les sites sur le premier axe de l’analyse factorielle des correspondances montre à quel point
+        les deux concordent, et exactement où elles divergent.
+  - type: p
+    html:
+      en: 'Findspot labels differ between the workbook and the TTL, so the lookup is not a plain dictionary
+        hit: <code>resolve_horizon()</code> tries the label, then <code>PERCENT_LABEL_CORRECTIONS</code>,
+        then that bridge in reverse. The camp the TTL calls <em>Nijmegen, Lager</em> appears in the workbook
+        as <em>Nijmegen, Lager (Haalebos)</em>, and is a different site from <em>Nijmegen, Lager (Brunsting)</em>.
+        Anything reading the horizon of a findspot must go through <code>resolve_horizon()</code> rather
+        than index <code>FINDSPOT_HORIZON</code> directly, or the Haalebos camp silently drops out.'
+      fr: 'Les libellés de sites diffèrent entre le classeur et le TTL : la recherche n’est donc pas un
+        simple accès au dictionnaire. <code>resolve_horizon()</code> essaie le libellé, puis <code>PERCENT_LABEL_CORRECTIONS</code>,
+        puis ce pont en sens inverse. Le camp que le TTL nomme <em>Nijmegen, Lager</em> figure dans le
+        classeur comme <em>Nijmegen, Lager (Haalebos)</em>, et constitue un site distinct de <em>Nijmegen,
+        Lager (Brunsting)</em>. Tout code lisant l’horizon d’un site doit passer par <code>resolve_horizon()</code>
+        plutôt qu’indexer directement <code>FINDSPOT_HORIZON</code>, faute de quoi le camp de Haalebos
+        disparaît silencieusement.'
+  - type: figure
+    figure: seriation_to_horizons
+    caption:
+      en: 'Forty of the forty-four plotted findspots fall in seriation order; four do not. Augst Insula
+        31 sits in the middle of the horizon-3 field, Nijmegen (Brunsting) and Vetera I among the horizon-4
+        material, and Augst Insula 20 ahead of the last horizon-4 findspot. Note also that horizon 2 spans
+        15 BC to AD 13 — nearly the whole sequence — because its envelope is set by findspots with wide
+        estimated ranges. The leftmost point is the Haalebos camp at Nijmegen, the earliest on the axis
+        and in the earliest horizon. The forty-fifth findspot, Trier-Petrisberg, is not plotted: it has
+        no dated event and therefore no CA coordinate, so it carries no horizon either.'
+      fr: 'Quarante des quarante-quatre sites portés se placent dans l’ordre de sériation ; quatre non.
+        Augst Insula 31 se trouve au milieu du champ de l’horizon 3, Nimègue (Brunsting) et Vetera I parmi
+        le matériel de l’horizon 4, et Augst Insula 20 devant le dernier site de l’horizon 4. On notera
+        aussi que l’horizon 2 couvre de 15 av. J.-C. à 13 apr. J.-C. — presque toute la séquence — parce
+        que son enveloppe est fixée par des sites aux intervalles estimés très larges. Le point le plus
+        à gauche est le camp de Haalebos à Nimègue, le plus ancien sur l’axe et dans l’horizon le plus
+        ancien. Le quarante-cinquième site, Trèves-Petrisberg, n’est pas porté : il n’a aucun événement
+        daté, donc aucune coordonnée AFC, et par conséquent aucun horizon.'
+  - type: note
+    html:
+      en: '<strong>Why this figure belongs in the paper.</strong> It is the honest statement of what a
+        horizon is here: an archaeological judgement informed by the seriation, not a quantile of it.
+        Four departures out of forty-four is a good agreement and a much better claim than an unexamined
+        one — and a reader who wants to test the variance result against a different grouping now knows
+        precisely which four assignments to vary.'
+      fr: '<strong>Pourquoi cette figure a sa place dans l’article.</strong> Elle énonce honnêtement ce
+        qu’est ici un horizon : un jugement archéologique informé par la sériation, non un quantile de
+        celle-ci. Quatre écarts sur quarante-quatre constituent un bon accord, et une affirmation bien
+        plus solide qu’un accord jamais vérifié — et un lecteur souhaitant éprouver le résultat de variance
+        sur un autre regroupement sait désormais précisément quelles quatre affectations faire varier.'
+  - type: h3
+    html:
+      en: The forty-fifth findspot, and why it is not here
+      fr: Le quarante-cinquième site, et pourquoi il n’est pas ici
+  - type: p
+    html:
+      en: 'The correspondence analysis needs co-occurrence: a findspot earns a position on the axis from
+        the company its types keep at other findspots. A findspot with a single type represented offers
+        no such information — its row of the matrix has one mark — and it drops out. It therefore has
+        no CA coordinate, and without one the Alligator cannot date it, so it reaches no horizon.'
+      fr: 'L’analyse des correspondances a besoin de co-occurrences : un site gagne sa position sur l’axe
+        par la compagnie que ses types tiennent sur les autres sites. Un site ne présentant qu’un seul
+        type n’offre aucune information de ce genre — sa ligne de la matrice ne porte qu’une marque —
+        et il en sort. Il n’a donc pas de coordonnée AFC, et sans elle l’Alligator ne peut le dater :
+        il n’atteint aucun horizon.'
+  - type: p
+    html:
+      en: 'Exactly one findspot in this corpus is in that position. Trier-Petrisberg holds one oblique-rim
+        plate and nothing else. The arithmetic closes on it:'
+      fr: 'Un seul site du corpus se trouve dans ce cas. Trèves-Petrisberg ne livre qu’une assiette à
+        bord oblique et rien d’autre. Le compte se referme dessus :'
+  - type: table
+    html:
+      en: <thead><tr><th>sherds</th><th class="num">count</th><th>where</th></tr></thead> <tbody> <tr><td>in
+        the service graph</td><td class="num">7131</td><td>262 observations, all findspots</td></tr> <tr><td>inside
+        a horizon</td><td class="num">7130</td><td>the twelve occupied cells of the figure</td></tr> <tr><td>difference</td><td
+        class="num">1</td><td>Trier-Petrisberg, one oblique-rim plate</td></tr> </tbody>
+      fr: <thead><tr><th>tessons</th><th class="num">effectif</th><th>où</th></tr></thead> <tbody> <tr><td>dans
+        le graphe des services</td><td class="num">7131</td><td>262 observations, tous sites confondus</td></tr>
+        <tr><td>à l’intérieur d’un horizon</td><td class="num">7130</td><td>les douze cellules occupées
+        de la figure</td></tr> <tr><td>différence</td><td class="num">1</td><td>Trèves-Petrisberg, une
+        assiette à bord oblique</td></tr> </tbody>
+  - type: p
+    html:
+      en: The exclusion costs the figure nothing. The oblique-rim plate column is degenerate in every
+        horizon — one sub-type, stage rank 1 — so the sherd would raise an \(n\) by one and leave \(s
+        = 0.00\) and \(q = 1.00\) exactly where they are. Including it would mean assigning a horizon
+        by hand to a findspot the seriation cannot place at all, which is a different kind of entry in
+        <code>FINDSPOT_HORIZON</code> from a correction to a position the seriation did supply. The plot
+        above would gain a point with no value on its own x-axis, and the claim that forty of forty-four
+        fall in seriation order would stop being checkable.
+      fr: L’exclusion ne coûte rien à la figure. La colonne de l’assiette à bord oblique est dégénérée
+        dans tous les horizons — un sous-type, rang de stade 1 — de sorte que ce tesson ferait monter
+        un \(n\) d’une unité et laisserait \(s = 0{,}00\) et \(q = 1{,}00\) exactement où ils sont. L’inclure
+        supposerait d’attribuer à la main un horizon à un site que la sériation ne peut pas placer du
+        tout, ce qui constitue dans <code>FINDSPOT_HORIZON</code> une entrée d’une autre nature qu’une
+        correction apportée à une position effectivement fournie par la sériation. Le graphique ci-dessus
+        gagnerait un point sans valeur sur son propre axe des abscisses, et l’affirmation selon laquelle
+        quarante sites sur quarante-quatre suivent l’ordre de sériation cesserait d’être vérifiable.
+  - type: figure
+    figure: degeneracy_two_scales
+    caption:
+      en: 'Left: a presence–absence matrix. Three findspots share types with one another and can be ordered
+        by that sharing; the fourth has one mark and cannot. Right: the situation of <a href="#degenerate">§7</a>,
+        one group whose sherds all carry a single rank. The two are the same structural fact met at different
+        scales of the pipeline — in both, a single category leaves nothing to compare, and the honest
+        output is an absence rather than a number.'
+      fr: 'À gauche : une matrice de présence-absence. Trois sites partagent des types entre eux et peuvent
+        être ordonnés par ce partage ; le quatrième ne porte qu’une marque et ne le peut pas. À droite
+        : la situation du <a href="#degenerate">§7</a>, un groupe dont tous les tessons portent un rang
+        unique. Les deux sont le même fait structurel rencontré à des échelles différentes de la chaîne
+        de traitement — dans l’un comme dans l’autre, une catégorie unique ne laisse rien à comparer,
+        et la sortie honnête est une absence plutôt qu’un nombre.'
+  - type: note
+    html:
+      en: '<strong>Record the exclusion rather than the findspot.</strong> One sherd in 7131 is not a
+        problem; an undocumented gap between the workbook total and the figure total is. A companion table
+        to <code>FINDSPOT_HORIZON</code> — findspot, and the reason it carries no horizon — costs three
+        lines, survives a rebuild, and can be asserted in the graph as provenance instead of living in
+        a caption. The rule behind it belongs in the method section too: <em>findspots with a single represented
+        type are dropped by the correspondence analysis</em> is a filter with a sample-size consequence,
+        and a reviewer will ask.'
+      fr: '<strong>Consigner l’exclusion plutôt que le site.</strong> Un tesson sur 7131 n’est pas un
+        problème ; un écart non documenté entre le total du classeur et celui de la figure en est un.
+        Une table compagnon de <code>FINDSPOT_HORIZON</code> — le site, et la raison pour laquelle il
+        ne porte aucun horizon — coûte trois lignes, survit à une reconstruction et peut être affirmée
+        dans le graphe au titre de la provenance plutôt que de vivre dans une légende. La règle qui la
+        sous-tend a également sa place dans la section méthodologique : <em>les sites ne présentant qu’un
+        seul type sont écartés par l’analyse des correspondances</em> est un filtre avec une conséquence
+        sur la taille d’échantillon, et un rapporteur posera la question.'
+- id: graph
+  marker: 2b
+  heading:
+    en: The statistic as data
+    fr: La statistique comme donnée
+  sub:
+    en: Why the ranks are properties of concepts rather than constants in a script.
+    fr: Pourquoi les rangs sont des propriétés de concepts et non des constantes de script.
+  blocks:
+  - type: p
+    html:
+      en: 'Every quantity the figure rests on is a triple in a published graph: the sherd count, the stage
+        rank, the group membership, the horizon. Nothing is a magic number inside the plotting code, and
+        the consequence is that the figure can be recomputed by a reader who has never seen the script.'
+      fr: 'Chaque grandeur sur laquelle repose la figure est un triplet d’un graphe publié : l’effectif
+        de tessons, le rang de stade, l’appartenance au groupe, l’horizon. Rien n’est un nombre magique
+        enfoui dans le code de tracé, et il en résulte que la figure peut être recalculée par un lecteur
+        qui n’a jamais vu le script.'
+  - type: figure
+    figure: rdf_sidecar_shape
+    caption:
+      en: The counts live in a sidecar graph over the seriation graph rather than being merged into it,
+        so the evidence and the analysis stay separable. The findspot keeps the opaque identifier the
+        Alligator minted for it — <code>ae:Gjndwx</code>, labelled Haltern — rather than a label-derived
+        one, which is what lets the counts layer point at the base graph without asserting anything about
+        it. Both rank readings are carried per concept, <code>aeont:stageRank</code> and <code>aeont:columnRank</code>,
+        which is what makes the comparison of §7 a change of one variable in a query rather than a second
+        pipeline.
+      fr: 'Les effectifs résident dans un graphe satellite posé sur le graphe de sériation plutôt que
+        fusionnés avec lui : les données et l’analyse restent séparables. Le site conserve l’identifiant
+        opaque forgé par l’Alligator — <code>ae:Gjndwx</code>, étiqueté Haltern — plutôt qu’un identifiant
+        dérivé du libellé, ce qui permet à la couche des décomptes de pointer vers le graphe de base sans
+        rien affirmer à son sujet. Les deux lectures de rang sont portées par concept, <code>aeont:stageRank</code>
+        et <code>aeont:columnRank</code>, ce qui fait de la comparaison du §7 le changement d’une variable
+        dans une requête plutôt qu’une seconde chaîne de traitement.'
+  - type: note
+    html:
+      en: <strong>The sufficient statistics are the interoperability story.</strong> Because the within-group
+        variance needs only \(N\), \(\sum r c\) and \(\sum r^{2} c\), the whole method survives a query
+        engine that has neither <code>SQRT</code> nor <code>EXP</code> — which rdflib's SPARQL does not.
+        The query returns three sums per cell; the printed figure, the browser figure and the notebook
+        all take the last two steps in Python from those same three numbers, so none of the three can
+        drift from the others.
+      fr: <strong>Les statistiques exhaustives sont l’argument d’interopérabilité.</strong> Comme la variance
+        intra-groupe ne requiert que \(N\), \(\sum r c\) et \(\sum r^{2} c\), la méthode tout entière
+        survit à un moteur de requête dépourvu de <code>SQRT</code> et d’<code>EXP</code> — ce qui est
+        le cas du SPARQL de rdflib. La requête renvoie trois sommes par cellule ; la figure imprimée,
+        la figure du navigateur et le carnet exécutent tous les deux dernières étapes en Python à partir
+        de ces mêmes trois nombres, si bien qu’aucun des trois ne peut diverger des autres.
+- id: ranks
+  marker: '3'
+  heading:
+    en: The quantity that is dispersed
+    fr: La grandeur qui se disperse
+  sub:
+    en: Ranks, not years — and a stage is not a horizon.
+    fr: Des rangs, non des années — et un stade n’est pas un horizon.
+  blocks:
+  - type: p
+    html:
+      en: Two ordering systems meet in this figure and they are easily confused, because both run from
+        early to late and both are numbered from 1.
+      fr: Deux systèmes d’ordre se rencontrent dans cette figure et se confondent aisément, car tous deux
+        vont du plus ancien au plus récent et tous deux sont numérotés à partir de 1.
+  - type: table
+    html:
+      en: <thead><tr><th></th><th>Horizon</th><th>Stage</th></tr></thead> <tbody> <tr><td>orders</td><td>findspots</td><td>sub-types</td></tr>
+        <tr><td>how many</td><td>5, for the whole corpus</td><td>1 to 3, restarting inside each group</td></tr>
+        <tr><td>comes from</td><td>the seriation, fixed in <code>FINDSPOT_HORIZON</code></td><td>the typology,
+        derived in <code>services_to_rdf.py</code></td></tr> <tr><td>in the figure</td><td>the five rows</td><td>the
+        value inside each cell</td></tr> <tr><td>calendar</td><td>carries dated intervals (15 BCE – 7
+        BCE …)</td><td>none; ordinal only</td></tr> </tbody>
+      fr: <thead><tr><th></th><th>Horizon</th><th>Stade</th></tr></thead> <tbody> <tr><td>ordonne</td><td>les
+        sites</td><td>les sous-types</td></tr> <tr><td>combien</td><td>5, pour tout le corpus</td><td>1
+        à 3, recommençant dans chaque groupe</td></tr> <tr><td>provient de</td><td>la sériation, figée
+        dans <code>FINDSPOT_HORIZON</code></td><td>la typologie, dérivée dans <code>services_to_rdf.py</code></td></tr>
+        <tr><td>dans la figure</td><td>les cinq lignes</td><td>la valeur portée par chaque cellule</td></tr>
+        <tr><td>calendrier</td><td>porte des intervalles datés (15 av. – 7 av. J.-C. …)</td><td>aucun
+        ; purement ordinal</td></tr> </tbody>
+  - type: p
+    html:
+      en: 'A horizon is a bin of <em>excavated contexts</em>: Oberaden, Dangstetten and Basel sit in horizon
+        1 because the seriation puts them there. A stage is a position in the <em>typological sequence
+        of one service group</em>: Service Ia, Ib, Ic. Nothing forces a horizon-1 assemblage to consist
+        of stage-1 material, and in fact it does not — horizon 1 is already 55 % stage Ic. The figure
+        exists precisely to measure that mixture.'
+      fr: 'Un horizon est une classe de <em>contextes fouillés</em> : Oberaden, Dangstetten et Bâle relèvent
+        de l’horizon 1 parce que la sériation les y place. Un stade est une position dans la <em>séquence
+        typologique d’un groupe de service</em> : Service Ia, Ib, Ic. Rien n’oblige un ensemble de l’horizon
+        1 à se composer de matériel du stade 1, et de fait il ne s’y compose pas — l’horizon 1 est déjà
+        à 55 % du stade Ic. La figure existe précisément pour mesurer ce mélange.'
+  - type: figure
+    figure: typology_ranks
+    caption:
+      en: Derived in <code>services_to_rdf.py</code> from the typology, not written out by hand, so the
+        ranks cannot drift from <code>TYPES</code>. Service I holds three stages and six sub-types; Service
+        II holds one stage and two sub-types; the oblique-rim plate is a group of one. That is the whole
+        explanation of the two flat columns — see <a href="#degenerate">§7</a>.
+      fr: 'Dérivé de la typologie dans <code>services_to_rdf.py</code>, et non écrit à la main : les rangs
+        ne peuvent donc pas s’écarter de <code>TYPES</code>. Le Service I compte trois stades et six sous-types
+        ; le Service II, un stade et deux sous-types ; l’assiette à bord oblique est un groupe d’un seul
+        élément. Voilà toute l’explication des deux colonnes plates — voir <a href="#degenerate">§7</a>.'
+  - type: figure
+    figure: stage_composition
+    caption:
+      en: 'Service I, real counts. <em>s</em> is nothing more mysterious than the spread of these three
+        bands: 446 sherds in horizon 1 split 11 / 34 / 55 across ranks 1, 2 and 3 give x&#772; = 2.44
+        and <em>s</em> = 0.68; by horizon 5 almost everything sits on rank 3, so x&#772; rises to 2.89
+        and <em>s</em> falls to 0.31. Each <em>sherd</em> is one observation — not each sub-type. The
+        horizon-1 figures are worked through in full in <a href="#sigma">§4</a>.'
+      fr: 'Service I, effectifs réels. <em>s</em> n’est rien de plus mystérieux que l’étalement de ces
+        trois bandes : les 446 tessons de l’horizon 1, répartis 11 / 34 / 55 sur les rangs 1, 2 et 3,
+        donnent x&#772; = 2,44 et <em>s</em> = 0,68 ; à l’horizon 5 presque tout se trouve sur le rang
+        3, x&#772; monte à 2,89 et <em>s</em> tombe à 0,31. Chaque <em>tesson</em> est une observation
+        — et non chaque sous-type. Le détail du calcul pour l’horizon 1 figure au <a href="#sigma">§4</a>.'
+  - type: figure
+    figure: rank_axis_mean_sd
+    caption:
+      en: 'The same five cells as the bars above, on the axis the statistic actually lives on. Reading
+        up the block, the mass slides from rank 1 towards rank 3, the tick follows it, and the bracket
+        closes: that closing bracket <em>is</em> \(s\). Service II is drawn below a rule rather than as
+        a sixth row because its rank 1 is a different rank — the counter restarts in every group, so the
+        two axes cannot be superimposed.'
+      fr: 'Les mêmes cinq cellules que les barres ci-dessus, portées sur l’axe où vit réellement la statistique.
+        En remontant le bloc, la masse glisse du rang 1 vers le rang 3, le trait la suit et la barre se
+        resserre : ce resserrement <em>est</em> \(s\). Le Service II est tracé sous un filet plutôt qu’en
+        sixième ligne, car son rang 1 est un autre rang — le compteur repart dans chaque groupe et les
+        deux axes ne peuvent être superposés.'
+  - type: warn
+    html:
+      en: <strong>The rank scale has no zero and no unit.</strong> Ranks are ordinal labels 1, 2, 3 …
+        A standard deviation of them is defensible as a descriptive spread, but it is not a variance in
+        years, and it changes if the ranks are renumbered — for example if an empty stage is dropped and
+        the remaining ranks are closed up. The numbering used must travel with the figure.
+      fr: <strong>L’échelle des rangs n’a ni zéro ni unité.</strong> Les rangs sont des étiquettes ordinales
+        1, 2, 3… Leur écart-type se défend comme mesure descriptive d’étalement, mais ce n’est pas une
+        variance en années, et il change si l’on renumérote — par exemple si l’on supprime un stade vide
+        et resserre les rangs restants. La numérotation employée doit accompagner la figure.
+- id: sigma
+  marker: '4'
+  heading:
+    en: Within-group variance
+    fr: Variance intra-groupe
+  sub:
+    en: The left panel. <code>compute_within_group_rgzm()</code>, following the RGZM method.
+    fr: Le panneau gauche. <code>compute_within_group_rgzm()</code>, selon la méthode du RGZM.
+  blocks:
+  - type: p
+    html:
+      en: Fix a horizon \(h\) and a service group \(g\). The observations are the <strong>sherds</strong>
+        of \(g\) found at the findspots of \(h\); each one is valued by the stage rank of its sub-type.
+        Write \(c_j\) for the sherd count of sub-type \(j\) and \(r_j\) for its rank.
+      fr: Fixons un horizon \(h\) et un groupe de service \(g\). Les observations sont les <strong>tessons</strong>
+        de \(g\) recueillis sur les sites de \(h\) ; chacun prend pour valeur le rang de stade de son
+        sous-type. Notons \(c_j\) l’effectif de tessons du sous-type \(j\) et \(r_j\) son rang.
+  - type: formula
+    html:
+      en: '\[ N = \sum_j c_j \qquad \overline{x} = \frac{1}{N}\sum_j r_j c_j \qquad s_{g,h} = \sqrt{\frac{\sum_j
+        r_j^{2}c_j - N\overline{x}^{2}}{N-1}} \] <div class="why">The sample standard deviation — <code>STDDEV_SAMP</code>,
+        denominator \(N-1\). This is the value printed and coloured in the left panel. It is in rank units:
+        \(s = 0\) means every sherd sits on one rank, and for a three-stage group the largest attainable
+        value is about 1.0, reached when the mass splits evenly between ranks 1 and 3. Against that ceiling,
+        horizon 1''s 0.68 is a genuinely mixed assemblage and horizon 5''s 0.31 a concentrated one.</div>'
+      fr: '\[ N = \sum_j c_j \qquad \overline{x} = \frac{1}{N}\sum_j r_j c_j \qquad s_{g,h} = \sqrt{\frac{\sum_j
+        r_j^{2}c_j - N\overline{x}^{2}}{N-1}} \] <div class="why">L’écart-type d’échantillon — <code>STDDEV_SAMP</code>,
+        dénominateur \(N-1\). C’est la valeur imprimée et colorée dans le panneau gauche, exprimée en
+        unités de rang : \(s = 0\) signifie que tous les tessons sont sur un même rang, et pour un groupe
+        à trois stades la valeur maximale atteignable avoisine 1,0, obtenue lorsque la masse se partage
+        à parts égales entre les rangs 1 et 3. Rapportés à ce plafond, les 0,68 de l’horizon 1 désignent
+        un ensemble véritablement mêlé, et les 0,31 de l’horizon 5 un ensemble concentré.</div>'
+  - type: figure
+    figure: one_cell_worked_example
+    caption:
+      en: 'Calibration for the rank unit: in a three-stage group \(s\) can reach 1.00, which is an assemblage
+        split evenly between the first and last stage; an even spread over all three gives 0.82; a single
+        stage gives 0. Horizon 1''s 0.68 is therefore a strongly mixed assemblage and horizon 5''s 0.31
+        a concentrated one — the scale is not arbitrary, it just has to be read against that ceiling.'
+      fr: 'Étalonnage de l’unité de rang : dans un groupe à trois stades, \(s\) peut atteindre 1,00, ce
+        qui correspond à un ensemble partagé également entre le premier et le dernier stade ; une répartition
+        uniforme sur les trois donne 0,82 ; un stade unique donne 0. Les 0,68 de l’horizon 1 signalent
+        donc un ensemble fortement mêlé et les 0,31 de l’horizon 5 un ensemble concentré — l’échelle n’est
+        pas arbitraire, il faut seulement la lire par rapport à ce plafond.'
+  - type: h3
+    html:
+      en: The arithmetic in full — horizon 1, Service I
+      fr: Le calcul détaillé — horizon 1, Service I
+  - type: p
+    html:
+      en: The cell prints 0.68 and 0.756 over <code>n=446</code>. Those 446 sherds are six sub-types carrying
+        three distinct stage ranks; everything else follows by arithmetic.
+      fr: La cellule imprime 0,68 et 0,756 au-dessus de <code>n=446</code>. Ces 446 tessons sont six sous-types
+        portant trois rangs de stade distincts ; tout le reste découle de l’arithmétique.
+  - type: table
+    html:
+      en: <thead><tr><th>sub-type</th><th class="num raw">stage rank r</th><th class="num">sherds c</th><th
+        class="num raw">r · c</th><th class="num raw">r² · c</th></tr></thead> <tbody> <tr><td>Service
+        Ia cup</td><td class="num">1</td><td class="num">29</td><td class="num">29</td><td class="num">29</td></tr>
+        <tr><td>Service Ia plate</td><td class="num">1</td><td class="num">20</td><td class="num">20</td><td
+        class="num">20</td></tr> <tr><td>Service Ib cup</td><td class="num">2</td><td class="num">61</td><td
+        class="num">122</td><td class="num">244</td></tr> <tr><td>Service Ib plate</td><td class="num">2</td><td
+        class="num">92</td><td class="num">184</td><td class="num">368</td></tr> <tr><td>Service Ic cup</td><td
+        class="num">3</td><td class="num">151</td><td class="num">453</td><td class="num">1359</td></tr>
+        <tr><td>Service Ic plate</td><td class="num">3</td><td class="num">93</td><td class="num">279</td><td
+        class="num">837</td></tr> <tr><td><strong>totals</strong></td><td class="num">—</td><td class="num"><strong>446</strong></td><td
+        class="num"><strong>1087</strong></td><td class="num"><strong>2857</strong></td></tr> </tbody>
+      fr: <thead><tr><th>sous-type</th><th class="num raw">rang de stade r</th><th class="num">tessons
+        c</th><th class="num raw">r · c</th><th class="num raw">r² · c</th></tr></thead> <tbody> <tr><td>Tasse
+        Service Ia</td><td class="num">1</td><td class="num">29</td><td class="num">29</td><td class="num">29</td></tr>
+        <tr><td>Assiette Service Ia</td><td class="num">1</td><td class="num">20</td><td class="num">20</td><td
+        class="num">20</td></tr> <tr><td>Tasse Service Ib</td><td class="num">2</td><td class="num">61</td><td
+        class="num">122</td><td class="num">244</td></tr> <tr><td>Assiette Service Ib</td><td class="num">2</td><td
+        class="num">92</td><td class="num">184</td><td class="num">368</td></tr> <tr><td>Tasse Service
+        Ic</td><td class="num">3</td><td class="num">151</td><td class="num">453</td><td class="num">1359</td></tr>
+        <tr><td>Assiette Service Ic</td><td class="num">3</td><td class="num">93</td><td class="num">279</td><td
+        class="num">837</td></tr> <tr><td><strong>totaux</strong></td><td class="num">—</td><td class="num"><strong>446</strong></td><td
+        class="num"><strong>1087</strong></td><td class="num"><strong>2857</strong></td></tr> </tbody>
+  - type: p
+    html:
+      en: 'Collected by rank rather than by sub-type: 49 sherds on rank 1, 153 on rank 2, 244 on rank
+        3. Cup and plate merge because they share a stage.'
+      fr: 'Regroupés par rang plutôt que par sous-type : 49 tessons sur le rang 1, 153 sur le rang 2,
+        244 sur le rang 3. Tasse et assiette fusionnent parce qu’elles partagent un stade.'
+  - type: formula
+    html:
+      en: \[ N=\sum_j c_j = 446 \qquad \sum_j r_j c_j = 1087 \qquad \sum_j r_j^{2} c_j = 2857 \] <div
+        class="why">The three sums the SPARQL query returns. Everything after this point is four lines
+        of Python and needs no further access to the graph.</div>
+      fr: \[ N=\sum_j c_j = 446 \qquad \sum_j r_j c_j = 1087 \qquad \sum_j r_j^{2} c_j = 2857 \] <div
+        class="why">Les trois sommes que renvoie la requête SPARQL. Tout ce qui suit tient en quatre lignes
+        de Python et n’exige plus aucun accès au graphe.</div>
+  - type: p
+    html:
+      en: <strong>Step 1 — the mean rank.</strong>
+      fr: <strong>Étape 1 — le rang moyen.</strong>
+  - type: formula
+    html:
+      en: \[ \overline{x}=\frac{1087}{446}=2.437220 \;\longrightarrow\; \textbf{2.44} \]
+      fr: \[ \overline{x}=\frac{1087}{446}=2{,}437220 \;\longrightarrow\; \textbf{2,44} \]
+  - type: p
+    html:
+      en: '<strong>Step 2 — the sum of squared deviations,</strong> in the computational form that needs
+        only the three sums:'
+      fr: '<strong>Étape 2 — la somme des écarts au carré,</strong> sous la forme calculatoire qui n’exige
+        que les trois sommes :'
+  - type: formula
+    html:
+      en: \[ \overline{x}^{\,2}=5.940040 \qquad N\overline{x}^{\,2}=446\times 5.940040=2649.257848 \]
+        \[ \sum_j r_j^{2}c_j - N\overline{x}^{\,2}=2857-2649.257848=207.742152 \]
+      fr: \[ \overline{x}^{\,2}=5{,}940040 \qquad N\overline{x}^{\,2}=446\times 5{,}940040=2649{,}257848
+        \] \[ \sum_j r_j^{2}c_j - N\overline{x}^{\,2}=2857-2649{,}257848=207{,}742152 \]
+  - type: p
+    html:
+      en: '<strong>Step 3 — variance and standard deviation.</strong> The denominator is \(N-1\), not
+        \(N\): that is what <code>STDDEV_SAMP</code> means.'
+      fr: '<strong>Étape 3 — variance et écart-type.</strong> Le dénominateur est \(N-1\) et non \(N\)
+        : c’est ce que signifie <code>STDDEV_SAMP</code>.'
+  - type: formula
+    html:
+      en: \[ \mathrm{Var}=\frac{207.742152}{445}=0.466836 \qquad s=\sqrt{0.466836}=0.683254 \;\longrightarrow\;
+        \textbf{0.68} \]
+      fr: \[ \mathrm{Var}=\frac{207{,}742152}{445}=0{,}466836 \qquad s=\sqrt{0{,}466836}=0{,}683254 \;\longrightarrow\;
+        \textbf{0,68} \]
+  - type: p
+    html:
+      en: <strong>Step 4 — the bounded score.</strong>
+      fr: <strong>Étape 4 — le score borné.</strong>
+  - type: formula
+    html:
+      en: \[ \mathrm{CV}=\frac{0.683254}{2.437220}=0.280342 \qquad q=e^{-0.280342}=0.755526 \;\longrightarrow\;
+        \textbf{0.756} \]
+      fr: \[ \mathrm{CV}=\frac{0{,}683254}{2{,}437220}=0{,}280342 \qquad q=e^{-0{,}280342}=0{,}755526
+        \;\longrightarrow\; \textbf{0,756} \]
+  - type: h3
+    html:
+      en: The same number the long way
+      fr: Le même nombre par la voie longue
+  - type: p
+    html:
+      en: The computational shortcut above is easy to distrust, so here is the definition itself, \(\sum_j
+        c_j\,(r_j-\overline{x})^{2}\), evaluated rank by rank.
+      fr: Le raccourci calculatoire ci-dessus se laisse difficilement croire sur parole ; voici donc la
+        définition elle-même, \(\sum_j c_j\,(r_j-\overline{x})^{2}\), évaluée rang par rang.
+  - type: table
+    html:
+      en: <thead><tr><th class="num">rank r</th><th class="num">sherds c</th><th class="num raw">r − x̄</th><th
+        class="num raw">(r − x̄)²</th><th class="num raw">c(r − x̄)²</th></tr></thead> <tbody> <tr><td
+        class="num">1</td><td class="num">49</td><td class="num">−1.437220</td><td class="num">2.065601</td><td
+        class="num">101.2144</td></tr> <tr><td class="num">2</td><td class="num">153</td><td class="num">−0.437220</td><td
+        class="num">0.191161</td><td class="num">29.2476</td></tr> <tr><td class="num">3</td><td class="num">244</td><td
+        class="num">+0.562780</td><td class="num">0.316722</td><td class="num">77.2801</td></tr> <tr><td><strong>total</strong></td><td
+        class="num"><strong>446</strong></td><td class="num">—</td><td class="num">—</td><td class="num"><strong>207.7422</strong></td></tr>
+        </tbody>
+      fr: <thead><tr><th class="num">rang r</th><th class="num">tessons c</th><th class="num raw">r −
+        x̄</th><th class="num raw">(r − x̄)²</th><th class="num raw">c(r − x̄)²</th></tr></thead> <tbody>
+        <tr><td class="num">1</td><td class="num">49</td><td class="num">−1,437220</td><td class="num">2,065601</td><td
+        class="num">101,2144</td></tr> <tr><td class="num">2</td><td class="num">153</td><td class="num">−0,437220</td><td
+        class="num">0,191161</td><td class="num">29,2476</td></tr> <tr><td class="num">3</td><td class="num">244</td><td
+        class="num">+0,562780</td><td class="num">0,316722</td><td class="num">77,2801</td></tr> <tr><td><strong>total</strong></td><td
+        class="num"><strong>446</strong></td><td class="num">—</td><td class="num">—</td><td class="num"><strong>207,7422</strong></td></tr>
+        </tbody>
+  - type: p
+    html:
+      en: Identical to step 2, as it must be. The rank-3 sherds contribute most of the dispersion not
+        because they are far from the mean — rank 1 is three times further — but because there are 244
+        of them. That is the weighting doing its work, and it is why the same six sub-types in a differently
+        composed horizon give a different \(s\).
+      fr: Identique à l’étape 2, comme il se doit. Les tessons du rang 3 fournissent l’essentiel de la
+        dispersion non parce qu’ils sont éloignés de la moyenne — le rang 1 l’est trois fois plus — mais
+        parce qu’ils sont 244. C’est la pondération à l’œuvre, et c’est pourquoi les mêmes six sous-types
+        dans un horizon autrement composé donnent un \(s\) différent.
+  - type: note
+    html:
+      en: <strong>Why the computational form is the one in the code.</strong> \(\sum c(r-\overline{x})^{2}\)
+        needs \(\overline{x}\) before it can start, so it requires two passes over the data. The form
+        using \(\sum r^{2}c\) needs one, which is what lets the whole cell be described by three numbers
+        a query can aggregate. On 446 sherds the difference is nothing; on the graph it is the difference
+        between a statistic that travels and one that does not.
+      fr: <strong>Pourquoi le code emploie la forme calculatoire.</strong> \(\sum c(r-\overline{x})^{2}\)
+        exige de connaître \(\overline{x}\) avant de commencer, donc deux passages sur les données. La
+        forme utilisant \(\sum r^{2}c\) n’en demande qu’un, ce qui permet de décrire toute la cellule
+        par trois nombres qu’une requête sait agréger. Sur 446 tessons, la différence est nulle ; à l’échelle
+        du graphe, c’est la différence entre une statistique qui voyage et une qui ne voyage pas.
+  - type: warn
+    html:
+      en: <strong>Rounding.</strong> The printed 0.68 and 2.44 are display values. Recomputing from them
+        — \(0.68/2.44=0.2787\), \(e^{-0.2787}=0.7567\) — misses the published \(q\) by a thousandth. The
+        accompanying workbook carries full precision, and any figure quoted in the text should be taken
+        from there rather than read off the plot.
+      fr: <strong>Arrondis.</strong> Les 0,68 et 2,44 imprimés sont des valeurs d’affichage. Recalculer
+        à partir d’elles — \(0{,}68/2{,}44=0{,}2787\), \(e^{-0{,}2787}=0{,}7567\) — manque le \(q\) publié
+        d’un millième. Le classeur joint conserve la précision complète, et tout chiffre cité dans le
+        texte devrait en provenir plutôt que d’être relevé sur le graphique.
+  - type: p
+    html:
+      en: '<strong>Within, not between.</strong> The variance is taken inside each group over its own
+        stage sequence. It is not the variance of the group means against one another, and not a variance
+        of findspots. A cell answers: <em>how far is this group''s material in this horizon spread over
+        the group''s own stages?</em>'
+      fr: '<strong>Intra, non inter.</strong> La variance est prise à l’intérieur de chaque groupe, sur
+        sa propre séquence de stades. Ce n’est pas la variance des moyennes de groupes les unes par rapport
+        aux autres, ni une variance de sites. Une cellule répond à : <em>dans quelle mesure le matériel
+        de ce groupe, dans cet horizon, s’étale-t-il sur les stades propres au groupe ?</em>'
+  - type: warn
+    html:
+      en: '<strong>It does not measure how much of a group is present.</strong> That is a different question
+        and, for this material, the stronger dating signal: Service II''s share of the assemblage runs
+        from about 6 % in horizon 1 to about 92 % in horizon 5. The variance panel is blind to it by design.
+        The two must be read side by side, and the share belongs in the caption so that a flat Service
+        II column is not mistaken for an absent one.'
+      fr: '<strong>Elle ne mesure pas la quantité présente d’un groupe.</strong> C’est une autre question,
+        et pour ce matériel le signal chronologique le plus fort : la part du Service II dans l’ensemble
+        passe d’environ 6 % à l’horizon 1 à environ 92 % à l’horizon 5. Le panneau de variance y est aveugle
+        par construction. Les deux doivent être lus côte à côte, et la part a sa place dans la légende,
+        afin qu’une colonne Service II plate ne soit pas prise pour une colonne vide.'
+  - type: figure
+    figure: group_shares_by_horizon
+    caption:
+      en: The same 7131 sherds, asked a different question. Service I falls from 93 % of the assemblage
+        in horizon 1 to 8 % in horizon 5 while Service II rises from 6 % to 92 %; the crossover falls
+        between horizons 2 and 3. This is a monotone, large-amplitude signal, and it is the one a reader
+        will expect a chronology paper to lead with. Printed beside the variance panels it also removes
+        the standing misreading, because a Service II column that is flat at 1.00 no longer looks like
+        an empty one.
+      fr: 'Les mêmes 7131 tessons, interrogés autrement. Le Service I passe de 93 % de l’ensemble à l’horizon
+        1 à 8 % à l’horizon 5, tandis que le Service II monte de 6 % à 92 % ; le croisement se situe entre
+        les horizons 2 et 3. C’est un signal monotone et de grande amplitude, celui par lequel un lecteur
+        attend qu’un article de chronologie commence. Imprimé à côté des panneaux de variance, il lève
+        aussi la mélecture habituelle : une colonne Service II plate à 1,00 ne ressemble plus à une colonne
+        vide.'
+- id: q
+  marker: '5'
+  heading:
+    en: From \(\sigma\) to \(q\)
+    fr: De \(\sigma\) à \(q\)
+  sub:
+    en: The right panel. One dimensionless step, and it is smaller than it looks.
+    fr: Le panneau droit. Une seule étape adimensionnelle, plus modeste qu’il n’y paraît.
+  blocks:
+  - type: formula
+    html:
+      en: \[ \mathrm{CV}_{g,h} = \frac{s_{g,h}}{\overline{r}_{g,h}} \qquad\qquad q_{g,h} = \exp\!\left(-\,\mathrm{CV}_{g,h}\right)
+        \] <div class="why">The coefficient of variation makes the spread dimensionless by measuring it
+        in units of the group's own mean rank; the exponential maps \([0,\infty)\) onto \((0,1]\), so
+        \(q = 1\) is perfect internal agreement and \(q \to 0\) is scatter far exceeding the mean. This
+        is the same \(\exp(-\mathrm{CV})\) construction as \(q_{\text{interval}}\) in the findspot-dating
+        note — <em>not</em> Pielou's evenness, with which it is easily confused.</div>
+      fr: \[ \mathrm{CV}_{g,h} = \frac{s_{g,h}}{\overline{r}_{g,h}} \qquad\qquad q_{g,h} = \exp\!\left(-\,\mathrm{CV}_{g,h}\right)
+        \] <div class="why">Le coefficient de variation rend la dispersion adimensionnelle en la mesurant
+        en unités du rang moyen propre au groupe ; l’exponentielle envoie \([0,\infty)\) sur \((0,1]\),
+        de sorte que \(q = 1\) marque un accord interne parfait et \(q \to 0\) une dispersion excédant
+        largement la moyenne. C’est la même construction \(\exp(-\mathrm{CV})\) que \(q_{\text{interval}}\)
+        dans la note sur la datation des sites — et <em>non</em> l’équitabilité de Pielou, avec laquelle
+        on la confond aisément.</div>
+  - type: p
+    html:
+      en: Because \(q\) is invertible, the mean rank behind each cell can be read back off the printed
+        pair as \(\overline{x} = s / (-\ln q)\). For the Service I column the true values are 2.44, 2.49,
+        2.74, 2.77 and 2.89 — the mean creeps up by less than half a rank while \(s\) more than halves,
+        so the rise in \(q\) up the column is overwhelmingly a fall in dispersion, not a shift of the
+        centre.
+      fr: 'Comme \(q\) est inversible, le rang moyen derrière chaque cellule se relit sur le couple imprimé
+        : \(\overline{x} = s / (-\ln q)\). Pour la colonne Service I, les valeurs exactes sont 2,44, 2,49,
+        2,74, 2,77 et 2,89 — la moyenne ne progresse pas d’un demi-rang tandis que \(s\) est plus que
+        divisé par deux : la montée de \(q\) le long de la colonne traduit donc massivement une baisse
+        de dispersion et non un déplacement du centre.'
+  - type: figure
+    figure: exp_transform
+    caption:
+      en: 'Every observed cell sits below \(\mathrm{CV} = 0.28\), where \(\exp(-\mathrm{CV})\) and \(1
+        - \mathrm{CV}\) differ by under four hundredths. The exponential is doing almost no compressing
+        at this range: on the present data the right panel is, to two decimal places, a linear rescaling
+        of the left. Its value is that it is bounded and comparable, not that it transforms anything.'
+      fr: 'Toutes les cellules observées se situent sous \(\mathrm{CV} = 0{,}28\), où \(\exp(-\mathrm{CV})\)
+        et \(1 - \mathrm{CV}\) diffèrent de moins de quatre centièmes. L’exponentielle ne comprime pratiquement
+        rien sur cette plage : sur les présentes données, le panneau droit est, à deux décimales près,
+        une remise à l’échelle linéaire du gauche. Son intérêt tient à ce qu’il est borné et comparable,
+        non à ce qu’il transformerait quoi que ce soit.'
+- id: panels
+  marker: '6'
+  heading:
+    en: Why the two panels are one quantity
+    fr: Pourquoi les deux panneaux ne font qu’une grandeur
+  sub:
+    en: And why the colour ramps run in opposite directions.
+    fr: Et pourquoi les échelles de couleurs sont inversées.
+  blocks:
+  - type: p
+    html:
+      en: 'The ramps are mirrored so that green means <em>good</em> in both panels: low dispersion on
+        the left, high quality on the right. That is a deliberate reader aid, and it is the reason the
+        two panels look like independent confirmations when they are not.'
+      fr: 'Les échelles sont inversées l’une par rapport à l’autre pour que le vert signifie <em>bon</em>
+        dans les deux panneaux : faible dispersion à gauche, forte qualité à droite. C’est une aide délibérée
+        à la lecture, et c’est aussi la raison pour laquelle les deux panneaux ressemblent à des confirmations
+        indépendantes alors qu’ils n’en sont pas.'
+  - type: figure
+    figure: colour_ramps
+    caption:
+      en: The asymmetry is easy to overlook and matters for publication. Add a second dataset with a cell
+        at 1.20 and every colour in the left panel shifts, while the right panel is unaffected. If the
+        figure is to be reused or compared across analyses, the variance ramp should be pinned to a fixed
+        maximum and that maximum recorded in the caption.
+      fr: 'L’asymétrie passe facilement inaperçue et compte pour la publication. Ajoutez un second jeu
+        de données comportant une cellule à 1,20 : toutes les couleurs du panneau gauche se déplacent,
+        tandis que le panneau droit reste inchangé. Si la figure doit être réutilisée ou comparée d’une
+        analyse à l’autre, l’échelle de variance devrait être fixée à un maximum constant, et ce maximum
+        consigné dans la légende.'
+- id: degenerate
+  marker: '7'
+  heading:
+    en: The degenerate cell
+    fr: La cellule dégénérée
+  sub:
+    en: Ten of the twelve occupied cells. The single most important thing to declare.
+    fr: Dix des douze cellules occupées. Le point le plus important à déclarer.
+  blocks:
+  - type: p
+    html:
+      en: Every cell in the <em>Assiette à bord oblique</em> and <em>Service II</em> columns reads \(0.00\)
+        on the left and \(1.00\) on the right, in every horizon, from \(n = 4\) to \(n = 1231\). A reader
+        who takes the right panel at face value concludes that Service II is chronologically impeccable
+        throughout. That is not what the number says.
+      fr: Toutes les cellules des colonnes <em>Assiette à bord oblique</em> et <em>Service II</em> affichent
+        \(0{,}00\) à gauche et \(1{,}00\) à droite, dans tous les horizons, de \(n = 4\) à \(n = 1231\).
+        Un lecteur qui prend le panneau droit au pied de la lettre en conclut que le Service II est chronologiquement
+        irréprochable de bout en bout. Ce n’est pas ce que dit le nombre.
+  - type: p
+    html:
+      en: 'The cause is now exactly identifiable from <a href="#ranks">§3</a>. Service II holds a single
+        stage: its cup and its plate both carry stage rank 1. Every one of its 3773 sherds is therefore
+        an observation of the value 1, and the standard deviation of a constant is zero whatever \(N\)
+        is. The oblique-rim plate is the same situation more starkly — a group with one leaf. Neither
+        cell is a measurement; both are restatements of the rank table.'
+      fr: 'La cause est désormais exactement identifiable d’après le <a href="#ranks">§3</a>. Le Service
+        II ne compte qu’un stade : sa tasse et son assiette portent toutes deux le rang de stade 1. Chacun
+        de ses 3773 tessons est donc une observation de la valeur 1, et l’écart-type d’une constante est
+        nul quel que soit \(N\). L’assiette à bord oblique illustre la même situation plus crûment encore
+        — un groupe à une seule feuille. Aucune de ces cellules n’est une mesure ; toutes deux ne font
+        que reformuler la table des rangs.'
+  - type: figure
+    figure: degenerate_cells
+    caption:
+      en: 'Real cells, one of each kind. (a) and (b) both give \(s = 0\) by construction: every observation
+        carries the same rank, so the dispersion of the sample is the dispersion of a constant. Six sherds
+        and 1231 sherds return the same score for the same reason. Only (c) has more than one rank to
+        disperse over, and it is the only column of the figure that measures anything.'
+      fr: 'Cellules réelles, une de chaque espèce. (a) et (b) donnent tous deux \(s = 0\) par construction
+        : toutes les observations portent le même rang, si bien que la dispersion de l’échantillon est
+        celle d’une constante. Six tessons et 1231 tessons renvoient le même score pour la même raison.
+        Seul (c) dispose de plus d’un rang sur lequel se disperser, et c’est la seule colonne de la figure
+        qui mesure quelque chose.'
+  - type: warn
+    html:
+      en: <strong>\(q = 1.00\) here means "no comparison was possible", not "the comparison came out perfect".</strong>
+        A cell whose sherds all carry one rank has no within-group dispersion to measure; the RGZM formula
+        returns its neutral element and the colour scale renders it as the best possible outcome. As a
+        plot this is merely misleading. Exported to RDF as a quality assertion on a temporal entity it
+        is false, and the same <code>COALESCE</code>-style objection applies as to the fabricated fallbacks
+        in the findspot-dating query.
+      fr: <strong>Ici, \(q = 1{,}00\) signifie « aucune comparaison n’était possible », et non « la comparaison
+        est parfaite ».</strong> Une cellule dont tous les tessons portent un même rang n’offre aucune
+        dispersion intra-groupe à mesurer ; la formule du RGZM renvoie son élément neutre et l’échelle
+        de couleurs le rend comme le meilleur résultat possible. Sur un graphique, c’est simplement trompeur.
+        Exporté en RDF comme assertion de qualité portant sur une entité temporelle, c’est faux, et l’objection
+        est de même nature que celle visant les valeurs de repli fabriquées par <code>COALESCE</code>
+        dans la requête de datation des sites.
+  - type: note
+    html:
+      en: '<strong>The pipeline already knows.</strong> The query returns <code>COUNT(DISTINCT ?stage)</code>
+        and the figure code sets <code>measured = stageSteps &gt; 1</code>, which is precisely what drives
+        the grey fill. The status is computed, not guessed — so the only thing missing is that the printed
+        figure does not say it. Two cheap improvements: put the number of ranks in the cell (<code>k =
+        1</code>) so grey is self-explanatory on paper as it already is in the browser tooltip, and state
+        in the caption that grey means <em>follows from the rank table</em> rather than <em>low value</em>.'
+      fr: '<strong>La chaîne le sait déjà.</strong> La requête renvoie <code>COUNT(DISTINCT ?stage)</code>
+        et le code de la figure pose <code>measured = stageSteps &gt; 1</code>, ce qui commande précisément
+        le remplissage gris. Le statut est calculé, non deviné — il manque seulement que la figure imprimée
+        le dise. Deux améliorations peu coûteuses : porter le nombre de rangs dans la cellule (<code>k
+        = 1</code>), afin que le gris s’explique de lui-même sur le papier comme il le fait déjà dans
+        l’infobulle du navigateur ; et préciser en légende que le gris signifie <em>découle de la table
+        des rangs</em> et non <em>valeur basse</em>.'
+  - type: note
+    html:
+      en: '<strong>The alternative reading is already implemented.</strong> The interactive version of
+        this figure carries a switch between the stage reading and a sub-type reading in which cup and
+        plate count as separate steps (<code>columnRank</code>). Under that reading Service II becomes
+        measured — \(q\) about 0.71 in every horizon, flat, because the cup–plate ratio barely moves.
+        That flatness is itself the argument for the stage reading: the variation it picks up is a change
+        of vessel form, not a step in time. For Service I the two readings order the horizons identically,
+        with \(r = 0.998\) between their \(q\) values, so the published result does not depend on the
+        choice.'
+      fr: '<strong>La lecture alternative est déjà implémentée.</strong> La version interactive de cette
+        figure comporte un basculement entre la lecture par stade et une lecture par sous-type où tasse
+        et assiette comptent comme des pas distincts (<code>columnRank</code>). Sous cette lecture, le
+        Service II devient mesuré — \(q\) autour de 0,71 dans chaque horizon, plat, parce que le rapport
+        tasse/assiette ne bouge presque pas. Cette platitude est elle-même l’argument en faveur de la
+        lecture par stade : la variation captée est un changement de forme, non un pas dans le temps.
+        Pour le Service I, les deux lectures ordonnent les horizons de façon identique, avec \(r = 0{,}998\)
+        entre leurs valeurs de \(q\) : le résultat publié ne dépend donc pas de ce choix.'
+  - type: figure
+    figure: stage_vs_subtype_reading
+    caption:
+      en: 'Both readings of Service I rise together and never cross; the correlation between them across
+        the five horizons is 0.998, so the published gradient does not depend on the modelling decision.
+        The third line is the argument for the decision: under the sub-type reading Service II becomes
+        measurable and immediately says nothing, because what it measures is the ratio of cups to plates,
+        which barely moves. A reading that turns a form ratio into a chronological score is worse than
+        one that declines to score at all.'
+      fr: 'Les deux lectures du Service I montent de concert et ne se croisent jamais ; leur corrélation
+        sur les cinq horizons vaut 0,998, de sorte que le gradient publié ne dépend pas de la décision
+        de modélisation. La troisième courbe est l’argument en faveur de cette décision : sous la lecture
+        par sous-type, le Service II devient mesurable et ne dit aussitôt rien, car ce qu’elle mesure
+        est le rapport des tasses aux assiettes, qui ne bouge guère. Une lecture qui convertit un rapport
+        de formes en score chronologique vaut moins qu’une lecture qui renonce à noter.'
+- id: n
+  marker: '8'
+  heading:
+    en: What \(n\) is
+    fr: Ce qu’est \(n\)
+  sub:
+    en: The sample size. It is the weighting, and it is already applied.
+    fr: La taille de l’échantillon. C’est la pondération, et elle est déjà appliquée.
+  blocks:
+  - type: warn
+    html:
+      en: '<strong>Correction to an earlier draft of this page.</strong> A previous version stated that
+        \(n\) is printed but does not enter the calculation, and asked whether the ranks should be weighted
+        by sherd count. That was a misreading of the figure and is withdrawn. The measure is sherd-weighted
+        already: <code>rgzm()</code> takes \(N\), \(\sum r\cdot c\) and \(\sum r^{2}c\), so <em>every
+        sherd is one observation valued by the rank of its sub-type</em>. Nothing needs changing. What
+        follows is the evidence, and what the unweighted alternative would have cost.'
+      fr: '<strong>Correction d’une version antérieure de cette page.</strong> Une version précédente
+        affirmait que \(n\) était imprimé sans entrer dans le calcul, et se demandait s’il fallait pondérer
+        les rangs par l’effectif de tessons. C’était une mélecture de la figure, et elle est retirée.
+        La mesure est déjà pondérée par les tessons : <code>rgzm()</code> reçoit \(N\), \(\sum r\cdot
+        c\) et \(\sum r^{2}c\), de sorte que <em>chaque tesson est une observation prenant pour valeur
+        le rang de son sous-type</em>. Rien n’est à changer. Ce qui suit en apporte la preuve, et montre
+        ce qu’aurait coûté la variante non pondérée.'
+  - type: p
+    html:
+      en: So \(n\) is not an annotation beside the statistic — it is the \(N\) inside it. Horizon 1 of
+        Service I is not four or six observations but 446, distributed 49 on rank 1, 153 on rank 2 and
+        244 on rank 3. The sums the SPARQL query returns are exactly the sufficient statistics for that
+        weighting, which is why the query can stop at three numbers and leave the square root and the
+        exponential to Python.
+      fr: '\(n\) n’est donc pas une annotation posée à côté de la statistique : c’est le \(N\) qu’elle
+        contient. L’horizon 1 du Service I ne compte pas quatre ou six observations mais 446, réparties
+        en 49 sur le rang 1, 153 sur le rang 2 et 244 sur le rang 3. Les sommes que renvoie la requête
+        SPARQL sont exactement les statistiques exhaustives de cette pondération : voilà pourquoi la requête
+        peut s’arrêter à trois nombres et laisser à Python la racine carrée et l’exponentielle.'
+  - type: formula
+    html:
+      en: \[ N = \sum_j c_j \qquad \overline{x} = \frac{1}{N}\sum_j r_j c_j \qquad s = \sqrt{\frac{\sum_j
+        r_j^{2} c_j - N\overline{x}^{2}}{N-1}} \] <div class="why">\(c_j\) is the sherd count of sub-type
+        \(j\), \(r_j\) its stage rank. Written this way the weighting is visible; written as <code>STDDEV_SAMP(rank)</code>
+        over a table of sherds it is the same thing and easier to misread, which is what happened here.</div>
+      fr: \[ N = \sum_j c_j \qquad \overline{x} = \frac{1}{N}\sum_j r_j c_j \qquad s = \sqrt{\frac{\sum_j
+        r_j^{2} c_j - N\overline{x}^{2}}{N-1}} \] <div class="why">\(c_j\) est l’effectif de tessons du
+        sous-type \(j\), \(r_j\) son rang de stade. Écrite ainsi, la pondération est visible ; écrite
+        <code>STDDEV_SAMP(rank)</code> sur une table de tessons, c’est la même chose, mais plus facile
+        à mal lire — ce qui s’est précisément produit ici.</div>
+  - type: h3
+    html:
+      en: What the unweighted alternative would do
+      fr: Ce que ferait la variante non pondérée
+  - type: p
+    html:
+      en: Giving each sub-type one vote instead of one vote per sherd is a coherent measure — it describes
+        the typological repertoire rather than the assemblage. On this material it is also useless, and
+        the reason is worth stating because it is not obvious in advance.
+      fr: Donner une voix à chaque sous-type plutôt qu’une voix par tesson est une mesure cohérente —
+        elle décrit le répertoire typologique et non l’ensemble recueilli. Sur ce matériel, elle est aussi
+        inutilisable, et la raison mérite d’être dite car elle n’a rien d’évident a priori.
+  - type: figure
+    figure: weighting_comparison
+    caption:
+      en: Horizons 1 to 3 each contain all six Service I sub-types, so the unweighted rank multiset is
+        \(\{1,1,2,2,3,3\}\) in all three and returns the same 0.639 whether the horizon holds 446 sherds
+        or 1741. The gradient the figure is for disappears. What is left — 0.684 in horizon 4, 0.794 in
+        horizon 5 — comes only from sub-types failing to appear in the two smallest horizons, so the unweighted
+        panel would read as a measure of sample size wearing the label of chronological tightness.
+      fr: 'Les horizons 1 à 3 contiennent chacun les six sous-types du Service I : le multiensemble de
+        rangs non pondéré vaut \(\{1,1,2,2,3,3\}\) dans les trois et renvoie le même 0,639, que l’horizon
+        compte 446 ou 1741 tessons. Le gradient auquel la figure est destinée disparaît. Ce qui subsiste
+        — 0,684 à l’horizon 4, 0,794 à l’horizon 5 — provient uniquement de sous-types absents des deux
+        horizons les plus petits : le panneau non pondéré se lirait donc comme une mesure de la taille
+        d’échantillon portant l’étiquette de la précision chronologique.'
+  - type: note
+    html:
+      en: <strong>The two figures do agree.</strong> The findspot-dating method weights by occurrence;
+        this one weights by sherd count. Both let the quantity of material speak, and the earlier claim
+        that they diverge was wrong. The remaining difference is one of unit — occurrences of a stamp
+        there, sherds of a sub-type here — and that is a difference in what is being counted, not in how
+        it is weighted.
+      fr: <strong>Les deux figures s’accordent bien.</strong> La méthode de datation des sites pondère
+        par les occurrences ; celle-ci pondère par l’effectif de tessons. Toutes deux laissent parler
+        la quantité de matériel, et l’affirmation antérieure d’une divergence était erronée. La différence
+        qui subsiste est une différence d’unité — occurrences d’une estampille là, tessons d’un sous-type
+        ici — c’est-à-dire une différence de ce que l’on compte, non de la manière dont on pondère.
+- id: servicei
+  marker: '9'
+  heading:
+    en: Reading the Service I column
+    fr: Lire la colonne Service I
+  sub:
+    en: The only column that carries a signal, and what that signal is.
+    fr: La seule colonne qui porte un signal, et ce qu’est ce signal.
+  blocks:
+  - type: p
+    html:
+      en: Service I is the sole group whose sub-types straddle stages in every horizon, so it is the only
+        column in which the measurement is defined throughout. Its dispersion falls monotonically from
+        horizon 1 to horizon 5.
+      fr: 'Le Service I est le seul groupe dont les sous-types chevauchent plusieurs stades dans chaque
+        horizon : c’est donc la seule colonne où la mesure est définie de bout en bout. Sa dispersion
+        décroît de façon monotone de l’horizon 1 à l’horizon 5.'
+  - type: figure
+    figure: service_variance
+    caption:
+      en: 'The gradient is the substantive result of the figure: Service I assemblages become typologically
+        more homogeneous through the sequence. Cell colours are those of the printed variance panel —
+        the same RdYlGn ramp, scaled to the same maximum — so this bar chart and the heatmap column can
+        be read against one another directly. Note that <em>n</em> collapses in the same direction: horizons
+        4 and 5 rest on 149 and 103 sherds, so the tightening and the thinning of the evidence are confounded
+        and cannot be separated within this figure.'
+      fr: 'Le gradient constitue le résultat de fond de la figure : les ensembles du Service I deviennent
+        typologiquement plus homogènes au fil de la séquence. Les couleurs des cellules sont celles du
+        panneau de variance imprimé — même rampe RdYlGn, même maximum — de sorte que ce diagramme et la
+        colonne de la carte thermique se lisent directement l’un contre l’autre. On notera que <em>n</em>
+        s’effondre dans le même sens : les horizons 4 et 5 reposent sur 149 et 103 tessons, de sorte que
+        le resserrement et la raréfaction des données sont confondus et ne peuvent être démêlés à l’intérieur
+        de cette figure.'
+  - type: figure
+    figure: service_quality
+    caption:
+      en: 'The same five cells as the right-hand panel of the printed figure, drawn on the full range
+        \(q\) can take. Values are given to three decimals; the figure itself rounds to two and therefore
+        prints 0.85 for both horizon 3 and horizon 4, which the third decimal separates. The axis is worth
+        the space it costs: every bar sits in the top quarter of the scale, and the whole chronological
+        gradient is 0.14 of a possible 1.00. That is the visual form of the point made in <a href="#q">§5</a>
+        — at these coefficients of variation \(\exp(-\mathrm{CV})\) barely compresses, so \(q\) is bounded
+        far from its lower end and small differences in it are not small differences in the material.
+        Because \(q\) is a monotone function of \(s\) evaluated cell by cell, this panel carries no information
+        the bars above do not; it is here because it is the form the paper will quote, and because its
+        ramp is absolute where the variance ramp is dataset-relative.'
+      fr: 'Les mêmes cinq cellules que le panneau droit de la figure imprimée, tracées sur toute l’étendue
+        que \(q\) peut prendre. Les valeurs sont données à trois décimales ; la figure elle-même arrondit
+        à deux et imprime donc 0,85 pour l’horizon 3 comme pour l’horizon 4, que la troisième décimale
+        sépare. L’axe mérite la place qu’il coûte : toutes les barres se tiennent dans le quart supérieur
+        de l’échelle, et tout le gradient chronologique vaut 0,14 sur un maximum de 1,00. C’est la traduction
+        visuelle du point établi au <a href="#q">§5</a> — à ces coefficients de variation, \(\exp(-\mathrm{CV})\)
+        ne comprime presque rien, de sorte que \(q\) reste loin de sa borne basse et que de petits écarts
+        sur lui ne sont pas de petits écarts dans le matériel. Comme \(q\) est une fonction monotone de
+        \(s\) évaluée cellule par cellule, ce panneau ne porte aucune information que les barres ci-dessus
+        n’auraient pas : il figure ici parce que c’est la forme que citera l’article, et parce que sa
+        rampe est absolue là où celle de la variance est relative au jeu de données.'
+  - type: note
+    html:
+      en: <strong>Which of the two to lead with.</strong> \(s\) is in rank units and independent of the
+        rank origin; \(q\) is bounded, comparable across analyses, and depends on the numbering declared
+        in <a href="#origin">§11a</a>. For a statement about this material — horizon 5 is tighter than
+        horizon 1 — either will do. For a number quoted beside results from elsewhere, \(q\) is the one
+        that travels, provided the declaration travels with it.
+      fr: <strong>Par lequel des deux commencer.</strong> \(s\) s’exprime en unités de rang et ne dépend
+        pas de l’origine des rangs ; \(q\) est borné, comparable d’une analyse à l’autre, et dépend de
+        la numérotation déclarée au <a href="#origin">§11a</a>. Pour un énoncé portant sur ce matériel
+        — l’horizon 5 est plus resserré que l’horizon 1 — l’un ou l’autre convient. Pour un chiffre cité
+        à côté de résultats venus d’ailleurs, c’est \(q\) qui voyage, à condition que la déclaration voyage
+        avec lui.
+  - type: note
+    html:
+      en: <strong>Two readings, both consistent with the numbers.</strong> Either the later horizons genuinely
+        draw on a narrower typological repertoire, or they are small enough that rarer sub-types fail
+        to appear. A rarefaction check would separate them; it is not part of the present analysis, so
+        the honest form in the text is to state the gradient together with the sample sizes and leave
+        the two readings standing. The gradient is monotone across a seventeen-fold range of \(n\), which
+        is not what a pure sample-size artefact usually looks like, but it is not a substitute for the
+        test.
+      fr: <strong>Deux lectures, toutes deux compatibles avec les nombres.</strong> Ou bien les horizons
+        tardifs puisent réellement dans un répertoire typologique plus étroit, ou bien ils sont assez
+        petits pour que les sous-types rares n’y apparaissent pas. Un contrôle par raréfaction les départagerait
+        ; il ne fait pas partie de la présente analyse, et la forme honnête dans le texte consiste donc
+        à énoncer le gradient avec les tailles d’échantillon et à laisser les deux lectures ouvertes.
+        Le gradient est monotone sur une plage de \(n\) variant d’un facteur dix-sept, ce à quoi ne ressemble
+        pas d’ordinaire un pur artefact d’échantillonnage — sans que cela tienne lieu de test.
+- id: cells
+  marker: '10'
+  heading:
+    en: Cell reference
+    fr: Tableau des cellules
+  sub:
+    en: Every occupied position, with the mean rank recovered from the printed pair.
+    fr: Chaque position occupée, avec le rang moyen restitué à partir du couple imprimé.
+  blocks:
+  - type: table
+    html:
+      en: <thead><tr><th>Horizon</th><th>Group</th><th class="num">sub-types</th><th class="num">n sherds</th><th
+        class="num">s</th><th class="num">q</th><th class="num raw">x̄</th><th>Status</th></tr></thead>
+        <tbody> <tr><td>1</td><td>Service I</td><td class="num">6</td><td class="num">446</td><td class="num">0.683</td><td
+        class="num">0.756</td><td class="num">2.44</td><td><span class="pill keep">measured</span></td></tr>
+        <tr><td>2</td><td>Service I</td><td class="num">6</td><td class="num">1741</td><td class="num">0.618</td><td
+        class="num">0.780</td><td class="num">2.49</td><td><span class="pill keep">measured</span></td></tr>
+        <tr><td>3</td><td>Service I</td><td class="num">6</td><td class="num">908</td><td class="num">0.456</td><td
+        class="num">0.847</td><td class="num">2.74</td><td><span class="pill keep">measured</span></td></tr>
+        <tr><td>4</td><td>Service I</td><td class="num">5</td><td class="num">149</td><td class="num">0.437</td><td
+        class="num">0.854</td><td class="num">2.77</td><td><span class="pill keep">measured</span></td></tr>
+        <tr><td>5</td><td>Service I</td><td class="num">4</td><td class="num">103</td><td class="num">0.310</td><td
+        class="num">0.898</td><td class="num">2.89</td><td><span class="pill keep">measured</span></td></tr>
+        <tr class="degen"><td>1</td><td>Service II</td><td class="num">2</td><td class="num">30</td><td
+        class="num">0.000</td><td class="num">1.000</td><td class="num">1.00</td><td><span class="pill
+        drop">one stage</span></td></tr> <tr class="degen"><td>2</td><td>Service II</td><td class="num">2</td><td
+        class="num">961</td><td class="num">0.000</td><td class="num">1.000</td><td class="num">1.00</td><td><span
+        class="pill drop">one stage</span></td></tr> <tr class="degen"><td>3</td><td>Service II</td><td
+        class="num">2</td><td class="num">1224</td><td class="num">0.000</td><td class="num">1.000</td><td
+        class="num">1.00</td><td><span class="pill drop">one stage</span></td></tr> <tr class="degen"><td>4</td><td>Service
+        II</td><td class="num">2</td><td class="num">327</td><td class="num">0.000</td><td class="num">1.000</td><td
+        class="num">1.00</td><td><span class="pill drop">one stage</span></td></tr> <tr class="degen"><td>5</td><td>Service
+        II</td><td class="num">2</td><td class="num">1231</td><td class="num">0.000</td><td class="num">1.000</td><td
+        class="num">1.00</td><td><span class="pill drop">one stage</span></td></tr> <tr class="degen"><td>1</td><td>Oblique-rim
+        plate</td><td class="num">1</td><td class="num">6</td><td class="num">0.000</td><td class="num">1.000</td><td
+        class="num">1.00</td><td><span class="pill drop">one stage</span></td></tr> <tr class="degen"><td>2</td><td>Oblique-rim
+        plate</td><td class="num">1</td><td class="num">4</td><td class="num">0.000</td><td class="num">1.000</td><td
+        class="num">1.00</td><td><span class="pill drop">one stage</span></td></tr> <tr class="degen"><td>3–5</td><td>Oblique-rim
+        plate</td><td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">—</td><td
+        class="num">—</td><td><span class="pill legacy">absent</span></td></tr> </tbody>
+      fr: <thead><tr><th>Horizon</th><th>Groupe</th><th class="num">sous-types</th><th class="num">n tessons</th><th
+        class="num">s</th><th class="num">q</th><th class="num raw">x̄</th><th>Statut</th></tr></thead>
+        <tbody> <tr><td>1</td><td>Service I</td><td class="num">6</td><td class="num">446</td><td class="num">0,683</td><td
+        class="num">0,756</td><td class="num">2,44</td><td><span class="pill keep">mesuré</span></td></tr>
+        <tr><td>2</td><td>Service I</td><td class="num">6</td><td class="num">1741</td><td class="num">0,618</td><td
+        class="num">0,780</td><td class="num">2,49</td><td><span class="pill keep">mesuré</span></td></tr>
+        <tr><td>3</td><td>Service I</td><td class="num">6</td><td class="num">908</td><td class="num">0,456</td><td
+        class="num">0,847</td><td class="num">2,74</td><td><span class="pill keep">mesuré</span></td></tr>
+        <tr><td>4</td><td>Service I</td><td class="num">5</td><td class="num">149</td><td class="num">0,437</td><td
+        class="num">0,854</td><td class="num">2,77</td><td><span class="pill keep">mesuré</span></td></tr>
+        <tr><td>5</td><td>Service I</td><td class="num">4</td><td class="num">103</td><td class="num">0,310</td><td
+        class="num">0,898</td><td class="num">2,89</td><td><span class="pill keep">mesuré</span></td></tr>
+        <tr class="degen"><td>1</td><td>Service II</td><td class="num">2</td><td class="num">30</td><td
+        class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span class="pill
+        drop">un seul stade</span></td></tr> <tr class="degen"><td>2</td><td>Service II</td><td class="num">2</td><td
+        class="num">961</td><td class="num">0,000</td><td class="num">1,000</td><td class="num">1,00</td><td><span
+        class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>3</td><td>Service II</td><td
+        class="num">2</td><td class="num">1224</td><td class="num">0,000</td><td class="num">1,000</td><td
+        class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>4</td><td>Service
+        II</td><td class="num">2</td><td class="num">327</td><td class="num">0,000</td><td class="num">1,000</td><td
+        class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>5</td><td>Service
+        II</td><td class="num">2</td><td class="num">1231</td><td class="num">0,000</td><td class="num">1,000</td><td
+        class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>1</td><td>Assiette
+        à bord oblique</td><td class="num">1</td><td class="num">6</td><td class="num">0,000</td><td class="num">1,000</td><td
+        class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>2</td><td>Assiette
+        à bord oblique</td><td class="num">1</td><td class="num">4</td><td class="num">0,000</td><td class="num">1,000</td><td
+        class="num">1,00</td><td><span class="pill drop">un seul stade</span></td></tr> <tr class="degen"><td>3–5</td><td>Assiette
+        à bord oblique</td><td class="num">0</td><td class="num">0</td><td class="num">—</td><td class="num">—</td><td
+        class="num">—</td><td><span class="pill legacy">absent</span></td></tr> </tbody>
+  - type: note
+    html:
+      en: <strong>The em-dash and the zero are different statements.</strong> The oblique-rim plate in
+        horizons 3 to 5 is absent — no material at all, correctly left blank. Everywhere else the zero
+        means material is present but sits on a single rank. Keeping the two visually distinct, as the
+        figure does, is right; the caption should say so explicitly, because a reader cannot infer it.
+      fr: <strong>Le tiret et le zéro ne disent pas la même chose.</strong> L’assiette à bord oblique
+        est absente des horizons 3 à 5 — aucun matériel, à juste titre laissé vide. Partout ailleurs,
+        le zéro signifie que du matériel est présent mais tient sur un seul rang. Les distinguer visuellement,
+        comme le fait la figure, est correct ; la légende devrait le dire explicitement, car un lecteur
+        ne peut le déduire.
+  - type: note
+    html:
+      en: <strong>Where the sub-type count drops.</strong> Service I loses <em>Service Ia cup</em> in
+        horizon 4 and both Ia sub-types in horizon 5 — the earliest stage simply runs out. That is a real
+        chronological observation, and it is also the reason the unweighted alternative of <a href="#n">§8</a>
+        produces any gradient at all.
+      fr: <strong>Où le nombre de sous-types diminue.</strong> Le Service I perd la <em>tasse Service
+        Ia</em> à l’horizon 4 et les deux sous-types Ia à l’horizon 5 — le stade le plus ancien s’épuise,
+        tout simplement. C’est une véritable observation chronologique, et c’est aussi la raison pour
+        laquelle la variante non pondérée du <a href="#n">§8</a> produit un gradient quelconque.
+- id: limits
+  marker: '11'
+  heading:
+    en: Limitations and open questions
+    fr: Limites et questions ouvertes
+  sub:
+    en: To be settled before the figure goes into the paper.
+    fr: À trancher avant que la figure n’entre dans l’article.
+  blocks:
+  - type: ol
+    html:
+      en: '<li><strong>Ranks by stage only.</strong> Because sub-types of one stage share a rank, the
+        dispersion of any single-stage group is zero by construction. This is the direct cause of the
+        two flat columns. It is the right modelling decision on the archaeology — a cup and a plate of
+        one stage are contemporary — but it means those columns carry no measurement and the caption must
+        say so. <a href="#ranks">§3</a></li> <li><strong>Undefined dispersion printed as a number.</strong>
+        Where a group holds one rank, \(s = 0\) and \(q = 1\) follow from the rank table, not from the
+        sherds. The figure greys them; the greying is computed from <code>COUNT(DISTINCT ?stage)</code>
+        and is therefore reliable, but it is not labelled. <a href="#degenerate">§7</a></li> <li><strong>Within-group
+        spread is not group share.</strong> The panels say nothing about how much of each group is present,
+        which for this material is the stronger signal (Service II: about 6 % to about 92 % across the
+        sequence). Report the two together. <a href="#sigma">§4</a></li> <li><strong>Dataset-relative
+        colour scaling on the left panel.</strong> The variance ramp ends at the largest observed value,
+        so colours are not stable across runs. <a href="#panels">§6</a></li> <li><strong>Confounding of
+        \(s\) with sample size.</strong> Dispersion and \(n\) fall together along the Service I column:
+        horizon 5 rests on 103 sherds against horizon 2''s 1741. A rarefaction check would separate them.
+        <a href="#servicei">§9</a></li> <li><strong>Horizon assignment is a hardcoded convention.</strong>
+        Five classes from <code>FINDSPOT_HORIZON</code>, with a label bridge for findspots the workbook
+        and the TTL spell differently. Maintainable and single-sourced, but it must travel with the figure
+        as provenance rather than living only in the module.</li> <li><strong>Ordinal ranks under a ratio-scale
+        statistic — settled by declaration.</strong> The coefficient of variation divides by the mean,
+        so \(q\) depends on where the rank numbering starts, while \(s\) does not. The project needs \(q\),
+        so the numbering is now part of the method rather than an implementation detail: <strong>the first
+        stage of every group carries rank 1, and ranks run 1…k in stage order with no gaps.</strong> It
+        is derived from <code>TYPES</code> in <code>services_to_rdf.py</code> and published as <code>aeont:stageRank</code>,
+        so any reader can recompute against it. See below for what is being fixed. <a href="#origin">§11
+        a</a></li>'
+      fr: '<li><strong>Rangs par stade seulement.</strong> Comme les sous-types d’un même stade partagent
+        un rang, la dispersion de tout groupe à stade unique est nulle par construction. C’est la cause
+        directe des deux colonnes plates. Du point de vue archéologique, la décision de modélisation est
+        la bonne — une tasse et une assiette d’un même stade sont contemporaines — mais elle implique
+        que ces colonnes ne portent aucune mesure, et la légende doit le dire. <a href="#ranks">§3</a></li>
+        <li><strong>Une dispersion indéfinie imprimée comme un nombre.</strong> Lorsqu’un groupe ne tient
+        qu’un rang, \(s = 0\) et \(q = 1\) découlent de la table des rangs, non des tessons. La figure
+        les grise ; le grisé est calculé à partir de <code>COUNT(DISTINCT ?stage)</code> et est donc fiable,
+        mais il n’est pas explicité. <a href="#degenerate">§7</a></li> <li><strong>L’étalement intra-groupe
+        n’est pas la part du groupe.</strong> Les panneaux ne disent rien de la quantité présente de chaque
+        groupe, qui pour ce matériel constitue le signal le plus fort (Service II : d’environ 6 % à environ
+        92 % au fil de la séquence). Publier les deux ensemble. <a href="#sigma">§4</a></li> <li><strong>Échelle
+        de couleurs relative au jeu de données dans le panneau gauche.</strong> L’échelle de variance
+        s’arrête à la plus grande valeur observée : les couleurs ne sont donc pas stables d’une exécution
+        à l’autre. <a href="#panels">§6</a></li> <li><strong>Confusion entre \(s\) et la taille d’échantillon.</strong>
+        La dispersion et \(n\) décroissent ensemble le long de la colonne Service I : l’horizon 5 repose
+        sur 103 tessons contre 1741 pour l’horizon 2. Un contrôle par raréfaction les départagerait. <a
+        href="#servicei">§9</a></li> <li><strong>L’affectation aux horizons est une convention codée en
+        dur.</strong> Cinq classes issues de <code>FINDSPOT_HORIZON</code>, avec une table de correspondance
+        pour les sites que le classeur et le TTL orthographient différemment. Maintenable et à source
+        unique, mais elle doit accompagner la figure au titre de la provenance plutôt que de ne vivre
+        que dans le module.</li> <li><strong>Des rangs ordinaux sous une statistique d’échelle de rapport
+        — tranché par déclaration.</strong> Le coefficient de variation divise par la moyenne : \(q\)
+        dépend donc du point de départ de la numérotation, ce qui n’est pas le cas de \(s\). Le projet
+        a besoin de \(q\) : la numérotation relève désormais de la méthode et non d’un détail d’implémentation
+        — <strong>le premier stade de chaque groupe porte le rang 1, et les rangs courent de 1 à k dans
+        l’ordre des stades, sans lacune.</strong> Elle est dérivée de <code>TYPES</code> dans <code>services_to_rdf.py</code>
+        et publiée sous <code>aeont:stageRank</code> : tout lecteur peut donc recalculer sur cette base.
+        Voir ci-dessous ce que cela fixe. <a href="#origin">§11 a</a></li>'
+  - type: note
+    html:
+      en: '<strong>Decision: the rank origin is fixed at 1 and declared.</strong> \(q\) is needed, so
+        the alternative — dropping \(q\) and reporting \(s\) alone — was not taken. What follows from
+        that is an obligation rather than a caveat: the numbering must be stated in the method section,
+        carried in the graph as <code>aeont:stageRank</code>, and repeated in the figure caption, because
+        a \(q\) quoted without it cannot be reproduced.'
+      fr: '<strong>Décision : l’origine des rangs est fixée à 1 et déclarée.</strong> \(q\) est nécessaire
+        ; l’autre voie — abandonner \(q\) et ne publier que \(s\) — n’a donc pas été retenue. Il en résulte
+        une obligation plutôt qu’une réserve : la numérotation doit être énoncée dans la section méthodologique,
+        portée dans le graphe sous <code>aeont:stageRank</code>, et répétée dans la légende de la figure,
+        car un \(q\) cité sans elle n’est pas reproductible.'
+- id: origin
+  marker: 11a
+  heading:
+    en: What the declaration fixes
+    fr: Ce que la déclaration fixe
+  sub:
+    en: How much of \(q\) is the data and how much is the numbering.
+    fr: Quelle part de \(q\) vient des données et quelle part de la numérotation.
+  blocks:
+  - type: figure
+    figure: rank_origin_sensitivity
+    caption:
+      en: 'Service I, all five horizons, under every plausible numbering. Two things hold at once. The
+        <em>level</em> of \(q\) is not a property of the sherds — horizon 1 reads 0.622 if the first stage
+        is numbered 0 and 0.942 if it is numbered 10, and the whole family is driven towards 1 as the
+        origin grows, because a larger mean shrinks the CV. But the <em>order</em> never changes: horizon
+        1 is the most dispersed at every origin and horizon 5 the least, and no two curves cross. Every
+        value of \(s\) is identical along each curve.'
+      fr: 'Service I, les cinq horizons, sous toute numérotation plausible. Deux choses valent en même
+        temps. Le <em>niveau</em> de \(q\) n’est pas une propriété des tessons : l’horizon 1 vaut 0,622
+        si le premier stade est numéroté 0 et 0,942 s’il est numéroté 10, et toute la famille est poussée
+        vers 1 à mesure que l’origine croît, car une moyenne plus grande réduit le CV. Mais l’<em>ordre</em>
+        ne change jamais : l’horizon 1 est le plus dispersé pour toute origine et l’horizon 5 le moins,
+        et aucune courbe n’en croise une autre. Toutes les valeurs de \(s\) sont identiques le long de
+        chaque courbe.'
+  - type: note
+    html:
+      en: '<strong>What this licenses in the text.</strong> Comparisons between horizons — "horizon 5
+        is tighter than horizon 1" — are safe: they survive any numbering. A bare quoted level — "the
+        quality of horizon 3 is 0.85" — is only meaningful together with the declaration, and is not comparable
+        with a \(q\) from any other study unless that study numbers its ranks the same way. The safest
+        formulation in the paper is to lead with \(s\), which is origin-free, and to introduce \(q\) as
+        its bounded presentation.'
+      fr: '<strong>Ce que cela autorise dans le texte.</strong> Les comparaisons entre horizons — « l’horizon
+        5 est plus resserré que l’horizon 1 » — sont sûres : elles survivent à toute numérotation. Un
+        niveau cité seul — « la qualité de l’horizon 3 vaut 0,85 » — n’a de sens qu’accompagné de la déclaration,
+        et n’est comparable à un \(q\) d’une autre étude que si celle-ci numérote ses rangs de la même
+        façon. La formulation la plus sûre dans l’article consiste à mener avec \(s\), indépendant de
+        l’origine, et à introduire \(q\) comme sa présentation bornée.'
+  - type: warn
+    html:
+      en: <strong>Three places the numbering has to appear.</strong> The method section, as one sentence;
+        the graph, where <code>aeont:stageRank</code> already carries it per concept, so the assertion
+        is machine-checkable; and the figure caption, since the figure will be reused without the paper
+        around it. If it appears in only the first two, the caption is the one that will be quoted.
+      fr: <strong>Trois endroits où la numérotation doit figurer.</strong> La section méthodologique,
+        en une phrase ; le graphe, où <code>aeont:stageRank</code> la porte déjà par concept, ce qui rend
+        l’assertion vérifiable par machine ; et la légende de la figure, puisque celle-ci sera réutilisée
+        hors de l’article. Si elle ne figure qu’aux deux premiers endroits, c’est justement la légende
+        qui sera citée.
+- id: legend
+  marker: '12'
+  heading:
+    en: Legend glossary
+    fr: Glossaire de la légende
+  sub:
+    en: Every mark on the figure, and what licenses it.
+    fr: Chaque marque de la figure, et ce qui l’autorise.
+  blocks:
+  - type: table
+    html:
+      en: <thead><tr><th>Mark</th><th>Meaning</th><th>Source</th></tr></thead> <tbody> <tr><td>row label
+        <code>Horizon 1…5</code></td><td>chronological class of the findspot</td><td><code>FINDSPOT_HORIZON</code></td></tr>
+        <tr><td>column label</td><td>service group; colour matches the timeline figures</td><td>sub-type
+        → group map</td></tr> <tr><td>large number, left</td><td>\(s\), sample standard deviation of the
+        stage rank over sherds</td><td><code>rgzm()</code>, <code>py/viz/_prelude.py</code></td></tr>
+        <tr><td>large number, right</td><td>\(q = \exp(-s/\overline{x})\)</td><td>same function</td></tr>
+        <tr><td>small <code>n=</code></td><td>sherds in the cell — the \(N\) of the statistic <span class="pill
+        keep">in the formula</span></td><td>workbook counts via <code>aeont:sherdCount</code></td></tr>
+        <tr><td>grey fill</td><td>degenerate cell, off the colour ramp</td><td><a href="#degenerate">§7</a></td></tr>
+        <tr><td>em-dash</td><td>group not represented in that horizon</td><td><a href="#cells">§10</a></td></tr>
+        <tr><td>right-hand axis note</td><td><em>ranks by stage only</em> — the rank assignment rule;
+        the sub-type reading is the switchable alternative</td><td><a href="#ranks">§3</a></td></tr> <tr><td>colour
+        bar, left</td><td>0 → largest observed \(s\) <span class="pill legacy">relative</span></td><td><a
+        href="#panels">§6</a></td></tr> <tr><td>colour bar, right</td><td>0 → 1 <span class="pill keep">absolute</span></td><td><a
+        href="#panels">§6</a></td></tr> </tbody>
+      fr: <thead><tr><th>Marque</th><th>Signification</th><th>Source</th></tr></thead> <tbody> <tr><td>étiquette
+        de ligne <code>Horizon 1…5</code></td><td>classe chronologique du site</td><td><code>FINDSPOT_HORIZON</code></td></tr>
+        <tr><td>étiquette de colonne</td><td>groupe de service ; couleur accordée aux figures de frise</td><td>table
+        sous-type → groupe</td></tr> <tr><td>grand nombre, à gauche</td><td>\(s\), écart-type d’échantillon
+        du rang de stade sur les tessons</td><td><code>rgzm()</code>, <code>py/viz/_prelude.py</code></td></tr>
+        <tr><td>grand nombre, à droite</td><td>\(q = \exp(-s/\overline{x})\)</td><td>même fonction</td></tr>
+        <tr><td>petit <code>n=</code></td><td>tessons de la cellule — le \(N\) de la statistique <span
+        class="pill keep">dans la formule</span></td><td>effectifs du classeur via <code>aeont:sherdCount</code></td></tr>
+        <tr><td>remplissage gris</td><td>cellule dégénérée, hors de l’échelle de couleurs</td><td><a href="#degenerate">§7</a></td></tr>
+        <tr><td>tiret</td><td>groupe non représenté dans cet horizon</td><td><a href="#cells">§10</a></td></tr>
+        <tr><td>note de l’axe droit</td><td><em>rangs par stade seulement</em> — la règle d’attribution
+        des rangs ; la lecture par sous-type en est la variante commutable</td><td><a href="#ranks">§3</a></td></tr>
+        <tr><td>barre de couleurs, à gauche</td><td>0 → plus grand \(s\) observé <span class="pill legacy">relative</span></td><td><a
+        href="#panels">§6</a></td></tr> <tr><td>barre de couleurs, à droite</td><td>0 → 1 <span class="pill
+        keep">absolue</span></td><td><a href="#panels">§6</a></td></tr> </tbody>

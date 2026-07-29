@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="{{ lang_tag }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+                     svg: { fontCache: 'global' } };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+:root{
+  --ink:#1b2430;
+  --ink-soft:#46525f;
+  --paper:#fbfaf7;
+  --paper-2:#f2efe8;
+  --rule:#d9d3c6;
+  --slip:#9e3b26;
+  --slip-tint:#f6e8e3;
+  --ochre:#b07d31;
+  --sage:#40655c;
+  --sage-tint:#e6efeb;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,sans-serif;
+  font-size:16px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+
+.tabs{position:sticky; top:0; z-index:50; background:var(--ink); border-bottom:3px solid var(--slip)}
+.tabs-inner{max-width:1080px; margin:0 auto; display:flex; align-items:stretch; gap:2px; padding:0 24px}
+.tab{
+  display:flex; align-items:center; gap:.55rem;
+  padding:.85rem 1.4rem; text-decoration:none;
+  font-size:.83rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  color:#9aa7b4; border-bottom:3px solid transparent; margin-bottom:-3px;
+}
+.tab:hover{color:#e7e3da; background:rgba(255,255,255,.05)}
+.tab[aria-current="page"]{color:var(--paper); border-bottom-color:var(--slip); background:rgba(158,59,38,.18)}
+.tab .num{font-family:"IBM Plex Mono",monospace; font-size:.72rem; opacity:.65; font-weight:400}
+
+header.mast{background:var(--ink); color:var(--paper); padding:3.4rem 24px 3rem}
+.mast-inner{max-width:1080px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:2.5rem; align-items:end}
+.mast h1{
+  font-family:Spectral,Georgia,serif; font-weight:600;
+  font-size:clamp(1.9rem,4vw,2.9rem); line-height:1.14; margin:0 0 .7rem; letter-spacing:-.01em;
+}
+.mast .kicker{
+  font-family:"IBM Plex Mono",monospace; font-size:.76rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ochre); margin:0 0 1.1rem;
+}
+.mast p.lede{margin:0; max-width:56ch; color:#c3cbd3; font-size:1.02rem}
+.stamp{opacity:.9}
+
+main{max-width:1080px; margin:0 auto; padding:0 24px 6rem}
+section{padding-top:3.2rem; scroll-margin-top:4.5rem}
+h2{font-family:Spectral,Georgia,serif; font-weight:600; font-size:1.55rem; margin:0 0 .3rem; display:flex; align-items:center; gap:.85rem}
+h3{font-family:Spectral,Georgia,serif; font-weight:600; font-size:1.13rem; margin:2rem 0 .5rem}
+h2 + .sub{margin:0 0 1.5rem 3.6rem; color:var(--ink-soft); font-size:.94rem; border-left:2px solid var(--rule); padding-left:.9rem}
+p{max-width:74ch}
+a{color:var(--slip)}
+code,.mono{font-family:"IBM Plex Mono",monospace; font-size:.88em}
+p code, li code, td code{background:var(--paper-2); padding:.1em .38em; border-radius:2px}
+
+.ansa{flex:0 0 auto}
+
+.formula{background:#fff; border:1px solid var(--rule); border-left:3px solid var(--slip); padding:.4rem 1.3rem; margin:1.2rem 0; overflow-x:auto}
+.formula .why{font-size:.88rem; color:var(--ink-soft); border-top:1px dashed var(--rule); margin-top:.2rem; padding:.7rem 0 .3rem}
+.note{background:var(--sage-tint); border-left:3px solid var(--sage); padding:.9rem 1.2rem; margin:1.3rem 0; font-size:.94rem}
+.warn{background:var(--slip-tint); border-left:3px solid var(--slip); padding:.9rem 1.2rem; margin:1.3rem 0; font-size:.94rem}
+.note strong,.warn strong{font-weight:600}
+.open{border:1px dashed var(--ochre); background:#fdf8ef; padding:.9rem 1.2rem; margin:1.3rem 0; font-size:.94rem}
+.open::before{
+  content:"Open question"; display:block;
+  font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ochre); margin-bottom:.35rem;
+}
+
+table{border-collapse:collapse; width:100%; margin:1.3rem 0; font-size:.9rem}
+th,td{border-bottom:1px solid var(--rule); padding:.55rem .7rem; text-align:left; vertical-align:top}
+th.num,td.num{text-align:right; white-space:nowrap}
+thead th.raw{text-transform:none; letter-spacing:.02em; font-size:.8rem}
+thead th{background:var(--paper-2); border-bottom:2px solid var(--ink); font-size:.74rem; letter-spacing:.07em; text-transform:uppercase; font-weight:600}
+td.num{text-align:right; font-family:"IBM Plex Mono",monospace}
+tbody tr:hover{background:#fff}
+tr.degen td{color:var(--ink-soft)}
+
+pre{
+  background:var(--ink); color:#dfe5ea; padding:1.1rem 1.3rem; overflow-x:auto;
+  font-family:"IBM Plex Mono",monospace; font-size:.82rem; line-height:1.55;
+  border-left:3px solid var(--ochre); margin:1.2rem 0;
+}
+pre .c{color:#8d9aa6; font-style:italic}
+pre .k{color:#e0a06a}
+
+figure{margin:1.8rem 0}
+figure svg{max-width:100%; height:auto; display:block}
+/* keep inline maths inline — MathJax containers otherwise break the line */
+mjx-container{display:inline-block !important; margin:0 .12em; line-height:0}
+mjx-container[display="true"]{display:block !important; margin:.7em 0; text-align:center}
+
+figcaption{font-size:.85rem; color:var(--ink-soft); margin-top:.6rem; border-top:1px solid var(--rule); padding-top:.5rem; max-width:74ch}
+
+.pill{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; padding:.15em .55em; border:1px solid currentColor; border-radius:2px; vertical-align:.1em}
+.pill.keep{color:var(--sage)}
+.pill.drop{color:var(--slip)}
+.pill.legacy{color:var(--ochre)}
+
+nav.toc{background:#fff; border:1px solid var(--rule); padding:1.3rem 1.5rem; margin-top:2.6rem; columns:2; column-gap:2.5rem}
+nav.toc h2{font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; font-family:"IBM Plex Mono",monospace; margin:0 0 .7rem; column-span:all; color:var(--ink-soft)}
+nav.toc ol{margin:0; padding-left:1.4rem; font-size:.9rem}
+nav.toc li{margin:.28rem 0; break-inside:avoid}
+nav.toc a{text-decoration:none; color:var(--ink)}
+nav.toc a:hover{color:var(--slip); text-decoration:underline}
+
+footer{border-top:3px solid var(--ink); margin-top:4rem; padding:2rem 24px 3rem; font-size:.85rem; color:var(--ink-soft)}
+footer .fi{max-width:1080px; margin:0 auto}
+
+@media (max-width:760px){
+  .mast-inner{grid-template-columns:1fr}
+  .stamp{display:none}
+  nav.toc{columns:1}
+  h2 + .sub{margin-left:0}
+}
+@media print{
+  .tabs{display:none} header.mast{background:#fff;color:#000}
+  .mast .lede{color:#333} pre{background:#f4f4f4;color:#000}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-inner">
+    <div>
+      <p class="kicker">{{ kicker }}</p>
+      <h1>{{ h1 | safe }}</h1>
+      <p class="lede">{{ lede | safe }}</p>
+    </div>
+    <svg class="stamp" width="230" height="120" viewBox="0 0 230 120" aria-hidden="true">
+      <g fill="none" stroke="#b07d31" stroke-width="1.5">
+        <path d="M45 30 L185 30 L185 90 L45 90 Z"/>
+        <path d="M45 30 L18 45 L18 75 L45 90"/>
+        <path d="M185 30 L212 45 L212 75 L185 90"/>
+        <path d="M52 37 L178 37 L178 83 L52 83 Z" stroke-opacity=".45"/>
+      </g>
+      <text x="115" y="68" text-anchor="middle" fill="#fbfaf7"
+            font-family="Spectral, Georgia, serif" font-size="23" letter-spacing="3">SERV I·II</text>
+    </svg>
+  </div>
+</header>
+
+<main>
+
+<nav class="toc">
+  <h2>{{ toc_heading }}</h2>
+  <ol>
+  {%- for s in sections %}
+    <li><a href="#{{ s.id }}">{{ s.heading | safe }}</a></li>
+  {%- endfor %}
+  </ol>
+</nav>
+
+{% for s in sections %}
+<section id="{{ s.id }}">
+  <h2>{{ ansa(s.marker) | safe }}{{ s.heading | safe }}</h2>
+  {%- if s.sub %}
+  <p class="sub">{{ s.sub | safe }}</p>
+  {%- endif %}
+  {%- for b in s.blocks %}
+  {%- if b.type == 'figure' %}
+  <figure>
+    {{ figure(b.figure) | safe }}
+    <figcaption>{{ b.caption | safe }}</figcaption>
+  </figure>
+  {%- elif b.type in ('note', 'warn', 'open', 'formula') %}
+  <div class="{{ b.type }}">{{ b.html | safe }}</div>
+  {%- elif b.type == 'h3' %}
+  <h3>{{ b.html | safe }}</h3>
+  {%- elif b.type == 'table' %}
+  <table>{{ b.html | safe }}</table>
+  {%- elif b.type == 'ol' %}
+  <ol>{{ b.html | safe }}</ol>
+  {%- else %}
+  <p>{{ b.html | safe }}</p>
+  {%- endif %}
+  {%- endfor %}
+</section>
+{% endfor %}
+
+</main>
+
+<footer>
+  <div class="fi">
+    <p style="margin:0 0 .3rem"><strong>{{ footer_title }}</strong></p>
+    <p style="margin:0">{{ footer_note | safe }}</p>
+    <p style="margin:.6rem 0 0; font-size:.8rem">{{ generated_note }}</p>
+  </div>
+</footer>
+
+</body>
+</html>
