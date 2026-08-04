@@ -16,6 +16,7 @@ Usage
     python py/main.py                 # run the full pipeline (default)
     python py/main.py --only rdf      # only alligator_to_clean_rdf.py
     python py/main.py --only service  # only events_timeline_by_service.py
+    python py/main.py --only assign   # only horizon_assignment.py
     python py/main.py --list          # show the configured steps and exit
 
 Each step runs as its own process, so a crash in one script cannot corrupt the
@@ -77,6 +78,20 @@ STEPS = [
             "output/service_group_variability_fr.jpg",
             "output/service_percentages.csv",
             "output/service_group_variability.csv",
+        ],
+    },
+    {
+        "key": "assign",
+        "script": "horizon_assignment.py",
+        "label": "Horizon assignment \u00b7 reference profiles, examples, validation",
+        "resets": False,
+        # Reads only the workbook and horizons.py, so it depends on nothing the
+        # earlier steps write - but it still has to come after the resetting
+        # step, or its CSVs are deleted again before anyone sees them.
+        "expects": [
+            "output/horizon_reference_profiles.csv",
+            "output/horizon_assignment_examples.csv",
+            "output/horizon_assignment_loo.csv",
         ],
     },
     {

@@ -20,7 +20,14 @@ CAA2026-alligator/
 │   └── …_CoordinatesCA_9999.{agt,tsv,ods,pdf}          # CA coordinates + dating table
 ├── help/                                   # Reference Turtle snippets (Haltern, Velsen)
 ├── py/
-│   └── alligator_to_clean_rdf.py           # The pipeline (single entry point)
+│   ├── main.py                             # Orchestrator — runs every step in order
+│   ├── alligator_to_clean_rdf.py           # RDF pipeline, period clusters, Allen relations
+│   ├── events_timeline_by_service.py       # Service composition and horizon figures
+│   ├── services_to_rdf.py                  # Service-type counts as a sidecar RDF layer
+│   ├── horizon_assignment.py               # Horizon assignment from a composition
+│   ├── build_sparql.py                     # Interactive query page and notebooks
+│   ├── build_docs.py                       # The variability note, generated
+│   └── horizons.py                         # Shared find-spot → horizon table
 ├── notebook/                               # Notebook variant + interactive HTML views
 ├── output/                                 # Generated artefacts (see below)
 ├── requirements.txt
@@ -49,6 +56,9 @@ The `src/` files are the *upstream* input to the external Alligator tool (corres
 | `allen_matrix.jpg` | Pairwise Allen-relation matrix between clusters. |
 | `allen_chain.jpg` | Allen-relation chain diagram. |
 | `report.txt` | Full run log with mapping and clustering statistics. |
+| `horizon_reference_profiles.csv` | Pooled sherd counts and proportions per horizon — the reference of the horizon assignment. |
+| `horizon_assignment_examples.csv` | Worked examples: three compositions × three sample sizes × both methods. |
+| `horizon_assignment_loo.csv` | Leave-one-out validation: every find-spot re-assigned against a reference built without it. |
 
 ---
 
@@ -89,6 +99,31 @@ python3 py/alligator_to_clean_rdf.py
 ```
 
 All paths are resolved relative to the script location, so no arguments are needed. Every artefact in `output/` is regenerated on each run, and a timestamped log is written to `output/report.txt`.
+
+### Assigning a new find to a horizon
+
+`py/horizon_assignment.py` reads the sequence in the opposite direction to the figures. Given an assemblage counted by service type, which of the five horizons does it belong to — and how sure is that?
+
+Run without arguments it prints the reference profiles, three worked examples, the number of sherds needed to reach a given confidence, and a leave-one-out validation over all 44 seriated find-spots. It then writes the three CSVs listed above.
+
+```bash
+python3 py/horizon_assignment.py
+python3 py/horizon_assignment.py --no-write        # print only, write nothing
+```
+
+To classify an assemblage of your own, give its percentage shares and the number of sherds behind them:
+
+```bash
+python3 py/horizon_assignment.py --assign "Ib=13,Ic=27,II=60" --n 100
+python3 py/horizon_assignment.py --assign "Ib=6,Ic=24,II=70" --n 100 --steps
+python3 py/horizon_assignment.py --assign "Service II=90,Ic=8,Ib=2" --n 30
+```
+
+Category names are matched loosely, so `II`, `Service II` and `srt` all reach the right one, and shares that do not sum to 100 are rescaled with a note. `--steps` prints the whole arithmetic — the log-likelihood of every horizon, its normalisation into probabilities, and the Dirichlet-multinomial correction that allows for the reference being a sample too — so each figure can be checked with a calculator.
+
+The five categories are Schrägrandteller, Service Ia, Ib, Ic and Service II. Cup and plate of one stage are merged, because a change of form is not a step in time. The three service groups on their own are not enough: most of the discrimination between neighbouring horizons sits in the Ia/Ib/Ic subdivision.
+
+This step also runs as part of the full pipeline (`python3 py/main.py`), or on its own with `python3 py/main.py --only assign`.
 
 ---
 
