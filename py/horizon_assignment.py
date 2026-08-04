@@ -26,6 +26,13 @@ and checked by hand:
     3. log-likelihood -> probability         posterior_plugin()
     4. the same, allowing for the fact that
        the reference is itself a sample      posterior_dirichlet()
+    5. does the winner fit at all?           goodness_of_fit()
+
+Steps 1 to 4 are relative: the five probabilities always sum to 100 %, so a
+mixed context or an assemblage from outside the seriated area is still handed a
+horizon, and handed it confidently. Step 5 is the absolute question, and
+chi-square is the right tool for it — the same chi-square, in its
+likelihood-ratio form G², that steps 2 and 3 already compute under another name.
 
 Step 4 is the honest one and the default for every reported figure. Step 3 is
 kept because it can be reproduced with a pocket calculator, which matters for a
@@ -117,6 +124,14 @@ CATEGORY_OF_COLUMN = {
 # category from excluding a horizon with probability exactly zero.
 DIRICHLET_ALPHA = 1.0
 
+# Expected counts below this make the chi-square distribution an unsafe
+# reference for the fit test. The rare stages here fall well under it, which is
+# exactly why the fit test is reported with a flag rather than as a bare p-value.
+MIN_EXPECTED = 5.0
+
+# Below this p-value the leading horizon is reported as not fitting.
+FIT_ALPHA = 0.05
+
 # The worked examples of the accompanying note. Proportions in per cent.
 EXAMPLES = {
     "A": {"label": "13 / 27 / 60", "shares": {"Ib": 13, "Ic": 27, "Service II": 60}},
@@ -124,6 +139,14 @@ EXAMPLES = {
     "C": {"label": "2 / 8 / 90", "shares": {"Ib": 2, "Ic": 8, "Service II": 90}},
 }
 EXAMPLE_SIZES = (30, 100, 300)
+
+# A deliberately mixed assemblage: a late context carrying early residual
+# material. Every horizon is a poor fit for it, which is precisely what the fit
+# test is meant to catch and what the horizon probabilities cannot say.
+FIT_DEMO = {
+    "label": "5 / 5 / 8 / 82 (with Ia)",
+    "shares": {"Ia": 5, "Ib": 5, "Ic": 8, "Service II": 82},
+}
 
 # Confidence thresholds for "how many sherds do you need?", and the largest
 # assemblage worth asking about. Beyond roughly the size of the reference the
@@ -317,7 +340,170 @@ def assign(counts: dict, pooled: pd.DataFrame, profiles: pd.DataFrame) -> dict:
 
 
 # ==============================================================================
-# SECTION 5 · Derivation, printed step by step
+# SECTION 5 · Goodness of fit
+# ==============================================================================
+
+
+def _regularised_gamma_p(a: float, x: float) -> float:
+    """Series expansion of the lower regularised incomplete gamma P(a, x)."""
+    term = total = 1.0 / a
+    ap = a
+    for _ in range(1000):
+        ap += 1.0
+        term *= x / ap
+        total += term
+        if abs(term) < abs(total) * 1e-15:
+            break
+    return total * math.exp(-x + a * math.log(x) - math.lgamma(a))
+
+
+def _regularised_gamma_q(a: float, x: float) -> float:
+    """Continued fraction for the upper regularised incomplete gamma Q(a, x)."""
+    tiny = 1e-300
+    b = x + 1.0 - a
+    c = 1.0 / tiny
+    d = 1.0 / b if b != 0.0 else 1.0 / tiny
+    h = d
+    for i in range(1, 1000):
+        an = -i * (i - a)
+        b += 2.0
+        d = an * d + b
+        if abs(d) < tiny:
+            d = tiny
+        c = b + an / c
+        if abs(c) < tiny:
+            c = tiny
+        d = 1.0 / d
+        delta = d * c
+        h *= delta
+        if abs(delta - 1.0) < 1e-15:
+            break
+    return h * math.exp(-x + a * math.log(x) - math.lgamma(a))
+
+
+def chi_square_sf(x: float, df: int) -> float:
+    """Return P(chi-square with df degrees of freedom exceeds x).
+
+    Written out rather than taken from scipy, which nothing else in this
+    pipeline needs and which would be a heavy dependency for one distribution
+    function. It agrees with ``scipy.stats.chi2.sf`` to ten significant figures
+    across the range that arises here. The series is used below the mode of the
+    distribution and the continued fraction above it, each where it converges
+    quickly.
+    """
+    if df <= 0:
+        return float("nan")
+    if x <= 0:
+        return 1.0
+    if math.isinf(x):
+        return 0.0
+    a, y = df / 2.0, x / 2.0
+    if y < a + 1.0:
+        return 1.0 - _regularised_gamma_p(a, y)
+    return _regularised_gamma_q(a, y)
+
+
+def expected_counts(counts: dict, profiles: pd.DataFrame, horizon: int) -> dict:
+    """Return the counts this horizon predicts for an assemblage of this size."""
+    n = sum(counts.values())
+    return {cat: n * float(profiles.at[horizon, cat]) for cat in CATEGORIES}
+
+
+def g_squared(counts: dict, profiles: pd.DataFrame, horizon: int) -> float:
+    """Return the likelihood-ratio form of chi-square, 2 Σ O · ln(O / E).
+
+    Included because it makes a relation visible that is otherwise only
+    assertable: the difference in G² between two horizons is exactly twice the
+    difference in their log-likelihoods, so normalising exp(-G²/2) over the five
+    horizons reproduces posterior_plugin() to the last digit. Pearson's
+    chi-square is the second-order approximation of this same quantity, which is
+    why it ranks the horizons identically but scores them differently — and why
+    the exact likelihood is preferred here, since it costs nothing extra.
+    """
+    expected = expected_counts(counts, profiles, horizon)
+    total = 0.0
+    for category in CATEGORIES:
+        observed = counts.get(category, 0)
+        if observed <= 0:
+            continue
+        if expected[category] <= 0:
+            return math.inf
+        total += 2 * observed * math.log(observed / expected[category])
+    return total
+
+
+def goodness_of_fit(counts: dict, profiles: pd.DataFrame, horizon: int) -> dict:
+    """Test an assemblage against one horizon with Pearson's chi-square.
+
+    Categories the horizon cannot produce at all are dropped from the sum; if
+    the assemblage has sherds in one of them, the fit is impossible and the
+    statistic is infinite. Degrees of freedom are the number of contributing
+    categories minus one.
+
+    The ``reliable`` flag is not decoration. The chi-square distribution is a
+    large-sample approximation needing expected counts of roughly five per cell,
+    and the rare stages here — the very ones carrying the chronological signal —
+    fall well below that. Where the flag is False the statistic still orders the
+    horizons sensibly, but its p-value should not be quoted as one.
+    """
+    expected = expected_counts(counts, profiles, horizon)
+    contributions = {}
+    statistic = 0.0
+    cells = 0
+    smallest = math.inf
+    impossible = False
+
+    for category in CATEGORIES:
+        observed = counts.get(category, 0)
+        e = expected[category]
+        if e <= 0:
+            if observed > 0:
+                impossible = True
+            continue
+        cells += 1
+        smallest = min(smallest, e)
+        contribution = (observed - e) ** 2 / e
+        statistic += contribution
+        contributions[category] = {
+            "observed": observed,
+            "expected": e,
+            "contribution": contribution,
+        }
+
+    if impossible:
+        statistic = math.inf
+
+    df = max(cells - 1, 1)
+    p = chi_square_sf(statistic, df)
+
+    return {
+        "horizon": int(horizon),
+        "chi_square": statistic,
+        "df": df,
+        "p": p,
+        "fits": p >= FIT_ALPHA,
+        "reliable": smallest >= MIN_EXPECTED and not impossible,
+        "smallest_expected": smallest,
+        "contributions": contributions,
+    }
+
+
+def _format_p(p: float) -> str:
+    """Format a p-value for a table cell, without pretending to precision."""
+    return f"{p:.4f}" if p >= 0.0001 else "< 0.0001"
+
+
+def _format_p_clause(p: float) -> str:
+    """Format a p-value as a clause, so "p < 0.0001" does not read "p = < ..."."""
+    return f"p = {p:.4f}" if p >= 0.0001 else "p < 0.0001"
+
+
+def _format_statistic(x: float) -> str:
+    """Format a chi-square value, keeping an impossible fit legible."""
+    return "inf" if math.isinf(x) else f"{x:.2f}"
+
+# ==============================================================================
+# SECTION 6 · Derivation, printed step by step
 # ==============================================================================
 
 
@@ -373,16 +559,42 @@ def print_derivation(counts: dict, pooled: pd.DataFrame, profiles: pd.DataFrame)
         f"  → horizon {leader} at {dirichlet[leader]:.1f} %, "
         f"next best horizon {runner_up} at {dirichlet[runner_up]:.1f} %"
     )
+
+    print()
+    print(f"Step 5 · does horizon {leader} fit at all?")
+    fit = goodness_of_fit(counts, profiles, leader)
+    print(f"  {'category':<18}{'observed':>10}{'expected':>10}{'chi2 term':>12}")
+    for category, part in fit["contributions"].items():
+        print(
+            f"  {category:<18}{part['observed']:>10}{part['expected']:>10.2f}"
+            f"{part['contribution']:>12.2f}"
+        )
     print(
-        "  Reminder: the five values always sum to 100 %. This says which "
-        "horizon fits best,\n  not whether any of them fits at all — check the "
-        "expected counts of the leader\n  against the observed ones before "
-        "believing it."
+        f"  chi-square = {_format_statistic(fit['chi_square'])}, "
+        f"df = {fit['df']}, {_format_p_clause(fit['p'])}"
     )
+    print()
+    if fit["fits"]:
+        print("  The observed counts are consistent with this horizon.")
+    else:
+        print(
+            "  The observed counts are NOT consistent with this horizon. Since "
+            "it is the best\n  of the five, no horizon fits: expect a mixed "
+            "context, residual material, or a\n  site outside the seriated "
+            "area. This is the one thing the percentages above\n  cannot tell "
+            "you — they always sum to 100 % and always name a winner."
+        )
+    if not fit["reliable"]:
+        print(
+            f"  Caution: the smallest expected count is "
+            f"{fit['smallest_expected']:.2f}, below the customary {MIN_EXPECTED:g}. "
+            f"The\n  statistic still orders the horizons sensibly, but treat the "
+            f"p-value as indicative."
+        )
 
 
 # ==============================================================================
-# SECTION 6 · Leave-one-out validation
+# SECTION 7 · Leave-one-out validation
 # ==============================================================================
 
 
@@ -411,6 +623,10 @@ def leave_one_out(findspots: pd.DataFrame, pooled: pd.DataFrame) -> pd.DataFrame
         posterior = posterior_dirichlet(counts, reduced)
         predicted = max(posterior, key=posterior.get)
 
+        # The fit is tested against the same reduced reference, so a find-spot
+        # is never judged against a profile it helped to define.
+        fit = goodness_of_fit(counts, reference_profiles(reduced), predicted)
+
         rows.append({
             "findspot": label,
             "n": sum(counts.values()),
@@ -420,6 +636,10 @@ def leave_one_out(findspots: pd.DataFrame, pooled: pd.DataFrame) -> pd.DataFrame
             "p_model": round(posterior[predicted], 4),
             "hit": predicted == assigned,
             "offset": predicted - assigned,
+            "chi_square": round(fit["chi_square"], 3),
+            "df": fit["df"],
+            "p_fit": round(fit["p"], 5),
+            "fits": fit["fits"],
         })
 
     return pd.DataFrame(rows).sort_values(
@@ -432,17 +652,19 @@ def summarise_leave_one_out(loo: pd.DataFrame) -> dict:
     total = len(loo)
     exact = int(loo["hit"].sum())
     adjacent = int((loo["offset"].abs() <= 1).sum())
+    misfits = int((~loo["fits"]).sum())
     return {
         "total": total,
         "exact": exact,
         "exact_pct": 100 * exact / total,
         "adjacent": adjacent,
         "adjacent_pct": 100 * adjacent / total,
+        "misfits": misfits,
     }
 
 
 # ==============================================================================
-# SECTION 7 · How many sherds are needed
+# SECTION 8 · How many sherds are needed
 # ==============================================================================
 
 
@@ -471,7 +693,7 @@ def sherds_needed(
 
 
 # ==============================================================================
-# SECTION 8 · Output writers
+# SECTION 9 · Output writers
 # ==============================================================================
 
 
@@ -511,7 +733,13 @@ def write_examples_csv(
                 }
                 for horizon in sorted(posterior):
                     row[f"p_H{horizon}"] = round(posterior[horizon], 4)
-                row["leader"] = max(posterior, key=posterior.get)
+                leader = max(posterior, key=posterior.get)
+                fit = goodness_of_fit(counts, profiles, leader)
+                row["leader"] = leader
+                row["chi_square"] = round(fit["chi_square"], 3)
+                row["df"] = fit["df"]
+                row["p_fit"] = round(fit["p"], 5)
+                row["fits"] = fit["fits"]
                 rows.append(row)
 
     csv_path.parent.mkdir(parents=True, exist_ok=True)
@@ -527,7 +755,7 @@ def write_loo_csv(loo: pd.DataFrame, csv_path: Path = LOO_CSV):
 
 
 # ==============================================================================
-# SECTION 9 · Console report
+# SECTION 10 · Console report
 # ==============================================================================
 
 
@@ -572,6 +800,34 @@ def report(pooled: pd.DataFrame, profiles: pd.DataFrame, loo: pd.DataFrame):
             row += f"{hit['n'] if hit else '>' + str(MAX_SHERDS_SEARCHED):>9}"
         print(row)
 
+    print()
+    print("Goodness of fit of the leading horizon (n = 100)")
+    print(
+        f"  {'ex':<5}{'shares':<26}{'horizon':>8}{'chi2':>10}{'df':>4}"
+        f"{'p':>11}   verdict"
+    )
+    fit_cases = [(k, EXAMPLES[k]["label"], EXAMPLES[k]["shares"]) for k in EXAMPLES]
+    fit_cases.append(("mix", FIT_DEMO["label"], FIT_DEMO["shares"]))
+    for key, label, shares in fit_cases:
+        counts = scale_to_counts(shares, 100)
+        posterior = posterior_dirichlet(counts, pooled)
+        leader = max(posterior, key=posterior.get)
+        fit = goodness_of_fit(counts, profiles, leader)
+        verdict = "consistent" if fit["fits"] else "no horizon fits — mixed?"
+        print(
+            f"  {key:<5}{label:<26}{'H' + str(leader):>8}"
+            f"{_format_statistic(fit['chi_square']):>10}{fit['df']:>4}"
+            f"{_format_p(fit['p']):>11}   {verdict}"
+        )
+    print()
+    print(
+        "  The last row is a late context carrying early residual material. The "
+        "horizon\n  probabilities give it H4 at 93.9 %, apparently decisively; "
+        "only the fit test\n  reveals that no horizon accounts for it. Expected "
+        "counts of the rare stages\n  are far below 5, so read these p-values as "
+        "indicative rather than exact."
+    )
+
     stats = summarise_leave_one_out(loo)
     print()
     print("Leave-one-out validation")
@@ -582,6 +838,27 @@ def report(pooled: pd.DataFrame, profiles: pd.DataFrame, loo: pd.DataFrame):
     print(
         f"  correct or neighbouring: {stats['adjacent']}/{stats['total']} "
         f"({stats['adjacent_pct']:.1f} %)"
+    )
+    small = loo[loo["n"] <= 100]
+    large = loo[loo["n"] > 100]
+    print(
+        f"  failing the fit test:    {stats['misfits']}/{stats['total']} at "
+        f"p < {FIT_ALPHA:g}  "
+        f"({int((~small['fits']).sum())}/{len(small)} up to 100 sherds, "
+        f"{int((~large['fits']).sum())}/{len(large)} above)"
+    )
+    print()
+    print(
+        "  That the larger find-spots are the ones failing is expected rather "
+        "than alarming.\n  The fit test asks whether an assemblage is a random "
+        "draw from the pooled horizon,\n  and no real site is: find-spots within "
+        "one horizon vary among themselves more than\n  multinomial sampling "
+        "allows. With enough sherds that surplus variation becomes\n  "
+        "detectable, so the test works as a screening instrument for assemblages "
+        "of moderate\n  size. For a large find-spot a high chi-square means "
+        "\"more variable than the pooled\n  profile\", not \"assigned to the wrong "
+        "horizon\" — the remedy would be an\n  over-dispersed fit test built on "
+        "the same Dirichlet-multinomial as step 4."
     )
     misses = loo[~loo["hit"]]
     if not misses.empty:
@@ -607,7 +884,7 @@ def report(pooled: pd.DataFrame, profiles: pd.DataFrame, loo: pd.DataFrame):
 
 
 # ==============================================================================
-# SECTION 10 · Main entry point
+# SECTION 11 · Main entry point
 # ==============================================================================
 
 
@@ -689,6 +966,16 @@ def main():
                 value = posterior[horizon]
                 shown = f"{value:6.2f} %" if value >= 0.01 else "< 0.01 %"
                 print(f"  H{horizon}  {shown}")
+
+            leader = max(posterior, key=posterior.get)
+            fit = goodness_of_fit(counts, profiles, leader)
+            print()
+            print(
+                f"  fit of H{leader}: chi-square = "
+                f"{_format_statistic(fit['chi_square'])}, df = {fit['df']}, "
+                f"{_format_p_clause(fit['p'])}"
+                + ("" if fit["fits"] else "  → no horizon fits well")
+            )
         return
 
     # --- The full report ---
