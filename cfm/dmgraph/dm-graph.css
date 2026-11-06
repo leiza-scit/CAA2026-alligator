@@ -1,0 +1,59 @@
+/* dm-graph.css — everything is scoped to .dm-graph, so it cannot touch the host page. */
+
+/* The graph is wider than a text column. It is centred and allowed to use up to
+   1320 px of the window, whatever the width of the page around it. */
+.dm-graph {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1320px, 96vw);
+  margin: 2rem 0;
+}
+
+.dm-graph__canvas {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: .75rem;
+  background: #fff;
+  min-height: 6rem;
+}
+
+/* min-width wins over max-width: on a narrow window the canvas scrolls
+   sideways instead of shrinking the text below legibility. */
+.dm-graph__canvas svg { max-width: 100%; min-width: 900px; height: auto; }
+
+.dm-graph__actions { margin: .75rem 0 0; }
+
+.dm-graph__actions label { margin-right: 1rem; }
+
+.dm-graph__actions select {
+  font: inherit;
+  padding: .3rem .4rem;
+  margin-left: .35rem;
+}
+
+.dm-graph__actions button {
+  font: inherit;
+  padding: .35rem .8rem;
+  margin-right: .5rem;
+  border: 1px solid #888;
+  border-radius: 3px;
+  background: #f3f3f3;
+  cursor: pointer;
+}
+
+.dm-graph__actions button:disabled { opacity: .5; cursor: default; }
+
+.dm-graph__source { margin-top: 1rem; }
+
+.dm-graph__source pre {
+  overflow-x: auto;
+  padding: .75rem;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  font-size: .85rem;
+  line-height: 1.4;
+}
+
+.dm-graph__error { color: #9b1c1c; margin: 0; }

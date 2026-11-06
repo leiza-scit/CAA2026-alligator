@@ -1,0 +1,49 @@
+@prefix dm: <http://leiza-scit.github.io/CAA2026-alligator/dm/> .
+@prefix aeont: <http://leiza-scit.github.io/CAA2026-alligator/ontology#> .
+@prefix aevoc: <http://leiza-scit.github.io/CAA2026-alligator/vocabulary/> .
+@prefix aecol: <http://leiza-scit.github.io/CAA2026-alligator/collections/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lado: <http://archaeology.link/ontology#> .
+
+_:assemblage a dm:Assemblage , crm:E18_Physical_Thing ;
+    dm:hasCount _:count_1 , _:count_2 , _:count_3 , _:count_4 , _:count_5 .
+
+_:count_1 a aeont:ServiceCount ;
+    aeont:serviceType aevoc:Schraegrandteller ;
+    aeont:sherdCount 0 .
+
+_:count_2 a aeont:ServiceCount ;
+    aeont:serviceType aevoc:ServiceIa ;
+    aeont:sherdCount 0 .
+
+_:count_3 a aeont:ServiceCount ;
+    aeont:serviceType aevoc:ServiceIb ;
+    aeont:sherdCount 13 .
+
+_:count_4 a aeont:ServiceCount ;
+    aeont:serviceType aevoc:ServiceIc ;
+    aeont:sherdCount 27 .
+
+_:count_5 a aeont:ServiceCount ;
+    aeont:serviceType aevoc:ServiceII ;
+    aeont:sherdCount 60 .
+
+[] a dm:HorizonAssessment , crm:E7_Activity ;
+    dm:method "Dirichlet-multinomial predictive likelihood" ;
+    dm:pseudocount 0.500000 ;
+    crm:P9_consists_of
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_1 ; dm:prior 0.200000 ; dm:probability 0.000000 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_2 ; dm:prior 0.200000 ; dm:probability 0.000001 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_3 ; dm:prior 0.200000 ; dm:probability 0.845502 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_4 ; dm:prior 0.200000 ; dm:probability 0.154497 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_5 ; dm:prior 0.200000 ; dm:probability 0.000000 ] .
+
+aecol:horizon_1 a lado:ChronologicalHorizon , crm:E4_Period .
+
+aecol:horizon_2 a lado:ChronologicalHorizon , crm:E4_Period .
+
+aecol:horizon_3 a lado:ChronologicalHorizon , crm:E4_Period .
+
+aecol:horizon_4 a lado:ChronologicalHorizon , crm:E4_Period .
+
+aecol:horizon_5 a lado:ChronologicalHorizon , crm:E4_Period .
