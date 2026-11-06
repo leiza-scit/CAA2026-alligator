@@ -1,6191 +1,6191 @@
 var tree={
- "plugins":[
-  "defaults",
-  "search",
-  "sort",
-  "state",
-  "types",
-  "contextmenu"
- ],
- "search":{
-  "show_only_matches":true
- },
- "types":{
-  "class":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/class.png"
+  "plugins": [
+    "defaults",
+    "search",
+    "sort",
+    "state",
+    "types",
+    "contextmenu"
+  ],
+  "search": {
+    "show_only_matches": true
   },
-  "geoclass":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/geoclass.png"
+  "types": {
+    "class": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/class.png"
+    },
+    "geoclass": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/geoclass.png"
+    },
+    "halfgeoclass": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/halfgeoclass.png"
+    },
+    "collectionclass": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/collectionclass.png"
+    },
+    "geocollection": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/geometrycollection.png"
+    },
+    "featurecollection": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/featurecollection.png"
+    },
+    "instance": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/instance.png"
+    },
+    "geoinstance": {
+      "icon": "https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/geoinstance.png"
+    }
   },
-  "halfgeoclass":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/halfgeoclass.png"
+  "core": {
+    "themes": {
+      "responsive": true
+    },
+    "check_callback": true,
+    "data": [
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_suniv0_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+        "type": "instance",
+        "text": "Clades Variana (ae:event_Clades_Variana)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_suniv0_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+        "type": "instance",
+        "text": "Drusus campaigns (ae:event_Drusus_campaigns)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_suniv0_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+        "type": "instance",
+        "text": "Germanicus campaigns (ae:event_Germanicus_campaigns)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_suniv0_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+        "type": "instance",
+        "text": "Tiberian campaign (ae:event_Tiberian_campaign)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+        "parent": "#",
+        "type": "class",
+        "instancecount": 4,
+        "text": "E7_Activity (crm:E7_Activity) [4]",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_suniv1_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Clades Variana (ae:event_Clades_Variana)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_suniv1_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Drusus campaigns (ae:event_Drusus_campaigns)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_suniv1_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Germanicus campaigns (ae:event_Germanicus_campaigns)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_suniv1_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Tiberian campaign (ae:event_Tiberian_campaign)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Friedberg (ae:BWYway)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Liberchies (ae:Bp8JY3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Braives (ae:D9L8l5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Wiesbaden (ae:DJq1mg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Basel, Lager (ae:DeeX7G)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Asberg, Lagerdorf (ae:GEJedY)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Haltern (ae:Gjndwx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Titelberg (ae:JwKRVN)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Neuss (ae:K4wDrp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Velsen (ae:KROWel)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Nijmegen, Trajanusplein (ae:LG4D5x)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Asberg, Lager (ae:N48RZG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Oberwinterthur, Römerstr. 186 (ae:NRzOWx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Rödgen (ae:O9rjkJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Augst, Insula 31 (ae:OmaMbj)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Bonn, Boeselagerhof (ae:Q48jL9)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Bad Nauheim (ae:QLNMJk)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Nijmegen, Valkhof (ae:QW3vzV)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Vechten (ae:VJwKp7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Augst, Theater (ae:VvXl2y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Tongeren (ae:Vx2doQ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Conimbriga (ae:WNVNB2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Lorenzberg (ae:XPb9J3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Lausanne-Vidy (ae:b8OX2q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Vindonissa, Königsfelden (ae:bwrZ4y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Augst, Insula 20 (ae:eoE031)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Basel, Lagerdorf (ae:ewr5bR)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Augsburg, Stadt (ae:ez8xNq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Zürich, Lindenhof (ae:g64Ky0)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Augsburg-Oberhausen (ae:gL6OAG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Worms (ae:gw8Kxp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Bregenz (ae:j2lK5y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Vindonissa, Militärstation (ae:kNA9dJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Namur (ae:lKmJ9q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Vindonissa, Scheuerhof (ae:lwDA1d)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Oberaden (ae:n47Ll8)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Vetera I (ae:nrylrd)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Maastricht (ae:qLXYbG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Zurzach, Lager (ae:v1O46L)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Avenches, Insula 15 (ae:wm71YX)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Dangstetten (ae:xVy2j7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "geoinstance",
+        "text": "Mainz, Legionslager (ae:yJBpPg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 11 BCE – 7 BCE (aecol:cluster_bc0011_bc0007)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 13 CE (aecol:cluster_bc0015_ad0013)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 12 BCE – 9 CE (aecol:cluster_bc0012_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Horizon 1 (15 av. J.-C. – 7 av. J.-C.) (aecol:horizon_1)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Horizon 5 (16 apr. J.-C. – 28 apr. J.-C.) (aecol:horizon_5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 9 BCE (aecol:cluster_bc0015_bc0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 16 – 28 CE (aecol:cluster_ad0016_ad0028)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 9 CE (aecol:cluster_bc0015_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Horizon 2 (15 av. J.-C. – 13 apr. J.-C.) (aecol:horizon_2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Horizon 4 (8 apr. J.-C. – 13 apr. J.-C.) (aecol:horizon_4)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Horizon 3 (7 av. J.-C. – 9 apr. J.-C.) (aecol:horizon_3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 8 – 13 CE (aecol:cluster_ad0008_ad0013)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_suniv0_",
+        "parent": "http://www.w3.org/2006/time#Interval",
+        "type": "instance",
+        "text": "Period cluster 7 BCE – 9 CE (aecol:cluster_bc0007_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.w3.org/2006/time#Interval",
+        "parent": "#",
+        "type": "halfgeoclass",
+        "instancecount": 61,
+        "text": "Interval (time:Interval) [61]",
+        "data": {
+          "from": {
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.w3.org/2004/02/skos/core#Collection": 8
+            }
+          },
+          "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 4,
+              "http://www.w3.org/ns/adms#Asset": 4,
+              "http://rdfs.org/ns/void#Dataset": 4
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 8
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 4
+            },
+            "http://www.w3.org/2006/time#hasBeginning": {
+              "instancecount": 4,
+              "http://www.w3.org/2006/time#Instant": 4
+            },
+            "http://www.w3.org/2006/time#hasEnd": {
+              "instancecount": 4,
+              "http://www.w3.org/2006/time#Instant": 4
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:BWYway_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:BWYway_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Bp8JY3_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Bp8JY3_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:D9L8l5_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:D9L8l5_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:DJq1mg_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:DJq1mg_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:DeeX7G_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:DeeX7G_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:GEJedY_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:GEJedY_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Gjndwx_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Gjndwx_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:JwKRVN_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:JwKRVN_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:K4wDrp_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:K4wDrp_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:KROWel_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:KROWel_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:LG4D5x_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:LG4D5x_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:N48RZG_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:N48RZG_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:NRzOWx_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:NRzOWx_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:O9rjkJ_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:O9rjkJ_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:OmaMbj_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:OmaMbj_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Q48jL9_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Q48jL9_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:QLNMJk_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:QLNMJk_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:QW3vzV_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:QW3vzV_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:VJwKp7_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:VJwKp7_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:VvXl2y_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:VvXl2y_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Vx2doQ_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:Vx2doQ_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:WNVNB2_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:WNVNB2_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:XPb9J3_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:XPb9J3_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:XeE1dq_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:XeE1dq_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:b8OX2q_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:b8OX2q_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:bwrZ4y_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:bwrZ4y_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_ad0008_ad0013_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_ad0008_ad0013_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_ad0016_ad0028_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_ad0016_ad0028_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0007_ad0009_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0007_ad0009_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0011_bc0007_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0011_bc0007_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0012_ad0009_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0012_ad0009_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0015_ad0009_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0015_ad0009_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0015_ad0013_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0015_ad0013_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0015_bc0009_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:cluster_bc0015_bc0009_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_1_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_1_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_2_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_2_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_3_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_3_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_4_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_4_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_5_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (aecol:horizon_5_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:eoE031_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:eoE031_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Clades_Variana_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Clades_Variana_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Drusus_campaigns_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Drusus_campaigns_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Germanicus_campaigns_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Germanicus_campaigns_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Tiberian_campaign_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:event_Tiberian_campaign_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:ewr5bR_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:ewr5bR_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:ez8xNq_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:ez8xNq_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:g64Ky0_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:g64Ky0_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:gL6OAG_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:gL6OAG_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:gw8Kxp_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:gw8Kxp_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:j2lK5y_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:j2lK5y_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:kNA9dJ_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:kNA9dJ_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:lKmJ9q_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:lKmJ9q_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:lwDA1d_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:lwDA1d_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:n47Ll8_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:n47Ll8_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:nrylrd_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:nrylrd_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:qLXYbG_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:qLXYbG_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:rQ80WO_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:rQ80WO_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:v1O46L_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:v1O46L_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:wm71YX_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:wm71YX_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:xVy2j7_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:xVy2j7_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_begin",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:yJBpPg_begin)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_end",
+        "parent": "http://www.w3.org/2006/time#Instant",
+        "type": "instance",
+        "text": " (ae:yJBpPg_end)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.w3.org/2006/time#Instant",
+        "parent": "#",
+        "type": "class",
+        "instancecount": 122,
+        "text": "Instant (time:Instant) [122]",
+        "data": {
+          "from": {
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.w3.org/2004/02/skos/core#Collection": 122
+            },
+            "http://www.w3.org/2006/time#hasBeginning": {
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 44,
+              "http://www.w3.org/2006/time#Interval": 61,
+              "https://pleiades.stoa.org/places/vocab#Place": 44,
+              "http://archaeology.link/ontology#PeriodCluster": 8,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 13,
+              "http://www.cidoc-crm.org/cidoc-crm/E7_Activity": 4,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 5
+            },
+            "http://www.w3.org/2006/time#hasEnd": {
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 44,
+              "http://www.w3.org/2006/time#Interval": 61,
+              "https://pleiades.stoa.org/places/vocab#Place": 44,
+              "http://archaeology.link/ontology#PeriodCluster": 8,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 13,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E7_Activity": 4
+            }
+          },
+          "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 122,
+              "http://www.w3.org/ns/adms#Asset": 122,
+              "http://rdfs.org/ns/void#Dataset": 122
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 122
+            },
+            "http://www.w3.org/2006/time#inXSDgYear": {
+              "instancecount": 122
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:BWYway_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:Bp8JY3_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:D9L8l5_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:DJq1mg_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:DeeX7G_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:GEJedY_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:Gjndwx_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:JwKRVN_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:K4wDrp_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:KROWel_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:LG4D5x_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:N48RZG_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:NRzOWx_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:O9rjkJ_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:OmaMbj_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:Q48jL9_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:QLNMJk_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:QW3vzV_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:VJwKp7_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:VvXl2y_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:Vx2doQ_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:WNVNB2_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:XPb9J3_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:XeE1dq_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:b8OX2q_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:bwrZ4y_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_bc0011_bc0007_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_bc0015_ad0013_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:eoE031_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:ewr5bR_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:ez8xNq_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:g64Ky0_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:gL6OAG_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:gw8Kxp_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:j2lK5y_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:kNA9dJ_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:lKmJ9q_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:lwDA1d_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:n47Ll8_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:nrylrd_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:qLXYbG_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:rQ80WO_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:site_Trier-Petrisberg_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:v1O46L_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:wm71YX_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:xVy2j7_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_geom",
+        "parent": "http://www.opengis.net/ont/sf#Point",
+        "type": "geoinstance",
+        "text": " (ae:yJBpPg_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.opengis.net/ont/sf#Point",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 47,
+        "text": "Point (sf:Point) [47]",
+        "data": {
+          "from": {
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 45,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 45,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 45,
+              "http://www.w3.org/2006/time#Interval": 46,
+              "https://pleiades.stoa.org/places/vocab#Place": 45,
+              "http://archaeology.link/ontology#PeriodCluster": 2,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 2
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.opengis.net/ont/geosparql#GeometryCollection": 47
+            }
+          },
+          "to": {
+            "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc": {
+              "instancecount": 45
+            },
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 47,
+              "http://www.w3.org/ns/adms#Asset": 47,
+              "http://rdfs.org/ns/void#Dataset": 47
+            },
+            "http://www.opengis.net/ont/geosparql#asWKT": {
+              "instancecount": 47
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 47
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_ad0008_ad0013_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_ad0016_ad0028_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_bc0007_ad0009_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_bc0015_ad0009_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_bc0015_bc0009_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:horizon_1_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:horizon_2_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:horizon_3_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:horizon_4_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_geom",
+        "parent": "http://www.opengis.net/ont/sf#Polygon",
+        "type": "geoinstance",
+        "text": " (aecol:horizon_5_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.opengis.net/ont/sf#Polygon",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 10,
+        "text": "Polygon (sf:Polygon) [10]",
+        "data": {
+          "from": {
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 10,
+              "http://www.w3.org/2006/time#Interval": 10,
+              "http://archaeology.link/ontology#PeriodCluster": 5
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.opengis.net/ont/geosparql#GeometryCollection": 10
+            }
+          },
+          "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 10,
+              "http://www.w3.org/ns/adms#Asset": 10,
+              "http://rdfs.org/ns/void#Dataset": 10
+            },
+            "http://www.opengis.net/ont/geosparql#asWKT": {
+              "instancecount": 10
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 10
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_geom",
+        "parent": "http://www.opengis.net/ont/sf#LineString",
+        "type": "geoinstance",
+        "text": " (aecol:cluster_bc0012_ad0009_geom)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.opengis.net/ont/sf#LineString",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 1,
+        "text": "LineString (sf:LineString) [1]",
+        "data": {
+          "from": {
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "http://archaeology.link/ontology#PeriodCluster": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.opengis.net/ont/geosparql#GeometryCollection": 1
+            }
+          },
+          "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 1,
+              "http://www.w3.org/ns/adms#Asset": 1,
+              "http://rdfs.org/ns/void#Dataset": 1
+            },
+            "http://www.opengis.net/ont/geosparql#asWKT": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv0_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Trier-Petrisberg (ae:site_Trier-Petrisberg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Friedberg (ae:BWYway)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Liberchies (ae:Bp8JY3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Braives (ae:D9L8l5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Wiesbaden (ae:DJq1mg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Basel, Lager (ae:DeeX7G)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Asberg, Lagerdorf (ae:GEJedY)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Haltern (ae:Gjndwx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Titelberg (ae:JwKRVN)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Neuss (ae:K4wDrp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Velsen (ae:KROWel)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Nijmegen, Trajanusplein (ae:LG4D5x)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Asberg, Lager (ae:N48RZG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Oberwinterthur, Römerstr. 186 (ae:NRzOWx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Rödgen (ae:O9rjkJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Augst, Insula 31 (ae:OmaMbj)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Bonn, Boeselagerhof (ae:Q48jL9)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Bad Nauheim (ae:QLNMJk)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Nijmegen, Valkhof (ae:QW3vzV)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Vechten (ae:VJwKp7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Augst, Theater (ae:VvXl2y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Tongeren (ae:Vx2doQ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Conimbriga (ae:WNVNB2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Lorenzberg (ae:XPb9J3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Lausanne-Vidy (ae:b8OX2q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Vindonissa, Königsfelden (ae:bwrZ4y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Augst, Insula 20 (ae:eoE031)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Basel, Lagerdorf (ae:ewr5bR)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Augsburg, Stadt (ae:ez8xNq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Zürich, Lindenhof (ae:g64Ky0)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Augsburg-Oberhausen (ae:gL6OAG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Worms (ae:gw8Kxp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Bregenz (ae:j2lK5y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Vindonissa, Militärstation (ae:kNA9dJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Namur (ae:lKmJ9q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Vindonissa, Scheuerhof (ae:lwDA1d)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Oberaden (ae:n47Ll8)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Vetera I (ae:nrylrd)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Maastricht (ae:qLXYbG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Zurzach, Lager (ae:v1O46L)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Avenches, Insula 15 (ae:wm71YX)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Dangstetten (ae:xVy2j7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "type": "geoinstance",
+        "text": "Mainz, Legionslager (ae:yJBpPg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 45,
+        "text": "ArchaeologicalSite (fsl:ArchaeologicalSite) [45]",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv1_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Trier-Petrisberg (ae:site_Trier-Petrisberg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Friedberg (ae:BWYway)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Liberchies (ae:Bp8JY3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Braives (ae:D9L8l5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Wiesbaden (ae:DJq1mg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Basel, Lager (ae:DeeX7G)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Asberg, Lagerdorf (ae:GEJedY)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Haltern (ae:Gjndwx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Titelberg (ae:JwKRVN)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Neuss (ae:K4wDrp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Velsen (ae:KROWel)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Nijmegen, Trajanusplein (ae:LG4D5x)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Asberg, Lager (ae:N48RZG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Oberwinterthur, Römerstr. 186 (ae:NRzOWx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Rödgen (ae:O9rjkJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Augst, Insula 31 (ae:OmaMbj)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Bonn, Boeselagerhof (ae:Q48jL9)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Bad Nauheim (ae:QLNMJk)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Nijmegen, Valkhof (ae:QW3vzV)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Vechten (ae:VJwKp7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Augst, Theater (ae:VvXl2y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Tongeren (ae:Vx2doQ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Conimbriga (ae:WNVNB2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Lorenzberg (ae:XPb9J3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Lausanne-Vidy (ae:b8OX2q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Vindonissa, Königsfelden (ae:bwrZ4y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Augst, Insula 20 (ae:eoE031)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Basel, Lagerdorf (ae:ewr5bR)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Augsburg, Stadt (ae:ez8xNq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Zürich, Lindenhof (ae:g64Ky0)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Augsburg-Oberhausen (ae:gL6OAG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Worms (ae:gw8Kxp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Bregenz (ae:j2lK5y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Vindonissa, Militärstation (ae:kNA9dJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Namur (ae:lKmJ9q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Vindonissa, Scheuerhof (ae:lwDA1d)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Oberaden (ae:n47Ll8)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Vetera I (ae:nrylrd)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Maastricht (ae:qLXYbG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Zurzach, Lager (ae:v1O46L)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Avenches, Insula 15 (ae:wm71YX)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Dangstetten (ae:xVy2j7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv2_",
+        "parent": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "type": "geoinstance",
+        "text": "Mainz, Legionslager (ae:yJBpPg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://fuzzy-sl.squirrel.link/ontology/Site",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 45,
+        "text": "Site (fsl:Site) [45]",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv2_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Trier-Petrisberg (ae:site_Trier-Petrisberg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Friedberg (ae:BWYway)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Liberchies (ae:Bp8JY3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Braives (ae:D9L8l5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Wiesbaden (ae:DJq1mg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Basel, Lager (ae:DeeX7G)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Asberg, Lagerdorf (ae:GEJedY)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Haltern (ae:Gjndwx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Titelberg (ae:JwKRVN)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Neuss (ae:K4wDrp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Velsen (ae:KROWel)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Trajanusplein (ae:LG4D5x)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Asberg, Lager (ae:N48RZG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Oberwinterthur, Römerstr. 186 (ae:NRzOWx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Rödgen (ae:O9rjkJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Augst, Insula 31 (ae:OmaMbj)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Bonn, Boeselagerhof (ae:Q48jL9)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Bad Nauheim (ae:QLNMJk)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Valkhof (ae:QW3vzV)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Vechten (ae:VJwKp7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Augst, Theater (ae:VvXl2y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Tongeren (ae:Vx2doQ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Conimbriga (ae:WNVNB2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Lorenzberg (ae:XPb9J3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Lausanne-Vidy (ae:b8OX2q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Vindonissa, Königsfelden (ae:bwrZ4y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Augst, Insula 20 (ae:eoE031)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Basel, Lagerdorf (ae:ewr5bR)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Augsburg, Stadt (ae:ez8xNq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Zürich, Lindenhof (ae:g64Ky0)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Augsburg-Oberhausen (ae:gL6OAG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Worms (ae:gw8Kxp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Bregenz (ae:j2lK5y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Vindonissa, Militärstation (ae:kNA9dJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Namur (ae:lKmJ9q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Vindonissa, Scheuerhof (ae:lwDA1d)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Oberaden (ae:n47Ll8)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Vetera I (ae:nrylrd)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Maastricht (ae:qLXYbG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Zurzach, Lager (ae:v1O46L)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Avenches, Insula 15 (ae:wm71YX)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Dangstetten (ae:xVy2j7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "type": "geoinstance",
+        "text": "Mainz, Legionslager (ae:yJBpPg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 45,
+        "text": "E53_Place (crm:E53_Place) [45]",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv3_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Trier-Petrisberg (ae:site_Trier-Petrisberg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Friedberg (ae:BWYway)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Liberchies (ae:Bp8JY3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Braives (ae:D9L8l5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Wiesbaden (ae:DJq1mg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Basel, Lager (ae:DeeX7G)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Asberg, Lagerdorf (ae:GEJedY)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Haltern (ae:Gjndwx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Titelberg (ae:JwKRVN)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Neuss (ae:K4wDrp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Velsen (ae:KROWel)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Trajanusplein (ae:LG4D5x)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Asberg, Lager (ae:N48RZG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Oberwinterthur, Römerstr. 186 (ae:NRzOWx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Rödgen (ae:O9rjkJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Augst, Insula 31 (ae:OmaMbj)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Bonn, Boeselagerhof (ae:Q48jL9)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Bad Nauheim (ae:QLNMJk)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Valkhof (ae:QW3vzV)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Vechten (ae:VJwKp7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Augst, Theater (ae:VvXl2y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Tongeren (ae:Vx2doQ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Conimbriga (ae:WNVNB2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Lorenzberg (ae:XPb9J3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Lausanne-Vidy (ae:b8OX2q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Vindonissa, Königsfelden (ae:bwrZ4y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Augst, Insula 20 (ae:eoE031)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Basel, Lagerdorf (ae:ewr5bR)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Augsburg, Stadt (ae:ez8xNq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Zürich, Lindenhof (ae:g64Ky0)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Augsburg-Oberhausen (ae:gL6OAG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Worms (ae:gw8Kxp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Bregenz (ae:j2lK5y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Vindonissa, Militärstation (ae:kNA9dJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Namur (ae:lKmJ9q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Vindonissa, Scheuerhof (ae:lwDA1d)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Oberaden (ae:n47Ll8)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Vetera I (ae:nrylrd)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Maastricht (ae:qLXYbG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Zurzach, Lager (ae:v1O46L)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Avenches, Insula 15 (ae:wm71YX)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Dangstetten (ae:xVy2j7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv4_",
+        "parent": "https://pleiades.stoa.org/places/vocab#Place",
+        "type": "geoinstance",
+        "text": "Mainz, Legionslager (ae:yJBpPg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "https://pleiades.stoa.org/places/vocab#Place",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 45,
+        "text": "Place (pleiades:Place) [45]",
+        "data": {
+          "from": {
+            "http://www.opengis.net/ont/geosparql#hasFeature": {
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 4
+            }
+          },
+          "to": {
+            "http://archaeology.link/ontology#osm_entity": {
+              "instancecount": 1
+            },
+            "http://archaeology.link/ontology#osm_tag": {
+              "instancecount": 1
+            },
+            "http://archaeology.link/ontology#pleiades": {
+              "instancecount": 1
+            },
+            "http://archaeology.link/ontology#wikidata": {
+              "instancecount": 1
+            },
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 1,
+              "http://www.w3.org/ns/adms#Asset": 1,
+              "http://rdfs.org/ns/void#Dataset": 1
+            },
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/sf#Point": 1
+            },
+            "http://www.opengis.net/ont/geosparql#memberOf": {
+              "instancecount": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 4
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Friedberg (ae:BWYway)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Liberchies (ae:Bp8JY3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Braives (ae:D9L8l5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Wiesbaden (ae:DJq1mg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Basel, Lager (ae:DeeX7G)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Asberg, Lagerdorf (ae:GEJedY)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Haltern (ae:Gjndwx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Titelberg (ae:JwKRVN)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Neuss (ae:K4wDrp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Velsen (ae:KROWel)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Nijmegen, Trajanusplein (ae:LG4D5x)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Asberg, Lager (ae:N48RZG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Oberwinterthur, Römerstr. 186 (ae:NRzOWx)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Rödgen (ae:O9rjkJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Augst, Insula 31 (ae:OmaMbj)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Bonn, Boeselagerhof (ae:Q48jL9)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Bad Nauheim (ae:QLNMJk)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Nijmegen, Valkhof (ae:QW3vzV)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Vechten (ae:VJwKp7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Augst, Theater (ae:VvXl2y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Tongeren (ae:Vx2doQ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Conimbriga (ae:WNVNB2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Lorenzberg (ae:XPb9J3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Lausanne-Vidy (ae:b8OX2q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Vindonissa, Königsfelden (ae:bwrZ4y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Augst, Insula 20 (ae:eoE031)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Basel, Lagerdorf (ae:ewr5bR)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Augsburg, Stadt (ae:ez8xNq)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Zürich, Lindenhof (ae:g64Ky0)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Augsburg-Oberhausen (ae:gL6OAG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Worms (ae:gw8Kxp)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Bregenz (ae:j2lK5y)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Vindonissa, Militärstation (ae:kNA9dJ)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Namur (ae:lKmJ9q)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Vindonissa, Scheuerhof (ae:lwDA1d)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Oberaden (ae:n47Ll8)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Vetera I (ae:nrylrd)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Maastricht (ae:qLXYbG)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Zurzach, Lager (ae:v1O46L)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Avenches, Insula 15 (ae:wm71YX)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Dangstetten (ae:xVy2j7)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv5_",
+        "parent": "http://archaeology.link/ontology#event",
+        "type": "geoinstance",
+        "text": "Mainz, Legionslager (ae:yJBpPg)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://archaeology.link/ontology#event",
+        "parent": "#",
+        "type": "geoclass",
+        "instancecount": 44,
+        "text": "event (lado:event) [44]",
+        "data": {
+          "from": {
+            "http://archaeology.link/ontology#hasClusterMember": {
+              "http://archaeology.link/ontology#PeriodCluster": 44,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 44,
+              "http://www.w3.org/2006/time#Interval": 44
+            },
+            "http://archaeology.link/ontology#hasHorizonMember": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 44,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 44,
+              "http://www.w3.org/2006/time#Interval": 44
+            },
+            "http://www.opengis.net/ont/geosparql#hasFeature": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 44,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 132,
+              "http://www.w3.org/2006/time#Interval": 88,
+              "http://archaeology.link/ontology#PeriodCluster": 44
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.w3.org/2004/02/skos/core#Collection": 44,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 220
+            }
+          },
+          "to": {
+            "http://archaeology.link/ontology#cax": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#cay": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#caz": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#endfixed": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#estimatedend": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#estimatedstart": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#nfen": {
+              "instancecount": 38
+            },
+            "http://archaeology.link/ontology#nfsn": {
+              "instancecount": 37
+            },
+            "http://archaeology.link/ontology#osm_entity": {
+              "instancecount": 31
+            },
+            "http://archaeology.link/ontology#osm_tag": {
+              "instancecount": 31
+            },
+            "http://archaeology.link/ontology#pleiades": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#startfixed": {
+              "instancecount": 44
+            },
+            "http://archaeology.link/ontology#wikidata": {
+              "instancecount": 44
+            },
+            "http://purl.org/dc/elements/1.1/identifier": {
+              "instancecount": 44
+            },
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 44,
+              "http://www.w3.org/ns/adms#Asset": 44,
+              "http://rdfs.org/ns/void#Dataset": 44
+            },
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "instancecount": 44,
+              "http://www.opengis.net/ont/sf#Point": 44
+            },
+            "http://www.opengis.net/ont/geosparql#memberOf": {
+              "instancecount": 132,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 132,
+              "http://archaeology.link/ontology#PeriodCluster": 44,
+              "http://www.w3.org/2006/time#Interval": 88,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 44
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 264
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 44
+            },
+            "http://www.w3.org/2004/02/skos/core#exactMatch": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2006/time#hasBeginning": {
+              "instancecount": 44,
+              "http://www.w3.org/2006/time#Instant": 44
+            },
+            "http://www.w3.org/2006/time#hasEnd": {
+              "instancecount": 44,
+              "http://www.w3.org/2006/time#Instant": 44
+            },
+            "http://www.w3.org/2004/02/skos/core#closeMatch": {
+              "instancecount": 6
+            },
+            "http://www.w3.org/2004/02/skos/core#relatedMatch": {
+              "instancecount": 3
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 11 BCE – 7 BCE (aecol:cluster_bc0011_bc0007)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 13 CE (aecol:cluster_bc0015_ad0013)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 12 BCE – 9 CE (aecol:cluster_bc0012_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 9 BCE (aecol:cluster_bc0015_bc0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 16 – 28 CE (aecol:cluster_ad0016_ad0028)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 9 CE (aecol:cluster_bc0015_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 8 – 13 CE (aecol:cluster_ad0008_ad0013)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_suniv1_",
+        "parent": "http://archaeology.link/ontology#PeriodCluster",
+        "type": "instance",
+        "text": "Period cluster 7 BCE – 9 CE (aecol:cluster_bc0007_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://archaeology.link/ontology#PeriodCluster",
+        "parent": "#",
+        "type": "class",
+        "instancecount": 8,
+        "text": "PeriodCluster (lado:PeriodCluster) [8]",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 11 BCE – 7 BCE (aecol:cluster_bc0011_bc0007)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 13 CE (aecol:cluster_bc0015_ad0013)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 12 BCE – 9 CE (aecol:cluster_bc0012_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv1_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Horizon 1 (15 av. J.-C. – 7 av. J.-C.) (aecol:horizon_1)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv1_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Horizon 5 (16 apr. J.-C. – 28 apr. J.-C.) (aecol:horizon_5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 9 BCE (aecol:cluster_bc0015_bc0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 16 – 28 CE (aecol:cluster_ad0016_ad0028)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 15 BCE – 9 CE (aecol:cluster_bc0015_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv1_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Horizon 2 (15 av. J.-C. – 13 apr. J.-C.) (aecol:horizon_2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv1_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Horizon 4 (8 apr. J.-C. – 13 apr. J.-C.) (aecol:horizon_4)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv1_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Horizon 3 (7 av. J.-C. – 9 apr. J.-C.) (aecol:horizon_3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 8 – 13 CE (aecol:cluster_ad0008_ad0013)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_suniv2_",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Period cluster 7 BCE – 9 CE (aecol:cluster_bc0007_ad0009)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "instance",
+        "text": "Arretine Dated Sites Collection (aecol:arretine_sites)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ArchaeologicalSite_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "ArchaeologicalSite Instances Collection (ae:ArchaeologicalSite_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Site_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "Site Instances Collection (ae:Site_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/E53_Place_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "E53_Place Instances Collection (ae:E53_Place_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Place_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "Place Instances Collection (ae:Place_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/event_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "event Instances Collection (ae:event_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/PeriodCluster_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "PeriodCluster Instances Collection (ae:PeriodCluster_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/ChronologicalHorizon_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "ChronologicalHorizon Instances Collection (ae:ChronologicalHorizon_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/E4_Period_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "type": "featurecollection",
+        "text": "E4_Period Instances Collection (ae:E4_Period_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.opengis.net/ont/geosparql#FeatureCollection",
+        "parent": "http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
+        "instancecount": 22,
+        "type": "collectionclass",
+        "text": " (gsp:FeatureCollection) [22]",
+        "data": {
+          "from": {
+            "http://www.opengis.net/ont/geosparql#memberOf": {
+              "http://archaeology.link/ontology#event": 88,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 89,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 89,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 89,
+              "http://www.w3.org/2006/time#Interval": 88,
+              "https://pleiades.stoa.org/places/vocab#Place": 89
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.w3.org/2004/02/skos/core#Collection": 17,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 8
+            },
+            "http://www.w3.org/2006/time#intervalAfter": {
+              "http://archaeology.link/ontology#PeriodCluster": 10,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 10,
+              "http://www.w3.org/2006/time#Interval": 10
+            },
+            "http://www.w3.org/2006/time#intervalBefore": {
+              "http://archaeology.link/ontology#PeriodCluster": 10,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 10,
+              "http://www.w3.org/2006/time#Interval": 10
+            },
+            "http://www.w3.org/2006/time#intervalContains": {
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalFinishedBy": {
+              "http://archaeology.link/ontology#PeriodCluster": 4,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 4,
+              "http://www.w3.org/2006/time#Interval": 4
+            },
+            "http://www.w3.org/2006/time#intervalMeets": {
+              "http://archaeology.link/ontology#PeriodCluster": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalOverlappedBy": {
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalDuring": {
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalFinishes": {
+              "http://archaeology.link/ontology#PeriodCluster": 4,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 4,
+              "http://www.w3.org/2006/time#Interval": 4
+            },
+            "http://www.w3.org/2006/time#intervalStarts": {
+              "http://archaeology.link/ontology#PeriodCluster": 3,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 3,
+              "http://www.w3.org/2006/time#Interval": 3
+            },
+            "http://www.w3.org/2006/time#intervalStartedBy": {
+              "http://archaeology.link/ontology#PeriodCluster": 3,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 3,
+              "http://www.w3.org/2006/time#Interval": 3
+            },
+            "http://www.w3.org/2006/time#intervalOverlaps": {
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalMetBy": {
+              "http://archaeology.link/ontology#PeriodCluster": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            }
+          },
+          "to": {
+            "http://archaeology.link/ontology#hasClusterMember": {
+              "instancecount": 44,
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 44,
+              "http://www.w3.org/2006/time#Interval": 44,
+              "https://pleiades.stoa.org/places/vocab#Place": 44
+            },
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 17,
+              "http://www.w3.org/ns/adms#Asset": 17,
+              "http://rdfs.org/ns/void#Dataset": 17
+            },
+            "http://www.opengis.net/ont/geosparql#hasFeature": {
+              "instancecount": 89,
+              "http://archaeology.link/ontology#event": 88,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 89,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 89,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 89,
+              "http://www.w3.org/2006/time#Interval": 88,
+              "https://pleiades.stoa.org/places/vocab#Place": 89
+            },
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "instancecount": 8,
+              "http://www.opengis.net/ont/sf#Polygon": 5,
+              "http://www.opengis.net/ont/sf#Point": 2,
+              "http://www.opengis.net/ont/sf#LineString": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 33
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 17
+            },
+            "http://www.w3.org/2006/time#hasBeginning": {
+              "instancecount": 8,
+              "http://www.w3.org/2006/time#Instant": 8
+            },
+            "http://www.w3.org/2006/time#hasEnd": {
+              "instancecount": 8,
+              "http://www.w3.org/2006/time#Instant": 8
+            },
+            "http://www.w3.org/2006/time#intervalAfter": {
+              "instancecount": 10,
+              "http://archaeology.link/ontology#PeriodCluster": 10,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 10,
+              "http://www.w3.org/2006/time#Interval": 10
+            },
+            "http://www.w3.org/2006/time#intervalBefore": {
+              "instancecount": 10,
+              "http://archaeology.link/ontology#PeriodCluster": 10,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 10,
+              "http://www.w3.org/2006/time#Interval": 10
+            },
+            "http://www.w3.org/2006/time#intervalDuring": {
+              "instancecount": 5,
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalFinishes": {
+              "instancecount": 4,
+              "http://archaeology.link/ontology#PeriodCluster": 4,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 4,
+              "http://www.w3.org/2006/time#Interval": 4
+            },
+            "http://www.w3.org/2006/time#intervalMetBy": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#PeriodCluster": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalOverlaps": {
+              "instancecount": 5,
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "instancecount": 242,
+              "http://archaeology.link/ontology#event": 220,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 224,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 224,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 224,
+              "http://www.w3.org/2006/time#Interval": 238,
+              "https://pleiades.stoa.org/places/vocab#Place": 224,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 10,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 10,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 18,
+              "http://archaeology.link/ontology#PeriodCluster": 8
+            },
+            "http://www.w3.org/2006/time#intervalContains": {
+              "instancecount": 5,
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalFinishedBy": {
+              "instancecount": 4,
+              "http://archaeology.link/ontology#PeriodCluster": 4,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 4,
+              "http://www.w3.org/2006/time#Interval": 4
+            },
+            "http://www.w3.org/2006/time#intervalStartedBy": {
+              "instancecount": 3,
+              "http://archaeology.link/ontology#PeriodCluster": 3,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 3,
+              "http://www.w3.org/2006/time#Interval": 3
+            },
+            "http://www.w3.org/2006/time#intervalStarts": {
+              "instancecount": 3,
+              "http://archaeology.link/ontology#PeriodCluster": 3,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 3,
+              "http://www.w3.org/2006/time#Interval": 3
+            },
+            "http://www.w3.org/2000/01/rdf-schema#comment": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/2006/time#intervalOverlappedBy": {
+              "instancecount": 5,
+              "http://archaeology.link/ontology#PeriodCluster": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalMeets": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#PeriodCluster": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
+        "parent": "#",
+        "type": "collectionclass",
+        "text": "SpatialObjectCollection (gsp:SpatialObjectCollection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv2_",
+        "parent": "http://archaeology.link/ontology#ChronologicalHorizon",
+        "type": "instance",
+        "text": "Horizon 1 (15 av. J.-C. – 7 av. J.-C.) (aecol:horizon_1)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv2_",
+        "parent": "http://archaeology.link/ontology#ChronologicalHorizon",
+        "type": "instance",
+        "text": "Horizon 5 (16 apr. J.-C. – 28 apr. J.-C.) (aecol:horizon_5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv2_",
+        "parent": "http://archaeology.link/ontology#ChronologicalHorizon",
+        "type": "instance",
+        "text": "Horizon 2 (15 av. J.-C. – 13 apr. J.-C.) (aecol:horizon_2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv2_",
+        "parent": "http://archaeology.link/ontology#ChronologicalHorizon",
+        "type": "instance",
+        "text": "Horizon 4 (8 apr. J.-C. – 13 apr. J.-C.) (aecol:horizon_4)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv2_",
+        "parent": "http://archaeology.link/ontology#ChronologicalHorizon",
+        "type": "instance",
+        "text": "Horizon 3 (7 av. J.-C. – 9 apr. J.-C.) (aecol:horizon_3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://archaeology.link/ontology#ChronologicalHorizon",
+        "parent": "#",
+        "type": "class",
+        "instancecount": 5,
+        "text": "ChronologicalHorizon (lado:ChronologicalHorizon) [5]",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+        "type": "instance",
+        "text": "Horizon 1 (15 av. J.-C. – 7 av. J.-C.) (aecol:horizon_1)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+        "type": "instance",
+        "text": "Horizon 5 (16 apr. J.-C. – 28 apr. J.-C.) (aecol:horizon_5)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+        "type": "instance",
+        "text": "Horizon 2 (15 av. J.-C. – 13 apr. J.-C.) (aecol:horizon_2)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+        "type": "instance",
+        "text": "Horizon 4 (8 apr. J.-C. – 13 apr. J.-C.) (aecol:horizon_4)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv3_",
+        "parent": "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+        "type": "instance",
+        "text": "Horizon 3 (7 av. J.-C. – 9 apr. J.-C.) (aecol:horizon_3)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+        "parent": "#",
+        "type": "class",
+        "instancecount": 5,
+        "text": "E4_Period (crm:E4_Period) [5]",
+        "data": {
+          "from": {
+            "http://www.opengis.net/ont/geosparql#memberOf": {
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 44,
+              "http://www.w3.org/2006/time#Interval": 44,
+              "https://pleiades.stoa.org/places/vocab#Place": 44
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "http://www.w3.org/2004/02/skos/core#Collection": 10,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 10
+            },
+            "http://www.w3.org/2006/time#intervalAfter": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalBefore": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalFinishedBy": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalOverlaps": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalMetBy": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalStartedBy": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalDuring": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalFinishes": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalStarts": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalContains": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalMeets": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalOverlappedBy": {
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            }
+          },
+          "to": {
+            "http://archaeology.link/ontology#hasHorizonMember": {
+              "instancecount": 44,
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 44,
+              "http://www.w3.org/2006/time#Interval": 44,
+              "https://pleiades.stoa.org/places/vocab#Place": 44
+            },
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 5,
+              "http://www.w3.org/ns/adms#Asset": 5,
+              "http://rdfs.org/ns/void#Dataset": 5
+            },
+            "http://www.opengis.net/ont/geosparql#hasFeature": {
+              "instancecount": 44,
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 44,
+              "http://www.w3.org/2006/time#Interval": 44,
+              "https://pleiades.stoa.org/places/vocab#Place": 44
+            },
+            "http://www.opengis.net/ont/geosparql#hasGeometry": {
+              "instancecount": 5,
+              "http://www.opengis.net/ont/sf#Polygon": 5
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 20
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 10
+            },
+            "http://www.w3.org/2004/02/skos/core#notation": {
+              "instancecount": 5
+            },
+            "http://www.w3.org/2006/time#hasBeginning": {
+              "instancecount": 5,
+              "http://www.w3.org/2006/time#Instant": 5
+            },
+            "http://www.w3.org/2006/time#hasEnd": {
+              "instancecount": 5,
+              "http://www.w3.org/2006/time#Instant": 5
+            },
+            "http://www.w3.org/2006/time#intervalAfter": {
+              "instancecount": 5,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalBefore": {
+              "instancecount": 5,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 5,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 5,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 5,
+              "http://www.w3.org/2006/time#Interval": 5
+            },
+            "http://www.w3.org/2006/time#intervalFinishes": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalOverlappedBy": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalMeets": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalStarts": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalContains": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalFinishedBy": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalStartedBy": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalDuring": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalMetBy": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            },
+            "http://www.w3.org/2006/time#intervalOverlaps": {
+              "instancecount": 1,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 1,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 1,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 1,
+              "http://www.w3.org/2006/time#Interval": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/E7_Activity_collection",
+        "parent": "http://www.w3.org/2004/02/skos/core#Collection",
+        "type": "instance",
+        "text": "E7_Activity Instances Collection (ae:E7_Activity_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Interval_collection",
+        "parent": "http://www.w3.org/2004/02/skos/core#Collection",
+        "type": "instance",
+        "text": "Interval Instances Collection (ae:Interval_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Instant_collection",
+        "parent": "http://www.w3.org/2004/02/skos/core#Collection",
+        "type": "instance",
+        "text": "Instant Instances Collection (ae:Instant_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/FeatureCollection_collection",
+        "parent": "http://www.w3.org/2004/02/skos/core#Collection",
+        "type": "instance",
+        "text": "FeatureCollection Instances Collection (ae:FeatureCollection_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.w3.org/2004/02/skos/core#Collection",
+        "parent": "#",
+        "type": "collectionclass",
+        "instancecount": 4,
+        "text": "Collection (skos:Collection) [4]",
+        "data": {
+          "from": {},
+          "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 4,
+              "http://www.w3.org/ns/adms#Asset": 4,
+              "http://rdfs.org/ns/void#Dataset": 4
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 4
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 4
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "instancecount": 201,
+              "http://archaeology.link/ontology#PeriodCluster": 16,
+              "http://www.opengis.net/ont/geosparql#FeatureCollection": 27,
+              "http://www.w3.org/2006/time#Interval": 78,
+              "http://archaeology.link/ontology#ChronologicalHorizon": 10,
+              "http://www.cidoc-crm.org/cidoc-crm/E4_Period": 10,
+              "http://archaeology.link/ontology#event": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite": 44,
+              "http://fuzzy-sl.squirrel.link/ontology/Site": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E53_Place": 44,
+              "https://pleiades.stoa.org/places/vocab#Place": 44,
+              "http://www.cidoc-crm.org/cidoc-crm/E7_Activity": 8,
+              "http://www.w3.org/2006/time#Instant": 122
+            }
+          }
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Point_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#GeometryCollection",
+        "type": "geocollection",
+        "text": "Point Instances Collection (ae:Point_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/Polygon_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#GeometryCollection",
+        "type": "geocollection",
+        "text": "Polygon Instances Collection (ae:Polygon_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://leiza-scit.github.io/CAA2026-alligator/LineString_collection",
+        "parent": "http://www.opengis.net/ont/geosparql#GeometryCollection",
+        "type": "geocollection",
+        "text": "LineString Instances Collection (ae:LineString_collection)",
+        "data": {
+          "from": {},
+          "to": {}
+        }
+      },
+      {
+        "id": "http://www.opengis.net/ont/geosparql#GeometryCollection",
+        "parent": "http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
+        "instancecount": 3,
+        "type": "collectionclass",
+        "text": " (gsp:GeometryCollection) [3]",
+        "data": {
+          "from": {},
+          "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 3,
+              "http://www.w3.org/ns/adms#Asset": 3,
+              "http://rdfs.org/ns/void#Dataset": 3
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 3
+            },
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "instancecount": 3
+            },
+            "http://www.w3.org/2000/01/rdf-schema#member": {
+              "instancecount": 58,
+              "http://www.opengis.net/ont/sf#Polygon": 10,
+              "http://www.opengis.net/ont/sf#LineString": 1,
+              "http://www.opengis.net/ont/sf#Point": 47
+            }
+          }
+        }
+      }
+    ]
   },
-  "collectionclass":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/collectionclass.png"
-  },
-  "geocollection":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/geometrycollection.png"
-  },
-  "featurecollection":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/featurecollection.png"
-  },
-  "instance":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/instance.png"
-  },
-  "geoinstance":{
-   "icon":"https://cdn.jsdelivr.net/gh/i3mainz/geopubby@master/public/icons/geoinstance.png"
+  "@context": {
+    "@version": 1.1,
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ct": "http://purl.org/vocab/classtree#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "icon": "foaf:image",
+    "id": "@id",
+    "parent": "rdfs:subClassOf",
+    "halfgeoclass": "ct:HalfGeoClass",
+    "geoclass": {
+      "@type": "ct:icontype",
+      "@id": "ct:GeoClass"
+    },
+    "collectionclass": {
+      "@type": "ct:icontype",
+      "@id": "ct:CollectionClass"
+    },
+    "featurecollectionclass": {
+      "@type": "ct:icontype",
+      "@id": "ct:FeatureCollectionClass"
+    },
+    "class": "owl:Class",
+    "instance": "owl:NamedIndividual",
+    "geoinstance": {
+      "@type": "ct:Icontype",
+      "@id": "ct:GeoNamedIndividual"
+    },
+    "text": "rdfs:label",
+    "type": "ct:icontype",
+    "types": "ct:icontypes",
+    "core": {
+      "@type": "ct:TreeConfig",
+      "@id": "@nest"
+    },
+    "data": {
+      "@id": "ct:treeitem",
+      "@type": "ct:TreeItem"
+    }
   }
- },
- "core":{
-  "themes":{
-   "responsive":true
-  },
-  "check_callback":true,
-  "data":[
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_suniv0_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
-    "type":"instance",
-    "text":"Clades Variana (ae:event_Clades_Variana)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_suniv0_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
-    "type":"instance",
-    "text":"Drusus campaigns (ae:event_Drusus_campaigns)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_suniv0_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
-    "type":"instance",
-    "text":"Germanicus campaigns (ae:event_Germanicus_campaigns)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_suniv0_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
-    "type":"instance",
-    "text":"Tiberian campaign (ae:event_Tiberian_campaign)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
-    "parent":"#",
-    "type":"class",
-    "instancecount":4,
-    "text":"E7_Activity (crm:E7_Activity) [4]",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_suniv1_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Clades Variana (ae:event_Clades_Variana)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_suniv1_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Drusus campaigns (ae:event_Drusus_campaigns)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_suniv1_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Germanicus campaigns (ae:event_Germanicus_campaigns)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_suniv1_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Tiberian campaign (ae:event_Tiberian_campaign)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Friedberg (ae:BWYway)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Liberchies (ae:Bp8JY3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Braives (ae:D9L8l5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Wiesbaden (ae:DJq1mg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Basel, Lager (ae:DeeX7G)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Asberg, Lagerdorf (ae:GEJedY)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Haltern (ae:Gjndwx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Titelberg (ae:JwKRVN)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Neuss (ae:K4wDrp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Velsen (ae:KROWel)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Nijmegen, Trajanusplein (ae:LG4D5x)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Asberg, Lager (ae:N48RZG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Oberwinterthur, R\u00f6merstr. 186 (ae:NRzOWx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"R\u00f6dgen (ae:O9rjkJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Augst, Insula 31 (ae:OmaMbj)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Bonn, Boeselagerhof (ae:Q48jL9)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Bad Nauheim (ae:QLNMJk)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Nijmegen, Valkhof (ae:QW3vzV)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Vechten (ae:VJwKp7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Augst, Theater (ae:VvXl2y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Tongeren (ae:Vx2doQ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Conimbriga (ae:WNVNB2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Lorenzberg (ae:XPb9J3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Lausanne-Vidy (ae:b8OX2q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Vindonissa, K\u00f6nigsfelden (ae:bwrZ4y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Augst, Insula 20 (ae:eoE031)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Basel, Lagerdorf (ae:ewr5bR)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Augsburg, Stadt (ae:ez8xNq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Z\u00fcrich, Lindenhof (ae:g64Ky0)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Augsburg-Oberhausen (ae:gL6OAG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Worms (ae:gw8Kxp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Bregenz (ae:j2lK5y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Vindonissa, Milit\u00e4rstation (ae:kNA9dJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Namur (ae:lKmJ9q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Vindonissa, Scheuerhof (ae:lwDA1d)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Oberaden (ae:n47Ll8)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Vetera I (ae:nrylrd)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Maastricht (ae:qLXYbG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Zurzach, Lager (ae:v1O46L)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Avenches, Insula 15 (ae:wm71YX)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Dangstetten (ae:xVy2j7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"geoinstance",
-    "text":"Mainz, Legionslager (ae:yJBpPg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 11 BCE \u2013 7 BCE (aecol:cluster_bc0011_bc0007)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 13 CE (aecol:cluster_bc0015_ad0013)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 12 BCE \u2013 9 CE (aecol:cluster_bc0012_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Horizon 1 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_1)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Horizon 5 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 9 BCE (aecol:cluster_bc0015_bc0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 16 \u2013 28 CE (aecol:cluster_ad0016_ad0028)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 9 CE (aecol:cluster_bc0015_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Horizon 2 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Horizon 4 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 8 \u2013 13 CE (aecol:cluster_ad0008_ad0013)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_suniv0_",
-    "parent":"http://www.w3.org/2006/time#Interval",
-    "type":"instance",
-    "text":"Period cluster 7 BCE \u2013 9 CE (aecol:cluster_bc0007_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.w3.org/2006/time#Interval",
-    "parent":"#",
-    "type":"halfgeoclass",
-    "instancecount":61,
-    "text":"Interval (time:Interval) [61]",
-    "data":{
-     "from":{
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.w3.org/2004/02/skos/core#Collection":8
-      }
-     },
-     "to":{
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":4,
-       "http://rdfs.org/ns/void#Dataset":4,
-       "http://www.w3.org/ns/adms#Asset":4
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":8
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":4
-      },
-      "http://www.w3.org/2006/time#hasBeginning":{
-       "instancecount":4,
-       "http://www.w3.org/2006/time#Instant":4
-      },
-      "http://www.w3.org/2006/time#hasEnd":{
-       "instancecount":4,
-       "http://www.w3.org/2006/time#Instant":4
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:BWYway_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:BWYway_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Bp8JY3_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Bp8JY3_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:D9L8l5_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:D9L8l5_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:DJq1mg_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:DJq1mg_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:DeeX7G_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:DeeX7G_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:GEJedY_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:GEJedY_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Gjndwx_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Gjndwx_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:JwKRVN_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:JwKRVN_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:K4wDrp_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:K4wDrp_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:KROWel_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:KROWel_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:LG4D5x_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:LG4D5x_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:N48RZG_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:N48RZG_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:NRzOWx_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:NRzOWx_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:O9rjkJ_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:O9rjkJ_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:OmaMbj_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:OmaMbj_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Q48jL9_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Q48jL9_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:QLNMJk_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:QLNMJk_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:QW3vzV_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:QW3vzV_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:VJwKp7_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:VJwKp7_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:VvXl2y_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:VvXl2y_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Vx2doQ_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:Vx2doQ_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:WNVNB2_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:WNVNB2_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:XPb9J3_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:XPb9J3_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:XeE1dq_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:XeE1dq_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:b8OX2q_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:b8OX2q_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:bwrZ4y_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:bwrZ4y_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_ad0008_ad0013_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_ad0008_ad0013_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_ad0016_ad0028_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_ad0016_ad0028_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0007_ad0009_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0007_ad0009_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0011_bc0007_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0011_bc0007_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0012_ad0009_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0012_ad0009_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0015_ad0009_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0015_ad0009_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0015_ad0013_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0015_ad0013_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0015_bc0009_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:cluster_bc0015_bc0009_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_1_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_1_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_2_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_2_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_3_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_3_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_4_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_4_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_5_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (aecol:horizon_5_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:eoE031_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:eoE031_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Clades_Variana_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Clades_Variana_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Clades_Variana_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Drusus_campaigns_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Drusus_campaigns_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Drusus_campaigns_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Germanicus_campaigns_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Germanicus_campaigns_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Germanicus_campaigns_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Tiberian_campaign_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_Tiberian_campaign_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:event_Tiberian_campaign_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:ewr5bR_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:ewr5bR_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:ez8xNq_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:ez8xNq_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:g64Ky0_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:g64Ky0_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:gL6OAG_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:gL6OAG_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:gw8Kxp_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:gw8Kxp_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:j2lK5y_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:j2lK5y_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:kNA9dJ_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:kNA9dJ_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:lKmJ9q_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:lKmJ9q_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:lwDA1d_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:lwDA1d_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:n47Ll8_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:n47Ll8_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:nrylrd_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:nrylrd_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:qLXYbG_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:qLXYbG_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:rQ80WO_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:rQ80WO_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:v1O46L_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:v1O46L_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:wm71YX_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:wm71YX_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:xVy2j7_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:xVy2j7_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_begin",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:yJBpPg_begin)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_end",
-    "parent":"http://www.w3.org/2006/time#Instant",
-    "type":"instance",
-    "text":" (ae:yJBpPg_end)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.w3.org/2006/time#Instant",
-    "parent":"#",
-    "type":"class",
-    "instancecount":122,
-    "text":"Instant (time:Instant) [122]",
-    "data":{
-     "from":{
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.w3.org/2004/02/skos/core#Collection":122
-      },
-      "http://www.w3.org/2006/time#hasEnd":{
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":61,
-       "https://pleiades.stoa.org/places/vocab#Place":44,
-       "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":13,
-       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4,
-       "http://archaeology.link/ontology#ChronologicalHorizon":5,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5
-      },
-      "http://www.w3.org/2006/time#hasBeginning":{
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":61,
-       "https://pleiades.stoa.org/places/vocab#Place":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":4,
-       "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":13,
-       "http://archaeology.link/ontology#ChronologicalHorizon":5,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5
-      }
-     },
-     "to":{
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":122,
-       "http://rdfs.org/ns/void#Dataset":122,
-       "http://www.w3.org/ns/adms#Asset":122
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":122
-      },
-      "http://www.w3.org/2006/time#inXSDgYear":{
-       "instancecount":122
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:BWYway_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:Bp8JY3_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:D9L8l5_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:DJq1mg_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:DeeX7G_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:GEJedY_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:Gjndwx_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:JwKRVN_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:K4wDrp_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:KROWel_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:LG4D5x_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:N48RZG_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:NRzOWx_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:O9rjkJ_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:OmaMbj_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:Q48jL9_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:QLNMJk_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:QW3vzV_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:VJwKp7_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:VvXl2y_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:Vx2doQ_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:WNVNB2_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:XPb9J3_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:XeE1dq_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:b8OX2q_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:bwrZ4y_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_bc0011_bc0007_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_bc0015_ad0013_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:eoE031_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:ewr5bR_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:ez8xNq_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:g64Ky0_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:gL6OAG_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:gw8Kxp_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:j2lK5y_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:kNA9dJ_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:lKmJ9q_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:lwDA1d_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:n47Ll8_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:nrylrd_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:qLXYbG_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:rQ80WO_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:site_Trier-Petrisberg_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:v1O46L_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:wm71YX_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:xVy2j7_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_geom",
-    "parent":"http://www.opengis.net/ont/sf#Point",
-    "type":"geoinstance",
-    "text":" (ae:yJBpPg_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.opengis.net/ont/sf#Point",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":47,
-    "text":"Point (sf:Point) [47]",
-    "data":{
-     "from":{
-      "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":45,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":45,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":45,
-       "http://www.w3.org/2006/time#Interval":46,
-       "https://pleiades.stoa.org/places/vocab#Place":45,
-       "http://archaeology.link/ontology#PeriodCluster":2,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":2
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.opengis.net/ont/geosparql#GeometryCollection":47
-      }
-     },
-     "to":{
-      "http://fuzzy-sl.squirrel.link/ontology/certaintyDesc":{
-       "instancecount":45
-      },
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":47,
-       "http://rdfs.org/ns/void#Dataset":47,
-       "http://www.w3.org/ns/adms#Asset":47
-      },
-      "http://www.opengis.net/ont/geosparql#asWKT":{
-       "instancecount":47
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":47
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_ad0008_ad0013_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_ad0016_ad0028_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_bc0007_ad0009_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_bc0015_ad0009_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_bc0015_bc0009_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:horizon_1_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:horizon_2_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:horizon_3_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:horizon_4_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_geom",
-    "parent":"http://www.opengis.net/ont/sf#Polygon",
-    "type":"geoinstance",
-    "text":" (aecol:horizon_5_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.opengis.net/ont/sf#Polygon",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":10,
-    "text":"Polygon (sf:Polygon) [10]",
-    "data":{
-     "from":{
-      "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
-       "http://www.w3.org/2006/time#Interval":10,
-       "http://archaeology.link/ontology#ChronologicalHorizon":5,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.opengis.net/ont/geosparql#GeometryCollection":10
-      }
-     },
-     "to":{
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":10,
-       "http://rdfs.org/ns/void#Dataset":10,
-       "http://www.w3.org/ns/adms#Asset":10
-      },
-      "http://www.opengis.net/ont/geosparql#asWKT":{
-       "instancecount":10
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":10
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_geom",
-    "parent":"http://www.opengis.net/ont/sf#LineString",
-    "type":"geoinstance",
-    "text":" (aecol:cluster_bc0012_ad0009_geom)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.opengis.net/ont/sf#LineString",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":1,
-    "text":"LineString (sf:LineString) [1]",
-    "data":{
-     "from":{
-      "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "http://archaeology.link/ontology#PeriodCluster":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.opengis.net/ont/geosparql#GeometryCollection":1
-      }
-     },
-     "to":{
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":1,
-       "http://rdfs.org/ns/void#Dataset":1,
-       "http://www.w3.org/ns/adms#Asset":1
-      },
-      "http://www.opengis.net/ont/geosparql#asWKT":{
-       "instancecount":1
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":1
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv0_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Trier-Petrisberg (ae:site_Trier-Petrisberg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Friedberg (ae:BWYway)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Liberchies (ae:Bp8JY3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Braives (ae:D9L8l5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Wiesbaden (ae:DJq1mg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Basel, Lager (ae:DeeX7G)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Asberg, Lagerdorf (ae:GEJedY)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Haltern (ae:Gjndwx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Titelberg (ae:JwKRVN)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Neuss (ae:K4wDrp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Velsen (ae:KROWel)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Nijmegen, Trajanusplein (ae:LG4D5x)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Asberg, Lager (ae:N48RZG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Oberwinterthur, R\u00f6merstr. 186 (ae:NRzOWx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"R\u00f6dgen (ae:O9rjkJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Augst, Insula 31 (ae:OmaMbj)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Bonn, Boeselagerhof (ae:Q48jL9)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Bad Nauheim (ae:QLNMJk)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Nijmegen, Valkhof (ae:QW3vzV)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Vechten (ae:VJwKp7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Augst, Theater (ae:VvXl2y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Tongeren (ae:Vx2doQ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Conimbriga (ae:WNVNB2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Lorenzberg (ae:XPb9J3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Lausanne-Vidy (ae:b8OX2q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Vindonissa, K\u00f6nigsfelden (ae:bwrZ4y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Augst, Insula 20 (ae:eoE031)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Basel, Lagerdorf (ae:ewr5bR)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Augsburg, Stadt (ae:ez8xNq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Z\u00fcrich, Lindenhof (ae:g64Ky0)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Augsburg-Oberhausen (ae:gL6OAG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Worms (ae:gw8Kxp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Bregenz (ae:j2lK5y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Vindonissa, Milit\u00e4rstation (ae:kNA9dJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Namur (ae:lKmJ9q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Vindonissa, Scheuerhof (ae:lwDA1d)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Oberaden (ae:n47Ll8)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Vetera I (ae:nrylrd)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Maastricht (ae:qLXYbG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Zurzach, Lager (ae:v1O46L)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Avenches, Insula 15 (ae:wm71YX)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Dangstetten (ae:xVy2j7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "type":"geoinstance",
-    "text":"Mainz, Legionslager (ae:yJBpPg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":45,
-    "text":"ArchaeologicalSite (fsl:ArchaeologicalSite) [45]",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv1_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Trier-Petrisberg (ae:site_Trier-Petrisberg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Friedberg (ae:BWYway)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Liberchies (ae:Bp8JY3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Braives (ae:D9L8l5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Wiesbaden (ae:DJq1mg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Basel, Lager (ae:DeeX7G)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Asberg, Lagerdorf (ae:GEJedY)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Haltern (ae:Gjndwx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Titelberg (ae:JwKRVN)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Neuss (ae:K4wDrp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Velsen (ae:KROWel)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Nijmegen, Trajanusplein (ae:LG4D5x)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Asberg, Lager (ae:N48RZG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Oberwinterthur, R\u00f6merstr. 186 (ae:NRzOWx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"R\u00f6dgen (ae:O9rjkJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Augst, Insula 31 (ae:OmaMbj)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Bonn, Boeselagerhof (ae:Q48jL9)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Bad Nauheim (ae:QLNMJk)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Nijmegen, Valkhof (ae:QW3vzV)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Vechten (ae:VJwKp7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Augst, Theater (ae:VvXl2y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Tongeren (ae:Vx2doQ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Conimbriga (ae:WNVNB2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Lorenzberg (ae:XPb9J3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Lausanne-Vidy (ae:b8OX2q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Vindonissa, K\u00f6nigsfelden (ae:bwrZ4y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Augst, Insula 20 (ae:eoE031)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Basel, Lagerdorf (ae:ewr5bR)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Augsburg, Stadt (ae:ez8xNq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Z\u00fcrich, Lindenhof (ae:g64Ky0)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Augsburg-Oberhausen (ae:gL6OAG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Worms (ae:gw8Kxp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Bregenz (ae:j2lK5y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Vindonissa, Milit\u00e4rstation (ae:kNA9dJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Namur (ae:lKmJ9q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Vindonissa, Scheuerhof (ae:lwDA1d)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Oberaden (ae:n47Ll8)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Vetera I (ae:nrylrd)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Maastricht (ae:qLXYbG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Zurzach, Lager (ae:v1O46L)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Avenches, Insula 15 (ae:wm71YX)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Dangstetten (ae:xVy2j7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv2_",
-    "parent":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "type":"geoinstance",
-    "text":"Mainz, Legionslager (ae:yJBpPg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://fuzzy-sl.squirrel.link/ontology/Site",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":45,
-    "text":"Site (fsl:Site) [45]",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv2_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Trier-Petrisberg (ae:site_Trier-Petrisberg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Friedberg (ae:BWYway)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Liberchies (ae:Bp8JY3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Braives (ae:D9L8l5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Wiesbaden (ae:DJq1mg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Basel, Lager (ae:DeeX7G)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Asberg, Lagerdorf (ae:GEJedY)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Haltern (ae:Gjndwx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Titelberg (ae:JwKRVN)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Neuss (ae:K4wDrp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Velsen (ae:KROWel)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Trajanusplein (ae:LG4D5x)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Asberg, Lager (ae:N48RZG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Oberwinterthur, R\u00f6merstr. 186 (ae:NRzOWx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"R\u00f6dgen (ae:O9rjkJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Augst, Insula 31 (ae:OmaMbj)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Bonn, Boeselagerhof (ae:Q48jL9)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Bad Nauheim (ae:QLNMJk)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Valkhof (ae:QW3vzV)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Vechten (ae:VJwKp7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Augst, Theater (ae:VvXl2y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Tongeren (ae:Vx2doQ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Conimbriga (ae:WNVNB2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Lorenzberg (ae:XPb9J3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Lausanne-Vidy (ae:b8OX2q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Vindonissa, K\u00f6nigsfelden (ae:bwrZ4y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Augst, Insula 20 (ae:eoE031)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Basel, Lagerdorf (ae:ewr5bR)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Augsburg, Stadt (ae:ez8xNq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Z\u00fcrich, Lindenhof (ae:g64Ky0)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Augsburg-Oberhausen (ae:gL6OAG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Worms (ae:gw8Kxp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Bregenz (ae:j2lK5y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Vindonissa, Milit\u00e4rstation (ae:kNA9dJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Namur (ae:lKmJ9q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Vindonissa, Scheuerhof (ae:lwDA1d)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Oberaden (ae:n47Ll8)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Vetera I (ae:nrylrd)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Maastricht (ae:qLXYbG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Zurzach, Lager (ae:v1O46L)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Avenches, Insula 15 (ae:wm71YX)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Dangstetten (ae:xVy2j7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "type":"geoinstance",
-    "text":"Mainz, Legionslager (ae:yJBpPg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.cidoc-crm.org/cidoc-crm/E53_Place",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":45,
-    "text":"E53_Place (crm:E53_Place) [45]",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/site_Trier-Petrisberg_suniv3_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Trier-Petrisberg (ae:site_Trier-Petrisberg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Friedberg (ae:BWYway)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Liberchies (ae:Bp8JY3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Braives (ae:D9L8l5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Wiesbaden (ae:DJq1mg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Basel, Lager (ae:DeeX7G)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Asberg, Lagerdorf (ae:GEJedY)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Haltern (ae:Gjndwx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Titelberg (ae:JwKRVN)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Neuss (ae:K4wDrp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Velsen (ae:KROWel)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Trajanusplein (ae:LG4D5x)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Asberg, Lager (ae:N48RZG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Oberwinterthur, R\u00f6merstr. 186 (ae:NRzOWx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"R\u00f6dgen (ae:O9rjkJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Augst, Insula 31 (ae:OmaMbj)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Bonn, Boeselagerhof (ae:Q48jL9)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Bad Nauheim (ae:QLNMJk)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Valkhof (ae:QW3vzV)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Vechten (ae:VJwKp7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Augst, Theater (ae:VvXl2y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Tongeren (ae:Vx2doQ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Conimbriga (ae:WNVNB2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Lorenzberg (ae:XPb9J3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Lausanne-Vidy (ae:b8OX2q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Vindonissa, K\u00f6nigsfelden (ae:bwrZ4y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Augst, Insula 20 (ae:eoE031)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Basel, Lagerdorf (ae:ewr5bR)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Augsburg, Stadt (ae:ez8xNq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Z\u00fcrich, Lindenhof (ae:g64Ky0)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Augsburg-Oberhausen (ae:gL6OAG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Worms (ae:gw8Kxp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Bregenz (ae:j2lK5y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Vindonissa, Milit\u00e4rstation (ae:kNA9dJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Namur (ae:lKmJ9q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Vindonissa, Scheuerhof (ae:lwDA1d)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Oberaden (ae:n47Ll8)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Vetera I (ae:nrylrd)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Maastricht (ae:qLXYbG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Zurzach, Lager (ae:v1O46L)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Avenches, Insula 15 (ae:wm71YX)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Dangstetten (ae:xVy2j7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv4_",
-    "parent":"https://pleiades.stoa.org/places/vocab#Place",
-    "type":"geoinstance",
-    "text":"Mainz, Legionslager (ae:yJBpPg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"https://pleiades.stoa.org/places/vocab#Place",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":45,
-    "text":"Place (pleiades:Place) [45]",
-    "data":{
-     "from":{
-      "http://www.opengis.net/ont/geosparql#hasFeature":{
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":4
-      }
-     },
-     "to":{
-      "http://archaeology.link/ontology#osm_entity":{
-       "instancecount":1
-      },
-      "http://archaeology.link/ontology#osm_tag":{
-       "instancecount":1
-      },
-      "http://archaeology.link/ontology#pleiades":{
-       "instancecount":1
-      },
-      "http://archaeology.link/ontology#wikidata":{
-       "instancecount":1
-      },
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":1,
-       "http://rdfs.org/ns/void#Dataset":1,
-       "http://www.w3.org/ns/adms#Asset":1
-      },
-      "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "instancecount":1,
-       "http://www.opengis.net/ont/sf#Point":1
-      },
-      "http://www.opengis.net/ont/geosparql#memberOf":{
-       "instancecount":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":4
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":1
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/BWYway_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Friedberg (ae:BWYway)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Bp8JY3_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Liberchies (ae:Bp8JY3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/D9L8l5_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Braives (ae:D9L8l5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DJq1mg_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Wiesbaden (ae:DJq1mg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/DeeX7G_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Basel, Lager (ae:DeeX7G)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/GEJedY_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Asberg, Lagerdorf (ae:GEJedY)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Gjndwx_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Haltern (ae:Gjndwx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/JwKRVN_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Titelberg (ae:JwKRVN)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/K4wDrp_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Neuss (ae:K4wDrp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/KROWel_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Velsen (ae:KROWel)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LG4D5x_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Nijmegen, Trajanusplein (ae:LG4D5x)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/N48RZG_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Asberg, Lager (ae:N48RZG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/NRzOWx_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Oberwinterthur, R\u00f6merstr. 186 (ae:NRzOWx)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/O9rjkJ_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"R\u00f6dgen (ae:O9rjkJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/OmaMbj_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Augst, Insula 31 (ae:OmaMbj)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Q48jL9_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Bonn, Boeselagerhof (ae:Q48jL9)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QLNMJk_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Bad Nauheim (ae:QLNMJk)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/QW3vzV_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Nijmegen, Valkhof (ae:QW3vzV)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VJwKp7_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Vechten (ae:VJwKp7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/VvXl2y_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Augst, Theater (ae:VvXl2y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Vx2doQ_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Tongeren (ae:Vx2doQ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/WNVNB2_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Conimbriga (ae:WNVNB2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XPb9J3_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Lorenzberg (ae:XPb9J3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/XeE1dq_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Brunsting) (ae:XeE1dq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/b8OX2q_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Lausanne-Vidy (ae:b8OX2q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/bwrZ4y_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Vindonissa, K\u00f6nigsfelden (ae:bwrZ4y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/eoE031_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Augst, Insula 20 (ae:eoE031)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ewr5bR_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Basel, Lagerdorf (ae:ewr5bR)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ez8xNq_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Augsburg, Stadt (ae:ez8xNq)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/g64Ky0_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Z\u00fcrich, Lindenhof (ae:g64Ky0)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gL6OAG_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Augsburg-Oberhausen (ae:gL6OAG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/gw8Kxp_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Worms (ae:gw8Kxp)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/j2lK5y_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Bregenz (ae:j2lK5y)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/kNA9dJ_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Vindonissa, Milit\u00e4rstation (ae:kNA9dJ)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lKmJ9q_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Namur (ae:lKmJ9q)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/lwDA1d_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Vindonissa, Scheuerhof (ae:lwDA1d)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/n47Ll8_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Oberaden (ae:n47Ll8)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/nrylrd_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Vetera I (ae:nrylrd)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/qLXYbG_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Maastricht (ae:qLXYbG)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/rQ80WO_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Nijmegen, Lager (Haalebos) (ae:rQ80WO)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/v1O46L_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Zurzach, Lager (ae:v1O46L)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/wm71YX_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Avenches, Insula 15 (ae:wm71YX)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/xVy2j7_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Dangstetten (ae:xVy2j7)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/yJBpPg_suniv5_",
-    "parent":"http://archaeology.link/ontology#event",
-    "type":"geoinstance",
-    "text":"Mainz, Legionslager (ae:yJBpPg)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://archaeology.link/ontology#event",
-    "parent":"#",
-    "type":"geoclass",
-    "instancecount":44,
-    "text":"event (lado:event) [44]",
-    "data":{
-     "from":{
-      "http://archaeology.link/ontology#hasClusterMember":{
-       "http://archaeology.link/ontology#PeriodCluster":44,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":44,
-       "http://www.w3.org/2006/time#Interval":44
-      },
-      "http://archaeology.link/ontology#hasHorizonMember":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":44,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":44,
-       "http://www.w3.org/2006/time#Interval":44
-      },
-      "http://www.opengis.net/ont/geosparql#hasFeature":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":44,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":132,
-       "http://www.w3.org/2006/time#Interval":88,
-       "http://archaeology.link/ontology#PeriodCluster":44
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.w3.org/2004/02/skos/core#Collection":44,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":220
-      }
-     },
-     "to":{
-      "http://archaeology.link/ontology#cax":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#cay":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#caz":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#endfixed":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#estimatedend":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#estimatedstart":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#nfen":{
-       "instancecount":38
-      },
-      "http://archaeology.link/ontology#nfsn":{
-       "instancecount":37
-      },
-      "http://archaeology.link/ontology#pleiades":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#startfixed":{
-       "instancecount":44
-      },
-      "http://archaeology.link/ontology#wikidata":{
-       "instancecount":44
-      },
-      "http://purl.org/dc/elements/1.1/identifier":{
-       "instancecount":44
-      },
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":44,
-       "http://rdfs.org/ns/void#Dataset":44,
-       "http://www.w3.org/ns/adms#Asset":44
-      },
-      "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "instancecount":44,
-       "http://www.opengis.net/ont/sf#Point":44
-      },
-      "http://www.opengis.net/ont/geosparql#memberOf":{
-       "instancecount":132,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":132,
-       "http://archaeology.link/ontology#PeriodCluster":44,
-       "http://www.w3.org/2006/time#Interval":88,
-       "http://archaeology.link/ontology#ChronologicalHorizon":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":44
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":264
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":44
-      },
-      "http://www.w3.org/2006/time#hasBeginning":{
-       "instancecount":44,
-       "http://www.w3.org/2006/time#Instant":44
-      },
-      "http://www.w3.org/2006/time#hasEnd":{
-       "instancecount":44,
-       "http://www.w3.org/2006/time#Instant":44
-      },
-      "http://archaeology.link/ontology#osm_entity":{
-       "instancecount":31
-      },
-      "http://archaeology.link/ontology#osm_tag":{
-       "instancecount":31
-      },
-      "http://www.w3.org/2004/02/skos/core#exactMatch":{
-       "instancecount":1
-      },
-      "http://www.w3.org/2004/02/skos/core#closeMatch":{
-       "instancecount":6
-      },
-      "http://www.w3.org/2004/02/skos/core#relatedMatch":{
-       "instancecount":3
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 11 BCE \u2013 7 BCE (aecol:cluster_bc0011_bc0007)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 13 CE (aecol:cluster_bc0015_ad0013)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 12 BCE \u2013 9 CE (aecol:cluster_bc0012_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 9 BCE (aecol:cluster_bc0015_bc0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 16 \u2013 28 CE (aecol:cluster_ad0016_ad0028)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 9 CE (aecol:cluster_bc0015_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 8 \u2013 13 CE (aecol:cluster_ad0008_ad0013)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_suniv1_",
-    "parent":"http://archaeology.link/ontology#PeriodCluster",
-    "type":"instance",
-    "text":"Period cluster 7 BCE \u2013 9 CE (aecol:cluster_bc0007_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://archaeology.link/ontology#PeriodCluster",
-    "parent":"#",
-    "type":"class",
-    "instancecount":8,
-    "text":"PeriodCluster (lado:PeriodCluster) [8]",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0011_bc0007_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 11 BCE \u2013 7 BCE (aecol:cluster_bc0011_bc0007)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0013_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 13 CE (aecol:cluster_bc0015_ad0013)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0012_ad0009_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 12 BCE \u2013 9 CE (aecol:cluster_bc0012_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv1_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Horizon 1 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_1)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv1_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Horizon 5 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_bc0009_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 9 BCE (aecol:cluster_bc0015_bc0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0016_ad0028_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 16 \u2013 28 CE (aecol:cluster_ad0016_ad0028)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0015_ad0009_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 15 BCE \u2013 9 CE (aecol:cluster_bc0015_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv1_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Horizon 2 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv1_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Horizon 4 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv1_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_ad0008_ad0013_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 8 \u2013 13 CE (aecol:cluster_ad0008_ad0013)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/cluster_bc0007_ad0009_suniv2_",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Period cluster 7 BCE \u2013 9 CE (aecol:cluster_bc0007_ad0009)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/arretine_sites",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"instance",
-    "text":"Arretine Dated Sites Collection (aecol:arretine_sites)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ArchaeologicalSite_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"ArchaeologicalSite Instances Collection (ae:ArchaeologicalSite_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Site_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"Site Instances Collection (ae:Site_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/E53_Place_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"E53_Place Instances Collection (ae:E53_Place_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Place_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"Place Instances Collection (ae:Place_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/event_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"event Instances Collection (ae:event_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/PeriodCluster_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"PeriodCluster Instances Collection (ae:PeriodCluster_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/ChronologicalHorizon_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"ChronologicalHorizon Instances Collection (ae:ChronologicalHorizon_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/E4_Period_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "type":"featurecollection",
-    "text":"E4_Period Instances Collection (ae:E4_Period_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.opengis.net/ont/geosparql#FeatureCollection",
-    "parent":"http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
-    "instancecount":22,
-    "type":"collectionclass",
-    "text":" (gsp:FeatureCollection) [22]",
-    "data":{
-     "from":{
-      "http://www.opengis.net/ont/geosparql#memberOf":{
-       "http://archaeology.link/ontology#event":88,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":89,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":89,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":89,
-       "http://www.w3.org/2006/time#Interval":88,
-       "https://pleiades.stoa.org/places/vocab#Place":89
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.w3.org/2004/02/skos/core#Collection":17,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":8
-      },
-      "http://www.w3.org/2006/time#intervalAfter":{
-       "http://archaeology.link/ontology#PeriodCluster":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
-       "http://www.w3.org/2006/time#Interval":10
-      },
-      "http://www.w3.org/2006/time#intervalDuring":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalFinishes":{
-       "http://archaeology.link/ontology#PeriodCluster":4,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
-       "http://www.w3.org/2006/time#Interval":4
-      },
-      "http://www.w3.org/2006/time#intervalStarts":{
-       "http://archaeology.link/ontology#PeriodCluster":3,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
-       "http://www.w3.org/2006/time#Interval":3
-      },
-      "http://www.w3.org/2006/time#intervalOverlappedBy":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalStartedBy":{
-       "http://archaeology.link/ontology#PeriodCluster":3,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
-       "http://www.w3.org/2006/time#Interval":3
-      },
-      "http://www.w3.org/2006/time#intervalContains":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalMetBy":{
-       "http://archaeology.link/ontology#PeriodCluster":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlaps":{
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalBefore":{
-       "http://archaeology.link/ontology#PeriodCluster":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
-       "http://www.w3.org/2006/time#Interval":10
-      },
-      "http://www.w3.org/2006/time#intervalFinishedBy":{
-       "http://archaeology.link/ontology#PeriodCluster":4,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
-       "http://www.w3.org/2006/time#Interval":4
-      },
-      "http://www.w3.org/2006/time#intervalMeets":{
-       "http://archaeology.link/ontology#PeriodCluster":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      }
-     },
-     "to":{
-      "http://archaeology.link/ontology#hasClusterMember":{
-       "instancecount":44,
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":44,
-       "https://pleiades.stoa.org/places/vocab#Place":44
-      },
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":17,
-       "http://rdfs.org/ns/void#Dataset":17,
-       "http://www.w3.org/ns/adms#Asset":17
-      },
-      "http://www.opengis.net/ont/geosparql#hasFeature":{
-       "instancecount":89,
-       "http://archaeology.link/ontology#event":88,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":89,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":89,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":89,
-       "http://www.w3.org/2006/time#Interval":88,
-       "https://pleiades.stoa.org/places/vocab#Place":89
-      },
-      "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "instancecount":8,
-       "http://www.opengis.net/ont/sf#Point":2,
-       "http://www.opengis.net/ont/sf#Polygon":5,
-       "http://www.opengis.net/ont/sf#LineString":1
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":33
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":17
-      },
-      "http://www.w3.org/2006/time#hasBeginning":{
-       "instancecount":8,
-       "http://www.w3.org/2006/time#Instant":8
-      },
-      "http://www.w3.org/2006/time#hasEnd":{
-       "instancecount":8,
-       "http://www.w3.org/2006/time#Instant":8
-      },
-      "http://www.w3.org/2006/time#intervalBefore":{
-       "instancecount":10,
-       "http://archaeology.link/ontology#PeriodCluster":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
-       "http://www.w3.org/2006/time#Interval":10
-      },
-      "http://www.w3.org/2006/time#intervalContains":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalFinishedBy":{
-       "instancecount":4,
-       "http://archaeology.link/ontology#PeriodCluster":4,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
-       "http://www.w3.org/2006/time#Interval":4
-      },
-      "http://www.w3.org/2006/time#intervalStartedBy":{
-       "instancecount":3,
-       "http://archaeology.link/ontology#PeriodCluster":3,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
-       "http://www.w3.org/2006/time#Interval":3
-      },
-      "http://www.w3.org/2000/01/rdf-schema#comment":{
-       "instancecount":1
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "instancecount":242,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":224,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":224,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":224,
-       "https://pleiades.stoa.org/places/vocab#Place":224,
-       "http://archaeology.link/ontology#event":220,
-       "http://www.w3.org/2006/time#Interval":238,
-       "http://archaeology.link/ontology#PeriodCluster":8,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":18,
-       "http://archaeology.link/ontology#ChronologicalHorizon":10,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":10
-      },
-      "http://www.w3.org/2006/time#intervalOverlaps":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalStarts":{
-       "instancecount":3,
-       "http://archaeology.link/ontology#PeriodCluster":3,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":3,
-       "http://www.w3.org/2006/time#Interval":3
-      },
-      "http://www.w3.org/2006/time#intervalDuring":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalMeets":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#PeriodCluster":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlappedBy":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#PeriodCluster":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalAfter":{
-       "instancecount":10,
-       "http://archaeology.link/ontology#PeriodCluster":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10,
-       "http://www.w3.org/2006/time#Interval":10
-      },
-      "http://www.w3.org/2006/time#intervalFinishes":{
-       "instancecount":4,
-       "http://archaeology.link/ontology#PeriodCluster":4,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":4,
-       "http://www.w3.org/2006/time#Interval":4
-      },
-      "http://www.w3.org/2006/time#intervalMetBy":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#PeriodCluster":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      }
-     }
-    }
-   },
-   {
-    "id":"http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
-    "parent":"#",
-    "type":"collectionclass",
-    "text":"SpatialObjectCollection (gsp:SpatialObjectCollection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv2_",
-    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
-    "type":"instance",
-    "text":"Horizon 1 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_1)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv2_",
-    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
-    "type":"instance",
-    "text":"Horizon 5 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv2_",
-    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
-    "type":"instance",
-    "text":"Horizon 2 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv2_",
-    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
-    "type":"instance",
-    "text":"Horizon 4 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv2_",
-    "parent":"http://archaeology.link/ontology#ChronologicalHorizon",
-    "type":"instance",
-    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://archaeology.link/ontology#ChronologicalHorizon",
-    "parent":"#",
-    "type":"class",
-    "instancecount":5,
-    "text":"ChronologicalHorizon (lado:ChronologicalHorizon) [5]",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_1_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
-    "type":"instance",
-    "text":"Horizon 1 (15 av. J.-C. \u2013 7 av. J.-C.) (aecol:horizon_1)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_5_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
-    "type":"instance",
-    "text":"Horizon 5 (16 apr. J.-C. \u2013 28 apr. J.-C.) (aecol:horizon_5)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_2_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
-    "type":"instance",
-    "text":"Horizon 2 (15 av. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_2)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_4_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
-    "type":"instance",
-    "text":"Horizon 4 (8 apr. J.-C. \u2013 13 apr. J.-C.) (aecol:horizon_4)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/collections/horizon_3_suniv3_",
-    "parent":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
-    "type":"instance",
-    "text":"Horizon 3 (7 av. J.-C. \u2013 9 apr. J.-C.) (aecol:horizon_3)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.cidoc-crm.org/cidoc-crm/E4_Period",
-    "parent":"#",
-    "type":"class",
-    "instancecount":5,
-    "text":"E4_Period (crm:E4_Period) [5]",
-    "data":{
-     "from":{
-      "http://www.opengis.net/ont/geosparql#memberOf":{
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":44,
-       "https://pleiades.stoa.org/places/vocab#Place":44
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "http://www.w3.org/2004/02/skos/core#Collection":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":10
-      },
-      "http://www.w3.org/2006/time#intervalBefore":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":5,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalAfter":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":5,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalMetBy":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalStartedBy":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalContains":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalMeets":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlappedBy":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalDuring":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalFinishes":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalStarts":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalFinishedBy":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlaps":{
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      }
-     },
-     "to":{
-      "http://archaeology.link/ontology#hasHorizonMember":{
-       "instancecount":44,
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":44,
-       "https://pleiades.stoa.org/places/vocab#Place":44
-      },
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":5,
-       "http://rdfs.org/ns/void#Dataset":5,
-       "http://www.w3.org/ns/adms#Asset":5
-      },
-      "http://www.opengis.net/ont/geosparql#hasFeature":{
-       "instancecount":44,
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":44,
-       "https://pleiades.stoa.org/places/vocab#Place":44
-      },
-      "http://www.opengis.net/ont/geosparql#hasGeometry":{
-       "instancecount":5,
-       "http://www.opengis.net/ont/sf#Polygon":5
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":20
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":10
-      },
-      "http://www.w3.org/2004/02/skos/core#notation":{
-       "instancecount":5
-      },
-      "http://www.w3.org/2006/time#hasBeginning":{
-       "instancecount":5,
-       "http://www.w3.org/2006/time#Instant":5
-      },
-      "http://www.w3.org/2006/time#hasEnd":{
-       "instancecount":5,
-       "http://www.w3.org/2006/time#Instant":5
-      },
-      "http://www.w3.org/2006/time#intervalAfter":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#ChronologicalHorizon":5,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalBefore":{
-       "instancecount":5,
-       "http://archaeology.link/ontology#ChronologicalHorizon":5,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":5,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":5,
-       "http://www.w3.org/2006/time#Interval":5
-      },
-      "http://www.w3.org/2006/time#intervalMeets":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalStarts":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalDuring":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalMetBy":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlaps":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalContains":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalFinishedBy":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalStartedBy":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalFinishes":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      },
-      "http://www.w3.org/2006/time#intervalOverlappedBy":{
-       "instancecount":1,
-       "http://archaeology.link/ontology#ChronologicalHorizon":1,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":1,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":1,
-       "http://www.w3.org/2006/time#Interval":1
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/E7_Activity_collection",
-    "parent":"http://www.w3.org/2004/02/skos/core#Collection",
-    "type":"instance",
-    "text":"E7_Activity Instances Collection (ae:E7_Activity_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Interval_collection",
-    "parent":"http://www.w3.org/2004/02/skos/core#Collection",
-    "type":"instance",
-    "text":"Interval Instances Collection (ae:Interval_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Instant_collection",
-    "parent":"http://www.w3.org/2004/02/skos/core#Collection",
-    "type":"instance",
-    "text":"Instant Instances Collection (ae:Instant_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/FeatureCollection_collection",
-    "parent":"http://www.w3.org/2004/02/skos/core#Collection",
-    "type":"instance",
-    "text":"FeatureCollection Instances Collection (ae:FeatureCollection_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.w3.org/2004/02/skos/core#Collection",
-    "parent":"#",
-    "type":"collectionclass",
-    "instancecount":4,
-    "text":"Collection (skos:Collection) [4]",
-    "data":{
-     "from":{},
-     "to":{
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":4,
-       "http://rdfs.org/ns/void#Dataset":4,
-       "http://www.w3.org/ns/adms#Asset":4
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":4
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":4
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "instancecount":201,
-       "http://www.w3.org/2006/time#Instant":122,
-       "http://archaeology.link/ontology#event":44,
-       "http://fuzzy-sl.squirrel.link/ontology/ArchaeologicalSite":44,
-       "http://fuzzy-sl.squirrel.link/ontology/Site":44,
-       "http://www.cidoc-crm.org/cidoc-crm/E53_Place":44,
-       "http://www.w3.org/2006/time#Interval":78,
-       "https://pleiades.stoa.org/places/vocab#Place":44,
-       "http://archaeology.link/ontology#ChronologicalHorizon":10,
-       "http://www.cidoc-crm.org/cidoc-crm/E4_Period":10,
-       "http://www.opengis.net/ont/geosparql#FeatureCollection":27,
-       "http://www.cidoc-crm.org/cidoc-crm/E7_Activity":8,
-       "http://archaeology.link/ontology#PeriodCluster":16
-      }
-     }
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Point_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#GeometryCollection",
-    "type":"geocollection",
-    "text":"Point Instances Collection (ae:Point_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/Polygon_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#GeometryCollection",
-    "type":"geocollection",
-    "text":"Polygon Instances Collection (ae:Polygon_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://leiza-scit.github.io/CAA2026-alligator/LineString_collection",
-    "parent":"http://www.opengis.net/ont/geosparql#GeometryCollection",
-    "type":"geocollection",
-    "text":"LineString Instances Collection (ae:LineString_collection)",
-    "data":{
-     "from":{},
-     "to":{}
-    }
-   },
-   {
-    "id":"http://www.opengis.net/ont/geosparql#GeometryCollection",
-    "parent":"http://www.opengis.net/ont/geosparql#SpatialObjectCollection",
-    "instancecount":3,
-    "type":"collectionclass",
-    "text":" (gsp:GeometryCollection) [3]",
-    "data":{
-     "from":{},
-     "to":{
-      "http://rdfs.org/ns/void#inDataset":{
-       "instancecount":3,
-       "http://rdfs.org/ns/void#Dataset":3,
-       "http://www.w3.org/ns/adms#Asset":3
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":{
-       "instancecount":3
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label":{
-       "instancecount":3
-      },
-      "http://www.w3.org/2000/01/rdf-schema#member":{
-       "instancecount":58,
-       "http://www.opengis.net/ont/sf#Point":47,
-       "http://www.opengis.net/ont/sf#LineString":1,
-       "http://www.opengis.net/ont/sf#Polygon":10
-      }
-     }
-    }
-   }
-  ]
- },
- "@context":{
-  "@version":1.1,
-  "foaf":"http://xmlns.com/foaf/0.1/",
-  "ct":"http://purl.org/vocab/classtree#",
-  "rdfs":"http://www.w3.org/2000/01/rdf-schema#",
-  "icon":"foaf:image",
-  "id":"@id",
-  "parent":"rdfs:subClassOf",
-  "halfgeoclass":"ct:HalfGeoClass",
-  "geoclass":{
-   "@type":"ct:icontype",
-   "@id":"ct:GeoClass"
-  },
-  "collectionclass":{
-   "@type":"ct:icontype",
-   "@id":"ct:CollectionClass"
-  },
-  "featurecollectionclass":{
-   "@type":"ct:icontype",
-   "@id":"ct:FeatureCollectionClass"
-  },
-  "class":"owl:Class",
-  "instance":"owl:NamedIndividual",
-  "geoinstance":{
-   "@type":"ct:Icontype",
-   "@id":"ct:GeoNamedIndividual"
-  },
-  "text":"rdfs:label",
-  "type":"ct:icontype",
-  "types":"ct:icontypes",
-  "core":{
-   "@type":"ct:TreeConfig",
-   "@id":"@nest"
-  },
-  "data":{
-   "@id":"ct:treeitem",
-   "@type":"ct:TreeItem"
-  }
- }
 }

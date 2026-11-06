@@ -783,19 +783,19 @@ time: a voaf:Vocabulary ;
 <http://leiza-scit.github.io/CAA2026-alligator/Alligator_Dating_Services_I-II> a void:Dataset,
         adms:Asset ;
     rdfs:label "Alligator_Dating_Services_I-II"@en ;
-    vext:averageLiteralLength 0 ;
-    vext:averageObjectIRILength 44 ;
+    vext:averageLiteralLength 15 ;
+    vext:averageObjectIRILength 56 ;
     vext:averagePropertyIRILength 43 ;
     vext:averageSubjectIRILength 61 ;
-    vext:datatypes 0 ;
+    vext:datatypes 5 ;
     vext:distinctBlankNodes 0 ;
     vext:distinctIRIReferences 1016 ;
-    vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 1016 ;
-    vext:languages 0 ;
+    vext:distinctLiterals 348 ;
+    vext:distinctRDFNodes 1364 ;
+    vext:languages 2 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2026-08-04T10:25:04"^^xsd:dateTime ;
+    dcterms:modified "2026-11-06T16:02:02"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
