@@ -39,6 +39,7 @@ page:
   nav:
     - {href: "index.html", label: "Overview"}
     - {href: "sparql.html", label: "Query", active: true}
+    - {href: "dating.html", label: "Dating machine"}
 
 qmd:
   file: arretine-chronology-sparql-live.qmd
