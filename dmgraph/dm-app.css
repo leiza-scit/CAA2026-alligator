@@ -1,0 +1,61 @@
+/* dm-app.css — the dating machine page. Builds on ../style.css (variables, .container, .nav). */
+
+.dm-form { display: grid; grid-template-columns: repeat(5, minmax(5rem, 1fr)); gap: .75rem; margin: 1rem 0 .5rem; }
+.dm-form label { display: flex; flex-direction: column; gap: .25rem; font-size: .85rem; color: var(--muted); }
+.dm-form input, .dm-opts select {
+  font: inherit; color: var(--ink); padding: .4rem .5rem;
+  border: 1px solid var(--rule); border-radius: 4px; background: #fff;
+}
+.dm-form input:focus, .dm-opts select:focus, .dm-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.dm-form input.is-bad { border-color: #9b1c1c; }
+
+.dm-opts { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; margin: .5rem 0 1rem; font-size: .9rem; }
+.dm-opts label { color: var(--muted); }
+.dm-opts select { margin-left: .35rem; }
+
+.dm-btn {
+  font: inherit; padding: .35rem .8rem; border: 1px solid var(--rule); border-radius: 4px;
+  background: #fff; color: var(--accent); cursor: pointer;
+}
+.dm-btn:hover { background: var(--head-bg); color: var(--accent-dk); }
+.dm-btn:disabled { opacity: .5; cursor: default; }
+
+.dm-msg { min-height: 1.4rem; margin: 0 0 .75rem; font-size: .9rem; color: #9b1c1c; }
+
+/* result: bars */
+.dm-bars { margin: 1rem 0 .5rem; }
+.dm-bars svg { display: block; width: 100%; height: auto; max-width: 760px; }
+.dm-bars .bar { fill: var(--accent); }
+.dm-bars .bar.best { fill: var(--accent-dk); }
+.dm-bars text { font: 13px var(--font); fill: var(--ink); }
+.dm-bars .muted { fill: var(--muted); }
+.dm-bars .axis { stroke: var(--rule); }
+
+.dm-verdict { margin: .25rem 0 1rem; }
+.dm-verdict strong { font-weight: 650; }
+
+/* result: graph, wider than the text column */
+.dm-graph { margin: 1.5rem 0; }
+.dm-graph__canvas { overflow-x: auto; border: 1px solid var(--rule); border-radius: 4px; padding: .75rem; background: #fff; min-height: 6rem; }
+.dm-graph__canvas svg { max-width: 100%; min-width: 900px; height: auto; }
+.dm-graph__actions { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; margin: .75rem 0 0; font-size: .9rem; }
+.dm-graph__actions select { font: inherit; padding: .3rem .4rem; margin-left: .35rem; border: 1px solid var(--rule); border-radius: 4px; }
+.dm-graph__error { color: #9b1c1c; margin: 0; }
+
+details.dm-details { margin-top: 1rem; }
+details.dm-details summary { cursor: pointer; color: var(--accent); }
+details.dm-details pre {
+  overflow-x: auto; padding: .75rem; background: var(--head-bg); border: 1px solid var(--rule);
+  font: .82rem/1.4 var(--mono);
+}
+.dm-ref { border-collapse: collapse; margin-top: .5rem; font-size: .88rem; }
+.dm-ref th, .dm-ref td { padding: .3rem .7rem; border-bottom: 1px solid var(--rule); text-align: right; }
+.dm-ref th:first-child, .dm-ref td:first-child { text-align: left; }
+.dm-ref thead th { background: var(--head-bg); border-bottom: 2px solid var(--rule); }
+
+@media (max-width: 640px) { .dm-form { grid-template-columns: repeat(2, 1fr); } }
+
+.dm-graph__actions a, .dm-graph p a { color: var(--accent); }
+.dm-form label { min-width: 0; }
+.dm-form input { width: 100%; min-width: 0; }
+.dm-ref { display: block; max-width: 100%; overflow-x: auto; }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAA 2026 &mdash; Dating machine</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dmgraph/dm-app.css">
+</head>
+<body>
+<div class="container">
+
+  <nav class="nav">
+    <a href="index.html">Overview</a>
+    <a href="sparql.html">Query</a>
+    <a href="dating.html" class="active">Dating machine</a>
+  </nav>
+
+  <header class="page-head">
+    <span class="badge">CAA 2026</span>
+    <h1>Dating machine</h1>
+    <p class="intro">
+      Enter how many sherds of each Arretine service type an assemblage holds. The
+      page works out how probable each of the five chronological horizons is and
+      shows the result as a bar chart and as an RDF graph that can be merged with
+      the knowledge graph of this site. Everything is computed in your browser;
+      nothing is sent anywhere.
+    </p>
+  </header>
+
+  <section>
+    <h2>1. The assemblage</h2>
+    <div class="dm-form">
+      <label>BordOblique <input type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+      <label>Ia <input type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+      <label>Ib <input type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+      <label>Ic <input type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+      <label>II <input type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+    </div>
+    <div class="dm-opts">
+      <button type="button" class="dm-btn" id="dm-example">Example</button>
+      <button type="button" class="dm-btn" id="dm-clear">Clear</button>
+      <label>Pseudocount
+        <select id="dm-pseudocount">
+          <option value="0.5">0.5 (Jeffreys, as the web form)</option>
+          <option value="1">1.0 (as py/horizon_assignment.py)</option>
+        </select>
+      </label>
+    </div>
+    <p class="dm-msg" id="dm-msg" role="status"></p>
+    <p class="note">
+      The address of this page carries the counts (<code>dating.html#0,0,13,27,60</code>),
+      so an assemblage can be shared as a link.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. The attribution</h2>
+    <div id="dm-bars" class="dm-bars"></div>
+    <p class="dm-verdict" id="dm-verdict"></p>
+    <p class="note">
+      Dirichlet-multinomial predictive likelihood: the pooled sherd counts of each
+      horizon, plus the pseudocount, are the Dirichlet parameters; the five
+      horizons have equal priors. The two pseudocounts differ by less than one
+      percentage point for typical assemblages.
+    </p>
+    <details class="dm-details">
+      <summary>Reference counts of the five horizons</summary>
+      <table class="dm-ref" id="dm-ref"></table>
+    </details>
+  </section>
+
+  <section id="dm-graph" class="dm-graph">
+    <h2>3. The result as a graph</h2>
+    <p class="intro">
+      The same result as RDF triples. The assemblage is a blank node: it has no
+      identifier of its own and exists only in this graph. Each result is a
+      CIDOC-CRM attribute assignment (E13) that assigns one horizon
+      (<code>lado:ChronologicalHorizon</code>, <code>crm:E4_Period</code>) to the
+      assemblage. Concepts (purple) and horizons are those of the graph on the
+      <a href="index.html">overview</a>, so the two can be merged. The heavy
+      outline marks the most probable horizon.
+    </p>
+    <div id="dm-graph-canvas" class="dm-graph__canvas">Drawing the graph &hellip;</div>
+    <p class="dm-graph__actions">
+      <label>Layout
+        <select id="dm-layout">
+          <option value="TB">Top to bottom</option>
+          <option value="LR">Left to right</option>
+          <option value="BT">Bottom to top</option>
+          <option value="RL">Right to left</option>
+        </select>
+      </label>
+      <button type="button" class="dm-btn" id="dm-download-ttl" disabled>Download Turtle</button>
+      <button type="button" class="dm-btn" id="dm-download-svg" disabled>Download SVG</button>
+      <a href="dmgraph/dm.ttl">The <code>dm:</code> vocabulary (Turtle)</a>
+    </p>
+    <details class="dm-details">
+      <summary>Show the triples (Turtle)</summary>
+      <pre id="dm-turtle-view"></pre>
+    </details>
+  </section>
+
+  <footer class="page-foot">
+    Model, Turtle and diagram are built by <code>docs/dmgraph/dm-model.js</code>;
+    <code>py/build_dating.py</code> checks that file against the Python
+    implementation. Mermaid 11 (MIT) is vendored in <code>docs/dmgraph/vendor/</code>.
+  </footer>
+
+</div>
+<script src="dmgraph/vendor/mermaid.min.js"></script>
+<script src="dmgraph/reference.js"></script>
+<script src="dmgraph/dm-model.js"></script>
+<script src="dmgraph/dm-app.js"></script>
+</body>
+</html>
