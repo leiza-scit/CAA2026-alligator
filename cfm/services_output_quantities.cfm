@@ -75,6 +75,8 @@
     }
 
     results = [];
+    // The reference counts as used, h1 first; the graph include hashes them.
+    referenceMatrix = [];
     maxLogPosterior = -1E300;
     sumExp = 0;
 
@@ -106,6 +108,8 @@
                     val(qServices.ic[r]),
                     val(qServices.ii[r])
                 ];
+
+                arrayAppend(referenceMatrix, referenceCounts);
 
                 alpha = [];
                 alphaTotal = 0;

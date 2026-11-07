@@ -1,0 +1,112 @@
+# The dm: vocabulary — the terms of the result of one horizon attribution.
+#
+# Namespace: http://leiza-scit.github.io/CAA2026-alligator/dm#
+# (a hash namespace like aeont:, so this one file defines all of it; the page
+# docs/dm/index.html is what that address shows on GitHub Pages.)
+#
+# Most of what the result graph says is not defined here. It uses
+#
+#   CIDOC-CRM   crm:E7_Activity, crm:E13_Attribute_Assignment, crm:E18_Physical_Thing,
+#               crm:E5_Event, crm:E4_Period, crm:E52_Time-Span, crm:E73_Information_Object,
+#               crm:E70_Thing, crm:P9_consists_of, crm:P140_assigned_attribute_to,
+#               crm:P141_assigned, crm:P177_assigned_property_of_type,
+#               crm:P10_falls_within, crm:P12i_was_present_at, crm:P4_has_time-span,
+#               crm:P82_at_some_time_within, crm:P16_used_specific_object
+#   LADO        lado:ChronologicalHorizon, the class of the five horizons in
+#               output/arretine_sites_minigraph.ttl (with crm:E4_Period, as there)
+#   this repo   aeont:ServiceCount, aeont:serviceType, aeont:sherdCount and the
+#               aevoc: service concepts from output/arretine_services.ttl
+#
+# so the dm: terms only add what those do not have: the three classes, the way an
+# assemblage points to its counts, and the statistics. CIDOC-CRM has no property
+# for a probability.
+#
+# How the dating is modelled (version 0.2). An assemblage is a group of sherds
+# (E18). Its horizon is not a property of the sherds as objects but of the time of
+# their deposition, so the assemblage is present at (P12i) one E5 Event, a blank
+# node, and each result assigns a horizon to that event: an E13 with P140 the
+# event, P177 crm:P10_falls_within and P141 the horizon. E5 is a kind of E4 Period,
+# so P10 (domain and range E92 Spacetime Volume) holds between event and horizon.
+# The reading of CIDOC-CRM is the author's and has not been reviewed by a CRM
+# specialist; E18 for the assemblage is the general class, and a CRMarchaeo class
+# can replace it without touching anything else.
+#
+# What the graph carries about its own origin: the time of the assessment
+# (P4 / P82), the program (the page) and the reference table it used (both P16),
+# and dm:countsSha256, a hash of the 25 reference counts actually used, so a result
+# can be traced to the numbers whichever program produced it.
+
+@prefix dm:   <http://leiza-scit.github.io/CAA2026-alligator/dm#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix aeont: <http://leiza-scit.github.io/CAA2026-alligator/ontology#> .
+
+<http://leiza-scit.github.io/CAA2026-alligator/dm#> a owl:Ontology ;
+    rdfs:label "Dating machine vocabulary"@en ;
+    owl:versionInfo "0.2" ;
+    rdfs:comment "Terms for the result of one horizon attribution of an assemblage of Arretine sherds, on top of CIDOC-CRM."@en .
+
+dm:Assemblage a rdfs:Class ;
+    rdfs:subClassOf crm:E18_Physical_Thing ;
+    rdfs:label "Assemblage"@en ;
+    rdfs:comment "A group of Arretine sherds counted by service type whose horizon is being asked for. Usually a blank node: it has no identity beyond the one assessment."@en .
+
+dm:HorizonAssessment a rdfs:Class ;
+    rdfs:subClassOf crm:E7_Activity ;
+    rdfs:label "Horizon assessment"@en ;
+    rdfs:comment "One run of the attribution: an assemblage compared with the five horizons. Consists of five results (crm:P9_consists_of)."@en .
+
+dm:HorizonResult a rdfs:Class ;
+    rdfs:subClassOf crm:E13_Attribute_Assignment ;
+    rdfs:label "Horizon result"@en ;
+    rdfs:comment "The assignment of one horizon (crm:P141_assigned) to the deposition event of the assemblage (crm:P140_assigned_attribute_to), by crm:P10_falls_within (crm:P177_assigned_property_of_type), with the probability of that horizon."@en .
+
+dm:hasCount a rdf:Property ;
+    rdfs:label "has count"@en ;
+    rdfs:comment "A service count of the assemblage, an aeont:ServiceCount. Points from the assemblage to the count, the other way round from aeont:atFindspot, which is what lets the graph be read as a tree."@en ;
+    rdfs:domain dm:Assemblage ;
+    rdfs:range aeont:ServiceCount .
+
+dm:totalSherds a rdf:Property ;
+    rdfs:label "total sherds"@en ;
+    rdfs:comment "The number of sherds of the assemblage, the sum of its five counts."@en ;
+    rdfs:domain dm:Assemblage ;
+    rdfs:range xsd:integer .
+
+dm:probability a rdf:Property ;
+    rdfs:label "probability"@en ;
+    rdfs:comment "Posterior probability of the horizon, rounded to six decimals. The five results of one assessment sum to 1 up to that rounding."@en ;
+    rdfs:domain dm:HorizonResult ;
+    rdfs:range xsd:decimal .
+
+dm:logLikelihood a rdf:Property ;
+    rdfs:label "log likelihood"@en ;
+    rdfs:comment "Natural logarithm of the Dirichlet-multinomial likelihood of the assemblage's counts given the horizon, to six decimals. The multinomial coefficient is left out; it is the same for all five horizons. Unlike dm:probability it keeps the order of horizons whose probability rounds to 0.000000: with equal priors the probabilities are the normalised exponentials of these values."@en ;
+    rdfs:domain dm:HorizonResult ;
+    rdfs:range xsd:decimal .
+
+dm:prior a rdf:Property ;
+    rdfs:label "prior"@en ;
+    rdfs:comment "Prior probability assigned to the horizon before the assemblage is considered. Equal for all five horizons."@en ;
+    rdfs:domain dm:HorizonResult ;
+    rdfs:range xsd:decimal .
+
+dm:pseudocount a rdf:Property ;
+    rdfs:label "pseudocount"@en ;
+    rdfs:comment "The constant added to every reference count to form the Dirichlet parameters. 0.5 is the Jeffreys value; py/horizon_assignment.py uses 1.0."@en ;
+    rdfs:domain dm:HorizonAssessment ;
+    rdfs:range xsd:decimal .
+
+dm:method a rdf:Property ;
+    rdfs:label "method"@en ;
+    rdfs:comment "The statistical method, as free text."@en ;
+    rdfs:domain dm:HorizonAssessment .
+
+dm:countsSha256 a rdf:Property ;
+    rdfs:label "counts SHA-256"@en ;
+    rdfs:comment "SHA-256, as lower-case hexadecimal, of the 25 reference counts the assessment used: the rows of horizons 1 to 5 joined by ';', the five values of a row by ',' (for example '6,49,153,244,30;4,115,...'). Names the numbers, not a file, so a database table and a CSV file with the same counts have the same hash."@en ;
+    rdfs:domain crm:E73_Information_Object ;
+    rdfs:range xsd:string .

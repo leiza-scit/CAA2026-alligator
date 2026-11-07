@@ -23,7 +23,7 @@ dmgraph/dm_graph.cfm included.</p>
     <p class="note">
         The same result as RDF triples. The assemblage is a blank node: it has no
         identifier of its own and exists only in this graph. Each result is a
-        CIDOC-CRM attribute assignment (E13) that assigns one horizon to the
+        CIDOC-CRM attribute assignment (E13) that assigns one horizon to the deposition of the
         assemblage. Arrows follow the triples; a label is printed once per group
         of parallel arrows. Concepts (purple) and horizons are those of the
         CAA2026-alligator graphs, so this graph can be merged with them. The
@@ -50,15 +50,20 @@ dmgraph/dm_graph.cfm included.</p>
         <pre id="dm-turtle-view"></pre>
     </details>
 
-    <script type="text/turtle" id="dm-turtle">@prefix dm: <http://leiza-scit.github.io/CAA2026-alligator/dm/> .
+    <script type="text/turtle" id="dm-turtle">@prefix dm: <http://leiza-scit.github.io/CAA2026-alligator/dm#> .
 @prefix aeont: <http://leiza-scit.github.io/CAA2026-alligator/ontology#> .
 @prefix aevoc: <http://leiza-scit.github.io/CAA2026-alligator/vocabulary/> .
 @prefix aecol: <http://leiza-scit.github.io/CAA2026-alligator/collections/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix lado: <http://archaeology.link/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 _:assemblage a dm:Assemblage , crm:E18_Physical_Thing ;
+    dm:totalSherds 100 ;
+    crm:P12i_was_present_at _:deposition ;
     dm:hasCount _:count_1 , _:count_2 , _:count_3 , _:count_4 , _:count_5 .
+
+_:deposition a crm:E5_Event .
 
 _:count_1 a aeont:ServiceCount ;
     aeont:serviceType aevoc:Schraegrandteller ;
@@ -80,15 +85,22 @@ _:count_5 a aeont:ServiceCount ;
     aeont:serviceType aevoc:ServiceII ;
     aeont:sherdCount 60 .
 
-[] a dm:HorizonAssessment , crm:E7_Activity ;
+_:assessment a dm:HorizonAssessment , crm:E7_Activity ;
     dm:method "Dirichlet-multinomial predictive likelihood" ;
     dm:pseudocount 0.500000 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ; crm:P82_at_some_time_within "2026-01-01T00:00:00Z"^^xsd:dateTime ] ;
+    crm:P16_used_specific_object <https://leiza-scit.github.io/CAA2026-alligator/dating.html> , <https://github.com/leiza-scit/CAA2026-alligator/blob/main/output/horizon_reference_profiles.csv> ;
     crm:P9_consists_of
-        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_1 ; dm:prior 0.200000 ; dm:probability 0.000000 ] ,
-        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_2 ; dm:prior 0.200000 ; dm:probability 0.000001 ] ,
-        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_3 ; dm:prior 0.200000 ; dm:probability 0.845502 ] ,
-        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_4 ; dm:prior 0.200000 ; dm:probability 0.154497 ] ,
-        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:assemblage ; crm:P141_assigned aecol:horizon_5 ; dm:prior 0.200000 ; dm:probability 0.000000 ] .
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:deposition ; crm:P177_assigned_property_of_type crm:P10_falls_within ; crm:P141_assigned aecol:horizon_1 ; dm:prior 0.200000 ; dm:probability 0.000000 ; dm:logLikelihood -169.147056 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:deposition ; crm:P177_assigned_property_of_type crm:P10_falls_within ; crm:P141_assigned aecol:horizon_2 ; dm:prior 0.200000 ; dm:probability 0.000001 ; dm:logLikelihood -107.839407 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:deposition ; crm:P177_assigned_property_of_type crm:P10_falls_within ; crm:P141_assigned aecol:horizon_3 ; dm:prior 0.200000 ; dm:probability 0.845502 ; dm:logLikelihood -93.799599 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:deposition ; crm:P177_assigned_property_of_type crm:P10_falls_within ; crm:P141_assigned aecol:horizon_4 ; dm:prior 0.200000 ; dm:probability 0.154497 ; dm:logLikelihood -95.499354 ] ,
+        [ a dm:HorizonResult , crm:E13_Attribute_Assignment ; crm:P140_assigned_attribute_to _:deposition ; crm:P177_assigned_property_of_type crm:P10_falls_within ; crm:P141_assigned aecol:horizon_5 ; dm:prior 0.200000 ; dm:probability 0.000000 ; dm:logLikelihood -132.412317 ] .
+
+<https://github.com/leiza-scit/CAA2026-alligator/blob/main/output/horizon_reference_profiles.csv> a crm:E73_Information_Object ;
+    dm:countsSha256 "342fd585f20733c3d56803e0672c8115afe2f4550458b1cfb2b821f6b1e5fe1c" .
+
+<https://leiza-scit.github.io/CAA2026-alligator/dating.html> a crm:E70_Thing .
 
 aecol:horizon_1 a lado:ChronologicalHorizon , crm:E4_Period .
 
@@ -100,7 +112,8 @@ aecol:horizon_4 a lado:ChronologicalHorizon , crm:E4_Period .
 
 aecol:horizon_5 a lado:ChronologicalHorizon , crm:E4_Period .</script>
     <script type="text/x-mermaid" id="dm-mermaid">flowchart TB;
-asm("_:assemblage<br/>dm:Assemblage<br/>crm:E18_Physical_Thing");
+asm("_:assemblage<br/>dm:Assemblage<br/>crm:E18_Physical_Thing<br/>n = 100 sherds");
+dep("_:deposition<br/>crm:E5_Event");
 c1("_:count_1<br/>aeont:ServiceCount<br/>BordOblique: 0 sherds");
 c2("_:count_2<br/>aeont:ServiceCount<br/>Ia: 0 sherds");
 c3("_:count_3<br/>aeont:ServiceCount<br/>Ib: 13 sherds");
@@ -111,12 +124,14 @@ s2("aevoc:ServiceIa");
 s3("aevoc:ServiceIb");
 s4("aevoc:ServiceIc");
 s5("aevoc:ServiceII");
-asx("_:assessment<br/>dm:HorizonAssessment<br/>crm:E7_Activity<br/>pseudocount 0.500000");
-r1("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P = 0.00 %");
-r2("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P = 0.00 %");
-r3("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P = 84.55 %");
-r4("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P = 15.45 %");
-r5("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P = 0.00 %");
+asx("_:assessment<br/>dm:HorizonAssessment<br/>crm:E7_Activity<br/>pseudocount 0.500000<br/>2026-01-01T00:00:00Z");
+rf("horizon_reference_profiles.csv<br/>crm:E73_Information_Object");
+sw("dating.html<br/>crm:E70_Thing");
+r1("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P177: crm:P10_falls_within<br/>P = 0.00 %");
+r2("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P177: crm:P10_falls_within<br/>P = 0.00 %");
+r3("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P177: crm:P10_falls_within<br/>P = 84.55 %");
+r4("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P177: crm:P10_falls_within<br/>P = 15.45 %");
+r5("dm:HorizonResult<br/>crm:E13_Attribute_Assignment<br/>P177: crm:P10_falls_within<br/>P = 0.00 %");
 h1("aecol:horizon_1<br/>lado:ChronologicalHorizon<br/>crm:E4_Period");
 h2("aecol:horizon_2<br/>lado:ChronologicalHorizon<br/>crm:E4_Period");
 h3("aecol:horizon_3<br/>lado:ChronologicalHorizon<br/>crm:E4_Period");
@@ -127,16 +142,19 @@ asx --> r2;
 asx --> r3;
 asx --> r4;
 asx --> r5;
+asx -- "crm:P16_used_specific_object" --> rf;
+asx --> sw;
 r1 -- "crm:P141_assigned" --> h1;
 r2 --> h2;
 r3 --> h3;
 r4 --> h4;
 r5 --> h5;
-r1 --> asm;
-r2 --> asm;
-r3 --> asm;
-r4 --> asm;
-r5 -- "crm:P140_assigned_attribute_to" --> asm;
+r1 --> dep;
+r2 --> dep;
+r3 --> dep;
+r4 --> dep;
+r5 -- "crm:P140_assigned_attribute_to" --> dep;
+asm -- "crm:P12i_was_present_at" --> dep;
 asm -- "dm:hasCount" --> c1;
 asm --> c2;
 asm --> c3;
@@ -147,7 +165,7 @@ c2 --> s2;
 c3 --> s3;
 c4 --> s4;
 c5 --> s5;
-class asm,asx,c1,c2,c3,c4,c5,r1,r2,r3,r4,r5,h1,h2,h3,h4,h5 ent;
+class asm,dep,asx,rf,sw,c1,c2,c3,c4,c5,r1,r2,r3,r4,r5,h1,h2,h3,h4,h5 ent;
 class s1,s2,s3,s4,s5 term;
 class r3,h3 best;</script>
 </section>

@@ -1,12 +1,13 @@
 /* dm-app.css — the dating machine page. Builds on ../style.css (variables, .container, .nav). */
 
 .dm-form { display: grid; grid-template-columns: repeat(5, minmax(5rem, 1fr)); gap: .75rem; margin: 1rem 0 .5rem; }
-.dm-form label { display: flex; flex-direction: column; gap: .25rem; font-size: .85rem; color: var(--muted); }
-.dm-form input, .dm-opts select {
+.dm-form label { display: flex; flex-direction: column; gap: .25rem; font-size: .85rem; color: var(--muted); min-width: 0; }
+.dm-form input, .dm-opts select, .dm-graph__actions select {
   font: inherit; color: var(--ink); padding: .4rem .5rem;
   border: 1px solid var(--rule); border-radius: 4px; background: #fff;
 }
-.dm-form input:focus, .dm-opts select:focus, .dm-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.dm-form input { width: 100%; min-width: 0; }
+.dm-form input:focus, .dm-opts select:focus, .dm-btn:focus-visible, .dm-graph__actions select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .dm-form input.is-bad { border-color: #9b1c1c; }
 
 .dm-opts { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; margin: .5rem 0 1rem; font-size: .9rem; }
@@ -22,25 +23,37 @@
 
 .dm-msg { min-height: 1.4rem; margin: 0 0 .75rem; font-size: .9rem; color: #9b1c1c; }
 
-/* result: bars */
-.dm-bars { margin: 1rem 0 .5rem; }
-.dm-bars svg { display: block; width: 100%; height: auto; max-width: 760px; }
-.dm-bars .bar { fill: var(--accent); }
-.dm-bars .bar.best { fill: var(--accent-dk); }
-.dm-bars text { font: 13px var(--font); fill: var(--ink); }
-.dm-bars .muted { fill: var(--muted); }
-.dm-bars .axis { stroke: var(--rule); }
-
-.dm-verdict { margin: .25rem 0 1rem; }
+/* the charts */
+.dm-chart-box { margin: 1rem 0 .5rem; }
+.dm-chart-box svg { display: block; width: 100%; height: auto; max-width: 760px; }
+.dm-verdict { margin: .25rem 0 .75rem; }
 .dm-verdict strong { font-weight: 650; }
+.dm-note-warn {
+  margin: 0 0 1rem; padding: .5rem .75rem; max-width: 760px;
+  border-left: 3px solid var(--muted); background: var(--head-bg); font-size: .9rem;
+}
+.dm-key { display: flex; flex-wrap: wrap; gap: .25rem 1rem; margin: .25rem 0 .5rem; font-size: .85rem; color: var(--muted); }
+.dm-key i { display: inline-block; width: 1.4em; height: 0; vertical-align: middle; margin-right: .35em; border-top: 3px dashed #0b0b0b; }
 
-/* result: graph, wider than the text column */
+/* the graph */
 .dm-graph { margin: 1.5rem 0; }
 .dm-graph__canvas { overflow-x: auto; border: 1px solid var(--rule); border-radius: 4px; padding: .75rem; background: #fff; min-height: 6rem; }
-.dm-graph__canvas svg { max-width: 100%; min-width: 900px; height: auto; }
+.dm-graph__canvas > svg { max-width: 100%; height: auto; }
+.dm-graph__canvas > svg:not(.dm-chart) { min-width: 900px; }
+.dm-graph__canvas .dm-chart--graph { min-width: 640px; width: 100%; }
+.dm-graph__canvas .dm-dim { opacity: .15; transition: opacity .12s; }
+.dm-graph__canvas g.node { cursor: default; }
+.dm-graph__canvas g.node:focus { outline: none; }
 .dm-graph__actions { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; margin: .75rem 0 0; font-size: .9rem; }
-.dm-graph__actions select { font: inherit; padding: .3rem .4rem; margin-left: .35rem; border: 1px solid var(--rule); border-radius: 4px; }
+.dm-graph__actions label { color: var(--muted); }
+.dm-graph__actions select { margin-left: .35rem; padding: .3rem .4rem; }
+.dm-graph__actions a { color: var(--accent); }
 .dm-graph__error { color: #9b1c1c; margin: 0; }
+.dm-legend { margin: .6rem 0 0; font-size: .85rem; color: var(--muted); max-width: 900px; }
+.dm-legend .sw { display: inline-block; width: 1.1em; height: .8em; vertical-align: middle; border: 1px solid #000; border-radius: 3px; }
+.dm-legend .sw--ent { background: #e2e8f0; }
+.dm-legend .sw--term { background: #4c1d95; }
+.dm-legend .sw--best { background: #e2e8f0; border-width: 3px; }
 
 details.dm-details { margin-top: 1rem; }
 details.dm-details summary { cursor: pointer; color: var(--accent); }
@@ -48,14 +61,14 @@ details.dm-details pre {
   overflow-x: auto; padding: .75rem; background: var(--head-bg); border: 1px solid var(--rule);
   font: .82rem/1.4 var(--mono);
 }
-.dm-ref { border-collapse: collapse; margin-top: .5rem; font-size: .88rem; }
-.dm-ref th, .dm-ref td { padding: .3rem .7rem; border-bottom: 1px solid var(--rule); text-align: right; }
+.dm-ref { border-collapse: collapse; margin-top: .5rem; font-size: .88rem; display: block; max-width: 100%; overflow-x: auto; }
+.dm-ref th, .dm-ref td { padding: .3rem .7rem; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
 .dm-ref th:first-child, .dm-ref td:first-child { text-align: left; }
 .dm-ref thead th { background: var(--head-bg); border-bottom: 2px solid var(--rule); }
 
 @media (max-width: 640px) { .dm-form { grid-template-columns: repeat(2, 1fr); } }
-
-.dm-graph__actions a, .dm-graph p a { color: var(--accent); }
-.dm-form label { min-width: 0; }
-.dm-form input { width: 100%; min-width: 0; }
-.dm-ref { display: block; max-width: 100%; overflow-x: auto; }
+.dm-legend .sw--real { background: #166534; }
+.dm-legend .sw--class { background: #9a3412; }
+.dm-legend .sw--lit { background: #fbbf24; }
+.dm-legend .sw--owl { background: #ffffff; }
+.dm-chart--poster { width: 100%; height: auto; min-width: 720px; }

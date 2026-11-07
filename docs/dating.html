@@ -21,10 +21,10 @@
     <h1>Dating machine</h1>
     <p class="intro">
       Enter how many sherds of each Arretine service type an assemblage holds. The
-      page works out how probable each of the five chronological horizons is and
-      shows the result as a bar chart and as an RDF graph that can be merged with
-      the knowledge graph of this site. Everything is computed in your browser;
-      nothing is sent anywhere.
+      page works out how probable each of the five chronological horizons is, shows
+      why, places the horizons on the year axis, and gives the result as an RDF graph
+      that can be merged with the knowledge graph of this site. Everything is
+      computed in your browser; nothing is sent anywhere.
     </p>
   </header>
 
@@ -56,45 +56,78 @@
 
   <section>
     <h2>2. The attribution</h2>
-    <div id="dm-bars" class="dm-bars"></div>
+    <div id="dm-bars" class="dm-chart-box"></div>
     <p class="dm-verdict" id="dm-verdict"></p>
+    <p class="dm-note-warn" id="dm-note" role="note" hidden></p>
     <p class="note">
       Dirichlet-multinomial predictive likelihood: the pooled sherd counts of each
       horizon, plus the pseudocount, are the Dirichlet parameters; the five
       horizons have equal priors. The two pseudocounts differ by less than one
       percentage point for typical assemblages.
     </p>
+  </section>
+
+  <section>
+    <h2>3. Why: the profile of the assemblage</h2>
+    <p class="intro">
+      Each horizon has a typical mix of service types. The dashed line is the
+      assemblage; the horizon whose line it follows most closely is the one the
+      model favours.
+    </p>
+    <div id="dm-profile" class="dm-chart-box"></div>
+    <p class="dm-key"><span><i></i>assemblage (diamonds)</span><span>coloured lines: reference profile of each horizon, the most probable one drawn heavier</span></p>
     <details class="dm-details">
-      <summary>Reference counts of the five horizons</summary>
+      <summary>The same as a table, and the reference counts</summary>
+      <table class="dm-ref" id="dm-profile-table"></table>
       <table class="dm-ref" id="dm-ref"></table>
     </details>
   </section>
 
+  <section>
+    <h2>4. When: the horizons on the year axis</h2>
+    <p class="intro">
+      The horizons are those of the <a href="index.html">knowledge graph on the overview</a>,
+      with the years given there. They overlap, so the bars are not alternatives that
+      add up: the shading shows each horizon's probability (the outline is always
+      drawn), the figure at the right is the same number as above.
+    </p>
+    <div id="dm-timeline" class="dm-chart-box"></div>
+  </section>
+
   <section id="dm-graph" class="dm-graph">
-    <h2>3. The result as a graph</h2>
+    <h2>5. The result as a graph</h2>
     <p class="intro">
       The same result as RDF triples. The assemblage is a blank node: it has no
-      identifier of its own and exists only in this graph. Each result is a
-      CIDOC-CRM attribute assignment (E13) that assigns one horizon
-      (<code>lado:ChronologicalHorizon</code>, <code>crm:E4_Period</code>) to the
-      assemblage. Concepts (purple) and horizons are those of the graph on the
-      <a href="index.html">overview</a>, so the two can be merged. The heavy
-      outline marks the most probable horizon.
+      identifier of its own. It was present at one deposition event, and each result is a
+      CIDOC-CRM attribute assignment (E13) that says this event
+      <em>falls within</em> one horizon (<code>lado:ChronologicalHorizon</code>,
+      <code>crm:E4_Period</code>) with a probability. The simple view shows that
+      shape; the full view shows every triple of the Turtle below, including where
+      the numbers came from.
     </p>
     <div id="dm-graph-canvas" class="dm-graph__canvas">Drawing the graph &hellip;</div>
     <p class="dm-graph__actions">
-      <label>Layout
+      <label>View
+        <select id="dm-view">
+          <option value="simple">Simple</option>
+          <option value="full">Full (CIDOC-CRM)</option>
+          <option value="poster">Knowledge graph (poster)</option>
+        </select>
+      </label>
+      <label id="dm-layout-wrap">Layout
         <select id="dm-layout">
-          <option value="TB">Top to bottom</option>
           <option value="LR">Left to right</option>
+          <option value="TB">Top to bottom</option>
           <option value="BT">Bottom to top</option>
           <option value="RL">Right to left</option>
         </select>
       </label>
       <button type="button" class="dm-btn" id="dm-download-ttl" disabled>Download Turtle</button>
       <button type="button" class="dm-btn" id="dm-download-svg" disabled>Download SVG</button>
-      <a href="dmgraph/dm.ttl">The <code>dm:</code> vocabulary (Turtle)</a>
+      <button type="button" class="dm-btn" id="dm-download-png" disabled>Download PNG</button>
+      <a href="dm/">The <code>dm:</code> vocabulary</a>
     </p>
+    <p class="dm-legend" id="dm-legend"></p>
     <details class="dm-details">
       <summary>Show the triples (Turtle)</summary>
       <pre id="dm-turtle-view"></pre>
@@ -102,7 +135,7 @@
   </section>
 
   <footer class="page-foot">
-    Model, Turtle and diagram are built by <code>docs/dmgraph/dm-model.js</code>;
+    Model, Turtle and diagram source are built by <code>docs/dmgraph/dm-model.js</code>;
     <code>py/build_dating.py</code> checks that file against the Python
     implementation. Mermaid 11 (MIT) is vendored in <code>docs/dmgraph/vendor/</code>.
   </footer>
@@ -111,6 +144,8 @@
 <script src="dmgraph/vendor/mermaid.min.js"></script>
 <script src="dmgraph/reference.js"></script>
 <script src="dmgraph/dm-model.js"></script>
+<script src="dmgraph/dm-charts.js"></script>
+<script src="dmgraph/dm-poster.js"></script>
 <script src="dmgraph/dm-app.js"></script>
 </body>
 </html>
